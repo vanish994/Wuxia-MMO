@@ -1,0 +1,785 @@
+{
+  "schema": "generate2dmap.nav_report.v1",
+  "status": "warn",
+  "method": "plan Appendix C validity (centre + 8 footprint samples against walk regions, solids, object footprints scaled once, tile collision and material classes) on a grid of cell max(1, round(r/2)) px; 4-neighbour moves open when segmentClear holds between node centres (samples every cell/2, plus the exact thin-gap centre path and one_way direction); BFS from every spawn and portal arrival to every interaction, exit, anchor slot and approach point",
+  "notProven": [
+    "that the collision data matches the painted art",
+    "positions closer than one grid cell to a blocker (the grid samples cell centres)",
+    "runtime movement code: map-runtime.mjs parity is tested during integration",
+    "links to maps not passed with --link"
+  ],
+  "checks": [
+    {
+      "id": "starts_valid",
+      "status": "pass",
+      "value": {
+        "starts": 5,
+        "blocked": []
+      },
+      "threshold": {
+        "blocked": 0
+      }
+    },
+    {
+      "id": "targets_reachable",
+      "status": "pass",
+      "value": {
+        "reachable": 4,
+        "total": 4,
+        "unreachable": []
+      },
+      "threshold": {
+        "unreachable": 0
+      }
+    },
+    {
+      "id": "portals_inside_world",
+      "status": "pass",
+      "value": {
+        "outside": []
+      },
+      "threshold": {
+        "outside": 0
+      }
+    },
+    {
+      "id": "arrivals_outside_triggers",
+      "status": "pass",
+      "value": {
+        "problems": 0
+      },
+      "threshold": {
+        "problems": 0
+      }
+    },
+    {
+      "id": "reciprocal_links",
+      "status": "pass",
+      "value": {
+        "links": [
+          {
+            "portal": "exit-north",
+            "to": "river-market",
+            "arrival": [
+              494.0,
+              674.0
+            ],
+            "returnPortals": [
+              "exit-south"
+            ],
+            "status": "pass"
+          },
+          {
+            "portal": "exit-east",
+            "to": "marsh-delta",
+            "arrival": [
+              30.0,
+              350.0
+            ],
+            "returnPortals": [
+              "exit-west"
+            ],
+            "status": "pass"
+          },
+          {
+            "portal": "exit-south",
+            "to": "void-shrine",
+            "arrival": [
+              494.0,
+              30.0
+            ],
+            "returnPortals": [
+              "exit-north"
+            ],
+            "status": "pass"
+          },
+          {
+            "portal": "exit-west",
+            "to": "training-grounds",
+            "arrival": [
+              994.0,
+              350.0
+            ],
+            "returnPortals": [
+              "exit-east"
+            ],
+            "status": "pass"
+          }
+        ],
+        "notChecked": []
+      },
+      "threshold": {
+        "errors": 0
+      }
+    },
+    {
+      "id": "thin_gaps",
+      "status": "pass",
+      "value": 0,
+      "threshold": "reported: moves the thin-gap rule closed although every footprint sample was valid"
+    },
+    {
+      "id": "unreachable_walkable_area",
+      "status": "warn",
+      "value": {
+        "pockets": 10,
+        "cells": 17
+      },
+      "threshold": "reported"
+    },
+    {
+      "id": "blocked_rects_union",
+      "status": "pass",
+      "value": {
+        "rects": 92,
+        "blockedCells": 2155
+      },
+      "threshold": "union == blocked cells"
+    },
+    {
+      "id": "footprints_scaled_once",
+      "status": "pass",
+      "value": {
+        "objectSolids": 17
+      },
+      "threshold": "object footprint x scale, never inflated by the actor radius"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "../../map-bundle.json",
+      "sha256": "02d7e4066de7b9f94fb59745ca099a53cd8bf48884cae572acd72ebbf281dc6a",
+      "bytes": 44175
+    },
+    {
+      "path": "../../tilesets/wood-stone-wang16/wood-stone-wang16.tileset.json",
+      "sha256": "c339f7291cf26c555f34d33cf9f16d135f7d7869d9505672a3b4484e21bcfe53",
+      "bytes": 21275
+    },
+    {
+      "path": "../../tilesets/wood-stone-wang16/wood-stone-wang16.png",
+      "sha256": "f15e87f3768c81b73e283770283ecc1bbd602d85b72751a9e998531503b593ba",
+      "bytes": 3218
+    },
+    {
+      "path": "../../terrain-vertices.json",
+      "sha256": "cc8bb7e0fe07e44c819de52f65f832f365568fa049b1bb103a922594bb8f4fc5",
+      "bytes": 7311
+    },
+    {
+      "path": "../../props/pine.png",
+      "sha256": "f6d9de3c7e18415fa4233e58b4cc65847573ea601c3a2cd3738f46d9b4bf5fc3",
+      "bytes": 341
+    },
+    {
+      "path": "../../props/blossom_tree.png",
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "bytes": 407
+    },
+    {
+      "path": "../../props/bamboo.png",
+      "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
+      "bytes": 509
+    },
+    {
+      "path": "../../props/shrub.png",
+      "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
+      "bytes": 198
+    },
+    {
+      "path": "../../props/rock.png",
+      "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
+      "bytes": 188
+    },
+    {
+      "path": "../../props/lantern.png",
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "bytes": 230
+    },
+    {
+      "path": "../../props/signboard.png",
+      "sha256": "db4e50fb76441a57ff24f22c3cc852749cb0faf64c0ed744a068ece0b1bbea41",
+      "bytes": 223
+    },
+    {
+      "path": "../../props/sect_gate.png",
+      "sha256": "1aeedb2ef856eec6fe1e5f8310ce4e1e368e05f60b6182f91cba3f86974c6a85",
+      "bytes": 479
+    },
+    {
+      "path": "../../props/pagoda.png",
+      "sha256": "c4805330da4a46ae8195e0e50329bf47980748df8f7552fd576a7d5e04a1cb1d",
+      "bytes": 514
+    },
+    {
+      "path": "../../props/bridge.png",
+      "sha256": "27e76b7d6bd364498b855920f61381c3f2f699394612fe509cb397c0c0ba864d",
+      "bytes": 300
+    },
+    {
+      "path": "../../../river-market-v1/map-bundle.json",
+      "sha256": "56cca319f6d164dddc430a37f0e7356b3fcb5925b86deeeb591fba025983c942",
+      "bytes": 34778
+    },
+    {
+      "path": "../../../river-market-v1/tilesets/sand-water-wang16/sand-water-wang16.tileset.json",
+      "sha256": "1a2a9f23af9f0fceacf056052f47b57547fa8fec552728594386b324cc3fc61b",
+      "bytes": 41063
+    },
+    {
+      "path": "../../../river-market-v1/tilesets/sand-water-wang16/sand-water-wang16.png",
+      "sha256": "e8b645e2ecfd65c48bb796e8df4d4a2a6e2c63588c4da8e4a1ddecfe273d71de",
+      "bytes": 4893
+    },
+    {
+      "path": "../../../river-market-v1/terrain-vertices.json",
+      "sha256": "97b07ae64f40c40c2df3178f1b9f7d9d152d01f32fd56a88388432dcf3061dcc",
+      "bytes": 7285
+    },
+    {
+      "path": "../../../river-market-v1/props/pine.png",
+      "sha256": "f6d9de3c7e18415fa4233e58b4cc65847573ea601c3a2cd3738f46d9b4bf5fc3",
+      "bytes": 341
+    },
+    {
+      "path": "../../../river-market-v1/props/blossom_tree.png",
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "bytes": 407
+    },
+    {
+      "path": "../../../river-market-v1/props/bamboo.png",
+      "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
+      "bytes": 509
+    },
+    {
+      "path": "../../../river-market-v1/props/shrub.png",
+      "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
+      "bytes": 198
+    },
+    {
+      "path": "../../../river-market-v1/props/rock.png",
+      "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
+      "bytes": 188
+    },
+    {
+      "path": "../../../river-market-v1/props/lantern.png",
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "bytes": 230
+    },
+    {
+      "path": "../../../river-market-v1/props/signboard.png",
+      "sha256": "db4e50fb76441a57ff24f22c3cc852749cb0faf64c0ed744a068ece0b1bbea41",
+      "bytes": 223
+    },
+    {
+      "path": "../../../river-market-v1/props/sect_gate.png",
+      "sha256": "1aeedb2ef856eec6fe1e5f8310ce4e1e368e05f60b6182f91cba3f86974c6a85",
+      "bytes": 479
+    },
+    {
+      "path": "../../../river-market-v1/props/pagoda.png",
+      "sha256": "c4805330da4a46ae8195e0e50329bf47980748df8f7552fd576a7d5e04a1cb1d",
+      "bytes": 514
+    },
+    {
+      "path": "../../../river-market-v1/props/bridge.png",
+      "sha256": "27e76b7d6bd364498b855920f61381c3f2f699394612fe509cb397c0c0ba864d",
+      "bytes": 300
+    },
+    {
+      "path": "../../../marsh-delta-v1/map-bundle.json",
+      "sha256": "5d7aa85908316db7ebfef04920a42cdd79604866f667d9bac1b5c64517901007",
+      "bytes": 34370
+    },
+    {
+      "path": "../../../marsh-delta-v1/tilesets/dirt-water-wang16/dirt-water-wang16.tileset.json",
+      "sha256": "f5457f863c26d856dd0bf034afbaa121c15f49dee391594e3fc3001276550005",
+      "bytes": 40095
+    },
+    {
+      "path": "../../../marsh-delta-v1/tilesets/dirt-water-wang16/dirt-water-wang16.png",
+      "sha256": "c1b73ff6ae56dc80f60b520d4adf70fca8323554cebb4788225e18b5761770f9",
+      "bytes": 5321
+    },
+    {
+      "path": "../../../marsh-delta-v1/terrain-vertices.json",
+      "sha256": "4c6b7af56f4c4f99b4669aedc4988027ba0b0401d1bb9b290dd5580e79fffad9",
+      "bytes": 7285
+    },
+    {
+      "path": "../../../marsh-delta-v1/props/pine.png",
+      "sha256": "f6d9de3c7e18415fa4233e58b4cc65847573ea601c3a2cd3738f46d9b4bf5fc3",
+      "bytes": 341
+    },
+    {
+      "path": "../../../marsh-delta-v1/props/blossom_tree.png",
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "bytes": 407
+    },
+    {
+      "path": "../../../marsh-delta-v1/props/bamboo.png",
+      "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
+      "bytes": 509
+    },
+    {
+      "path": "../../../marsh-delta-v1/props/shrub.png",
+      "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
+      "bytes": 198
+    },
+    {
+      "path": "../../../marsh-delta-v1/props/rock.png",
+      "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
+      "bytes": 188
+    },
+    {
+      "path": "../../../marsh-delta-v1/props/lantern.png",
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "bytes": 230
+    },
+    {
+      "path": "../../../marsh-delta-v1/props/signboard.png",
+      "sha256": "db4e50fb76441a57ff24f22c3cc852749cb0faf64c0ed744a068ece0b1bbea41",
+      "bytes": 223
+    },
+    {
+      "path": "../../../marsh-delta-v1/props/sect_gate.png",
+      "sha256": "1aeedb2ef856eec6fe1e5f8310ce4e1e368e05f60b6182f91cba3f86974c6a85",
+      "bytes": 479
+    },
+    {
+      "path": "../../../marsh-delta-v1/props/pagoda.png",
+      "sha256": "c4805330da4a46ae8195e0e50329bf47980748df8f7552fd576a7d5e04a1cb1d",
+      "bytes": 514
+    },
+    {
+      "path": "../../../marsh-delta-v1/props/bridge.png",
+      "sha256": "27e76b7d6bd364498b855920f61381c3f2f699394612fe509cb397c0c0ba864d",
+      "bytes": 300
+    },
+    {
+      "path": "../../../void-shrine-v1/map-bundle.json",
+      "sha256": "749333802f295c07bf70cbb6581cb7b5917b385ba7d1071e519698ce947b4d3e",
+      "bytes": 36079
+    },
+    {
+      "path": "../../../void-shrine-v1/tilesets/corruption-stone-wang16/corruption-stone-wang16.tileset.json",
+      "sha256": "a93a9eced8c917a13ff1ece14b58a04fa52c41aa05fbf265f883937020ec79de",
+      "bytes": 48819
+    },
+    {
+      "path": "../../../void-shrine-v1/tilesets/corruption-stone-wang16/corruption-stone-wang16.png",
+      "sha256": "edf04c8946c9e44adff811f35ac0562488cce53a4611e6b924bc2a3802f0bc7b",
+      "bytes": 4044
+    },
+    {
+      "path": "../../../void-shrine-v1/terrain-vertices.json",
+      "sha256": "09244788d6438927153f4b16f9a8224d3f11282a42859c277d2e2166b8c542c7",
+      "bytes": 7308
+    },
+    {
+      "path": "../../../void-shrine-v1/props/pine.png",
+      "sha256": "f6d9de3c7e18415fa4233e58b4cc65847573ea601c3a2cd3738f46d9b4bf5fc3",
+      "bytes": 341
+    },
+    {
+      "path": "../../../void-shrine-v1/props/blossom_tree.png",
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "bytes": 407
+    },
+    {
+      "path": "../../../void-shrine-v1/props/bamboo.png",
+      "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
+      "bytes": 509
+    },
+    {
+      "path": "../../../void-shrine-v1/props/shrub.png",
+      "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
+      "bytes": 198
+    },
+    {
+      "path": "../../../void-shrine-v1/props/rock.png",
+      "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
+      "bytes": 188
+    },
+    {
+      "path": "../../../void-shrine-v1/props/lantern.png",
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "bytes": 230
+    },
+    {
+      "path": "../../../void-shrine-v1/props/signboard.png",
+      "sha256": "db4e50fb76441a57ff24f22c3cc852749cb0faf64c0ed744a068ece0b1bbea41",
+      "bytes": 223
+    },
+    {
+      "path": "../../../void-shrine-v1/props/sect_gate.png",
+      "sha256": "1aeedb2ef856eec6fe1e5f8310ce4e1e368e05f60b6182f91cba3f86974c6a85",
+      "bytes": 479
+    },
+    {
+      "path": "../../../void-shrine-v1/props/pagoda.png",
+      "sha256": "c4805330da4a46ae8195e0e50329bf47980748df8f7552fd576a7d5e04a1cb1d",
+      "bytes": 514
+    },
+    {
+      "path": "../../../void-shrine-v1/props/bridge.png",
+      "sha256": "27e76b7d6bd364498b855920f61381c3f2f699394612fe509cb397c0c0ba864d",
+      "bytes": 300
+    },
+    {
+      "path": "../../../training-grounds-v1/map-bundle.json",
+      "sha256": "b4f1db6a1292c40fa169a408cfdf59bc9b412f5190f4bb10420eb6def8ed435a",
+      "bytes": 44141
+    },
+    {
+      "path": "../../../training-grounds-v1/tilesets/built-natural-stone-wang16/built-natural-stone-wang16.tileset.json",
+      "sha256": "3722b3de02e8f13422ad839bb250ae132afe6c551128fd3bc063ab763194d0c2",
+      "bytes": 21291
+    },
+    {
+      "path": "../../../training-grounds-v1/tilesets/built-natural-stone-wang16/built-natural-stone-wang16.png",
+      "sha256": "f5c8723584e2660d78541d72aaf75ebea007037e7d6c4e7f9b0da006b366d656",
+      "bytes": 3356
+    },
+    {
+      "path": "../../../training-grounds-v1/terrain-vertices.json",
+      "sha256": "6df270c5487167122b4bf6fa7c910f07d21f6a8a95c0558705931575fd8801be",
+      "bytes": 7307
+    },
+    {
+      "path": "../../../training-grounds-v1/props/pine.png",
+      "sha256": "f6d9de3c7e18415fa4233e58b4cc65847573ea601c3a2cd3738f46d9b4bf5fc3",
+      "bytes": 341
+    },
+    {
+      "path": "../../../training-grounds-v1/props/blossom_tree.png",
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "bytes": 407
+    },
+    {
+      "path": "../../../training-grounds-v1/props/bamboo.png",
+      "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
+      "bytes": 509
+    },
+    {
+      "path": "../../../training-grounds-v1/props/shrub.png",
+      "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
+      "bytes": 198
+    },
+    {
+      "path": "../../../training-grounds-v1/props/rock.png",
+      "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
+      "bytes": 188
+    },
+    {
+      "path": "../../../training-grounds-v1/props/lantern.png",
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "bytes": 230
+    },
+    {
+      "path": "../../../training-grounds-v1/props/signboard.png",
+      "sha256": "db4e50fb76441a57ff24f22c3cc852749cb0faf64c0ed744a068ece0b1bbea41",
+      "bytes": 223
+    },
+    {
+      "path": "../../../training-grounds-v1/props/sect_gate.png",
+      "sha256": "1aeedb2ef856eec6fe1e5f8310ce4e1e368e05f60b6182f91cba3f86974c6a85",
+      "bytes": 479
+    },
+    {
+      "path": "../../../training-grounds-v1/props/pagoda.png",
+      "sha256": "c4805330da4a46ae8195e0e50329bf47980748df8f7552fd576a7d5e04a1cb1d",
+      "bytes": 514
+    },
+    {
+      "path": "../../../training-grounds-v1/props/bridge.png",
+      "sha256": "27e76b7d6bd364498b855920f61381c3f2f699394612fe509cb397c0c0ba864d",
+      "bytes": 300
+    }
+  ],
+  "outputs": [
+    {
+      "path": "nav-grid.json",
+      "sha256": "e137713be05447c8a8ef11320c8535525d4832775d162d53d752a0acceb3e7b5",
+      "bytes": 98919
+    },
+    {
+      "path": "nav-debug.png",
+      "sha256": "33f4ab3ca661b526c129680e06f7a8ddd5edb0afe9cc71b9612f475c1c723a9f",
+      "bytes": 24490
+    }
+  ],
+  "tool": {
+    "name": "map_nav.py",
+    "version": "0.4.0"
+  },
+  "map": "pagoda-court",
+  "cell": 4,
+  "starts": [
+    {
+      "kind": "spawn",
+      "id": "arrival",
+      "point": [
+        192.0,
+        352.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        190.0,
+        350.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "spawn",
+      "id": "from-river-market",
+      "point": [
+        494.0,
+        30.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        494.0,
+        30.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "spawn",
+      "id": "from-marsh-delta",
+      "point": [
+        994.0,
+        350.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        994.0,
+        350.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "spawn",
+      "id": "from-void-shrine",
+      "point": [
+        494.0,
+        674.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        494.0,
+        674.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "spawn",
+      "id": "from-training-grounds",
+      "point": [
+        30.0,
+        350.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        30.0,
+        350.0
+      ],
+      "reason": null
+    }
+  ],
+  "targets": [
+    {
+      "kind": "exit",
+      "id": "exit-north",
+      "point": [
+        496.0,
+        8.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        486.0,
+        22.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "exit",
+      "id": "exit-east",
+      "point": [
+        1016.0,
+        352.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        1002.0,
+        342.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "exit",
+      "id": "exit-south",
+      "point": [
+        496.0,
+        696.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        486.0,
+        682.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "exit",
+      "id": "exit-west",
+      "point": [
+        8.0,
+        352.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        22.0,
+        342.0
+      ],
+      "reason": null
+    }
+  ],
+  "links": [
+    {
+      "portal": "exit-north",
+      "to": "river-market",
+      "arrival": [
+        494.0,
+        674.0
+      ],
+      "returnPortals": [
+        "exit-south"
+      ],
+      "status": "pass"
+    },
+    {
+      "portal": "exit-east",
+      "to": "marsh-delta",
+      "arrival": [
+        30.0,
+        350.0
+      ],
+      "returnPortals": [
+        "exit-west"
+      ],
+      "status": "pass"
+    },
+    {
+      "portal": "exit-south",
+      "to": "void-shrine",
+      "arrival": [
+        494.0,
+        30.0
+      ],
+      "returnPortals": [
+        "exit-north"
+      ],
+      "status": "pass"
+    },
+    {
+      "portal": "exit-west",
+      "to": "training-grounds",
+      "arrival": [
+        994.0,
+        350.0
+      ],
+      "returnPortals": [
+        "exit-east"
+      ],
+      "status": "pass"
+    }
+  ],
+  "thinGaps": [],
+  "unreachablePockets": [
+    {
+      "cells": 6,
+      "at": [
+        146.0,
+        378.0
+      ]
+    },
+    {
+      "cells": 3,
+      "at": [
+        242.0,
+        378.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        982.0,
+        130.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        978.0,
+        134.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        982.0,
+        138.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        450.0,
+        234.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        458.0,
+        234.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        454.0,
+        238.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        314.0,
+        294.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        322.0,
+        294.0
+      ]
+    }
+  ],
+  "bundleNav": {
+    "cell": 4,
+    "grid": "nav-grid.json"
+  },
+  "problems": []
+}

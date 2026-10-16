@@ -1,0 +1,2313 @@
+{
+  "schema": "generate2dmap.map_bundle.v2",
+  "id": "bamboo-coast",
+  "tile_size": 32,
+  "world": {
+    "width": 1024,
+    "height": 704,
+    "unit": "px"
+  },
+  "terrain": {
+    "vertex_grid": "terrain-vertices.json",
+    "materials": [
+      "grass",
+      "dirt",
+      "dirt_path"
+    ],
+    "sha256": "0b8724104b6ac14a869754b6940b6949f0c18729bcf9e93e26750345816928d1"
+  },
+  "tilesets": [
+    {
+      "id": "grass-dirt-path-wang81",
+      "manifest": "tilesets/grass-dirt-path-wang81/grass-dirt-path-wang81.tileset.json",
+      "sha256": "c58edbeffe42d22fa0884406fac5a3b17a65930bb1e3e564a777670122ed63b0"
+    }
+  ],
+  "layers": [
+    {
+      "name": "ground",
+      "kind": "tiles",
+      "tileset": "grass-dirt-path-wang81",
+      "data": [
+        [
+          162,
+          243,
+          162,
+          81,
+          162,
+          243,
+          0,
+          81,
+          0,
+          81,
+          162,
+          243,
+          0,
+          81,
+          0,
+          81,
+          162,
+          243,
+          0,
+          81,
+          243,
+          81,
+          162,
+          0,
+          81,
+          243,
+          0,
+          81,
+          162,
+          243,
+          81,
+          0
+        ],
+        [
+          0,
+          81,
+          0,
+          162,
+          0,
+          81,
+          162,
+          243,
+          81,
+          243,
+          81,
+          162,
+          243,
+          162,
+          243,
+          0,
+          243,
+          0,
+          243,
+          162,
+          0,
+          243,
+          0,
+          81,
+          162,
+          81,
+          243,
+          162,
+          0,
+          81,
+          162,
+          243
+        ],
+        [
+          162,
+          243,
+          81,
+          243,
+          81,
+          0,
+          81,
+          0,
+          162,
+          81,
+          243,
+          0,
+          81,
+          243,
+          0,
+          81,
+          0,
+          81,
+          162,
+          0,
+          162,
+          0,
+          81,
+          162,
+          243,
+          0,
+          81,
+          0,
+          81,
+          243,
+          0,
+          81
+        ],
+        [
+          0,
+          162,
+          0,
+          81,
+          243,
+          81,
+          162,
+          81,
+          243,
+          0,
+          162,
+          243,
+          162,
+          0,
+          243,
+          162,
+          243,
+          0,
+          243,
+          81,
+          243,
+          162,
+          243,
+          0,
+          81,
+          243,
+          162,
+          81,
+          162,
+          0,
+          162,
+          243
+        ],
+        [
+          81,
+          243,
+          162,
+          243,
+          0,
+          162,
+          0,
+          162,
+          0,
+          81,
+          0,
+          81,
+          243,
+          81,
+          0,
+          81,
+          0,
+          243,
+          0,
+          162,
+          0,
+          81,
+          0,
+          162,
+          0,
+          81,
+          243,
+          162,
+          0,
+          243,
+          0,
+          81
+        ],
+        [
+          162,
+          81,
+          243,
+          0,
+          81,
+          243,
+          162,
+          243,
+          81,
+          0,
+          81,
+          162,
+          0,
+          162,
+          81,
+          162,
+          81,
+          162,
+          81,
+          243,
+          81,
+          243,
+          81,
+          243,
+          81,
+          243,
+          81,
+          243,
+          162,
+          0,
+          243,
+          162
+        ],
+        [
+          0,
+          162,
+          81,
+          243,
+          0,
+          81,
+          243,
+          81,
+          162,
+          81,
+          162,
+          243,
+          162,
+          0,
+          162,
+          243,
+          0,
+          81,
+          162,
+          163,
+          85,
+          4,
+          85,
+          165,
+          243,
+          162,
+          243,
+          81,
+          243,
+          81,
+          162,
+          81
+        ],
+        [
+          81,
+          0,
+          162,
+          81,
+          162,
+          243,
+          162,
+          243,
+          0,
+          162,
+          243,
+          81,
+          243,
+          81,
+          0,
+          81,
+          162,
+          0,
+          163,
+          256,
+          121,
+          203,
+          287,
+          278,
+          251,
+          249,
+          162,
+          243,
+          0,
+          162,
+          243,
+          162
+        ],
+        [
+          0,
+          81,
+          243,
+          0,
+          81,
+          0,
+          81,
+          162,
+          243,
+          81,
+          162,
+          243,
+          0,
+          162,
+          243,
+          162,
+          243,
+          1,
+          94,
+          202,
+          203,
+          134,
+          161,
+          242,
+          323,
+          305,
+          249,
+          0,
+          81,
+          243,
+          0,
+          81
+        ],
+        [
+          243,
+          2,
+          89,
+          170,
+          251,
+          89,
+          170,
+          89,
+          170,
+          251,
+          6,
+          81,
+          162,
+          243,
+          81,
+          243,
+          82,
+          13,
+          283,
+          121,
+          212,
+          242,
+          323,
+          161,
+          242,
+          161,
+          305,
+          89,
+          251,
+          8,
+          87,
+          243
+        ],
+        [
+          170,
+          26,
+          80,
+          240,
+          153,
+          72,
+          153,
+          315,
+          234,
+          317,
+          305,
+          8,
+          89,
+          168,
+          0,
+          162,
+          10,
+          202,
+          284,
+          44,
+          53,
+          323,
+          161,
+          242,
+          323,
+          242,
+          161,
+          240,
+          153,
+          236,
+          305,
+          89
+        ],
+        [
+          234,
+          315,
+          234,
+          54,
+          0,
+          243,
+          0,
+          243,
+          81,
+          180,
+          234,
+          315,
+          155,
+          143,
+          251,
+          170,
+          260,
+          287,
+          134,
+          79,
+          157,
+          238,
+          158,
+          323,
+          80,
+          161,
+          159,
+          135,
+          0,
+          180,
+          234,
+          315
+        ],
+        [
+          243,
+          81,
+          162,
+          0,
+          81,
+          162,
+          243,
+          0,
+          162,
+          243,
+          162,
+          0,
+          261,
+          315,
+          72,
+          153,
+          72,
+          234,
+          235,
+          229,
+          202,
+          120,
+          288,
+          315,
+          72,
+          315,
+          54,
+          162,
+          243,
+          0,
+          81,
+          162
+        ],
+        [
+          81,
+          162,
+          243,
+          81,
+          162,
+          243,
+          0,
+          81,
+          243,
+          0,
+          243,
+          81,
+          162,
+          243,
+          0,
+          162,
+          243,
+          81,
+          252,
+          36,
+          117,
+          270,
+          0,
+          81,
+          243,
+          0,
+          162,
+          0,
+          81,
+          162,
+          243,
+          81
+        ],
+        [
+          162,
+          81,
+          0,
+          162,
+          243,
+          81,
+          243,
+          0,
+          81,
+          243,
+          162,
+          0,
+          243,
+          81,
+          243,
+          0,
+          81,
+          243,
+          162,
+          0,
+          81,
+          243,
+          81,
+          0,
+          81,
+          243,
+          0,
+          81,
+          162,
+          243,
+          81,
+          0
+        ],
+        [
+          243,
+          0,
+          81,
+          0,
+          162,
+          243,
+          0,
+          162,
+          243,
+          162,
+          0,
+          243,
+          162,
+          243,
+          0,
+          81,
+          0,
+          162,
+          243,
+          81,
+          0,
+          81,
+          162,
+          243,
+          162,
+          0,
+          243,
+          0,
+          243,
+          162,
+          243,
+          81
+        ],
+        [
+          81,
+          162,
+          243,
+          81,
+          243,
+          81,
+          162,
+          0,
+          81,
+          0,
+          81,
+          0,
+          243,
+          0,
+          243,
+          162,
+          81,
+          243,
+          81,
+          162,
+          243,
+          162,
+          81,
+          0,
+          81,
+          162,
+          81,
+          162,
+          0,
+          81,
+          162,
+          0
+        ],
+        [
+          162,
+          243,
+          0,
+          162,
+          0,
+          243,
+          0,
+          243,
+          0,
+          81,
+          162,
+          243,
+          0,
+          81,
+          162,
+          243,
+          0,
+          81,
+          0,
+          243,
+          81,
+          243,
+          162,
+          243,
+          0,
+          81,
+          162,
+          243,
+          162,
+          243,
+          0,
+          81
+        ],
+        [
+          81,
+          162,
+          81,
+          0,
+          243,
+          0,
+          81,
+          162,
+          243,
+          162,
+          0,
+          162,
+          81,
+          162,
+          0,
+          81,
+          162,
+          0,
+          162,
+          0,
+          162,
+          0,
+          81,
+          0,
+          162,
+          243,
+          0,
+          162,
+          243,
+          162,
+          243,
+          162
+        ],
+        [
+          0,
+          243,
+          162,
+          81,
+          0,
+          162,
+          243,
+          0,
+          81,
+          243,
+          81,
+          243,
+          0,
+          81,
+          162,
+          243,
+          81,
+          162,
+          81,
+          162,
+          243,
+          81,
+          162,
+          81,
+          0,
+          81,
+          162,
+          243,
+          81,
+          0,
+          81,
+          243
+        ],
+        [
+          162,
+          0,
+          243,
+          162,
+          243,
+          81,
+          162,
+          243,
+          162,
+          0,
+          162,
+          81,
+          162,
+          0,
+          243,
+          0,
+          162,
+          0,
+          162,
+          243,
+          0,
+          162,
+          243,
+          162,
+          243,
+          0,
+          81,
+          0,
+          243,
+          162,
+          243,
+          0
+        ],
+        [
+          81,
+          162,
+          81,
+          243,
+          81,
+          243,
+          0,
+          81,
+          243,
+          81,
+          243,
+          0,
+          243,
+          162,
+          0,
+          81,
+          0,
+          162,
+          0,
+          162,
+          81,
+          243,
+          162,
+          81,
+          162,
+          243,
+          162,
+          243,
+          0,
+          243,
+          162,
+          243
+        ]
+      ]
+    },
+    {
+      "name": "props",
+      "kind": "objects"
+    }
+  ],
+  "props": {
+    "pine": {
+      "label": "pine",
+      "display_name": "pine",
+      "image": "props/pine.png",
+      "sha256": "f6d9de3c7e18415fa4233e58b4cc65847573ea601c3a2cd3738f46d9b4bf5fc3",
+      "anchor_px": [
+        12,
+        33
+      ],
+      "footprint": {
+        "shape": "ellipse",
+        "width": 7,
+        "depth": 4,
+        "offset": [
+          0,
+          -2
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "solid": true,
+      "occlusion_class": "tall",
+      "status": "accepted",
+      "size": [
+        24,
+        34
+      ],
+      "origin": "pixelspec"
+    },
+    "blossom_tree": {
+      "label": "blossom_tree",
+      "display_name": "blossom_tree",
+      "image": "props/blossom_tree.png",
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "anchor_px": [
+        12,
+        33
+      ],
+      "footprint": {
+        "shape": "ellipse",
+        "width": 7,
+        "depth": 4,
+        "offset": [
+          0,
+          -2
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "solid": true,
+      "occlusion_class": "tall",
+      "status": "accepted",
+      "size": [
+        24,
+        34
+      ],
+      "origin": "pixelspec"
+    },
+    "bamboo": {
+      "label": "bamboo",
+      "display_name": "bamboo",
+      "image": "props/bamboo.png",
+      "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
+      "anchor_px": [
+        10,
+        47
+      ],
+      "footprint": {
+        "shape": "ellipse",
+        "width": 8,
+        "depth": 4,
+        "offset": [
+          0,
+          -2
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "solid": true,
+      "occlusion_class": "tall",
+      "status": "accepted",
+      "size": [
+        20,
+        50
+      ],
+      "origin": "pixelspec"
+    },
+    "shrub": {
+      "label": "shrub",
+      "display_name": "shrub",
+      "image": "props/shrub.png",
+      "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
+      "anchor_px": [
+        10,
+        12
+      ],
+      "footprint": {
+        "shape": "ellipse",
+        "width": 14,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "solid": true,
+      "occlusion_class": "low",
+      "status": "accepted",
+      "size": [
+        20,
+        15
+      ],
+      "origin": "pixelspec"
+    },
+    "rock": {
+      "label": "rock",
+      "display_name": "rock",
+      "image": "props/rock.png",
+      "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
+      "anchor_px": [
+        9,
+        11
+      ],
+      "footprint": {
+        "shape": "ellipse",
+        "width": 13,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "solid": true,
+      "occlusion_class": "low",
+      "status": "accepted",
+      "size": [
+        18,
+        14
+      ],
+      "origin": "pixelspec"
+    },
+    "lantern": {
+      "label": "lantern",
+      "display_name": "lantern",
+      "image": "props/lantern.png",
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "anchor_px": [
+        8,
+        29
+      ],
+      "footprint": {
+        "shape": "ellipse",
+        "width": 5,
+        "depth": 4,
+        "offset": [
+          0,
+          -2
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "solid": true,
+      "occlusion_class": "low",
+      "status": "accepted",
+      "size": [
+        16,
+        32
+      ],
+      "origin": "pixelspec"
+    },
+    "signboard": {
+      "label": "signboard",
+      "display_name": "signboard",
+      "image": "props/signboard.png",
+      "sha256": "db4e50fb76441a57ff24f22c3cc852749cb0faf64c0ed744a068ece0b1bbea41",
+      "anchor_px": [
+        12,
+        25
+      ],
+      "footprint": {
+        "shape": "rect",
+        "width": 6,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "solid": true,
+      "occlusion_class": "low",
+      "status": "accepted",
+      "size": [
+        24,
+        28
+      ],
+      "origin": "pixelspec"
+    },
+    "sect_gate": {
+      "label": "sect_gate",
+      "display_name": "sect_gate",
+      "image": "props/sect_gate.png",
+      "sha256": "1aeedb2ef856eec6fe1e5f8310ce4e1e368e05f60b6182f91cba3f86974c6a85",
+      "anchor_px": [
+        28,
+        45
+      ],
+      "footprint": {
+        "shape": "rect",
+        "width": 14,
+        "depth": 8,
+        "offset": [
+          0,
+          -4
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "solid": true,
+      "occlusion_class": "tall",
+      "status": "accepted",
+      "size": [
+        56,
+        46
+      ],
+      "origin": "pixelspec"
+    },
+    "pagoda": {
+      "label": "pagoda",
+      "display_name": "pagoda",
+      "image": "props/pagoda.png",
+      "sha256": "c4805330da4a46ae8195e0e50329bf47980748df8f7552fd576a7d5e04a1cb1d",
+      "anchor_px": [
+        24,
+        61
+      ],
+      "footprint": {
+        "shape": "rect",
+        "width": 18,
+        "depth": 12,
+        "offset": [
+          0,
+          -6
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "solid": true,
+      "occlusion_class": "tall",
+      "status": "accepted",
+      "size": [
+        48,
+        62
+      ],
+      "origin": "pixelspec"
+    },
+    "bridge": {
+      "label": "bridge",
+      "display_name": "bridge",
+      "image": "props/bridge.png",
+      "sha256": "27e76b7d6bd364498b855920f61381c3f2f699394612fe509cb397c0c0ba864d",
+      "anchor_px": [
+        32,
+        25
+      ],
+      "footprint": {
+        "shape": "none"
+      },
+      "solid": false,
+      "occlusion_class": "low",
+      "status": "accepted",
+      "size": [
+        64,
+        26
+      ],
+      "origin": "pixelspec"
+    }
+  },
+  "objects": [
+    {
+      "id": "regional-dressing-1",
+      "prop": "shrub",
+      "kind": "shrub",
+      "x": 707,
+      "y": 462,
+      "anchor_px": [
+        10,
+        12
+      ],
+      "solid": true,
+      "sortY": 462,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": true,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 14,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-2",
+      "prop": "shrub",
+      "kind": "shrub",
+      "x": 139,
+      "y": 98,
+      "anchor_px": [
+        10,
+        12
+      ],
+      "solid": true,
+      "sortY": 98,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": false,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 14,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-3",
+      "prop": "rock",
+      "kind": "rock",
+      "x": 669,
+      "y": 505,
+      "anchor_px": [
+        9,
+        11
+      ],
+      "solid": true,
+      "sortY": 505,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": false,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 13,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-4",
+      "prop": "shrub",
+      "kind": "shrub",
+      "x": 854,
+      "y": 230,
+      "anchor_px": [
+        10,
+        12
+      ],
+      "solid": true,
+      "sortY": 230,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": false,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 14,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-5",
+      "prop": "pine",
+      "kind": "pine",
+      "x": 588,
+      "y": 225,
+      "anchor_px": [
+        12,
+        33
+      ],
+      "solid": true,
+      "sortY": 225,
+      "occlusion": "tall",
+      "scale": 1,
+      "flip_x": true,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 7,
+        "depth": 4,
+        "offset": [
+          0,
+          -2
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-6",
+      "prop": "shrub",
+      "kind": "shrub",
+      "x": 149,
+      "y": 248,
+      "anchor_px": [
+        10,
+        12
+      ],
+      "solid": true,
+      "sortY": 248,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": false,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 14,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-7",
+      "prop": "shrub",
+      "kind": "shrub",
+      "x": 190,
+      "y": 454,
+      "anchor_px": [
+        10,
+        12
+      ],
+      "solid": true,
+      "sortY": 454,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": true,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 14,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-8",
+      "prop": "shrub",
+      "kind": "shrub",
+      "x": 767,
+      "y": 149,
+      "anchor_px": [
+        10,
+        12
+      ],
+      "solid": true,
+      "sortY": 149,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": false,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 14,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-9",
+      "prop": "shrub",
+      "kind": "shrub",
+      "x": 486,
+      "y": 509,
+      "anchor_px": [
+        10,
+        12
+      ],
+      "solid": true,
+      "sortY": 509,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": true,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 14,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-10",
+      "prop": "pine",
+      "kind": "pine",
+      "x": 242,
+      "y": 561,
+      "anchor_px": [
+        12,
+        33
+      ],
+      "solid": true,
+      "sortY": 561,
+      "occlusion": "tall",
+      "scale": 1,
+      "flip_x": false,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 7,
+        "depth": 4,
+        "offset": [
+          0,
+          -2
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-11",
+      "prop": "pine",
+      "kind": "pine",
+      "x": 771,
+      "y": 65,
+      "anchor_px": [
+        12,
+        33
+      ],
+      "solid": true,
+      "sortY": 65,
+      "occlusion": "tall",
+      "scale": 1,
+      "flip_x": false,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 7,
+        "depth": 4,
+        "offset": [
+          0,
+          -2
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-12",
+      "prop": "rock",
+      "kind": "rock",
+      "x": 347,
+      "y": 138,
+      "anchor_px": [
+        9,
+        11
+      ],
+      "solid": true,
+      "sortY": 138,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": true,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 13,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-13",
+      "prop": "pine",
+      "kind": "pine",
+      "x": 777,
+      "y": 453,
+      "anchor_px": [
+        12,
+        33
+      ],
+      "solid": true,
+      "sortY": 453,
+      "occlusion": "tall",
+      "scale": 1,
+      "flip_x": true,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 7,
+        "depth": 4,
+        "offset": [
+          0,
+          -2
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-14",
+      "prop": "shrub",
+      "kind": "shrub",
+      "x": 98,
+      "y": 249,
+      "anchor_px": [
+        10,
+        12
+      ],
+      "solid": true,
+      "sortY": 249,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": true,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 14,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-15",
+      "prop": "pine",
+      "kind": "pine",
+      "x": 242,
+      "y": 117,
+      "anchor_px": [
+        12,
+        33
+      ],
+      "solid": true,
+      "sortY": 117,
+      "occlusion": "tall",
+      "scale": 1,
+      "flip_x": true,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 7,
+        "depth": 4,
+        "offset": [
+          0,
+          -2
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-16",
+      "prop": "rock",
+      "kind": "rock",
+      "x": 878,
+      "y": 174,
+      "anchor_px": [
+        9,
+        11
+      ],
+      "solid": true,
+      "sortY": 174,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": false,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 13,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    }
+  ],
+  "collision": {
+    "actorRadius": 7,
+    "ySquash": 0.9,
+    "solids": [],
+    "rects": [
+      [
+        336,
+        128,
+        16,
+        16
+      ],
+      [
+        656,
+        496,
+        16,
+        16
+      ]
+    ],
+    "rectCell": 16
+  },
+  "portals": [
+    {
+      "id": "exit-north",
+      "rect": [
+        416,
+        0,
+        160,
+        16
+      ],
+      "to": "jade-valley:from-bamboo-coast",
+      "activation": "intent",
+      "travelDirection": [
+        0,
+        -1
+      ],
+      "radius": 7,
+      "latch": true,
+      "requiresMovement": true,
+      "edge": "north",
+      "entranceByFrom": {
+        "jade-valley": "from-jade-valley"
+      }
+    },
+    {
+      "id": "exit-east",
+      "rect": [
+        1008,
+        256,
+        16,
+        192
+      ],
+      "to": "qinghe-valley:from-bamboo-coast",
+      "activation": "intent",
+      "travelDirection": [
+        1,
+        0
+      ],
+      "radius": 7,
+      "latch": true,
+      "requiresMovement": true,
+      "edge": "east",
+      "entranceByFrom": {
+        "qinghe-valley": "from-qinghe-valley"
+      }
+    },
+    {
+      "id": "exit-south",
+      "rect": [
+        416,
+        688,
+        160,
+        16
+      ],
+      "to": "desert-oasis:from-bamboo-coast",
+      "activation": "intent",
+      "travelDirection": [
+        0,
+        1
+      ],
+      "radius": 7,
+      "latch": true,
+      "requiresMovement": true,
+      "edge": "south",
+      "entranceByFrom": {
+        "desert-oasis": "from-desert-oasis"
+      }
+    }
+  ],
+  "spawns": [
+    {
+      "id": "arrival",
+      "x": 192,
+      "y": 352,
+      "facing": "east"
+    },
+    {
+      "id": "from-jade-valley",
+      "x": 494,
+      "y": 30,
+      "facing": "south"
+    },
+    {
+      "id": "from-qinghe-valley",
+      "x": 994,
+      "y": 350,
+      "facing": "west"
+    },
+    {
+      "id": "from-desert-oasis",
+      "x": 494,
+      "y": 674,
+      "facing": "north"
+    }
+  ],
+  "interactions": [],
+  "roads": [
+    {
+      "id": "pilgrim-road",
+      "material": "dirt_path",
+      "width": 40,
+      "polyline": [
+        [
+          -32,
+          352
+        ],
+        [
+          -27.8892,
+          351.5104
+        ],
+        [
+          -23.3532,
+          350.9115
+        ],
+        [
+          -18.4111,
+          350.2109
+        ],
+        [
+          -13.0816,
+          349.4161
+        ],
+        [
+          -7.3839,
+          348.5349
+        ],
+        [
+          -1.3368,
+          347.5746
+        ],
+        [
+          5.0407,
+          346.5429
+        ],
+        [
+          11.7297,
+          345.4475
+        ],
+        [
+          18.7112,
+          344.2958
+        ],
+        [
+          25.9662,
+          343.0955
+        ],
+        [
+          33.4758,
+          341.8541
+        ],
+        [
+          41.221,
+          340.5792
+        ],
+        [
+          49.183,
+          339.2785
+        ],
+        [
+          57.3426,
+          337.9594
+        ],
+        [
+          65.6811,
+          336.6295
+        ],
+        [
+          74.1794,
+          335.2965
+        ],
+        [
+          82.8185,
+          333.968
+        ],
+        [
+          91.5796,
+          332.6514
+        ],
+        [
+          100.4437,
+          331.3544
+        ],
+        [
+          109.3918,
+          330.0846
+        ],
+        [
+          118.405,
+          328.8495
+        ],
+        [
+          127.4643,
+          327.6568
+        ],
+        [
+          136.5507,
+          326.514
+        ],
+        [
+          145.6454,
+          325.4286
+        ],
+        [
+          154.7293,
+          324.4083
+        ],
+        [
+          163.7835,
+          323.4607
+        ],
+        [
+          172.7891,
+          322.5933
+        ],
+        [
+          181.7271,
+          321.8138
+        ],
+        [
+          190.5786,
+          321.1296
+        ],
+        [
+          199.3245,
+          320.5484
+        ],
+        [
+          207.946,
+          320.0777
+        ],
+        [
+          216.4241,
+          319.7252
+        ],
+        [
+          224.7398,
+          319.4984
+        ],
+        [
+          232.8742,
+          319.4049
+        ],
+        [
+          240.8083,
+          319.4523
+        ],
+        [
+          248.5232,
+          319.6481
+        ],
+        [
+          256,
+          320
+        ],
+        [
+          264.1992,
+          320.6287
+        ],
+        [
+          272.3157,
+          321.5325
+        ],
+        [
+          280.3546,
+          322.6927
+        ],
+        [
+          288.3215,
+          324.0907
+        ],
+        [
+          296.2215,
+          325.7078
+        ],
+        [
+          304.0601,
+          327.5252
+        ],
+        [
+          311.8426,
+          329.5242
+        ],
+        [
+          319.5744,
+          331.6862
+        ],
+        [
+          327.2607,
+          333.9925
+        ],
+        [
+          334.907,
+          336.4243
+        ],
+        [
+          342.5185,
+          338.963
+        ],
+        [
+          350.1007,
+          341.5898
+        ],
+        [
+          357.6588,
+          344.2861
+        ],
+        [
+          365.1982,
+          347.0331
+        ],
+        [
+          372.7243,
+          349.8122
+        ],
+        [
+          380.2423,
+          352.6046
+        ],
+        [
+          387.7577,
+          355.3917
+        ],
+        [
+          395.2757,
+          358.1548
+        ],
+        [
+          402.8018,
+          360.8751
+        ],
+        [
+          410.3412,
+          363.534
+        ],
+        [
+          417.8993,
+          366.1127
+        ],
+        [
+          425.4815,
+          368.5926
+        ],
+        [
+          433.093,
+          370.9549
+        ],
+        [
+          440.7393,
+          373.1811
+        ],
+        [
+          448.4256,
+          375.2522
+        ],
+        [
+          456.1574,
+          377.1498
+        ],
+        [
+          463.9399,
+          378.855
+        ],
+        [
+          471.7785,
+          380.3492
+        ],
+        [
+          479.6785,
+          381.6136
+        ],
+        [
+          487.6454,
+          382.6296
+        ],
+        [
+          495.6843,
+          383.3785
+        ],
+        [
+          503.8008,
+          383.8415
+        ],
+        [
+          512,
+          384
+        ],
+        [
+          519.3858,
+          383.8737
+        ],
+        [
+          526.8379,
+          383.5034
+        ],
+        [
+          534.3526,
+          382.9027
+        ],
+        [
+          541.926,
+          382.0845
+        ],
+        [
+          549.5543,
+          381.0624
+        ],
+        [
+          557.2339,
+          379.8494
+        ],
+        [
+          564.9608,
+          378.4589
+        ],
+        [
+          572.7313,
+          376.9042
+        ],
+        [
+          580.5416,
+          375.1985
+        ],
+        [
+          588.388,
+          373.355
+        ],
+        [
+          596.2665,
+          371.3871
+        ],
+        [
+          604.1735,
+          369.308
+        ],
+        [
+          612.1051,
+          367.131
+        ],
+        [
+          620.0576,
+          364.8694
+        ],
+        [
+          628.0271,
+          362.5363
+        ],
+        [
+          636.0099,
+          360.1451
+        ],
+        [
+          644.0021,
+          357.7091
+        ],
+        [
+          652.0001,
+          355.2415
+        ],
+        [
+          659.9999,
+          352.7556
+        ],
+        [
+          667.9979,
+          350.2646
+        ],
+        [
+          675.9901,
+          347.7818
+        ],
+        [
+          683.9729,
+          345.3205
+        ],
+        [
+          691.9424,
+          342.894
+        ],
+        [
+          699.8949,
+          340.5154
+        ],
+        [
+          707.8265,
+          338.1982
+        ],
+        [
+          715.7335,
+          335.9555
+        ],
+        [
+          723.612,
+          333.8006
+        ],
+        [
+          731.4584,
+          331.7467
+        ],
+        [
+          739.2687,
+          329.8073
+        ],
+        [
+          747.0392,
+          327.9954
+        ],
+        [
+          754.7661,
+          326.3244
+        ],
+        [
+          762.4457,
+          324.8076
+        ],
+        [
+          770.074,
+          323.4582
+        ],
+        [
+          777.6474,
+          322.2895
+        ],
+        [
+          785.1621,
+          321.3147
+        ],
+        [
+          792.6142,
+          320.5471
+        ],
+        [
+          800,
+          320
+        ],
+        [
+          808.3275,
+          319.6162
+        ],
+        [
+          816.8125,
+          319.4274
+        ],
+        [
+          825.4365,
+          319.423
+        ],
+        [
+          834.1807,
+          319.5922
+        ],
+        [
+          843.0264,
+          319.9243
+        ],
+        [
+          851.9549,
+          320.4087
+        ],
+        [
+          860.9475,
+          321.0347
+        ],
+        [
+          869.9856,
+          321.7916
+        ],
+        [
+          879.0503,
+          322.6687
+        ],
+        [
+          888.1231,
+          323.6553
+        ],
+        [
+          897.1852,
+          324.7407
+        ],
+        [
+          906.2179,
+          325.9144
+        ],
+        [
+          915.2025,
+          327.1654
+        ],
+        [
+          924.1203,
+          328.4833
+        ],
+        [
+          932.9527,
+          329.8573
+        ],
+        [
+          941.6808,
+          331.2766
+        ],
+        [
+          950.2861,
+          332.7307
+        ],
+        [
+          958.7498,
+          334.2089
+        ],
+        [
+          967.0532,
+          335.7004
+        ],
+        [
+          975.1777,
+          337.1945
+        ],
+        [
+          983.1044,
+          338.6807
+        ],
+        [
+          990.8148,
+          340.1481
+        ],
+        [
+          998.2901,
+          341.5862
+        ],
+        [
+          1005.5116,
+          342.9842
+        ],
+        [
+          1012.4607,
+          344.3315
+        ],
+        [
+          1019.1186,
+          345.6173
+        ],
+        [
+          1025.4666,
+          346.831
+        ],
+        [
+          1031.486,
+          347.9618
+        ],
+        [
+          1037.1581,
+          348.9992
+        ],
+        [
+          1042.4643,
+          349.9324
+        ],
+        [
+          1047.3858,
+          350.7507
+        ],
+        [
+          1051.9039,
+          351.4435
+        ],
+        [
+          1056,
+          352
+        ]
+      ]
+    }
+  ],
+  "camera": {
+    "bounds": [
+      0,
+      0,
+      1024,
+      704
+    ]
+  },
+  "art_source": "mixed",
+  "placeholder": false,
+  "qa": {
+    "status": "pass",
+    "report": "layout-qa.json",
+    "checks": {
+      "tiles_drawable": "pass",
+      "tile_collision": "pass",
+      "rect_union_equals_blocked": "pass",
+      "rects_disjoint": "pass",
+      "spawns_reachable": "pass",
+      "exits_reachable": "pass",
+      "arrivals_outside_triggers": "pass",
+      "interactions_reachable": "pass",
+      "enclosed_pockets": "pass",
+      "prop_variety": "pass",
+      "scatter_filled": "pass",
+      "hygiene_converged": "pass"
+    },
+    "reachability": {
+      "cell": 4,
+      "valid_cells": 42973,
+      "reachable_cells": 42967,
+      "reachable_fraction": 0.9999
+    }
+  },
+  "provenance": {
+    "tool": "layout_build",
+    "version": "0.4.0",
+    "params": {
+      "seed": 30422,
+      "rect_cell": 16,
+      "preview": true,
+      "strict_qc": true,
+      "hygiene": {
+        "demoted_vertices": 0,
+        "saddles_filled": 0,
+        "specks_removed": 0,
+        "passes": 1,
+        "converged": true
+      },
+      "tile_collision": {
+        "grass-dirt-path-wang81": {
+          "source": "manifest",
+          "stated": 324,
+          "derived": 0,
+          "conflicts": []
+        }
+      },
+      "scatter": [
+        {
+          "id": "regional-dressing",
+          "requested": 16,
+          "placed": 16,
+          "candidates": 321,
+          "looks": 6,
+          "same_look_neighbour_share": 0.0
+        }
+      ],
+      "navigation": {
+        "cell": 4,
+        "spawn_problems": [],
+        "unreachable_exits": [],
+        "no_arrival": [],
+        "unreachable_interactions": [],
+        "pockets": [],
+        "origin": "arrival",
+        "valid_cells": 42973,
+        "reachable_cells": 42967,
+        "reachable_fraction": 0.9999,
+        "thin_gaps": 0
+      }
+    },
+    "inputs": [
+      {
+        "path": "../specs/bamboo-coast.layout.json",
+        "sha256": "b0d2ac8a9c7049fcaf7c6432f1513dda97cb999f4fe8254f388b8e241450b027",
+        "bytes": 28970
+      },
+      {
+        "path": "../../../../../tilesets/generated-core-v1/grass-dirt-path-wang81.tileset.json",
+        "sha256": "80aabe6a828be8bd18482f1f47c75d0ef9897c9405a392eacfc1584d6b013f0d",
+        "bytes": 102840
+      },
+      {
+        "path": "../../../../../tilesets/generated-core-v1/grass-dirt-path-wang81.png",
+        "sha256": "254e7de19cfad3bb9552be766d4c65b1cb36fc2b542a8f612d21a3305c0918fc",
+        "bytes": 27305
+      },
+      {
+        "path": "../../../../../tilesets/generated-core-v1/autotile-qa.json",
+        "sha256": "37279e4339a0ef7246f41aad36ca9662ba645574a0b35a260b910131b8c2f1ac",
+        "bytes": 117079
+      }
+    ]
+  }
+}

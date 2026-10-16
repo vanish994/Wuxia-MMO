@@ -1,0 +1,177 @@
+{
+  "schema": "generate2dmap.tiled_export.v1",
+  "status": "pass",
+  "method": "TMJ and TSX written from the bundle, read back with the built-in reader (TSX via ElementTree) and re-rendered (tile layers, image layers, prop tile objects in draw order); the re-render must equal render_map(bundle) pixel for pixel (preview.png)",
+  "notProven": [
+    "Tiled GUI not verified: opening the map, wang/terrain brushes and the mixed blob wangset in the editor",
+    "Phaser or another engine rendering map.embedded.tmj the same way",
+    "runtime depth sorting by the sortY property (Tiled's own topdown order sorts by image bottom)"
+  ],
+  "checks": [
+    {
+      "id": "tsx_well_formed",
+      "status": "pass",
+      "value": [],
+      "threshold": []
+    },
+    {
+      "id": "rerender_map_tmj",
+      "status": "pass",
+      "value": 0,
+      "threshold": 0
+    },
+    {
+      "id": "rerender_map_embedded_tmj",
+      "status": "pass",
+      "value": 0,
+      "threshold": 0
+    }
+  ],
+  "inputs": [
+    {
+      "path": "../map-bundle.json",
+      "sha256": "2311f3c6ea1485869c999446a8a3079ddf15dab49709dd35608a98565390fcc0",
+      "bytes": 46437
+    },
+    {
+      "path": "../tilesets/corruption-grass-dirt-wang81/corruption-grass-dirt-wang81.tileset.json",
+      "sha256": "8370a2f7b15ba28cd5ba22421c0218a3f8ad1c54982c1af5b35ef4bb3fad651b",
+      "bytes": 197152
+    },
+    {
+      "path": "../tilesets/corruption-grass-dirt-wang81/corruption-grass-dirt-wang81.png",
+      "sha256": "c5063a64f2c6ffe417d56b3764822538dbf01e23c5c615a6bb367f0e215e7e7c",
+      "bytes": 26067
+    },
+    {
+      "path": "../terrain-vertices.json",
+      "sha256": "dd55b29283b4af9be21c6528509efad78358fe70ce716c68e43290c4b9b60baf",
+      "bytes": 7304
+    },
+    {
+      "path": "../props/pine.png",
+      "sha256": "f6d9de3c7e18415fa4233e58b4cc65847573ea601c3a2cd3738f46d9b4bf5fc3",
+      "bytes": 341
+    },
+    {
+      "path": "../props/blossom_tree.png",
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "bytes": 407
+    },
+    {
+      "path": "../props/bamboo.png",
+      "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
+      "bytes": 509
+    },
+    {
+      "path": "../props/shrub.png",
+      "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
+      "bytes": 198
+    },
+    {
+      "path": "../props/rock.png",
+      "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
+      "bytes": 188
+    },
+    {
+      "path": "../props/lantern.png",
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "bytes": 230
+    },
+    {
+      "path": "../props/signboard.png",
+      "sha256": "db4e50fb76441a57ff24f22c3cc852749cb0faf64c0ed744a068ece0b1bbea41",
+      "bytes": 223
+    },
+    {
+      "path": "../props/sect_gate.png",
+      "sha256": "1aeedb2ef856eec6fe1e5f8310ce4e1e368e05f60b6182f91cba3f86974c6a85",
+      "bytes": 479
+    },
+    {
+      "path": "../props/pagoda.png",
+      "sha256": "c4805330da4a46ae8195e0e50329bf47980748df8f7552fd576a7d5e04a1cb1d",
+      "bytes": 514
+    },
+    {
+      "path": "../props/bridge.png",
+      "sha256": "27e76b7d6bd364498b855920f61381c3f2f699394612fe509cb397c0c0ba864d",
+      "bytes": 300
+    }
+  ],
+  "outputs": [
+    {
+      "path": "corruption-grass-dirt-wang81.tsx",
+      "sha256": "237b7d181add77cec3778a71e03d90acb210675adb8e2c05a3aacfa610ba14f4",
+      "bytes": 152307
+    },
+    {
+      "path": "images/blossom_tree.png",
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "bytes": 407
+    },
+    {
+      "path": "images/corruption-grass-dirt-wang81.png",
+      "sha256": "c5063a64f2c6ffe417d56b3764822538dbf01e23c5c615a6bb367f0e215e7e7c",
+      "bytes": 26067
+    },
+    {
+      "path": "images/lantern.png",
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "bytes": 230
+    },
+    {
+      "path": "images/rock.png",
+      "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
+      "bytes": 188
+    },
+    {
+      "path": "map.embedded.tmj",
+      "sha256": "30a7fcfde02de8583268706812dc48c4b025f3a054a9b51535669cdfe1c92497",
+      "bytes": 590836
+    },
+    {
+      "path": "map.tmj",
+      "sha256": "e6219ddb1f3fef3f3e6dc4a991eaa223b795e75a664fdaf0a9f2ed8b5d04d3cf",
+      "bytes": 65200
+    },
+    {
+      "path": "preview.png",
+      "sha256": "6fd4b296fd3e1facab0318c7d14550ca94af425ed10bfced7eb6697e6f1d816a",
+      "bytes": 31022
+    },
+    {
+      "path": "props.tsx",
+      "sha256": "7e0faaa15b3717bcfd66d7cdb93f497a5f3ef308ed623482a4cba92da6d7a8b5",
+      "bytes": 1925
+    }
+  ],
+  "tool": {
+    "name": "export_tiled.py",
+    "version": "0.4.0"
+  },
+  "tiled": {
+    "format": "1.10",
+    "app": "1.11.0",
+    "tilesets": [
+      {
+        "file": "corruption-grass-dirt-wang81.tsx",
+        "name": "corruption-grass-dirt-wang81",
+        "firstgid": 1,
+        "tilecount": 324
+      },
+      {
+        "file": "props.tsx",
+        "name": "props",
+        "firstgid": 325,
+        "tilecount": 3
+      }
+    ],
+    "layers": [
+      "ground",
+      "props",
+      "collision",
+      "interactions"
+    ]
+  }
+}

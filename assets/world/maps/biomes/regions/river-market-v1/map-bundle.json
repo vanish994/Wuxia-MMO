@@ -1,0 +1,2131 @@
+{
+  "schema": "generate2dmap.map_bundle.v2",
+  "id": "river-market",
+  "tile_size": 32,
+  "world": {
+    "width": 1024,
+    "height": 704,
+    "unit": "px"
+  },
+  "terrain": {
+    "vertex_grid": "terrain-vertices.json",
+    "materials": [
+      "sand",
+      "water"
+    ],
+    "sha256": "97b07ae64f40c40c2df3178f1b9f7d9d152d01f32fd56a88388432dcf3061dcc"
+  },
+  "tilesets": [
+    {
+      "id": "sand-water-wang16",
+      "manifest": "tilesets/sand-water-wang16/sand-water-wang16.tileset.json",
+      "sha256": "1a2a9f23af9f0fceacf056052f47b57547fa8fec552728594386b324cc3fc61b"
+    }
+  ],
+  "layers": [
+    {
+      "name": "ground",
+      "kind": "tiles",
+      "tileset": "sand-water-wang16",
+      "data": [
+        [
+          16,
+          0,
+          48,
+          0,
+          16,
+          32,
+          48,
+          32,
+          0,
+          16,
+          32,
+          48,
+          32,
+          48,
+          32,
+          48,
+          16,
+          0,
+          16,
+          0,
+          16,
+          0,
+          32,
+          48,
+          0,
+          16,
+          48,
+          0,
+          16,
+          32,
+          0,
+          32
+        ],
+        [
+          48,
+          16,
+          0,
+          32,
+          48,
+          16,
+          0,
+          48,
+          32,
+          48,
+          0,
+          16,
+          48,
+          32,
+          48,
+          0,
+          32,
+          16,
+          32,
+          16,
+          48,
+          16,
+          48,
+          0,
+          16,
+          32,
+          0,
+          16,
+          48,
+          0,
+          48,
+          16
+        ],
+        [
+          0,
+          48,
+          16,
+          0,
+          16,
+          48,
+          16,
+          32,
+          16,
+          0,
+          48,
+          32,
+          16,
+          48,
+          32,
+          48,
+          0,
+          32,
+          48,
+          32,
+          0,
+          48,
+          32,
+          16,
+          32,
+          0,
+          32,
+          0,
+          16,
+          32,
+          0,
+          32
+        ],
+        [
+          32,
+          0,
+          32,
+          16,
+          0,
+          16,
+          32,
+          48,
+          32,
+          48,
+          16,
+          48,
+          0,
+          16,
+          48,
+          16,
+          48,
+          0,
+          16,
+          48,
+          16,
+          0,
+          48,
+          0,
+          16,
+          32,
+          16,
+          32,
+          48,
+          0,
+          16,
+          48
+        ],
+        [
+          0,
+          48,
+          0,
+          48,
+          16,
+          32,
+          16,
+          32,
+          16,
+          32,
+          48,
+          16,
+          48,
+          32,
+          0,
+          48,
+          0,
+          48,
+          32,
+          0,
+          32,
+          48,
+          0,
+          48,
+          0,
+          16,
+          48,
+          0,
+          32,
+          16,
+          0,
+          16
+        ],
+        [
+          48,
+          16,
+          48,
+          16,
+          0,
+          16,
+          32,
+          0,
+          48,
+          0,
+          16,
+          48,
+          0,
+          16,
+          32,
+          0,
+          16,
+          32,
+          0,
+          32,
+          0,
+          16,
+          32,
+          0,
+          32,
+          48,
+          32,
+          16,
+          48,
+          0,
+          16,
+          0
+        ],
+        [
+          0,
+          32,
+          16,
+          48,
+          16,
+          32,
+          0,
+          32,
+          0,
+          16,
+          32,
+          0,
+          48,
+          32,
+          48,
+          32,
+          48,
+          0,
+          1,
+          51,
+          35,
+          2,
+          48,
+          16,
+          48,
+          0,
+          16,
+          0,
+          16,
+          48,
+          0,
+          48
+        ],
+        [
+          16,
+          48,
+          32,
+          0,
+          48,
+          16,
+          32,
+          0,
+          32,
+          48,
+          0,
+          48,
+          0,
+          48,
+          32,
+          16,
+          17,
+          3,
+          23,
+          15,
+          31,
+          59,
+          3,
+          51,
+          2,
+          16,
+          32,
+          48,
+          0,
+          16,
+          32,
+          0
+        ],
+        [
+          32,
+          0,
+          48,
+          32,
+          0,
+          32,
+          16,
+          32,
+          0,
+          32,
+          48,
+          0,
+          16,
+          0,
+          48,
+          32,
+          53,
+          47,
+          63,
+          31,
+          15,
+          31,
+          47,
+          63,
+          11,
+          18,
+          48,
+          16,
+          48,
+          32,
+          48,
+          32
+        ],
+        [
+          0,
+          48,
+          16,
+          48,
+          32,
+          48,
+          32,
+          48,
+          16,
+          48,
+          16,
+          48,
+          32,
+          16,
+          0,
+          48,
+          5,
+          31,
+          47,
+          63,
+          31,
+          47,
+          63,
+          15,
+          63,
+          42,
+          32,
+          48,
+          16,
+          48,
+          0,
+          16
+        ],
+        [
+          16,
+          0,
+          48,
+          0,
+          16,
+          32,
+          48,
+          0,
+          32,
+          0,
+          48,
+          32,
+          16,
+          48,
+          32,
+          16,
+          53,
+          63,
+          15,
+          31,
+          47,
+          31,
+          47,
+          31,
+          15,
+          10,
+          48,
+          0,
+          32,
+          16,
+          32,
+          48
+        ],
+        [
+          32,
+          16,
+          0,
+          32,
+          0,
+          16,
+          0,
+          16,
+          48,
+          16,
+          0,
+          16,
+          32,
+          16,
+          48,
+          0,
+          4,
+          61,
+          63,
+          47,
+          31,
+          47,
+          63,
+          15,
+          14,
+          40,
+          0,
+          32,
+          0,
+          32,
+          0,
+          32
+        ],
+        [
+          48,
+          0,
+          16,
+          0,
+          32,
+          0,
+          16,
+          0,
+          16,
+          48,
+          16,
+          32,
+          48,
+          0,
+          16,
+          48,
+          0,
+          52,
+          60,
+          61,
+          47,
+          15,
+          31,
+          30,
+          8,
+          0,
+          16,
+          48,
+          16,
+          48,
+          16,
+          48
+        ],
+        [
+          0,
+          16,
+          32,
+          48,
+          0,
+          16,
+          32,
+          48,
+          32,
+          0,
+          32,
+          48,
+          0,
+          32,
+          48,
+          16,
+          32,
+          0,
+          48,
+          36,
+          44,
+          12,
+          60,
+          40,
+          16,
+          32,
+          48,
+          0,
+          32,
+          0,
+          32,
+          0
+        ],
+        [
+          32,
+          48,
+          0,
+          32,
+          48,
+          32,
+          48,
+          16,
+          0,
+          16,
+          48,
+          0,
+          16,
+          0,
+          16,
+          0,
+          48,
+          16,
+          32,
+          16,
+          48,
+          0,
+          16,
+          32,
+          48,
+          0,
+          16,
+          32,
+          48,
+          16,
+          48,
+          16
+        ],
+        [
+          48,
+          16,
+          32,
+          16,
+          32,
+          48,
+          32,
+          48,
+          32,
+          48,
+          16,
+          32,
+          0,
+          48,
+          0,
+          16,
+          32,
+          48,
+          0,
+          32,
+          0,
+          16,
+          32,
+          0,
+          16,
+          32,
+          48,
+          16,
+          0,
+          48,
+          32,
+          48
+        ],
+        [
+          0,
+          32,
+          0,
+          48,
+          16,
+          0,
+          48,
+          32,
+          16,
+          0,
+          32,
+          16,
+          32,
+          0,
+          16,
+          32,
+          16,
+          0,
+          32,
+          48,
+          16,
+          48,
+          16,
+          32,
+          0,
+          48,
+          32,
+          0,
+          48,
+          0,
+          48,
+          0
+        ],
+        [
+          16,
+          48,
+          16,
+          32,
+          48,
+          16,
+          0,
+          16,
+          32,
+          16,
+          48,
+          32,
+          48,
+          16,
+          32,
+          48,
+          32,
+          16,
+          0,
+          16,
+          0,
+          16,
+          0,
+          16,
+          32,
+          0,
+          16,
+          32,
+          0,
+          16,
+          32,
+          48
+        ],
+        [
+          32,
+          16,
+          0,
+          48,
+          16,
+          48,
+          16,
+          48,
+          0,
+          48,
+          16,
+          0,
+          16,
+          32,
+          48,
+          16,
+          48,
+          32,
+          16,
+          0,
+          16,
+          0,
+          32,
+          48,
+          0,
+          16,
+          48,
+          0,
+          32,
+          48,
+          16,
+          0
+        ],
+        [
+          16,
+          0,
+          48,
+          0,
+          48,
+          32,
+          48,
+          0,
+          16,
+          32,
+          0,
+          48,
+          0,
+          16,
+          0,
+          32,
+          0,
+          16,
+          32,
+          16,
+          0,
+          16,
+          0,
+          16,
+          32,
+          0,
+          16,
+          32,
+          16,
+          0,
+          32,
+          48
+        ],
+        [
+          32,
+          48,
+          32,
+          16,
+          32,
+          0,
+          16,
+          32,
+          48,
+          16,
+          32,
+          0,
+          48,
+          0,
+          48,
+          0,
+          48,
+          32,
+          0,
+          48,
+          16,
+          32,
+          16,
+          48,
+          16,
+          32,
+          48,
+          0,
+          32,
+          16,
+          48,
+          16
+        ],
+        [
+          48,
+          16,
+          48,
+          32,
+          16,
+          32,
+          48,
+          0,
+          16,
+          0,
+          16,
+          32,
+          0,
+          16,
+          0,
+          32,
+          0,
+          16,
+          32,
+          0,
+          32,
+          16,
+          32,
+          0,
+          32,
+          16,
+          0,
+          32,
+          48,
+          32,
+          0,
+          48
+        ]
+      ]
+    },
+    {
+      "name": "props",
+      "kind": "objects"
+    }
+  ],
+  "props": {
+    "pine": {
+      "label": "pine",
+      "display_name": "pine",
+      "image": "props/pine.png",
+      "sha256": "f6d9de3c7e18415fa4233e58b4cc65847573ea601c3a2cd3738f46d9b4bf5fc3",
+      "anchor_px": [
+        12,
+        33
+      ],
+      "footprint": {
+        "shape": "ellipse",
+        "width": 7,
+        "depth": 4,
+        "offset": [
+          0,
+          -2
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "solid": true,
+      "occlusion_class": "tall",
+      "status": "accepted",
+      "size": [
+        24,
+        34
+      ],
+      "origin": "pixelspec"
+    },
+    "blossom_tree": {
+      "label": "blossom_tree",
+      "display_name": "blossom_tree",
+      "image": "props/blossom_tree.png",
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "anchor_px": [
+        12,
+        33
+      ],
+      "footprint": {
+        "shape": "ellipse",
+        "width": 7,
+        "depth": 4,
+        "offset": [
+          0,
+          -2
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "solid": true,
+      "occlusion_class": "tall",
+      "status": "accepted",
+      "size": [
+        24,
+        34
+      ],
+      "origin": "pixelspec"
+    },
+    "bamboo": {
+      "label": "bamboo",
+      "display_name": "bamboo",
+      "image": "props/bamboo.png",
+      "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
+      "anchor_px": [
+        10,
+        47
+      ],
+      "footprint": {
+        "shape": "ellipse",
+        "width": 8,
+        "depth": 4,
+        "offset": [
+          0,
+          -2
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "solid": true,
+      "occlusion_class": "tall",
+      "status": "accepted",
+      "size": [
+        20,
+        50
+      ],
+      "origin": "pixelspec"
+    },
+    "shrub": {
+      "label": "shrub",
+      "display_name": "shrub",
+      "image": "props/shrub.png",
+      "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
+      "anchor_px": [
+        10,
+        12
+      ],
+      "footprint": {
+        "shape": "ellipse",
+        "width": 14,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "solid": true,
+      "occlusion_class": "low",
+      "status": "accepted",
+      "size": [
+        20,
+        15
+      ],
+      "origin": "pixelspec"
+    },
+    "rock": {
+      "label": "rock",
+      "display_name": "rock",
+      "image": "props/rock.png",
+      "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
+      "anchor_px": [
+        9,
+        11
+      ],
+      "footprint": {
+        "shape": "ellipse",
+        "width": 13,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "solid": true,
+      "occlusion_class": "low",
+      "status": "accepted",
+      "size": [
+        18,
+        14
+      ],
+      "origin": "pixelspec"
+    },
+    "lantern": {
+      "label": "lantern",
+      "display_name": "lantern",
+      "image": "props/lantern.png",
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "anchor_px": [
+        8,
+        29
+      ],
+      "footprint": {
+        "shape": "ellipse",
+        "width": 5,
+        "depth": 4,
+        "offset": [
+          0,
+          -2
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "solid": true,
+      "occlusion_class": "low",
+      "status": "accepted",
+      "size": [
+        16,
+        32
+      ],
+      "origin": "pixelspec"
+    },
+    "signboard": {
+      "label": "signboard",
+      "display_name": "signboard",
+      "image": "props/signboard.png",
+      "sha256": "db4e50fb76441a57ff24f22c3cc852749cb0faf64c0ed744a068ece0b1bbea41",
+      "anchor_px": [
+        12,
+        25
+      ],
+      "footprint": {
+        "shape": "rect",
+        "width": 6,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "solid": true,
+      "occlusion_class": "low",
+      "status": "accepted",
+      "size": [
+        24,
+        28
+      ],
+      "origin": "pixelspec"
+    },
+    "sect_gate": {
+      "label": "sect_gate",
+      "display_name": "sect_gate",
+      "image": "props/sect_gate.png",
+      "sha256": "1aeedb2ef856eec6fe1e5f8310ce4e1e368e05f60b6182f91cba3f86974c6a85",
+      "anchor_px": [
+        28,
+        45
+      ],
+      "footprint": {
+        "shape": "rect",
+        "width": 14,
+        "depth": 8,
+        "offset": [
+          0,
+          -4
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "solid": true,
+      "occlusion_class": "tall",
+      "status": "accepted",
+      "size": [
+        56,
+        46
+      ],
+      "origin": "pixelspec"
+    },
+    "pagoda": {
+      "label": "pagoda",
+      "display_name": "pagoda",
+      "image": "props/pagoda.png",
+      "sha256": "c4805330da4a46ae8195e0e50329bf47980748df8f7552fd576a7d5e04a1cb1d",
+      "anchor_px": [
+        24,
+        61
+      ],
+      "footprint": {
+        "shape": "rect",
+        "width": 18,
+        "depth": 12,
+        "offset": [
+          0,
+          -6
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "solid": true,
+      "occlusion_class": "tall",
+      "status": "accepted",
+      "size": [
+        48,
+        62
+      ],
+      "origin": "pixelspec"
+    },
+    "bridge": {
+      "label": "bridge",
+      "display_name": "bridge",
+      "image": "props/bridge.png",
+      "sha256": "27e76b7d6bd364498b855920f61381c3f2f699394612fe509cb397c0c0ba864d",
+      "anchor_px": [
+        32,
+        25
+      ],
+      "footprint": {
+        "shape": "none"
+      },
+      "solid": false,
+      "occlusion_class": "low",
+      "status": "accepted",
+      "size": [
+        64,
+        26
+      ],
+      "origin": "pixelspec"
+    }
+  },
+  "objects": [
+    {
+      "id": "river-market-landmark",
+      "prop": "signboard",
+      "kind": "signboard",
+      "x": 672,
+      "y": 256,
+      "anchor_px": [
+        12,
+        25
+      ],
+      "solid": true,
+      "sortY": 256,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": false,
+      "footprint": {
+        "shape": "rect",
+        "width": 6,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      }
+    },
+    {
+      "id": "regional-dressing-1",
+      "prop": "shrub",
+      "kind": "shrub",
+      "x": 330,
+      "y": 349,
+      "anchor_px": [
+        10,
+        12
+      ],
+      "solid": true,
+      "sortY": 349,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": true,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 14,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-2",
+      "prop": "bamboo",
+      "kind": "bamboo",
+      "x": 345,
+      "y": 444,
+      "anchor_px": [
+        10,
+        47
+      ],
+      "solid": true,
+      "sortY": 444,
+      "occlusion": "tall",
+      "scale": 1,
+      "flip_x": false,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 8,
+        "depth": 4,
+        "offset": [
+          0,
+          -2
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-3",
+      "prop": "shrub",
+      "kind": "shrub",
+      "x": 389,
+      "y": 291,
+      "anchor_px": [
+        10,
+        12
+      ],
+      "solid": true,
+      "sortY": 291,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": false,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 14,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-4",
+      "prop": "rock",
+      "kind": "rock",
+      "x": 195,
+      "y": 519,
+      "anchor_px": [
+        9,
+        11
+      ],
+      "solid": true,
+      "sortY": 519,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": true,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 13,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-5",
+      "prop": "bamboo",
+      "kind": "bamboo",
+      "x": 285,
+      "y": 406,
+      "anchor_px": [
+        10,
+        47
+      ],
+      "solid": true,
+      "sortY": 406,
+      "occlusion": "tall",
+      "scale": 1,
+      "flip_x": false,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 8,
+        "depth": 4,
+        "offset": [
+          0,
+          -2
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-6",
+      "prop": "shrub",
+      "kind": "shrub",
+      "x": 218,
+      "y": 432,
+      "anchor_px": [
+        10,
+        12
+      ],
+      "solid": true,
+      "sortY": 432,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": false,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 14,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-7",
+      "prop": "rock",
+      "kind": "rock",
+      "x": 493,
+      "y": 508,
+      "anchor_px": [
+        9,
+        11
+      ],
+      "solid": true,
+      "sortY": 508,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": false,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 13,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-8",
+      "prop": "shrub",
+      "kind": "shrub",
+      "x": 277,
+      "y": 435,
+      "anchor_px": [
+        10,
+        12
+      ],
+      "solid": true,
+      "sortY": 435,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": true,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 14,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-9",
+      "prop": "shrub",
+      "kind": "shrub",
+      "x": 102,
+      "y": 70,
+      "anchor_px": [
+        10,
+        12
+      ],
+      "solid": true,
+      "sortY": 70,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": false,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 14,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-10",
+      "prop": "shrub",
+      "kind": "shrub",
+      "x": 499,
+      "y": 157,
+      "anchor_px": [
+        10,
+        12
+      ],
+      "solid": true,
+      "sortY": 157,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": false,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 14,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-11",
+      "prop": "bamboo",
+      "kind": "bamboo",
+      "x": 342,
+      "y": 540,
+      "anchor_px": [
+        10,
+        47
+      ],
+      "solid": true,
+      "sortY": 540,
+      "occlusion": "tall",
+      "scale": 1,
+      "flip_x": false,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 8,
+        "depth": 4,
+        "offset": [
+          0,
+          -2
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-12",
+      "prop": "bamboo",
+      "kind": "bamboo",
+      "x": 479,
+      "y": 392,
+      "anchor_px": [
+        10,
+        47
+      ],
+      "solid": true,
+      "sortY": 392,
+      "occlusion": "tall",
+      "scale": 1,
+      "flip_x": false,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 8,
+        "depth": 4,
+        "offset": [
+          0,
+          -2
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-13",
+      "prop": "bamboo",
+      "kind": "bamboo",
+      "x": 65,
+      "y": 83,
+      "anchor_px": [
+        10,
+        47
+      ],
+      "solid": true,
+      "sortY": 83,
+      "occlusion": "tall",
+      "scale": 1,
+      "flip_x": false,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 8,
+        "depth": 4,
+        "offset": [
+          0,
+          -2
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-14",
+      "prop": "bamboo",
+      "kind": "bamboo",
+      "x": 415,
+      "y": 176,
+      "anchor_px": [
+        10,
+        47
+      ],
+      "solid": true,
+      "sortY": 176,
+      "occlusion": "tall",
+      "scale": 1,
+      "flip_x": false,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 8,
+        "depth": 4,
+        "offset": [
+          0,
+          -2
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-15",
+      "prop": "shrub",
+      "kind": "shrub",
+      "x": 489,
+      "y": 432,
+      "anchor_px": [
+        10,
+        12
+      ],
+      "solid": true,
+      "sortY": 432,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": true,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 14,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-16",
+      "prop": "bamboo",
+      "kind": "bamboo",
+      "x": 280,
+      "y": 532,
+      "anchor_px": [
+        10,
+        47
+      ],
+      "solid": true,
+      "sortY": 532,
+      "occlusion": "tall",
+      "scale": 1,
+      "flip_x": false,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 8,
+        "depth": 4,
+        "offset": [
+          0,
+          -2
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    }
+  ],
+  "collision": {
+    "actorRadius": 7,
+    "ySquash": 0.9,
+    "solids": [],
+    "rects": [
+      [
+        96,
+        64,
+        12,
+        4
+      ],
+      [
+        100,
+        68,
+        4,
+        4
+      ],
+      [
+        60,
+        80,
+        8,
+        4
+      ],
+      [
+        492,
+        152,
+        12,
+        4
+      ],
+      [
+        412,
+        172,
+        8,
+        4
+      ],
+      [
+        608,
+        204,
+        4,
+        196
+      ],
+      [
+        640,
+        204,
+        4,
+        228
+      ],
+      [
+        672,
+        204,
+        4,
+        228
+      ],
+      [
+        596,
+        208,
+        12,
+        192
+      ],
+      [
+        612,
+        208,
+        28,
+        192
+      ],
+      [
+        644,
+        208,
+        28,
+        224
+      ],
+      [
+        676,
+        208,
+        4,
+        224
+      ],
+      [
+        592,
+        212,
+        4,
+        188
+      ],
+      [
+        680,
+        212,
+        8,
+        220
+      ],
+      [
+        588,
+        232,
+        4,
+        168
+      ],
+      [
+        688,
+        232,
+        4,
+        200
+      ],
+      [
+        544,
+        236,
+        4,
+        132
+      ],
+      [
+        576,
+        236,
+        4,
+        164
+      ],
+      [
+        692,
+        236,
+        4,
+        196
+      ],
+      [
+        704,
+        236,
+        4,
+        196
+      ],
+      [
+        736,
+        236,
+        4,
+        196
+      ],
+      [
+        768,
+        236,
+        4,
+        164
+      ],
+      [
+        532,
+        240,
+        12,
+        128
+      ],
+      [
+        548,
+        240,
+        28,
+        128
+      ],
+      [
+        580,
+        240,
+        8,
+        160
+      ],
+      [
+        696,
+        240,
+        8,
+        192
+      ],
+      [
+        708,
+        240,
+        28,
+        192
+      ],
+      [
+        740,
+        240,
+        28,
+        160
+      ],
+      [
+        772,
+        240,
+        4,
+        160
+      ],
+      [
+        528,
+        244,
+        4,
+        120
+      ],
+      [
+        776,
+        244,
+        8,
+        152
+      ],
+      [
+        784,
+        264,
+        4,
+        112
+      ],
+      [
+        788,
+        268,
+        4,
+        104
+      ],
+      [
+        800,
+        268,
+        4,
+        100
+      ],
+      [
+        792,
+        272,
+        8,
+        96
+      ],
+      [
+        804,
+        272,
+        4,
+        96
+      ],
+      [
+        808,
+        276,
+        8,
+        88
+      ],
+      [
+        384,
+        288,
+        12,
+        4
+      ],
+      [
+        324,
+        344,
+        12,
+        4
+      ],
+      [
+        556,
+        368,
+        20,
+        8
+      ],
+      [
+        560,
+        376,
+        16,
+        20
+      ],
+      [
+        476,
+        388,
+        8,
+        4
+      ],
+      [
+        564,
+        396,
+        12,
+        4
+      ],
+      [
+        620,
+        400,
+        20,
+        8
+      ],
+      [
+        740,
+        400,
+        20,
+        4
+      ],
+      [
+        740,
+        404,
+        16,
+        4
+      ],
+      [
+        624,
+        408,
+        16,
+        20
+      ],
+      [
+        740,
+        408,
+        12,
+        20
+      ],
+      [
+        212,
+        428,
+        12,
+        4
+      ],
+      [
+        484,
+        428,
+        12,
+        4
+      ],
+      [
+        628,
+        428,
+        12,
+        4
+      ],
+      [
+        740,
+        428,
+        4,
+        4
+      ],
+      [
+        272,
+        432,
+        12,
+        4
+      ],
+      [
+        340,
+        440,
+        8,
+        4
+      ],
+      [
+        488,
+        504,
+        12,
+        4
+      ],
+      [
+        188,
+        516,
+        12,
+        4
+      ],
+      [
+        276,
+        528,
+        8,
+        4
+      ],
+      [
+        336,
+        536,
+        12,
+        4
+      ]
+    ],
+    "rectCell": 4
+  },
+  "portals": [
+    {
+      "id": "exit-north",
+      "rect": [
+        416,
+        0,
+        160,
+        16
+      ],
+      "to": "frost-pass:from-river-market",
+      "activation": "intent",
+      "travelDirection": [
+        0,
+        -1
+      ],
+      "radius": 7,
+      "latch": true,
+      "requiresMovement": true,
+      "edge": "north",
+      "entranceByFrom": {
+        "frost-pass": "from-frost-pass"
+      }
+    },
+    {
+      "id": "exit-east",
+      "rect": [
+        1008,
+        256,
+        16,
+        192
+      ],
+      "to": "reed-marsh:from-river-market",
+      "activation": "intent",
+      "travelDirection": [
+        1,
+        0
+      ],
+      "radius": 7,
+      "latch": true,
+      "requiresMovement": true,
+      "edge": "east",
+      "entranceByFrom": {
+        "reed-marsh": "from-reed-marsh"
+      }
+    },
+    {
+      "id": "exit-south",
+      "rect": [
+        416,
+        688,
+        160,
+        16
+      ],
+      "to": "pagoda-court:from-river-market",
+      "activation": "intent",
+      "travelDirection": [
+        0,
+        1
+      ],
+      "radius": 7,
+      "latch": true,
+      "requiresMovement": true,
+      "edge": "south",
+      "entranceByFrom": {
+        "pagoda-court": "from-pagoda-court"
+      }
+    },
+    {
+      "id": "exit-west",
+      "rect": [
+        0,
+        256,
+        16,
+        192
+      ],
+      "to": "qinghe-valley:from-river-market",
+      "activation": "intent",
+      "travelDirection": [
+        -1,
+        0
+      ],
+      "radius": 7,
+      "latch": true,
+      "requiresMovement": true,
+      "edge": "west",
+      "entranceByFrom": {
+        "qinghe-valley": "from-qinghe-valley"
+      }
+    }
+  ],
+  "spawns": [
+    {
+      "id": "arrival",
+      "x": 192,
+      "y": 352,
+      "facing": "east"
+    },
+    {
+      "id": "from-frost-pass",
+      "x": 494,
+      "y": 30,
+      "facing": "south"
+    },
+    {
+      "id": "from-reed-marsh",
+      "x": 994,
+      "y": 350,
+      "facing": "west"
+    },
+    {
+      "id": "from-pagoda-court",
+      "x": 494,
+      "y": 674,
+      "facing": "north"
+    },
+    {
+      "id": "from-qinghe-valley",
+      "x": 30,
+      "y": 350,
+      "facing": "east"
+    }
+  ],
+  "interactions": [],
+  "roads": [],
+  "camera": {
+    "bounds": [
+      0,
+      0,
+      1024,
+      704
+    ]
+  },
+  "art_source": "mixed",
+  "placeholder": false,
+  "qa": {
+    "status": "pass",
+    "report": "layout-qa.json",
+    "checks": {
+      "tiles_drawable": "pass",
+      "tile_collision": "pass",
+      "rect_union_equals_blocked": "pass",
+      "rects_disjoint": "pass",
+      "spawns_reachable": "pass",
+      "exits_reachable": "pass",
+      "arrivals_outside_triggers": "pass",
+      "interactions_reachable": "pass",
+      "enclosed_pockets": "pass",
+      "prop_variety": "pass",
+      "scatter_filled": "pass",
+      "hygiene_converged": "pass"
+    },
+    "reachability": {
+      "cell": 4,
+      "valid_cells": 39400,
+      "reachable_cells": 39394,
+      "reachable_fraction": 0.9998
+    }
+  },
+  "provenance": {
+    "tool": "layout_build",
+    "version": "0.4.0",
+    "params": {
+      "seed": 30424,
+      "rect_cell": 4,
+      "preview": true,
+      "strict_qc": true,
+      "hygiene": {
+        "demoted_vertices": 0,
+        "saddles_filled": 0,
+        "specks_removed": 0,
+        "passes": 1,
+        "converged": true
+      },
+      "tile_collision": {
+        "sand-water-wang16": {
+          "source": "manifest",
+          "stated": 64,
+          "derived": 0,
+          "conflicts": []
+        }
+      },
+      "scatter": [
+        {
+          "id": "regional-dressing",
+          "requested": 16,
+          "placed": 16,
+          "candidates": 294,
+          "looks": 5,
+          "same_look_neighbour_share": 0.0
+        }
+      ],
+      "navigation": {
+        "cell": 4,
+        "spawn_problems": [],
+        "unreachable_exits": [],
+        "no_arrival": [],
+        "unreachable_interactions": [],
+        "pockets": [],
+        "origin": "arrival",
+        "valid_cells": 39400,
+        "reachable_cells": 39394,
+        "reachable_fraction": 0.9998,
+        "thin_gaps": 0
+      }
+    },
+    "inputs": [
+      {
+        "path": "../specs/river-market.layout.json",
+        "sha256": "5179b76d36ee4a07f19ee80b8a06514a9eac51f0d937d96c249c16c14939bfc4",
+        "bytes": 28566
+      },
+      {
+        "path": "../../../../../tilesets/generated-core-v1/sand-water-wang16.tileset.json",
+        "sha256": "a64a34e5eed8a625f3a889f2a970c14bd7ab7319d67db0b381a1093eb59fb14a",
+        "bytes": 41212
+      },
+      {
+        "path": "../../../../../tilesets/generated-core-v1/sand-water-wang16.png",
+        "sha256": "e8b645e2ecfd65c48bb796e8df4d4a2a6e2c63588c4da8e4a1ddecfe273d71de",
+        "bytes": 4893
+      },
+      {
+        "path": "../../../../../tilesets/generated-core-v1/autotile-qa.json",
+        "sha256": "37279e4339a0ef7246f41aad36ca9662ba645574a0b35a260b910131b8c2f1ac",
+        "bytes": 117079
+      }
+    ]
+  }
+}

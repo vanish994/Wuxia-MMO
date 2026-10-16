@@ -1,0 +1,537 @@
+{
+  "schema": "generate2dmap.nav_report.v1",
+  "status": "warn",
+  "method": "plan Appendix C validity (centre + 8 footprint samples against walk regions, solids, object footprints scaled once, tile collision and material classes) on a grid of cell max(1, round(r/2)) px; 4-neighbour moves open when segmentClear holds between node centres (samples every cell/2, plus the exact thin-gap centre path and one_way direction); BFS from every spawn and portal arrival to every interaction, exit, anchor slot and approach point",
+  "notProven": [
+    "that the collision data matches the painted art",
+    "positions closer than one grid cell to a blocker (the grid samples cell centres)",
+    "runtime movement code: map-runtime.mjs parity is tested during integration",
+    "links to maps not passed with --link"
+  ],
+  "checks": [
+    {
+      "id": "starts_valid",
+      "status": "pass",
+      "value": {
+        "starts": 3,
+        "blocked": []
+      },
+      "threshold": {
+        "blocked": 0
+      }
+    },
+    {
+      "id": "targets_reachable",
+      "status": "pass",
+      "value": {
+        "reachable": 2,
+        "total": 2,
+        "unreachable": []
+      },
+      "threshold": {
+        "unreachable": 0
+      }
+    },
+    {
+      "id": "portals_inside_world",
+      "status": "pass",
+      "value": {
+        "outside": []
+      },
+      "threshold": {
+        "outside": 0
+      }
+    },
+    {
+      "id": "arrivals_outside_triggers",
+      "status": "pass",
+      "value": {
+        "problems": 0
+      },
+      "threshold": {
+        "problems": 0
+      }
+    },
+    {
+      "id": "reciprocal_links",
+      "status": "pass",
+      "value": {
+        "links": [
+          {
+            "portal": "exit-east",
+            "to": "jade-mountain",
+            "arrival": [
+              30.0,
+              350.0
+            ],
+            "returnPortals": [
+              "exit-west"
+            ],
+            "status": "pass"
+          },
+          {
+            "portal": "exit-south",
+            "to": "bamboo-coast",
+            "arrival": [
+              494.0,
+              30.0
+            ],
+            "returnPortals": [
+              "exit-north"
+            ],
+            "status": "pass"
+          }
+        ],
+        "notChecked": []
+      },
+      "threshold": {
+        "errors": 0
+      }
+    },
+    {
+      "id": "thin_gaps",
+      "status": "pass",
+      "value": 0,
+      "threshold": "reported: moves the thin-gap rule closed although every footprint sample was valid"
+    },
+    {
+      "id": "unreachable_walkable_area",
+      "status": "warn",
+      "value": {
+        "pockets": 10,
+        "cells": 12
+      },
+      "threshold": "reported"
+    },
+    {
+      "id": "blocked_rects_union",
+      "status": "pass",
+      "value": {
+        "rects": 90,
+        "blockedCells": 2051
+      },
+      "threshold": "union == blocked cells"
+    },
+    {
+      "id": "footprints_scaled_once",
+      "status": "pass",
+      "value": {
+        "objectSolids": 16
+      },
+      "threshold": "object footprint x scale, never inflated by the actor radius"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "../../map-bundle.json",
+      "sha256": "9ca975cec671b24b631d27cef11dc348bb8d222ada95bc77d691852a750099fa",
+      "bytes": 42326
+    },
+    {
+      "path": "../../tilesets/grass-dirt-wang16/grass-dirt-wang16.tileset.json",
+      "sha256": "ac3620276d45e084d9b7ea4cd62ed1d37273f50c1c7747691526a5f40c3119a9",
+      "bytes": 21243
+    },
+    {
+      "path": "../../tilesets/grass-dirt-wang16/grass-dirt-wang16.png",
+      "sha256": "d876ab1ec50b3cc695555876e455cbfddb5c6cbecf493ca443fdc90fd7859b39",
+      "bytes": 4301
+    },
+    {
+      "path": "../../terrain-vertices.json",
+      "sha256": "2aab509aeaf9b7dd3e3dc0322f9c5408ff0d58f826585b64beaad72c675a416f",
+      "bytes": 7286
+    },
+    {
+      "path": "../../props/pine.png",
+      "sha256": "f6d9de3c7e18415fa4233e58b4cc65847573ea601c3a2cd3738f46d9b4bf5fc3",
+      "bytes": 341
+    },
+    {
+      "path": "../../props/blossom_tree.png",
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "bytes": 407
+    },
+    {
+      "path": "../../props/bamboo.png",
+      "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
+      "bytes": 509
+    },
+    {
+      "path": "../../props/shrub.png",
+      "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
+      "bytes": 198
+    },
+    {
+      "path": "../../props/rock.png",
+      "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
+      "bytes": 188
+    },
+    {
+      "path": "../../props/lantern.png",
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "bytes": 230
+    },
+    {
+      "path": "../../props/signboard.png",
+      "sha256": "db4e50fb76441a57ff24f22c3cc852749cb0faf64c0ed744a068ece0b1bbea41",
+      "bytes": 223
+    },
+    {
+      "path": "../../props/sect_gate.png",
+      "sha256": "1aeedb2ef856eec6fe1e5f8310ce4e1e368e05f60b6182f91cba3f86974c6a85",
+      "bytes": 479
+    },
+    {
+      "path": "../../props/pagoda.png",
+      "sha256": "c4805330da4a46ae8195e0e50329bf47980748df8f7552fd576a7d5e04a1cb1d",
+      "bytes": 514
+    },
+    {
+      "path": "../../props/bridge.png",
+      "sha256": "27e76b7d6bd364498b855920f61381c3f2f699394612fe509cb397c0c0ba864d",
+      "bytes": 300
+    },
+    {
+      "path": "../../../jade-mountain-v1/map-bundle.json",
+      "sha256": "a1a63bc24e34f82fdd6f51d51550b26a405af4344c9cd106a82b01539c25dbf2",
+      "bytes": 43307
+    },
+    {
+      "path": "../../../jade-mountain-v1/tilesets/snow-grass-wang16/snow-grass-wang16.tileset.json",
+      "sha256": "7547ea558b30819501333713e78c7658afd93e5508e84174ae2530dad75431f4",
+      "bytes": 21243
+    },
+    {
+      "path": "../../../jade-mountain-v1/tilesets/snow-grass-wang16/snow-grass-wang16.png",
+      "sha256": "cf7223c131440c477f4d09b0b6f9d8af8698e60a69129d386fcde718e4b3d878",
+      "bytes": 4035
+    },
+    {
+      "path": "../../../jade-mountain-v1/terrain-vertices.json",
+      "sha256": "25a71a17e602d666f98546bb1fa15020e8cc4f61f4638114ab9b71faabe966e6",
+      "bytes": 7286
+    },
+    {
+      "path": "../../../jade-mountain-v1/props/pine.png",
+      "sha256": "f6d9de3c7e18415fa4233e58b4cc65847573ea601c3a2cd3738f46d9b4bf5fc3",
+      "bytes": 341
+    },
+    {
+      "path": "../../../jade-mountain-v1/props/blossom_tree.png",
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "bytes": 407
+    },
+    {
+      "path": "../../../jade-mountain-v1/props/bamboo.png",
+      "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
+      "bytes": 509
+    },
+    {
+      "path": "../../../jade-mountain-v1/props/shrub.png",
+      "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
+      "bytes": 198
+    },
+    {
+      "path": "../../../jade-mountain-v1/props/rock.png",
+      "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
+      "bytes": 188
+    },
+    {
+      "path": "../../../jade-mountain-v1/props/lantern.png",
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "bytes": 230
+    },
+    {
+      "path": "../../../jade-mountain-v1/props/signboard.png",
+      "sha256": "db4e50fb76441a57ff24f22c3cc852749cb0faf64c0ed744a068ece0b1bbea41",
+      "bytes": 223
+    },
+    {
+      "path": "../../../jade-mountain-v1/props/sect_gate.png",
+      "sha256": "1aeedb2ef856eec6fe1e5f8310ce4e1e368e05f60b6182f91cba3f86974c6a85",
+      "bytes": 479
+    },
+    {
+      "path": "../../../jade-mountain-v1/props/pagoda.png",
+      "sha256": "c4805330da4a46ae8195e0e50329bf47980748df8f7552fd576a7d5e04a1cb1d",
+      "bytes": 514
+    },
+    {
+      "path": "../../../jade-mountain-v1/props/bridge.png",
+      "sha256": "27e76b7d6bd364498b855920f61381c3f2f699394612fe509cb397c0c0ba864d",
+      "bytes": 300
+    },
+    {
+      "path": "../../../bamboo-coast-v1/map-bundle.json",
+      "sha256": "49c027932fdd434c5a167410448db35660218d6102c3249310fdffca357018cd",
+      "bytes": 39054
+    },
+    {
+      "path": "../../../bamboo-coast-v1/tilesets/grass-dirt-path-wang81/grass-dirt-path-wang81.tileset.json",
+      "sha256": "c58edbeffe42d22fa0884406fac5a3b17a65930bb1e3e564a777670122ed63b0",
+      "bytes": 102691
+    },
+    {
+      "path": "../../../bamboo-coast-v1/tilesets/grass-dirt-path-wang81/grass-dirt-path-wang81.png",
+      "sha256": "254e7de19cfad3bb9552be766d4c65b1cb36fc2b542a8f612d21a3305c0918fc",
+      "bytes": 27305
+    },
+    {
+      "path": "../../../bamboo-coast-v1/terrain-vertices.json",
+      "sha256": "0b8724104b6ac14a869754b6940b6949f0c18729bcf9e93e26750345816928d1",
+      "bytes": 7303
+    },
+    {
+      "path": "../../../bamboo-coast-v1/props/pine.png",
+      "sha256": "f6d9de3c7e18415fa4233e58b4cc65847573ea601c3a2cd3738f46d9b4bf5fc3",
+      "bytes": 341
+    },
+    {
+      "path": "../../../bamboo-coast-v1/props/blossom_tree.png",
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "bytes": 407
+    },
+    {
+      "path": "../../../bamboo-coast-v1/props/bamboo.png",
+      "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
+      "bytes": 509
+    },
+    {
+      "path": "../../../bamboo-coast-v1/props/shrub.png",
+      "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
+      "bytes": 198
+    },
+    {
+      "path": "../../../bamboo-coast-v1/props/rock.png",
+      "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
+      "bytes": 188
+    },
+    {
+      "path": "../../../bamboo-coast-v1/props/lantern.png",
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "bytes": 230
+    },
+    {
+      "path": "../../../bamboo-coast-v1/props/signboard.png",
+      "sha256": "db4e50fb76441a57ff24f22c3cc852749cb0faf64c0ed744a068ece0b1bbea41",
+      "bytes": 223
+    },
+    {
+      "path": "../../../bamboo-coast-v1/props/sect_gate.png",
+      "sha256": "1aeedb2ef856eec6fe1e5f8310ce4e1e368e05f60b6182f91cba3f86974c6a85",
+      "bytes": 479
+    },
+    {
+      "path": "../../../bamboo-coast-v1/props/pagoda.png",
+      "sha256": "c4805330da4a46ae8195e0e50329bf47980748df8f7552fd576a7d5e04a1cb1d",
+      "bytes": 514
+    },
+    {
+      "path": "../../../bamboo-coast-v1/props/bridge.png",
+      "sha256": "27e76b7d6bd364498b855920f61381c3f2f699394612fe509cb397c0c0ba864d",
+      "bytes": 300
+    }
+  ],
+  "outputs": [
+    {
+      "path": "nav-grid.json",
+      "sha256": "66d15a1ffea3a8098138b8871f3a5ddf5566451472ae87b2fca5508f10c689b7",
+      "bytes": 98806
+    },
+    {
+      "path": "nav-debug.png",
+      "sha256": "fd2e38c9adb236a9ea607184dcb372defa18e454b61ef27691885803bbd7e2a3",
+      "bytes": 40002
+    }
+  ],
+  "tool": {
+    "name": "map_nav.py",
+    "version": "0.4.0"
+  },
+  "map": "jade-valley",
+  "cell": 4,
+  "starts": [
+    {
+      "kind": "spawn",
+      "id": "arrival",
+      "point": [
+        192.0,
+        352.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        190.0,
+        350.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "spawn",
+      "id": "from-jade-mountain",
+      "point": [
+        994.0,
+        350.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        994.0,
+        350.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "spawn",
+      "id": "from-bamboo-coast",
+      "point": [
+        494.0,
+        674.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        494.0,
+        674.0
+      ],
+      "reason": null
+    }
+  ],
+  "targets": [
+    {
+      "kind": "exit",
+      "id": "exit-east",
+      "point": [
+        1016.0,
+        352.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        1002.0,
+        342.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "exit",
+      "id": "exit-south",
+      "point": [
+        496.0,
+        696.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        486.0,
+        682.0
+      ],
+      "reason": null
+    }
+  ],
+  "links": [
+    {
+      "portal": "exit-east",
+      "to": "jade-mountain",
+      "arrival": [
+        30.0,
+        350.0
+      ],
+      "returnPortals": [
+        "exit-west"
+      ],
+      "status": "pass"
+    },
+    {
+      "portal": "exit-south",
+      "to": "bamboo-coast",
+      "arrival": [
+        494.0,
+        30.0
+      ],
+      "returnPortals": [
+        "exit-north"
+      ],
+      "status": "pass"
+    }
+  ],
+  "thinGaps": [],
+  "unreachablePockets": [
+    {
+      "cells": 2,
+      "at": [
+        198.0,
+        130.0
+      ]
+    },
+    {
+      "cells": 2,
+      "at": [
+        174.0,
+        482.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        678.0,
+        58.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        678.0,
+        66.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        918.0,
+        154.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        918.0,
+        162.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        754.0,
+        210.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        754.0,
+        218.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        174.0,
+        442.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        86.0,
+        514.0
+      ]
+    }
+  ],
+  "bundleNav": {
+    "cell": 4,
+    "grid": "nav-grid.json"
+  },
+  "problems": []
+}

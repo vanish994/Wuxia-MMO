@@ -1,0 +1,242 @@
+{
+  "schema": "generate2dmap.tiled_export.v1",
+  "status": "pass",
+  "method": "TMJ and TSX written from the bundle, read back with the built-in reader (TSX via ElementTree) and re-rendered (tile layers, image layers, prop tile objects in draw order); the re-render must equal render_map(bundle) pixel for pixel (preview.png)",
+  "notProven": [
+    "Tiled GUI not verified: opening the map, wang/terrain brushes and the mixed blob wangset in the editor",
+    "Phaser or another engine rendering map.embedded.tmj the same way",
+    "runtime depth sorting by the sortY property (Tiled's own topdown order sorts by image bottom)"
+  ],
+  "checks": [
+    {
+      "id": "tsx_well_formed",
+      "status": "pass",
+      "value": [],
+      "threshold": []
+    },
+    {
+      "id": "rerender_map_tmj",
+      "status": "pass",
+      "value": 0,
+      "threshold": 0
+    },
+    {
+      "id": "rerender_map_embedded_tmj",
+      "status": "pass",
+      "value": 0,
+      "threshold": 0
+    }
+  ],
+  "inputs": [
+    {
+      "path": "../map-bundle.json",
+      "sha256": "4b8ca47d96eb40085bfaaf72b4a0171aaf7796a285c94b46cac218b0f82e53f5",
+      "bytes": 81627
+    },
+    {
+      "path": "../tilesets/grass-path-water-wang81/grass-path-water-wang81.tileset.json",
+      "sha256": "1525e3662e83f1ee8abb180634d7d6ec4d1246693db9660f2ec8ba9a6ffe1678",
+      "bytes": 188839
+    },
+    {
+      "path": "../tilesets/grass-path-water-wang81/grass-path-water-wang81.png",
+      "sha256": "ef505070499c897e246219527bbba3d094534fe18d21db062dcdeea46ed6065f",
+      "bytes": 32480
+    },
+    {
+      "path": "../terrain-vertices.json",
+      "sha256": "f696be67f8a2a1d3890612cd8084bcd9bf606425130a1d3ab6e8daeda951e1ec",
+      "bytes": 10103
+    },
+    {
+      "path": "../props/grass.png",
+      "sha256": "2a7065ffd49a92c05eba761496e5089fc6e4db78b9b62b96ceb1045c2b36add4",
+      "bytes": 153
+    },
+    {
+      "path": "../props/dirt_path.png",
+      "sha256": "b5ce47c08c5a1e45964fc32e6ef3ad6c5d381be9e6fd99e0b58841f4e64483c2",
+      "bytes": 153
+    },
+    {
+      "path": "../props/water.png",
+      "sha256": "cba3c113c40bbb9c2759d88834c8391b2c106790b9edf776b80968755e70a013",
+      "bytes": 153
+    },
+    {
+      "path": "../props/sect_gate.png",
+      "sha256": "1aeedb2ef856eec6fe1e5f8310ce4e1e368e05f60b6182f91cba3f86974c6a85",
+      "bytes": 479
+    },
+    {
+      "path": "../props/bridge.png",
+      "sha256": "27e76b7d6bd364498b855920f61381c3f2f699394612fe509cb397c0c0ba864d",
+      "bytes": 300
+    },
+    {
+      "path": "../props/pagoda.png",
+      "sha256": "c4805330da4a46ae8195e0e50329bf47980748df8f7552fd576a7d5e04a1cb1d",
+      "bytes": 514
+    },
+    {
+      "path": "../props/hall.png",
+      "sha256": "4aef0fea09ae9043289bc7301d524494566c9c84f2e9cc2161c6873a341fe16d",
+      "bytes": 500
+    },
+    {
+      "path": "../props/teahouse.png",
+      "sha256": "ed1534bb5510edc2c9fa21f64af5d2926c8c6ffb2d2020c4c5d7fae4b441b03d",
+      "bytes": 432
+    },
+    {
+      "path": "../props/pine.png",
+      "sha256": "f6d9de3c7e18415fa4233e58b4cc65847573ea601c3a2cd3738f46d9b4bf5fc3",
+      "bytes": 341
+    },
+    {
+      "path": "../props/blossom_tree.png",
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "bytes": 407
+    },
+    {
+      "path": "../props/bamboo.png",
+      "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
+      "bytes": 509
+    },
+    {
+      "path": "../props/lantern.png",
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "bytes": 230
+    },
+    {
+      "path": "../props/rock.png",
+      "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
+      "bytes": 188
+    },
+    {
+      "path": "../props/shrub.png",
+      "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
+      "bytes": 198
+    },
+    {
+      "path": "../props/signboard.png",
+      "sha256": "db4e50fb76441a57ff24f22c3cc852749cb0faf64c0ed744a068ece0b1bbea41",
+      "bytes": 223
+    }
+  ],
+  "outputs": [
+    {
+      "path": "grass-path-water-wang81.tsx",
+      "sha256": "36b6816e339d032cb1e5381fe7e8f2b836e71b34a7dab9c584a445d2ec55e67a",
+      "bytes": 147592
+    },
+    {
+      "path": "images/bamboo.png",
+      "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
+      "bytes": 509
+    },
+    {
+      "path": "images/blossom_tree.png",
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "bytes": 407
+    },
+    {
+      "path": "images/bridge.png",
+      "sha256": "27e76b7d6bd364498b855920f61381c3f2f699394612fe509cb397c0c0ba864d",
+      "bytes": 300
+    },
+    {
+      "path": "images/grass-path-water-wang81.png",
+      "sha256": "ef505070499c897e246219527bbba3d094534fe18d21db062dcdeea46ed6065f",
+      "bytes": 32480
+    },
+    {
+      "path": "images/hall.png",
+      "sha256": "4aef0fea09ae9043289bc7301d524494566c9c84f2e9cc2161c6873a341fe16d",
+      "bytes": 500
+    },
+    {
+      "path": "images/lantern.png",
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "bytes": 230
+    },
+    {
+      "path": "images/pagoda.png",
+      "sha256": "c4805330da4a46ae8195e0e50329bf47980748df8f7552fd576a7d5e04a1cb1d",
+      "bytes": 514
+    },
+    {
+      "path": "images/rock.png",
+      "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
+      "bytes": 188
+    },
+    {
+      "path": "images/sect_gate.png",
+      "sha256": "1aeedb2ef856eec6fe1e5f8310ce4e1e368e05f60b6182f91cba3f86974c6a85",
+      "bytes": 479
+    },
+    {
+      "path": "images/shrub.png",
+      "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
+      "bytes": 198
+    },
+    {
+      "path": "images/signboard.png",
+      "sha256": "db4e50fb76441a57ff24f22c3cc852749cb0faf64c0ed744a068ece0b1bbea41",
+      "bytes": 223
+    },
+    {
+      "path": "images/teahouse.png",
+      "sha256": "ed1534bb5510edc2c9fa21f64af5d2926c8c6ffb2d2020c4c5d7fae4b441b03d",
+      "bytes": 432
+    },
+    {
+      "path": "map.embedded.tmj",
+      "sha256": "3b705cd77ce98e44ff84997cc70eafaf2cbaca611e0091318d5dde4f74c183b5",
+      "bytes": 682710
+    },
+    {
+      "path": "map.tmj",
+      "sha256": "b63f25d5c3ce226f350acc24be6e91918e8ff44fb5f7d052ce39c3ec536b2a79",
+      "bytes": 166037
+    },
+    {
+      "path": "preview.png",
+      "sha256": "aa84e977bd3148e1a5a38065b5d573d5a11c0562bc6b15d034fc1419566b8cfc",
+      "bytes": 58839
+    },
+    {
+      "path": "props.tsx",
+      "sha256": "3b26bd67503644af51ab91cfde19d23ac1b153f5c346b55833daa46a70e79fd9",
+      "bytes": 6070
+    }
+  ],
+  "tool": {
+    "name": "export_tiled.py",
+    "version": "0.4.0"
+  },
+  "tiled": {
+    "format": "1.10",
+    "app": "1.11.0",
+    "tilesets": [
+      {
+        "file": "grass-path-water-wang81.tsx",
+        "name": "grass-path-water-wang81",
+        "firstgid": 1,
+        "tilecount": 324
+      },
+      {
+        "file": "props.tsx",
+        "name": "props",
+        "firstgid": 325,
+        "tilecount": 11
+      }
+    ],
+    "layers": [
+      "ground",
+      "props",
+      "collision",
+      "interactions"
+    ]
+  }
+}

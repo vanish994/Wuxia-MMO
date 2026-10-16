@@ -1,0 +1,3433 @@
+{
+  "compressionlevel": -1,
+  "height": 22,
+  "infinite": false,
+  "layers": [
+    {
+      "data": [
+        162,
+        324,
+        243,
+        324,
+        243,
+        324,
+        243,
+        324,
+        81,
+        162,
+        324,
+        81,
+        324,
+        162,
+        243,
+        152,
+        51,
+        81,
+        324,
+        81,
+        162,
+        324,
+        81,
+        324,
+        81,
+        162,
+        324,
+        243,
+        162,
+        243,
+        324,
+        243,
+        81,
+        162,
+        324,
+        162,
+        324,
+        243,
+        324,
+        162,
+        243,
+        324,
+        243,
+        162,
+        243,
+        81,
+        162,
+        233,
+        213,
+        324,
+        81,
+        162,
+        243,
+        81,
+        162,
+        81,
+        162,
+        243,
+        81,
+        162,
+        243,
+        324,
+        162,
+        81,
+        324,
+        81,
+        162,
+        243,
+        81,
+        324,
+        81,
+        243,
+        324,
+        243,
+        324,
+        81,
+        324,
+        243,
+        324,
+        314,
+        294,
+        243,
+        162,
+        243,
+        324,
+        162,
+        81,
+        162,
+        243,
+        324,
+        243,
+        324,
+        81,
+        243,
+        81,
+        162,
+        162,
+        243,
+        324,
+        81,
+        243,
+        81,
+        162,
+        324,
+        162,
+        324,
+        81,
+        162,
+        243,
+        162,
+        81,
+        152,
+        51,
+        162,
+        243,
+        324,
+        162,
+        243,
+        324,
+        81,
+        162,
+        243,
+        324,
+        243,
+        162,
+        324,
+        162,
+        324,
+        81,
+        162,
+        81,
+        162,
+        81,
+        162,
+        81,
+        162,
+        243,
+        162,
+        243,
+        324,
+        81,
+        243,
+        324,
+        314,
+        132,
+        243,
+        81,
+        162,
+        243,
+        324,
+        243,
+        324,
+        81,
+        162,
+        243,
+        81,
+        324,
+        162,
+        243,
+        81,
+        243,
+        324,
+        162,
+        243,
+        324,
+        243,
+        324,
+        81,
+        324,
+        243,
+        162,
+        81,
+        243,
+        81,
+        162,
+        152,
+        294,
+        324,
+        162,
+        81,
+        324,
+        81,
+        324,
+        81,
+        162,
+        81,
+        162,
+        243,
+        162,
+        81,
+        162,
+        243,
+        324,
+        243,
+        324,
+        81,
+        162,
+        324,
+        81,
+        162,
+        243,
+        81,
+        243,
+        162,
+        324,
+        162,
+        81,
+        233,
+        51,
+        81,
+        243,
+        160,
+        154,
+        73,
+        316,
+        318,
+        324,
+        162,
+        243,
+        324,
+        243,
+        324,
+        243,
+        324,
+        162,
+        324,
+        162,
+        243,
+        81,
+        162,
+        324,
+        81,
+        324,
+        162,
+        324,
+        81,
+        162,
+        243,
+        324,
+        152,
+        132,
+        243,
+        79,
+        55,
+        82,
+        163,
+        244,
+        263,
+        158,
+        239,
+        159,
+        81,
+        162,
+        243,
+        81,
+        162,
+        243,
+        81,
+        324,
+        81,
+        162,
+        324,
+        162,
+        324,
+        81,
+        243,
+        81,
+        162,
+        324,
+        81,
+        162,
+        233,
+        49,
+        73,
+        55,
+        163,
+        2,
+        248,
+        86,
+        14,
+        203,
+        284,
+        293,
+        321,
+        243,
+        162,
+        243,
+        324,
+        324,
+        243,
+        81,
+        162,
+        81,
+        243,
+        324,
+        81,
+        243,
+        324,
+        243,
+        324,
+        243,
+        162,
+        243,
+        314,
+        31,
+        1,
+        82,
+        244,
+        254,
+        284,
+        122,
+        203,
+        284,
+        41,
+        284,
+        132,
+        324,
+        243,
+        324,
+        81,
+        320,
+        158,
+        77,
+        158,
+        239,
+        158,
+        320,
+        158,
+        239,
+        320,
+        239,
+        320,
+        158,
+        320,
+        239,
+        149,
+        194,
+        248,
+        167,
+        248,
+        14,
+        203,
+        41,
+        284,
+        203,
+        284,
+        41,
+        131,
+        320,
+        77,
+        239,
+        320,
+        288,
+        45,
+        126,
+        288,
+        45,
+        126,
+        288,
+        126,
+        288,
+        45,
+        207,
+        288,
+        45,
+        207,
+        45,
+        287,
+        121,
+        280,
+        37,
+        118,
+        199,
+        200,
+        203,
+        41,
+        284,
+        123,
+        207,
+        126,
+        207,
+        45,
+        288,
+        207,
+        81,
+        324,
+        81,
+        324,
+        243,
+        162,
+        81,
+        324,
+        81,
+        324,
+        81,
+        243,
+        81,
+        162,
+        81,
+        314,
+        114,
+        9,
+        88,
+        1,
+        246,
+        261,
+        126,
+        288,
+        45,
+        54,
+        162,
+        243,
+        324,
+        81,
+        243,
+        162,
+        162,
+        243,
+        324,
+        81,
+        162,
+        81,
+        243,
+        81,
+        162,
+        243,
+        324,
+        81,
+        243,
+        324,
+        243,
+        233,
+        213,
+        162,
+        306,
+        90,
+        27,
+        324,
+        81,
+        162,
+        243,
+        324,
+        81,
+        162,
+        81,
+        243,
+        162,
+        324,
+        81,
+        162,
+        243,
+        324,
+        81,
+        243,
+        162,
+        243,
+        324,
+        81,
+        162,
+        243,
+        324,
+        81,
+        324,
+        314,
+        294,
+        243,
+        324,
+        243,
+        324,
+        162,
+        243,
+        324,
+        81,
+        243,
+        162,
+        81,
+        243,
+        324,
+        243,
+        162,
+        324,
+        81,
+        162,
+        243,
+        324,
+        81,
+        243,
+        81,
+        162,
+        243,
+        324,
+        81,
+        162,
+        243,
+        162,
+        152,
+        51,
+        162,
+        243,
+        324,
+        243,
+        324,
+        162,
+        81,
+        162,
+        324,
+        81,
+        162,
+        81,
+        162,
+        324,
+        81,
+        243,
+        324,
+        81,
+        162,
+        243,
+        162,
+        324,
+        243,
+        81,
+        324,
+        243,
+        324,
+        81,
+        324,
+        81,
+        71,
+        294,
+        81,
+        162,
+        81,
+        162,
+        81,
+        243,
+        324,
+        243,
+        81,
+        162,
+        243,
+        162,
+        324,
+        243,
+        324,
+        81,
+        162,
+        243,
+        324,
+        81,
+        243,
+        162,
+        81,
+        324,
+        81,
+        162,
+        81,
+        243,
+        81,
+        162,
+        152,
+        51,
+        324,
+        81,
+        162,
+        324,
+        162,
+        324,
+        162,
+        324,
+        162,
+        324,
+        81,
+        243,
+        81,
+        162,
+        243,
+        162,
+        324,
+        81,
+        162,
+        324,
+        81,
+        243,
+        324,
+        162,
+        243,
+        324,
+        162,
+        324,
+        162,
+        81,
+        233,
+        132,
+        162,
+        243,
+        324,
+        81,
+        243,
+        162,
+        324,
+        81,
+        243,
+        81,
+        324,
+        81,
+        243,
+        81,
+        162,
+        243,
+        162,
+        324,
+        81,
+        243,
+        324,
+        81,
+        243,
+        324,
+        162,
+        243,
+        324,
+        81,
+        243,
+        324,
+        71,
+        294,
+        243,
+        324,
+        162,
+        324,
+        81,
+        243,
+        81,
+        243,
+        81,
+        162,
+        81,
+        243,
+        324,
+        243,
+        81,
+        324,
+        81,
+        243,
+        162,
+        324,
+        81,
+        243,
+        81,
+        243,
+        324,
+        81,
+        243,
+        324,
+        81,
+        162,
+        314,
+        132,
+        81,
+        162,
+        243,
+        162,
+        243,
+        162,
+        243,
+        162,
+        243,
+        324,
+        162,
+        324,
+        81,
+        162,
+        243,
+        162,
+        243,
+        81,
+        243,
+        81,
+        162,
+        324,
+        162,
+        81,
+        162,
+        243,
+        81,
+        162,
+        243,
+        324,
+        233,
+        294,
+        324,
+        243,
+        162,
+        81,
+        324,
+        81,
+        162,
+        243,
+        324,
+        162,
+        243,
+        81,
+        162,
+        243,
+        324
+      ],
+      "height": 22,
+      "id": 1,
+      "name": "ground",
+      "opacity": 1,
+      "type": "tilelayer",
+      "visible": true,
+      "width": 32,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "draworder": "index",
+      "id": 2,
+      "name": "props",
+      "objects": [
+        {
+          "gid": 325,
+          "height": 50.0,
+          "id": 1,
+          "name": "regional-dressing-4",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "bamboo"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 728.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 31.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 31.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "tall"
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 20.0,
+          "x": 718.0,
+          "y": 34.0
+        },
+        {
+          "gid": 325,
+          "height": 50.0,
+          "id": 2,
+          "name": "regional-dressing-3",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "bamboo"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 804.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 34.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 34.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "tall"
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 20.0,
+          "x": 794.0,
+          "y": 37.0
+        },
+        {
+          "gid": 2147483975,
+          "height": 15.0,
+          "id": 3,
+          "name": "regional-dressing-16",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "shrub"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 328.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 74.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 74.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            },
+            {
+              "name": "flipX",
+              "type": "bool",
+              "value": true
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 20.0,
+          "x": 318.0,
+          "y": 77.0
+        },
+        {
+          "gid": 2147483974,
+          "height": 14.0,
+          "id": 4,
+          "name": "regional-dressing-12",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "rock"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 45.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 98.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 98.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            },
+            {
+              "name": "flipX",
+              "type": "bool",
+              "value": true
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 18.0,
+          "x": 36.0,
+          "y": 101.0
+        },
+        {
+          "gid": 2147483975,
+          "height": 15.0,
+          "id": 5,
+          "name": "regional-dressing-5",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "shrub"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 291.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 126.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 126.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            },
+            {
+              "name": "flipX",
+              "type": "bool",
+              "value": true
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 20.0,
+          "x": 281.0,
+          "y": 129.0
+        },
+        {
+          "gid": 2147483975,
+          "height": 15.0,
+          "id": 6,
+          "name": "regional-dressing-6",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "shrub"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 431.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 151.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 151.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            },
+            {
+              "name": "flipX",
+              "type": "bool",
+              "value": true
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 20.0,
+          "x": 421.0,
+          "y": 154.0
+        },
+        {
+          "gid": 325,
+          "height": 50.0,
+          "id": 7,
+          "name": "regional-dressing-10",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "bamboo"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 823.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 215.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 215.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "tall"
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 20.0,
+          "x": 813.0,
+          "y": 218.0
+        },
+        {
+          "gid": 327,
+          "height": 15.0,
+          "id": 8,
+          "name": "regional-dressing-1",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "shrub"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 95.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 307.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 307.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 20.0,
+          "x": 85.0,
+          "y": 310.0
+        },
+        {
+          "gid": 325,
+          "height": 50.0,
+          "id": 9,
+          "name": "regional-dressing-11",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "bamboo"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 479.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 420.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 420.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "tall"
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 20.0,
+          "x": 469.0,
+          "y": 423.0
+        },
+        {
+          "gid": 2147483974,
+          "height": 14.0,
+          "id": 10,
+          "name": "regional-dressing-9",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "rock"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 671.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 500.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 500.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            },
+            {
+              "name": "flipX",
+              "type": "bool",
+              "value": true
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 18.0,
+          "x": 662.0,
+          "y": 503.0
+        },
+        {
+          "gid": 2147483974,
+          "height": 14.0,
+          "id": 11,
+          "name": "regional-dressing-2",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "rock"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 752.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 519.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 519.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            },
+            {
+              "name": "flipX",
+              "type": "bool",
+              "value": true
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 18.0,
+          "x": 743.0,
+          "y": 522.0
+        },
+        {
+          "gid": 325,
+          "height": 50.0,
+          "id": 12,
+          "name": "regional-dressing-14",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "bamboo"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 38.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 556.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 556.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "tall"
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 20.0,
+          "x": 28.0,
+          "y": 559.0
+        },
+        {
+          "gid": 2147483975,
+          "height": 15.0,
+          "id": 13,
+          "name": "regional-dressing-8",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "shrub"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 558.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 561.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 561.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            },
+            {
+              "name": "flipX",
+              "type": "bool",
+              "value": true
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 20.0,
+          "x": 548.0,
+          "y": 564.0
+        },
+        {
+          "gid": 325,
+          "height": 50.0,
+          "id": 14,
+          "name": "regional-dressing-13",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "bamboo"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 407.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 564.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 564.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "tall"
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 20.0,
+          "x": 397.0,
+          "y": 567.0
+        },
+        {
+          "gid": 327,
+          "height": 15.0,
+          "id": 15,
+          "name": "regional-dressing-7",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "shrub"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 757.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 624.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 624.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 20.0,
+          "x": 747.0,
+          "y": 627.0
+        },
+        {
+          "gid": 2147483975,
+          "height": 15.0,
+          "id": 16,
+          "name": "regional-dressing-15",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "shrub"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 727.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 630.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 630.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            },
+            {
+              "name": "flipX",
+              "type": "bool",
+              "value": true
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 20.0,
+          "x": 717.0,
+          "y": 633.0
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true,
+      "x": 0,
+      "y": 0,
+      "properties": [
+        {
+          "name": "sortBy",
+          "type": "string",
+          "value": "sortY, then x, then id (ground line)"
+        }
+      ]
+    },
+    {
+      "draworder": "index",
+      "id": 3,
+      "name": "collision",
+      "objects": [
+        {
+          "id": 17,
+          "name": "collision.rects[0]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 724,
+          "y": 28,
+          "width": 8,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[0]"
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "name": "collision.rects[1]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 324,
+          "y": 68,
+          "width": 8,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[1]"
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "name": "collision.rects[2]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 40,
+          "y": 92,
+          "width": 12,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[2]"
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "name": "collision.rects[3]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 284,
+          "y": 120,
+          "width": 12,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[3]"
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "name": "collision.rects[4]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 424,
+          "y": 148,
+          "width": 12,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[4]"
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "name": "collision.rects[5]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 652,
+          "y": 204,
+          "width": 8,
+          "height": 80,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[5]"
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "name": "collision.rects[6]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 684,
+          "y": 204,
+          "width": 8,
+          "height": 68,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[6]"
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "name": "collision.rects[7]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 716,
+          "y": 204,
+          "width": 8,
+          "height": 68,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[7]"
+            }
+          ]
+        },
+        {
+          "id": 25,
+          "name": "collision.rects[8]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 624,
+          "y": 208,
+          "width": 28,
+          "height": 128,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[8]"
+            }
+          ]
+        },
+        {
+          "id": 26,
+          "name": "collision.rects[9]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 660,
+          "y": 208,
+          "width": 24,
+          "height": 64,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[9]"
+            }
+          ]
+        },
+        {
+          "id": 27,
+          "name": "collision.rects[10]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 692,
+          "y": 208,
+          "width": 24,
+          "height": 64,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[10]"
+            }
+          ]
+        },
+        {
+          "id": 28,
+          "name": "collision.rects[11]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 724,
+          "y": 208,
+          "width": 24,
+          "height": 64,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[11]"
+            }
+          ]
+        },
+        {
+          "id": 29,
+          "name": "collision.rects[12]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 748,
+          "y": 212,
+          "width": 4,
+          "height": 8,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[12]"
+            }
+          ]
+        },
+        {
+          "id": 30,
+          "name": "collision.rects[13]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 820,
+          "y": 212,
+          "width": 8,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[13]"
+            }
+          ]
+        },
+        {
+          "id": 31,
+          "name": "collision.rects[14]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 748,
+          "y": 228,
+          "width": 4,
+          "height": 40,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[14]"
+            }
+          ]
+        },
+        {
+          "id": 32,
+          "name": "collision.rects[15]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 620,
+          "y": 232,
+          "width": 4,
+          "height": 104,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[15]"
+            }
+          ]
+        },
+        {
+          "id": 33,
+          "name": "collision.rects[16]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 616,
+          "y": 236,
+          "width": 4,
+          "height": 100,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[16]"
+            }
+          ]
+        },
+        {
+          "id": 34,
+          "name": "collision.rects[17]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 752,
+          "y": 236,
+          "width": 4,
+          "height": 16,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[17]"
+            }
+          ]
+        },
+        {
+          "id": 35,
+          "name": "collision.rects[18]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 592,
+          "y": 240,
+          "width": 24,
+          "height": 96,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[18]"
+            }
+          ]
+        },
+        {
+          "id": 36,
+          "name": "collision.rects[19]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 588,
+          "y": 264,
+          "width": 4,
+          "height": 72,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[19]"
+            }
+          ]
+        },
+        {
+          "id": 37,
+          "name": "collision.rects[20]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 556,
+          "y": 268,
+          "width": 8,
+          "height": 68,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[20]"
+            }
+          ]
+        },
+        {
+          "id": 38,
+          "name": "collision.rects[21]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 584,
+          "y": 268,
+          "width": 4,
+          "height": 68,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[21]"
+            }
+          ]
+        },
+        {
+          "id": 39,
+          "name": "collision.rects[22]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 528,
+          "y": 272,
+          "width": 28,
+          "height": 60,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[22]"
+            }
+          ]
+        },
+        {
+          "id": 40,
+          "name": "collision.rects[23]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 564,
+          "y": 272,
+          "width": 20,
+          "height": 64,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[23]"
+            }
+          ]
+        },
+        {
+          "id": 41,
+          "name": "collision.rects[24]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 660,
+          "y": 272,
+          "width": 12,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[24]"
+            }
+          ]
+        },
+        {
+          "id": 42,
+          "name": "collision.rects[25]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 696,
+          "y": 272,
+          "width": 8,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[25]"
+            }
+          ]
+        },
+        {
+          "id": 43,
+          "name": "collision.rects[26]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 728,
+          "y": 272,
+          "width": 8,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[26]"
+            }
+          ]
+        },
+        {
+          "id": 44,
+          "name": "collision.rects[27]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 524,
+          "y": 276,
+          "width": 4,
+          "height": 8,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[27]"
+            }
+          ]
+        },
+        {
+          "id": 45,
+          "name": "collision.rects[28]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 652,
+          "y": 284,
+          "width": 4,
+          "height": 48,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[28]"
+            }
+          ]
+        },
+        {
+          "id": 46,
+          "name": "collision.rects[29]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 88,
+          "y": 304,
+          "width": 12,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[29]"
+            }
+          ]
+        },
+        {
+          "id": 47,
+          "name": "collision.rects[30]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 524,
+          "y": 308,
+          "width": 4,
+          "height": 8,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[30]"
+            }
+          ]
+        },
+        {
+          "id": 48,
+          "name": "collision.rects[31]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 656,
+          "y": 308,
+          "width": 4,
+          "height": 8,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[31]"
+            }
+          ]
+        },
+        {
+          "id": 49,
+          "name": "collision.rects[32]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 532,
+          "y": 332,
+          "width": 24,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[32]"
+            }
+          ]
+        },
+        {
+          "id": 50,
+          "name": "collision.rects[33]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 540,
+          "y": 336,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[33]"
+            }
+          ]
+        },
+        {
+          "id": 51,
+          "name": "collision.rects[34]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 568,
+          "y": 336,
+          "width": 8,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[34]"
+            }
+          ]
+        },
+        {
+          "id": 52,
+          "name": "collision.rects[35]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 600,
+          "y": 336,
+          "width": 8,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[35]"
+            }
+          ]
+        },
+        {
+          "id": 53,
+          "name": "collision.rects[36]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 632,
+          "y": 336,
+          "width": 8,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[36]"
+            }
+          ]
+        },
+        {
+          "id": 54,
+          "name": "collision.rects[37]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 568,
+          "y": 364,
+          "width": 4,
+          "height": 36,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[37]"
+            }
+          ]
+        },
+        {
+          "id": 55,
+          "name": "collision.rects[38]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 600,
+          "y": 364,
+          "width": 4,
+          "height": 68,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[38]"
+            }
+          ]
+        },
+        {
+          "id": 56,
+          "name": "collision.rects[39]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 632,
+          "y": 364,
+          "width": 4,
+          "height": 68,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[39]"
+            }
+          ]
+        },
+        {
+          "id": 57,
+          "name": "collision.rects[40]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 664,
+          "y": 364,
+          "width": 4,
+          "height": 40,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[40]"
+            }
+          ]
+        },
+        {
+          "id": 58,
+          "name": "collision.rects[41]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 532,
+          "y": 368,
+          "width": 36,
+          "height": 32,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[41]"
+            }
+          ]
+        },
+        {
+          "id": 59,
+          "name": "collision.rects[42]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 572,
+          "y": 368,
+          "width": 28,
+          "height": 32,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[42]"
+            }
+          ]
+        },
+        {
+          "id": 60,
+          "name": "collision.rects[43]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 604,
+          "y": 368,
+          "width": 28,
+          "height": 64,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[43]"
+            }
+          ]
+        },
+        {
+          "id": 61,
+          "name": "collision.rects[44]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 636,
+          "y": 368,
+          "width": 28,
+          "height": 36,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[44]"
+            }
+          ]
+        },
+        {
+          "id": 62,
+          "name": "collision.rects[45]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 668,
+          "y": 368,
+          "width": 16,
+          "height": 32,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[45]"
+            }
+          ]
+        },
+        {
+          "id": 63,
+          "name": "collision.rects[46]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 524,
+          "y": 372,
+          "width": 8,
+          "height": 8,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[46]"
+            }
+          ]
+        },
+        {
+          "id": 64,
+          "name": "collision.rects[47]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 684,
+          "y": 372,
+          "width": 4,
+          "height": 28,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[47]"
+            }
+          ]
+        },
+        {
+          "id": 65,
+          "name": "collision.rects[48]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 688,
+          "y": 376,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[48]"
+            }
+          ]
+        },
+        {
+          "id": 66,
+          "name": "collision.rects[49]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 528,
+          "y": 380,
+          "width": 4,
+          "height": 20,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[49]"
+            }
+          ]
+        },
+        {
+          "id": 67,
+          "name": "collision.rects[50]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 532,
+          "y": 400,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[50]"
+            }
+          ]
+        },
+        {
+          "id": 68,
+          "name": "collision.rects[51]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 560,
+          "y": 400,
+          "width": 8,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[51]"
+            }
+          ]
+        },
+        {
+          "id": 69,
+          "name": "collision.rects[52]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 584,
+          "y": 400,
+          "width": 16,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[52]"
+            }
+          ]
+        },
+        {
+          "id": 70,
+          "name": "collision.rects[53]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 592,
+          "y": 404,
+          "width": 8,
+          "height": 24,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[53]"
+            }
+          ]
+        },
+        {
+          "id": 71,
+          "name": "collision.rects[54]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 636,
+          "y": 404,
+          "width": 24,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[54]"
+            }
+          ]
+        },
+        {
+          "id": 72,
+          "name": "collision.rects[55]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 636,
+          "y": 408,
+          "width": 20,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[55]"
+            }
+          ]
+        },
+        {
+          "id": 73,
+          "name": "collision.rects[56]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 636,
+          "y": 412,
+          "width": 16,
+          "height": 20,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[56]"
+            }
+          ]
+        },
+        {
+          "id": 74,
+          "name": "collision.rects[57]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 476,
+          "y": 416,
+          "width": 8,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[57]"
+            }
+          ]
+        },
+        {
+          "id": 75,
+          "name": "collision.rects[58]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 652,
+          "y": 420,
+          "width": 4,
+          "height": 8,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[58]"
+            }
+          ]
+        },
+        {
+          "id": 76,
+          "name": "collision.rects[59]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 596,
+          "y": 428,
+          "width": 4,
+          "height": 8,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[59]"
+            }
+          ]
+        },
+        {
+          "id": 77,
+          "name": "collision.rects[60]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 624,
+          "y": 432,
+          "width": 8,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[60]"
+            }
+          ]
+        },
+        {
+          "id": 78,
+          "name": "collision.rects[61]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 664,
+          "y": 496,
+          "width": 12,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[61]"
+            }
+          ]
+        },
+        {
+          "id": 79,
+          "name": "collision.rects[62]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 748,
+          "y": 516,
+          "width": 8,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[62]"
+            }
+          ]
+        },
+        {
+          "id": 80,
+          "name": "collision.rects[63]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 32,
+          "y": 552,
+          "width": 12,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[63]"
+            }
+          ]
+        },
+        {
+          "id": 81,
+          "name": "collision.rects[64]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 552,
+          "y": 556,
+          "width": 12,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[64]"
+            }
+          ]
+        },
+        {
+          "id": 82,
+          "name": "collision.rects[65]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 404,
+          "y": 560,
+          "width": 8,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[65]"
+            }
+          ]
+        },
+        {
+          "id": 83,
+          "name": "collision.rects[66]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 752,
+          "y": 620,
+          "width": 12,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[66]"
+            }
+          ]
+        },
+        {
+          "id": 84,
+          "name": "collision.rects[67]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 720,
+          "y": 624,
+          "width": 12,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[67]"
+            }
+          ]
+        },
+        {
+          "id": 85,
+          "name": "regional-dressing-1",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 88.0,
+          "y": 302.0,
+          "width": 14.0,
+          "height": 5.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-1"
+            }
+          ]
+        },
+        {
+          "id": 86,
+          "name": "regional-dressing-2",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 745.5,
+          "y": 514.0,
+          "width": 13.0,
+          "height": 5.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-2"
+            }
+          ]
+        },
+        {
+          "id": 87,
+          "name": "regional-dressing-3",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 800.0,
+          "y": 30.0,
+          "width": 8.0,
+          "height": 4.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-3"
+            }
+          ]
+        },
+        {
+          "id": 88,
+          "name": "regional-dressing-4",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 724.0,
+          "y": 27.0,
+          "width": 8.0,
+          "height": 4.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-4"
+            }
+          ]
+        },
+        {
+          "id": 89,
+          "name": "regional-dressing-5",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 284.0,
+          "y": 121.0,
+          "width": 14.0,
+          "height": 5.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-5"
+            }
+          ]
+        },
+        {
+          "id": 90,
+          "name": "regional-dressing-6",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 424.0,
+          "y": 146.0,
+          "width": 14.0,
+          "height": 5.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-6"
+            }
+          ]
+        },
+        {
+          "id": 91,
+          "name": "regional-dressing-7",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 750.0,
+          "y": 619.0,
+          "width": 14.0,
+          "height": 5.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-7"
+            }
+          ]
+        },
+        {
+          "id": 92,
+          "name": "regional-dressing-8",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 551.0,
+          "y": 556.0,
+          "width": 14.0,
+          "height": 5.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-8"
+            }
+          ]
+        },
+        {
+          "id": 93,
+          "name": "regional-dressing-9",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 664.5,
+          "y": 495.0,
+          "width": 13.0,
+          "height": 5.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-9"
+            }
+          ]
+        },
+        {
+          "id": 94,
+          "name": "regional-dressing-10",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 819.0,
+          "y": 211.0,
+          "width": 8.0,
+          "height": 4.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-10"
+            }
+          ]
+        },
+        {
+          "id": 95,
+          "name": "regional-dressing-11",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 475.0,
+          "y": 416.0,
+          "width": 8.0,
+          "height": 4.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-11"
+            }
+          ]
+        },
+        {
+          "id": 96,
+          "name": "regional-dressing-12",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 38.5,
+          "y": 93.0,
+          "width": 13.0,
+          "height": 5.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-12"
+            }
+          ]
+        },
+        {
+          "id": 97,
+          "name": "regional-dressing-13",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 403.0,
+          "y": 560.0,
+          "width": 8.0,
+          "height": 4.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-13"
+            }
+          ]
+        },
+        {
+          "id": 98,
+          "name": "regional-dressing-14",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 34.0,
+          "y": 552.0,
+          "width": 8.0,
+          "height": 4.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-14"
+            }
+          ]
+        },
+        {
+          "id": 99,
+          "name": "regional-dressing-15",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 720.0,
+          "y": 625.0,
+          "width": 14.0,
+          "height": 5.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-15"
+            }
+          ]
+        },
+        {
+          "id": 100,
+          "name": "regional-dressing-16",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 321.0,
+          "y": 69.0,
+          "width": 14.0,
+          "height": 5.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-16"
+            }
+          ]
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": false,
+      "x": 0,
+      "y": 0,
+      "properties": [
+        {
+          "name": "actorRadius",
+          "type": "float",
+          "value": 7.0
+        },
+        {
+          "name": "ySquash",
+          "type": "float",
+          "value": 0.9
+        },
+        {
+          "name": "navCell",
+          "type": "int",
+          "value": 4
+        },
+        {
+          "name": "semantics",
+          "type": "string",
+          "value": "plan Appendix C; tile collision lives in the tilesets"
+        }
+      ]
+    },
+    {
+      "draworder": "index",
+      "id": 4,
+      "name": "interactions",
+      "objects": [
+        {
+          "height": 0,
+          "id": 101,
+          "name": "arrival",
+          "point": true,
+          "properties": [
+            {
+              "name": "facing",
+              "type": "string",
+              "value": "east"
+            }
+          ],
+          "rotation": 0,
+          "type": "spawn",
+          "visible": true,
+          "width": 0,
+          "x": 192,
+          "y": 352
+        },
+        {
+          "height": 0,
+          "id": 102,
+          "name": "from-bamboo-coast",
+          "point": true,
+          "properties": [
+            {
+              "name": "facing",
+              "type": "string",
+              "value": "south"
+            }
+          ],
+          "rotation": 0,
+          "type": "spawn",
+          "visible": true,
+          "width": 0,
+          "x": 494,
+          "y": 30
+        },
+        {
+          "height": 0,
+          "id": 103,
+          "name": "from-training-grounds",
+          "point": true,
+          "properties": [
+            {
+              "name": "facing",
+              "type": "string",
+              "value": "west"
+            }
+          ],
+          "rotation": 0,
+          "type": "spawn",
+          "visible": true,
+          "width": 0,
+          "x": 994,
+          "y": 350
+        },
+        {
+          "height": 0,
+          "id": 104,
+          "name": "from-stone-highland",
+          "point": true,
+          "properties": [
+            {
+              "name": "facing",
+              "type": "string",
+              "value": "north"
+            }
+          ],
+          "rotation": 0,
+          "type": "spawn",
+          "visible": true,
+          "width": 0,
+          "x": 494,
+          "y": 674
+        },
+        {
+          "id": 105,
+          "name": "exit-north",
+          "type": "portal",
+          "rotation": 0,
+          "visible": true,
+          "x": 416.0,
+          "y": 0.0,
+          "width": 160.0,
+          "height": 16.0,
+          "properties": [
+            {
+              "name": "to",
+              "type": "string",
+              "value": "bamboo-coast:from-desert-oasis"
+            },
+            {
+              "name": "activation",
+              "type": "string",
+              "value": "intent"
+            },
+            {
+              "name": "radius",
+              "type": "float",
+              "value": 7.0
+            },
+            {
+              "name": "travelDirectionX",
+              "type": "float",
+              "value": 0.0
+            },
+            {
+              "name": "travelDirectionY",
+              "type": "float",
+              "value": -1.0
+            },
+            {
+              "name": "latch",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "requiresMovement",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "entranceByFrom",
+              "type": "string",
+              "value": "{\"bamboo-coast\":\"from-bamboo-coast\"}"
+            }
+          ]
+        },
+        {
+          "id": 106,
+          "name": "exit-east",
+          "type": "portal",
+          "rotation": 0,
+          "visible": true,
+          "x": 1008.0,
+          "y": 256.0,
+          "width": 16.0,
+          "height": 192.0,
+          "properties": [
+            {
+              "name": "to",
+              "type": "string",
+              "value": "training-grounds:from-desert-oasis"
+            },
+            {
+              "name": "activation",
+              "type": "string",
+              "value": "intent"
+            },
+            {
+              "name": "radius",
+              "type": "float",
+              "value": 7.0
+            },
+            {
+              "name": "travelDirectionX",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "travelDirectionY",
+              "type": "float",
+              "value": 0.0
+            },
+            {
+              "name": "latch",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "requiresMovement",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "entranceByFrom",
+              "type": "string",
+              "value": "{\"training-grounds\":\"from-training-grounds\"}"
+            }
+          ]
+        },
+        {
+          "id": 107,
+          "name": "exit-south",
+          "type": "portal",
+          "rotation": 0,
+          "visible": true,
+          "x": 416.0,
+          "y": 688.0,
+          "width": 160.0,
+          "height": 16.0,
+          "properties": [
+            {
+              "name": "to",
+              "type": "string",
+              "value": "stone-highland:from-desert-oasis"
+            },
+            {
+              "name": "activation",
+              "type": "string",
+              "value": "intent"
+            },
+            {
+              "name": "radius",
+              "type": "float",
+              "value": 7.0
+            },
+            {
+              "name": "travelDirectionX",
+              "type": "float",
+              "value": 0.0
+            },
+            {
+              "name": "travelDirectionY",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "latch",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "requiresMovement",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "entranceByFrom",
+              "type": "string",
+              "value": "{\"stone-highland\":\"from-stone-highland\"}"
+            }
+          ]
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true,
+      "x": 0,
+      "y": 0
+    }
+  ],
+  "nextlayerid": 5,
+  "nextobjectid": 108,
+  "orientation": "orthogonal",
+  "properties": [
+    {
+      "name": "mapId",
+      "type": "string",
+      "value": "desert-oasis"
+    },
+    {
+      "name": "bundleSchema",
+      "type": "string",
+      "value": "generate2dmap.map_bundle.v2"
+    },
+    {
+      "name": "worldWidth",
+      "type": "float",
+      "value": 1024.0
+    },
+    {
+      "name": "worldHeight",
+      "type": "float",
+      "value": 704.0
+    },
+    {
+      "name": "generator",
+      "type": "string",
+      "value": "generate2dmap export_tiled.py 0.4.0"
+    },
+    {
+      "name": "actorRadius",
+      "type": "float",
+      "value": 7.0
+    },
+    {
+      "name": "ySquash",
+      "type": "float",
+      "value": 0.9
+    }
+  ],
+  "renderorder": "right-down",
+  "tiledversion": "1.11.0",
+  "tileheight": 32,
+  "tilesets": [
+    {
+      "firstgid": 1,
+      "source": "grass-water-sand-wang81.tsx"
+    },
+    {
+      "firstgid": 325,
+      "source": "props.tsx"
+    }
+  ],
+  "tilewidth": 32,
+  "type": "map",
+  "version": "1.10",
+  "width": 32
+}

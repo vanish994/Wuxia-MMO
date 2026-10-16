@@ -1,0 +1,661 @@
+{
+  "schema": "generate2dmap.nav_report.v1",
+  "status": "warn",
+  "method": "plan Appendix C validity (centre + 8 footprint samples against walk regions, solids, object footprints scaled once, tile collision and material classes) on a grid of cell max(1, round(r/2)) px; 4-neighbour moves open when segmentClear holds between node centres (samples every cell/2, plus the exact thin-gap centre path and one_way direction); BFS from every spawn and portal arrival to every interaction, exit, anchor slot and approach point",
+  "notProven": [
+    "that the collision data matches the painted art",
+    "positions closer than one grid cell to a blocker (the grid samples cell centres)",
+    "runtime movement code: map-runtime.mjs parity is tested during integration",
+    "links to maps not passed with --link"
+  ],
+  "checks": [
+    {
+      "id": "starts_valid",
+      "status": "pass",
+      "value": {
+        "starts": 4,
+        "blocked": []
+      },
+      "threshold": {
+        "blocked": 0
+      }
+    },
+    {
+      "id": "targets_reachable",
+      "status": "pass",
+      "value": {
+        "reachable": 3,
+        "total": 3,
+        "unreachable": []
+      },
+      "threshold": {
+        "unreachable": 0
+      }
+    },
+    {
+      "id": "portals_inside_world",
+      "status": "pass",
+      "value": {
+        "outside": []
+      },
+      "threshold": {
+        "outside": 0
+      }
+    },
+    {
+      "id": "arrivals_outside_triggers",
+      "status": "pass",
+      "value": {
+        "problems": 0
+      },
+      "threshold": {
+        "problems": 0
+      }
+    },
+    {
+      "id": "reciprocal_links",
+      "status": "pass",
+      "value": {
+        "links": [
+          {
+            "portal": "exit-east",
+            "to": "imperial-ruins",
+            "arrival": [
+              30.0,
+              350.0
+            ],
+            "returnPortals": [
+              "exit-west"
+            ],
+            "status": "pass"
+          },
+          {
+            "portal": "exit-south",
+            "to": "river-market",
+            "arrival": [
+              494.0,
+              30.0
+            ],
+            "returnPortals": [
+              "exit-north"
+            ],
+            "status": "pass"
+          },
+          {
+            "portal": "exit-west",
+            "to": "jade-mountain",
+            "arrival": [
+              994.0,
+              350.0
+            ],
+            "returnPortals": [
+              "exit-east"
+            ],
+            "status": "pass"
+          }
+        ],
+        "notChecked": []
+      },
+      "threshold": {
+        "errors": 0
+      }
+    },
+    {
+      "id": "thin_gaps",
+      "status": "pass",
+      "value": 0,
+      "threshold": "reported: moves the thin-gap rule closed although every footprint sample was valid"
+    },
+    {
+      "id": "unreachable_walkable_area",
+      "status": "warn",
+      "value": {
+        "pockets": 10,
+        "cells": 22
+      },
+      "threshold": "reported"
+    },
+    {
+      "id": "blocked_rects_union",
+      "status": "pass",
+      "value": {
+        "rects": 81,
+        "blockedCells": 2063
+      },
+      "threshold": "union == blocked cells"
+    },
+    {
+      "id": "footprints_scaled_once",
+      "status": "pass",
+      "value": {
+        "objectSolids": 16
+      },
+      "threshold": "object footprint x scale, never inflated by the actor radius"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "../../map-bundle.json",
+      "sha256": "50c66df35eadd349e2b8b238c5f5b790fe82875dc448252635588e344c265ced",
+      "bytes": 43017
+    },
+    {
+      "path": "../../tilesets/snow-dirt-wang16/snow-dirt-wang16.tileset.json",
+      "sha256": "f649614ac33a8cbe63cc954451a53b2e8f92b83db8fa04553ea4ae31a0d78013",
+      "bytes": 21238
+    },
+    {
+      "path": "../../tilesets/snow-dirt-wang16/snow-dirt-wang16.png",
+      "sha256": "b61738a54d41307ba47befa3458f50054c74749ea6c6ceca9ad6d5b0c9e73ec3",
+      "bytes": 4236
+    },
+    {
+      "path": "../../terrain-vertices.json",
+      "sha256": "0a2d7502da5279c0dc91645fe3e505e1a15538be4087497bd3a131ad2fa1b595",
+      "bytes": 7284
+    },
+    {
+      "path": "../../props/pine.png",
+      "sha256": "f6d9de3c7e18415fa4233e58b4cc65847573ea601c3a2cd3738f46d9b4bf5fc3",
+      "bytes": 341
+    },
+    {
+      "path": "../../props/blossom_tree.png",
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "bytes": 407
+    },
+    {
+      "path": "../../props/bamboo.png",
+      "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
+      "bytes": 509
+    },
+    {
+      "path": "../../props/shrub.png",
+      "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
+      "bytes": 198
+    },
+    {
+      "path": "../../props/rock.png",
+      "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
+      "bytes": 188
+    },
+    {
+      "path": "../../props/lantern.png",
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "bytes": 230
+    },
+    {
+      "path": "../../props/signboard.png",
+      "sha256": "db4e50fb76441a57ff24f22c3cc852749cb0faf64c0ed744a068ece0b1bbea41",
+      "bytes": 223
+    },
+    {
+      "path": "../../props/sect_gate.png",
+      "sha256": "1aeedb2ef856eec6fe1e5f8310ce4e1e368e05f60b6182f91cba3f86974c6a85",
+      "bytes": 479
+    },
+    {
+      "path": "../../props/pagoda.png",
+      "sha256": "c4805330da4a46ae8195e0e50329bf47980748df8f7552fd576a7d5e04a1cb1d",
+      "bytes": 514
+    },
+    {
+      "path": "../../props/bridge.png",
+      "sha256": "27e76b7d6bd364498b855920f61381c3f2f699394612fe509cb397c0c0ba864d",
+      "bytes": 300
+    },
+    {
+      "path": "../../../imperial-ruins-v1/map-bundle.json",
+      "sha256": "79076e7ba96495d916a6cca7c6cbf990a41e02ec1a50ba59d952d39f23a5552d",
+      "bytes": 43393
+    },
+    {
+      "path": "../../../imperial-ruins-v1/tilesets/built-natural-stone-wang16/built-natural-stone-wang16.tileset.json",
+      "sha256": "3722b3de02e8f13422ad839bb250ae132afe6c551128fd3bc063ab763194d0c2",
+      "bytes": 21291
+    },
+    {
+      "path": "../../../imperial-ruins-v1/tilesets/built-natural-stone-wang16/built-natural-stone-wang16.png",
+      "sha256": "f5c8723584e2660d78541d72aaf75ebea007037e7d6c4e7f9b0da006b366d656",
+      "bytes": 3356
+    },
+    {
+      "path": "../../../imperial-ruins-v1/terrain-vertices.json",
+      "sha256": "bd9a33b72cf90fbe0294cba1fb1604b4fd3ce53738c8c1aa697e1cf643f4999f",
+      "bytes": 7309
+    },
+    {
+      "path": "../../../imperial-ruins-v1/props/pine.png",
+      "sha256": "f6d9de3c7e18415fa4233e58b4cc65847573ea601c3a2cd3738f46d9b4bf5fc3",
+      "bytes": 341
+    },
+    {
+      "path": "../../../imperial-ruins-v1/props/blossom_tree.png",
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "bytes": 407
+    },
+    {
+      "path": "../../../imperial-ruins-v1/props/bamboo.png",
+      "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
+      "bytes": 509
+    },
+    {
+      "path": "../../../imperial-ruins-v1/props/shrub.png",
+      "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
+      "bytes": 198
+    },
+    {
+      "path": "../../../imperial-ruins-v1/props/rock.png",
+      "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
+      "bytes": 188
+    },
+    {
+      "path": "../../../imperial-ruins-v1/props/lantern.png",
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "bytes": 230
+    },
+    {
+      "path": "../../../imperial-ruins-v1/props/signboard.png",
+      "sha256": "db4e50fb76441a57ff24f22c3cc852749cb0faf64c0ed744a068ece0b1bbea41",
+      "bytes": 223
+    },
+    {
+      "path": "../../../imperial-ruins-v1/props/sect_gate.png",
+      "sha256": "1aeedb2ef856eec6fe1e5f8310ce4e1e368e05f60b6182f91cba3f86974c6a85",
+      "bytes": 479
+    },
+    {
+      "path": "../../../imperial-ruins-v1/props/pagoda.png",
+      "sha256": "c4805330da4a46ae8195e0e50329bf47980748df8f7552fd576a7d5e04a1cb1d",
+      "bytes": 514
+    },
+    {
+      "path": "../../../imperial-ruins-v1/props/bridge.png",
+      "sha256": "27e76b7d6bd364498b855920f61381c3f2f699394612fe509cb397c0c0ba864d",
+      "bytes": 300
+    },
+    {
+      "path": "../../../river-market-v1/map-bundle.json",
+      "sha256": "56cca319f6d164dddc430a37f0e7356b3fcb5925b86deeeb591fba025983c942",
+      "bytes": 34778
+    },
+    {
+      "path": "../../../river-market-v1/tilesets/sand-water-wang16/sand-water-wang16.tileset.json",
+      "sha256": "1a2a9f23af9f0fceacf056052f47b57547fa8fec552728594386b324cc3fc61b",
+      "bytes": 41063
+    },
+    {
+      "path": "../../../river-market-v1/tilesets/sand-water-wang16/sand-water-wang16.png",
+      "sha256": "e8b645e2ecfd65c48bb796e8df4d4a2a6e2c63588c4da8e4a1ddecfe273d71de",
+      "bytes": 4893
+    },
+    {
+      "path": "../../../river-market-v1/terrain-vertices.json",
+      "sha256": "97b07ae64f40c40c2df3178f1b9f7d9d152d01f32fd56a88388432dcf3061dcc",
+      "bytes": 7285
+    },
+    {
+      "path": "../../../river-market-v1/props/pine.png",
+      "sha256": "f6d9de3c7e18415fa4233e58b4cc65847573ea601c3a2cd3738f46d9b4bf5fc3",
+      "bytes": 341
+    },
+    {
+      "path": "../../../river-market-v1/props/blossom_tree.png",
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "bytes": 407
+    },
+    {
+      "path": "../../../river-market-v1/props/bamboo.png",
+      "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
+      "bytes": 509
+    },
+    {
+      "path": "../../../river-market-v1/props/shrub.png",
+      "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
+      "bytes": 198
+    },
+    {
+      "path": "../../../river-market-v1/props/rock.png",
+      "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
+      "bytes": 188
+    },
+    {
+      "path": "../../../river-market-v1/props/lantern.png",
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "bytes": 230
+    },
+    {
+      "path": "../../../river-market-v1/props/signboard.png",
+      "sha256": "db4e50fb76441a57ff24f22c3cc852749cb0faf64c0ed744a068ece0b1bbea41",
+      "bytes": 223
+    },
+    {
+      "path": "../../../river-market-v1/props/sect_gate.png",
+      "sha256": "1aeedb2ef856eec6fe1e5f8310ce4e1e368e05f60b6182f91cba3f86974c6a85",
+      "bytes": 479
+    },
+    {
+      "path": "../../../river-market-v1/props/pagoda.png",
+      "sha256": "c4805330da4a46ae8195e0e50329bf47980748df8f7552fd576a7d5e04a1cb1d",
+      "bytes": 514
+    },
+    {
+      "path": "../../../river-market-v1/props/bridge.png",
+      "sha256": "27e76b7d6bd364498b855920f61381c3f2f699394612fe509cb397c0c0ba864d",
+      "bytes": 300
+    },
+    {
+      "path": "../../../jade-mountain-v1/map-bundle.json",
+      "sha256": "a1a63bc24e34f82fdd6f51d51550b26a405af4344c9cd106a82b01539c25dbf2",
+      "bytes": 43307
+    },
+    {
+      "path": "../../../jade-mountain-v1/tilesets/snow-grass-wang16/snow-grass-wang16.tileset.json",
+      "sha256": "7547ea558b30819501333713e78c7658afd93e5508e84174ae2530dad75431f4",
+      "bytes": 21243
+    },
+    {
+      "path": "../../../jade-mountain-v1/tilesets/snow-grass-wang16/snow-grass-wang16.png",
+      "sha256": "cf7223c131440c477f4d09b0b6f9d8af8698e60a69129d386fcde718e4b3d878",
+      "bytes": 4035
+    },
+    {
+      "path": "../../../jade-mountain-v1/terrain-vertices.json",
+      "sha256": "25a71a17e602d666f98546bb1fa15020e8cc4f61f4638114ab9b71faabe966e6",
+      "bytes": 7286
+    },
+    {
+      "path": "../../../jade-mountain-v1/props/pine.png",
+      "sha256": "f6d9de3c7e18415fa4233e58b4cc65847573ea601c3a2cd3738f46d9b4bf5fc3",
+      "bytes": 341
+    },
+    {
+      "path": "../../../jade-mountain-v1/props/blossom_tree.png",
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "bytes": 407
+    },
+    {
+      "path": "../../../jade-mountain-v1/props/bamboo.png",
+      "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
+      "bytes": 509
+    },
+    {
+      "path": "../../../jade-mountain-v1/props/shrub.png",
+      "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
+      "bytes": 198
+    },
+    {
+      "path": "../../../jade-mountain-v1/props/rock.png",
+      "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
+      "bytes": 188
+    },
+    {
+      "path": "../../../jade-mountain-v1/props/lantern.png",
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "bytes": 230
+    },
+    {
+      "path": "../../../jade-mountain-v1/props/signboard.png",
+      "sha256": "db4e50fb76441a57ff24f22c3cc852749cb0faf64c0ed744a068ece0b1bbea41",
+      "bytes": 223
+    },
+    {
+      "path": "../../../jade-mountain-v1/props/sect_gate.png",
+      "sha256": "1aeedb2ef856eec6fe1e5f8310ce4e1e368e05f60b6182f91cba3f86974c6a85",
+      "bytes": 479
+    },
+    {
+      "path": "../../../jade-mountain-v1/props/pagoda.png",
+      "sha256": "c4805330da4a46ae8195e0e50329bf47980748df8f7552fd576a7d5e04a1cb1d",
+      "bytes": 514
+    },
+    {
+      "path": "../../../jade-mountain-v1/props/bridge.png",
+      "sha256": "27e76b7d6bd364498b855920f61381c3f2f699394612fe509cb397c0c0ba864d",
+      "bytes": 300
+    }
+  ],
+  "outputs": [
+    {
+      "path": "nav-grid.json",
+      "sha256": "3c7119e8b043b8e7d4350487647e72369f37952084b612706143f3c4436a6d4e",
+      "bytes": 98335
+    },
+    {
+      "path": "nav-debug.png",
+      "sha256": "4cae8aed8e237066d284099aff12e4a73cb3f28082e1262931ae191cbb5bfa3d",
+      "bytes": 37619
+    }
+  ],
+  "tool": {
+    "name": "map_nav.py",
+    "version": "0.4.0"
+  },
+  "map": "frost-pass",
+  "cell": 4,
+  "starts": [
+    {
+      "kind": "spawn",
+      "id": "arrival",
+      "point": [
+        192.0,
+        352.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        190.0,
+        350.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "spawn",
+      "id": "from-imperial-ruins",
+      "point": [
+        994.0,
+        350.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        994.0,
+        350.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "spawn",
+      "id": "from-river-market",
+      "point": [
+        494.0,
+        674.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        494.0,
+        674.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "spawn",
+      "id": "from-jade-mountain",
+      "point": [
+        30.0,
+        350.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        30.0,
+        350.0
+      ],
+      "reason": null
+    }
+  ],
+  "targets": [
+    {
+      "kind": "exit",
+      "id": "exit-east",
+      "point": [
+        1016.0,
+        352.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        1002.0,
+        342.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "exit",
+      "id": "exit-south",
+      "point": [
+        496.0,
+        696.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        486.0,
+        682.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "exit",
+      "id": "exit-west",
+      "point": [
+        8.0,
+        352.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        22.0,
+        342.0
+      ],
+      "reason": null
+    }
+  ],
+  "links": [
+    {
+      "portal": "exit-east",
+      "to": "imperial-ruins",
+      "arrival": [
+        30.0,
+        350.0
+      ],
+      "returnPortals": [
+        "exit-west"
+      ],
+      "status": "pass"
+    },
+    {
+      "portal": "exit-south",
+      "to": "river-market",
+      "arrival": [
+        494.0,
+        30.0
+      ],
+      "returnPortals": [
+        "exit-north"
+      ],
+      "status": "pass"
+    },
+    {
+      "portal": "exit-west",
+      "to": "jade-mountain",
+      "arrival": [
+        994.0,
+        350.0
+      ],
+      "returnPortals": [
+        "exit-east"
+      ],
+      "status": "pass"
+    }
+  ],
+  "thinGaps": [],
+  "unreachablePockets": [
+    {
+      "cells": 6,
+      "at": [
+        242.0,
+        146.0
+      ]
+    },
+    {
+      "cells": 6,
+      "at": [
+        570.0,
+        430.0
+      ]
+    },
+    {
+      "cells": 2,
+      "at": [
+        674.0,
+        26.0
+      ]
+    },
+    {
+      "cells": 2,
+      "at": [
+        310.0,
+        238.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        350.0,
+        74.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        322.0,
+        110.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        370.0,
+        178.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        350.0,
+        530.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        198.0,
+        554.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        198.0,
+        562.0
+      ]
+    }
+  ],
+  "bundleNav": {
+    "cell": 4,
+    "grid": "nav-grid.json"
+  },
+  "problems": []
+}

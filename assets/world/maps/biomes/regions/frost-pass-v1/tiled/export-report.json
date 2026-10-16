@@ -1,0 +1,172 @@
+{
+  "schema": "generate2dmap.tiled_export.v1",
+  "status": "pass",
+  "method": "TMJ and TSX written from the bundle, read back with the built-in reader (TSX via ElementTree) and re-rendered (tile layers, image layers, prop tile objects in draw order); the re-render must equal render_map(bundle) pixel for pixel (preview.png)",
+  "notProven": [
+    "Tiled GUI not verified: opening the map, wang/terrain brushes and the mixed blob wangset in the editor",
+    "Phaser or another engine rendering map.embedded.tmj the same way",
+    "runtime depth sorting by the sortY property (Tiled's own topdown order sorts by image bottom)"
+  ],
+  "checks": [
+    {
+      "id": "tsx_well_formed",
+      "status": "pass",
+      "value": [],
+      "threshold": []
+    },
+    {
+      "id": "rerender_map_tmj",
+      "status": "pass",
+      "value": 0,
+      "threshold": 0
+    },
+    {
+      "id": "rerender_map_embedded_tmj",
+      "status": "pass",
+      "value": 0,
+      "threshold": 0
+    }
+  ],
+  "inputs": [
+    {
+      "path": "../map-bundle.json",
+      "sha256": "50c66df35eadd349e2b8b238c5f5b790fe82875dc448252635588e344c265ced",
+      "bytes": 43017
+    },
+    {
+      "path": "../tilesets/snow-dirt-wang16/snow-dirt-wang16.tileset.json",
+      "sha256": "f649614ac33a8cbe63cc954451a53b2e8f92b83db8fa04553ea4ae31a0d78013",
+      "bytes": 21238
+    },
+    {
+      "path": "../tilesets/snow-dirt-wang16/snow-dirt-wang16.png",
+      "sha256": "b61738a54d41307ba47befa3458f50054c74749ea6c6ceca9ad6d5b0c9e73ec3",
+      "bytes": 4236
+    },
+    {
+      "path": "../terrain-vertices.json",
+      "sha256": "0a2d7502da5279c0dc91645fe3e505e1a15538be4087497bd3a131ad2fa1b595",
+      "bytes": 7284
+    },
+    {
+      "path": "../props/pine.png",
+      "sha256": "f6d9de3c7e18415fa4233e58b4cc65847573ea601c3a2cd3738f46d9b4bf5fc3",
+      "bytes": 341
+    },
+    {
+      "path": "../props/blossom_tree.png",
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "bytes": 407
+    },
+    {
+      "path": "../props/bamboo.png",
+      "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
+      "bytes": 509
+    },
+    {
+      "path": "../props/shrub.png",
+      "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
+      "bytes": 198
+    },
+    {
+      "path": "../props/rock.png",
+      "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
+      "bytes": 188
+    },
+    {
+      "path": "../props/lantern.png",
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "bytes": 230
+    },
+    {
+      "path": "../props/signboard.png",
+      "sha256": "db4e50fb76441a57ff24f22c3cc852749cb0faf64c0ed744a068ece0b1bbea41",
+      "bytes": 223
+    },
+    {
+      "path": "../props/sect_gate.png",
+      "sha256": "1aeedb2ef856eec6fe1e5f8310ce4e1e368e05f60b6182f91cba3f86974c6a85",
+      "bytes": 479
+    },
+    {
+      "path": "../props/pagoda.png",
+      "sha256": "c4805330da4a46ae8195e0e50329bf47980748df8f7552fd576a7d5e04a1cb1d",
+      "bytes": 514
+    },
+    {
+      "path": "../props/bridge.png",
+      "sha256": "27e76b7d6bd364498b855920f61381c3f2f699394612fe509cb397c0c0ba864d",
+      "bytes": 300
+    }
+  ],
+  "outputs": [
+    {
+      "path": "images/pine.png",
+      "sha256": "f6d9de3c7e18415fa4233e58b4cc65847573ea601c3a2cd3738f46d9b4bf5fc3",
+      "bytes": 341
+    },
+    {
+      "path": "images/rock.png",
+      "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
+      "bytes": 188
+    },
+    {
+      "path": "images/snow-dirt-wang16.png",
+      "sha256": "b61738a54d41307ba47befa3458f50054c74749ea6c6ceca9ad6d5b0c9e73ec3",
+      "bytes": 4236
+    },
+    {
+      "path": "map.embedded.tmj",
+      "sha256": "5d5ec29b374b7de9dde5b4db3b329b15a10294c386b665798677fb2e56244b88",
+      "bytes": 93393
+    },
+    {
+      "path": "map.tmj",
+      "sha256": "c0a2206b3ae384f1eb731b7bc5938a3956f1eb533192e4d169267b572003a90f",
+      "bytes": 44864
+    },
+    {
+      "path": "preview.png",
+      "sha256": "e9db5523ad0cc42d3ca0219fbd1b42eb675402c181f789e496034eb9b89d4e2b",
+      "bytes": 30212
+    },
+    {
+      "path": "props.tsx",
+      "sha256": "b27681900cd5924424742bff5096af6126071f58534da4b6678f551d9de741b4",
+      "bytes": 1353
+    },
+    {
+      "path": "snow-dirt-wang16.tsx",
+      "sha256": "1620a0303553d1b584b33433abda625c192c27ac6054edd995ece26ff542180d",
+      "bytes": 17175
+    }
+  ],
+  "tool": {
+    "name": "export_tiled.py",
+    "version": "0.4.0"
+  },
+  "tiled": {
+    "format": "1.10",
+    "app": "1.11.0",
+    "tilesets": [
+      {
+        "file": "snow-dirt-wang16.tsx",
+        "name": "snow-dirt-wang16",
+        "firstgid": 1,
+        "tilecount": 64
+      },
+      {
+        "file": "props.tsx",
+        "name": "props",
+        "firstgid": 65,
+        "tilecount": 2
+      }
+    ],
+    "layers": [
+      "ground",
+      "props",
+      "collision",
+      "interactions"
+    ]
+  }
+}
