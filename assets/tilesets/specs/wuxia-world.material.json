@@ -1,0 +1,210 @@
+{
+  "schema": "codeart2d.material_spec.v1",
+  "tile_size": 32,
+  "variants": 4,
+  "seed": 30417,
+  "collision_cell": 4,
+  "materials": {
+    "grass": {
+      "ramp": ["#1e4937", "#34704a", "#57935b", "#83b96c", "#c2d98a"],
+      "texture": {
+        "base": 2,
+        "marks": [
+          {"rows": ["1.1", ".1."], "weight": 3},
+          {"rows": ["3", "1"], "weight": 2},
+          {"rows": ["4"], "weight": 1},
+          {"rows": ["1", "1"], "weight": 1}
+        ],
+        "marks_per_tile": [4, 7]
+      },
+      "walkable": true
+    },
+    "dirt": {
+      "ramp": ["#4d342b", "#76503a", "#a2764b", "#c39a63", "#dfbd82"],
+      "texture": {
+        "base": 2,
+        "marks": [
+          {"rows": ["33", "10"], "weight": 2},
+          {"rows": ["1.1"], "weight": 3},
+          {"rows": ["4"], "weight": 1},
+          {"rows": ["11", "1."], "weight": 1}
+        ],
+        "marks_per_tile": [4, 7]
+      }
+    },
+    "sand": {
+      "ramp": ["#8a6945", "#bd9560", "#dfba7a", "#f2d99a"],
+      "texture": {
+        "base": 2,
+        "marks": [
+          {"rows": ["1.", ".1"], "weight": 3},
+          {"rows": ["3"], "weight": 2},
+          {"rows": ["11."], "weight": 1}
+        ],
+        "marks_per_tile": [3, 6]
+      }
+    },
+    "water": {
+      "ramp": ["#173d61", "#23618a", "#3188a5", "#61b6bd", "#b0e2cf"],
+      "walkable": false,
+      "texture": {
+        "base": 1,
+        "marks": [
+          {"rows": [".33..", "..33."], "weight": 2},
+          {"rows": ["4..", "..4"], "weight": 2},
+          {"rows": ["..3", "3.."], "weight": 1},
+          {"rows": ["44"], "weight": 1}
+        ],
+        "marks_per_tile": [3, 5]
+      },
+      "edge": {"colors": [4, 3]}
+    },
+    "natural_stone": {
+      "ramp": ["#343c43", "#59656a", "#7b8785", "#aeb8a5", "#d4d1b5"],
+      "texture": {
+        "base": 2,
+        "marks": [
+          {"rows": ["11.", ".1."], "weight": 2},
+          {"rows": ["3..", "..3"], "weight": 2},
+          {"rows": ["4"], "weight": 1}
+        ],
+        "marks_per_tile": [3, 6]
+      }
+    },
+    "built_stone": {
+      "ramp": ["#34333d", "#55515a", "#77717a", "#a3998d", "#d3c5a6"],
+      "texture": {
+        "base": 2,
+        "marks": [
+          {"rows": ["333333333333333333333333333333"], "weight": 1},
+          {"rows": ["111111111111111111111111111111"], "weight": 1},
+          {"rows": ["....", "3333", "....", "1111"], "weight": 1}
+        ],
+        "marks_per_tile": [2, 3],
+        "mark_margin": 1
+      },
+      "bevel": {"top": [2, 1], "left": [-1], "right": [-1], "bottom": [-2]},
+      "walkable": true
+    },
+    "dirt_path": {
+      "ramp": ["#563b30", "#80543a", "#b0794d", "#d39d60", "#e3bb7a"],
+      "texture": {
+        "base": 2,
+        "marks": [
+          {"rows": ["3.3", ".1."], "weight": 2},
+          {"rows": ["44"], "weight": 1},
+          {"rows": ["1..", "..1"], "weight": 2},
+          {"rows": ["333"], "weight": 1}
+        ],
+        "marks_per_tile": [4, 7]
+      },
+      "walkable": true
+    },
+    "snow": {
+      "ramp": ["#627d91", "#91afbd", "#c1d9d9", "#e7f1e7", "#ffffff"],
+      "texture": {
+        "base": 3,
+        "marks": [
+          {"rows": ["2.2", ".2."], "weight": 2},
+          {"rows": ["4"], "weight": 2},
+          {"rows": ["22"], "weight": 1}
+        ],
+        "marks_per_tile": [3, 5]
+      }
+    },
+    "corruption": {
+      "ramp": ["#241d39", "#43295f", "#6b3f8b", "#9b58a2", "#e17cae"],
+      "texture": {
+        "base": 2,
+        "marks": [
+          {"rows": ["33.", ".33"], "weight": 2},
+          {"rows": ["4", ".4"], "weight": 1},
+          {"rows": ["11", "1."], "weight": 2}
+        ],
+        "marks_per_tile": [3, 6]
+      },
+      "walkable": false
+    },
+    "lava": {
+      "ramp": ["#541e25", "#922e28", "#ce4e24", "#f07d2d", "#ffd166"],
+      "texture": {
+        "base": 1,
+        "marks": [
+          {"rows": ["3..", ".3."], "weight": 2},
+          {"rows": ["4", "3"], "weight": 1},
+          {"rows": [".4."], "weight": 1}
+        ],
+        "marks_per_tile": [3, 5]
+      },
+      "walkable": false,
+      "edge": {"colors": [4, 3]}
+    },
+    "ice": {
+      "ramp": ["#3c718b", "#62a1b5", "#9ad2d6", "#d9f3e9", "#ffffff"],
+      "texture": {
+        "base": 2,
+        "marks": [
+          {"rows": ["...3", "..3."], "weight": 1},
+          {"rows": ["4..", "..4"], "weight": 2},
+          {"rows": [".1.", "1.."], "weight": 1}
+        ],
+        "marks_per_tile": [2, 4]
+      }
+    },
+    "marsh": {
+      "ramp": ["#293d39", "#425b48", "#67805a", "#91a071", "#c2bd83"],
+      "texture": {
+        "base": 2,
+        "marks": [
+          {"rows": ["1.1", ".1."], "weight": 2},
+          {"rows": ["4"], "weight": 1},
+          {"rows": [".3", "3."], "weight": 1}
+        ],
+        "marks_per_tile": [3, 6]
+      }
+    },
+    "weathered_wood": {
+      "ramp": ["#392a29", "#694432", "#98623c", "#c0874e", "#dfb66a"],
+      "texture": {
+        "base": 2,
+        "marks": [
+          {"rows": ["222222222222222222222222222222"], "weight": 2},
+          {"rows": ["111111111111111111111111111111"], "weight": 1},
+          {"rows": ["....", "3333", "...."], "weight": 1}
+        ],
+        "marks_per_tile": [3, 4],
+        "mark_margin": 1
+      },
+      "walkable": true
+    }
+  },
+  "sets": [
+    {"id": "grass-dirt-water-wang81", "kind": "wang_corner", "materials": ["water", "grass", "dirt"]},
+    {"id": "grass-path-water-wang81", "kind": "wang_corner", "materials": ["water", "grass", "dirt_path"]},
+    {"id": "grass-dirt-wang16", "kind": "wang_corner", "materials": ["grass", "dirt"]},
+    {"id": "grass-sand-wang16", "kind": "wang_corner", "materials": ["grass", "sand"]},
+    {"id": "dirt-stone-wang16", "kind": "wang_corner", "materials": ["dirt", "natural_stone"]},
+    {"id": "grass-water-wang16", "kind": "wang_corner", "materials": ["grass", "water"]},
+    {"id": "dirt-water-wang16", "kind": "wang_corner", "materials": ["dirt", "water"]},
+    {"id": "sand-water-wang16", "kind": "wang_corner", "materials": ["sand", "water"]},
+    {"id": "path-grass-wang16", "kind": "wang_corner", "materials": ["grass", "dirt_path"]},
+    {"id": "built-natural-stone-wang16", "kind": "wang_corner", "materials": ["natural_stone", "built_stone"]},
+    {"id": "snow-grass-wang16", "kind": "wang_corner", "materials": ["grass", "snow"]},
+    {"id": "snow-dirt-wang16", "kind": "wang_corner", "materials": ["dirt", "snow"]},
+    {"id": "corruption-grass-wang16", "kind": "wang_corner", "materials": ["grass", "corruption"]},
+    {"id": "corruption-stone-wang16", "kind": "wang_corner", "materials": ["natural_stone", "corruption"]},
+    {"id": "lava-stone-wang16", "kind": "wang_corner", "materials": ["natural_stone", "lava"]},
+    {"id": "ice-water-wang16", "kind": "wang_corner", "materials": ["water", "ice"]},
+    {"id": "marsh-water-wang16", "kind": "wang_corner", "materials": ["water", "marsh"]},
+    {"id": "wood-stone-wang16", "kind": "wang_corner", "materials": ["built_stone", "weathered_wood"]},
+    {"id": "grass-dirt-path-wang81", "kind": "wang_corner", "materials": ["grass", "dirt", "dirt_path"]},
+    {"id": "grass-water-sand-wang81", "kind": "wang_corner", "materials": ["water", "grass", "sand"]},
+    {"id": "corruption-grass-dirt-wang81", "kind": "wang_corner", "materials": ["grass", "dirt", "corruption"]},
+    {"id": "grass-lava-stone-wang81", "kind": "wang_corner", "materials": ["natural_stone", "grass", "lava"]},
+    {"id": "path-overlay-blob47", "kind": "blob47", "materials": ["grass", "dirt_path"]},
+    {"id": "built-stone-bevel", "kind": "bevel", "materials": ["built_stone"]},
+    {"id": "grass-ground-flat", "kind": "flat", "materials": ["grass"]},
+    {"id": "sand-ground-flat", "kind": "flat", "materials": ["sand"]},
+    {"id": "water-ground-flat", "kind": "flat", "materials": ["water"]}
+  ]
+}

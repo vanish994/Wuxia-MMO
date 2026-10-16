@@ -1,0 +1,3213 @@
+{
+  "schema": "generate2dmap.tileset.v1",
+  "id": "corruption-stone-wang16",
+  "image": "corruption-stone-wang16.png",
+  "sha256": "edf04c8946c9e44adff811f35ac0562488cce53a4611e6b924bc2a3802f0bc7b",
+  "tile_size": 32,
+  "columns": 16,
+  "tilecount": 64,
+  "kind": "wang_corner",
+  "materials": [
+    "natural_stone",
+    "corruption"
+  ],
+  "variants": 4,
+  "seamless_verified": true,
+  "seam_proof": {
+    "method": "Tiles assembled from the atlas by key, compared pixel for pixel (RGBA) with an independent global render: noise evaluated at map coordinates, every pixel classified from its own cell, band and face look-ups read at their true positions across tile edges. Cases: every 2x2 tile block (all 3x3 corner lattices) (512 configurations, 4 variant passes); a seeded random 30x20 map.",
+    "pixels_compared": 9003008,
+    "mismatches": 0
+  },
+  "repetition_index": 0.2613,
+  "wangset": {
+    "type": "corner",
+    "colors": [
+      {
+        "name": "natural_stone",
+        "color": "#7b8785"
+      },
+      {
+        "name": "corruption",
+        "color": "#6b3f8b"
+      }
+    ]
+  },
+  "plateau": 4,
+  "art_source": "code",
+  "generator": {
+    "name": "codeart2d/autotile_build",
+    "version": "0.4.0"
+  },
+  "spec_sha256": "24f34b3938bac883790d0d391e047ff9cdf9ff3a9325c81ad03d3cff4ccc27c9",
+  "qa": {
+    "path": "autotile-qa.json",
+    "sha256": "37279e4339a0ef7246f41aad36ca9662ba645574a0b35a260b910131b8c2f1ac",
+    "bytes": 117079
+  },
+  "tiles": [
+    {
+      "index": 0,
+      "variant": 0,
+      "wang": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "collision": [],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 1,
+      "variant": 0,
+      "wang": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        2,
+        0,
+        1,
+        0,
+        1
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 20,
+          "y": 16,
+          "w": 12,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 20,
+          "w": 4,
+          "h": 12
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 2,
+      "variant": 0,
+      "wang": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        2,
+        0,
+        1
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 16,
+          "w": 8,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 8,
+          "y": 20,
+          "w": 4,
+          "h": 12
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 24,
+          "w": 4,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 3,
+      "variant": 0,
+      "wang": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        2,
+        0,
+        2,
+        0,
+        1
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 16,
+          "w": 12,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 16,
+          "w": 16,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 20,
+          "w": 4,
+          "h": 12
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 4,
+      "variant": 0,
+      "wang": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 0,
+          "w": 16,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 20,
+          "y": 8,
+          "w": 12,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 20,
+          "y": 12,
+          "w": 4,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 28,
+          "y": 12,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 5,
+      "variant": 0,
+      "wang": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        2,
+        0,
+        1,
+        0,
+        1
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 0,
+          "w": 16,
+          "h": 32
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 6,
+      "variant": 0,
+      "wang": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        1,
+        0,
+        2,
+        0,
+        1
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 0,
+          "w": 16,
+          "h": 12
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 12,
+          "w": 8,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 28,
+          "y": 12,
+          "w": 4,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 16,
+          "w": 8,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 8,
+          "y": 20,
+          "w": 4,
+          "h": 12
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 24,
+          "w": 4,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 7,
+      "variant": 0,
+      "wang": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        1
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 0,
+          "w": 16,
+          "h": 32
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 12,
+          "w": 4,
+          "h": 20
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 16,
+          "w": 12,
+          "h": 16
+        }
+      ],
+      "properties": {
+        "walkable": false
+      }
+    },
+    {
+      "index": 8,
+      "variant": 0,
+      "wang": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 16,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 8,
+          "w": 12,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 12,
+          "w": 8,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 9,
+      "variant": 0,
+      "wang": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        2,
+        0,
+        1,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 16,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 8,
+          "w": 12,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 4,
+          "y": 16,
+          "w": 4,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 16,
+          "w": 16,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 10,
+      "variant": 0,
+      "wang": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        2,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 16,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 16,
+          "w": 12,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 24,
+          "w": 4,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 11,
+      "variant": 0,
+      "wang": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        2,
+        0,
+        2,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 16,
+          "h": 32
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 12,
+          "w": 4,
+          "h": 20
+        },
+        {
+          "shape": "rect",
+          "x": 20,
+          "y": 16,
+          "w": 12,
+          "h": 16
+        }
+      ],
+      "properties": {
+        "walkable": false
+      }
+    },
+    {
+      "index": 12,
+      "variant": 0,
+      "wang": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        1,
+        0,
+        1,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 32,
+          "h": 12
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 12,
+          "w": 24,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 28,
+          "y": 12,
+          "w": 4,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 4,
+          "y": 16,
+          "w": 4,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 20,
+          "y": 16,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 13,
+      "variant": 0,
+      "wang": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        2,
+        0,
+        1,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 32,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 4,
+          "y": 16,
+          "w": 4,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 16,
+          "w": 16,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": false
+      }
+    },
+    {
+      "index": 14,
+      "variant": 0,
+      "wang": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        1,
+        0,
+        2,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 32,
+          "h": 12
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 12,
+          "w": 24,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 28,
+          "y": 12,
+          "w": 4,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 20,
+          "w": 16,
+          "h": 12
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": false
+      }
+    },
+    {
+      "index": 15,
+      "variant": 0,
+      "wang": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 32,
+          "h": 32
+        }
+      ],
+      "properties": {
+        "walkable": false
+      }
+    },
+    {
+      "index": 16,
+      "variant": 1,
+      "wang": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "collision": [],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 17,
+      "variant": 1,
+      "wang": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        2,
+        0,
+        1,
+        0,
+        1
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 20,
+          "y": 16,
+          "w": 12,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 20,
+          "w": 4,
+          "h": 12
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 18,
+      "variant": 1,
+      "wang": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        2,
+        0,
+        1
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 16,
+          "w": 8,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 8,
+          "y": 20,
+          "w": 4,
+          "h": 12
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 24,
+          "w": 4,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 19,
+      "variant": 1,
+      "wang": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        2,
+        0,
+        2,
+        0,
+        1
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 16,
+          "w": 12,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 16,
+          "w": 16,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 20,
+          "w": 4,
+          "h": 12
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 20,
+      "variant": 1,
+      "wang": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 0,
+          "w": 16,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 20,
+          "y": 8,
+          "w": 12,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 20,
+          "y": 12,
+          "w": 4,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 28,
+          "y": 12,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 21,
+      "variant": 1,
+      "wang": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        2,
+        0,
+        1,
+        0,
+        1
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 0,
+          "w": 16,
+          "h": 32
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 22,
+      "variant": 1,
+      "wang": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        1,
+        0,
+        2,
+        0,
+        1
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 0,
+          "w": 16,
+          "h": 12
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 12,
+          "w": 8,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 28,
+          "y": 12,
+          "w": 4,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 16,
+          "w": 8,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 8,
+          "y": 20,
+          "w": 4,
+          "h": 12
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 24,
+          "w": 4,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 23,
+      "variant": 1,
+      "wang": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        1
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 0,
+          "w": 16,
+          "h": 32
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 12,
+          "w": 4,
+          "h": 20
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 16,
+          "w": 12,
+          "h": 16
+        }
+      ],
+      "properties": {
+        "walkable": false
+      }
+    },
+    {
+      "index": 24,
+      "variant": 1,
+      "wang": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 16,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 8,
+          "w": 12,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 12,
+          "w": 8,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 25,
+      "variant": 1,
+      "wang": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        2,
+        0,
+        1,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 16,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 8,
+          "w": 12,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 4,
+          "y": 16,
+          "w": 4,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 16,
+          "w": 16,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 26,
+      "variant": 1,
+      "wang": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        2,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 16,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 16,
+          "w": 12,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 24,
+          "w": 4,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 27,
+      "variant": 1,
+      "wang": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        2,
+        0,
+        2,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 16,
+          "h": 32
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 12,
+          "w": 4,
+          "h": 20
+        },
+        {
+          "shape": "rect",
+          "x": 20,
+          "y": 16,
+          "w": 12,
+          "h": 16
+        }
+      ],
+      "properties": {
+        "walkable": false
+      }
+    },
+    {
+      "index": 28,
+      "variant": 1,
+      "wang": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        1,
+        0,
+        1,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 32,
+          "h": 12
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 12,
+          "w": 24,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 28,
+          "y": 12,
+          "w": 4,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 4,
+          "y": 16,
+          "w": 4,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 20,
+          "y": 16,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 29,
+      "variant": 1,
+      "wang": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        2,
+        0,
+        1,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 32,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 4,
+          "y": 16,
+          "w": 4,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 16,
+          "w": 16,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": false
+      }
+    },
+    {
+      "index": 30,
+      "variant": 1,
+      "wang": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        1,
+        0,
+        2,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 32,
+          "h": 12
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 12,
+          "w": 24,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 28,
+          "y": 12,
+          "w": 4,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 20,
+          "w": 16,
+          "h": 12
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": false
+      }
+    },
+    {
+      "index": 31,
+      "variant": 1,
+      "wang": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 32,
+          "h": 32
+        }
+      ],
+      "properties": {
+        "walkable": false
+      }
+    },
+    {
+      "index": 32,
+      "variant": 2,
+      "wang": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "collision": [],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 33,
+      "variant": 2,
+      "wang": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        2,
+        0,
+        1,
+        0,
+        1
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 20,
+          "y": 16,
+          "w": 12,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 20,
+          "w": 4,
+          "h": 12
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 34,
+      "variant": 2,
+      "wang": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        2,
+        0,
+        1
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 16,
+          "w": 8,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 8,
+          "y": 20,
+          "w": 4,
+          "h": 12
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 24,
+          "w": 4,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 35,
+      "variant": 2,
+      "wang": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        2,
+        0,
+        2,
+        0,
+        1
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 16,
+          "w": 12,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 16,
+          "w": 16,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 20,
+          "w": 4,
+          "h": 12
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 36,
+      "variant": 2,
+      "wang": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 0,
+          "w": 16,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 20,
+          "y": 8,
+          "w": 12,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 20,
+          "y": 12,
+          "w": 4,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 28,
+          "y": 12,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 37,
+      "variant": 2,
+      "wang": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        2,
+        0,
+        1,
+        0,
+        1
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 0,
+          "w": 16,
+          "h": 32
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 38,
+      "variant": 2,
+      "wang": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        1,
+        0,
+        2,
+        0,
+        1
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 0,
+          "w": 16,
+          "h": 12
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 12,
+          "w": 8,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 28,
+          "y": 12,
+          "w": 4,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 16,
+          "w": 8,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 8,
+          "y": 20,
+          "w": 4,
+          "h": 12
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 24,
+          "w": 4,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 39,
+      "variant": 2,
+      "wang": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        1
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 0,
+          "w": 16,
+          "h": 32
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 12,
+          "w": 4,
+          "h": 20
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 16,
+          "w": 12,
+          "h": 16
+        }
+      ],
+      "properties": {
+        "walkable": false
+      }
+    },
+    {
+      "index": 40,
+      "variant": 2,
+      "wang": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 16,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 8,
+          "w": 12,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 12,
+          "w": 8,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 41,
+      "variant": 2,
+      "wang": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        2,
+        0,
+        1,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 16,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 8,
+          "w": 12,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 4,
+          "y": 16,
+          "w": 4,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 16,
+          "w": 16,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 42,
+      "variant": 2,
+      "wang": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        2,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 16,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 16,
+          "w": 12,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 24,
+          "w": 4,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 43,
+      "variant": 2,
+      "wang": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        2,
+        0,
+        2,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 16,
+          "h": 32
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 12,
+          "w": 4,
+          "h": 20
+        },
+        {
+          "shape": "rect",
+          "x": 20,
+          "y": 16,
+          "w": 12,
+          "h": 16
+        }
+      ],
+      "properties": {
+        "walkable": false
+      }
+    },
+    {
+      "index": 44,
+      "variant": 2,
+      "wang": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        1,
+        0,
+        1,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 32,
+          "h": 12
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 12,
+          "w": 24,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 28,
+          "y": 12,
+          "w": 4,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 4,
+          "y": 16,
+          "w": 4,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 20,
+          "y": 16,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 45,
+      "variant": 2,
+      "wang": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        2,
+        0,
+        1,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 32,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 4,
+          "y": 16,
+          "w": 4,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 16,
+          "w": 16,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": false
+      }
+    },
+    {
+      "index": 46,
+      "variant": 2,
+      "wang": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        1,
+        0,
+        2,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 32,
+          "h": 12
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 12,
+          "w": 24,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 28,
+          "y": 12,
+          "w": 4,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 20,
+          "w": 16,
+          "h": 12
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": false
+      }
+    },
+    {
+      "index": 47,
+      "variant": 2,
+      "wang": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 32,
+          "h": 32
+        }
+      ],
+      "properties": {
+        "walkable": false
+      }
+    },
+    {
+      "index": 48,
+      "variant": 3,
+      "wang": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "collision": [],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 49,
+      "variant": 3,
+      "wang": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        2,
+        0,
+        1,
+        0,
+        1
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 20,
+          "y": 16,
+          "w": 12,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 20,
+          "w": 4,
+          "h": 12
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 50,
+      "variant": 3,
+      "wang": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        2,
+        0,
+        1
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 16,
+          "w": 8,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 8,
+          "y": 20,
+          "w": 4,
+          "h": 12
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 24,
+          "w": 4,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 51,
+      "variant": 3,
+      "wang": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        2,
+        0,
+        2,
+        0,
+        1
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 16,
+          "w": 12,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 16,
+          "w": 16,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 20,
+          "w": 4,
+          "h": 12
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 52,
+      "variant": 3,
+      "wang": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 0,
+          "w": 16,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 20,
+          "y": 8,
+          "w": 12,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 20,
+          "y": 12,
+          "w": 4,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 28,
+          "y": 12,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 53,
+      "variant": 3,
+      "wang": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        2,
+        0,
+        1,
+        0,
+        1
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 0,
+          "w": 16,
+          "h": 32
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 54,
+      "variant": 3,
+      "wang": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        1,
+        0,
+        2,
+        0,
+        1
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 0,
+          "w": 16,
+          "h": 12
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 12,
+          "w": 8,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 28,
+          "y": 12,
+          "w": 4,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 16,
+          "w": 8,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 8,
+          "y": 20,
+          "w": 4,
+          "h": 12
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 24,
+          "w": 4,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 55,
+      "variant": 3,
+      "wang": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        1
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 0,
+          "w": 16,
+          "h": 32
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 12,
+          "w": 4,
+          "h": 20
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 16,
+          "w": 12,
+          "h": 16
+        }
+      ],
+      "properties": {
+        "walkable": false
+      }
+    },
+    {
+      "index": 56,
+      "variant": 3,
+      "wang": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 16,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 8,
+          "w": 12,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 12,
+          "w": 8,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 57,
+      "variant": 3,
+      "wang": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        2,
+        0,
+        1,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 16,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 8,
+          "w": 12,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 4,
+          "y": 16,
+          "w": 4,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 16,
+          "w": 16,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 58,
+      "variant": 3,
+      "wang": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        2,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 16,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 16,
+          "w": 12,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 24,
+          "w": 4,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 59,
+      "variant": 3,
+      "wang": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "wangid": [
+        0,
+        1,
+        0,
+        2,
+        0,
+        2,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 16,
+          "h": 32
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 12,
+          "w": 4,
+          "h": 20
+        },
+        {
+          "shape": "rect",
+          "x": 20,
+          "y": 16,
+          "w": 12,
+          "h": 16
+        }
+      ],
+      "properties": {
+        "walkable": false
+      }
+    },
+    {
+      "index": 60,
+      "variant": 3,
+      "wang": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        1,
+        0,
+        1,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 32,
+          "h": 12
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 12,
+          "w": 24,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 28,
+          "y": 12,
+          "w": 4,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 4,
+          "y": 16,
+          "w": 4,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 20,
+          "y": 16,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 61,
+      "variant": 3,
+      "wang": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        2,
+        0,
+        1,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 32,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 4,
+          "y": 16,
+          "w": 4,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 16,
+          "w": 16,
+          "h": 16
+        },
+        {
+          "shape": "rect",
+          "x": 12,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": false
+      }
+    },
+    {
+      "index": 62,
+      "variant": 3,
+      "wang": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        1,
+        0,
+        2,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 32,
+          "h": 12
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 12,
+          "w": 24,
+          "h": 8
+        },
+        {
+          "shape": "rect",
+          "x": 28,
+          "y": 12,
+          "w": 4,
+          "h": 4
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 20,
+          "w": 16,
+          "h": 12
+        },
+        {
+          "shape": "rect",
+          "x": 16,
+          "y": 28,
+          "w": 4,
+          "h": 4
+        }
+      ],
+      "properties": {
+        "walkable": false
+      }
+    },
+    {
+      "index": 63,
+      "variant": 3,
+      "wang": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "wangid": [
+        0,
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        2
+      ],
+      "collision": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 32,
+          "h": 32
+        }
+      ],
+      "properties": {
+        "walkable": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,2769 @@
+{
+  "schema": "codeart2d.codeart_meta.v1",
+  "art_source": "code",
+  "placeholder": false,
+  "disclosure": "code-drawn, no image model",
+  "generator": "codeart2d/autotile_build",
+  "spec_sha256": "24f34b3938bac883790d0d391e047ff9cdf9ff3a9325c81ad03d3cff4ccc27c9",
+  "renderer": {
+    "name": "codeart2d/autotile_build",
+    "version": "0.4.0"
+  },
+  "palette": {
+    "colors": {
+      "water-0": "#173d61",
+      "water-1": "#23618a",
+      "water-2": "#3188a5",
+      "water-3": "#61b6bd",
+      "water-4": "#b0e2cf",
+      "grass-0": "#1e4937",
+      "grass-1": "#34704a",
+      "grass-2": "#57935b",
+      "grass-3": "#83b96c",
+      "grass-4": "#c2d98a",
+      "dirt-0": "#4d342b",
+      "dirt-1": "#76503a",
+      "dirt-2": "#a2764b",
+      "dirt-3": "#c39a63",
+      "dirt-4": "#dfbd82",
+      "dirt_path-0": "#563b30",
+      "dirt_path-1": "#80543a",
+      "dirt_path-2": "#b0794d",
+      "dirt_path-3": "#d39d60",
+      "dirt_path-4": "#e3bb7a",
+      "sand-0": "#8a6945",
+      "sand-1": "#bd9560",
+      "sand-2": "#dfba7a",
+      "sand-3": "#f2d99a",
+      "natural_stone-0": "#343c43",
+      "natural_stone-1": "#59656a",
+      "natural_stone-2": "#7b8785",
+      "natural_stone-3": "#aeb8a5",
+      "natural_stone-4": "#d4d1b5",
+      "built_stone-0": "#34333d",
+      "built_stone-1": "#55515a",
+      "built_stone-2": "#77717a",
+      "built_stone-3": "#a3998d",
+      "built_stone-4": "#d3c5a6",
+      "snow-0": "#627d91",
+      "snow-1": "#91afbd",
+      "snow-2": "#c1d9d9",
+      "snow-3": "#e7f1e7",
+      "snow-4": "#ffffff",
+      "corruption-0": "#241d39",
+      "corruption-1": "#43295f",
+      "corruption-2": "#6b3f8b",
+      "corruption-3": "#9b58a2",
+      "corruption-4": "#e17cae",
+      "lava-0": "#541e25",
+      "lava-1": "#922e28",
+      "lava-2": "#ce4e24",
+      "lava-3": "#f07d2d",
+      "lava-4": "#ffd166",
+      "ice-0": "#3c718b",
+      "ice-1": "#62a1b5",
+      "ice-2": "#9ad2d6",
+      "ice-3": "#d9f3e9",
+      "ice-4": "#ffffff",
+      "marsh-0": "#293d39",
+      "marsh-1": "#425b48",
+      "marsh-2": "#67805a",
+      "marsh-3": "#91a071",
+      "marsh-4": "#c2bd83",
+      "weathered_wood-0": "#392a29",
+      "weathered_wood-1": "#694432",
+      "weathered_wood-2": "#98623c",
+      "weathered_wood-3": "#c0874e",
+      "weathered_wood-4": "#dfb66a"
+    },
+    "variants": {}
+  },
+  "outputs": [
+    {
+      "path": "grass-dirt-water-wang81.png",
+      "sha256": "8614e8543cfb220fef98adac85d0d10dde5c10516bdb480457b06a2dde48c3b7",
+      "bytes": 32730
+    },
+    {
+      "path": "review-grass-dirt-water-wang81.png",
+      "sha256": "50ad22edbc6fa0770b005b64f3795d0dd44f97676c6a4c46c83f178f07f05743",
+      "bytes": 59891
+    },
+    {
+      "path": "grass-path-water-wang81.png",
+      "sha256": "ef505070499c897e246219527bbba3d094534fe18d21db062dcdeea46ed6065f",
+      "bytes": 32480
+    },
+    {
+      "path": "review-grass-path-water-wang81.png",
+      "sha256": "1084031545a92dc61a8c378fe11fc78d8772068e5c4e1810d98a8e81cf43a7ec",
+      "bytes": 59879
+    },
+    {
+      "path": "grass-dirt-wang16.png",
+      "sha256": "d876ab1ec50b3cc695555876e455cbfddb5c6cbecf493ca443fdc90fd7859b39",
+      "bytes": 4301
+    },
+    {
+      "path": "review-grass-dirt-wang16.png",
+      "sha256": "8174331ecb1c4664502bd9356780e693327b4f0406facf253e6b9c7b64ed6e2c",
+      "bytes": 33862
+    },
+    {
+      "path": "grass-sand-wang16.png",
+      "sha256": "b05101b8c445eb824c436cbc8bbbce628ce95cb685b9199e2f7b391f48dcd5e1",
+      "bytes": 3897
+    },
+    {
+      "path": "review-grass-sand-wang16.png",
+      "sha256": "fe857f96a667f0b15275335b71f05369c0b6ec8b7fa48c6c3f1335cf9ccbfe15",
+      "bytes": 31526
+    },
+    {
+      "path": "dirt-stone-wang16.png",
+      "sha256": "e0f848f846f81025a74193245412513afd46b0cf3b4e99dc54e3b8b131a179d9",
+      "bytes": 3850
+    },
+    {
+      "path": "review-dirt-stone-wang16.png",
+      "sha256": "e05f1c25e39d93502a5b82c2d2c2dc35346ad1ccd121e8befad6d00d7df07715",
+      "bytes": 32428
+    },
+    {
+      "path": "grass-water-wang16.png",
+      "sha256": "6c41af7c585ea7026124e5e0f11b57e43b6a0e6adcef7b3b356fd21130081f3a",
+      "bytes": 5193
+    },
+    {
+      "path": "review-grass-water-wang16.png",
+      "sha256": "4c3d95d66d7565bf9b51fe5e18c97dd4073e2f17422fd3cc76ec029cb69252f5",
+      "bytes": 36668
+    },
+    {
+      "path": "dirt-water-wang16.png",
+      "sha256": "c1b73ff6ae56dc80f60b520d4adf70fca8323554cebb4788225e18b5761770f9",
+      "bytes": 5321
+    },
+    {
+      "path": "review-dirt-water-wang16.png",
+      "sha256": "531fe4b91c5af6d0185dc499bf1c1ca8dbef8e37f0b78c454d4672b0c23362f7",
+      "bytes": 37106
+    },
+    {
+      "path": "sand-water-wang16.png",
+      "sha256": "e8b645e2ecfd65c48bb796e8df4d4a2a6e2c63588c4da8e4a1ddecfe273d71de",
+      "bytes": 4893
+    },
+    {
+      "path": "review-sand-water-wang16.png",
+      "sha256": "6b86fa1a63e49b19826eea1938ec178d0d3053e2936eef71adb87cc378ceb6b4",
+      "bytes": 35615
+    },
+    {
+      "path": "path-grass-wang16.png",
+      "sha256": "378ef6047f70667693cbc537ba7f9464e67bbaa8c570b289c114edbe68410510",
+      "bytes": 4157
+    },
+    {
+      "path": "review-path-grass-wang16.png",
+      "sha256": "fc623d996a0e1f26c8a20aa7c65bae24400e34c5cad9d125a6b73ac5d4517479",
+      "bytes": 33094
+    },
+    {
+      "path": "built-natural-stone-wang16.png",
+      "sha256": "f5c8723584e2660d78541d72aaf75ebea007037e7d6c4e7f9b0da006b366d656",
+      "bytes": 3356
+    },
+    {
+      "path": "review-built-natural-stone-wang16.png",
+      "sha256": "19b66909fa1ffc2df223611ac8f62ea918db3c4d0ea2387ae155e07948399dec",
+      "bytes": 30704
+    },
+    {
+      "path": "snow-grass-wang16.png",
+      "sha256": "cf7223c131440c477f4d09b0b6f9d8af8698e60a69129d386fcde718e4b3d878",
+      "bytes": 4035
+    },
+    {
+      "path": "review-snow-grass-wang16.png",
+      "sha256": "712046decb12527aa9458e530658e69ee7b9fe770d9921153b57611ffc51c730",
+      "bytes": 32389
+    },
+    {
+      "path": "snow-dirt-wang16.png",
+      "sha256": "b61738a54d41307ba47befa3458f50054c74749ea6c6ceca9ad6d5b0c9e73ec3",
+      "bytes": 4236
+    },
+    {
+      "path": "review-snow-dirt-wang16.png",
+      "sha256": "40c348c2a927ce847b0f33e1425c9b5c91775f0ce693b941423922430d51bcac",
+      "bytes": 33738
+    },
+    {
+      "path": "corruption-grass-wang16.png",
+      "sha256": "9486f929ad5e5fbae23e7d566c5dbe9444170a80792f1af20365fa8d290d3063",
+      "bytes": 4065
+    },
+    {
+      "path": "review-corruption-grass-wang16.png",
+      "sha256": "f7774cb43000df143fab327f02dd4d43f1bc95684ad854adb3796a7b333ef5a1",
+      "bytes": 33095
+    },
+    {
+      "path": "corruption-stone-wang16.png",
+      "sha256": "edf04c8946c9e44adff811f35ac0562488cce53a4611e6b924bc2a3802f0bc7b",
+      "bytes": 4044
+    },
+    {
+      "path": "review-corruption-stone-wang16.png",
+      "sha256": "1ffc9d975c15af58ee6e0f82977125e41971f5444672082d34e93501dd3af014",
+      "bytes": 33189
+    },
+    {
+      "path": "lava-stone-wang16.png",
+      "sha256": "70c27600cf4a08f96d3ab4e28b71bff757108522d84397a301732c08cea20f62",
+      "bytes": 5280
+    },
+    {
+      "path": "review-lava-stone-wang16.png",
+      "sha256": "7b661e056a7e9dcb72ef1abb7ef706c6d60c60a32426060a2ded932a4e61c350",
+      "bytes": 36333
+    },
+    {
+      "path": "ice-water-wang16.png",
+      "sha256": "8994cc58e4bb73feb3c7f7f0c5bf003d8c5a2e825d83ad667ac09bd1ab0b89df",
+      "bytes": 5050
+    },
+    {
+      "path": "review-ice-water-wang16.png",
+      "sha256": "23b64eb1da686d46986e029d7ae1df65712c02c723075e34ee2c13ce4dc77a26",
+      "bytes": 35402
+    },
+    {
+      "path": "marsh-water-wang16.png",
+      "sha256": "06e9ad2fa743a7781ce323432d312e68633627e95b4c603d60d45595436515c2",
+      "bytes": 5148
+    },
+    {
+      "path": "review-marsh-water-wang16.png",
+      "sha256": "a2ff51c1d5f856e9aeb8b0107be7e78837932e35031d4be6e63fb09ac1329187",
+      "bytes": 36024
+    },
+    {
+      "path": "wood-stone-wang16.png",
+      "sha256": "f15e87f3768c81b73e283770283ecc1bbd602d85b72751a9e998531503b593ba",
+      "bytes": 3218
+    },
+    {
+      "path": "review-wood-stone-wang16.png",
+      "sha256": "ead5bb515f9e8bc924ad3362b532ab04b17aa3200d9dd88e4662d905445c4b46",
+      "bytes": 29637
+    },
+    {
+      "path": "grass-dirt-path-wang81.png",
+      "sha256": "254e7de19cfad3bb9552be766d4c65b1cb36fc2b542a8f612d21a3305c0918fc",
+      "bytes": 27305
+    },
+    {
+      "path": "review-grass-dirt-path-wang81.png",
+      "sha256": "e43e46373796920a3d017dc3c78577e427afd9c067cc2644f434eefec4a21d26",
+      "bytes": 54270
+    },
+    {
+      "path": "grass-water-sand-wang81.png",
+      "sha256": "be7b466a17d54bec763d829834a15295e10f79486ecab8579c641a1595e7c356",
+      "bytes": 30689
+    },
+    {
+      "path": "review-grass-water-sand-wang81.png",
+      "sha256": "0b3de168d7a9653e16cb15c0f99f06add47fa01c6137d1ea2db1bf8ea91b2dba",
+      "bytes": 56453
+    },
+    {
+      "path": "corruption-grass-dirt-wang81.png",
+      "sha256": "c5063a64f2c6ffe417d56b3764822538dbf01e23c5c615a6bb367f0e215e7e7c",
+      "bytes": 26067
+    },
+    {
+      "path": "review-corruption-grass-dirt-wang81.png",
+      "sha256": "7c21abfd833cea25bd4fcc8d715dbdce89b37c371f46d73e5d3a7eb8f745abdf",
+      "bytes": 51940
+    },
+    {
+      "path": "grass-lava-stone-wang81.png",
+      "sha256": "7a52244762ac23741c7da43d60fcdb566c685d31196ecabcc9ff05f2f7eaf1b8",
+      "bytes": 30161
+    },
+    {
+      "path": "review-grass-lava-stone-wang81.png",
+      "sha256": "a12c2f710f0c3d8c073c63a4a503a53915edc0f0cd97bda216fe2311e137242d",
+      "bytes": 56486
+    },
+    {
+      "path": "path-overlay-blob47.png",
+      "sha256": "32c2fab8c1d592dc62092b96e6630b08801174e423041728057b511090885ba7",
+      "bytes": 9456
+    },
+    {
+      "path": "review-path-overlay-blob47.png",
+      "sha256": "2a4f516ab17623fdb7982f1d2135019e9ecbb9ea59fc5232975e3e607cbfb0df",
+      "bytes": 36115
+    },
+    {
+      "path": "built-stone-bevel.png",
+      "sha256": "5bbe884acb5c7a3907da8ca0359a0d818a53fac46ec4ebd2868fab05a50ed3ae",
+      "bytes": 2452
+    },
+    {
+      "path": "review-built-stone-bevel.png",
+      "sha256": "337171803f77be043a66482e7da62c04d9eb48eece3e90ca11f9fe6d402ece63",
+      "bytes": 14785
+    },
+    {
+      "path": "grass-ground-flat.png",
+      "sha256": "cb6be8df1483307440c4e0330a05d6b846b7cec2384b5850181a3750c982c03a",
+      "bytes": 406
+    },
+    {
+      "path": "review-grass-ground-flat.png",
+      "sha256": "a7557d1911bddc00572cabfcbd7d458a111a6985ef1c1e4cd600cfbc729146a9",
+      "bytes": 11122
+    },
+    {
+      "path": "sand-ground-flat.png",
+      "sha256": "cd8c10d9217469634bafd19a11f0ca90af4f16cc28c769c91cc94b97deddcd12",
+      "bytes": 325
+    },
+    {
+      "path": "review-sand-ground-flat.png",
+      "sha256": "1e0a0766014a4948aa64b7573e7c84cf9e33a00327b897ebf284922cbf836046",
+      "bytes": 10800
+    },
+    {
+      "path": "water-ground-flat.png",
+      "sha256": "95207c0beed634246b3b49f1bd35280b342ee260323a8739b48f29ce4b79b05c",
+      "bytes": 344
+    },
+    {
+      "path": "review-water-ground-flat.png",
+      "sha256": "9a2a4c720e02c3bcb052a78df4711ce854d96c5306ef5c9d52efa39369ffaa63",
+      "bytes": 10869
+    },
+    {
+      "path": "preview-map.png",
+      "sha256": "8821321348087ada0c83810c3ff9a8afdeca9498a809b4ee94077e8cb7a68e71",
+      "bytes": 25005
+    },
+    {
+      "path": "review.png",
+      "sha256": "1357cd94984569ecf8f479350bbf10faa3b55379cdd53c2871273cb837fa0f3c",
+      "bytes": 80078
+    },
+    {
+      "path": "grass-dirt-water-wang81.tileset.json",
+      "sha256": "6ebcdd316482ca8e4e9b359d5fb5d3368088b31e1666dd2498a03a9ceee9e14a",
+      "bytes": 181218
+    },
+    {
+      "path": "grass-path-water-wang81.tileset.json",
+      "sha256": "df6240fe7cd31794d3df53b67c2c07b33c12686861ea0db6306d9420e44c84df",
+      "bytes": 188988
+    },
+    {
+      "path": "grass-dirt-wang16.tileset.json",
+      "sha256": "da3203d4308c0eeeb8a54354ff3e6dad68d9e4ade9d17fe9085ea20debdcf39d",
+      "bytes": 21392
+    },
+    {
+      "path": "grass-sand-wang16.tileset.json",
+      "sha256": "fa0bf69b3d3c40af40a047232fa88b424913233b342d15a237624cbb01b88a77",
+      "bytes": 21392
+    },
+    {
+      "path": "dirt-stone-wang16.tileset.json",
+      "sha256": "b839898f8e21a94eeefc94d006746aaf7ce41b9fce8071b16a6b2553dce962d3",
+      "bytes": 21408
+    },
+    {
+      "path": "grass-water-wang16.tileset.json",
+      "sha256": "c16e6b9428c4cd2be8cf0bcb0360934e1537cc436c3b71d2ad554850e9f2c562",
+      "bytes": 45568
+    },
+    {
+      "path": "dirt-water-wang16.tileset.json",
+      "sha256": "19e84665e117e8a583cad23a118bad9b40d01df3822affc427a6cbce06bf5ddc",
+      "bytes": 40244
+    },
+    {
+      "path": "sand-water-wang16.tileset.json",
+      "sha256": "a64a34e5eed8a625f3a889f2a970c14bd7ab7319d67db0b381a1093eb59fb14a",
+      "bytes": 41212
+    },
+    {
+      "path": "path-grass-wang16.tileset.json",
+      "sha256": "c3f0e99e71a9c9d42bb245c1e39c445bdef322bf7cba0fb4d943fe2f6cf04cb3",
+      "bytes": 21402
+    },
+    {
+      "path": "built-natural-stone-wang16.tileset.json",
+      "sha256": "fd254ac101777664c08a70e6173a70e138386072076eae44db8349f4b430517d",
+      "bytes": 21440
+    },
+    {
+      "path": "snow-grass-wang16.tileset.json",
+      "sha256": "ed97ed145ce52dcf2ce47776e88443360d154a63547cd8af9c09937c882e062a",
+      "bytes": 21392
+    },
+    {
+      "path": "snow-dirt-wang16.tileset.json",
+      "sha256": "500002c3e20528142f43f7133261b2e6c5c7d26c5e23512a5fe5b1cf918fde85",
+      "bytes": 21387
+    },
+    {
+      "path": "corruption-grass-wang16.tileset.json",
+      "sha256": "d303db78f9f951e8912f4490a8589abc0c016b71e3517618794c55878ba5cd0c",
+      "bytes": 41732
+    },
+    {
+      "path": "corruption-stone-wang16.tileset.json",
+      "sha256": "679d208813059831c87b9bc8eff47e935ff3ce22ebfb8aed4a56808a60546701",
+      "bytes": 48968
+    },
+    {
+      "path": "lava-stone-wang16.tileset.json",
+      "sha256": "8f597d51e071b0cf10029a15963d230298ac80cf41334ae82fb4a89cdc6e6c3e",
+      "bytes": 44152
+    },
+    {
+      "path": "ice-water-wang16.tileset.json",
+      "sha256": "b21edd0e58165f9d02d2fb9470606568d9afdbd30b55b9bd8df3124a101caf5f",
+      "bytes": 41700
+    },
+    {
+      "path": "marsh-water-wang16.tileset.json",
+      "sha256": "127f9f2e3352e3173c5dbe6711e2f6d48a30c25afab5cd14140adc192c2c7036",
+      "bytes": 39756
+    },
+    {
+      "path": "wood-stone-wang16.tileset.json",
+      "sha256": "835e2b7eb31a7e95bf43feb36d35cfeccf23fa4b6d8a47779655a2d58580facc",
+      "bytes": 21424
+    },
+    {
+      "path": "grass-dirt-path-wang81.tileset.json",
+      "sha256": "80aabe6a828be8bd18482f1f47c75d0ef9897c9405a392eacfc1584d6b013f0d",
+      "bytes": 102840
+    },
+    {
+      "path": "grass-water-sand-wang81.tileset.json",
+      "sha256": "5e7d26c583d173263c405c1ee9d7fa07d097c334fb3d6707418bb9143e30d5c6",
+      "bytes": 192942
+    },
+    {
+      "path": "corruption-grass-dirt-wang81.tileset.json",
+      "sha256": "c142ac704a97339c19ed6f0c2dcd6f83bc4cdac400a17dfecd65e36cf32900a6",
+      "bytes": 197301
+    },
+    {
+      "path": "grass-lava-stone-wang81.tileset.json",
+      "sha256": "83e7eedcb0a442f6473abababd8693f4c5ab2588f3f3377601f913349d359d03",
+      "bytes": 181294
+    },
+    {
+      "path": "path-overlay-blob47.tileset.json",
+      "sha256": "91abbe688d3a9c65540fb9a3fa5cc0d9fa6cc425f9fe83407fd59d21b84b727f",
+      "bytes": 52029
+    },
+    {
+      "path": "built-stone-bevel.tileset.json",
+      "sha256": "1d2633b6cac23b2901c20b0e81659387b8df72927a176f18b3264ad9f6d71802",
+      "bytes": 18736
+    },
+    {
+      "path": "grass-ground-flat.tileset.json",
+      "sha256": "a2f79cc7030615e012d5b95442fc01a18fc33b13e3ed42d58b5970c7ba787ea6",
+      "bytes": 1694
+    },
+    {
+      "path": "sand-ground-flat.tileset.json",
+      "sha256": "edc8a72a725078f70c75a604f848aa9f9711fcd18a1d26f480c5a7e508d2213e",
+      "bytes": 1691
+    },
+    {
+      "path": "water-ground-flat.tileset.json",
+      "sha256": "9b4cea07ec9dc9e706ee9222f010fbee31cae33ec3d3cf6cd485154568edd2e0",
+      "bytes": 2206
+    },
+    {
+      "path": "autotile-qa.json",
+      "sha256": "37279e4339a0ef7246f41aad36ca9662ba645574a0b35a260b910131b8c2f1ac",
+      "bytes": 117079
+    }
+  ],
+  "qa": {
+    "status": "pass",
+    "method": "autotile_build: per set, an exhaustive seam proof and a seeded random-map proof (tiles assembled from the atlas against an independent global render, pixel for pixel), a detuned non-periodic control that the comparison must catch, a seam metric, a repetition index, and outer-ring, distinct-tile, alpha and palette censuses",
+    "notProven": [
+      "How the tiles look at game size: open review.png and the per-set review sheets.",
+      "The global render shares the corner-weight formula, band rules and texture code with the tile renderer; the proof shows that tiles assembled by key reproduce that map exactly, including look-ups across tile edges and noise at map coordinates, not that the art is pleasant.",
+      "Image textures are sampled per tile in both renders; whether they wrap is measured (texture_wrap and the seam metric), not proven.",
+      "Variants enter the exhaustive proof in rotations (every variant at every block position), not every combination of variants per block (flat sets do enumerate them); variants only change marks inside the outer ring, which no look-up reads.",
+      "Editor behaviour (Tiled terrain brushes, Godot or LDtk import) is not exercised here; wangid values follow Tiled's documented order but were not opened in the editor.",
+      "Collision rectangles approximate blocked pixels at the collision_cell resolution.",
+      "Blob and bevel cells two cells away from a tile were tested all empty and all full, not enumerated."
+    ],
+    "checks": [
+      {
+        "id": "grass-dirt-water-wang81/seam_proof",
+        "status": "pass",
+        "value": {
+          "pixels_compared": 322486272,
+          "mismatches": 0
+        },
+        "threshold": 0,
+        "note": "Tiles assembled from the atlas by key, compared pixel for pixel (RGBA) with an independent global render: noise evaluated at map coordinates, every pixel classified from its own cell, band and face look-ups read at their true positions across tile edges. Cases: every 2x2 tile block (all 3x3 corner lattices) (19683 configurations, 4 variant passes); a seeded random 30x20 map."
+      },
+      {
+        "id": "grass-dirt-water-wang81/random_map",
+        "status": "pass",
+        "value": {
+          "map": "30x20",
+          "mismatches": 0
+        },
+        "threshold": 0
+      },
+      {
+        "id": "grass-dirt-water-wang81/nonperiodic_control",
+        "status": "pass",
+        "value": 41678,
+        "threshold": "> 0",
+        "note": "a copy whose noise is detuned by half a cycle per tile (so it no longer wraps) must differ from its own global render; it does"
+      },
+      {
+        "id": "grass-dirt-water-wang81/seam_metric_mask",
+        "status": "pass",
+        "value": 0.2245,
+        "threshold": 1.0,
+        "note": "material flips across seams over flips inside tiles"
+      },
+      {
+        "id": "grass-dirt-water-wang81/seam_metric_rgb",
+        "status": "pass",
+        "value": 0.2561,
+        "threshold": 1.0,
+        "note": "colour steps across seams over steps inside tiles"
+      },
+      {
+        "id": "grass-dirt-water-wang81/repetition_index",
+        "status": "pass",
+        "value": 0.2848,
+        "threshold": 0.35,
+        "note": "one-tile-shift luminance correlation of a 13x13 single-material area (larger of right and down shifts, worst material), mean of 8 arrangements with uniformly picked variants"
+      },
+      {
+        "id": "grass-dirt-water-wang81/outer_rings_identical",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0,
+        "note": "keys whose variants differ on the 1 px outer ring"
+      },
+      {
+        "id": "grass-dirt-water-wang81/distinct_tiles",
+        "status": "pass",
+        "value": 81,
+        "threshold": 81
+      },
+      {
+        "id": "grass-dirt-water-wang81/partial_alpha",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "grass-dirt-water-wang81/off_palette",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "grass-path-water-wang81/seam_proof",
+        "status": "pass",
+        "value": {
+          "pixels_compared": 322486272,
+          "mismatches": 0
+        },
+        "threshold": 0,
+        "note": "Tiles assembled from the atlas by key, compared pixel for pixel (RGBA) with an independent global render: noise evaluated at map coordinates, every pixel classified from its own cell, band and face look-ups read at their true positions across tile edges. Cases: every 2x2 tile block (all 3x3 corner lattices) (19683 configurations, 4 variant passes); a seeded random 30x20 map."
+      },
+      {
+        "id": "grass-path-water-wang81/random_map",
+        "status": "pass",
+        "value": {
+          "map": "30x20",
+          "mismatches": 0
+        },
+        "threshold": 0
+      },
+      {
+        "id": "grass-path-water-wang81/nonperiodic_control",
+        "status": "pass",
+        "value": 38345,
+        "threshold": "> 0",
+        "note": "a copy whose noise is detuned by half a cycle per tile (so it no longer wraps) must differ from its own global render; it does"
+      },
+      {
+        "id": "grass-path-water-wang81/seam_metric_mask",
+        "status": "pass",
+        "value": 0.1696,
+        "threshold": 1.0,
+        "note": "material flips across seams over flips inside tiles"
+      },
+      {
+        "id": "grass-path-water-wang81/seam_metric_rgb",
+        "status": "pass",
+        "value": 0.1192,
+        "threshold": 1.0,
+        "note": "colour steps across seams over steps inside tiles"
+      },
+      {
+        "id": "grass-path-water-wang81/repetition_index",
+        "status": "pass",
+        "value": 0.2794,
+        "threshold": 0.35,
+        "note": "one-tile-shift luminance correlation of a 13x13 single-material area (larger of right and down shifts, worst material), mean of 8 arrangements with uniformly picked variants"
+      },
+      {
+        "id": "grass-path-water-wang81/outer_rings_identical",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0,
+        "note": "keys whose variants differ on the 1 px outer ring"
+      },
+      {
+        "id": "grass-path-water-wang81/distinct_tiles",
+        "status": "pass",
+        "value": 81,
+        "threshold": 81
+      },
+      {
+        "id": "grass-path-water-wang81/partial_alpha",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "grass-path-water-wang81/off_palette",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "grass-dirt-wang16/seam_proof",
+        "status": "pass",
+        "value": {
+          "pixels_compared": 8388608,
+          "mismatches": 0
+        },
+        "threshold": 0,
+        "note": "Tiles assembled from the atlas by key, compared pixel for pixel (RGBA) with an independent global render: noise evaluated at map coordinates, every pixel classified from its own cell, band and face look-ups read at their true positions across tile edges. Cases: every 2x2 tile block (all 3x3 corner lattices) (512 configurations, 4 variant passes); a seeded random 30x20 map."
+      },
+      {
+        "id": "grass-dirt-wang16/random_map",
+        "status": "pass",
+        "value": {
+          "map": "30x20",
+          "mismatches": 0
+        },
+        "threshold": 0
+      },
+      {
+        "id": "grass-dirt-wang16/nonperiodic_control",
+        "status": "pass",
+        "value": 19680,
+        "threshold": "> 0",
+        "note": "a copy whose noise is detuned by half a cycle per tile (so it no longer wraps) must differ from its own global render; it does"
+      },
+      {
+        "id": "grass-dirt-wang16/seam_metric_mask",
+        "status": "pass",
+        "value": 0.1535,
+        "threshold": 1.0,
+        "note": "material flips across seams over flips inside tiles"
+      },
+      {
+        "id": "grass-dirt-wang16/seam_metric_rgb",
+        "status": "pass",
+        "value": 0.0686,
+        "threshold": 1.0,
+        "note": "colour steps across seams over steps inside tiles"
+      },
+      {
+        "id": "grass-dirt-wang16/repetition_index",
+        "status": "pass",
+        "value": 0.2733,
+        "threshold": 0.35,
+        "note": "one-tile-shift luminance correlation of a 13x13 single-material area (larger of right and down shifts, worst material), mean of 8 arrangements with uniformly picked variants"
+      },
+      {
+        "id": "grass-dirt-wang16/outer_rings_identical",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0,
+        "note": "keys whose variants differ on the 1 px outer ring"
+      },
+      {
+        "id": "grass-dirt-wang16/distinct_tiles",
+        "status": "pass",
+        "value": 16,
+        "threshold": 16
+      },
+      {
+        "id": "grass-dirt-wang16/partial_alpha",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "grass-dirt-wang16/off_palette",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "grass-sand-wang16/seam_proof",
+        "status": "pass",
+        "value": {
+          "pixels_compared": 8388608,
+          "mismatches": 0
+        },
+        "threshold": 0,
+        "note": "Tiles assembled from the atlas by key, compared pixel for pixel (RGBA) with an independent global render: noise evaluated at map coordinates, every pixel classified from its own cell, band and face look-ups read at their true positions across tile edges. Cases: every 2x2 tile block (all 3x3 corner lattices) (512 configurations, 4 variant passes); a seeded random 30x20 map."
+      },
+      {
+        "id": "grass-sand-wang16/random_map",
+        "status": "pass",
+        "value": {
+          "map": "30x20",
+          "mismatches": 0
+        },
+        "threshold": 0
+      },
+      {
+        "id": "grass-sand-wang16/nonperiodic_control",
+        "status": "pass",
+        "value": 20881,
+        "threshold": "> 0",
+        "note": "a copy whose noise is detuned by half a cycle per tile (so it no longer wraps) must differ from its own global render; it does"
+      },
+      {
+        "id": "grass-sand-wang16/seam_metric_mask",
+        "status": "pass",
+        "value": 0.1596,
+        "threshold": 1.0,
+        "note": "material flips across seams over flips inside tiles"
+      },
+      {
+        "id": "grass-sand-wang16/seam_metric_rgb",
+        "status": "pass",
+        "value": 0.115,
+        "threshold": 1.0,
+        "note": "colour steps across seams over steps inside tiles"
+      },
+      {
+        "id": "grass-sand-wang16/repetition_index",
+        "status": "pass",
+        "value": 0.2942,
+        "threshold": 0.35,
+        "note": "one-tile-shift luminance correlation of a 13x13 single-material area (larger of right and down shifts, worst material), mean of 8 arrangements with uniformly picked variants"
+      },
+      {
+        "id": "grass-sand-wang16/outer_rings_identical",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0,
+        "note": "keys whose variants differ on the 1 px outer ring"
+      },
+      {
+        "id": "grass-sand-wang16/distinct_tiles",
+        "status": "pass",
+        "value": 16,
+        "threshold": 16
+      },
+      {
+        "id": "grass-sand-wang16/partial_alpha",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "grass-sand-wang16/off_palette",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "dirt-stone-wang16/seam_proof",
+        "status": "pass",
+        "value": {
+          "pixels_compared": 8388608,
+          "mismatches": 0
+        },
+        "threshold": 0,
+        "note": "Tiles assembled from the atlas by key, compared pixel for pixel (RGBA) with an independent global render: noise evaluated at map coordinates, every pixel classified from its own cell, band and face look-ups read at their true positions across tile edges. Cases: every 2x2 tile block (all 3x3 corner lattices) (512 configurations, 4 variant passes); a seeded random 30x20 map."
+      },
+      {
+        "id": "dirt-stone-wang16/random_map",
+        "status": "pass",
+        "value": {
+          "map": "30x20",
+          "mismatches": 0
+        },
+        "threshold": 0
+      },
+      {
+        "id": "dirt-stone-wang16/nonperiodic_control",
+        "status": "pass",
+        "value": 18764,
+        "threshold": "> 0",
+        "note": "a copy whose noise is detuned by half a cycle per tile (so it no longer wraps) must differ from its own global render; it does"
+      },
+      {
+        "id": "dirt-stone-wang16/seam_metric_mask",
+        "status": "pass",
+        "value": 0.1725,
+        "threshold": 1.0,
+        "note": "material flips across seams over flips inside tiles"
+      },
+      {
+        "id": "dirt-stone-wang16/seam_metric_rgb",
+        "status": "pass",
+        "value": 0.0782,
+        "threshold": 1.0,
+        "note": "colour steps across seams over steps inside tiles"
+      },
+      {
+        "id": "dirt-stone-wang16/repetition_index",
+        "status": "pass",
+        "value": 0.2691,
+        "threshold": 0.35,
+        "note": "one-tile-shift luminance correlation of a 13x13 single-material area (larger of right and down shifts, worst material), mean of 8 arrangements with uniformly picked variants"
+      },
+      {
+        "id": "dirt-stone-wang16/outer_rings_identical",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0,
+        "note": "keys whose variants differ on the 1 px outer ring"
+      },
+      {
+        "id": "dirt-stone-wang16/distinct_tiles",
+        "status": "pass",
+        "value": 16,
+        "threshold": 16
+      },
+      {
+        "id": "dirt-stone-wang16/partial_alpha",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "dirt-stone-wang16/off_palette",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "grass-water-wang16/seam_proof",
+        "status": "pass",
+        "value": {
+          "pixels_compared": 8388608,
+          "mismatches": 0
+        },
+        "threshold": 0,
+        "note": "Tiles assembled from the atlas by key, compared pixel for pixel (RGBA) with an independent global render: noise evaluated at map coordinates, every pixel classified from its own cell, band and face look-ups read at their true positions across tile edges. Cases: every 2x2 tile block (all 3x3 corner lattices) (512 configurations, 4 variant passes); a seeded random 30x20 map."
+      },
+      {
+        "id": "grass-water-wang16/random_map",
+        "status": "pass",
+        "value": {
+          "map": "30x20",
+          "mismatches": 0
+        },
+        "threshold": 0
+      },
+      {
+        "id": "grass-water-wang16/nonperiodic_control",
+        "status": "pass",
+        "value": 27899,
+        "threshold": "> 0",
+        "note": "a copy whose noise is detuned by half a cycle per tile (so it no longer wraps) must differ from its own global render; it does"
+      },
+      {
+        "id": "grass-water-wang16/seam_metric_mask",
+        "status": "pass",
+        "value": 0.5632,
+        "threshold": 1.0,
+        "note": "material flips across seams over flips inside tiles"
+      },
+      {
+        "id": "grass-water-wang16/seam_metric_rgb",
+        "status": "pass",
+        "value": 0.3844,
+        "threshold": 1.0,
+        "note": "colour steps across seams over steps inside tiles"
+      },
+      {
+        "id": "grass-water-wang16/repetition_index",
+        "status": "pass",
+        "value": 0.2725,
+        "threshold": 0.35,
+        "note": "one-tile-shift luminance correlation of a 13x13 single-material area (larger of right and down shifts, worst material), mean of 8 arrangements with uniformly picked variants"
+      },
+      {
+        "id": "grass-water-wang16/outer_rings_identical",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0,
+        "note": "keys whose variants differ on the 1 px outer ring"
+      },
+      {
+        "id": "grass-water-wang16/distinct_tiles",
+        "status": "pass",
+        "value": 16,
+        "threshold": 16
+      },
+      {
+        "id": "grass-water-wang16/partial_alpha",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "grass-water-wang16/off_palette",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "dirt-water-wang16/seam_proof",
+        "status": "pass",
+        "value": {
+          "pixels_compared": 8388608,
+          "mismatches": 0
+        },
+        "threshold": 0,
+        "note": "Tiles assembled from the atlas by key, compared pixel for pixel (RGBA) with an independent global render: noise evaluated at map coordinates, every pixel classified from its own cell, band and face look-ups read at their true positions across tile edges. Cases: every 2x2 tile block (all 3x3 corner lattices) (512 configurations, 4 variant passes); a seeded random 30x20 map."
+      },
+      {
+        "id": "dirt-water-wang16/random_map",
+        "status": "pass",
+        "value": {
+          "map": "30x20",
+          "mismatches": 0
+        },
+        "threshold": 0
+      },
+      {
+        "id": "dirt-water-wang16/nonperiodic_control",
+        "status": "pass",
+        "value": 31426,
+        "threshold": "> 0",
+        "note": "a copy whose noise is detuned by half a cycle per tile (so it no longer wraps) must differ from its own global render; it does"
+      },
+      {
+        "id": "dirt-water-wang16/seam_metric_mask",
+        "status": "pass",
+        "value": 0.0,
+        "threshold": 1.0,
+        "note": "material flips across seams over flips inside tiles"
+      },
+      {
+        "id": "dirt-water-wang16/seam_metric_rgb",
+        "status": "pass",
+        "value": 0.0,
+        "threshold": 1.0,
+        "note": "colour steps across seams over steps inside tiles"
+      },
+      {
+        "id": "dirt-water-wang16/repetition_index",
+        "status": "pass",
+        "value": 0.2754,
+        "threshold": 0.35,
+        "note": "one-tile-shift luminance correlation of a 13x13 single-material area (larger of right and down shifts, worst material), mean of 8 arrangements with uniformly picked variants"
+      },
+      {
+        "id": "dirt-water-wang16/outer_rings_identical",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0,
+        "note": "keys whose variants differ on the 1 px outer ring"
+      },
+      {
+        "id": "dirt-water-wang16/distinct_tiles",
+        "status": "pass",
+        "value": 16,
+        "threshold": 16
+      },
+      {
+        "id": "dirt-water-wang16/partial_alpha",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "dirt-water-wang16/off_palette",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "sand-water-wang16/seam_proof",
+        "status": "pass",
+        "value": {
+          "pixels_compared": 8388608,
+          "mismatches": 0
+        },
+        "threshold": 0,
+        "note": "Tiles assembled from the atlas by key, compared pixel for pixel (RGBA) with an independent global render: noise evaluated at map coordinates, every pixel classified from its own cell, band and face look-ups read at their true positions across tile edges. Cases: every 2x2 tile block (all 3x3 corner lattices) (512 configurations, 4 variant passes); a seeded random 30x20 map."
+      },
+      {
+        "id": "sand-water-wang16/random_map",
+        "status": "pass",
+        "value": {
+          "map": "30x20",
+          "mismatches": 0
+        },
+        "threshold": 0
+      },
+      {
+        "id": "sand-water-wang16/nonperiodic_control",
+        "status": "pass",
+        "value": 36751,
+        "threshold": "> 0",
+        "note": "a copy whose noise is detuned by half a cycle per tile (so it no longer wraps) must differ from its own global render; it does"
+      },
+      {
+        "id": "sand-water-wang16/seam_metric_mask",
+        "status": "pass",
+        "value": 0.1667,
+        "threshold": 1.0,
+        "note": "material flips across seams over flips inside tiles"
+      },
+      {
+        "id": "sand-water-wang16/seam_metric_rgb",
+        "status": "pass",
+        "value": 0.1383,
+        "threshold": 1.0,
+        "note": "colour steps across seams over steps inside tiles"
+      },
+      {
+        "id": "sand-water-wang16/repetition_index",
+        "status": "pass",
+        "value": 0.2483,
+        "threshold": 0.35,
+        "note": "one-tile-shift luminance correlation of a 13x13 single-material area (larger of right and down shifts, worst material), mean of 8 arrangements with uniformly picked variants"
+      },
+      {
+        "id": "sand-water-wang16/outer_rings_identical",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0,
+        "note": "keys whose variants differ on the 1 px outer ring"
+      },
+      {
+        "id": "sand-water-wang16/distinct_tiles",
+        "status": "pass",
+        "value": 16,
+        "threshold": 16
+      },
+      {
+        "id": "sand-water-wang16/partial_alpha",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "sand-water-wang16/off_palette",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "path-grass-wang16/seam_proof",
+        "status": "pass",
+        "value": {
+          "pixels_compared": 8388608,
+          "mismatches": 0
+        },
+        "threshold": 0,
+        "note": "Tiles assembled from the atlas by key, compared pixel for pixel (RGBA) with an independent global render: noise evaluated at map coordinates, every pixel classified from its own cell, band and face look-ups read at their true positions across tile edges. Cases: every 2x2 tile block (all 3x3 corner lattices) (512 configurations, 4 variant passes); a seeded random 30x20 map."
+      },
+      {
+        "id": "path-grass-wang16/random_map",
+        "status": "pass",
+        "value": {
+          "map": "30x20",
+          "mismatches": 0
+        },
+        "threshold": 0
+      },
+      {
+        "id": "path-grass-wang16/nonperiodic_control",
+        "status": "pass",
+        "value": 19939,
+        "threshold": "> 0",
+        "note": "a copy whose noise is detuned by half a cycle per tile (so it no longer wraps) must differ from its own global render; it does"
+      },
+      {
+        "id": "path-grass-wang16/seam_metric_mask",
+        "status": "pass",
+        "value": 0.6166,
+        "threshold": 1.0,
+        "note": "material flips across seams over flips inside tiles"
+      },
+      {
+        "id": "path-grass-wang16/seam_metric_rgb",
+        "status": "pass",
+        "value": 0.3311,
+        "threshold": 1.0,
+        "note": "colour steps across seams over steps inside tiles"
+      },
+      {
+        "id": "path-grass-wang16/repetition_index",
+        "status": "pass",
+        "value": 0.2721,
+        "threshold": 0.35,
+        "note": "one-tile-shift luminance correlation of a 13x13 single-material area (larger of right and down shifts, worst material), mean of 8 arrangements with uniformly picked variants"
+      },
+      {
+        "id": "path-grass-wang16/outer_rings_identical",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0,
+        "note": "keys whose variants differ on the 1 px outer ring"
+      },
+      {
+        "id": "path-grass-wang16/distinct_tiles",
+        "status": "pass",
+        "value": 16,
+        "threshold": 16
+      },
+      {
+        "id": "path-grass-wang16/partial_alpha",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "path-grass-wang16/off_palette",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "built-natural-stone-wang16/seam_proof",
+        "status": "pass",
+        "value": {
+          "pixels_compared": 8388608,
+          "mismatches": 0
+        },
+        "threshold": 0,
+        "note": "Tiles assembled from the atlas by key, compared pixel for pixel (RGBA) with an independent global render: noise evaluated at map coordinates, every pixel classified from its own cell, band and face look-ups read at their true positions across tile edges. Cases: every 2x2 tile block (all 3x3 corner lattices) (512 configurations, 4 variant passes); a seeded random 30x20 map."
+      },
+      {
+        "id": "built-natural-stone-wang16/random_map",
+        "status": "pass",
+        "value": {
+          "map": "30x20",
+          "mismatches": 0
+        },
+        "threshold": 0
+      },
+      {
+        "id": "built-natural-stone-wang16/nonperiodic_control",
+        "status": "pass",
+        "value": 14915,
+        "threshold": "> 0",
+        "note": "a copy whose noise is detuned by half a cycle per tile (so it no longer wraps) must differ from its own global render; it does"
+      },
+      {
+        "id": "built-natural-stone-wang16/seam_metric_mask",
+        "status": "pass",
+        "value": 0.1673,
+        "threshold": 1.0,
+        "note": "material flips across seams over flips inside tiles"
+      },
+      {
+        "id": "built-natural-stone-wang16/seam_metric_rgb",
+        "status": "pass",
+        "value": 0.0468,
+        "threshold": 1.0,
+        "note": "colour steps across seams over steps inside tiles"
+      },
+      {
+        "id": "built-natural-stone-wang16/repetition_index",
+        "status": "pass",
+        "value": 0.3095,
+        "threshold": 0.35,
+        "note": "one-tile-shift luminance correlation of a 13x13 single-material area (larger of right and down shifts, worst material), mean of 8 arrangements with uniformly picked variants"
+      },
+      {
+        "id": "built-natural-stone-wang16/outer_rings_identical",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0,
+        "note": "keys whose variants differ on the 1 px outer ring"
+      },
+      {
+        "id": "built-natural-stone-wang16/distinct_tiles",
+        "status": "pass",
+        "value": 16,
+        "threshold": 16
+      },
+      {
+        "id": "built-natural-stone-wang16/partial_alpha",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "built-natural-stone-wang16/off_palette",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "snow-grass-wang16/seam_proof",
+        "status": "pass",
+        "value": {
+          "pixels_compared": 8388608,
+          "mismatches": 0
+        },
+        "threshold": 0,
+        "note": "Tiles assembled from the atlas by key, compared pixel for pixel (RGBA) with an independent global render: noise evaluated at map coordinates, every pixel classified from its own cell, band and face look-ups read at their true positions across tile edges. Cases: every 2x2 tile block (all 3x3 corner lattices) (512 configurations, 4 variant passes); a seeded random 30x20 map."
+      },
+      {
+        "id": "snow-grass-wang16/random_map",
+        "status": "pass",
+        "value": {
+          "map": "30x20",
+          "mismatches": 0
+        },
+        "threshold": 0
+      },
+      {
+        "id": "snow-grass-wang16/nonperiodic_control",
+        "status": "pass",
+        "value": 21118,
+        "threshold": "> 0",
+        "note": "a copy whose noise is detuned by half a cycle per tile (so it no longer wraps) must differ from its own global render; it does"
+      },
+      {
+        "id": "snow-grass-wang16/seam_metric_mask",
+        "status": "pass",
+        "value": 0.2315,
+        "threshold": 1.0,
+        "note": "material flips across seams over flips inside tiles"
+      },
+      {
+        "id": "snow-grass-wang16/seam_metric_rgb",
+        "status": "pass",
+        "value": 0.1874,
+        "threshold": 1.0,
+        "note": "colour steps across seams over steps inside tiles"
+      },
+      {
+        "id": "snow-grass-wang16/repetition_index",
+        "status": "pass",
+        "value": 0.2934,
+        "threshold": 0.35,
+        "note": "one-tile-shift luminance correlation of a 13x13 single-material area (larger of right and down shifts, worst material), mean of 8 arrangements with uniformly picked variants"
+      },
+      {
+        "id": "snow-grass-wang16/outer_rings_identical",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0,
+        "note": "keys whose variants differ on the 1 px outer ring"
+      },
+      {
+        "id": "snow-grass-wang16/distinct_tiles",
+        "status": "pass",
+        "value": 16,
+        "threshold": 16
+      },
+      {
+        "id": "snow-grass-wang16/partial_alpha",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "snow-grass-wang16/off_palette",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "snow-dirt-wang16/seam_proof",
+        "status": "pass",
+        "value": {
+          "pixels_compared": 8388608,
+          "mismatches": 0
+        },
+        "threshold": 0,
+        "note": "Tiles assembled from the atlas by key, compared pixel for pixel (RGBA) with an independent global render: noise evaluated at map coordinates, every pixel classified from its own cell, band and face look-ups read at their true positions across tile edges. Cases: every 2x2 tile block (all 3x3 corner lattices) (512 configurations, 4 variant passes); a seeded random 30x20 map."
+      },
+      {
+        "id": "snow-dirt-wang16/random_map",
+        "status": "pass",
+        "value": {
+          "map": "30x20",
+          "mismatches": 0
+        },
+        "threshold": 0
+      },
+      {
+        "id": "snow-dirt-wang16/nonperiodic_control",
+        "status": "pass",
+        "value": 13172,
+        "threshold": "> 0",
+        "note": "a copy whose noise is detuned by half a cycle per tile (so it no longer wraps) must differ from its own global render; it does"
+      },
+      {
+        "id": "snow-dirt-wang16/seam_metric_mask",
+        "status": "pass",
+        "value": 0.3874,
+        "threshold": 1.0,
+        "note": "material flips across seams over flips inside tiles"
+      },
+      {
+        "id": "snow-dirt-wang16/seam_metric_rgb",
+        "status": "pass",
+        "value": 0.2955,
+        "threshold": 1.0,
+        "note": "colour steps across seams over steps inside tiles"
+      },
+      {
+        "id": "snow-dirt-wang16/repetition_index",
+        "status": "pass",
+        "value": 0.258,
+        "threshold": 0.35,
+        "note": "one-tile-shift luminance correlation of a 13x13 single-material area (larger of right and down shifts, worst material), mean of 8 arrangements with uniformly picked variants"
+      },
+      {
+        "id": "snow-dirt-wang16/outer_rings_identical",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0,
+        "note": "keys whose variants differ on the 1 px outer ring"
+      },
+      {
+        "id": "snow-dirt-wang16/distinct_tiles",
+        "status": "pass",
+        "value": 16,
+        "threshold": 16
+      },
+      {
+        "id": "snow-dirt-wang16/partial_alpha",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "snow-dirt-wang16/off_palette",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "corruption-grass-wang16/seam_proof",
+        "status": "pass",
+        "value": {
+          "pixels_compared": 8388608,
+          "mismatches": 0
+        },
+        "threshold": 0,
+        "note": "Tiles assembled from the atlas by key, compared pixel for pixel (RGBA) with an independent global render: noise evaluated at map coordinates, every pixel classified from its own cell, band and face look-ups read at their true positions across tile edges. Cases: every 2x2 tile block (all 3x3 corner lattices) (512 configurations, 4 variant passes); a seeded random 30x20 map."
+      },
+      {
+        "id": "corruption-grass-wang16/random_map",
+        "status": "pass",
+        "value": {
+          "map": "30x20",
+          "mismatches": 0
+        },
+        "threshold": 0
+      },
+      {
+        "id": "corruption-grass-wang16/nonperiodic_control",
+        "status": "pass",
+        "value": 21428,
+        "threshold": "> 0",
+        "note": "a copy whose noise is detuned by half a cycle per tile (so it no longer wraps) must differ from its own global render; it does"
+      },
+      {
+        "id": "corruption-grass-wang16/seam_metric_mask",
+        "status": "pass",
+        "value": 0.0,
+        "threshold": 1.0,
+        "note": "material flips across seams over flips inside tiles"
+      },
+      {
+        "id": "corruption-grass-wang16/seam_metric_rgb",
+        "status": "pass",
+        "value": 0.0,
+        "threshold": 1.0,
+        "note": "colour steps across seams over steps inside tiles"
+      },
+      {
+        "id": "corruption-grass-wang16/repetition_index",
+        "status": "pass",
+        "value": 0.2988,
+        "threshold": 0.35,
+        "note": "one-tile-shift luminance correlation of a 13x13 single-material area (larger of right and down shifts, worst material), mean of 8 arrangements with uniformly picked variants"
+      },
+      {
+        "id": "corruption-grass-wang16/outer_rings_identical",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0,
+        "note": "keys whose variants differ on the 1 px outer ring"
+      },
+      {
+        "id": "corruption-grass-wang16/distinct_tiles",
+        "status": "pass",
+        "value": 16,
+        "threshold": 16
+      },
+      {
+        "id": "corruption-grass-wang16/partial_alpha",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "corruption-grass-wang16/off_palette",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "corruption-stone-wang16/seam_proof",
+        "status": "pass",
+        "value": {
+          "pixels_compared": 8388608,
+          "mismatches": 0
+        },
+        "threshold": 0,
+        "note": "Tiles assembled from the atlas by key, compared pixel for pixel (RGBA) with an independent global render: noise evaluated at map coordinates, every pixel classified from its own cell, band and face look-ups read at their true positions across tile edges. Cases: every 2x2 tile block (all 3x3 corner lattices) (512 configurations, 4 variant passes); a seeded random 30x20 map."
+      },
+      {
+        "id": "corruption-stone-wang16/random_map",
+        "status": "pass",
+        "value": {
+          "map": "30x20",
+          "mismatches": 0
+        },
+        "threshold": 0
+      },
+      {
+        "id": "corruption-stone-wang16/nonperiodic_control",
+        "status": "pass",
+        "value": 20977,
+        "threshold": "> 0",
+        "note": "a copy whose noise is detuned by half a cycle per tile (so it no longer wraps) must differ from its own global render; it does"
+      },
+      {
+        "id": "corruption-stone-wang16/seam_metric_mask",
+        "status": "pass",
+        "value": 0.5771,
+        "threshold": 1.0,
+        "note": "material flips across seams over flips inside tiles"
+      },
+      {
+        "id": "corruption-stone-wang16/seam_metric_rgb",
+        "status": "pass",
+        "value": 0.2977,
+        "threshold": 1.0,
+        "note": "colour steps across seams over steps inside tiles"
+      },
+      {
+        "id": "corruption-stone-wang16/repetition_index",
+        "status": "pass",
+        "value": 0.2613,
+        "threshold": 0.35,
+        "note": "one-tile-shift luminance correlation of a 13x13 single-material area (larger of right and down shifts, worst material), mean of 8 arrangements with uniformly picked variants"
+      },
+      {
+        "id": "corruption-stone-wang16/outer_rings_identical",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0,
+        "note": "keys whose variants differ on the 1 px outer ring"
+      },
+      {
+        "id": "corruption-stone-wang16/distinct_tiles",
+        "status": "pass",
+        "value": 16,
+        "threshold": 16
+      },
+      {
+        "id": "corruption-stone-wang16/partial_alpha",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "corruption-stone-wang16/off_palette",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "lava-stone-wang16/seam_proof",
+        "status": "pass",
+        "value": {
+          "pixels_compared": 8388608,
+          "mismatches": 0
+        },
+        "threshold": 0,
+        "note": "Tiles assembled from the atlas by key, compared pixel for pixel (RGBA) with an independent global render: noise evaluated at map coordinates, every pixel classified from its own cell, band and face look-ups read at their true positions across tile edges. Cases: every 2x2 tile block (all 3x3 corner lattices) (512 configurations, 4 variant passes); a seeded random 30x20 map."
+      },
+      {
+        "id": "lava-stone-wang16/random_map",
+        "status": "pass",
+        "value": {
+          "map": "30x20",
+          "mismatches": 0
+        },
+        "threshold": 0
+      },
+      {
+        "id": "lava-stone-wang16/nonperiodic_control",
+        "status": "pass",
+        "value": 43281,
+        "threshold": "> 0",
+        "note": "a copy whose noise is detuned by half a cycle per tile (so it no longer wraps) must differ from its own global render; it does"
+      },
+      {
+        "id": "lava-stone-wang16/seam_metric_mask",
+        "status": "pass",
+        "value": 0.2141,
+        "threshold": 1.0,
+        "note": "material flips across seams over flips inside tiles"
+      },
+      {
+        "id": "lava-stone-wang16/seam_metric_rgb",
+        "status": "pass",
+        "value": 0.1871,
+        "threshold": 1.0,
+        "note": "colour steps across seams over steps inside tiles"
+      },
+      {
+        "id": "lava-stone-wang16/repetition_index",
+        "status": "pass",
+        "value": 0.2427,
+        "threshold": 0.35,
+        "note": "one-tile-shift luminance correlation of a 13x13 single-material area (larger of right and down shifts, worst material), mean of 8 arrangements with uniformly picked variants"
+      },
+      {
+        "id": "lava-stone-wang16/outer_rings_identical",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0,
+        "note": "keys whose variants differ on the 1 px outer ring"
+      },
+      {
+        "id": "lava-stone-wang16/distinct_tiles",
+        "status": "pass",
+        "value": 16,
+        "threshold": 16
+      },
+      {
+        "id": "lava-stone-wang16/partial_alpha",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "lava-stone-wang16/off_palette",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "ice-water-wang16/seam_proof",
+        "status": "pass",
+        "value": {
+          "pixels_compared": 8388608,
+          "mismatches": 0
+        },
+        "threshold": 0,
+        "note": "Tiles assembled from the atlas by key, compared pixel for pixel (RGBA) with an independent global render: noise evaluated at map coordinates, every pixel classified from its own cell, band and face look-ups read at their true positions across tile edges. Cases: every 2x2 tile block (all 3x3 corner lattices) (512 configurations, 4 variant passes); a seeded random 30x20 map."
+      },
+      {
+        "id": "ice-water-wang16/random_map",
+        "status": "pass",
+        "value": {
+          "map": "30x20",
+          "mismatches": 0
+        },
+        "threshold": 0
+      },
+      {
+        "id": "ice-water-wang16/nonperiodic_control",
+        "status": "pass",
+        "value": 40314,
+        "threshold": "> 0",
+        "note": "a copy whose noise is detuned by half a cycle per tile (so it no longer wraps) must differ from its own global render; it does"
+      },
+      {
+        "id": "ice-water-wang16/seam_metric_mask",
+        "status": "pass",
+        "value": 0.0,
+        "threshold": 1.0,
+        "note": "material flips across seams over flips inside tiles"
+      },
+      {
+        "id": "ice-water-wang16/seam_metric_rgb",
+        "status": "pass",
+        "value": 0.0,
+        "threshold": 1.0,
+        "note": "colour steps across seams over steps inside tiles"
+      },
+      {
+        "id": "ice-water-wang16/repetition_index",
+        "status": "pass",
+        "value": 0.2661,
+        "threshold": 0.35,
+        "note": "one-tile-shift luminance correlation of a 13x13 single-material area (larger of right and down shifts, worst material), mean of 8 arrangements with uniformly picked variants"
+      },
+      {
+        "id": "ice-water-wang16/outer_rings_identical",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0,
+        "note": "keys whose variants differ on the 1 px outer ring"
+      },
+      {
+        "id": "ice-water-wang16/distinct_tiles",
+        "status": "pass",
+        "value": 16,
+        "threshold": 16
+      },
+      {
+        "id": "ice-water-wang16/partial_alpha",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "ice-water-wang16/off_palette",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "marsh-water-wang16/seam_proof",
+        "status": "pass",
+        "value": {
+          "pixels_compared": 8388608,
+          "mismatches": 0
+        },
+        "threshold": 0,
+        "note": "Tiles assembled from the atlas by key, compared pixel for pixel (RGBA) with an independent global render: noise evaluated at map coordinates, every pixel classified from its own cell, band and face look-ups read at their true positions across tile edges. Cases: every 2x2 tile block (all 3x3 corner lattices) (512 configurations, 4 variant passes); a seeded random 30x20 map."
+      },
+      {
+        "id": "marsh-water-wang16/random_map",
+        "status": "pass",
+        "value": {
+          "map": "30x20",
+          "mismatches": 0
+        },
+        "threshold": 0
+      },
+      {
+        "id": "marsh-water-wang16/nonperiodic_control",
+        "status": "pass",
+        "value": 40119,
+        "threshold": "> 0",
+        "note": "a copy whose noise is detuned by half a cycle per tile (so it no longer wraps) must differ from its own global render; it does"
+      },
+      {
+        "id": "marsh-water-wang16/seam_metric_mask",
+        "status": "pass",
+        "value": 0.1599,
+        "threshold": 1.0,
+        "note": "material flips across seams over flips inside tiles"
+      },
+      {
+        "id": "marsh-water-wang16/seam_metric_rgb",
+        "status": "pass",
+        "value": 0.1296,
+        "threshold": 1.0,
+        "note": "colour steps across seams over steps inside tiles"
+      },
+      {
+        "id": "marsh-water-wang16/repetition_index",
+        "status": "pass",
+        "value": 0.2628,
+        "threshold": 0.35,
+        "note": "one-tile-shift luminance correlation of a 13x13 single-material area (larger of right and down shifts, worst material), mean of 8 arrangements with uniformly picked variants"
+      },
+      {
+        "id": "marsh-water-wang16/outer_rings_identical",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0,
+        "note": "keys whose variants differ on the 1 px outer ring"
+      },
+      {
+        "id": "marsh-water-wang16/distinct_tiles",
+        "status": "pass",
+        "value": 16,
+        "threshold": 16
+      },
+      {
+        "id": "marsh-water-wang16/partial_alpha",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "marsh-water-wang16/off_palette",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "wood-stone-wang16/seam_proof",
+        "status": "pass",
+        "value": {
+          "pixels_compared": 8388608,
+          "mismatches": 0
+        },
+        "threshold": 0,
+        "note": "Tiles assembled from the atlas by key, compared pixel for pixel (RGBA) with an independent global render: noise evaluated at map coordinates, every pixel classified from its own cell, band and face look-ups read at their true positions across tile edges. Cases: every 2x2 tile block (all 3x3 corner lattices) (512 configurations, 4 variant passes); a seeded random 30x20 map."
+      },
+      {
+        "id": "wood-stone-wang16/random_map",
+        "status": "pass",
+        "value": {
+          "map": "30x20",
+          "mismatches": 0
+        },
+        "threshold": 0
+      },
+      {
+        "id": "wood-stone-wang16/nonperiodic_control",
+        "status": "pass",
+        "value": 27851,
+        "threshold": "> 0",
+        "note": "a copy whose noise is detuned by half a cycle per tile (so it no longer wraps) must differ from its own global render; it does"
+      },
+      {
+        "id": "wood-stone-wang16/seam_metric_mask",
+        "status": "pass",
+        "value": 0.697,
+        "threshold": 1.0,
+        "note": "material flips across seams over flips inside tiles"
+      },
+      {
+        "id": "wood-stone-wang16/seam_metric_rgb",
+        "status": "pass",
+        "value": 0.3886,
+        "threshold": 1.0,
+        "note": "colour steps across seams over steps inside tiles"
+      },
+      {
+        "id": "wood-stone-wang16/repetition_index",
+        "status": "pass",
+        "value": 0.3257,
+        "threshold": 0.35,
+        "note": "one-tile-shift luminance correlation of a 13x13 single-material area (larger of right and down shifts, worst material), mean of 8 arrangements with uniformly picked variants"
+      },
+      {
+        "id": "wood-stone-wang16/outer_rings_identical",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0,
+        "note": "keys whose variants differ on the 1 px outer ring"
+      },
+      {
+        "id": "wood-stone-wang16/distinct_tiles",
+        "status": "pass",
+        "value": 16,
+        "threshold": 16
+      },
+      {
+        "id": "wood-stone-wang16/partial_alpha",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "wood-stone-wang16/off_palette",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "grass-dirt-path-wang81/seam_proof",
+        "status": "pass",
+        "value": {
+          "pixels_compared": 322486272,
+          "mismatches": 0
+        },
+        "threshold": 0,
+        "note": "Tiles assembled from the atlas by key, compared pixel for pixel (RGBA) with an independent global render: noise evaluated at map coordinates, every pixel classified from its own cell, band and face look-ups read at their true positions across tile edges. Cases: every 2x2 tile block (all 3x3 corner lattices) (19683 configurations, 4 variant passes); a seeded random 30x20 map."
+      },
+      {
+        "id": "grass-dirt-path-wang81/random_map",
+        "status": "pass",
+        "value": {
+          "map": "30x20",
+          "mismatches": 0
+        },
+        "threshold": 0
+      },
+      {
+        "id": "grass-dirt-path-wang81/nonperiodic_control",
+        "status": "pass",
+        "value": 21987,
+        "threshold": "> 0",
+        "note": "a copy whose noise is detuned by half a cycle per tile (so it no longer wraps) must differ from its own global render; it does"
+      },
+      {
+        "id": "grass-dirt-path-wang81/seam_metric_mask",
+        "status": "pass",
+        "value": 0.4303,
+        "threshold": 1.0,
+        "note": "material flips across seams over flips inside tiles"
+      },
+      {
+        "id": "grass-dirt-path-wang81/seam_metric_rgb",
+        "status": "pass",
+        "value": 0.2605,
+        "threshold": 1.0,
+        "note": "colour steps across seams over steps inside tiles"
+      },
+      {
+        "id": "grass-dirt-path-wang81/repetition_index",
+        "status": "pass",
+        "value": 0.2646,
+        "threshold": 0.35,
+        "note": "one-tile-shift luminance correlation of a 13x13 single-material area (larger of right and down shifts, worst material), mean of 8 arrangements with uniformly picked variants"
+      },
+      {
+        "id": "grass-dirt-path-wang81/outer_rings_identical",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0,
+        "note": "keys whose variants differ on the 1 px outer ring"
+      },
+      {
+        "id": "grass-dirt-path-wang81/distinct_tiles",
+        "status": "pass",
+        "value": 81,
+        "threshold": 81
+      },
+      {
+        "id": "grass-dirt-path-wang81/partial_alpha",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "grass-dirt-path-wang81/off_palette",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "grass-water-sand-wang81/seam_proof",
+        "status": "pass",
+        "value": {
+          "pixels_compared": 322486272,
+          "mismatches": 0
+        },
+        "threshold": 0,
+        "note": "Tiles assembled from the atlas by key, compared pixel for pixel (RGBA) with an independent global render: noise evaluated at map coordinates, every pixel classified from its own cell, band and face look-ups read at their true positions across tile edges. Cases: every 2x2 tile block (all 3x3 corner lattices) (19683 configurations, 4 variant passes); a seeded random 30x20 map."
+      },
+      {
+        "id": "grass-water-sand-wang81/random_map",
+        "status": "pass",
+        "value": {
+          "map": "30x20",
+          "mismatches": 0
+        },
+        "threshold": 0
+      },
+      {
+        "id": "grass-water-sand-wang81/nonperiodic_control",
+        "status": "pass",
+        "value": 45118,
+        "threshold": "> 0",
+        "note": "a copy whose noise is detuned by half a cycle per tile (so it no longer wraps) must differ from its own global render; it does"
+      },
+      {
+        "id": "grass-water-sand-wang81/seam_metric_mask",
+        "status": "pass",
+        "value": 0.2132,
+        "threshold": 1.0,
+        "note": "material flips across seams over flips inside tiles"
+      },
+      {
+        "id": "grass-water-sand-wang81/seam_metric_rgb",
+        "status": "pass",
+        "value": 0.1958,
+        "threshold": 1.0,
+        "note": "colour steps across seams over steps inside tiles"
+      },
+      {
+        "id": "grass-water-sand-wang81/repetition_index",
+        "status": "pass",
+        "value": 0.2676,
+        "threshold": 0.35,
+        "note": "one-tile-shift luminance correlation of a 13x13 single-material area (larger of right and down shifts, worst material), mean of 8 arrangements with uniformly picked variants"
+      },
+      {
+        "id": "grass-water-sand-wang81/outer_rings_identical",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0,
+        "note": "keys whose variants differ on the 1 px outer ring"
+      },
+      {
+        "id": "grass-water-sand-wang81/distinct_tiles",
+        "status": "pass",
+        "value": 81,
+        "threshold": 81
+      },
+      {
+        "id": "grass-water-sand-wang81/partial_alpha",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "grass-water-sand-wang81/off_palette",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "corruption-grass-dirt-wang81/seam_proof",
+        "status": "pass",
+        "value": {
+          "pixels_compared": 322486272,
+          "mismatches": 0
+        },
+        "threshold": 0,
+        "note": "Tiles assembled from the atlas by key, compared pixel for pixel (RGBA) with an independent global render: noise evaluated at map coordinates, every pixel classified from its own cell, band and face look-ups read at their true positions across tile edges. Cases: every 2x2 tile block (all 3x3 corner lattices) (19683 configurations, 4 variant passes); a seeded random 30x20 map."
+      },
+      {
+        "id": "corruption-grass-dirt-wang81/random_map",
+        "status": "pass",
+        "value": {
+          "map": "30x20",
+          "mismatches": 0
+        },
+        "threshold": 0
+      },
+      {
+        "id": "corruption-grass-dirt-wang81/nonperiodic_control",
+        "status": "pass",
+        "value": 29134,
+        "threshold": "> 0",
+        "note": "a copy whose noise is detuned by half a cycle per tile (so it no longer wraps) must differ from its own global render; it does"
+      },
+      {
+        "id": "corruption-grass-dirt-wang81/seam_metric_mask",
+        "status": "pass",
+        "value": 0.0,
+        "threshold": 1.0,
+        "note": "material flips across seams over flips inside tiles"
+      },
+      {
+        "id": "corruption-grass-dirt-wang81/seam_metric_rgb",
+        "status": "pass",
+        "value": 0.0,
+        "threshold": 1.0,
+        "note": "colour steps across seams over steps inside tiles"
+      },
+      {
+        "id": "corruption-grass-dirt-wang81/repetition_index",
+        "status": "pass",
+        "value": 0.275,
+        "threshold": 0.35,
+        "note": "one-tile-shift luminance correlation of a 13x13 single-material area (larger of right and down shifts, worst material), mean of 8 arrangements with uniformly picked variants"
+      },
+      {
+        "id": "corruption-grass-dirt-wang81/outer_rings_identical",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0,
+        "note": "keys whose variants differ on the 1 px outer ring"
+      },
+      {
+        "id": "corruption-grass-dirt-wang81/distinct_tiles",
+        "status": "pass",
+        "value": 81,
+        "threshold": 81
+      },
+      {
+        "id": "corruption-grass-dirt-wang81/partial_alpha",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "corruption-grass-dirt-wang81/off_palette",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "grass-lava-stone-wang81/seam_proof",
+        "status": "pass",
+        "value": {
+          "pixels_compared": 322486272,
+          "mismatches": 0
+        },
+        "threshold": 0,
+        "note": "Tiles assembled from the atlas by key, compared pixel for pixel (RGBA) with an independent global render: noise evaluated at map coordinates, every pixel classified from its own cell, band and face look-ups read at their true positions across tile edges. Cases: every 2x2 tile block (all 3x3 corner lattices) (19683 configurations, 4 variant passes); a seeded random 30x20 map."
+      },
+      {
+        "id": "grass-lava-stone-wang81/random_map",
+        "status": "pass",
+        "value": {
+          "map": "30x20",
+          "mismatches": 0
+        },
+        "threshold": 0
+      },
+      {
+        "id": "grass-lava-stone-wang81/nonperiodic_control",
+        "status": "pass",
+        "value": 45537,
+        "threshold": "> 0",
+        "note": "a copy whose noise is detuned by half a cycle per tile (so it no longer wraps) must differ from its own global render; it does"
+      },
+      {
+        "id": "grass-lava-stone-wang81/seam_metric_mask",
+        "status": "pass",
+        "value": 0.342,
+        "threshold": 1.0,
+        "note": "material flips across seams over flips inside tiles"
+      },
+      {
+        "id": "grass-lava-stone-wang81/seam_metric_rgb",
+        "status": "pass",
+        "value": 0.3179,
+        "threshold": 1.0,
+        "note": "colour steps across seams over steps inside tiles"
+      },
+      {
+        "id": "grass-lava-stone-wang81/repetition_index",
+        "status": "pass",
+        "value": 0.2681,
+        "threshold": 0.35,
+        "note": "one-tile-shift luminance correlation of a 13x13 single-material area (larger of right and down shifts, worst material), mean of 8 arrangements with uniformly picked variants"
+      },
+      {
+        "id": "grass-lava-stone-wang81/outer_rings_identical",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0,
+        "note": "keys whose variants differ on the 1 px outer ring"
+      },
+      {
+        "id": "grass-lava-stone-wang81/distinct_tiles",
+        "status": "pass",
+        "value": 81,
+        "threshold": 81
+      },
+      {
+        "id": "grass-lava-stone-wang81/partial_alpha",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "grass-lava-stone-wang81/off_palette",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "path-overlay-blob47/seam_proof",
+        "status": "pass",
+        "value": {
+          "pixels_compared": 35651584,
+          "mismatches": 0
+        },
+        "threshold": 0,
+        "note": "Tiles assembled from the atlas by key, compared pixel for pixel (RGBA) with an independent global render: noise evaluated at map coordinates, every pixel classified from its own cell, band and face look-ups read at their true positions across tile edges. Cases: every 3x3 neighbourhood (256 configurations, 4 variant passes, cells two away all empty and all full); every horizontal pair with its neighbourhood (1024 configurations, 4 variant passes, cells two away all empty and all full); every vertical pair with its neighbourhood (1024 configurations, 4 variant passes, cells two away all empty and all full); a seeded random 30x20 map."
+      },
+      {
+        "id": "path-overlay-blob47/random_map",
+        "status": "pass",
+        "value": {
+          "map": "30x20",
+          "mismatches": 0
+        },
+        "threshold": 0
+      },
+      {
+        "id": "path-overlay-blob47/nonperiodic_control",
+        "status": "pass",
+        "value": 18661,
+        "threshold": "> 0",
+        "note": "a copy whose noise is detuned by half a cycle per tile (so it no longer wraps) must differ from its own global render; it does"
+      },
+      {
+        "id": "path-overlay-blob47/seam_metric_mask",
+        "status": "pass",
+        "value": 0.2144,
+        "threshold": 1.0,
+        "note": "material flips across seams over flips inside tiles"
+      },
+      {
+        "id": "path-overlay-blob47/seam_metric_rgb",
+        "status": "pass",
+        "value": 0.1913,
+        "threshold": 1.0,
+        "note": "colour steps across seams over steps inside tiles"
+      },
+      {
+        "id": "path-overlay-blob47/repetition_index",
+        "status": "pass",
+        "value": 0.2713,
+        "threshold": 0.35,
+        "note": "one-tile-shift luminance correlation of a 13x13 single-material area (larger of right and down shifts, worst material), mean of 8 arrangements with uniformly picked variants"
+      },
+      {
+        "id": "path-overlay-blob47/outer_rings_identical",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0,
+        "note": "keys whose variants differ on the 1 px outer ring"
+      },
+      {
+        "id": "path-overlay-blob47/distinct_tiles",
+        "status": "pass",
+        "value": 47,
+        "threshold": 47
+      },
+      {
+        "id": "path-overlay-blob47/partial_alpha",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "path-overlay-blob47/off_palette",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "built-stone-bevel/seam_proof",
+        "status": "pass",
+        "value": {
+          "pixels_compared": 35651584,
+          "mismatches": 0
+        },
+        "threshold": 0,
+        "note": "Tiles assembled from the atlas by key, compared pixel for pixel (RGBA) with an independent global render: noise evaluated at map coordinates, every pixel classified from its own cell, band and face look-ups read at their true positions across tile edges. Cases: every 3x3 neighbourhood (256 configurations, 4 variant passes, cells two away all empty and all full); every horizontal pair with its neighbourhood (1024 configurations, 4 variant passes, cells two away all empty and all full); every vertical pair with its neighbourhood (1024 configurations, 4 variant passes, cells two away all empty and all full); a seeded random 30x20 map."
+      },
+      {
+        "id": "built-stone-bevel/random_map",
+        "status": "pass",
+        "value": {
+          "map": "30x20",
+          "mismatches": 0
+        },
+        "threshold": 0
+      },
+      {
+        "id": "built-stone-bevel/nonperiodic_control",
+        "status": "skipped",
+        "value": null,
+        "threshold": "> 0",
+        "note": "the set has no periodic noise to detune (flat fills, fixed margins)"
+      },
+      {
+        "id": "built-stone-bevel/seam_metric_rgb",
+        "status": "pass",
+        "value": 0.0,
+        "threshold": 1.0,
+        "note": "colour steps across seams over steps inside tiles, inside a solid area"
+      },
+      {
+        "id": "built-stone-bevel/repetition_index",
+        "status": "pass",
+        "value": 0.2859,
+        "threshold": 0.35,
+        "note": "one-tile-shift luminance correlation of a 13x13 single-material area (larger of right and down shifts, worst material), mean of 8 arrangements with uniformly picked variants"
+      },
+      {
+        "id": "built-stone-bevel/outer_rings_identical",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0,
+        "note": "keys whose variants differ on the 1 px outer ring"
+      },
+      {
+        "id": "built-stone-bevel/distinct_tiles",
+        "status": "pass",
+        "value": 16,
+        "threshold": 16
+      },
+      {
+        "id": "built-stone-bevel/partial_alpha",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "built-stone-bevel/off_palette",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "grass-ground-flat/seam_proof",
+        "status": "pass",
+        "value": {
+          "pixels_compared": 1048576,
+          "mismatches": 0
+        },
+        "threshold": 0,
+        "note": "Tiles assembled from the atlas by key, compared pixel for pixel (RGBA) with an independent global render: noise evaluated at map coordinates, every pixel classified from its own cell, band and face look-ups read at their true positions across tile edges. Cases: every 2x2 block of variants (256 configurations, 1 variant passes); a seeded random 30x20 map."
+      },
+      {
+        "id": "grass-ground-flat/random_map",
+        "status": "pass",
+        "value": {
+          "map": "30x20",
+          "mismatches": 0
+        },
+        "threshold": 0
+      },
+      {
+        "id": "grass-ground-flat/nonperiodic_control",
+        "status": "skipped",
+        "value": null,
+        "threshold": "> 0",
+        "note": "the set has no periodic noise to detune (flat fills, fixed margins)"
+      },
+      {
+        "id": "grass-ground-flat/seam_metric_rgb",
+        "status": "pass",
+        "value": 0.0,
+        "threshold": 1.0,
+        "note": "colour steps across seams over steps inside tiles"
+      },
+      {
+        "id": "grass-ground-flat/repetition_index",
+        "status": "pass",
+        "value": 0.2754,
+        "threshold": 0.35,
+        "note": "one-tile-shift luminance correlation of a 13x13 single-material area (larger of right and down shifts, worst material), mean of 8 arrangements with uniformly picked variants"
+      },
+      {
+        "id": "grass-ground-flat/outer_rings_identical",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0,
+        "note": "keys whose variants differ on the 1 px outer ring"
+      },
+      {
+        "id": "grass-ground-flat/distinct_tiles",
+        "status": "pass",
+        "value": 1,
+        "threshold": 1
+      },
+      {
+        "id": "grass-ground-flat/partial_alpha",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "grass-ground-flat/off_palette",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "sand-ground-flat/seam_proof",
+        "status": "pass",
+        "value": {
+          "pixels_compared": 1048576,
+          "mismatches": 0
+        },
+        "threshold": 0,
+        "note": "Tiles assembled from the atlas by key, compared pixel for pixel (RGBA) with an independent global render: noise evaluated at map coordinates, every pixel classified from its own cell, band and face look-ups read at their true positions across tile edges. Cases: every 2x2 block of variants (256 configurations, 1 variant passes); a seeded random 30x20 map."
+      },
+      {
+        "id": "sand-ground-flat/random_map",
+        "status": "pass",
+        "value": {
+          "map": "30x20",
+          "mismatches": 0
+        },
+        "threshold": 0
+      },
+      {
+        "id": "sand-ground-flat/nonperiodic_control",
+        "status": "skipped",
+        "value": null,
+        "threshold": "> 0",
+        "note": "the set has no periodic noise to detune (flat fills, fixed margins)"
+      },
+      {
+        "id": "sand-ground-flat/seam_metric_rgb",
+        "status": "pass",
+        "value": 0.0,
+        "threshold": 1.0,
+        "note": "colour steps across seams over steps inside tiles"
+      },
+      {
+        "id": "sand-ground-flat/repetition_index",
+        "status": "pass",
+        "value": 0.2553,
+        "threshold": 0.35,
+        "note": "one-tile-shift luminance correlation of a 13x13 single-material area (larger of right and down shifts, worst material), mean of 8 arrangements with uniformly picked variants"
+      },
+      {
+        "id": "sand-ground-flat/outer_rings_identical",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0,
+        "note": "keys whose variants differ on the 1 px outer ring"
+      },
+      {
+        "id": "sand-ground-flat/distinct_tiles",
+        "status": "pass",
+        "value": 1,
+        "threshold": 1
+      },
+      {
+        "id": "sand-ground-flat/partial_alpha",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "sand-ground-flat/off_palette",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "water-ground-flat/seam_proof",
+        "status": "pass",
+        "value": {
+          "pixels_compared": 1048576,
+          "mismatches": 0
+        },
+        "threshold": 0,
+        "note": "Tiles assembled from the atlas by key, compared pixel for pixel (RGBA) with an independent global render: noise evaluated at map coordinates, every pixel classified from its own cell, band and face look-ups read at their true positions across tile edges. Cases: every 2x2 block of variants (256 configurations, 1 variant passes); a seeded random 30x20 map."
+      },
+      {
+        "id": "water-ground-flat/random_map",
+        "status": "pass",
+        "value": {
+          "map": "30x20",
+          "mismatches": 0
+        },
+        "threshold": 0
+      },
+      {
+        "id": "water-ground-flat/nonperiodic_control",
+        "status": "skipped",
+        "value": null,
+        "threshold": "> 0",
+        "note": "the set has no periodic noise to detune (flat fills, fixed margins)"
+      },
+      {
+        "id": "water-ground-flat/seam_metric_rgb",
+        "status": "pass",
+        "value": 0.0,
+        "threshold": 1.0,
+        "note": "colour steps across seams over steps inside tiles"
+      },
+      {
+        "id": "water-ground-flat/repetition_index",
+        "status": "pass",
+        "value": 0.2512,
+        "threshold": 0.35,
+        "note": "one-tile-shift luminance correlation of a 13x13 single-material area (larger of right and down shifts, worst material), mean of 8 arrangements with uniformly picked variants"
+      },
+      {
+        "id": "water-ground-flat/outer_rings_identical",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0,
+        "note": "keys whose variants differ on the 1 px outer ring"
+      },
+      {
+        "id": "water-ground-flat/distinct_tiles",
+        "status": "pass",
+        "value": 1,
+        "threshold": 1
+      },
+      {
+        "id": "water-ground-flat/partial_alpha",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "water-ground-flat/off_palette",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      }
+    ],
+    "inputs": [
+      {
+        "path": "../specs/wuxia-world.material.json",
+        "sha256": "24f34b3938bac883790d0d391e047ff9cdf9ff3a9325c81ad03d3cff4ccc27c9",
+        "bytes": 7776
+      }
+    ],
+    "outputs": [
+      {
+        "path": "grass-dirt-water-wang81.png",
+        "sha256": "8614e8543cfb220fef98adac85d0d10dde5c10516bdb480457b06a2dde48c3b7",
+        "bytes": 32730
+      },
+      {
+        "path": "review-grass-dirt-water-wang81.png",
+        "sha256": "50ad22edbc6fa0770b005b64f3795d0dd44f97676c6a4c46c83f178f07f05743",
+        "bytes": 59891
+      },
+      {
+        "path": "grass-path-water-wang81.png",
+        "sha256": "ef505070499c897e246219527bbba3d094534fe18d21db062dcdeea46ed6065f",
+        "bytes": 32480
+      },
+      {
+        "path": "review-grass-path-water-wang81.png",
+        "sha256": "1084031545a92dc61a8c378fe11fc78d8772068e5c4e1810d98a8e81cf43a7ec",
+        "bytes": 59879
+      },
+      {
+        "path": "grass-dirt-wang16.png",
+        "sha256": "d876ab1ec50b3cc695555876e455cbfddb5c6cbecf493ca443fdc90fd7859b39",
+        "bytes": 4301
+      },
+      {
+        "path": "review-grass-dirt-wang16.png",
+        "sha256": "8174331ecb1c4664502bd9356780e693327b4f0406facf253e6b9c7b64ed6e2c",
+        "bytes": 33862
+      },
+      {
+        "path": "grass-sand-wang16.png",
+        "sha256": "b05101b8c445eb824c436cbc8bbbce628ce95cb685b9199e2f7b391f48dcd5e1",
+        "bytes": 3897
+      },
+      {
+        "path": "review-grass-sand-wang16.png",
+        "sha256": "fe857f96a667f0b15275335b71f05369c0b6ec8b7fa48c6c3f1335cf9ccbfe15",
+        "bytes": 31526
+      },
+      {
+        "path": "dirt-stone-wang16.png",
+        "sha256": "e0f848f846f81025a74193245412513afd46b0cf3b4e99dc54e3b8b131a179d9",
+        "bytes": 3850
+      },
+      {
+        "path": "review-dirt-stone-wang16.png",
+        "sha256": "e05f1c25e39d93502a5b82c2d2c2dc35346ad1ccd121e8befad6d00d7df07715",
+        "bytes": 32428
+      },
+      {
+        "path": "grass-water-wang16.png",
+        "sha256": "6c41af7c585ea7026124e5e0f11b57e43b6a0e6adcef7b3b356fd21130081f3a",
+        "bytes": 5193
+      },
+      {
+        "path": "review-grass-water-wang16.png",
+        "sha256": "4c3d95d66d7565bf9b51fe5e18c97dd4073e2f17422fd3cc76ec029cb69252f5",
+        "bytes": 36668
+      },
+      {
+        "path": "dirt-water-wang16.png",
+        "sha256": "c1b73ff6ae56dc80f60b520d4adf70fca8323554cebb4788225e18b5761770f9",
+        "bytes": 5321
+      },
+      {
+        "path": "review-dirt-water-wang16.png",
+        "sha256": "531fe4b91c5af6d0185dc499bf1c1ca8dbef8e37f0b78c454d4672b0c23362f7",
+        "bytes": 37106
+      },
+      {
+        "path": "sand-water-wang16.png",
+        "sha256": "e8b645e2ecfd65c48bb796e8df4d4a2a6e2c63588c4da8e4a1ddecfe273d71de",
+        "bytes": 4893
+      },
+      {
+        "path": "review-sand-water-wang16.png",
+        "sha256": "6b86fa1a63e49b19826eea1938ec178d0d3053e2936eef71adb87cc378ceb6b4",
+        "bytes": 35615
+      },
+      {
+        "path": "path-grass-wang16.png",
+        "sha256": "378ef6047f70667693cbc537ba7f9464e67bbaa8c570b289c114edbe68410510",
+        "bytes": 4157
+      },
+      {
+        "path": "review-path-grass-wang16.png",
+        "sha256": "fc623d996a0e1f26c8a20aa7c65bae24400e34c5cad9d125a6b73ac5d4517479",
+        "bytes": 33094
+      },
+      {
+        "path": "built-natural-stone-wang16.png",
+        "sha256": "f5c8723584e2660d78541d72aaf75ebea007037e7d6c4e7f9b0da006b366d656",
+        "bytes": 3356
+      },
+      {
+        "path": "review-built-natural-stone-wang16.png",
+        "sha256": "19b66909fa1ffc2df223611ac8f62ea918db3c4d0ea2387ae155e07948399dec",
+        "bytes": 30704
+      },
+      {
+        "path": "snow-grass-wang16.png",
+        "sha256": "cf7223c131440c477f4d09b0b6f9d8af8698e60a69129d386fcde718e4b3d878",
+        "bytes": 4035
+      },
+      {
+        "path": "review-snow-grass-wang16.png",
+        "sha256": "712046decb12527aa9458e530658e69ee7b9fe770d9921153b57611ffc51c730",
+        "bytes": 32389
+      },
+      {
+        "path": "snow-dirt-wang16.png",
+        "sha256": "b61738a54d41307ba47befa3458f50054c74749ea6c6ceca9ad6d5b0c9e73ec3",
+        "bytes": 4236
+      },
+      {
+        "path": "review-snow-dirt-wang16.png",
+        "sha256": "40c348c2a927ce847b0f33e1425c9b5c91775f0ce693b941423922430d51bcac",
+        "bytes": 33738
+      },
+      {
+        "path": "corruption-grass-wang16.png",
+        "sha256": "9486f929ad5e5fbae23e7d566c5dbe9444170a80792f1af20365fa8d290d3063",
+        "bytes": 4065
+      },
+      {
+        "path": "review-corruption-grass-wang16.png",
+        "sha256": "f7774cb43000df143fab327f02dd4d43f1bc95684ad854adb3796a7b333ef5a1",
+        "bytes": 33095
+      },
+      {
+        "path": "corruption-stone-wang16.png",
+        "sha256": "edf04c8946c9e44adff811f35ac0562488cce53a4611e6b924bc2a3802f0bc7b",
+        "bytes": 4044
+      },
+      {
+        "path": "review-corruption-stone-wang16.png",
+        "sha256": "1ffc9d975c15af58ee6e0f82977125e41971f5444672082d34e93501dd3af014",
+        "bytes": 33189
+      },
+      {
+        "path": "lava-stone-wang16.png",
+        "sha256": "70c27600cf4a08f96d3ab4e28b71bff757108522d84397a301732c08cea20f62",
+        "bytes": 5280
+      },
+      {
+        "path": "review-lava-stone-wang16.png",
+        "sha256": "7b661e056a7e9dcb72ef1abb7ef706c6d60c60a32426060a2ded932a4e61c350",
+        "bytes": 36333
+      },
+      {
+        "path": "ice-water-wang16.png",
+        "sha256": "8994cc58e4bb73feb3c7f7f0c5bf003d8c5a2e825d83ad667ac09bd1ab0b89df",
+        "bytes": 5050
+      },
+      {
+        "path": "review-ice-water-wang16.png",
+        "sha256": "23b64eb1da686d46986e029d7ae1df65712c02c723075e34ee2c13ce4dc77a26",
+        "bytes": 35402
+      },
+      {
+        "path": "marsh-water-wang16.png",
+        "sha256": "06e9ad2fa743a7781ce323432d312e68633627e95b4c603d60d45595436515c2",
+        "bytes": 5148
+      },
+      {
+        "path": "review-marsh-water-wang16.png",
+        "sha256": "a2ff51c1d5f856e9aeb8b0107be7e78837932e35031d4be6e63fb09ac1329187",
+        "bytes": 36024
+      },
+      {
+        "path": "wood-stone-wang16.png",
+        "sha256": "f15e87f3768c81b73e283770283ecc1bbd602d85b72751a9e998531503b593ba",
+        "bytes": 3218
+      },
+      {
+        "path": "review-wood-stone-wang16.png",
+        "sha256": "ead5bb515f9e8bc924ad3362b532ab04b17aa3200d9dd88e4662d905445c4b46",
+        "bytes": 29637
+      },
+      {
+        "path": "grass-dirt-path-wang81.png",
+        "sha256": "254e7de19cfad3bb9552be766d4c65b1cb36fc2b542a8f612d21a3305c0918fc",
+        "bytes": 27305
+      },
+      {
+        "path": "review-grass-dirt-path-wang81.png",
+        "sha256": "e43e46373796920a3d017dc3c78577e427afd9c067cc2644f434eefec4a21d26",
+        "bytes": 54270
+      },
+      {
+        "path": "grass-water-sand-wang81.png",
+        "sha256": "be7b466a17d54bec763d829834a15295e10f79486ecab8579c641a1595e7c356",
+        "bytes": 30689
+      },
+      {
+        "path": "review-grass-water-sand-wang81.png",
+        "sha256": "0b3de168d7a9653e16cb15c0f99f06add47fa01c6137d1ea2db1bf8ea91b2dba",
+        "bytes": 56453
+      },
+      {
+        "path": "corruption-grass-dirt-wang81.png",
+        "sha256": "c5063a64f2c6ffe417d56b3764822538dbf01e23c5c615a6bb367f0e215e7e7c",
+        "bytes": 26067
+      },
+      {
+        "path": "review-corruption-grass-dirt-wang81.png",
+        "sha256": "7c21abfd833cea25bd4fcc8d715dbdce89b37c371f46d73e5d3a7eb8f745abdf",
+        "bytes": 51940
+      },
+      {
+        "path": "grass-lava-stone-wang81.png",
+        "sha256": "7a52244762ac23741c7da43d60fcdb566c685d31196ecabcc9ff05f2f7eaf1b8",
+        "bytes": 30161
+      },
+      {
+        "path": "review-grass-lava-stone-wang81.png",
+        "sha256": "a12c2f710f0c3d8c073c63a4a503a53915edc0f0cd97bda216fe2311e137242d",
+        "bytes": 56486
+      },
+      {
+        "path": "path-overlay-blob47.png",
+        "sha256": "32c2fab8c1d592dc62092b96e6630b08801174e423041728057b511090885ba7",
+        "bytes": 9456
+      },
+      {
+        "path": "review-path-overlay-blob47.png",
+        "sha256": "2a4f516ab17623fdb7982f1d2135019e9ecbb9ea59fc5232975e3e607cbfb0df",
+        "bytes": 36115
+      },
+      {
+        "path": "built-stone-bevel.png",
+        "sha256": "5bbe884acb5c7a3907da8ca0359a0d818a53fac46ec4ebd2868fab05a50ed3ae",
+        "bytes": 2452
+      },
+      {
+        "path": "review-built-stone-bevel.png",
+        "sha256": "337171803f77be043a66482e7da62c04d9eb48eece3e90ca11f9fe6d402ece63",
+        "bytes": 14785
+      },
+      {
+        "path": "grass-ground-flat.png",
+        "sha256": "cb6be8df1483307440c4e0330a05d6b846b7cec2384b5850181a3750c982c03a",
+        "bytes": 406
+      },
+      {
+        "path": "review-grass-ground-flat.png",
+        "sha256": "a7557d1911bddc00572cabfcbd7d458a111a6985ef1c1e4cd600cfbc729146a9",
+        "bytes": 11122
+      },
+      {
+        "path": "sand-ground-flat.png",
+        "sha256": "cd8c10d9217469634bafd19a11f0ca90af4f16cc28c769c91cc94b97deddcd12",
+        "bytes": 325
+      },
+      {
+        "path": "review-sand-ground-flat.png",
+        "sha256": "1e0a0766014a4948aa64b7573e7c84cf9e33a00327b897ebf284922cbf836046",
+        "bytes": 10800
+      },
+      {
+        "path": "water-ground-flat.png",
+        "sha256": "95207c0beed634246b3b49f1bd35280b342ee260323a8739b48f29ce4b79b05c",
+        "bytes": 344
+      },
+      {
+        "path": "review-water-ground-flat.png",
+        "sha256": "9a2a4c720e02c3bcb052a78df4711ce854d96c5306ef5c9d52efa39369ffaa63",
+        "bytes": 10869
+      },
+      {
+        "path": "preview-map.png",
+        "sha256": "8821321348087ada0c83810c3ff9a8afdeca9498a809b4ee94077e8cb7a68e71",
+        "bytes": 25005
+      },
+      {
+        "path": "review.png",
+        "sha256": "1357cd94984569ecf8f479350bbf10faa3b55379cdd53c2871273cb837fa0f3c",
+        "bytes": 80078
+      }
+    ],
+    "tool": {
+      "name": "codeart2d/autotile_build",
+      "version": "0.4.0"
+    }
+  },
+  "params": {
+    "tile_size": 32,
+    "variants": 4,
+    "seed": 30417,
+    "kinds": [
+      "wang_corner",
+      "blob47",
+      "bevel",
+      "flat"
+    ],
+    "collision_cell": 4,
+    "quantize_textures": false
+  },
+  "tilesets": [
+    "grass-dirt-water-wang81.tileset.json",
+    "grass-path-water-wang81.tileset.json",
+    "grass-dirt-wang16.tileset.json",
+    "grass-sand-wang16.tileset.json",
+    "dirt-stone-wang16.tileset.json",
+    "grass-water-wang16.tileset.json",
+    "dirt-water-wang16.tileset.json",
+    "sand-water-wang16.tileset.json",
+    "path-grass-wang16.tileset.json",
+    "built-natural-stone-wang16.tileset.json",
+    "snow-grass-wang16.tileset.json",
+    "snow-dirt-wang16.tileset.json",
+    "corruption-grass-wang16.tileset.json",
+    "corruption-stone-wang16.tileset.json",
+    "lava-stone-wang16.tileset.json",
+    "ice-water-wang16.tileset.json",
+    "marsh-water-wang16.tileset.json",
+    "wood-stone-wang16.tileset.json",
+    "grass-dirt-path-wang81.tileset.json",
+    "grass-water-sand-wang81.tileset.json",
+    "corruption-grass-dirt-wang81.tileset.json",
+    "grass-lava-stone-wang81.tileset.json",
+    "path-overlay-blob47.tileset.json",
+    "built-stone-bevel.tileset.json",
+    "grass-ground-flat.tileset.json",
+    "sand-ground-flat.tileset.json",
+    "water-ground-flat.tileset.json"
+  ]
+}
