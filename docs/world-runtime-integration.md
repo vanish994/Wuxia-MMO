@@ -6,33 +6,32 @@ O repositório tinha GDD, README, licença e o pack anterior de animações do s
 
 ## Phaser
 
-Os módulos em `src/client/world/phaser/` são ES modules JavaScript com declarações `.d.mts` para importação por TypeScript. APIs usadas: loader de Tiled JSON, `addTilesetImage`, layers, `scene.add.image/zone`, Arcade Physics e partículas. A compatibilidade de execução com uma versão específica de Phaser precisa ser confirmada no projeto client.
+Os módulos em `src/client/world/phaser/` são ES modules JavaScript com declarações `.d.mts` para importação por TypeScript. `wuxia-world-loader.ts` fornece a API de alto nível; ela usa o loader de Tiled JSON, `addTilesetImage`, layers, `scene.add.image/zone`, Arcade Physics e partículas. A compatibilidade de execução com uma versão específica de Phaser ainda precisa ser confirmada no projeto client.
 
-Carregamento mínimo, dentro de uma cena Phaser:
+### Loader TypeScript
+
+Crie o adaptador dentro de uma cena Phaser e entre na região inicial. O `assetRoot` aponta para a raiz HTTP que contém a pasta `assets/`:
 
 ```ts
-import { preloadRegion, createRegion } from "./world/phaser/wuxia-region-loader.mjs";
-import { worldAppearance } from "./world/phaser/wuxia-world-state.mjs";
+import { WuxiaWorldLoader } from "./world/phaser/wuxia-world-loader.js";
 
-// Carregue biome-index.json por HTTP antes de selecionar a região.
-const worldIndex = await fetch("/assets/world/maps/biomes/biome-index.json").then((r) => r.json());
-const queued = preloadRegion(this, worldIndex, "qinghe-valley", { assetRoot: "/" });
-this.load.once("complete", () => {
-  this.wuxiaRegion = createRegion(this, worldIndex, queued.region.id);
-  this.worldLook = worldAppearance(this, this.wuxiaRegion.groundLayer, {
-    season: "spring", hour: 17, weather: "petals"
+async create() {
+  this.wuxiaWorld = new WuxiaWorldLoader(this, {
+    assetRoot: "/",
+    callbacks: {
+      onPortalRequest: (request) => this.socket.emit("world:transition:request", request),
+      onInteractionRequest: (request) => this.socket.emit("world:interaction:request", request),
+    },
   });
-  this.wuxiaRegion.attachPlayer(this.player, {
-    onPortal: (portal) => this.socket?.emit("world:transition:request", {
-      regionId: this.wuxiaRegion.id, portalId: portal.id
-    }),
-    onInteraction: (object) => this.socket?.emit("world:interaction:request", {
-      regionId: this.wuxiaRegion.id, objectId: object.id
-    })
+  await this.wuxiaWorld.enterRegion("qinghe-valley", {
+    player: this.player, spawnId: "arrival", season: "spring", hour: 17, weather: "petals",
   });
-});
-this.load.start();
+}
 ```
+
+`enterRegion()` busca o `biome-index.json`, enfileira somente assets ausentes nos caches, espera o término do loader, cria o mapa/camadas/colisões, posiciona o jogador no spawn solicitado e atualiza os limites/seguimento da câmera. Em transições remotas, chame `enterRegion(regionId, { player, spawnId })` **somente após o servidor aceitar** `world:transition:request`; em rejeição ou aceite, chame `clearPortalLatch()`. Use `requestPortal("west-road-exit")` e `requestInteraction(objectId)` no input de interação: o pedido de portal exige que o jogador esteja na zona e se mova na direção de viagem configurada. `destroy()` libera camadas, props e efeitos visuais ao encerrar a cena. O adaptador não executa a transição nem substitui validação do servidor.
+
+O loader espera que o servidor estático disponibilize `assets/world/maps/biomes/biome-index.json` e os caminhos relativos listados pelo índice. `assetRoot` pode ser, por exemplo, `"/game/"` quando os assets estiverem em um subdiretório.
 
 O mapa embedded continua apontando para as imagens dentro da pasta `tiled/images/`; `biome-index.json` fornece esses caminhos. O loader desenha manualmente os tiles do tileset de coleção de imagens `props`, cria zonas invisíveis a partir da camada `collision` e expõe os objetos `portal`/`interaction`. Depth de props usa o `sortY` gravado pelo mapa. O jogo deve atribuir ao personagem depth coerente com a coordenada Y.
 

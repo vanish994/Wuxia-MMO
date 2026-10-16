@@ -39,10 +39,13 @@ export function preloadRegion(scene, index, regionId, { assetRoot = "/" } = {}) 
     throw new Error(`Region ${regionId} is missing its Tiled map or ground atlas path`);
   }
   const keys = regionAssetKeys(regionId);
-  scene.load.tilemapTiledJSON(keys.tilemap, assetUrl(region.tiled_map, assetRoot));
-  scene.load.image(keys.ground, assetUrl(region.ground_image, assetRoot));
+  const tilemapCached = scene.cache?.tilemap?.exists?.(keys.tilemap) ?? false;
+  const textureCached = (key) => scene.textures?.exists?.(key) ?? false;
+  if (!tilemapCached) scene.load.tilemapTiledJSON(keys.tilemap, assetUrl(region.tiled_map, assetRoot));
+  if (!textureCached(keys.ground)) scene.load.image(keys.ground, assetUrl(region.ground_image, assetRoot));
   for (const imagePath of region.prop_images ?? []) {
-    scene.load.image(keys.prop(basename(imagePath)), assetUrl(imagePath, assetRoot));
+    const key = keys.prop(basename(imagePath));
+    if (!textureCached(key)) scene.load.image(key, assetUrl(imagePath, assetRoot));
   }
   return { region, keys };
 }

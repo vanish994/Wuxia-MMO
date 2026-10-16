@@ -1,9 +1,9 @@
 {
   "schema": "wuxia.world_pack_index.v1",
-  "generated_at_utc": "2026-10-16T23:50:40.002217+00:00",
+  "generated_at_utc": "2026-10-16T23:58:14.241057+00:00",
   "repository_license": "BSD-3-Clause (root LICENSE; see assets/world/LICENSING.md)",
   "art_source": "code-drawn; no third-party art assets included",
-  "file_count": 810,
+  "file_count": 811,
   "validation_report": "assets/world/qa/world-validation-v2.json",
   "files": [
     {
@@ -6728,8 +6728,8 @@
     },
     {
       "path": "docs/world-runtime-integration.md",
-      "bytes": 4952,
-      "sha256": "a420b7184492dd22bf43fe1eb89e9c3b0c566eaec8d9328e4de1db4cd9378f8f",
+      "bytes": 5666,
+      "sha256": "de8f54ea6c57c092098fd56e2190de8d2daed443319051792614af6afbbfeb29",
       "media_type": "md"
     },
     {
@@ -6782,9 +6782,15 @@
     },
     {
       "path": "src/client/world/phaser/wuxia-region-loader.mjs",
-      "bytes": 6018,
-      "sha256": "4a2b6fe6f299d76bb7eeddc48a851bc01396bfe802ee9f7c0af3c708daf9c757",
+      "bytes": 6269,
+      "sha256": "e6ee82966a109e185cb76484a482fdc27aae27705bd134653d584e84400e97f2",
       "media_type": "mjs"
+    },
+    {
+      "path": "src/client/world/phaser/wuxia-world-loader.ts",
+      "bytes": 14470,
+      "sha256": "970d23ce0e4da99ee70c4bc62c38cacdc4bbbcc3eb87401e55968985b07a507a",
+      "media_type": "ts"
     },
     {
       "path": "src/client/world/phaser/wuxia-world-state.d.mts",
@@ -6806,8 +6812,8 @@
     },
     {
       "path": "test/world/wuxia-region-loader.test.mjs",
-      "bytes": 8525,
-      "sha256": "b3433a709380ec7ccd97245174112bacb9f736427e48b99867e4f1aa7783a275",
+      "bytes": 9070,
+      "sha256": "cd5513fadad90765b3485f183c8fd2d2025bdc9518a90d9d93178b4a41b37138",
       "media_type": "mjs"
     }
   ],

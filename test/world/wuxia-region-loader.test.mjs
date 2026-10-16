@@ -88,6 +88,22 @@ test("preloadRegion queues the TMJ, ground atlas, and all prop images with stabl
   assert.equal(result.region.id, region.id);
 });
 
+test("preloadRegion skips region assets already present in Phaser caches", () => {
+  const region = byId.get("qinghe-valley");
+  const keys = regionAssetKeys(region.id);
+  const calls = [];
+  const scene = {
+    cache: { tilemap: { exists: (key) => key === keys.tilemap } },
+    textures: { exists: () => true },
+    load: {
+      tilemapTiledJSON: (...args) => calls.push(["tmj", ...args]),
+      image: (...args) => calls.push(["image", ...args]),
+    },
+  };
+  preloadRegion(scene, worldIndex, region.id);
+  assert.deepEqual(calls, []);
+});
+
 test("all region layouts and Tiled TMJ exports pass structural and pixel rerender checks", () => {
   for (const region of worldIndex.regions) {
     const regionRoot = dirname(join(ROOT, region.bundle));
