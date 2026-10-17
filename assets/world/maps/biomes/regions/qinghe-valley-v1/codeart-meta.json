@@ -4,7 +4,7 @@
   "placeholder": true,
   "disclosure": "code-drawn, no image model",
   "generator": "layout_build",
-  "spec_sha256": "31541c91eddd317b9510bd6d258db027b386cdcb4d1dd0cc23ffe46f8c7e7d2d",
+  "spec_sha256": "925f9c0f6770c80c1ee40519c3bea4b64de295a50246da2f76b8c9711e578f8a",
   "renderer": {
     "name": "layout_build",
     "version": "0.4.0"
@@ -20,12 +20,12 @@
   "outputs": [
     {
       "path": "map-bundle.json",
-      "sha256": "ffdaf457b9d3f82265378356a0ede8d3a575b2cb4ce1e1ccf032f8148c679bc1",
-      "bytes": 103751
+      "sha256": "6d19e8d2f58ba7d425283f1f9e882fb3ea8c66f7e1aaa0934adb2cef2602e311",
+      "bytes": 131238
     },
     {
       "path": "terrain-vertices.json",
-      "sha256": "cc9cf36e062a9deef08bb013f03cc9d668f6824b100e6b1d50d235019a23f5bb",
+      "sha256": "0f196b8712d79a1c9e11b810856fc9ea2e3951b6d865dda6d1fe5b377b4b5b93",
       "bytes": 19622
     },
     {
@@ -135,17 +135,17 @@
     },
     {
       "path": "preview.png",
-      "sha256": "3f29b3eaca5ba0cfe96f641ad2606e005df7170093779a951fc6092f07b7f55a",
-      "bytes": 81540
+      "sha256": "3e533f2ce63a3e4562a4547bd3cce7dfc7080633bb29fd67deb46ce7c315a1b3",
+      "bytes": 103695
     },
     {
       "path": "debug.png",
-      "sha256": "9aa1276c3e8719986d82cf551cc5103f032437431ee27551b3dff8171743ff39",
-      "bytes": 120131
+      "sha256": "c5262ff6fb66c478e6a5d1a418fad592ecfe1836503a213bcf1838daf2f16b17",
+      "bytes": 155582
     }
   ],
   "qa": {
-    "status": "pass",
+    "status": "warn",
     "method": "layout_build: vertex-grid painting and hygiene, corner-Wang tile lookup, seeded scatter; collision.rects re-rasterised on the 4 px raster of the blocking set; reachability with the vendored forge_nav (D4) on the bundle's full blocking set (D2: collision.solids and rects, object footprints, the placed tiles' collision), read back as every consumer reads it: footprint validity (r=7, ySquash=0.9) at 4 px grid nodes, 4-neighbour moves with segmentClear and the thin-gap rule, BFS from the first spawn, N14 targets",
     "notProven": [
       "How the map looks: open preview.png and debug.png (magenta = walkable but unreachable, dark = too tight for the actor).",
@@ -209,20 +209,22 @@
       },
       {
         "id": "enclosed_pockets",
-        "status": "pass",
-        "value": 0,
+        "status": "warn",
+        "value": 1,
         "threshold": 0
       },
       {
         "id": "prop_variety",
         "status": "pass",
-        "value": 0.1667,
+        "value": 0.1364,
         "threshold": 0.35
       },
       {
         "id": "scatter_filled",
-        "status": "pass",
-        "value": [],
+        "status": "warn",
+        "value": [
+          "plum-garden"
+        ],
         "threshold": []
       },
       {
@@ -235,8 +237,8 @@
     "inputs": [
       {
         "path": "../../home/ubuntu/Wuxia-MMO/assets/world/maps/biomes/qinghe-valley.layout.json",
-        "sha256": "31541c91eddd317b9510bd6d258db027b386cdcb4d1dd0cc23ffe46f8c7e7d2d",
-        "bytes": 49838
+        "sha256": "925f9c0f6770c80c1ee40519c3bea4b64de295a50246da2f76b8c9711e578f8a",
+        "bytes": 50982
       },
       {
         "path": "../../home/ubuntu/Wuxia-MMO/assets/tilesets/generated-core-v1/grass-path-water-wang81.tileset.json",
@@ -257,12 +259,12 @@
     "outputs": [
       {
         "path": "map-bundle.json",
-        "sha256": "ffdaf457b9d3f82265378356a0ede8d3a575b2cb4ce1e1ccf032f8148c679bc1",
-        "bytes": 103751
+        "sha256": "6d19e8d2f58ba7d425283f1f9e882fb3ea8c66f7e1aaa0934adb2cef2602e311",
+        "bytes": 131238
       },
       {
         "path": "terrain-vertices.json",
-        "sha256": "cc9cf36e062a9deef08bb013f03cc9d668f6824b100e6b1d50d235019a23f5bb",
+        "sha256": "0f196b8712d79a1c9e11b810856fc9ea2e3951b6d865dda6d1fe5b377b4b5b93",
         "bytes": 19622
       },
       {
@@ -372,13 +374,13 @@
       },
       {
         "path": "preview.png",
-        "sha256": "3f29b3eaca5ba0cfe96f641ad2606e005df7170093779a951fc6092f07b7f55a",
-        "bytes": 81540
+        "sha256": "3e533f2ce63a3e4562a4547bd3cce7dfc7080633bb29fd67deb46ce7c315a1b3",
+        "bytes": 103695
       },
       {
         "path": "debug.png",
-        "sha256": "9aa1276c3e8719986d82cf551cc5103f032437431ee27551b3dff8171743ff39",
-        "bytes": 120131
+        "sha256": "c5262ff6fb66c478e6a5d1a418fad592ecfe1836503a213bcf1838daf2f16b17",
+        "bytes": 155582
       }
     ],
     "tool": {

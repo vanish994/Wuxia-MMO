@@ -19,6 +19,7 @@ const VILLAGE_ASSET_KEYS: Record<string, string> = {
   "/assets/external/pixellab-wuxia-objects/barracas/barraca-3.png": "qinghe-market-stall-3",
   "/assets/external/opp4-village/environment/tiles/village/tile_village_fountain.png": "qinghe-fountain",
   "/assets/external/feudal-japan-nature/PNG/01_cherry_blossom_tree_32x32.png": "qinghe-sakura",
+  "/assets/external/feudal-japan-nature/PNG/05_autumn_maple_tree_32x32.png": "qinghe-maple",
   "/assets/external/feudal-japan-nature/PNG/02_koi_pond_tile_32x32.png": "qinghe-koi",
   "/assets/external/feudal-japan-nature/PNG/03_rock_cluster_32x32.png": "qinghe-rock",
   "/assets/external/feudal-japan-nature/PNG/04_bamboo_grove_32x32.png": "qinghe-bamboo",

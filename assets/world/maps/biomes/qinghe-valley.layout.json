@@ -31,26 +31,50 @@
       "shape": "ellipse",
       "material": "water",
       "center": [
-        44,
+        48,
         8
       ],
       "radius": [
-        5.2,
-        4.0
+        7.0,
+        5.0
       ],
       "wobble": 0.55
+    },
+    {
+      "id": "south-river",
+      "shape": "road",
+      "material": "water",
+      "width": 3.4,
+      "points": [
+        [
+          57,
+          26
+        ],
+        [
+          51,
+          28
+        ],
+        [
+          47,
+          32
+        ],
+        [
+          42,
+          37
+        ]
+      ]
     },
     {
       "id": "west-pond",
       "shape": "ellipse",
       "material": "water",
       "center": [
-        8,
-        28
+        6,
+        29
       ],
       "radius": [
-        3.5,
-        2.4
+        3.8,
+        2.8
       ],
       "wobble": 0.35
     },
@@ -60,11 +84,11 @@
       "material": "water",
       "center": [
         28,
-        5
+        4
       ],
       "radius": [
-        2.5,
-        1.5
+        3.2,
+        1.8
       ],
       "wobble": 0.3
     },
@@ -77,8 +101,8 @@
         18
       ],
       "radius": [
-        5.4,
-        2.8
+        6.8,
+        4.2
       ],
       "wobble": 0.1
     },
@@ -86,7 +110,7 @@
       "id": "west-road",
       "shape": "road",
       "material": "dirt_path",
-      "width": 1.6,
+      "width": 1.8,
       "points": [
         [
           -1,
@@ -101,6 +125,10 @@
           18
         ],
         [
+          21,
+          18
+        ],
+        [
           23,
           18
         ]
@@ -110,23 +138,23 @@
       "id": "east-road",
       "shape": "road",
       "material": "dirt_path",
-      "width": 1.6,
+      "width": 1.8,
       "points": [
         [
-          33,
+          34,
           18
         ],
         [
-          39,
+          40,
           18
         ],
         [
-          45,
-          16
+          47,
+          19
         ],
         [
           57,
-          16
+          22
         ]
       ]
     },
@@ -134,15 +162,15 @@
       "id": "north-road",
       "shape": "road",
       "material": "dirt_path",
-      "width": 1.45,
+      "width": 1.65,
       "points": [
         [
           28,
-          15
+          14
         ],
         [
           28,
-          11
+          10
         ],
         [
           28,
@@ -158,22 +186,22 @@
       "id": "south-road",
       "shape": "road",
       "material": "dirt_path",
-      "width": 1.45,
+      "width": 1.65,
       "points": [
         [
           28,
-          21
+          22
         ],
         [
           28,
           26
         ],
         [
-          28,
-          31
+          30,
+          30
         ],
         [
-          28,
+          34,
           37
         ]
       ]
@@ -182,7 +210,7 @@
       "id": "alchemy-lane",
       "shape": "road",
       "material": "dirt_path",
-      "width": 1.15,
+      "width": 1.25,
       "points": [
         [
           24,
@@ -193,8 +221,8 @@
           14
         ],
         [
-          16,
-          13
+          17,
+          11
         ]
       ]
     },
@@ -202,19 +230,19 @@
       "id": "forge-lane",
       "shape": "road",
       "material": "dirt_path",
-      "width": 1.15,
+      "width": 1.25,
       "points": [
         [
           24,
-          20
+          21
         ],
         [
           20,
-          23
+          24
         ],
         [
-          16,
-          25
+          17,
+          27
         ]
       ]
     },
@@ -222,43 +250,39 @@
       "id": "guest-lane",
       "shape": "road",
       "material": "dirt_path",
-      "width": 1.15,
+      "width": 1.25,
       "points": [
         [
-          33,
-          20
+          34,
+          21
         ],
         [
-          36,
-          23
+          37,
+          24
         ],
         [
           39,
-          25
+          27
         ]
       ]
     },
     {
-      "id": "outer-east-loop",
+      "id": "river-bridge-road",
       "shape": "road",
       "material": "dirt_path",
-      "width": 1.0,
+      "width": 1.4,
       "points": [
         [
-          39,
-          18
+          43,
+          25
         ],
         [
-          42,
-          22
+          46,
+          29
         ],
         [
-          49,
-          24
-        ],
-        [
-          54,
-          20
+          48,
+          32
         ]
       ]
     }
@@ -1538,8 +1562,8 @@
     {
       "id": "village-gate",
       "prop": "sect_gate",
-      "x": 448,
-      "y": 320
+      "x": 320,
+      "y": 576
     },
     {
       "id": "respawn-shrine",
@@ -1550,8 +1574,20 @@
     {
       "id": "moonwood-crossing",
       "prop": "bridge",
-      "x": 1408,
-      "y": 512
+      "x": 1504,
+      "y": 992
+    },
+    {
+      "id": "north-dojo",
+      "prop": "hall",
+      "x": 1184,
+      "y": 288
+    },
+    {
+      "id": "tea-garden",
+      "prop": "teahouse",
+      "x": 384,
+      "y": 864
     }
   ],
   "scatter": [
@@ -1560,13 +1596,13 @@
       "kinds": {
         "ambient_bamboo": 1
       },
-      "count": 12,
+      "count": 22,
       "spacing": 64,
       "region": [
         48,
         48,
-        420,
-        360
+        520,
+        420
       ],
       "density": {
         "scale": 120,
@@ -1589,10 +1625,10 @@
         "ambient_blossom": 2,
         "ambient_shrub": 1
       },
-      "count": 14,
+      "count": 24,
       "spacing": 64,
       "region": [
-        1120,
+        960,
         720,
         1720,
         1080
@@ -1613,11 +1649,40 @@
       }
     },
     {
+      "id": "water-edge-shrubs",
+      "kinds": {
+        "ambient_shrub": 1,
+        "ambient_blossom": 1
+      },
+      "count": 18,
+      "spacing": 64,
+      "region": [
+        1248,
+        32,
+        1760,
+        1056
+      ],
+      "density": {
+        "scale": 160,
+        "octaves": 2,
+        "threshold": 0.52,
+        "edge_bonus": 0.12,
+        "edge_distance": 45
+      },
+      "clearance": {
+        "road": 22,
+        "blocked": 18,
+        "object": 28,
+        "exit": 26,
+        "spawn": 28
+      }
+    },
+    {
       "id": "road-lanterns",
       "kinds": {
         "ambient_lantern": 1
       },
-      "count": 14,
+      "count": 22,
       "spacing": 64,
       "near": {
         "road": [
@@ -1675,8 +1740,8 @@
   "interactions": [
     {
       "id": "village-notice",
-      "x": 800,
-      "y": 544,
+      "x": 896,
+      "y": 576,
       "reach": 32
     },
     {
@@ -1687,27 +1752,33 @@
     },
     {
       "id": "market-square",
-      "x": 1152,
+      "x": 1088,
       "y": 576,
       "reach": 64
     },
     {
       "id": "alchemy-yard",
-      "x": 512,
-      "y": 416,
+      "x": 544,
+      "y": 352,
       "reach": 48
     },
     {
       "id": "forge-yard",
-      "x": 512,
-      "y": 800,
+      "x": 544,
+      "y": 864,
       "reach": 48
     },
     {
       "id": "guest-yard",
       "x": 1248,
-      "y": 800,
+      "y": 864,
       "reach": 48
+    },
+    {
+      "id": "dojo-yard",
+      "x": 1184,
+      "y": 288,
+      "reach": 56
     }
   ]
 }

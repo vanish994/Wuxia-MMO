@@ -307,35 +307,41 @@ def main() -> None:
         },
         "base": "grass",
         "terrain": [
-            {"id": "east-lake", "shape": "ellipse", "material": "water", "center": [44, 8], "radius": [5.2, 4.0], "wobble": 0.55},
-            {"id": "west-pond", "shape": "ellipse", "material": "water", "center": [8, 28], "radius": [3.5, 2.4], "wobble": 0.35},
-            {"id": "north-pond", "shape": "ellipse", "material": "water", "center": [28, 5], "radius": [2.5, 1.5], "wobble": 0.30},
-            {"id": "central-plaza", "shape": "ellipse", "material": "dirt_path", "center": [28, 18], "radius": [5.4, 2.8], "wobble": 0.10},
-            {"id": "west-road", "shape": "road", "material": "dirt_path", "width": 1.6, "points": [[-1, 18], [8, 18], [16, 18], [23, 18]]},
-            {"id": "east-road", "shape": "road", "material": "dirt_path", "width": 1.6, "points": [[33, 18], [39, 18], [45, 16], [57, 16]]},
-            {"id": "north-road", "shape": "road", "material": "dirt_path", "width": 1.45, "points": [[28, 15], [28, 11], [28, 6], [28, -1]]},
-            {"id": "south-road", "shape": "road", "material": "dirt_path", "width": 1.45, "points": [[28, 21], [28, 26], [28, 31], [28, 37]]},
-            {"id": "alchemy-lane", "shape": "road", "material": "dirt_path", "width": 1.15, "points": [[24, 17], [20, 14], [16, 13]]},
-            {"id": "forge-lane", "shape": "road", "material": "dirt_path", "width": 1.15, "points": [[24, 20], [20, 23], [16, 25]]},
-            {"id": "guest-lane", "shape": "road", "material": "dirt_path", "width": 1.15, "points": [[33, 20], [36, 23], [39, 25]]},
-            {"id": "outer-east-loop", "shape": "road", "material": "dirt_path", "width": 1.0, "points": [[39, 18], [42, 22], [49, 24], [54, 20]]}
+            {"id": "east-lake", "shape": "ellipse", "material": "water", "center": [48, 8], "radius": [7.0, 5.0], "wobble": 0.55},
+            {"id": "south-river", "shape": "road", "material": "water", "width": 3.4, "points": [[57, 26], [51, 28], [47, 32], [42, 37]]},
+            {"id": "west-pond", "shape": "ellipse", "material": "water", "center": [6, 29], "radius": [3.8, 2.8], "wobble": 0.35},
+            {"id": "north-pond", "shape": "ellipse", "material": "water", "center": [28, 4], "radius": [3.2, 1.8], "wobble": 0.30},
+            {"id": "central-plaza", "shape": "ellipse", "material": "dirt_path", "center": [28, 18], "radius": [6.8, 4.2], "wobble": 0.10},
+            {"id": "west-road", "shape": "road", "material": "dirt_path", "width": 1.8, "points": [[-1, 18], [8, 18], [16, 18], [21, 18], [23, 18]]},
+            {"id": "east-road", "shape": "road", "material": "dirt_path", "width": 1.8, "points": [[34, 18], [40, 18], [47, 19], [57, 22]]},
+            {"id": "north-road", "shape": "road", "material": "dirt_path", "width": 1.65, "points": [[28, 14], [28, 10], [28, 6], [28, -1]]},
+            {"id": "south-road", "shape": "road", "material": "dirt_path", "width": 1.65, "points": [[28, 22], [28, 26], [30, 30], [34, 37]]},
+            {"id": "alchemy-lane", "shape": "road", "material": "dirt_path", "width": 1.25, "points": [[24, 17], [20, 14], [17, 11]]},
+            {"id": "forge-lane", "shape": "road", "material": "dirt_path", "width": 1.25, "points": [[24, 21], [20, 24], [17, 27]]},
+            {"id": "guest-lane", "shape": "road", "material": "dirt_path", "width": 1.25, "points": [[34, 21], [37, 24], [39, 27]]},
+            {"id": "river-bridge-road", "shape": "road", "material": "dirt_path", "width": 1.4, "points": [[43, 25], [46, 29], [48, 32]]}
         ],
         "actor": {"radius": 7, "ySquash": 0.9},
         "props": props,
         "objects": [
-            {"id": "village-gate", "prop": "sect_gate", "x": 14 * 32, "y": 10 * 32},
+            {"id": "village-gate", "prop": "sect_gate", "x": 10 * 32, "y": 18 * 32},
             {"id": "respawn-shrine", "prop": "pagoda", "x": 28 * 32, "y": 10 * 32},
-            {"id": "moonwood-crossing", "prop": "bridge", "x": 44 * 32, "y": 16 * 32}
+            {"id": "moonwood-crossing", "prop": "bridge", "x": 47 * 32, "y": 31 * 32},
+            {"id": "north-dojo", "prop": "hall", "x": 37 * 32, "y": 9 * 32},
+            {"id": "tea-garden", "prop": "teahouse", "x": 12 * 32, "y": 27 * 32}
         ],
         # Decoração viva sem colisão: os props sólidos ficam restritos às construções do kit.
         "scatter": [
-            {"id": "bamboo-grove", "kinds": {"ambient_bamboo": 1}, "count": 12, "spacing": 64,
-             "region": [48, 48, 420, 360], "density": {"scale": 120, "octaves": 2, "threshold": 0.46, "edge_bonus": 0.12, "edge_distance": 55},
+            {"id": "bamboo-grove", "kinds": {"ambient_bamboo": 1}, "count": 22, "spacing": 64,
+             "region": [48, 48, 520, 420], "density": {"scale": 120, "octaves": 2, "threshold": 0.46, "edge_bonus": 0.12, "edge_distance": 55},
              "clearance": {"road": 20, "blocked": 20, "object": 30, "exit": 30, "spawn": 28}},
-            {"id": "plum-garden", "kinds": {"ambient_blossom": 2, "ambient_shrub": 1}, "count": 14, "spacing": 64,
-             "region": [1120, 720, 1720, 1080], "density": {"scale": 140, "octaves": 2, "threshold": 0.48, "edge_bonus": 0.10, "edge_distance": 50},
+            {"id": "plum-garden", "kinds": {"ambient_blossom": 2, "ambient_shrub": 1}, "count": 24, "spacing": 64,
+             "region": [960, 720, 1720, 1080], "density": {"scale": 140, "octaves": 2, "threshold": 0.48, "edge_bonus": 0.10, "edge_distance": 50},
              "clearance": {"road": 18, "blocked": 18, "object": 28, "exit": 28, "spawn": 26}},
-            {"id": "road-lanterns", "kinds": {"ambient_lantern": 1}, "count": 14, "spacing": 64,
+            {"id": "water-edge-shrubs", "kinds": {"ambient_shrub": 1, "ambient_blossom": 1}, "count": 18, "spacing": 64,
+             "region": [1248, 32, 1760, 1056], "density": {"scale": 160, "octaves": 2, "threshold": 0.52, "edge_bonus": 0.12, "edge_distance": 45},
+             "clearance": {"road": 22, "blocked": 18, "object": 28, "exit": 26, "spawn": 28}},
+            {"id": "road-lanterns", "kinds": {"ambient_lantern": 1}, "count": 22, "spacing": 64,
              "near": {"road": [24, 52]},
              "clearance": {"road": 14, "blocked": 14, "object": 14, "exit": 25, "spawn": 20}}
         ],
@@ -347,12 +353,13 @@ def main() -> None:
         ],
         "spawns": [{"id": "arrival", "x": 28 * 32, "y": 20 * 32, "facing": "north"}],
         "interactions": [
-            {"id": "village-notice", "x": 25 * 32, "y": 17 * 32, "reach": 32},
+            {"id": "village-notice", "x": 28 * 32, "y": 18 * 32, "reach": 32},
             {"id": "respawn-shrine", "x": 28 * 32, "y": 12 * 32, "reach": 44},
-            {"id": "market-square", "x": 36 * 32, "y": 18 * 32, "reach": 64},
-            {"id": "alchemy-yard", "x": 16 * 32, "y": 13 * 32, "reach": 48},
-            {"id": "forge-yard", "x": 16 * 32, "y": 25 * 32, "reach": 48},
-            {"id": "guest-yard", "x": 39 * 32, "y": 25 * 32, "reach": 48}
+            {"id": "market-square", "x": 34 * 32, "y": 18 * 32, "reach": 64},
+            {"id": "alchemy-yard", "x": 17 * 32, "y": 11 * 32, "reach": 48},
+            {"id": "forge-yard", "x": 17 * 32, "y": 27 * 32, "reach": 48},
+            {"id": "guest-yard", "x": 39 * 32, "y": 27 * 32, "reach": 48},
+            {"id": "dojo-yard", "x": 37 * 32, "y": 9 * 32, "reach": 56}
         ]
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)

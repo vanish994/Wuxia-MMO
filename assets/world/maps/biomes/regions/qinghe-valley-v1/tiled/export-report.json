@@ -29,117 +29,117 @@
   ],
   "inputs": [
     {
-      "path": "../qinghe-open-final/map-bundle.json",
-      "sha256": "ffdaf457b9d3f82265378356a0ede8d3a575b2cb4ce1e1ccf032f8148c679bc1",
-      "bytes": 103751
+      "path": "../qinghe-cangyun-candidate/map-bundle.json",
+      "sha256": "6d19e8d2f58ba7d425283f1f9e882fb3ea8c66f7e1aaa0934adb2cef2602e311",
+      "bytes": 131238
     },
     {
-      "path": "../qinghe-open-final/tilesets/grass-path-water-wang81/grass-path-water-wang81.tileset.json",
+      "path": "../qinghe-cangyun-candidate/tilesets/grass-path-water-wang81/grass-path-water-wang81.tileset.json",
       "sha256": "1525e3662e83f1ee8abb180634d7d6ec4d1246693db9660f2ec8ba9a6ffe1678",
       "bytes": 188839
     },
     {
-      "path": "../qinghe-open-final/tilesets/grass-path-water-wang81/grass-path-water-wang81.png",
+      "path": "../qinghe-cangyun-candidate/tilesets/grass-path-water-wang81/grass-path-water-wang81.png",
       "sha256": "ef505070499c897e246219527bbba3d094534fe18d21db062dcdeea46ed6065f",
       "bytes": 32480
     },
     {
-      "path": "../qinghe-open-final/terrain-vertices.json",
-      "sha256": "cc9cf36e062a9deef08bb013f03cc9d668f6824b100e6b1d50d235019a23f5bb",
+      "path": "../qinghe-cangyun-candidate/terrain-vertices.json",
+      "sha256": "0f196b8712d79a1c9e11b810856fc9ea2e3951b6d865dda6d1fe5b377b4b5b93",
       "bytes": 19622
     },
     {
-      "path": "../qinghe-open-final/props/grass.png",
+      "path": "../qinghe-cangyun-candidate/props/grass.png",
       "sha256": "2a7065ffd49a92c05eba761496e5089fc6e4db78b9b62b96ceb1045c2b36add4",
       "bytes": 153
     },
     {
-      "path": "../qinghe-open-final/props/dirt_path.png",
+      "path": "../qinghe-cangyun-candidate/props/dirt_path.png",
       "sha256": "b5ce47c08c5a1e45964fc32e6ef3ad6c5d381be9e6fd99e0b58841f4e64483c2",
       "bytes": 153
     },
     {
-      "path": "../qinghe-open-final/props/water.png",
+      "path": "../qinghe-cangyun-candidate/props/water.png",
       "sha256": "cba3c113c40bbb9c2759d88834c8391b2c106790b9edf776b80968755e70a013",
       "bytes": 153
     },
     {
-      "path": "../qinghe-open-final/props/sect_gate.png",
+      "path": "../qinghe-cangyun-candidate/props/sect_gate.png",
       "sha256": "1aeedb2ef856eec6fe1e5f8310ce4e1e368e05f60b6182f91cba3f86974c6a85",
       "bytes": 479
     },
     {
-      "path": "../qinghe-open-final/props/bridge.png",
+      "path": "../qinghe-cangyun-candidate/props/bridge.png",
       "sha256": "27e76b7d6bd364498b855920f61381c3f2f699394612fe509cb397c0c0ba864d",
       "bytes": 300
     },
     {
-      "path": "../qinghe-open-final/props/pagoda.png",
+      "path": "../qinghe-cangyun-candidate/props/pagoda.png",
       "sha256": "c4805330da4a46ae8195e0e50329bf47980748df8f7552fd576a7d5e04a1cb1d",
       "bytes": 514
     },
     {
-      "path": "../qinghe-open-final/props/hall.png",
+      "path": "../qinghe-cangyun-candidate/props/hall.png",
       "sha256": "4aef0fea09ae9043289bc7301d524494566c9c84f2e9cc2161c6873a341fe16d",
       "bytes": 500
     },
     {
-      "path": "../qinghe-open-final/props/teahouse.png",
+      "path": "../qinghe-cangyun-candidate/props/teahouse.png",
       "sha256": "ed1534bb5510edc2c9fa21f64af5d2926c8c6ffb2d2020c4c5d7fae4b441b03d",
       "bytes": 432
     },
     {
-      "path": "../qinghe-open-final/props/pine.png",
+      "path": "../qinghe-cangyun-candidate/props/pine.png",
       "sha256": "f6d9de3c7e18415fa4233e58b4cc65847573ea601c3a2cd3738f46d9b4bf5fc3",
       "bytes": 341
     },
     {
-      "path": "../qinghe-open-final/props/blossom_tree.png",
+      "path": "../qinghe-cangyun-candidate/props/blossom_tree.png",
       "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
       "bytes": 407
     },
     {
-      "path": "../qinghe-open-final/props/bamboo.png",
+      "path": "../qinghe-cangyun-candidate/props/bamboo.png",
       "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
       "bytes": 509
     },
     {
-      "path": "../qinghe-open-final/props/lantern.png",
+      "path": "../qinghe-cangyun-candidate/props/lantern.png",
       "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
       "bytes": 230
     },
     {
-      "path": "../qinghe-open-final/props/rock.png",
+      "path": "../qinghe-cangyun-candidate/props/rock.png",
       "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
       "bytes": 188
     },
     {
-      "path": "../qinghe-open-final/props/shrub.png",
+      "path": "../qinghe-cangyun-candidate/props/shrub.png",
       "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
       "bytes": 198
     },
     {
-      "path": "../qinghe-open-final/props/signboard.png",
+      "path": "../qinghe-cangyun-candidate/props/signboard.png",
       "sha256": "db4e50fb76441a57ff24f22c3cc852749cb0faf64c0ed744a068ece0b1bbea41",
       "bytes": 223
     },
     {
-      "path": "../qinghe-open-final/props/ambient_bamboo.png",
+      "path": "../qinghe-cangyun-candidate/props/ambient_bamboo.png",
       "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
       "bytes": 509
     },
     {
-      "path": "../qinghe-open-final/props/ambient_blossom.png",
+      "path": "../qinghe-cangyun-candidate/props/ambient_blossom.png",
       "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
       "bytes": 407
     },
     {
-      "path": "../qinghe-open-final/props/ambient_shrub.png",
+      "path": "../qinghe-cangyun-candidate/props/ambient_shrub.png",
       "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
       "bytes": 198
     },
     {
-      "path": "../qinghe-open-final/props/ambient_lantern.png",
+      "path": "../qinghe-cangyun-candidate/props/ambient_lantern.png",
       "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
       "bytes": 230
     }
@@ -181,6 +181,11 @@
       "bytes": 32480
     },
     {
+      "path": "images/hall.png",
+      "sha256": "4aef0fea09ae9043289bc7301d524494566c9c84f2e9cc2161c6873a341fe16d",
+      "bytes": 500
+    },
+    {
       "path": "images/pagoda.png",
       "sha256": "c4805330da4a46ae8195e0e50329bf47980748df8f7552fd576a7d5e04a1cb1d",
       "bytes": 514
@@ -191,24 +196,29 @@
       "bytes": 479
     },
     {
+      "path": "images/teahouse.png",
+      "sha256": "ed1534bb5510edc2c9fa21f64af5d2926c8c6ffb2d2020c4c5d7fae4b441b03d",
+      "bytes": 432
+    },
+    {
       "path": "map.embedded.tmj",
-      "sha256": "baa19d86470f65e48289bcd09e66e9f69e946d2635be830a8d040a00cad5321c",
-      "bytes": 668984
+      "sha256": "211692926a845850b3db36a6d37e6c98f2c07c37f0c7af939d7e48d826e776ec",
+      "bytes": 786227
     },
     {
       "path": "map.tmj",
-      "sha256": "7a463c495136f959c131afbb3f2c351b3351395134671a13279b49204daadb60",
-      "bytes": 160459
+      "sha256": "5cb41bd6813b5f78daa87105e2242ebbb3149725755035e328f24bfe14fada83",
+      "bytes": 274876
     },
     {
       "path": "preview.png",
-      "sha256": "862e5fd17b19f4f4ed794876172376e902dd39047b0c336547f9d486e3c42e27",
-      "bytes": 96064
+      "sha256": "7a8372010eb2307b03e4fc69e0623f3638389ccc971718164ee57d347d796117",
+      "bytes": 117583
     },
     {
       "path": "props.tsx",
-      "sha256": "47070dafb940a36cd779f647b7d037cadb04dd45341bc21cb375de42dc6fef55",
-      "bytes": 3288
+      "sha256": "21bd964221d93354a193b8e873f71559a03f4c3b5ed6d47cf9d1dd5d2855adb4",
+      "bytes": 4348
     }
   ],
   "tool": {
@@ -229,7 +239,7 @@
         "file": "props.tsx",
         "name": "props",
         "firstgid": 325,
-        "tilecount": 7
+        "tilecount": 9
       }
     ],
     "layers": [
