@@ -116,12 +116,18 @@ export function playGroundVfx(
   center: { x: number; y: number },
   depth: number,
   scale = 1,
+  keepAlive = false,
 ): Phaser.GameObjects.Sprite | undefined {
   const clip = TABLE[pack][direction].clips[layer];
   if (!clip) return undefined;
   const x = center.x - (clip.frameWidth * scale) / 2;
   const y = center.y - (clip.frameHeight * scale) / 2;
   const sprite = scene.add.sprite(x, y, textureKey(pack, direction, layer), 0).setOrigin(0, 0).setDepth(depth).setScale(scale);
+  if (keepAlive) {
+    // The caller moves the effect and destroys it; it loops while it is in flight.
+    sprite.play({ key: animationKey(pack, direction, layer), repeat: -1 });
+    return sprite;
+  }
   sprite.play(animationKey(pack, direction, layer));
   if (!clip.loop) sprite.once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => sprite.destroy());
   return sprite;

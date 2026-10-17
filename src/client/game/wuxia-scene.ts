@@ -19,6 +19,7 @@ import { MASTERY, PATHS, PATH_QI, PATH_SWORD, type PathId } from "./combat/paths
 import { AUTO_ATTACK, type ProjectileBasicAttack } from "./combat/paths-config.mjs";
 import { addMasteryPoints, masteryDamageMultiplier, masteryLevel, nearestTargetIndex, projectileTravelMs } from "./combat/paths-rules.mjs";
 import { aimVector, ondaAimPoint, chooseAutoTarget, autoAttackStep } from "./combat/targeting-rules.mjs";
+import { advanceProjectile } from "./combat/skills-rules.mjs";
 
 const assetPath = (path: string): string => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 const REGION_TITLES: Record<string, string> = { "qinghe-valley": "Vale da Lua Serena" };
@@ -115,6 +116,9 @@ export class WuxiaScene extends Phaser.Scene {
   private selectedWolf: Wolf | null = null;
   private skillButton?: Phaser.GameObjects.Container;
   private skillText?: Phaser.GameObjects.Text;
+  private pathButton?: Phaser.GameObjects.Container;
+  private pathBase?: Phaser.GameObjects.Arc;
+  private moonSlashes: { sprite?: Phaser.GameObjects.Sprite; origin: { x: number; y: number }; dir: { x: number; y: number }; traveledPx: number; hit: Set<Wolf> }[] = [];
   private skillCooldown?: Phaser.GameObjects.Graphics;
   private ondaAiming = false;
   private aimGraphics?: Phaser.GameObjects.Graphics;
@@ -243,6 +247,7 @@ export class WuxiaScene extends Phaser.Scene {
     this.updateTargetRing();
     this.updateCooldowns(time);
     this.updateAimReticle();
+    this.updateMoonSlashes(delta);
 
     if (this.playerDead) {
       const remaining = Math.ceil(Math.max(0, this.respawnAt - time) / 1000);
@@ -431,31 +436,49 @@ export class WuxiaScene extends Phaser.Scene {
   private castMoonSlash(time: number): void {
     if (this.playerDead || this.loading) return;
     if (this.activePath !== PATH_SWORD) {
-      this.setStatus("Moon Slash é do Caminho da Espada — troque com CAMINHO (Q).");
+      this.setStatus("Moon Slash é do Caminho da Espada — troque com o caminho (Q).");
       return;
     }
-    this.faceSelectedTarget();
     if (!canCastSkill(time, this.lastMoonSlashAt, MOON_SLASH.cooldownMs, this.qi, MOON_SLASH.qiCost)) return;
     this.lastMoonSlashAt = time;
     this.qi = spendQi(this.qi, MOON_SLASH.qiCost);
-    playCharacterVfx(this, "slash-arc-8-directions", this.facing, this.feetPoint(), this.player.depth, MOON_SLASH.visualScale);
-    this.time.delayedCall(MOON_SLASH.hitDelayMs, () => this.resolveMoonSlashHits());
+    const origin = { x: this.player.x, y: this.player.y };
+    // Aimed at the selected wolf; without one, along the facing direction.
+    const dir = aimVector(origin, this.selectedPoint(), DIRECTION_VECTORS[this.facing]);
+    this.facing = directionFor(dir.x, dir.y);
+    const sprite = playGroundVfx(this, "slash-arc-8-directions", this.facing, "whole", origin, origin.y + 8, MOON_SLASH.visualScale, true);
+    this.moonSlashes.push({ sprite, origin, dir, traveledPx: 0, hit: new Set() });
     this.updateBars();
   }
 
-  private resolveMoonSlashHits(): void {
-    if (this.playerDead) return;
-    const origin = { x: this.player.x, y: this.player.y };
-    const targets = this.wolves.map((wolf) => ({ x: wolf.sprite.x, y: wolf.sprite.y, alive: wolf.alive }));
-    const hits = moonSlashHits(origin, DIRECTION_VECTORS[this.facing], targets, MOON_SLASH);
-    const amount = this.pathDamage(PATH_SWORD, MOON_SLASH.damageMultiplier);
-    for (const index of hits) {
-      const wolf = this.wolves[index];
-      this.showFloatingText(wolf.sprite.x, wolf.sprite.y - 52, `-${amount}`, "#9fe8ff");
-      if (wolf.takeDamage(amount, this.time.now)) this.onWolfDefeated();
-    }
-    if (hits.length > 0) this.gainMastery(PATH_SWORD, MASTERY.pointsPerSkillHit * hits.length);
-    if (hits.length === 0) this.setStatus("Moon Slash no vazio — a lâmina não encontrou lobos na meia-lua.");
+  /** Moves each crescent and damages every wolf it passes within the blade's hit radius (each wolf once). */
+  private updateMoonSlashes(dtMs: number): void {
+    if (this.moonSlashes.length === 0) return;
+    this.moonSlashes = this.moonSlashes.filter((slash) => {
+      const step = advanceProjectile(slash.traveledPx, MOON_SLASH.speedPxPerS, dtMs, MOON_SLASH.travelPx);
+      slash.traveledPx = step.traveledPx;
+      const center = {
+        x: slash.origin.x + slash.dir.x * slash.traveledPx,
+        y: slash.origin.y + slash.dir.y * slash.traveledPx,
+      };
+      for (const wolf of this.wolves) {
+        if (!wolf.alive || slash.hit.has(wolf)) continue;
+        if (distance(center, { x: wolf.sprite.x, y: wolf.sprite.y }) > MOON_SLASH.hitRadiusPx) continue;
+        slash.hit.add(wolf);
+        const amount = this.pathDamage(PATH_SWORD, MOON_SLASH.damageMultiplier);
+        this.showFloatingText(wolf.sprite.x, wolf.sprite.y - 52, `-${amount}`, "#9fe8ff");
+        this.gainMastery(PATH_SWORD, MASTERY.pointsPerSkillHit);
+        if (wolf.takeDamage(amount, this.time.now)) this.onWolfDefeated();
+      }
+      if (slash.sprite?.active) {
+        slash.sprite.setPosition(center.x - slash.sprite.displayWidth / 2, center.y - slash.sprite.displayHeight / 2);
+      }
+      if (step.done) {
+        slash.sprite?.destroy();
+        return false;
+      }
+      return true;
+    });
     this.updateBars();
   }
 
@@ -564,6 +587,7 @@ export class WuxiaScene extends Phaser.Scene {
     const level = masteryLevel(this.masteryPoints[this.activePath], MASTERY.thresholds);
     this.roleText?.setText(`${PATHS[this.activePath].name}  ·  Maestria ${level}  (trocar)`);
     this.skillText?.setText(this.activePath === PATH_SWORD ? "MOON\nSLASH" : "ONDA\nDE QI");
+    this.pathBase?.setStrokeStyle(3, this.activePath === PATH_SWORD ? 0xf2d28a : 0x93d7c5, 0.8);
   }
 
 
@@ -812,6 +836,11 @@ export class WuxiaScene extends Phaser.Scene {
     this.skillCooldown = skill.cooldown;
     skill.base.on("pointerdown", () => this.activeSkillPressed());
 
+    const path = this.createRoundButton(44, "TROCAR\nCAMINHO", 0xf2d28a);
+    this.pathButton = path.container;
+    this.pathBase = path.base;
+    path.base.on("pointerdown", () => this.togglePath());
+
     // INTERAGIR only appears while a portal is close enough to use.
     const actionBackground = this.add.image(0, 0, "gui-action", 1).setOrigin(0.5).setScale(1.2).setInteractive({ useHandCursor: true });
     const actionLabel = this.add.text(0, 0, "INTERAGIR", { color: "#fff4d9", fontFamily: HUD_FONT, fontSize: "11px", fontStyle: "bold", letterSpacing: 1 }).setOrigin(0.5);
@@ -860,7 +889,8 @@ export class WuxiaScene extends Phaser.Scene {
     const cy = height - 100;
     this.attackButton?.setPosition(cx, cy);
     this.skillButton?.setPosition(cx - 100, cy - 70);
-    this.actionButton?.setPosition(cx, cy - 116);
+    this.pathButton?.setPosition(cx - 185, cy - 20);
+    this.actionButton?.setPosition(cx, cy - 150);
   }
 
   private getMovementVector(): { x: number; y: number } {

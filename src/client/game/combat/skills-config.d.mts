@@ -4,10 +4,10 @@ export interface MoonSlashConfig {
   readonly guideName: string;
   readonly cooldownMs: number;
   readonly qiCost: number;
-  readonly rangePx: number;
-  readonly arcDegrees: number;
+  readonly travelPx: number;
+  readonly speedPxPerS: number;
+  readonly hitRadiusPx: number;
   readonly damageMultiplier: number;
-  readonly hitDelayMs: number;
   readonly visualScale: number;
 }
 

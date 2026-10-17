@@ -35,7 +35,7 @@ test("Moon Slash hits targets in front and in range, ignoring dead and rear targ
     { x: 60, y: 0, alive: false }, // dead
     { x: -60, y: 0, alive: true }, // behind
   ];
-  const hits = moonSlashHits(origin, RIGHT, targets, MOON_SLASH);
+  const hits = moonSlashHits(origin, RIGHT, targets, { rangePx: 120, arcDegrees: 170 });
   assert.deepEqual(hits, [0]);
 });
 
@@ -49,4 +49,11 @@ test("Onda de Qi lands ahead of the caster and hits everything inside its radius
     { x: origin.x, y: origin.y, alive: true },
   ];
   assert.deepEqual(ondaHits(center, targets, ONDA_DE_QI.radiusPx), [0]);
+});
+
+import { advanceProjectile } from "../../src/client/game/combat/skills-rules.mjs";
+
+test("projectile advances at its speed and stops at its travel distance", () => {
+  assert.deepEqual(advanceProjectile(0, 560, 100, 240), { traveledPx: 56, done: false });
+  assert.deepEqual(advanceProjectile(200, 560, 1000, 240), { traveledPx: 240, done: true });
 });

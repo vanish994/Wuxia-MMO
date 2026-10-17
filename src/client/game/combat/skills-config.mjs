@@ -8,11 +8,12 @@ export const MOON_SLASH = Object.freeze({
   guideName: "Corte da Meia-Lua",
   cooldownMs: 2200,
   qiCost: 0,
-  rangePx: 120,
-  arcDegrees: 170,
+  // The crescent flies toward the selected target and damages whatever it passes through.
+  travelPx: 240,
+  speedPxPerS: 560,
+  hitRadiusPx: 34, // distance from the blade's centre to a wolf's centre that counts as a hit
   damageMultiplier: 1.8,
-  hitDelayMs: 140,
-  visualScale: 2, // presentation only: integer scale of the 53px slash arc
+  visualScale: 3, // presentation only: the 53px slash arc drawn 3x
 });
 
 /** Caminho do Cultivo: Onda de Qi. Targets a point ahead and damages everything inside its area. */

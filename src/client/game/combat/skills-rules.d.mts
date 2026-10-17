@@ -15,3 +15,5 @@ export declare function regenQi(qi: number, max: number, dtMs: number, perSecond
 export declare function moonSlashHits(origin: Point, facing: Point, targets: readonly SkillTarget[], config: MoonSlashConfig): number[];
 export declare function ondaTargetPoint(origin: Point, facing: Point, castRangePx: number): Point;
 export declare function ondaHits(center: Point, targets: readonly SkillTarget[], radiusPx: number): number[];
+
+export declare function advanceProjectile(traveledPx: number, speedPxPerS: number, dtMs: number, travelPx: number): { traveledPx: number; done: boolean };

@@ -43,3 +43,12 @@ export function ondaHits(center, targets, radiusPx) {
   });
   return hits;
 }
+
+/**
+ * Advances a flying projectile by `dtMs`. `done` is true once it has travelled `travelPx`.
+ * Returns the new travelled distance (capped at travelPx) so the caller can place it.
+ */
+export function advanceProjectile(traveledPx, speedPxPerS, dtMs, travelPx) {
+  const next = Math.min(travelPx, traveledPx + (speedPxPerS * Math.max(0, dtMs)) / 1000);
+  return { traveledPx: next, done: next >= travelPx };
+}
