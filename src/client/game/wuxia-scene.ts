@@ -57,6 +57,9 @@ export class WuxiaScene extends Phaser.Scene {
   private hpBar!: HudBar;
   private qiBar!: HudBar;
   private actionButton!: Phaser.GameObjects.Container;
+  private hudTopLeft!: Phaser.GameObjects.Container;
+  private hudCompass!: Phaser.GameObjects.Container;
+  private hudSkills!: Phaser.GameObjects.Container;
   private villageKitImages: Phaser.GameObjects.Image[] = [];
   private villageKitColliders: Phaser.GameObjects.Zone[] = [];
   private loading = true;
@@ -77,6 +80,14 @@ export class WuxiaScene extends Phaser.Scene {
     }
     this.load.json("qinghe-village-kit", assetPath("/assets/world/maps/biomes/qinghe-valley-village-kit.json"));
     for (const [path, key] of Object.entries(VILLAGE_ASSET_KEYS)) this.load.image(key, assetPath(path));
+    this.load.image("gui-panel", assetPath("/assets/external/tiny-rpg-mana-soul-gui/20250420manaSoul9SlicesA-Sheet.png"));
+    this.load.image("gui-header", assetPath("/assets/external/tiny-rpg-mana-soul-gui/20250420manaSoulHeaderA-Sheet.png"));
+    this.load.image("gui-bar-frame", assetPath("/assets/external/tiny-rpg-mana-soul-gui/20250421barA-Sheet.png"));
+    this.load.spritesheet("gui-fill-bars", assetPath("/assets/external/tiny-rpg-mana-soul-gui/20250421manaSoulButtonA-Sheet.png"), { frameWidth: 96, frameHeight: 22 });
+    this.load.spritesheet("gui-slot", assetPath("/assets/external/tiny-rpg-mana-soul-gui/20250423emptyFrame-Sheet.png"), { frameWidth: 32, frameHeight: 32 });
+    this.load.image("gui-portrait-frame", assetPath("/assets/external/tiny-rpg-mana-soul-gui/20250425portraitFrame-Sheet.png"));
+    this.load.image("gui-compass", assetPath("/assets/external/tiny-rpg-mana-soul-gui/20250425compass-Sheet.png"));
+    this.load.spritesheet("gui-action", assetPath("/assets/external/tiny-rpg-mana-soul-gui/20250421manaSoulButtonB-Sheet.png"), { frameWidth: 96, frameHeight: 22 });
   }
 
   create(): void {
@@ -199,95 +210,62 @@ export class WuxiaScene extends Phaser.Scene {
   }
 
   private createHud(): void {
-    const panel = this.add.rectangle(18, 18, 320, 116, 0x0b1420, 0.9)
-      .setOrigin(0, 0)
-      .setStrokeStyle(2, 0x75cdb8, 0.7)
-      .setScrollFactor(0)
-      .setDepth(2100);
-    this.add.text(34, 30, "WUXIA MMO", {
-      color: "#93d7c5",
-      fontFamily: "Trebuchet MS, sans-serif",
-      fontSize: "13px",
-      fontStyle: "bold",
-      letterSpacing: 2,
-    }).setScrollFactor(0).setDepth(2101);
-    this.hudRegion = this.add.text(34, 50, "QINGHE VALLEY", {
-      color: "#fff4d9",
-      fontFamily: "Trebuchet MS, sans-serif",
-      fontSize: "20px",
-      fontStyle: "bold",
-    }).setScrollFactor(0).setDepth(2101);
-    this.add.text(34, 78, "PROTÓTIPO LOCAL · FASE 1", {
-      color: "#91a7b8",
-      fontFamily: "Trebuchet MS, sans-serif",
-      fontSize: "10px",
-      letterSpacing: 1,
-    }).setScrollFactor(0).setDepth(2101);
+    this.hudTopLeft = this.add.container(18, 18).setScrollFactor(0).setDepth(2100);
+    const panel = this.add.nineslice(0, 0, "gui-panel", undefined, 372, 154, 32, 32, 32, 32).setOrigin(0, 0);
+    const header = this.add.nineslice(82, 10, "gui-header", undefined, 270, 32, 30, 30, 8, 8).setOrigin(0, 0);
+    const portraitFrame = this.add.image(30, 42, "gui-portrait-frame").setOrigin(0, 0);
+    const portrait = this.add.image(54, 82, "player-walk-down-1").setScale(0.62);
+    const brand = this.add.text(98, 19, "WUXIA MMO", { color: "#5b3261", fontFamily: "Trebuchet MS, sans-serif", fontSize: "12px", fontStyle: "bold", letterSpacing: 2 });
+    this.hudRegion = this.add.text(98, 45, "QINGHE VALLEY", { color: "#fff4d9", fontFamily: "Trebuchet MS, sans-serif", fontSize: "18px", fontStyle: "bold" });
+    const level = this.add.text(98, 70, "JIANGHU WANDERER  ·  LV. 1", { color: "#d6b66f", fontFamily: "Trebuchet MS, sans-serif", fontSize: "9px", fontStyle: "bold", letterSpacing: 1 });
+    const role = this.add.text(98, 87, "Caminho da espada  ·  Primavera", { color: "#a9bdc5", fontFamily: "Trebuchet MS, sans-serif", fontSize: "10px" });
+    this.hpBar = this.createBar(98, 105, "HP", 0x89d852, "100 / 100", this.hudTopLeft);
+    this.qiBar = this.createBar(98, 130, "QI", 0x4e9be8, "80 / 80", this.hudTopLeft);
+    this.hudTopLeft.add([panel, header, portraitFrame, portrait, brand, this.hudRegion, level, role, this.hpBar.fill, this.hpBar.value]);
+    this.hudTopLeft.sendToBack(panel).bringToTop(header).bringToTop(portraitFrame).bringToTop(portrait);
 
-    this.hpBar = this.createBar(34, 101, "HP", 0x9de2a6, "100 / 100");
-    this.qiBar = this.createBar(178, 101, "QI", 0x8bc6ff, "80 / 80");
-    void panel;
+    this.hudStatus = this.add.text(18, 184, "Carregando mundo…", { color: "#fff4d9", backgroundColor: "#241d39dd", padding: { left: 10, right: 10, top: 7, bottom: 7 }, fontFamily: "Trebuchet MS, sans-serif", fontSize: "12px" }).setScrollFactor(0).setDepth(2101);
+    this.hudHint = this.add.text(18, 0, "WASD / setas  ·  joystick  ·  E interagir", { color: "#f8e5bd", backgroundColor: "#241d39dd", padding: { left: 10, right: 10, top: 7, bottom: 7 }, fontFamily: "Trebuchet MS, sans-serif", fontSize: "11px" }).setScrollFactor(0).setDepth(2101);
 
-    this.hudStatus = this.add.text(18, 146, "Carregando mundo…", {
-      color: "#fff4d9",
-      backgroundColor: "#0b1420cc",
-      padding: { left: 10, right: 10, top: 7, bottom: 7 },
-      fontFamily: "Trebuchet MS, sans-serif",
-      fontSize: "13px",
-    }).setScrollFactor(0).setDepth(2101);
-    this.hudHint = this.add.text(18, 0, "Carregando controles…", {
-      color: "#d2e6e1",
-      backgroundColor: "#0b1420cc",
-      padding: { left: 10, right: 10, top: 7, bottom: 7 },
-      fontFamily: "Trebuchet MS, sans-serif",
-      fontSize: "12px",
-    }).setScrollFactor(0).setDepth(2101);
+    this.hudCompass = this.add.container(0, 18).setScrollFactor(0).setDepth(2100);
+    this.hudCompass.add(this.add.image(0, 0, "gui-compass").setOrigin(0, 0));
+    this.hudCompass.add(this.add.text(38, 28, "QINGHE", { color: "#f8e5bd", fontFamily: "Trebuchet MS, sans-serif", fontSize: "8px", fontStyle: "bold" }).setOrigin(0.5));
 
-    const actionBackground = this.add.rectangle(0, 0, 164, 56, 0x122536, 0.92)
-      .setStrokeStyle(2, 0x75cdb8, 0.85)
-      .setInteractive({ useHandCursor: true });
-    const actionLabel = this.add.text(0, 0, "INTERAGIR", {
-      color: "#fff4d9",
-      fontFamily: "Trebuchet MS, sans-serif",
-      fontSize: "14px",
-      fontStyle: "bold",
-      letterSpacing: 1,
-    }).setOrigin(0.5);
-    this.actionButton = this.add.container(0, 0, [actionBackground, actionLabel])
-      .setScrollFactor(0)
-      .setDepth(2101);
+    this.hudSkills = this.add.container(0, 0).setScrollFactor(0).setDepth(2101);
+    const skills = ["1  CORTE", "2  ONDA QI", "3  POÇÃO", "4  MAPA"];
+    skills.forEach((label, index) => {
+      const slot = this.add.image(index * 56, 0, "gui-slot", index % 4).setOrigin(0, 0);
+      const key = this.add.text(index * 56 + 16, 5, String(index + 1), { color: "#fff4d9", fontFamily: "Trebuchet MS, sans-serif", fontSize: "11px", fontStyle: "bold" }).setOrigin(0.5);
+      const caption = this.add.text(index * 56 + 16, 36, label.split("  ")[1], { color: "#f8e5bd", fontFamily: "Trebuchet MS, sans-serif", fontSize: "8px", fontStyle: "bold" }).setOrigin(0.5, 0);
+      this.hudSkills.add([slot, key, caption]);
+    });
+
+    const actionBackground = this.add.image(0, 0, "gui-action", 1).setOrigin(0.5).setScale(1.5).setInteractive({ useHandCursor: true });
+    const actionLabel = this.add.text(0, 0, "INTERAGIR", { color: "#fff4d9", fontFamily: "Trebuchet MS, sans-serif", fontSize: "11px", fontStyle: "bold", letterSpacing: 1 }).setOrigin(0.5);
+    this.actionButton = this.add.container(0, 0, [actionBackground, actionLabel]).setScrollFactor(0).setDepth(2101);
     actionBackground.on("pointerup", () => { void this.requestNearbyPortal(); });
     this.scale.on("resize", this.layoutHud, this);
     this.layoutHud();
   }
 
-  private createBar(x: number, y: number, label: string, color: number, value: string): HudBar {
-    this.add.text(x, y, label, {
-      color: "#a8bec6",
-      fontFamily: "Trebuchet MS, sans-serif",
-      fontSize: "10px",
-      fontStyle: "bold",
-    }).setScrollFactor(0).setDepth(2101);
-    this.add.rectangle(x + 24, y + 7, 92, 8, 0x243747)
-      .setOrigin(0, 0.5)
-      .setScrollFactor(0)
-      .setDepth(2101);
-    const fill = this.add.rectangle(x + 24, y + 7, 92, 8, color)
-      .setOrigin(0, 0.5)
-      .setScrollFactor(0)
-      .setDepth(2102);
-    const text = this.add.text(x + 24, y + 14, value, {
-      color: "#bdd4d6",
-      fontFamily: "Trebuchet MS, sans-serif",
-      fontSize: "9px",
-    }).setScrollFactor(0).setDepth(2101);
+  private createBar(x: number, y: number, label: string, color: number, value: string, parent: Phaser.GameObjects.Container): HudBar {
+    const labelText = this.add.text(x, y, label, { color: "#f8e5bd", fontFamily: "Trebuchet MS, sans-serif", fontSize: "9px", fontStyle: "bold" });
+    const background = this.add.rectangle(x + 27, y + 8, 88, 7, 0x251d3c).setOrigin(0, 0.5);
+    const fill = this.add.rectangle(x + 27, y + 8, 84, 7, color).setOrigin(0, 0.5);
+    const frame = this.add.image(x + 24, y + 8, "gui-bar-frame").setOrigin(0, 0.5);
+    const text = this.add.text(x + 29, y + 14, value, { color: "#fff4d9", fontFamily: "Trebuchet MS, sans-serif", fontSize: "8px" });
+    parent.add([labelText, background, fill, frame, text]);
+    parent.bringToTop(frame).bringToTop(text);
     return { fill, value: text };
   }
 
   private layoutHud(): void {
+    const width = this.scale.gameSize.width;
     const height = this.scale.gameSize.height;
+    this.hudCompass?.setPosition(width - 94, 18);
+    this.hudSkills?.setPosition(Math.max(18, (width - 224) / 2), height - 76);
     this.hudHint?.setPosition(18, height - 30);
-    this.actionButton?.setPosition(this.scale.gameSize.width - 102, height - 74);
+    this.actionButton?.setPosition(width - 84, height - 56);
   }
 
   private getMovementVector(): { x: number; y: number } {
@@ -304,9 +282,10 @@ export class WuxiaScene extends Phaser.Scene {
 
   private updateActionButtonState(): void {
     const nearbyPortal = this.findNearbyPortal();
-    const background = this.actionButton?.list[0] as Phaser.GameObjects.Rectangle | undefined;
+    const background = this.actionButton?.list[0] as Phaser.GameObjects.Image | undefined;
     if (!background) return;
-    background.setFillStyle(nearbyPortal ? 0x1b5a55 : 0x122536, nearbyPortal ? 0.98 : 0.92);
+    if (nearbyPortal) background.setTint(0xd9f28a);
+    else background.clearTint();
   }
 
   private findNearbyPortal(): { id: number; name: string } | undefined {

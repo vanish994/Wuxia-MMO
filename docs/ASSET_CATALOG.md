@@ -33,7 +33,7 @@ Extrair para `assets/characters/samurai/runtime/` os frames de `sword-attack` e 
 
 ### HUD
 
-Fatiar as folhas do `tinyRPG` em texturas nomeadas e aplicar primeiro às barras HP/Qi, retrato e botões de ação. O HUD deve continuar responsivo em landscape e não pode cobrir o joystick ou o botão principal. As folhas são visuais; valores e estados continuam no código.
+**Implementado na primeira versão profissional do HUD.** As folhas do `tinyRPG` foram copiadas para `assets/external/tiny-rpg-mana-soul-gui/` e integradas sem redimensionar sprites individuais: painel 9-slice, cabeçalho, moldura de retrato, barras HP/Qi, bússola, slots da hotbar e botão de interação. O HUD continua responsivo em landscape e não cobre o joystick nem o botão principal; folhas são apenas visuais, enquanto valores e estados continuam no código.
 
 ### Mundo
 

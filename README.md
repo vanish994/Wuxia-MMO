@@ -18,11 +18,11 @@ O pacote reúne caminhada, idle, ataques com espada e orbe de energia, e morte f
 - [Contrato Phaser/TypeScript e eventos de servidor](docs/world-runtime-integration.md)
 - [Catálogo de assets, licenças e plano de integração](docs/ASSET_CATALOG.md)
 
-O núcleo inclui transições Dual Grid de 32×32, vinte mapas conectados e a vila de demonstração Qinghe. Está identificado como alpha vertical slice; o README do pack lista avisos de navegação e o conteúdo ainda não produzido.
+O núcleo inclui transições Dual Grid de 32×32, vinte mapas conectados e a vila de demonstração Qinghe. Está identificado como alpha vertical slice; o README do pack lista avisos de navegação e o conteúdo ainda não produzido. O pack GUI Tiny RPG — Mana Soul já está integrado em `assets/external/tiny-rpg-mana-soul-gui/` para o HUD responsivo.
 
 ## Cliente executável — primeira fundação
 
-O repositório agora inclui um cliente Phaser + TypeScript mínimo em `src/client/`. Ele carrega `qinghe-valley`, instancia o protagonista predefinido com caminhada em oito direções, aplica câmera e colisões do mapa, exibe HUD/joystick virtual e permite testar portais com um adaptador local provisório. Esse adaptador **não é multiplayer nem servidor autoritativo**; ele existe somente para validar a integração do mundo antes do combate e da camada online.
+O repositório agora inclui um cliente Phaser + TypeScript mínimo em `src/client/`. Ele carrega `qinghe-valley`, instancia o protagonista predefinido com caminhada em oito direções, aplica câmera e colisões do mapa, exibe HUD profissional baseado no pack Tiny RPG, joystick virtual e permite testar portais com um adaptador local provisório. Esse adaptador **não é multiplayer nem servidor autoritativo**; ele existe somente para validar a integração do mundo antes do combate e da camada online.
 
 ### Executar localmente
 
