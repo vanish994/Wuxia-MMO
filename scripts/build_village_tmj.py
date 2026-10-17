@@ -48,7 +48,7 @@ def build_layout() -> list[list[str]]:
     fill(32, 25, 33, 35, "d")     # south road -> training grounds
     # Central plaza and market square.
     fill(22, 15, 34, 25, "d")
-    fill(36, 13, 46, 19, "d")
+    fill(36, 13, 42, 19, "d")
     # Shrine terrace (north) and training yard (south-west).
     fill(21, 4, 35, 8, "d")
     fill(8, 24, 19, 31, "d")
@@ -230,18 +230,18 @@ def build_props(g, rng: random.Random) -> tuple[list[dict], list[dict]]:
     for x, y in [(736, 512), (1056, 512), (736, 768), (1056, 768)]:
         add("ambient_lantern", x, y)
     # Botica (alchemy), forge and guest house.
-    add("cabana-1", 528, 400)
-    add("cabana-3", 320, 736)
-    add("cabana-1", 1344, 896, flip=True)
+    add("cabana-1", 608, 400)
+    add("cabana-3", 416, 736)
+    add("cabana-1", 1184, 880, flip=True)
     # Dojo tower and teahouse by the lake.
-    add("pagoda", 1200, 320)
-    add("teahouse", 1376, 352)
+    add("pagoda", 1120, 320)
+    add("teahouse", 1264, 352)
     # Market: a cabin at the back and stalls along both lanes.
-    add("cabana-2", 1296, 400)
-    for x in (1200, 1296, 1392):
-        add(f"barraca-{1 + (x // 96) % 3}", x, 560)
-    for x in (1200, 1296, 1392):
-        add(f"barraca-{1 + (x // 96 + 1) % 3}", x, 772)
+    add("cabana-2", 1248, 400)
+    for x in (1184, 1248, 1312):
+        add(f"barraca-{1 + (x // 64) % 3}", x, 560)
+    for x in (1184, 1248, 1312):
+        add(f"barraca-{1 + (x // 64 + 1) % 3}", x, 772)
     # Training yard fence posts are decoration only (non-solid lanterns).
     for x, y in [(264, 800), (408, 800), (264, 960), (408, 960)]:
         add("ambient_lantern", x, y)
@@ -324,12 +324,12 @@ INTERACTION_MOVES = {
     "village-notice": (896, 576),
     "respawn-shrine": (896, 384),
     "market-square": (1248, 576),
-    "alchemy-yard": (544, 352),
-    "forge-yard": (320, 700),
-    "guest-yard": (1344, 860),
-    "dojo-yard": (1184, 288),
-    "north-dojo.enter": (1184, 286),
-    "tea-garden.enter": (1376, 380),
+    "alchemy-yard": (608, 352),
+    "forge-yard": (416, 700),
+    "guest-yard": (1184, 860),
+    "dojo-yard": (1120, 288),
+    "north-dojo.enter": (1120, 286),
+    "tea-garden.enter": (1264, 380),
 }
 
 

@@ -57,6 +57,9 @@ type VillageKit = {
   }>;
 };
 
+/** Zoom of the world camera. 1 = native pixel art; higher reads better on phones. */
+const WORLD_ZOOM = 1.6;
+
 export class WuxiaScene extends Phaser.Scene {
   private player!: Phaser.Physics.Arcade.Sprite;
   private world!: WuxiaWorldLoader;
@@ -80,6 +83,9 @@ export class WuxiaScene extends Phaser.Scene {
   private hudCompass!: Phaser.GameObjects.Container;
   private hudSkills!: Phaser.GameObjects.Container;
   private villageKitImages: Phaser.GameObjects.Image[] = [];
+  private worldCamera?: Phaser.Cameras.Scene2D.Camera;
+  private hudCamera?: Phaser.Cameras.Scene2D.Camera;
+  private cameraAssigned = new WeakSet<object>();
   private villageKitColliders: Phaser.GameObjects.Zone[] = [];
   private wolves: Wolf[] = [];
   private wolfColliders: Phaser.Physics.Arcade.Collider[] = [];
@@ -122,6 +128,7 @@ export class WuxiaScene extends Phaser.Scene {
 
   create(): void {
     this.cameras.main.setBackgroundColor(0x101925);
+    this.setupCameras();
     this.physics.world.setBounds(0, 0, 1280, 800);
     this.cursors = this.input.keyboard!.createCursorKeys();
     this.wasd = this.input.keyboard!.addKeys({
@@ -177,7 +184,30 @@ export class WuxiaScene extends Phaser.Scene {
     });
   }
 
+  /**
+   * The world camera zooms in so the samurai and the districts read at phone size.
+   * HUD objects (scroll factor 0) are drawn by a second 1:1 camera so the interface keeps its size.
+   */
+  private setupCameras(): void {
+    this.worldCamera = this.cameras.main;
+    this.worldCamera.setZoom(WORLD_ZOOM);
+    this.hudCamera = this.cameras.add(0, 0, 1280, 720, false, "hud");
+    this.hudCamera.setZoom(1);
+  }
+
+  private syncCameraLayers(): void {
+    if (!this.worldCamera || !this.hudCamera) return;
+    for (const child of this.children.list) {
+      if (this.cameraAssigned.has(child)) continue;
+      this.cameraAssigned.add(child);
+      const isHud = (child as Phaser.GameObjects.GameObject & { scrollFactorX?: number }).scrollFactorX === 0;
+      if (isHud) this.worldCamera.ignore(child);
+      else this.hudCamera.ignore(child);
+    }
+  }
+
   update(time: number): void {
+    this.syncCameraLayers();
     if (!this.player || this.loading) return;
     this.updateWolves(time);
 

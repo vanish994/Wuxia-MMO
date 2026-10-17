@@ -50,7 +50,7 @@ export const HUNT_SPAWNS = Object.freeze([
   { id: "south-field", x: 680, y: 980 },
   { id: "south-east", x: 1100, y: 1000 },
   { id: "east-field", x: 1480, y: 800 },
-  { id: "north-east", x: 1260, y: 340 },
+  { id: "north-east", x: 1420, y: 440 },
 ]);
 
 /** Where a defeated player reappears: the bundle's `arrival` spawn in the plaza (no shrine interaction yet). */
