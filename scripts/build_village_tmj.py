@@ -47,11 +47,11 @@ def build_layout() -> list[list[str]]:
     fill(27, 0, 28, 16, "d")      # north road -> jade mountain / shrine
     fill(32, 25, 33, 35, "d")     # south road -> training grounds
     # Central plaza and market square.
-    fill(22, 15, 34, 25, "d")
+    fill(25, 17, 31, 23, "d")
     fill(36, 13, 42, 19, "d")
     # Shrine terrace (north) and training yard (south-west).
-    fill(21, 4, 35, 8, "d")
-    fill(8, 24, 19, 31, "d")
+    fill(24, 4, 32, 7, "d")
+    fill(9, 25, 17, 29, "d")
     # Lake (north-east), rounded with an ellipse test.
     for y in range(0, 10):
         for x in range(40, 56):
@@ -179,6 +179,14 @@ def footprint(x: float, y: float, name: str) -> dict | None:
     return {"x": x - fw / 2, "y": y - fh, "width": fw, "height": fh}
 
 
+def near_dirt(g, x: int, y: int, r: int = 1) -> bool:
+    for yy in range(y - r, y + r + 1):
+        for xx in range(x - r, x + r + 1):
+            if 0 <= xx < W and 0 <= yy < H and g[yy][xx] == "d":
+                return True
+    return False
+
+
 def tree_positions(g, rng: random.Random) -> list[dict]:
     """Decorative trees on grass only, kept off roads, plaza and the lake, spaced apart."""
     placed: list[tuple[float, float]] = []
@@ -189,22 +197,23 @@ def tree_positions(g, rng: random.Random) -> list[dict]:
         for x in range(W):
             if g[y][x] != "g":
                 continue
+            if near_dirt(g, x, y, 1):
+                continue
             near_edge = x <= 3 or x >= W - 4 or y <= 2 or y >= H - 3
             near_core = 14 <= x <= 42 and 10 <= y <= 27
-            if near_edge or (not near_core and rng.random() < 0.09):
+            if near_edge or (near_core and rng.random() < 0.12) or (not near_core and rng.random() < 0.09):
                 candidates.append((x, y))
     rng.shuffle(candidates)
     for x, y in candidates:
         px, py = x * T + rng.randint(4, 28), y * T + rng.randint(8, 28)
-        if any((px - qx) ** 2 + (py - qy) ** 2 < 46 ** 2 for qx, qy in placed):
+        if any((px - qx) ** 2 + (py - qy) ** 2 < 40 ** 2 for qx, qy in placed):
             continue
-        if not (x <= 3 or x >= W - 4 or y <= 2 or y >= H - 3):
-            if 14 <= x <= 42 and 10 <= y <= 27:
-                continue
+        if 22 <= x <= 34 and 15 <= y <= 25:  # plaza centre stays open
+            continue
         placed.append((px, py))
         name = rng.choice(kinds)
         trees.append(place(name, px, py, flip=rng.random() < 0.5))
-        if len(trees) >= 90:
+        if len(trees) >= 130:
             break
     return trees
 
@@ -245,6 +254,10 @@ def build_props(g, rng: random.Random) -> tuple[list[dict], list[dict]]:
     # Training yard fence posts are decoration only (non-solid lanterns).
     for x, y in [(264, 800), (408, 800), (264, 960), (408, 960)]:
         add("ambient_lantern", x, y)
+    for x, y in [(576, 364), (640, 440), (576, 448), (1216, 448), (1152, 360), (1344, 448),
+                 (1120, 600), (1424, 620), (1150, 820), (1450, 700), (1160, 960), (1300, 1000),
+                 (448, 680), (480, 800), (560, 900), (700, 470), (760, 900)]:
+        objs.append(place("ambient_shrub", x, y, flip=rng.random() < 0.5))
     objs.extend(tree_positions(g, rng))
     return objs, solids
 
