@@ -9,12 +9,15 @@ import { VirtualJoystick } from "../input/virtual-joystick";
 import { DIRECTIONS, directionFor, type Direction } from "./character/directions";
 import { PLAYER_COMBAT, PROGRESSION, RESPAWN_POINT, HUNT_SPAWNS, WOLF_LEVEL_1, WOLVES_PER_SPAWN } from "./combat/combat-config.mjs";
 import {
-  DIRECTION_VECTORS, damageFor, grantXp, isCooldownReady, isInMeleeArc, resolveMobAttack,
+  DIRECTION_VECTORS, distance, damageFor, grantXp, isCooldownReady, isInMeleeArc, resolveMobAttack,
 } from "./combat/combat-rules.mjs";
 import { Wolf, WOLF_SHEET_KEY, type WolfTarget } from "./entities/wolf";
 import { MOON_SLASH, ONDA_DE_QI, QI_REGEN_PER_SECOND } from "./combat/skills-config.mjs";
 import { canCastSkill, moonSlashHits, ondaHits, ondaTargetPoint, regenQi, spendQi } from "./combat/skills-rules.mjs";
 import { createPixellabVfxAnimations, playCharacterVfx, playGroundVfx, preloadPixellabVfx } from "./vfx/pixellab-vfx";
+import { MASTERY, PATHS, PATH_QI, PATH_SWORD, type PathId } from "./combat/paths-config.mjs";
+import type { ProjectileBasicAttack } from "./combat/paths-config.mjs";
+import { addMasteryPoints, masteryDamageMultiplier, masteryLevel, nearestTargetIndex, projectileTravelMs } from "./combat/paths-rules.mjs";
 
 const assetPath = (path: string): string => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 const REGION_TITLES: Record<string, string> = { "qinghe-valley": "Vale da Lua Serena" };
@@ -104,6 +107,12 @@ export class WuxiaScene extends Phaser.Scene {
   private lastMoonSlashAt = -Infinity;
   private lastOndaAt = -Infinity;
   private shownQi = -1;
+  private activePath: PathId = PATH_SWORD;
+  private masteryPoints: Record<PathId, number> = { [PATH_SWORD]: 0, [PATH_QI]: 0 };
+  private lastQiBasicAt = -Infinity;
+  private roleText?: Phaser.GameObjects.Text;
+  private skillSlots: Phaser.GameObjects.Image[] = [];
+  private pathButton?: Phaser.GameObjects.Container;
   private level: number = PLAYER_COMBAT.startLevel;
   private xp = 0;
   private pelts = 0;
@@ -150,6 +159,7 @@ export class WuxiaScene extends Phaser.Scene {
     this.input.keyboard!.on("keydown-SPACE", () => { this.attackQueuedAt = this.time.now; });
     this.input.keyboard!.on("keydown-ONE", () => this.castMoonSlash(this.time.now));
     this.input.keyboard!.on("keydown-TWO", () => this.castOndaDeQi(this.time.now));
+    this.input.keyboard!.on("keydown-Q", () => this.togglePath());
 
     this.createAnimations();
     createPixellabVfxAnimations(this);
@@ -363,6 +373,10 @@ export class WuxiaScene extends Phaser.Scene {
   }
 
   private tryAttack(time: number): void {
+    if (this.activePath === PATH_QI) {
+      this.castQiBasic(time);
+      return;
+    }
     if (this.playerDead || this.attacking || this.loading) return;
     if (!isCooldownReady(time, this.lastSwordAt, PLAYER_COMBAT.swordCooldownMs)) return;
     this.attacking = true;
@@ -384,10 +398,11 @@ export class WuxiaScene extends Phaser.Scene {
       });
       if (!inArc) continue;
       hits += 1;
-      const amount = damageFor(PLAYER_COMBAT.attack, WOLF_LEVEL_1.defense);
+      const amount = this.pathDamage(PATH_SWORD, PATHS[PATH_SWORD].basicAttack.damageMultiplier);
       this.showFloatingText(wolf.sprite.x, wolf.sprite.y - 52, `-${amount}`, "#ffe27a");
       if (wolf.takeDamage(amount, this.time.now)) this.onWolfDefeated();
     }
+    if (hits > 0) this.gainMastery(PATH_SWORD, MASTERY.pointsPerBasicHit * hits);
     if (hits === 0) this.setStatus("Golpe no vazio — aproxime-se do alvo na direção do golpe.");
     this.updateBars();
   }
@@ -399,6 +414,10 @@ export class WuxiaScene extends Phaser.Scene {
 
   private castMoonSlash(time: number): void {
     if (this.playerDead || this.loading) return;
+    if (this.activePath !== PATH_SWORD) {
+      this.setStatus("Moon Slash é do Caminho da Espada — troque com CAMINHO (Q).");
+      return;
+    }
     if (!canCastSkill(time, this.lastMoonSlashAt, MOON_SLASH.cooldownMs, this.qi, MOON_SLASH.qiCost)) return;
     this.lastMoonSlashAt = time;
     this.qi = spendQi(this.qi, MOON_SLASH.qiCost);
@@ -412,18 +431,23 @@ export class WuxiaScene extends Phaser.Scene {
     const origin = { x: this.player.x, y: this.player.y };
     const targets = this.wolves.map((wolf) => ({ x: wolf.sprite.x, y: wolf.sprite.y, alive: wolf.alive }));
     const hits = moonSlashHits(origin, DIRECTION_VECTORS[this.facing], targets, MOON_SLASH);
-    const amount = damageFor(Math.round(PLAYER_COMBAT.attack * MOON_SLASH.damageMultiplier), WOLF_LEVEL_1.defense);
+    const amount = this.pathDamage(PATH_SWORD, MOON_SLASH.damageMultiplier);
     for (const index of hits) {
       const wolf = this.wolves[index];
       this.showFloatingText(wolf.sprite.x, wolf.sprite.y - 52, `-${amount}`, "#9fe8ff");
       if (wolf.takeDamage(amount, this.time.now)) this.onWolfDefeated();
     }
+    if (hits.length > 0) this.gainMastery(PATH_SWORD, MASTERY.pointsPerSkillHit * hits.length);
     if (hits.length === 0) this.setStatus("Moon Slash no vazio — a lâmina não encontrou lobos na meia-lua.");
     this.updateBars();
   }
 
   private castOndaDeQi(time: number): void {
     if (this.playerDead || this.loading) return;
+    if (this.activePath !== PATH_QI) {
+      this.setStatus("Onda de Qi é do Caminho do Cultivo — troque com CAMINHO (Q).");
+      return;
+    }
     if (!canCastSkill(time, this.lastOndaAt, ONDA_DE_QI.cooldownMs, this.qi, ONDA_DE_QI.qiCost)) {
       if (time - this.lastOndaAt >= ONDA_DE_QI.cooldownMs && this.qi < ONDA_DE_QI.qiCost) this.setStatus("Qi insuficiente para a Onda de Qi.");
       return;
@@ -441,14 +465,88 @@ export class WuxiaScene extends Phaser.Scene {
     if (this.playerDead) return;
     const targets = this.wolves.map((wolf) => ({ x: wolf.sprite.x, y: wolf.sprite.y, alive: wolf.alive }));
     const hits = ondaHits(center, targets, ONDA_DE_QI.radiusPx);
-    const amount = damageFor(Math.round(PLAYER_COMBAT.attack * ONDA_DE_QI.damageMultiplier), WOLF_LEVEL_1.defense);
+    const amount = this.pathDamage(PATH_QI, ONDA_DE_QI.damageMultiplier);
     for (const index of hits) {
       const wolf = this.wolves[index];
       this.showFloatingText(wolf.sprite.x, wolf.sprite.y - 52, `-${amount}`, "#9fe8ff");
       if (wolf.takeDamage(amount, this.time.now)) this.onWolfDefeated();
     }
+    if (hits.length > 0) this.gainMastery(PATH_QI, MASTERY.pointsPerSkillHit * hits.length);
     if (hits.length === 0) this.setStatus("Onda de Qi sem alvo — nenhum lobo na área.");
     this.updateBars();
+  }
+
+  /** Basic Qi attack: a projectile that homes on the nearest wolf inside its range. */
+  private castQiBasic(time: number): void {
+    if (this.playerDead || this.loading) return;
+    const cfg = PATHS[PATH_QI].basicAttack as ProjectileBasicAttack;
+    if (!isCooldownReady(time, this.lastQiBasicAt, cfg.cooldownMs)) return;
+    const origin = { x: this.player.x, y: this.player.y };
+    const targets = this.wolves.map((wolf) => ({ x: wolf.sprite.x, y: wolf.sprite.y, alive: wolf.alive }));
+    const index = nearestTargetIndex(origin, targets, cfg.maxRangePx);
+    if (index < 0) {
+      this.setStatus("Nenhum lobo ao alcance do Qi.");
+      return;
+    }
+    this.lastQiBasicAt = time;
+    const wolf = this.wolves[index];
+    const travelMs = projectileTravelMs(distance(origin, { x: wolf.sprite.x, y: wolf.sprite.y }), cfg.projectileSpeedPxPerS);
+    const orb = playGroundVfx(this, "energy-orb-8-directions", this.facing, "whole", origin, origin.y + 5, cfg.visualScale);
+    this.tweens.addCounter({
+      from: 0,
+      to: 1,
+      duration: travelMs,
+      onUpdate: (tween) => {
+        const t = tween.getValue() ?? 1;
+        const x = origin.x + (wolf.sprite.x - origin.x) * t;
+        const y = origin.y + (wolf.sprite.y - origin.y) * t;
+        orb?.setPosition(x - (orb.displayWidth ?? 0) / 2, y - (orb.displayHeight ?? 0) / 2);
+      },
+      onComplete: () => {
+        orb?.destroy();
+        this.resolveQiBasicHit(wolf);
+      },
+    });
+  }
+
+  private resolveQiBasicHit(wolf: Wolf): void {
+    if (!wolf.alive) return;
+    const amount = this.pathDamage(PATH_QI, (PATHS[PATH_QI].basicAttack as ProjectileBasicAttack).damageMultiplier);
+    this.showFloatingText(wolf.sprite.x, wolf.sprite.y - 52, `-${amount}`, "#9fe8ff");
+    this.gainMastery(PATH_QI, MASTERY.pointsPerBasicHit);
+    if (wolf.takeDamage(amount, this.time.now)) this.onWolfDefeated();
+    this.updateBars();
+  }
+
+  /** Damage for a path: base multiplier times that path's own mastery. Mastery of one path never affects another. */
+  private pathDamage(path: PathId, baseMultiplier: number): number {
+    const level = masteryLevel(this.masteryPoints[path], MASTERY.thresholds);
+    const multiplier = baseMultiplier * masteryDamageMultiplier(level, MASTERY.damagePerLevel);
+    return damageFor(Math.round(PLAYER_COMBAT.attack * multiplier), WOLF_LEVEL_1.defense);
+  }
+
+  private gainMastery(path: PathId, points: number): void {
+    const before = masteryLevel(this.masteryPoints[path], MASTERY.thresholds);
+    this.masteryPoints[path] = addMasteryPoints(this.masteryPoints[path], points);
+    const after = masteryLevel(this.masteryPoints[path], MASTERY.thresholds);
+    if (after > before) this.setStatus(`Maestria do ${PATHS[path].name} subiu para o nível ${after}!`);
+    if (path === this.activePath) this.refreshPathUi();
+  }
+
+  private togglePath(): void {
+    this.activePath = this.activePath === PATH_SWORD ? PATH_QI : PATH_SWORD;
+    this.refreshPathUi();
+    const kind = PATHS[this.activePath].basicAttack.kind === "melee" ? "corpo a corpo" : "à distância";
+    this.setStatus(`${PATHS[this.activePath].name} ativo — ataque básico ${kind}.`);
+  }
+
+  private refreshPathUi(): void {
+    const level = masteryLevel(this.masteryPoints[this.activePath], MASTERY.thresholds);
+    this.roleText?.setText(`${PATHS[this.activePath].name}  ·  Maestria ${level}`);
+    this.skillSlots.forEach((slot, index) => {
+      const owner = index === 0 ? PATH_SWORD : PATH_QI;
+      slot.setAlpha(owner === this.activePath ? 1 : 0.45);
+    });
   }
 
   private onWolfDefeated(): void {
@@ -506,7 +604,8 @@ export class WuxiaScene extends Phaser.Scene {
     const brand = this.add.text(98, 19, "WUXIA MMO", { color: "#5b3261", fontFamily: HUD_FONT, fontSize: "12px", fontStyle: "bold", letterSpacing: 2 });
     this.hudRegion = this.add.text(98, 45, "VALE DA LUA SERENA", { color: "#fff4d9", fontFamily: HUD_FONT, fontSize: "18px", fontStyle: "bold" });
     this.hudLevel = this.add.text(98, 70, "", { color: "#d6b66f", fontFamily: HUD_FONT, fontSize: "9px", fontStyle: "bold", letterSpacing: 1 });
-    const role = this.add.text(98, 87, "Caminho da espada  ·  Primavera", { color: "#a9bdc5", fontFamily: HUD_FONT, fontSize: "10px" });
+    const role = this.add.text(98, 87, "", { color: "#a9bdc5", fontFamily: HUD_FONT, fontSize: "10px" });
+    this.roleText = role;
     this.hpBar = this.createBar(98, 105, "HP", 0x89d852, "", this.hudTopLeft);
     this.qiBar = this.createBar(98, 130, "QI", 0x4e9be8, "", this.hudTopLeft);
     this.hudTopLeft.add([panel, header, portraitFrame, portrait, brand, this.hudRegion, this.hudLevel, role, this.hpBar.fill, this.hpBar.value]);
@@ -528,6 +627,7 @@ export class WuxiaScene extends Phaser.Scene {
       const key = this.add.text(index * 72 + 16, 5, String(index + 1), { color: "#fff4d9", fontFamily: HUD_FONT, fontSize: "11px", fontStyle: "bold" }).setOrigin(0.5);
       const caption = this.add.text(index * 72 + 16, 36, label.split("  ")[1], { color: "#f8e5bd", fontFamily: HUD_FONT, fontSize: "8px", fontStyle: "bold" }).setOrigin(0.5, 0);
       this.hudSkills.add([slot, key, caption]);
+      if (index < 2) this.skillSlots.push(slot);
       if (index === 0) slot.setInteractive({ useHandCursor: true }).on("pointerdown", () => this.castMoonSlash(this.time.now));
       if (index === 1) slot.setInteractive({ useHandCursor: true }).on("pointerdown", () => this.castOndaDeQi(this.time.now));
     });
@@ -541,6 +641,12 @@ export class WuxiaScene extends Phaser.Scene {
     const attackLabel = this.add.text(0, 0, "ATACAR", { color: "#fff4d9", fontFamily: HUD_FONT, fontSize: "11px", fontStyle: "bold", letterSpacing: 1 }).setOrigin(0.5);
     this.attackButton = this.add.container(0, 0, [attackBackground, attackLabel]).setScrollFactor(0).setDepth(2101);
     attackBackground.on("pointerdown", () => this.tryAttack(this.time.now));
+
+    const pathBackground = this.add.image(0, 0, "gui-action", 0).setOrigin(0.5).setScale(1.5).setInteractive({ useHandCursor: true }).setTint(0xf2d28a);
+    const pathLabel = this.add.text(0, 0, "CAMINHO", { color: "#fff4d9", fontFamily: HUD_FONT, fontSize: "11px", fontStyle: "bold", letterSpacing: 1 }).setOrigin(0.5);
+    this.pathButton = this.add.container(0, 0, [pathBackground, pathLabel]).setScrollFactor(0).setDepth(2101);
+    pathBackground.on("pointerdown", () => this.togglePath());
+    this.refreshPathUi();
 
     this.scale.on("resize", this.layoutHud, this);
     this.layoutHud();
@@ -580,6 +686,7 @@ export class WuxiaScene extends Phaser.Scene {
     this.hudHint?.setPosition(18, height - 30);
     this.actionButton?.setPosition(width - 84, height - 56);
     this.attackButton?.setPosition(width - 84, height - 110);
+    this.pathButton?.setPosition(width - 84, height - 164);
   }
 
   private getMovementVector(): { x: number; y: number } {
