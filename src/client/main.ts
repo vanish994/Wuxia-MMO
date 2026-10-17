@@ -77,6 +77,10 @@ async function enterImmersiveMode(): Promise<void> {
 }
 
 startButton?.addEventListener("click", () => { void enterImmersiveMode(); });
+// Some embedded previews and desktop browsers refuse fullscreen/orientation lock. Let the player continue
+// in landscape instead of leaving the gate stuck. Portrait still blocks until the device is rotated.
+const skipButton = document.querySelector<HTMLButtonElement>("#immersive-skip");
+skipButton?.addEventListener("click", () => { gate?.classList.add("is-dismissed"); });
 document.addEventListener("fullscreenchange", updateImmersiveGate);
 portraitQuery.addEventListener?.("change", updateImmersiveGate);
 updateImmersiveGate();
