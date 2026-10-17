@@ -31,28 +31,42 @@
       "shape": "ellipse",
       "material": "water",
       "center": [
-        31,
-        7
+        32,
+        6
       ],
       "radius": [
-        4.2,
-        3.3
+        4.8,
+        3.2
       ],
-      "wobble": 0.7
+      "wobble": 0.55
     },
     {
-      "id": "village-green",
+      "id": "south-pond",
+      "shape": "ellipse",
+      "material": "water",
+      "center": [
+        6,
+        20
+      ],
+      "radius": [
+        3.0,
+        2.0
+      ],
+      "wobble": 0.35
+    },
+    {
+      "id": "central-plaza",
       "shape": "ellipse",
       "material": "dirt_path",
       "center": [
-        18,
+        20,
         14
       ],
       "radius": [
-        7.4,
-        2.8
+        6.7,
+        3.3
       ],
-      "wobble": 0.12
+      "wobble": 0.1
     },
     {
       "id": "west-road",
@@ -75,6 +89,10 @@
         [
           14,
           14
+        ],
+        [
+          16,
+          14
         ]
       ]
     },
@@ -85,72 +103,132 @@
       "width": 1.35,
       "points": [
         [
-          22,
+          24,
           14
         ],
         [
-          27,
-          13
+          28,
+          14
         ],
         [
-          31,
-          11
+          32,
+          12
         ],
         [
           36,
-          11
+          10
         ],
         [
           41,
-          11
+          10
         ]
       ]
     },
     {
-      "id": "north-lane",
+      "id": "north-road",
       "shape": "road",
       "material": "dirt_path",
-      "width": 1.2,
+      "width": 1.25,
       "points": [
         [
-          10,
-          14
+          20,
+          12
         ],
         [
-          10,
-          9
+          20,
+          8
         ],
         [
-          9,
-          6
+          20,
+          4
         ],
         [
-          9,
+          20,
           -1
         ]
       ]
     },
     {
-      "id": "south-lane",
+      "id": "south-road",
       "shape": "road",
       "material": "dirt_path",
-      "width": 1.2,
+      "width": 1.25,
       "points": [
         [
-          18,
-          14
-        ],
-        [
-          19,
-          17
+          20,
+          16
         ],
         [
           20,
-          21
+          19
+        ],
+        [
+          20,
+          22
         ],
         [
           20,
           26
+        ]
+      ]
+    },
+    {
+      "id": "alchemy-lane",
+      "shape": "road",
+      "material": "dirt_path",
+      "width": 1.05,
+      "points": [
+        [
+          16,
+          13
+        ],
+        [
+          13,
+          11
+        ],
+        [
+          11,
+          9
+        ]
+      ]
+    },
+    {
+      "id": "forge-lane",
+      "shape": "road",
+      "material": "dirt_path",
+      "width": 1.05,
+      "points": [
+        [
+          16,
+          16
+        ],
+        [
+          13,
+          19
+        ],
+        [
+          11,
+          21
+        ]
+      ]
+    },
+    {
+      "id": "guest-lane",
+      "shape": "road",
+      "material": "dirt_path",
+      "width": 1.05,
+      "points": [
+        [
+          24,
+          16
+        ],
+        [
+          27,
+          19
+        ],
+        [
+          29,
+          21
         ]
       ]
     }
@@ -1146,26 +1224,20 @@
     {
       "id": "village-gate",
       "prop": "sect_gate",
-      "x": 320,
+      "x": 256,
       "y": 256
     },
     {
       "id": "respawn-shrine",
       "prop": "pagoda",
-      "x": 576,
-      "y": 320
+      "x": 640,
+      "y": 256
     },
     {
       "id": "moonwood-crossing",
       "prop": "bridge",
-      "x": 992,
-      "y": 352
-    },
-    {
-      "id": "village-pagoda",
-      "prop": "pagoda",
-      "x": 1088,
-      "y": 544
+      "x": 1024,
+      "y": 320
     }
   ],
   "scatter": [
@@ -1174,19 +1246,19 @@
       "kinds": {
         "bamboo": 1
       },
-      "count": 18,
+      "count": 22,
       "spacing": 24,
       "region": [
         24,
         24,
-        360,
-        290
+        320,
+        280
       ],
       "density": {
         "scale": 94,
         "octaves": 2,
-        "threshold": 0.42,
-        "edge_bonus": 0.16,
+        "threshold": 0.4,
+        "edge_bonus": 0.18,
         "edge_distance": 55
       },
       "clearance": {
@@ -1203,19 +1275,19 @@
         "blossom_tree": 2,
         "shrub": 1
       },
-      "count": 14,
+      "count": 20,
       "spacing": 28,
       "region": [
-        640,
-        385,
+        704,
+        496,
         1180,
         760
       ],
       "density": {
         "scale": 120,
         "octaves": 2,
-        "threshold": 0.47,
-        "edge_bonus": 0.1,
+        "threshold": 0.44,
+        "edge_bonus": 0.12,
         "edge_distance": 50
       },
       "clearance": {
@@ -1233,12 +1305,12 @@
         "lantern": 1,
         "signboard": 1
       },
-      "count": 16,
+      "count": 24,
       "spacing": 20,
       "near": {
         "road": [
           18,
-          42
+          46
         ]
       },
       "clearance": {
@@ -1268,14 +1340,14 @@
     {
       "id": "north-gate-exit",
       "edge": "north",
-      "road": "north-lane",
+      "road": "north-road",
       "to": "jade-mountain:from-qinghe-valley",
       "arrival": "from-jade-mountain"
     },
     {
       "id": "south-road-exit",
       "edge": "south",
-      "road": "south-lane",
+      "road": "south-road",
       "to": "training-grounds:from-qinghe-valley",
       "arrival": "from-training-grounds"
     }
@@ -1283,40 +1355,46 @@
   "spawns": [
     {
       "id": "arrival",
-      "x": 576,
-      "y": 480,
+      "x": 640,
+      "y": 512,
       "facing": "north"
     }
   ],
   "interactions": [
     {
       "id": "village-notice",
-      "x": 384,
-      "y": 352,
+      "x": 544,
+      "y": 416,
       "reach": 32
     },
     {
       "id": "respawn-shrine",
-      "x": 576,
-      "y": 448,
+      "x": 640,
+      "y": 320,
       "reach": 44
     },
     {
       "id": "market-square",
-      "x": 800,
+      "x": 864,
       "y": 448,
       "reach": 64
     },
     {
       "id": "alchemy-yard",
-      "x": 416,
+      "x": 352,
       "y": 320,
       "reach": 48
     },
     {
       "id": "forge-yard",
-      "x": 416,
-      "y": 608,
+      "x": 352,
+      "y": 672,
+      "reach": 48
+    },
+    {
+      "id": "guest-yard",
+      "x": 928,
+      "y": 672,
       "reach": 48
     }
   ]

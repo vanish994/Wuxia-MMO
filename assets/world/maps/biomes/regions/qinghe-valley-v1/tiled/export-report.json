@@ -29,97 +29,97 @@
   ],
   "inputs": [
     {
-      "path": "../qinghe-scale-candidate/map-bundle.json",
-      "sha256": "8b8b4a81772d5af7fac6dc9c4047ea0f1da64a3ffb105468550df7989f303520",
-      "bytes": 80054
+      "path": "../qinghe-rebuild-candidate/map-bundle.json",
+      "sha256": "37c2c3624feb5b9c9714a4df98a05de5b8d5164ef205373340894dd742986263",
+      "bytes": 97675
     },
     {
-      "path": "../qinghe-scale-candidate/tilesets/grass-path-water-wang81/grass-path-water-wang81.tileset.json",
+      "path": "../qinghe-rebuild-candidate/tilesets/grass-path-water-wang81/grass-path-water-wang81.tileset.json",
       "sha256": "1525e3662e83f1ee8abb180634d7d6ec4d1246693db9660f2ec8ba9a6ffe1678",
       "bytes": 188839
     },
     {
-      "path": "../qinghe-scale-candidate/tilesets/grass-path-water-wang81/grass-path-water-wang81.png",
+      "path": "../qinghe-rebuild-candidate/tilesets/grass-path-water-wang81/grass-path-water-wang81.png",
       "sha256": "ef505070499c897e246219527bbba3d094534fe18d21db062dcdeea46ed6065f",
       "bytes": 32480
     },
     {
-      "path": "../qinghe-scale-candidate/terrain-vertices.json",
-      "sha256": "b31fd25d5c1862105f71037f4cd77d172a38083f55d8789552ff18980ea2cb91",
+      "path": "../qinghe-rebuild-candidate/terrain-vertices.json",
+      "sha256": "4da1661ce88e21533161e54e627067dfcfd9822e98629c783029931a87eeb413",
       "bytes": 10103
     },
     {
-      "path": "../qinghe-scale-candidate/props/grass.png",
+      "path": "../qinghe-rebuild-candidate/props/grass.png",
       "sha256": "2a7065ffd49a92c05eba761496e5089fc6e4db78b9b62b96ceb1045c2b36add4",
       "bytes": 153
     },
     {
-      "path": "../qinghe-scale-candidate/props/dirt_path.png",
+      "path": "../qinghe-rebuild-candidate/props/dirt_path.png",
       "sha256": "b5ce47c08c5a1e45964fc32e6ef3ad6c5d381be9e6fd99e0b58841f4e64483c2",
       "bytes": 153
     },
     {
-      "path": "../qinghe-scale-candidate/props/water.png",
+      "path": "../qinghe-rebuild-candidate/props/water.png",
       "sha256": "cba3c113c40bbb9c2759d88834c8391b2c106790b9edf776b80968755e70a013",
       "bytes": 153
     },
     {
-      "path": "../qinghe-scale-candidate/props/sect_gate.png",
+      "path": "../qinghe-rebuild-candidate/props/sect_gate.png",
       "sha256": "1aeedb2ef856eec6fe1e5f8310ce4e1e368e05f60b6182f91cba3f86974c6a85",
       "bytes": 479
     },
     {
-      "path": "../qinghe-scale-candidate/props/bridge.png",
+      "path": "../qinghe-rebuild-candidate/props/bridge.png",
       "sha256": "27e76b7d6bd364498b855920f61381c3f2f699394612fe509cb397c0c0ba864d",
       "bytes": 300
     },
     {
-      "path": "../qinghe-scale-candidate/props/pagoda.png",
+      "path": "../qinghe-rebuild-candidate/props/pagoda.png",
       "sha256": "c4805330da4a46ae8195e0e50329bf47980748df8f7552fd576a7d5e04a1cb1d",
       "bytes": 514
     },
     {
-      "path": "../qinghe-scale-candidate/props/hall.png",
+      "path": "../qinghe-rebuild-candidate/props/hall.png",
       "sha256": "4aef0fea09ae9043289bc7301d524494566c9c84f2e9cc2161c6873a341fe16d",
       "bytes": 500
     },
     {
-      "path": "../qinghe-scale-candidate/props/teahouse.png",
+      "path": "../qinghe-rebuild-candidate/props/teahouse.png",
       "sha256": "ed1534bb5510edc2c9fa21f64af5d2926c8c6ffb2d2020c4c5d7fae4b441b03d",
       "bytes": 432
     },
     {
-      "path": "../qinghe-scale-candidate/props/pine.png",
+      "path": "../qinghe-rebuild-candidate/props/pine.png",
       "sha256": "f6d9de3c7e18415fa4233e58b4cc65847573ea601c3a2cd3738f46d9b4bf5fc3",
       "bytes": 341
     },
     {
-      "path": "../qinghe-scale-candidate/props/blossom_tree.png",
+      "path": "../qinghe-rebuild-candidate/props/blossom_tree.png",
       "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
       "bytes": 407
     },
     {
-      "path": "../qinghe-scale-candidate/props/bamboo.png",
+      "path": "../qinghe-rebuild-candidate/props/bamboo.png",
       "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
       "bytes": 509
     },
     {
-      "path": "../qinghe-scale-candidate/props/lantern.png",
+      "path": "../qinghe-rebuild-candidate/props/lantern.png",
       "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
       "bytes": 230
     },
     {
-      "path": "../qinghe-scale-candidate/props/rock.png",
+      "path": "../qinghe-rebuild-candidate/props/rock.png",
       "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
       "bytes": 188
     },
     {
-      "path": "../qinghe-scale-candidate/props/shrub.png",
+      "path": "../qinghe-rebuild-candidate/props/shrub.png",
       "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
       "bytes": 198
     },
     {
-      "path": "../qinghe-scale-candidate/props/signboard.png",
+      "path": "../qinghe-rebuild-candidate/props/signboard.png",
       "sha256": "db4e50fb76441a57ff24f22c3cc852749cb0faf64c0ed744a068ece0b1bbea41",
       "bytes": 223
     }
@@ -182,18 +182,18 @@
     },
     {
       "path": "map.embedded.tmj",
-      "sha256": "b6c30007429a83774e94c793214b354f5f5220822cda99de1f15f5b632278276",
-      "bytes": 670851
+      "sha256": "14df99e6e3ae4cb8723128084ac0e462031397230ae2fb67cb195c281aa3bec6",
+      "bytes": 730159
     },
     {
       "path": "map.tmj",
-      "sha256": "a80ea0cc435915bcc97ebba568b1e51adc82e8884bd315216d7c5e9b08cdb7a3",
-      "bytes": 157006
+      "sha256": "daa7d82ec426fe97163bf956c81dad648a3508a97b70d5503927c1d26bc913e4",
+      "bytes": 216314
     },
     {
       "path": "preview.png",
-      "sha256": "8b885e18d20cfc125bc320b70ef1081f9a36ddda9d5b5828b4aff7d1cd7e3975",
-      "bytes": 58564
+      "sha256": "b9be2c7c41561e00f5250c33ab6209c17ce97b77aac9f1a73161748a979bb078",
+      "bytes": 64457
     },
     {
       "path": "props.tsx",

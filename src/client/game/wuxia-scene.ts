@@ -9,6 +9,23 @@ import { VirtualJoystick } from "../input/virtual-joystick";
 const DIRECTIONS = ["down", "down-left", "down-right", "left", "right", "up", "up-left", "up-right"] as const;
 type Direction = (typeof DIRECTIONS)[number];
 const assetPath = (path: string): string => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
+const VILLAGE_ASSET_KEYS: Record<string, string> = {
+  "/assets/external/pixellab-wuxia-objects/cabanas/cabana-1.png": "qinghe-cabin-1",
+  "/assets/external/pixellab-wuxia-objects/cabanas/cabana-2.png": "qinghe-cabin-2",
+  "/assets/external/pixellab-wuxia-objects/cabanas/cabana-3.png": "qinghe-cabin-3",
+  "/assets/external/pixellab-wuxia-objects/cabanas/cabana-4.png": "qinghe-cabin-4",
+  "/assets/external/pixellab-wuxia-objects/barracas/barraca-1.png": "qinghe-market-stall-1",
+  "/assets/external/pixellab-wuxia-objects/barracas/barraca-2.png": "qinghe-market-stall-2",
+  "/assets/external/pixellab-wuxia-objects/barracas/barraca-3.png": "qinghe-market-stall-3",
+  "/assets/external/opp4-village/environment/tiles/village/tile_village_fountain.png": "qinghe-fountain",
+  "/assets/external/feudal-japan-nature/PNG/01_cherry_blossom_tree_32x32.png": "qinghe-sakura",
+  "/assets/external/feudal-japan-nature/PNG/02_koi_pond_tile_32x32.png": "qinghe-koi",
+  "/assets/external/feudal-japan-nature/PNG/03_rock_cluster_32x32.png": "qinghe-rock",
+  "/assets/external/feudal-japan-nature/PNG/04_bamboo_grove_32x32.png": "qinghe-bamboo",
+  "/assets/external/feudal-japan-nature/PNG/06_lotus_lily_pad_32x32.png": "qinghe-lotus",
+  "/assets/external/feudal-japan-nature/PNG/07_mossy_stone_path_32x32.png": "qinghe-stone-path",
+  "/assets/external/feudal-japan-nature/PNG/08_fallen_log_32x32.png": "qinghe-log",
+};
 
 type HudBar = {
   fill: Phaser.GameObjects.Rectangle;
@@ -59,22 +76,7 @@ export class WuxiaScene extends Phaser.Scene {
       }
     }
     this.load.json("qinghe-village-kit", assetPath("/assets/world/maps/biomes/qinghe-valley-village-kit.json"));
-    const villageAssets: Record<string, string> = {
-      "qinghe-cabin-1": assetPath("/assets/external/pixellab-wuxia-objects/cabanas/cabana-1.png"),
-      "qinghe-cabin-2": assetPath("/assets/external/pixellab-wuxia-objects/cabanas/cabana-2.png"),
-      "qinghe-cabin-3": assetPath("/assets/external/pixellab-wuxia-objects/cabanas/cabana-3.png"),
-      "qinghe-market-stall-1": assetPath("/assets/external/pixellab-wuxia-objects/barracas/barraca-1.png"),
-      "qinghe-market-stall-2": assetPath("/assets/external/pixellab-wuxia-objects/barracas/barraca-2.png"),
-      "qinghe-market-stall-3": assetPath("/assets/external/pixellab-wuxia-objects/barracas/barraca-3.png"),
-      "qinghe-blossom-tree": assetPath("/assets/external/feudal-japan-nature/PNG/01_cherry_blossom_tree_32x32.png"),
-      "qinghe-koi-pond": assetPath("/assets/external/feudal-japan-nature/PNG/02_koi_pond_tile_32x32.png"),
-      "qinghe-rocks": assetPath("/assets/external/feudal-japan-nature/PNG/03_rock_cluster_32x32.png"),
-      "qinghe-bamboo": assetPath("/assets/external/feudal-japan-nature/PNG/04_bamboo_grove_32x32.png"),
-      "qinghe-maple": assetPath("/assets/external/feudal-japan-nature/PNG/05_autumn_maple_tree_32x32.png"),
-      "qinghe-stone-path": assetPath("/assets/external/feudal-japan-nature/PNG/07_mossy_stone_path_32x32.png"),
-      "qinghe-fallen-log": assetPath("/assets/external/feudal-japan-nature/PNG/08_fallen_log_32x32.png"),
-    };
-    for (const [key, path] of Object.entries(villageAssets)) this.load.image(key, path);
+    for (const [path, key] of Object.entries(VILLAGE_ASSET_KEYS)) this.load.image(key, assetPath(path));
   }
 
   create(): void {
@@ -170,23 +172,8 @@ export class WuxiaScene extends Phaser.Scene {
   private mountVillageKit(): void {
     const kit = this.cache.json.get("qinghe-village-kit") as VillageKit | undefined;
     if (!kit?.objects) return;
-    const textureKeyByAsset: Record<string, string> = {
-      "/assets/external/pixellab-wuxia-objects/cabanas/cabana-1.png": "qinghe-cabin-1",
-      "/assets/external/pixellab-wuxia-objects/cabanas/cabana-2.png": "qinghe-cabin-2",
-      "/assets/external/pixellab-wuxia-objects/cabanas/cabana-3.png": "qinghe-cabin-3",
-      "/assets/external/pixellab-wuxia-objects/barracas/barraca-1.png": "qinghe-market-stall-1",
-      "/assets/external/pixellab-wuxia-objects/barracas/barraca-2.png": "qinghe-market-stall-2",
-      "/assets/external/pixellab-wuxia-objects/barracas/barraca-3.png": "qinghe-market-stall-3",
-      "/assets/external/feudal-japan-nature/PNG/01_cherry_blossom_tree_32x32.png": "qinghe-blossom-tree",
-      "/assets/external/feudal-japan-nature/PNG/02_koi_pond_tile_32x32.png": "qinghe-koi-pond",
-      "/assets/external/feudal-japan-nature/PNG/03_rock_cluster_32x32.png": "qinghe-rocks",
-      "/assets/external/feudal-japan-nature/PNG/04_bamboo_grove_32x32.png": "qinghe-bamboo",
-      "/assets/external/feudal-japan-nature/PNG/05_autumn_maple_tree_32x32.png": "qinghe-maple",
-      "/assets/external/feudal-japan-nature/PNG/07_mossy_stone_path_32x32.png": "qinghe-stone-path",
-      "/assets/external/feudal-japan-nature/PNG/08_fallen_log_32x32.png": "qinghe-fallen-log",
-    };
     for (const object of kit.objects) {
-      const texture = textureKeyByAsset[object.asset];
+      const texture = VILLAGE_ASSET_KEYS[object.asset];
       if (!texture) continue;
       const image = this.add.image(object.x, object.y, texture)
         .setOrigin(0.5, 1)

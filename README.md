@@ -45,4 +45,4 @@ O plano da etapa está em [`plan.md`](plan.md) e as entregas/pendências em [`TO
 
 ### Vila inicial de Qinghe
 
-Qinghe foi reorganizada como uma vila inicial japonesa feudal/wuxia, usando somente os tiles e props já existentes. A praça central funciona como área de chegada e respawn; ao leste fica o mercado junto ao lago e à ponte; ao norte fica o pátio de alquimia; ao sul fica o pátio de forja. As quatro áreas já possuem IDs de interação no mapa para receber NPCs e sistemas de produção no futuro, sem fingir que esses sistemas já estão implementados.
+Qinghe foi reconstruída do zero como uma vila inicial japonesa/feudal wuxia, usando somente os assets já existentes. A praça central tem uma fonte OPP4 e caminho de pedra; os distritos são alquimia ao noroeste, mercado ao nordeste, forja ao sudoeste e hospedaria ao sudeste. Há ainda santuário de respawn, portão, ponte, dois lagos, cerejeiras, bambuzal, pedras, lótus e decoração de borda. Os pontos possuem IDs de interação para receber NPCs e sistemas futuros, sem fingir que esses sistemas já estão implementados.

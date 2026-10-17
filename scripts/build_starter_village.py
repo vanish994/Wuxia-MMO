@@ -297,47 +297,49 @@ def main() -> None:
         },
         "base": "grass",
         "terrain": [
-            {"id": "east-lake", "shape": "ellipse", "material": "water", "center": [31, 7], "radius": [4.2, 3.3], "wobble": 0.7},
-            # Praça principal larga: o spawn chega pelo sul e distribui o jogador para os quatro setores.
-            {"id": "village-green", "shape": "ellipse", "material": "dirt_path", "center": [18, 14], "radius": [7.4, 2.8], "wobble": 0.12},
-            {"id": "west-road", "shape": "road", "material": "dirt_path", "width": 1.35, "points": [[-1, 14], [4, 14], [9, 14], [14, 14]]},
-            # Mercado e lake ficam ligados por uma via legível, sem cortar a praça de respawn.
-            {"id": "east-road", "shape": "road", "material": "dirt_path", "width": 1.35, "points": [[22, 14], [27, 13], [31, 11], [36, 11], [41, 11]]},
-            {"id": "north-lane", "shape": "road", "material": "dirt_path", "width": 1.2, "points": [[10, 14], [10, 9], [9, 6], [9, -1]]},
-            {"id": "south-lane", "shape": "road", "material": "dirt_path", "width": 1.2, "points": [[18, 14], [19, 17], [20, 21], [20, 26]]}
+            {"id": "east-lake", "shape": "ellipse", "material": "water", "center": [32, 6], "radius": [4.8, 3.2], "wobble": 0.55},
+            {"id": "south-pond", "shape": "ellipse", "material": "water", "center": [6, 20], "radius": [3.0, 2.0], "wobble": 0.35},
+            {"id": "central-plaza", "shape": "ellipse", "material": "dirt_path", "center": [20, 14], "radius": [6.7, 3.3], "wobble": 0.10},
+            {"id": "west-road", "shape": "road", "material": "dirt_path", "width": 1.35, "points": [[-1, 14], [4, 14], [9, 14], [14, 14], [16, 14]]},
+            {"id": "east-road", "shape": "road", "material": "dirt_path", "width": 1.35, "points": [[24, 14], [28, 14], [32, 12], [36, 10], [41, 10]]},
+            {"id": "north-road", "shape": "road", "material": "dirt_path", "width": 1.25, "points": [[20, 12], [20, 8], [20, 4], [20, -1]]},
+            {"id": "south-road", "shape": "road", "material": "dirt_path", "width": 1.25, "points": [[20, 16], [20, 19], [20, 22], [20, 26]]},
+            {"id": "alchemy-lane", "shape": "road", "material": "dirt_path", "width": 1.05, "points": [[16, 13], [13, 11], [11, 9]]},
+            {"id": "forge-lane", "shape": "road", "material": "dirt_path", "width": 1.05, "points": [[16, 16], [13, 19], [11, 21]]},
+            {"id": "guest-lane", "shape": "road", "material": "dirt_path", "width": 1.05, "points": [[24, 16], [27, 19], [29, 21]]}
         ],
         "actor": {"radius": 7, "ySquash": 0.9},
         "props": props,
         "objects": [
-            {"id": "village-gate", "prop": "sect_gate", "x": 10 * 32, "y": 8 * 32},
-            {"id": "respawn-shrine", "prop": "pagoda", "x": 18 * 32, "y": 10 * 32},
-            {"id": "moonwood-crossing", "prop": "bridge", "x": 31 * 32, "y": 11 * 32},
-            {"id": "village-pagoda", "prop": "pagoda", "x": 34 * 32, "y": 17 * 32}
+            {"id": "village-gate", "prop": "sect_gate", "x": 8 * 32, "y": 8 * 32},
+            {"id": "respawn-shrine", "prop": "pagoda", "x": 20 * 32, "y": 8 * 32},
+            {"id": "moonwood-crossing", "prop": "bridge", "x": 32 * 32, "y": 10 * 32}
         ],
         "scatter": [
-            {"id": "bamboo-grove", "kinds": {"bamboo": 1}, "count": 18, "spacing": 24,
-             "region": [24, 24, 360, 290], "density": {"scale": 94, "octaves": 2, "threshold": 0.42, "edge_bonus": 0.16, "edge_distance": 55},
+            {"id": "bamboo-grove", "kinds": {"bamboo": 1}, "count": 22, "spacing": 24,
+             "region": [24, 24, 320, 280], "density": {"scale": 94, "octaves": 2, "threshold": 0.40, "edge_bonus": 0.18, "edge_distance": 55},
              "clearance": {"road": 20, "blocked": 20, "object": 30, "exit": 30, "spawn": 28}},
-            {"id": "plum-garden", "kinds": {"blossom_tree": 2, "shrub": 1}, "count": 14, "spacing": 28,
-             "region": [640, 385, 1180, 760], "density": {"scale": 120, "octaves": 2, "threshold": 0.47, "edge_bonus": 0.1, "edge_distance": 50},
+            {"id": "plum-garden", "kinds": {"blossom_tree": 2, "shrub": 1}, "count": 20, "spacing": 28,
+             "region": [704, 496, 1180, 760], "density": {"scale": 120, "octaves": 2, "threshold": 0.44, "edge_bonus": 0.12, "edge_distance": 50},
              "clearance": {"road": 18, "blocked": 18, "object": 28, "exit": 28, "spawn": 26}},
-            {"id": "stone-and-lanterns", "kinds": {"rock": 2, "lantern": 1, "signboard": 1}, "count": 16, "spacing": 20,
-             "near": {"road": [18, 42]},
+            {"id": "stone-and-lanterns", "kinds": {"rock": 2, "lantern": 1, "signboard": 1}, "count": 24, "spacing": 20,
+             "near": {"road": [18, 46]},
              "clearance": {"road": 14, "blocked": 14, "object": 14, "exit": 25, "spawn": 20}}
         ],
         "exits": [
             {"id": "west-road-exit", "edge": "west", "road": "west-road", "to": "bamboo-coast:from-qinghe-valley", "arrival": "from-bamboo-coast"},
             {"id": "east-road-exit", "edge": "east", "road": "east-road", "to": "river-market:from-qinghe-valley", "arrival": "from-river-market"},
-            {"id": "north-gate-exit", "edge": "north", "road": "north-lane", "to": "jade-mountain:from-qinghe-valley", "arrival": "from-jade-mountain"},
-            {"id": "south-road-exit", "edge": "south", "road": "south-lane", "to": "training-grounds:from-qinghe-valley", "arrival": "from-training-grounds"}
+            {"id": "north-gate-exit", "edge": "north", "road": "north-road", "to": "jade-mountain:from-qinghe-valley", "arrival": "from-jade-mountain"},
+            {"id": "south-road-exit", "edge": "south", "road": "south-road", "to": "training-grounds:from-qinghe-valley", "arrival": "from-training-grounds"}
         ],
-        "spawns": [{"id": "arrival", "x": 18 * 32, "y": 15 * 32, "facing": "north"}],
+        "spawns": [{"id": "arrival", "x": 20 * 32, "y": 16 * 32, "facing": "north"}],
         "interactions": [
-            {"id": "village-notice", "x": 12 * 32, "y": 11 * 32, "reach": 32},
-            {"id": "respawn-shrine", "x": 18 * 32, "y": 14 * 32, "reach": 44},
-            {"id": "market-square", "x": 25 * 32, "y": 14 * 32, "reach": 64},
-            {"id": "alchemy-yard", "x": 13 * 32, "y": 10 * 32, "reach": 48},
-            {"id": "forge-yard", "x": 13 * 32, "y": 19 * 32, "reach": 48}
+            {"id": "village-notice", "x": 17 * 32, "y": 13 * 32, "reach": 32},
+            {"id": "respawn-shrine", "x": 20 * 32, "y": 10 * 32, "reach": 44},
+            {"id": "market-square", "x": 27 * 32, "y": 14 * 32, "reach": 64},
+            {"id": "alchemy-yard", "x": 11 * 32, "y": 10 * 32, "reach": 48},
+            {"id": "forge-yard", "x": 11 * 32, "y": 21 * 32, "reach": 48},
+            {"id": "guest-yard", "x": 29 * 32, "y": 21 * 32, "reach": 48}
         ]
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
