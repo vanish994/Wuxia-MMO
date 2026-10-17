@@ -1,0 +1,605 @@
+{
+  "schema": "generate2dmap.nav_report.v1",
+  "status": "warn",
+  "method": "plan Appendix C validity (centre + 8 footprint samples against walk regions, solids, object footprints scaled once, tile collision and material classes) on a grid of cell max(1, round(r/2)) px; 4-neighbour moves open when segmentClear holds between node centres (samples every cell/2, plus the exact thin-gap centre path and one_way direction); BFS from every spawn and portal arrival to every interaction, exit, anchor slot and approach point",
+  "notProven": [
+    "that the collision data matches the painted art",
+    "positions closer than one grid cell to a blocker (the grid samples cell centres)",
+    "runtime movement code: map-runtime.mjs parity is tested during integration",
+    "links to maps not passed with --link"
+  ],
+  "checks": [
+    {
+      "id": "starts_valid",
+      "status": "pass",
+      "value": {
+        "starts": 4,
+        "blocked": []
+      },
+      "threshold": {
+        "blocked": 0
+      }
+    },
+    {
+      "id": "targets_reachable",
+      "status": "pass",
+      "value": {
+        "reachable": 3,
+        "total": 3,
+        "unreachable": []
+      },
+      "threshold": {
+        "unreachable": 0
+      }
+    },
+    {
+      "id": "portals_inside_world",
+      "status": "pass",
+      "value": {
+        "outside": []
+      },
+      "threshold": {
+        "outside": 0
+      }
+    },
+    {
+      "id": "arrivals_outside_triggers",
+      "status": "pass",
+      "value": {
+        "problems": 0
+      },
+      "threshold": {
+        "problems": 0
+      }
+    },
+    {
+      "id": "reciprocal_links",
+      "status": "pass",
+      "value": {
+        "links": [
+          {
+            "portal": "exit-north",
+            "to": "jade-forest",
+            "arrival": [
+              494.0,
+              674.0
+            ],
+            "returnPortals": [
+              "exit-south"
+            ],
+            "status": "pass"
+          },
+          {
+            "portal": "exit-south",
+            "to": "nether-grove",
+            "arrival": [
+              494.0,
+              30.0
+            ],
+            "returnPortals": [
+              "exit-north"
+            ],
+            "status": "pass"
+          },
+          {
+            "portal": "exit-west",
+            "to": "marsh-delta",
+            "arrival": [
+              994.0,
+              350.0
+            ],
+            "returnPortals": [
+              "exit-east"
+            ],
+            "status": "pass"
+          }
+        ],
+        "notChecked": []
+      },
+      "threshold": {
+        "errors": 0
+      }
+    },
+    {
+      "id": "thin_gaps",
+      "status": "pass",
+      "value": 0,
+      "threshold": "reported: moves the thin-gap rule closed although every footprint sample was valid"
+    },
+    {
+      "id": "unreachable_walkable_area",
+      "status": "warn",
+      "value": {
+        "pockets": 2,
+        "cells": 7
+      },
+      "threshold": "reported"
+    },
+    {
+      "id": "blocked_rects_union",
+      "status": "pass",
+      "value": {
+        "rects": 121,
+        "blockedCells": 5556
+      },
+      "threshold": "union == blocked cells"
+    },
+    {
+      "id": "footprints_scaled_once",
+      "status": "pass",
+      "value": {
+        "objectSolids": 17
+      },
+      "threshold": "object footprint x scale, never inflated by the actor radius"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "../../map-bundle.json",
+      "sha256": "ed46ae9ca869c859c6540d6fbbc2505675e1442c45c1488c5d693256c29e28f6",
+      "bytes": 33588
+    },
+    {
+      "path": "../../tilesets/ice-water-wang16/ice-water-wang16.tileset.json",
+      "sha256": "8c378b97bc9c5cde85977dbae6bd8058b5e18cad9a7ad042b0ad545ffb890bdb",
+      "bytes": 41551
+    },
+    {
+      "path": "../../tilesets/ice-water-wang16/ice-water-wang16.png",
+      "sha256": "8994cc58e4bb73feb3c7f7f0c5bf003d8c5a2e825d83ad667ac09bd1ab0b89df",
+      "bytes": 5050
+    },
+    {
+      "path": "../../terrain-vertices.json",
+      "sha256": "add8b36d60d13431aa37ebedd52eb5bc59886d1423e15528bd3e0a4d908fa102",
+      "bytes": 7283
+    },
+    {
+      "path": "../../props/pine.png",
+      "sha256": "f6d9de3c7e18415fa4233e58b4cc65847573ea601c3a2cd3738f46d9b4bf5fc3",
+      "bytes": 341
+    },
+    {
+      "path": "../../props/blossom_tree.png",
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "bytes": 407
+    },
+    {
+      "path": "../../props/bamboo.png",
+      "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
+      "bytes": 509
+    },
+    {
+      "path": "../../props/shrub.png",
+      "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
+      "bytes": 198
+    },
+    {
+      "path": "../../props/rock.png",
+      "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
+      "bytes": 188
+    },
+    {
+      "path": "../../props/lantern.png",
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "bytes": 230
+    },
+    {
+      "path": "../../props/signboard.png",
+      "sha256": "db4e50fb76441a57ff24f22c3cc852749cb0faf64c0ed744a068ece0b1bbea41",
+      "bytes": 223
+    },
+    {
+      "path": "../../props/sect_gate.png",
+      "sha256": "1aeedb2ef856eec6fe1e5f8310ce4e1e368e05f60b6182f91cba3f86974c6a85",
+      "bytes": 479
+    },
+    {
+      "path": "../../props/pagoda.png",
+      "sha256": "c4805330da4a46ae8195e0e50329bf47980748df8f7552fd576a7d5e04a1cb1d",
+      "bytes": 514
+    },
+    {
+      "path": "../../props/bridge.png",
+      "sha256": "27e76b7d6bd364498b855920f61381c3f2f699394612fe509cb397c0c0ba864d",
+      "bytes": 300
+    },
+    {
+      "path": "../../../jade-forest-v1/map-bundle.json",
+      "sha256": "1362fa1429183374bcb82cbb108fdf15d0e64a30ef7f6bd87ff11d11fabb50de",
+      "bytes": 42840
+    },
+    {
+      "path": "../../../jade-forest-v1/tilesets/grass-sand-wang16/grass-sand-wang16.tileset.json",
+      "sha256": "ff34a5b0b57e63b099ac3dff621423042d2520a5c1f6151505c30be814b5f725",
+      "bytes": 21243
+    },
+    {
+      "path": "../../../jade-forest-v1/tilesets/grass-sand-wang16/grass-sand-wang16.png",
+      "sha256": "b05101b8c445eb824c436cbc8bbbce628ce95cb685b9199e2f7b391f48dcd5e1",
+      "bytes": 3897
+    },
+    {
+      "path": "../../../jade-forest-v1/terrain-vertices.json",
+      "sha256": "ea0079d67ee463f4bdf2b385bce16e9dba197e8864133b6f20bc0b9e275fccb5",
+      "bytes": 7286
+    },
+    {
+      "path": "../../../jade-forest-v1/props/pine.png",
+      "sha256": "f6d9de3c7e18415fa4233e58b4cc65847573ea601c3a2cd3738f46d9b4bf5fc3",
+      "bytes": 341
+    },
+    {
+      "path": "../../../jade-forest-v1/props/blossom_tree.png",
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "bytes": 407
+    },
+    {
+      "path": "../../../jade-forest-v1/props/bamboo.png",
+      "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
+      "bytes": 509
+    },
+    {
+      "path": "../../../jade-forest-v1/props/shrub.png",
+      "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
+      "bytes": 198
+    },
+    {
+      "path": "../../../jade-forest-v1/props/rock.png",
+      "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
+      "bytes": 188
+    },
+    {
+      "path": "../../../jade-forest-v1/props/lantern.png",
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "bytes": 230
+    },
+    {
+      "path": "../../../jade-forest-v1/props/signboard.png",
+      "sha256": "db4e50fb76441a57ff24f22c3cc852749cb0faf64c0ed744a068ece0b1bbea41",
+      "bytes": 223
+    },
+    {
+      "path": "../../../jade-forest-v1/props/sect_gate.png",
+      "sha256": "1aeedb2ef856eec6fe1e5f8310ce4e1e368e05f60b6182f91cba3f86974c6a85",
+      "bytes": 479
+    },
+    {
+      "path": "../../../jade-forest-v1/props/pagoda.png",
+      "sha256": "c4805330da4a46ae8195e0e50329bf47980748df8f7552fd576a7d5e04a1cb1d",
+      "bytes": 514
+    },
+    {
+      "path": "../../../jade-forest-v1/props/bridge.png",
+      "sha256": "27e76b7d6bd364498b855920f61381c3f2f699394612fe509cb397c0c0ba864d",
+      "bytes": 300
+    },
+    {
+      "path": "../../../nether-grove-v1/map-bundle.json",
+      "sha256": "ea2dd0fed9fd2a208a620a4975e7da1ed952e7d6c645049c8260c4e4cf22132a",
+      "bytes": 46234
+    },
+    {
+      "path": "../../../nether-grove-v1/tilesets/corruption-grass-dirt-wang81/corruption-grass-dirt-wang81.tileset.json",
+      "sha256": "8370a2f7b15ba28cd5ba22421c0218a3f8ad1c54982c1af5b35ef4bb3fad651b",
+      "bytes": 197152
+    },
+    {
+      "path": "../../../nether-grove-v1/tilesets/corruption-grass-dirt-wang81/corruption-grass-dirt-wang81.png",
+      "sha256": "c5063a64f2c6ffe417d56b3764822538dbf01e23c5c615a6bb367f0e215e7e7c",
+      "bytes": 26067
+    },
+    {
+      "path": "../../../nether-grove-v1/terrain-vertices.json",
+      "sha256": "d741a698ddef00ca49f5ba5235782d0db66427940b9735b8f4f7df88546e1bc2",
+      "bytes": 7304
+    },
+    {
+      "path": "../../../nether-grove-v1/props/pine.png",
+      "sha256": "f6d9de3c7e18415fa4233e58b4cc65847573ea601c3a2cd3738f46d9b4bf5fc3",
+      "bytes": 341
+    },
+    {
+      "path": "../../../nether-grove-v1/props/blossom_tree.png",
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "bytes": 407
+    },
+    {
+      "path": "../../../nether-grove-v1/props/bamboo.png",
+      "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
+      "bytes": 509
+    },
+    {
+      "path": "../../../nether-grove-v1/props/shrub.png",
+      "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
+      "bytes": 198
+    },
+    {
+      "path": "../../../nether-grove-v1/props/rock.png",
+      "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
+      "bytes": 188
+    },
+    {
+      "path": "../../../nether-grove-v1/props/lantern.png",
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "bytes": 230
+    },
+    {
+      "path": "../../../nether-grove-v1/props/signboard.png",
+      "sha256": "db4e50fb76441a57ff24f22c3cc852749cb0faf64c0ed744a068ece0b1bbea41",
+      "bytes": 223
+    },
+    {
+      "path": "../../../nether-grove-v1/props/sect_gate.png",
+      "sha256": "1aeedb2ef856eec6fe1e5f8310ce4e1e368e05f60b6182f91cba3f86974c6a85",
+      "bytes": 479
+    },
+    {
+      "path": "../../../nether-grove-v1/props/pagoda.png",
+      "sha256": "c4805330da4a46ae8195e0e50329bf47980748df8f7552fd576a7d5e04a1cb1d",
+      "bytes": 514
+    },
+    {
+      "path": "../../../nether-grove-v1/props/bridge.png",
+      "sha256": "27e76b7d6bd364498b855920f61381c3f2f699394612fe509cb397c0c0ba864d",
+      "bytes": 300
+    },
+    {
+      "path": "../../../marsh-delta-v1/map-bundle.json",
+      "sha256": "5d7aa85908316db7ebfef04920a42cdd79604866f667d9bac1b5c64517901007",
+      "bytes": 34370
+    },
+    {
+      "path": "../../../marsh-delta-v1/tilesets/dirt-water-wang16/dirt-water-wang16.tileset.json",
+      "sha256": "f5457f863c26d856dd0bf034afbaa121c15f49dee391594e3fc3001276550005",
+      "bytes": 40095
+    },
+    {
+      "path": "../../../marsh-delta-v1/tilesets/dirt-water-wang16/dirt-water-wang16.png",
+      "sha256": "c1b73ff6ae56dc80f60b520d4adf70fca8323554cebb4788225e18b5761770f9",
+      "bytes": 5321
+    },
+    {
+      "path": "../../../marsh-delta-v1/terrain-vertices.json",
+      "sha256": "4c6b7af56f4c4f99b4669aedc4988027ba0b0401d1bb9b290dd5580e79fffad9",
+      "bytes": 7285
+    },
+    {
+      "path": "../../../marsh-delta-v1/props/pine.png",
+      "sha256": "f6d9de3c7e18415fa4233e58b4cc65847573ea601c3a2cd3738f46d9b4bf5fc3",
+      "bytes": 341
+    },
+    {
+      "path": "../../../marsh-delta-v1/props/blossom_tree.png",
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "bytes": 407
+    },
+    {
+      "path": "../../../marsh-delta-v1/props/bamboo.png",
+      "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
+      "bytes": 509
+    },
+    {
+      "path": "../../../marsh-delta-v1/props/shrub.png",
+      "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
+      "bytes": 198
+    },
+    {
+      "path": "../../../marsh-delta-v1/props/rock.png",
+      "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
+      "bytes": 188
+    },
+    {
+      "path": "../../../marsh-delta-v1/props/lantern.png",
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "bytes": 230
+    },
+    {
+      "path": "../../../marsh-delta-v1/props/signboard.png",
+      "sha256": "db4e50fb76441a57ff24f22c3cc852749cb0faf64c0ed744a068ece0b1bbea41",
+      "bytes": 223
+    },
+    {
+      "path": "../../../marsh-delta-v1/props/sect_gate.png",
+      "sha256": "1aeedb2ef856eec6fe1e5f8310ce4e1e368e05f60b6182f91cba3f86974c6a85",
+      "bytes": 479
+    },
+    {
+      "path": "../../../marsh-delta-v1/props/pagoda.png",
+      "sha256": "c4805330da4a46ae8195e0e50329bf47980748df8f7552fd576a7d5e04a1cb1d",
+      "bytes": 514
+    },
+    {
+      "path": "../../../marsh-delta-v1/props/bridge.png",
+      "sha256": "27e76b7d6bd364498b855920f61381c3f2f699394612fe509cb397c0c0ba864d",
+      "bytes": 300
+    }
+  ],
+  "outputs": [
+    {
+      "path": "nav-grid.json",
+      "sha256": "8b326a80399eb15af033471e5e703886b221cdc48244a99e060fd2e1a00c61c8",
+      "bytes": 105097
+    },
+    {
+      "path": "nav-debug.png",
+      "sha256": "99f1b0a7c79f72be9cc4950af5d63eab9994c8fc4e13eeb1b93b79071f84b41f",
+      "bytes": 32927
+    }
+  ],
+  "tool": {
+    "name": "map_nav.py",
+    "version": "0.4.0"
+  },
+  "map": "ice-lake",
+  "cell": 4,
+  "starts": [
+    {
+      "kind": "spawn",
+      "id": "arrival",
+      "point": [
+        192.0,
+        352.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        190.0,
+        350.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "spawn",
+      "id": "from-jade-forest",
+      "point": [
+        494.0,
+        30.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        494.0,
+        30.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "spawn",
+      "id": "from-nether-grove",
+      "point": [
+        494.0,
+        674.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        494.0,
+        674.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "spawn",
+      "id": "from-marsh-delta",
+      "point": [
+        30.0,
+        350.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        30.0,
+        350.0
+      ],
+      "reason": null
+    }
+  ],
+  "targets": [
+    {
+      "kind": "exit",
+      "id": "exit-north",
+      "point": [
+        496.0,
+        8.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        486.0,
+        22.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "exit",
+      "id": "exit-south",
+      "point": [
+        496.0,
+        696.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        486.0,
+        682.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "exit",
+      "id": "exit-west",
+      "point": [
+        8.0,
+        352.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        22.0,
+        342.0
+      ],
+      "reason": null
+    }
+  ],
+  "links": [
+    {
+      "portal": "exit-north",
+      "to": "jade-forest",
+      "arrival": [
+        494.0,
+        674.0
+      ],
+      "returnPortals": [
+        "exit-south"
+      ],
+      "status": "pass"
+    },
+    {
+      "portal": "exit-south",
+      "to": "nether-grove",
+      "arrival": [
+        494.0,
+        30.0
+      ],
+      "returnPortals": [
+        "exit-north"
+      ],
+      "status": "pass"
+    },
+    {
+      "portal": "exit-west",
+      "to": "marsh-delta",
+      "arrival": [
+        994.0,
+        350.0
+      ],
+      "returnPortals": [
+        "exit-east"
+      ],
+      "status": "pass"
+    }
+  ],
+  "thinGaps": [],
+  "unreachablePockets": [
+    {
+      "cells": 6,
+      "at": [
+        218.0,
+        38.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        186.0,
+        646.0
+      ]
+    }
+  ],
+  "bundleNav": {
+    "cell": 4,
+    "grid": "nav-grid.json"
+  },
+  "problems": []
+}

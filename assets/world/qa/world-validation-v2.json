@@ -1,0 +1,691 @@
+{
+  "schema": "wuxia.world_validation.v1",
+  "generated_at_utc": "2026-10-16T23:58:14.124139+00:00",
+  "region_count": 20,
+  "directed_connections": 62,
+  "regions_with_navigation_warnings": 18,
+  "regions_with_navigation_failures": 0,
+  "regions_with_tiled_export_failures": 0,
+  "tiled_rerender_mismatches": 0,
+  "tileset_manifest_count": 27,
+  "wang_manifest_count": 22,
+  "wang_seam_mismatches": 0,
+  "atlas_tile_count_including_variants": 3232,
+  "wang_manifests": [
+    {
+      "id": "built-natural-stone-wang16",
+      "materials": [
+        "natural_stone",
+        "built_stone"
+      ],
+      "variants": 4,
+      "tilecount": 64,
+      "seamless_verified": true,
+      "seam_mismatches": 0,
+      "manifest": "assets/tilesets/generated-core-v1/built-natural-stone-wang16.tileset.json"
+    },
+    {
+      "id": "corruption-grass-dirt-wang81",
+      "materials": [
+        "grass",
+        "dirt",
+        "corruption"
+      ],
+      "variants": 4,
+      "tilecount": 324,
+      "seamless_verified": true,
+      "seam_mismatches": 0,
+      "manifest": "assets/tilesets/generated-core-v1/corruption-grass-dirt-wang81.tileset.json"
+    },
+    {
+      "id": "corruption-grass-wang16",
+      "materials": [
+        "grass",
+        "corruption"
+      ],
+      "variants": 4,
+      "tilecount": 64,
+      "seamless_verified": true,
+      "seam_mismatches": 0,
+      "manifest": "assets/tilesets/generated-core-v1/corruption-grass-wang16.tileset.json"
+    },
+    {
+      "id": "corruption-stone-wang16",
+      "materials": [
+        "natural_stone",
+        "corruption"
+      ],
+      "variants": 4,
+      "tilecount": 64,
+      "seamless_verified": true,
+      "seam_mismatches": 0,
+      "manifest": "assets/tilesets/generated-core-v1/corruption-stone-wang16.tileset.json"
+    },
+    {
+      "id": "dirt-stone-wang16",
+      "materials": [
+        "dirt",
+        "natural_stone"
+      ],
+      "variants": 4,
+      "tilecount": 64,
+      "seamless_verified": true,
+      "seam_mismatches": 0,
+      "manifest": "assets/tilesets/generated-core-v1/dirt-stone-wang16.tileset.json"
+    },
+    {
+      "id": "dirt-water-wang16",
+      "materials": [
+        "dirt",
+        "water"
+      ],
+      "variants": 4,
+      "tilecount": 64,
+      "seamless_verified": true,
+      "seam_mismatches": 0,
+      "manifest": "assets/tilesets/generated-core-v1/dirt-water-wang16.tileset.json"
+    },
+    {
+      "id": "grass-dirt-path-wang81",
+      "materials": [
+        "grass",
+        "dirt",
+        "dirt_path"
+      ],
+      "variants": 4,
+      "tilecount": 324,
+      "seamless_verified": true,
+      "seam_mismatches": 0,
+      "manifest": "assets/tilesets/generated-core-v1/grass-dirt-path-wang81.tileset.json"
+    },
+    {
+      "id": "grass-dirt-wang16",
+      "materials": [
+        "grass",
+        "dirt"
+      ],
+      "variants": 4,
+      "tilecount": 64,
+      "seamless_verified": true,
+      "seam_mismatches": 0,
+      "manifest": "assets/tilesets/generated-core-v1/grass-dirt-wang16.tileset.json"
+    },
+    {
+      "id": "grass-dirt-water-wang81",
+      "materials": [
+        "water",
+        "grass",
+        "dirt"
+      ],
+      "variants": 4,
+      "tilecount": 324,
+      "seamless_verified": true,
+      "seam_mismatches": 0,
+      "manifest": "assets/tilesets/generated-core-v1/grass-dirt-water-wang81.tileset.json"
+    },
+    {
+      "id": "grass-lava-stone-wang81",
+      "materials": [
+        "natural_stone",
+        "grass",
+        "lava"
+      ],
+      "variants": 4,
+      "tilecount": 324,
+      "seamless_verified": true,
+      "seam_mismatches": 0,
+      "manifest": "assets/tilesets/generated-core-v1/grass-lava-stone-wang81.tileset.json"
+    },
+    {
+      "id": "grass-path-water-wang81",
+      "materials": [
+        "water",
+        "grass",
+        "dirt_path"
+      ],
+      "variants": 4,
+      "tilecount": 324,
+      "seamless_verified": true,
+      "seam_mismatches": 0,
+      "manifest": "assets/tilesets/generated-core-v1/grass-path-water-wang81.tileset.json"
+    },
+    {
+      "id": "grass-sand-wang16",
+      "materials": [
+        "grass",
+        "sand"
+      ],
+      "variants": 4,
+      "tilecount": 64,
+      "seamless_verified": true,
+      "seam_mismatches": 0,
+      "manifest": "assets/tilesets/generated-core-v1/grass-sand-wang16.tileset.json"
+    },
+    {
+      "id": "grass-water-sand-wang81",
+      "materials": [
+        "water",
+        "grass",
+        "sand"
+      ],
+      "variants": 4,
+      "tilecount": 324,
+      "seamless_verified": true,
+      "seam_mismatches": 0,
+      "manifest": "assets/tilesets/generated-core-v1/grass-water-sand-wang81.tileset.json"
+    },
+    {
+      "id": "grass-water-wang16",
+      "materials": [
+        "grass",
+        "water"
+      ],
+      "variants": 4,
+      "tilecount": 64,
+      "seamless_verified": true,
+      "seam_mismatches": 0,
+      "manifest": "assets/tilesets/generated-core-v1/grass-water-wang16.tileset.json"
+    },
+    {
+      "id": "ice-water-wang16",
+      "materials": [
+        "water",
+        "ice"
+      ],
+      "variants": 4,
+      "tilecount": 64,
+      "seamless_verified": true,
+      "seam_mismatches": 0,
+      "manifest": "assets/tilesets/generated-core-v1/ice-water-wang16.tileset.json"
+    },
+    {
+      "id": "lava-stone-wang16",
+      "materials": [
+        "natural_stone",
+        "lava"
+      ],
+      "variants": 4,
+      "tilecount": 64,
+      "seamless_verified": true,
+      "seam_mismatches": 0,
+      "manifest": "assets/tilesets/generated-core-v1/lava-stone-wang16.tileset.json"
+    },
+    {
+      "id": "marsh-water-wang16",
+      "materials": [
+        "water",
+        "marsh"
+      ],
+      "variants": 4,
+      "tilecount": 64,
+      "seamless_verified": true,
+      "seam_mismatches": 0,
+      "manifest": "assets/tilesets/generated-core-v1/marsh-water-wang16.tileset.json"
+    },
+    {
+      "id": "path-grass-wang16",
+      "materials": [
+        "grass",
+        "dirt_path"
+      ],
+      "variants": 4,
+      "tilecount": 64,
+      "seamless_verified": true,
+      "seam_mismatches": 0,
+      "manifest": "assets/tilesets/generated-core-v1/path-grass-wang16.tileset.json"
+    },
+    {
+      "id": "sand-water-wang16",
+      "materials": [
+        "sand",
+        "water"
+      ],
+      "variants": 4,
+      "tilecount": 64,
+      "seamless_verified": true,
+      "seam_mismatches": 0,
+      "manifest": "assets/tilesets/generated-core-v1/sand-water-wang16.tileset.json"
+    },
+    {
+      "id": "snow-dirt-wang16",
+      "materials": [
+        "dirt",
+        "snow"
+      ],
+      "variants": 4,
+      "tilecount": 64,
+      "seamless_verified": true,
+      "seam_mismatches": 0,
+      "manifest": "assets/tilesets/generated-core-v1/snow-dirt-wang16.tileset.json"
+    },
+    {
+      "id": "snow-grass-wang16",
+      "materials": [
+        "grass",
+        "snow"
+      ],
+      "variants": 4,
+      "tilecount": 64,
+      "seamless_verified": true,
+      "seam_mismatches": 0,
+      "manifest": "assets/tilesets/generated-core-v1/snow-grass-wang16.tileset.json"
+    },
+    {
+      "id": "wood-stone-wang16",
+      "materials": [
+        "built_stone",
+        "weathered_wood"
+      ],
+      "variants": 4,
+      "tilecount": 64,
+      "seamless_verified": true,
+      "seam_mismatches": 0,
+      "manifest": "assets/tilesets/generated-core-v1/wood-stone-wang16.tileset.json"
+    }
+  ],
+  "regions": [
+    {
+      "id": "jade-valley",
+      "layout_status": "pass",
+      "tiled_status": "pass",
+      "navigation_status": "warn",
+      "navigation_issues": [
+        {
+          "id": "unreachable_walkable_area",
+          "status": "warn",
+          "value": {
+            "pockets": 10,
+            "cells": 12
+          }
+        }
+      ],
+      "tiled_rerender_checks": 2,
+      "tiled_rerender_mismatches": 0,
+      "layout_qa": "assets/world/maps/biomes/regions/jade-valley-v1/layout-qa.json",
+      "navigation_qa": "assets/world/maps/biomes/regions/jade-valley-v1/qa/worldlinks-v2/nav-report.json",
+      "tiled_export_report": "assets/world/maps/biomes/regions/jade-valley-v1/tiled/export-report.json"
+    },
+    {
+      "id": "jade-mountain",
+      "layout_status": "pass",
+      "tiled_status": "pass",
+      "navigation_status": "warn",
+      "navigation_issues": [
+        {
+          "id": "unreachable_walkable_area",
+          "status": "warn",
+          "value": {
+            "pockets": 10,
+            "cells": 20
+          }
+        }
+      ],
+      "tiled_rerender_checks": 2,
+      "tiled_rerender_mismatches": 0,
+      "layout_qa": "assets/world/maps/biomes/regions/jade-mountain-v1/layout-qa.json",
+      "navigation_qa": "assets/world/maps/biomes/regions/jade-mountain-v1/qa/worldlinks-v2/nav-report.json",
+      "tiled_export_report": "assets/world/maps/biomes/regions/jade-mountain-v1/tiled/export-report.json"
+    },
+    {
+      "id": "frost-pass",
+      "layout_status": "pass",
+      "tiled_status": "pass",
+      "navigation_status": "warn",
+      "navigation_issues": [
+        {
+          "id": "unreachable_walkable_area",
+          "status": "warn",
+          "value": {
+            "pockets": 10,
+            "cells": 22
+          }
+        }
+      ],
+      "tiled_rerender_checks": 2,
+      "tiled_rerender_mismatches": 0,
+      "layout_qa": "assets/world/maps/biomes/regions/frost-pass-v1/layout-qa.json",
+      "navigation_qa": "assets/world/maps/biomes/regions/frost-pass-v1/qa/worldlinks-v2/nav-report.json",
+      "tiled_export_report": "assets/world/maps/biomes/regions/frost-pass-v1/tiled/export-report.json"
+    },
+    {
+      "id": "imperial-ruins",
+      "layout_status": "pass",
+      "tiled_status": "pass",
+      "navigation_status": "warn",
+      "navigation_issues": [
+        {
+          "id": "unreachable_walkable_area",
+          "status": "warn",
+          "value": {
+            "pockets": 10,
+            "cells": 22
+          }
+        }
+      ],
+      "tiled_rerender_checks": 2,
+      "tiled_rerender_mismatches": 0,
+      "layout_qa": "assets/world/maps/biomes/regions/imperial-ruins-v1/layout-qa.json",
+      "navigation_qa": "assets/world/maps/biomes/regions/imperial-ruins-v1/qa/worldlinks-v2/nav-report.json",
+      "tiled_export_report": "assets/world/maps/biomes/regions/imperial-ruins-v1/tiled/export-report.json"
+    },
+    {
+      "id": "spirit-grove",
+      "layout_status": "pass",
+      "tiled_status": "pass",
+      "navigation_status": "warn",
+      "navigation_issues": [
+        {
+          "id": "unreachable_walkable_area",
+          "status": "warn",
+          "value": {
+            "pockets": 10,
+            "cells": 30
+          }
+        }
+      ],
+      "tiled_rerender_checks": 2,
+      "tiled_rerender_mismatches": 0,
+      "layout_qa": "assets/world/maps/biomes/regions/spirit-grove-v1/layout-qa.json",
+      "navigation_qa": "assets/world/maps/biomes/regions/spirit-grove-v1/qa/worldlinks-v2/nav-report.json",
+      "tiled_export_report": "assets/world/maps/biomes/regions/spirit-grove-v1/tiled/export-report.json"
+    },
+    {
+      "id": "bamboo-coast",
+      "layout_status": "pass",
+      "tiled_status": "pass",
+      "navigation_status": "warn",
+      "navigation_issues": [
+        {
+          "id": "unreachable_walkable_area",
+          "status": "warn",
+          "value": {
+            "pockets": 5,
+            "cells": 6
+          }
+        }
+      ],
+      "tiled_rerender_checks": 2,
+      "tiled_rerender_mismatches": 0,
+      "layout_qa": "assets/world/maps/biomes/regions/bamboo-coast-v1/layout-qa.json",
+      "navigation_qa": "assets/world/maps/biomes/regions/bamboo-coast-v1/qa/worldlinks-v2/nav-report.json",
+      "tiled_export_report": "assets/world/maps/biomes/regions/bamboo-coast-v1/tiled/export-report.json"
+    },
+    {
+      "id": "qinghe-valley",
+      "layout_status": "pass",
+      "tiled_status": "pass",
+      "navigation_status": "warn",
+      "navigation_issues": [
+        {
+          "id": "unreachable_walkable_area",
+          "status": "warn",
+          "value": {
+            "pockets": 10,
+            "cells": 30
+          }
+        }
+      ],
+      "tiled_rerender_checks": 2,
+      "tiled_rerender_mismatches": 0,
+      "layout_qa": "assets/world/maps/biomes/regions/qinghe-valley-v1/layout-qa.json",
+      "navigation_qa": "assets/world/maps/biomes/regions/qinghe-valley-v1/qa/worldlinks-v2/nav-report.json",
+      "tiled_export_report": "assets/world/maps/biomes/regions/qinghe-valley-v1/tiled/export-report.json"
+    },
+    {
+      "id": "river-market",
+      "layout_status": "pass",
+      "tiled_status": "pass",
+      "navigation_status": "warn",
+      "navigation_issues": [
+        {
+          "id": "unreachable_walkable_area",
+          "status": "warn",
+          "value": {
+            "pockets": 1,
+            "cells": 6
+          }
+        }
+      ],
+      "tiled_rerender_checks": 2,
+      "tiled_rerender_mismatches": 0,
+      "layout_qa": "assets/world/maps/biomes/regions/river-market-v1/layout-qa.json",
+      "navigation_qa": "assets/world/maps/biomes/regions/river-market-v1/qa/worldlinks-v2/nav-report.json",
+      "tiled_export_report": "assets/world/maps/biomes/regions/river-market-v1/tiled/export-report.json"
+    },
+    {
+      "id": "reed-marsh",
+      "layout_status": "pass",
+      "tiled_status": "pass",
+      "navigation_status": "warn",
+      "navigation_issues": [
+        {
+          "id": "unreachable_walkable_area",
+          "status": "warn",
+          "value": {
+            "pockets": 3,
+            "cells": 18
+          }
+        }
+      ],
+      "tiled_rerender_checks": 2,
+      "tiled_rerender_mismatches": 0,
+      "layout_qa": "assets/world/maps/biomes/regions/reed-marsh-v1/layout-qa.json",
+      "navigation_qa": "assets/world/maps/biomes/regions/reed-marsh-v1/qa/worldlinks-v2/nav-report.json",
+      "tiled_export_report": "assets/world/maps/biomes/regions/reed-marsh-v1/tiled/export-report.json"
+    },
+    {
+      "id": "jade-forest",
+      "layout_status": "pass",
+      "tiled_status": "pass",
+      "navigation_status": "warn",
+      "navigation_issues": [
+        {
+          "id": "unreachable_walkable_area",
+          "status": "warn",
+          "value": {
+            "pockets": 5,
+            "cells": 12
+          }
+        }
+      ],
+      "tiled_rerender_checks": 2,
+      "tiled_rerender_mismatches": 0,
+      "layout_qa": "assets/world/maps/biomes/regions/jade-forest-v1/layout-qa.json",
+      "navigation_qa": "assets/world/maps/biomes/regions/jade-forest-v1/qa/worldlinks-v2/nav-report.json",
+      "tiled_export_report": "assets/world/maps/biomes/regions/jade-forest-v1/tiled/export-report.json"
+    },
+    {
+      "id": "desert-oasis",
+      "layout_status": "pass",
+      "tiled_status": "pass",
+      "navigation_status": "pass",
+      "navigation_issues": [],
+      "tiled_rerender_checks": 2,
+      "tiled_rerender_mismatches": 0,
+      "layout_qa": "assets/world/maps/biomes/regions/desert-oasis-v1/layout-qa.json",
+      "navigation_qa": "assets/world/maps/biomes/regions/desert-oasis-v1/qa/worldlinks-v2/nav-report.json",
+      "tiled_export_report": "assets/world/maps/biomes/regions/desert-oasis-v1/tiled/export-report.json"
+    },
+    {
+      "id": "training-grounds",
+      "layout_status": "pass",
+      "tiled_status": "pass",
+      "navigation_status": "warn",
+      "navigation_issues": [
+        {
+          "id": "unreachable_walkable_area",
+          "status": "warn",
+          "value": {
+            "pockets": 10,
+            "cells": 17
+          }
+        }
+      ],
+      "tiled_rerender_checks": 2,
+      "tiled_rerender_mismatches": 0,
+      "layout_qa": "assets/world/maps/biomes/regions/training-grounds-v1/layout-qa.json",
+      "navigation_qa": "assets/world/maps/biomes/regions/training-grounds-v1/qa/worldlinks-v2/nav-report.json",
+      "tiled_export_report": "assets/world/maps/biomes/regions/training-grounds-v1/tiled/export-report.json"
+    },
+    {
+      "id": "pagoda-court",
+      "layout_status": "pass",
+      "tiled_status": "pass",
+      "navigation_status": "warn",
+      "navigation_issues": [
+        {
+          "id": "unreachable_walkable_area",
+          "status": "warn",
+          "value": {
+            "pockets": 10,
+            "cells": 17
+          }
+        }
+      ],
+      "tiled_rerender_checks": 2,
+      "tiled_rerender_mismatches": 0,
+      "layout_qa": "assets/world/maps/biomes/regions/pagoda-court-v1/layout-qa.json",
+      "navigation_qa": "assets/world/maps/biomes/regions/pagoda-court-v1/qa/worldlinks-v2/nav-report.json",
+      "tiled_export_report": "assets/world/maps/biomes/regions/pagoda-court-v1/tiled/export-report.json"
+    },
+    {
+      "id": "marsh-delta",
+      "layout_status": "pass",
+      "tiled_status": "pass",
+      "navigation_status": "pass",
+      "navigation_issues": [],
+      "tiled_rerender_checks": 2,
+      "tiled_rerender_mismatches": 0,
+      "layout_qa": "assets/world/maps/biomes/regions/marsh-delta-v1/layout-qa.json",
+      "navigation_qa": "assets/world/maps/biomes/regions/marsh-delta-v1/qa/worldlinks-v2/nav-report.json",
+      "tiled_export_report": "assets/world/maps/biomes/regions/marsh-delta-v1/tiled/export-report.json"
+    },
+    {
+      "id": "ice-lake",
+      "layout_status": "pass",
+      "tiled_status": "pass",
+      "navigation_status": "warn",
+      "navigation_issues": [
+        {
+          "id": "unreachable_walkable_area",
+          "status": "warn",
+          "value": {
+            "pockets": 2,
+            "cells": 7
+          }
+        }
+      ],
+      "tiled_rerender_checks": 2,
+      "tiled_rerender_mismatches": 0,
+      "layout_qa": "assets/world/maps/biomes/regions/ice-lake-v1/layout-qa.json",
+      "navigation_qa": "assets/world/maps/biomes/regions/ice-lake-v1/qa/worldlinks-v2/nav-report.json",
+      "tiled_export_report": "assets/world/maps/biomes/regions/ice-lake-v1/tiled/export-report.json"
+    },
+    {
+      "id": "stone-highland",
+      "layout_status": "pass",
+      "tiled_status": "pass",
+      "navigation_status": "warn",
+      "navigation_issues": [
+        {
+          "id": "unreachable_walkable_area",
+          "status": "warn",
+          "value": {
+            "pockets": 4,
+            "cells": 4
+          }
+        }
+      ],
+      "tiled_rerender_checks": 2,
+      "tiled_rerender_mismatches": 0,
+      "layout_qa": "assets/world/maps/biomes/regions/stone-highland-v1/layout-qa.json",
+      "navigation_qa": "assets/world/maps/biomes/regions/stone-highland-v1/qa/worldlinks-v2/nav-report.json",
+      "tiled_export_report": "assets/world/maps/biomes/regions/stone-highland-v1/tiled/export-report.json"
+    },
+    {
+      "id": "fire-mountain",
+      "layout_status": "pass",
+      "tiled_status": "pass",
+      "navigation_status": "warn",
+      "navigation_issues": [
+        {
+          "id": "unreachable_walkable_area",
+          "status": "warn",
+          "value": {
+            "pockets": 7,
+            "cells": 7
+          }
+        }
+      ],
+      "tiled_rerender_checks": 2,
+      "tiled_rerender_mismatches": 0,
+      "layout_qa": "assets/world/maps/biomes/regions/fire-mountain-v1/layout-qa.json",
+      "navigation_qa": "assets/world/maps/biomes/regions/fire-mountain-v1/qa/worldlinks-v2/nav-report.json",
+      "tiled_export_report": "assets/world/maps/biomes/regions/fire-mountain-v1/tiled/export-report.json"
+    },
+    {
+      "id": "void-shrine",
+      "layout_status": "pass",
+      "tiled_status": "pass",
+      "navigation_status": "warn",
+      "navigation_issues": [
+        {
+          "id": "unreachable_walkable_area",
+          "status": "warn",
+          "value": {
+            "pockets": 5,
+            "cells": 15
+          }
+        }
+      ],
+      "tiled_rerender_checks": 2,
+      "tiled_rerender_mismatches": 0,
+      "layout_qa": "assets/world/maps/biomes/regions/void-shrine-v1/layout-qa.json",
+      "navigation_qa": "assets/world/maps/biomes/regions/void-shrine-v1/qa/worldlinks-v2/nav-report.json",
+      "tiled_export_report": "assets/world/maps/biomes/regions/void-shrine-v1/tiled/export-report.json"
+    },
+    {
+      "id": "coastal-temple",
+      "layout_status": "pass",
+      "tiled_status": "pass",
+      "navigation_status": "warn",
+      "navigation_issues": [
+        {
+          "id": "unreachable_walkable_area",
+          "status": "warn",
+          "value": {
+            "pockets": 1,
+            "cells": 1
+          }
+        }
+      ],
+      "tiled_rerender_checks": 2,
+      "tiled_rerender_mismatches": 0,
+      "layout_qa": "assets/world/maps/biomes/regions/coastal-temple-v1/layout-qa.json",
+      "navigation_qa": "assets/world/maps/biomes/regions/coastal-temple-v1/qa/worldlinks-v2/nav-report.json",
+      "tiled_export_report": "assets/world/maps/biomes/regions/coastal-temple-v1/tiled/export-report.json"
+    },
+    {
+      "id": "nether-grove",
+      "layout_status": "pass",
+      "tiled_status": "pass",
+      "navigation_status": "warn",
+      "navigation_issues": [
+        {
+          "id": "unreachable_walkable_area",
+          "status": "warn",
+          "value": {
+            "pockets": 5,
+            "cells": 5
+          }
+        }
+      ],
+      "tiled_rerender_checks": 2,
+      "tiled_rerender_mismatches": 0,
+      "layout_qa": "assets/world/maps/biomes/regions/nether-grove-v1/layout-qa.json",
+      "navigation_qa": "assets/world/maps/biomes/regions/nether-grove-v1/qa/worldlinks-v2/nav-report.json",
+      "tiled_export_report": "assets/world/maps/biomes/regions/nether-grove-v1/tiled/export-report.json"
+    }
+  ],
+  "scope_note": "The map-nav warnings are reported, not hidden; Node tests use actual manifests/TMJ and mocks, not a running Phaser app."
+}

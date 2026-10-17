@@ -1,0 +1,987 @@
+{
+  "schema": "wuxia.world_biome_catalog.v1",
+  "art_source": "code",
+  "disclosure": "code-drawn, no image model",
+  "tile_size": 32,
+  "grid": [
+    [
+      "jade-valley",
+      "jade-mountain",
+      "frost-pass",
+      "imperial-ruins",
+      "spirit-grove"
+    ],
+    [
+      "bamboo-coast",
+      "qinghe-valley",
+      "river-market",
+      "reed-marsh",
+      "jade-forest"
+    ],
+    [
+      "desert-oasis",
+      "training-grounds",
+      "pagoda-court",
+      "marsh-delta",
+      "ice-lake"
+    ],
+    [
+      "stone-highland",
+      "fire-mountain",
+      "void-shrine",
+      "coastal-temple",
+      "nether-grove"
+    ]
+  ],
+  "regions": [
+    {
+      "id": "jade-valley",
+      "title": "Jade Valley",
+      "description": "Wind-shaped meadows and earthen knolls.",
+      "grid": [
+        0,
+        0
+      ],
+      "tileset": "grass-dirt-wang16",
+      "materials": [
+        "grass",
+        "dirt"
+      ],
+      "base": "grass",
+      "tile_size": 32,
+      "layout_spec": "assets/world/maps/biomes/regions/specs/jade-valley.layout.json",
+      "bundle": "assets/world/maps/biomes/regions/jade-valley-v1/map-bundle.json",
+      "qa": "assets/world/maps/biomes/regions/jade-valley-v1/layout-qa.json",
+      "qa_status": "pass",
+      "tiled_map": "assets/world/maps/biomes/regions/jade-valley-v1/tiled/map.embedded.tmj",
+      "tiled_dir": "assets/world/maps/biomes/regions/jade-valley-v1/tiled",
+      "ground_image": "assets/world/maps/biomes/regions/jade-valley-v1/tiled/images/grass-dirt-wang16.png",
+      "prop_images": [
+        "assets/world/maps/biomes/regions/jade-valley-v1/tiled/images/pine.png",
+        "assets/world/maps/biomes/regions/jade-valley-v1/tiled/images/rock.png",
+        "assets/world/maps/biomes/regions/jade-valley-v1/tiled/images/shrub.png"
+      ]
+    },
+    {
+      "id": "jade-mountain",
+      "title": "Jade Mountain",
+      "description": "Highland grass under drifting snow shelves.",
+      "grid": [
+        0,
+        1
+      ],
+      "tileset": "snow-grass-wang16",
+      "materials": [
+        "grass",
+        "snow"
+      ],
+      "base": "grass",
+      "tile_size": 32,
+      "layout_spec": "assets/world/maps/biomes/regions/specs/jade-mountain.layout.json",
+      "bundle": "assets/world/maps/biomes/regions/jade-mountain-v1/map-bundle.json",
+      "qa": "assets/world/maps/biomes/regions/jade-mountain-v1/layout-qa.json",
+      "qa_status": "pass",
+      "tiled_map": "assets/world/maps/biomes/regions/jade-mountain-v1/tiled/map.embedded.tmj",
+      "tiled_dir": "assets/world/maps/biomes/regions/jade-mountain-v1/tiled",
+      "ground_image": "assets/world/maps/biomes/regions/jade-mountain-v1/tiled/images/snow-grass-wang16.png",
+      "prop_images": [
+        "assets/world/maps/biomes/regions/jade-mountain-v1/tiled/images/pine.png",
+        "assets/world/maps/biomes/regions/jade-mountain-v1/tiled/images/rock.png",
+        "assets/world/maps/biomes/regions/jade-mountain-v1/tiled/images/sect_gate.png"
+      ]
+    },
+    {
+      "id": "frost-pass",
+      "title": "Frost Pass",
+      "description": "A pale high pass broken by exposed earth.",
+      "grid": [
+        0,
+        2
+      ],
+      "tileset": "snow-dirt-wang16",
+      "materials": [
+        "dirt",
+        "snow"
+      ],
+      "base": "snow",
+      "tile_size": 32,
+      "layout_spec": "assets/world/maps/biomes/regions/specs/frost-pass.layout.json",
+      "bundle": "assets/world/maps/biomes/regions/frost-pass-v1/map-bundle.json",
+      "qa": "assets/world/maps/biomes/regions/frost-pass-v1/layout-qa.json",
+      "qa_status": "pass",
+      "tiled_map": "assets/world/maps/biomes/regions/frost-pass-v1/tiled/map.embedded.tmj",
+      "tiled_dir": "assets/world/maps/biomes/regions/frost-pass-v1/tiled",
+      "ground_image": "assets/world/maps/biomes/regions/frost-pass-v1/tiled/images/snow-dirt-wang16.png",
+      "prop_images": [
+        "assets/world/maps/biomes/regions/frost-pass-v1/tiled/images/pine.png",
+        "assets/world/maps/biomes/regions/frost-pass-v1/tiled/images/rock.png"
+      ]
+    },
+    {
+      "id": "imperial-ruins",
+      "title": "Imperial Ruins",
+      "description": "Carved stone paving reclaimed by weathered rock.",
+      "grid": [
+        0,
+        3
+      ],
+      "tileset": "built-natural-stone-wang16",
+      "materials": [
+        "natural_stone",
+        "built_stone"
+      ],
+      "base": "natural_stone",
+      "tile_size": 32,
+      "layout_spec": "assets/world/maps/biomes/regions/specs/imperial-ruins.layout.json",
+      "bundle": "assets/world/maps/biomes/regions/imperial-ruins-v1/map-bundle.json",
+      "qa": "assets/world/maps/biomes/regions/imperial-ruins-v1/layout-qa.json",
+      "qa_status": "pass",
+      "tiled_map": "assets/world/maps/biomes/regions/imperial-ruins-v1/tiled/map.embedded.tmj",
+      "tiled_dir": "assets/world/maps/biomes/regions/imperial-ruins-v1/tiled",
+      "ground_image": "assets/world/maps/biomes/regions/imperial-ruins-v1/tiled/images/built-natural-stone-wang16.png",
+      "prop_images": [
+        "assets/world/maps/biomes/regions/imperial-ruins-v1/tiled/images/lantern.png",
+        "assets/world/maps/biomes/regions/imperial-ruins-v1/tiled/images/pagoda.png",
+        "assets/world/maps/biomes/regions/imperial-ruins-v1/tiled/images/rock.png",
+        "assets/world/maps/biomes/regions/imperial-ruins-v1/tiled/images/shrub.png"
+      ]
+    },
+    {
+      "id": "spirit-grove",
+      "title": "Spirit Grove",
+      "description": "A quiet grove edged by supernatural jade blight and earth paths.",
+      "grid": [
+        0,
+        4
+      ],
+      "tileset": "corruption-grass-dirt-wang81",
+      "materials": [
+        "grass",
+        "dirt",
+        "corruption"
+      ],
+      "base": "grass",
+      "tile_size": 32,
+      "layout_spec": "assets/world/maps/biomes/regions/specs/spirit-grove.layout.json",
+      "bundle": "assets/world/maps/biomes/regions/spirit-grove-v1/map-bundle.json",
+      "qa": "assets/world/maps/biomes/regions/spirit-grove-v1/layout-qa.json",
+      "qa_status": "pass",
+      "tiled_map": "assets/world/maps/biomes/regions/spirit-grove-v1/tiled/map.embedded.tmj",
+      "tiled_dir": "assets/world/maps/biomes/regions/spirit-grove-v1/tiled",
+      "ground_image": "assets/world/maps/biomes/regions/spirit-grove-v1/tiled/images/corruption-grass-dirt-wang81.png",
+      "prop_images": [
+        "assets/world/maps/biomes/regions/spirit-grove-v1/tiled/images/blossom_tree.png",
+        "assets/world/maps/biomes/regions/spirit-grove-v1/tiled/images/lantern.png",
+        "assets/world/maps/biomes/regions/spirit-grove-v1/tiled/images/rock.png"
+      ]
+    },
+    {
+      "id": "bamboo-coast",
+      "title": "Bamboo Coast",
+      "description": "A coastal approach with a winding ochre trail.",
+      "grid": [
+        1,
+        0
+      ],
+      "tileset": "grass-dirt-path-wang81",
+      "materials": [
+        "grass",
+        "dirt",
+        "dirt_path"
+      ],
+      "base": "grass",
+      "tile_size": 32,
+      "layout_spec": "assets/world/maps/biomes/regions/specs/bamboo-coast.layout.json",
+      "bundle": "assets/world/maps/biomes/regions/bamboo-coast-v1/map-bundle.json",
+      "qa": "assets/world/maps/biomes/regions/bamboo-coast-v1/layout-qa.json",
+      "qa_status": "pass",
+      "tiled_map": "assets/world/maps/biomes/regions/bamboo-coast-v1/tiled/map.embedded.tmj",
+      "tiled_dir": "assets/world/maps/biomes/regions/bamboo-coast-v1/tiled",
+      "ground_image": "assets/world/maps/biomes/regions/bamboo-coast-v1/tiled/images/grass-dirt-path-wang81.png",
+      "prop_images": [
+        "assets/world/maps/biomes/regions/bamboo-coast-v1/tiled/images/pine.png",
+        "assets/world/maps/biomes/regions/bamboo-coast-v1/tiled/images/rock.png",
+        "assets/world/maps/biomes/regions/bamboo-coast-v1/tiled/images/shrub.png"
+      ]
+    },
+    {
+      "id": "qinghe-valley",
+      "title": "Qinghe Valley",
+      "grid": [
+        1,
+        1
+      ],
+      "tileset": "grass-path-water-wang81",
+      "materials": [
+        "water",
+        "grass",
+        "dirt_path"
+      ],
+      "base": "grass",
+      "tile_size": 32,
+      "layout_spec": "assets/world/maps/biomes/qinghe-valley.layout.json",
+      "bundle": "assets/world/maps/biomes/regions/qinghe-valley-v1/map-bundle.json",
+      "qa": "assets/world/maps/biomes/regions/qinghe-valley-v1/layout-qa.json",
+      "qa_status": "pass",
+      "tiled_map": "assets/world/maps/biomes/regions/qinghe-valley-v1/tiled/map.embedded.tmj",
+      "tiled_dir": "assets/world/maps/biomes/regions/qinghe-valley-v1/tiled",
+      "ground_image": "assets/world/maps/biomes/regions/qinghe-valley-v1/tiled/images/grass-path-water-wang81.png",
+      "prop_images": [
+        "assets/world/maps/biomes/regions/qinghe-valley-v1/tiled/images/bamboo.png",
+        "assets/world/maps/biomes/regions/qinghe-valley-v1/tiled/images/blossom_tree.png",
+        "assets/world/maps/biomes/regions/qinghe-valley-v1/tiled/images/bridge.png",
+        "assets/world/maps/biomes/regions/qinghe-valley-v1/tiled/images/hall.png",
+        "assets/world/maps/biomes/regions/qinghe-valley-v1/tiled/images/lantern.png",
+        "assets/world/maps/biomes/regions/qinghe-valley-v1/tiled/images/pagoda.png",
+        "assets/world/maps/biomes/regions/qinghe-valley-v1/tiled/images/rock.png",
+        "assets/world/maps/biomes/regions/qinghe-valley-v1/tiled/images/sect_gate.png",
+        "assets/world/maps/biomes/regions/qinghe-valley-v1/tiled/images/shrub.png",
+        "assets/world/maps/biomes/regions/qinghe-valley-v1/tiled/images/signboard.png",
+        "assets/world/maps/biomes/regions/qinghe-valley-v1/tiled/images/teahouse.png"
+      ]
+    },
+    {
+      "id": "river-market",
+      "title": "River Market",
+      "description": "Sandy riverbank terraces and quiet water.",
+      "grid": [
+        1,
+        2
+      ],
+      "tileset": "sand-water-wang16",
+      "materials": [
+        "sand",
+        "water"
+      ],
+      "base": "sand",
+      "tile_size": 32,
+      "layout_spec": "assets/world/maps/biomes/regions/specs/river-market.layout.json",
+      "bundle": "assets/world/maps/biomes/regions/river-market-v1/map-bundle.json",
+      "qa": "assets/world/maps/biomes/regions/river-market-v1/layout-qa.json",
+      "qa_status": "pass",
+      "tiled_map": "assets/world/maps/biomes/regions/river-market-v1/tiled/map.embedded.tmj",
+      "tiled_dir": "assets/world/maps/biomes/regions/river-market-v1/tiled",
+      "ground_image": "assets/world/maps/biomes/regions/river-market-v1/tiled/images/sand-water-wang16.png",
+      "prop_images": [
+        "assets/world/maps/biomes/regions/river-market-v1/tiled/images/bamboo.png",
+        "assets/world/maps/biomes/regions/river-market-v1/tiled/images/rock.png",
+        "assets/world/maps/biomes/regions/river-market-v1/tiled/images/shrub.png",
+        "assets/world/maps/biomes/regions/river-market-v1/tiled/images/signboard.png"
+      ]
+    },
+    {
+      "id": "reed-marsh",
+      "title": "Reed Marsh",
+      "description": "Wetland shelves at the edge of blue water.",
+      "grid": [
+        1,
+        3
+      ],
+      "tileset": "marsh-water-wang16",
+      "materials": [
+        "water",
+        "marsh"
+      ],
+      "base": "marsh",
+      "tile_size": 32,
+      "layout_spec": "assets/world/maps/biomes/regions/specs/reed-marsh.layout.json",
+      "bundle": "assets/world/maps/biomes/regions/reed-marsh-v1/map-bundle.json",
+      "qa": "assets/world/maps/biomes/regions/reed-marsh-v1/layout-qa.json",
+      "qa_status": "pass",
+      "tiled_map": "assets/world/maps/biomes/regions/reed-marsh-v1/tiled/map.embedded.tmj",
+      "tiled_dir": "assets/world/maps/biomes/regions/reed-marsh-v1/tiled",
+      "ground_image": "assets/world/maps/biomes/regions/reed-marsh-v1/tiled/images/marsh-water-wang16.png",
+      "prop_images": [
+        "assets/world/maps/biomes/regions/reed-marsh-v1/tiled/images/bamboo.png",
+        "assets/world/maps/biomes/regions/reed-marsh-v1/tiled/images/rock.png",
+        "assets/world/maps/biomes/regions/reed-marsh-v1/tiled/images/shrub.png"
+      ]
+    },
+    {
+      "id": "jade-forest",
+      "title": "Jade Forest",
+      "description": "Green forest floor opening into warm earth.",
+      "grid": [
+        1,
+        4
+      ],
+      "tileset": "grass-sand-wang16",
+      "materials": [
+        "grass",
+        "sand"
+      ],
+      "base": "grass",
+      "tile_size": 32,
+      "layout_spec": "assets/world/maps/biomes/regions/specs/jade-forest.layout.json",
+      "bundle": "assets/world/maps/biomes/regions/jade-forest-v1/map-bundle.json",
+      "qa": "assets/world/maps/biomes/regions/jade-forest-v1/layout-qa.json",
+      "qa_status": "pass",
+      "tiled_map": "assets/world/maps/biomes/regions/jade-forest-v1/tiled/map.embedded.tmj",
+      "tiled_dir": "assets/world/maps/biomes/regions/jade-forest-v1/tiled",
+      "ground_image": "assets/world/maps/biomes/regions/jade-forest-v1/tiled/images/grass-sand-wang16.png",
+      "prop_images": [
+        "assets/world/maps/biomes/regions/jade-forest-v1/tiled/images/pine.png",
+        "assets/world/maps/biomes/regions/jade-forest-v1/tiled/images/rock.png",
+        "assets/world/maps/biomes/regions/jade-forest-v1/tiled/images/shrub.png"
+      ]
+    },
+    {
+      "id": "desert-oasis",
+      "title": "Desert Oasis",
+      "description": "Oasis basin with grass, sand and water sharing corners.",
+      "grid": [
+        2,
+        0
+      ],
+      "tileset": "grass-water-sand-wang81",
+      "materials": [
+        "water",
+        "grass",
+        "sand"
+      ],
+      "base": "sand",
+      "tile_size": 32,
+      "layout_spec": "assets/world/maps/biomes/regions/specs/desert-oasis.layout.json",
+      "bundle": "assets/world/maps/biomes/regions/desert-oasis-v1/map-bundle.json",
+      "qa": "assets/world/maps/biomes/regions/desert-oasis-v1/layout-qa.json",
+      "qa_status": "pass",
+      "tiled_map": "assets/world/maps/biomes/regions/desert-oasis-v1/tiled/map.embedded.tmj",
+      "tiled_dir": "assets/world/maps/biomes/regions/desert-oasis-v1/tiled",
+      "ground_image": "assets/world/maps/biomes/regions/desert-oasis-v1/tiled/images/grass-water-sand-wang81.png",
+      "prop_images": [
+        "assets/world/maps/biomes/regions/desert-oasis-v1/tiled/images/bamboo.png",
+        "assets/world/maps/biomes/regions/desert-oasis-v1/tiled/images/rock.png",
+        "assets/world/maps/biomes/regions/desert-oasis-v1/tiled/images/shrub.png"
+      ]
+    },
+    {
+      "id": "training-grounds",
+      "title": "Training Grounds",
+      "description": "Fitted courtyard stones against rough mountain rock.",
+      "grid": [
+        2,
+        1
+      ],
+      "tileset": "built-natural-stone-wang16",
+      "materials": [
+        "natural_stone",
+        "built_stone"
+      ],
+      "base": "built_stone",
+      "tile_size": 32,
+      "layout_spec": "assets/world/maps/biomes/regions/specs/training-grounds.layout.json",
+      "bundle": "assets/world/maps/biomes/regions/training-grounds-v1/map-bundle.json",
+      "qa": "assets/world/maps/biomes/regions/training-grounds-v1/layout-qa.json",
+      "qa_status": "pass",
+      "tiled_map": "assets/world/maps/biomes/regions/training-grounds-v1/tiled/map.embedded.tmj",
+      "tiled_dir": "assets/world/maps/biomes/regions/training-grounds-v1/tiled",
+      "ground_image": "assets/world/maps/biomes/regions/training-grounds-v1/tiled/images/built-natural-stone-wang16.png",
+      "prop_images": [
+        "assets/world/maps/biomes/regions/training-grounds-v1/tiled/images/lantern.png",
+        "assets/world/maps/biomes/regions/training-grounds-v1/tiled/images/rock.png",
+        "assets/world/maps/biomes/regions/training-grounds-v1/tiled/images/sect_gate.png",
+        "assets/world/maps/biomes/regions/training-grounds-v1/tiled/images/shrub.png"
+      ]
+    },
+    {
+      "id": "pagoda-court",
+      "title": "Pagoda Court",
+      "description": "Weathered timber platforms meet cut stone.",
+      "grid": [
+        2,
+        2
+      ],
+      "tileset": "wood-stone-wang16",
+      "materials": [
+        "built_stone",
+        "weathered_wood"
+      ],
+      "base": "weathered_wood",
+      "tile_size": 32,
+      "layout_spec": "assets/world/maps/biomes/regions/specs/pagoda-court.layout.json",
+      "bundle": "assets/world/maps/biomes/regions/pagoda-court-v1/map-bundle.json",
+      "qa": "assets/world/maps/biomes/regions/pagoda-court-v1/layout-qa.json",
+      "qa_status": "pass",
+      "tiled_map": "assets/world/maps/biomes/regions/pagoda-court-v1/tiled/map.embedded.tmj",
+      "tiled_dir": "assets/world/maps/biomes/regions/pagoda-court-v1/tiled",
+      "ground_image": "assets/world/maps/biomes/regions/pagoda-court-v1/tiled/images/wood-stone-wang16.png",
+      "prop_images": [
+        "assets/world/maps/biomes/regions/pagoda-court-v1/tiled/images/lantern.png",
+        "assets/world/maps/biomes/regions/pagoda-court-v1/tiled/images/pagoda.png",
+        "assets/world/maps/biomes/regions/pagoda-court-v1/tiled/images/rock.png",
+        "assets/world/maps/biomes/regions/pagoda-court-v1/tiled/images/shrub.png"
+      ]
+    },
+    {
+      "id": "marsh-delta",
+      "title": "Marsh Delta",
+      "description": "Mud banks and tidal water.",
+      "grid": [
+        2,
+        3
+      ],
+      "tileset": "dirt-water-wang16",
+      "materials": [
+        "dirt",
+        "water"
+      ],
+      "base": "dirt",
+      "tile_size": 32,
+      "layout_spec": "assets/world/maps/biomes/regions/specs/marsh-delta.layout.json",
+      "bundle": "assets/world/maps/biomes/regions/marsh-delta-v1/map-bundle.json",
+      "qa": "assets/world/maps/biomes/regions/marsh-delta-v1/layout-qa.json",
+      "qa_status": "pass",
+      "tiled_map": "assets/world/maps/biomes/regions/marsh-delta-v1/tiled/map.embedded.tmj",
+      "tiled_dir": "assets/world/maps/biomes/regions/marsh-delta-v1/tiled",
+      "ground_image": "assets/world/maps/biomes/regions/marsh-delta-v1/tiled/images/dirt-water-wang16.png",
+      "prop_images": [
+        "assets/world/maps/biomes/regions/marsh-delta-v1/tiled/images/bamboo.png",
+        "assets/world/maps/biomes/regions/marsh-delta-v1/tiled/images/rock.png",
+        "assets/world/maps/biomes/regions/marsh-delta-v1/tiled/images/shrub.png"
+      ]
+    },
+    {
+      "id": "ice-lake",
+      "title": "Ice Lake",
+      "description": "A walkable frozen shelf surrounding deep water.",
+      "grid": [
+        2,
+        4
+      ],
+      "tileset": "ice-water-wang16",
+      "materials": [
+        "water",
+        "ice"
+      ],
+      "base": "ice",
+      "tile_size": 32,
+      "layout_spec": "assets/world/maps/biomes/regions/specs/ice-lake.layout.json",
+      "bundle": "assets/world/maps/biomes/regions/ice-lake-v1/map-bundle.json",
+      "qa": "assets/world/maps/biomes/regions/ice-lake-v1/layout-qa.json",
+      "qa_status": "pass",
+      "tiled_map": "assets/world/maps/biomes/regions/ice-lake-v1/tiled/map.embedded.tmj",
+      "tiled_dir": "assets/world/maps/biomes/regions/ice-lake-v1/tiled",
+      "ground_image": "assets/world/maps/biomes/regions/ice-lake-v1/tiled/images/ice-water-wang16.png",
+      "prop_images": [
+        "assets/world/maps/biomes/regions/ice-lake-v1/tiled/images/lantern.png",
+        "assets/world/maps/biomes/regions/ice-lake-v1/tiled/images/pine.png",
+        "assets/world/maps/biomes/regions/ice-lake-v1/tiled/images/rock.png"
+      ]
+    },
+    {
+      "id": "stone-highland",
+      "title": "Stone Highland",
+      "description": "Rugged stone outcrops rising through brown earth.",
+      "grid": [
+        3,
+        0
+      ],
+      "tileset": "dirt-stone-wang16",
+      "materials": [
+        "dirt",
+        "natural_stone"
+      ],
+      "base": "natural_stone",
+      "tile_size": 32,
+      "layout_spec": "assets/world/maps/biomes/regions/specs/stone-highland.layout.json",
+      "bundle": "assets/world/maps/biomes/regions/stone-highland-v1/map-bundle.json",
+      "qa": "assets/world/maps/biomes/regions/stone-highland-v1/layout-qa.json",
+      "qa_status": "pass",
+      "tiled_map": "assets/world/maps/biomes/regions/stone-highland-v1/tiled/map.embedded.tmj",
+      "tiled_dir": "assets/world/maps/biomes/regions/stone-highland-v1/tiled",
+      "ground_image": "assets/world/maps/biomes/regions/stone-highland-v1/tiled/images/dirt-stone-wang16.png",
+      "prop_images": [
+        "assets/world/maps/biomes/regions/stone-highland-v1/tiled/images/pine.png",
+        "assets/world/maps/biomes/regions/stone-highland-v1/tiled/images/rock.png",
+        "assets/world/maps/biomes/regions/stone-highland-v1/tiled/images/shrub.png"
+      ]
+    },
+    {
+      "id": "fire-mountain",
+      "title": "Fire Mountain",
+      "description": "Volcanic seams cut through black stone.",
+      "grid": [
+        3,
+        1
+      ],
+      "tileset": "lava-stone-wang16",
+      "materials": [
+        "natural_stone",
+        "lava"
+      ],
+      "base": "natural_stone",
+      "tile_size": 32,
+      "layout_spec": "assets/world/maps/biomes/regions/specs/fire-mountain.layout.json",
+      "bundle": "assets/world/maps/biomes/regions/fire-mountain-v1/map-bundle.json",
+      "qa": "assets/world/maps/biomes/regions/fire-mountain-v1/layout-qa.json",
+      "qa_status": "pass",
+      "tiled_map": "assets/world/maps/biomes/regions/fire-mountain-v1/tiled/map.embedded.tmj",
+      "tiled_dir": "assets/world/maps/biomes/regions/fire-mountain-v1/tiled",
+      "ground_image": "assets/world/maps/biomes/regions/fire-mountain-v1/tiled/images/lava-stone-wang16.png",
+      "prop_images": [
+        "assets/world/maps/biomes/regions/fire-mountain-v1/tiled/images/lantern.png",
+        "assets/world/maps/biomes/regions/fire-mountain-v1/tiled/images/rock.png"
+      ]
+    },
+    {
+      "id": "void-shrine",
+      "title": "Void Shrine",
+      "description": "Ancient stone invaded by violet corruption.",
+      "grid": [
+        3,
+        2
+      ],
+      "tileset": "corruption-stone-wang16",
+      "materials": [
+        "natural_stone",
+        "corruption"
+      ],
+      "base": "natural_stone",
+      "tile_size": 32,
+      "layout_spec": "assets/world/maps/biomes/regions/specs/void-shrine.layout.json",
+      "bundle": "assets/world/maps/biomes/regions/void-shrine-v1/map-bundle.json",
+      "qa": "assets/world/maps/biomes/regions/void-shrine-v1/layout-qa.json",
+      "qa_status": "pass",
+      "tiled_map": "assets/world/maps/biomes/regions/void-shrine-v1/tiled/map.embedded.tmj",
+      "tiled_dir": "assets/world/maps/biomes/regions/void-shrine-v1/tiled",
+      "ground_image": "assets/world/maps/biomes/regions/void-shrine-v1/tiled/images/corruption-stone-wang16.png",
+      "prop_images": [
+        "assets/world/maps/biomes/regions/void-shrine-v1/tiled/images/lantern.png",
+        "assets/world/maps/biomes/regions/void-shrine-v1/tiled/images/pagoda.png",
+        "assets/world/maps/biomes/regions/void-shrine-v1/tiled/images/rock.png"
+      ]
+    },
+    {
+      "id": "coastal-temple",
+      "title": "Coastal Temple",
+      "description": "A green temple approach with earth and water transitions.",
+      "grid": [
+        3,
+        3
+      ],
+      "tileset": "grass-dirt-water-wang81",
+      "materials": [
+        "water",
+        "grass",
+        "dirt"
+      ],
+      "base": "grass",
+      "tile_size": 32,
+      "layout_spec": "assets/world/maps/biomes/regions/specs/coastal-temple.layout.json",
+      "bundle": "assets/world/maps/biomes/regions/coastal-temple-v1/map-bundle.json",
+      "qa": "assets/world/maps/biomes/regions/coastal-temple-v1/layout-qa.json",
+      "qa_status": "pass",
+      "tiled_map": "assets/world/maps/biomes/regions/coastal-temple-v1/tiled/map.embedded.tmj",
+      "tiled_dir": "assets/world/maps/biomes/regions/coastal-temple-v1/tiled",
+      "ground_image": "assets/world/maps/biomes/regions/coastal-temple-v1/tiled/images/grass-dirt-water-wang81.png",
+      "prop_images": [
+        "assets/world/maps/biomes/regions/coastal-temple-v1/tiled/images/bamboo.png",
+        "assets/world/maps/biomes/regions/coastal-temple-v1/tiled/images/rock.png",
+        "assets/world/maps/biomes/regions/coastal-temple-v1/tiled/images/sect_gate.png",
+        "assets/world/maps/biomes/regions/coastal-temple-v1/tiled/images/shrub.png"
+      ]
+    },
+    {
+      "id": "nether-grove",
+      "title": "Nether Grove",
+      "description": "Grass, earth and corrupt ground share a continuous vertex grid.",
+      "grid": [
+        3,
+        4
+      ],
+      "tileset": "corruption-grass-dirt-wang81",
+      "materials": [
+        "grass",
+        "dirt",
+        "corruption"
+      ],
+      "base": "grass",
+      "tile_size": 32,
+      "layout_spec": "assets/world/maps/biomes/regions/specs/nether-grove.layout.json",
+      "bundle": "assets/world/maps/biomes/regions/nether-grove-v1/map-bundle.json",
+      "qa": "assets/world/maps/biomes/regions/nether-grove-v1/layout-qa.json",
+      "qa_status": "pass",
+      "tiled_map": "assets/world/maps/biomes/regions/nether-grove-v1/tiled/map.embedded.tmj",
+      "tiled_dir": "assets/world/maps/biomes/regions/nether-grove-v1/tiled",
+      "ground_image": "assets/world/maps/biomes/regions/nether-grove-v1/tiled/images/corruption-grass-dirt-wang81.png",
+      "prop_images": [
+        "assets/world/maps/biomes/regions/nether-grove-v1/tiled/images/lantern.png",
+        "assets/world/maps/biomes/regions/nether-grove-v1/tiled/images/rock.png"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "from": "jade-valley",
+      "to": "jade-mountain",
+      "edge": "east",
+      "reciprocal": true
+    },
+    {
+      "from": "jade-valley",
+      "to": "bamboo-coast",
+      "edge": "south",
+      "reciprocal": true
+    },
+    {
+      "from": "jade-mountain",
+      "to": "frost-pass",
+      "edge": "east",
+      "reciprocal": true
+    },
+    {
+      "from": "jade-mountain",
+      "to": "qinghe-valley",
+      "edge": "south",
+      "reciprocal": true
+    },
+    {
+      "from": "jade-mountain",
+      "to": "jade-valley",
+      "edge": "west",
+      "reciprocal": true
+    },
+    {
+      "from": "frost-pass",
+      "to": "imperial-ruins",
+      "edge": "east",
+      "reciprocal": true
+    },
+    {
+      "from": "frost-pass",
+      "to": "river-market",
+      "edge": "south",
+      "reciprocal": true
+    },
+    {
+      "from": "frost-pass",
+      "to": "jade-mountain",
+      "edge": "west",
+      "reciprocal": true
+    },
+    {
+      "from": "imperial-ruins",
+      "to": "spirit-grove",
+      "edge": "east",
+      "reciprocal": true
+    },
+    {
+      "from": "imperial-ruins",
+      "to": "reed-marsh",
+      "edge": "south",
+      "reciprocal": true
+    },
+    {
+      "from": "imperial-ruins",
+      "to": "frost-pass",
+      "edge": "west",
+      "reciprocal": true
+    },
+    {
+      "from": "spirit-grove",
+      "to": "jade-forest",
+      "edge": "south",
+      "reciprocal": true
+    },
+    {
+      "from": "spirit-grove",
+      "to": "imperial-ruins",
+      "edge": "west",
+      "reciprocal": true
+    },
+    {
+      "from": "bamboo-coast",
+      "to": "jade-valley",
+      "edge": "north",
+      "reciprocal": true
+    },
+    {
+      "from": "bamboo-coast",
+      "to": "qinghe-valley",
+      "edge": "east",
+      "reciprocal": true
+    },
+    {
+      "from": "bamboo-coast",
+      "to": "desert-oasis",
+      "edge": "south",
+      "reciprocal": true
+    },
+    {
+      "from": "qinghe-valley",
+      "to": "jade-mountain",
+      "edge": "north",
+      "reciprocal": true
+    },
+    {
+      "from": "qinghe-valley",
+      "to": "river-market",
+      "edge": "east",
+      "reciprocal": true
+    },
+    {
+      "from": "qinghe-valley",
+      "to": "training-grounds",
+      "edge": "south",
+      "reciprocal": true
+    },
+    {
+      "from": "qinghe-valley",
+      "to": "bamboo-coast",
+      "edge": "west",
+      "reciprocal": true
+    },
+    {
+      "from": "river-market",
+      "to": "frost-pass",
+      "edge": "north",
+      "reciprocal": true
+    },
+    {
+      "from": "river-market",
+      "to": "reed-marsh",
+      "edge": "east",
+      "reciprocal": true
+    },
+    {
+      "from": "river-market",
+      "to": "pagoda-court",
+      "edge": "south",
+      "reciprocal": true
+    },
+    {
+      "from": "river-market",
+      "to": "qinghe-valley",
+      "edge": "west",
+      "reciprocal": true
+    },
+    {
+      "from": "reed-marsh",
+      "to": "imperial-ruins",
+      "edge": "north",
+      "reciprocal": true
+    },
+    {
+      "from": "reed-marsh",
+      "to": "jade-forest",
+      "edge": "east",
+      "reciprocal": true
+    },
+    {
+      "from": "reed-marsh",
+      "to": "marsh-delta",
+      "edge": "south",
+      "reciprocal": true
+    },
+    {
+      "from": "reed-marsh",
+      "to": "river-market",
+      "edge": "west",
+      "reciprocal": true
+    },
+    {
+      "from": "jade-forest",
+      "to": "spirit-grove",
+      "edge": "north",
+      "reciprocal": true
+    },
+    {
+      "from": "jade-forest",
+      "to": "ice-lake",
+      "edge": "south",
+      "reciprocal": true
+    },
+    {
+      "from": "jade-forest",
+      "to": "reed-marsh",
+      "edge": "west",
+      "reciprocal": true
+    },
+    {
+      "from": "desert-oasis",
+      "to": "bamboo-coast",
+      "edge": "north",
+      "reciprocal": true
+    },
+    {
+      "from": "desert-oasis",
+      "to": "training-grounds",
+      "edge": "east",
+      "reciprocal": true
+    },
+    {
+      "from": "desert-oasis",
+      "to": "stone-highland",
+      "edge": "south",
+      "reciprocal": true
+    },
+    {
+      "from": "training-grounds",
+      "to": "qinghe-valley",
+      "edge": "north",
+      "reciprocal": true
+    },
+    {
+      "from": "training-grounds",
+      "to": "pagoda-court",
+      "edge": "east",
+      "reciprocal": true
+    },
+    {
+      "from": "training-grounds",
+      "to": "fire-mountain",
+      "edge": "south",
+      "reciprocal": true
+    },
+    {
+      "from": "training-grounds",
+      "to": "desert-oasis",
+      "edge": "west",
+      "reciprocal": true
+    },
+    {
+      "from": "pagoda-court",
+      "to": "river-market",
+      "edge": "north",
+      "reciprocal": true
+    },
+    {
+      "from": "pagoda-court",
+      "to": "marsh-delta",
+      "edge": "east",
+      "reciprocal": true
+    },
+    {
+      "from": "pagoda-court",
+      "to": "void-shrine",
+      "edge": "south",
+      "reciprocal": true
+    },
+    {
+      "from": "pagoda-court",
+      "to": "training-grounds",
+      "edge": "west",
+      "reciprocal": true
+    },
+    {
+      "from": "marsh-delta",
+      "to": "reed-marsh",
+      "edge": "north",
+      "reciprocal": true
+    },
+    {
+      "from": "marsh-delta",
+      "to": "ice-lake",
+      "edge": "east",
+      "reciprocal": true
+    },
+    {
+      "from": "marsh-delta",
+      "to": "coastal-temple",
+      "edge": "south",
+      "reciprocal": true
+    },
+    {
+      "from": "marsh-delta",
+      "to": "pagoda-court",
+      "edge": "west",
+      "reciprocal": true
+    },
+    {
+      "from": "ice-lake",
+      "to": "jade-forest",
+      "edge": "north",
+      "reciprocal": true
+    },
+    {
+      "from": "ice-lake",
+      "to": "nether-grove",
+      "edge": "south",
+      "reciprocal": true
+    },
+    {
+      "from": "ice-lake",
+      "to": "marsh-delta",
+      "edge": "west",
+      "reciprocal": true
+    },
+    {
+      "from": "stone-highland",
+      "to": "desert-oasis",
+      "edge": "north",
+      "reciprocal": true
+    },
+    {
+      "from": "stone-highland",
+      "to": "fire-mountain",
+      "edge": "east",
+      "reciprocal": true
+    },
+    {
+      "from": "fire-mountain",
+      "to": "training-grounds",
+      "edge": "north",
+      "reciprocal": true
+    },
+    {
+      "from": "fire-mountain",
+      "to": "void-shrine",
+      "edge": "east",
+      "reciprocal": true
+    },
+    {
+      "from": "fire-mountain",
+      "to": "stone-highland",
+      "edge": "west",
+      "reciprocal": true
+    },
+    {
+      "from": "void-shrine",
+      "to": "pagoda-court",
+      "edge": "north",
+      "reciprocal": true
+    },
+    {
+      "from": "void-shrine",
+      "to": "coastal-temple",
+      "edge": "east",
+      "reciprocal": true
+    },
+    {
+      "from": "void-shrine",
+      "to": "fire-mountain",
+      "edge": "west",
+      "reciprocal": true
+    },
+    {
+      "from": "coastal-temple",
+      "to": "marsh-delta",
+      "edge": "north",
+      "reciprocal": true
+    },
+    {
+      "from": "coastal-temple",
+      "to": "nether-grove",
+      "edge": "east",
+      "reciprocal": true
+    },
+    {
+      "from": "coastal-temple",
+      "to": "void-shrine",
+      "edge": "west",
+      "reciprocal": true
+    },
+    {
+      "from": "nether-grove",
+      "to": "ice-lake",
+      "edge": "north",
+      "reciprocal": true
+    },
+    {
+      "from": "nether-grove",
+      "to": "coastal-temple",
+      "edge": "west",
+      "reciprocal": true
+    }
+  ]
+}

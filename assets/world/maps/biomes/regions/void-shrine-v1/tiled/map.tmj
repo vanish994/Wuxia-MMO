@@ -1,0 +1,3839 @@
+{
+  "compressionlevel": -1,
+  "height": 22,
+  "infinite": false,
+  "layers": [
+    {
+      "data": [
+        1,
+        33,
+        49,
+        1,
+        33,
+        17,
+        49,
+        1,
+        33,
+        17,
+        33,
+        49,
+        1,
+        17,
+        1,
+        49,
+        1,
+        33,
+        49,
+        1,
+        17,
+        33,
+        17,
+        33,
+        49,
+        1,
+        33,
+        49,
+        1,
+        17,
+        49,
+        33,
+        17,
+        1,
+        17,
+        49,
+        1,
+        33,
+        1,
+        17,
+        49,
+        33,
+        49,
+        1,
+        49,
+        1,
+        33,
+        17,
+        33,
+        49,
+        1,
+        49,
+        1,
+        17,
+        1,
+        49,
+        1,
+        17,
+        49,
+        33,
+        49,
+        1,
+        17,
+        49,
+        1,
+        33,
+        49,
+        1,
+        17,
+        49,
+        17,
+        33,
+        1,
+        17,
+        33,
+        49,
+        33,
+        17,
+        49,
+        33,
+        1,
+        17,
+        33,
+        1,
+        49,
+        1,
+        49,
+        17,
+        33,
+        49,
+        33,
+        49,
+        1,
+        17,
+        33,
+        1,
+        49,
+        17,
+        33,
+        17,
+        33,
+        1,
+        33,
+        49,
+        17,
+        33,
+        17,
+        33,
+        49,
+        1,
+        17,
+        49,
+        17,
+        49,
+        1,
+        17,
+        33,
+        17,
+        33,
+        49,
+        17,
+        1,
+        49,
+        17,
+        33,
+        49,
+        1,
+        17,
+        33,
+        49,
+        1,
+        33,
+        49,
+        17,
+        49,
+        17,
+        33,
+        1,
+        33,
+        1,
+        33,
+        49,
+        33,
+        1,
+        33,
+        17,
+        33,
+        49,
+        1,
+        33,
+        49,
+        1,
+        33,
+        49,
+        33,
+        49,
+        1,
+        17,
+        33,
+        1,
+        49,
+        1,
+        17,
+        1,
+        17,
+        1,
+        17,
+        49,
+        1,
+        49,
+        17,
+        33,
+        49,
+        1,
+        17,
+        33,
+        17,
+        49,
+        1,
+        17,
+        33,
+        49,
+        17,
+        33,
+        49,
+        33,
+        1,
+        17,
+        33,
+        49,
+        1,
+        17,
+        33,
+        17,
+        1,
+        17,
+        33,
+        49,
+        1,
+        17,
+        33,
+        17,
+        33,
+        1,
+        17,
+        33,
+        1,
+        49,
+        1,
+        33,
+        18,
+        36,
+        20,
+        36,
+        35,
+        17,
+        33,
+        49,
+        17,
+        33,
+        17,
+        33,
+        17,
+        33,
+        17,
+        1,
+        33,
+        49,
+        1,
+        17,
+        49,
+        1,
+        17,
+        33,
+        49,
+        17,
+        33,
+        49,
+        33,
+        1,
+        17,
+        34,
+        8,
+        48,
+        16,
+        48,
+        12,
+        35,
+        49,
+        1,
+        49,
+        1,
+        33,
+        1,
+        33,
+        1,
+        33,
+        49,
+        17,
+        33,
+        17,
+        33,
+        1,
+        49,
+        1,
+        49,
+        33,
+        49,
+        1,
+        17,
+        49,
+        17,
+        50,
+        56,
+        48,
+        64,
+        48,
+        32,
+        16,
+        28,
+        20,
+        3,
+        1,
+        17,
+        1,
+        33,
+        49,
+        17,
+        49,
+        1,
+        49,
+        1,
+        33,
+        1,
+        49,
+        1,
+        33,
+        17,
+        49,
+        33,
+        49,
+        1,
+        17,
+        1,
+        54,
+        16,
+        64,
+        48,
+        64,
+        48,
+        32,
+        48,
+        64,
+        59,
+        17,
+        1,
+        17,
+        1,
+        17,
+        49,
+        17,
+        33,
+        1,
+        49,
+        1,
+        17,
+        1,
+        17,
+        1,
+        33,
+        1,
+        17,
+        1,
+        49,
+        1,
+        17,
+        22,
+        32,
+        16,
+        32,
+        16,
+        32,
+        64,
+        16,
+        32,
+        43,
+        33,
+        17,
+        33,
+        49,
+        1,
+        17,
+        33,
+        49,
+        17,
+        1,
+        49,
+        1,
+        49,
+        1,
+        33,
+        17,
+        49,
+        1,
+        17,
+        33,
+        17,
+        1,
+        37,
+        62,
+        32,
+        16,
+        64,
+        48,
+        32,
+        64,
+        16,
+        27,
+        49,
+        1,
+        49,
+        1,
+        17,
+        49,
+        49,
+        17,
+        33,
+        17,
+        1,
+        49,
+        33,
+        49,
+        1,
+        33,
+        1,
+        17,
+        1,
+        17,
+        33,
+        17,
+        33,
+        21,
+        29,
+        14,
+        16,
+        64,
+        16,
+        31,
+        61,
+        57,
+        1,
+        33,
+        1,
+        17,
+        1,
+        17,
+        1,
+        33,
+        1,
+        49,
+        17,
+        1,
+        17,
+        1,
+        17,
+        49,
+        17,
+        49,
+        17,
+        1,
+        49,
+        1,
+        17,
+        49,
+        33,
+        5,
+        13,
+        29,
+        61,
+        41,
+        17,
+        33,
+        49,
+        1,
+        17,
+        49,
+        17,
+        49,
+        49,
+        1,
+        17,
+        1,
+        49,
+        17,
+        49,
+        17,
+        33,
+        1,
+        33,
+        1,
+        33,
+        49,
+        1,
+        17,
+        33,
+        1,
+        17,
+        33,
+        17,
+        33,
+        49,
+        17,
+        33,
+        49,
+        17,
+        49,
+        1,
+        33,
+        49,
+        33,
+        17,
+        49,
+        1,
+        17,
+        33,
+        49,
+        17,
+        33,
+        1,
+        49,
+        1,
+        17,
+        49,
+        1,
+        49,
+        33,
+        49,
+        17,
+        1,
+        17,
+        49,
+        1,
+        33,
+        49,
+        17,
+        33,
+        1,
+        17,
+        33,
+        49,
+        17,
+        49,
+        49,
+        1,
+        33,
+        1,
+        49,
+        1,
+        33,
+        49,
+        33,
+        17,
+        33,
+        49,
+        1,
+        17,
+        33,
+        1,
+        17,
+        1,
+        33,
+        49,
+        1,
+        33,
+        17,
+        33,
+        49,
+        1,
+        49,
+        33,
+        49,
+        17,
+        33,
+        1,
+        33,
+        17,
+        1,
+        49,
+        33,
+        49,
+        1,
+        17,
+        49,
+        1,
+        17,
+        1,
+        49,
+        1,
+        17,
+        33,
+        1,
+        17,
+        1,
+        17,
+        33,
+        49,
+        33,
+        1,
+        17,
+        49,
+        1,
+        17,
+        33,
+        49,
+        1,
+        17,
+        17,
+        33,
+        17,
+        1,
+        17,
+        1,
+        33,
+        49,
+        17,
+        33,
+        49,
+        33,
+        1,
+        17,
+        33,
+        17,
+        33,
+        49,
+        17,
+        33,
+        17,
+        33,
+        1,
+        33,
+        49,
+        17,
+        49,
+        33,
+        49,
+        17,
+        33,
+        49,
+        49,
+        1,
+        33,
+        49,
+        33,
+        49,
+        1,
+        33,
+        1,
+        17,
+        1,
+        17,
+        33,
+        49,
+        17,
+        49,
+        1,
+        17,
+        1,
+        49,
+        33,
+        49,
+        17,
+        49,
+        17,
+        1,
+        17,
+        49,
+        17,
+        33,
+        49,
+        1,
+        17,
+        33,
+        49,
+        17,
+        49,
+        1,
+        33,
+        49,
+        17,
+        33,
+        17,
+        33,
+        1,
+        17,
+        33,
+        17,
+        49,
+        1,
+        17,
+        33,
+        17,
+        33,
+        49,
+        33,
+        1,
+        33,
+        49,
+        17,
+        33,
+        49,
+        1,
+        49,
+        49,
+        1,
+        17,
+        49,
+        1,
+        17,
+        49,
+        17,
+        33,
+        49,
+        33,
+        17,
+        33,
+        49,
+        1,
+        33,
+        1,
+        17,
+        49,
+        1,
+        33,
+        17,
+        33,
+        49,
+        33,
+        1,
+        33,
+        49,
+        1,
+        17,
+        33,
+        1
+      ],
+      "height": 22,
+      "id": 1,
+      "name": "ground",
+      "opacity": 1,
+      "type": "tilelayer",
+      "visible": true,
+      "width": 32,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "draworder": "index",
+      "id": 2,
+      "name": "props",
+      "objects": [
+        {
+          "gid": 2147483715,
+          "height": 14.0,
+          "id": 1,
+          "name": "regional-dressing-15",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "rock"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 351.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 89.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 89.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            },
+            {
+              "name": "flipX",
+              "type": "bool",
+              "value": true
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 18.0,
+          "x": 342.0,
+          "y": 92.0
+        },
+        {
+          "gid": 2147483713,
+          "height": 32.0,
+          "id": 2,
+          "name": "regional-dressing-10",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "lantern"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 532.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 165.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 165.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            },
+            {
+              "name": "flipX",
+              "type": "bool",
+              "value": true
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 16.0,
+          "x": 524.0,
+          "y": 168.0
+        },
+        {
+          "gid": 2147483715,
+          "height": 14.0,
+          "id": 3,
+          "name": "regional-dressing-7",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "rock"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 457.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 185.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 185.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            },
+            {
+              "name": "flipX",
+              "type": "bool",
+              "value": true
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 18.0,
+          "x": 448.0,
+          "y": 188.0
+        },
+        {
+          "gid": 2147483713,
+          "height": 32.0,
+          "id": 4,
+          "name": "regional-dressing-8",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "lantern"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 431.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 198.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 198.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            },
+            {
+              "name": "flipX",
+              "type": "bool",
+              "value": true
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 16.0,
+          "x": 423.0,
+          "y": 201.0
+        },
+        {
+          "gid": 67,
+          "height": 14.0,
+          "id": 5,
+          "name": "regional-dressing-2",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "rock"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 879.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 245.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 245.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 18.0,
+          "x": 870.0,
+          "y": 248.0
+        },
+        {
+          "gid": 66,
+          "height": 62.0,
+          "id": 6,
+          "name": "void-shrine-landmark",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "pagoda"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 672.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 256.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 256.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "tall"
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 48.0,
+          "x": 648.0,
+          "y": 257.0
+        },
+        {
+          "gid": 2147483715,
+          "height": 14.0,
+          "id": 7,
+          "name": "regional-dressing-4",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "rock"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 432.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 278.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 278.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            },
+            {
+              "name": "flipX",
+              "type": "bool",
+              "value": true
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 18.0,
+          "x": 423.0,
+          "y": 281.0
+        },
+        {
+          "gid": 2147483715,
+          "height": 14.0,
+          "id": 8,
+          "name": "regional-dressing-16",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "rock"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 845.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 454.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 454.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            },
+            {
+              "name": "flipX",
+              "type": "bool",
+              "value": true
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 18.0,
+          "x": 836.0,
+          "y": 457.0
+        },
+        {
+          "gid": 2147483715,
+          "height": 14.0,
+          "id": 9,
+          "name": "regional-dressing-11",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "rock"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 97.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 508.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 508.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            },
+            {
+              "name": "flipX",
+              "type": "bool",
+              "value": true
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 18.0,
+          "x": 88.0,
+          "y": 511.0
+        },
+        {
+          "gid": 2147483715,
+          "height": 14.0,
+          "id": 10,
+          "name": "regional-dressing-1",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "rock"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 881.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 533.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 533.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            },
+            {
+              "name": "flipX",
+              "type": "bool",
+              "value": true
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 18.0,
+          "x": 872.0,
+          "y": 536.0
+        },
+        {
+          "gid": 2147483713,
+          "height": 32.0,
+          "id": 11,
+          "name": "regional-dressing-12",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "lantern"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 966.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 547.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 547.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            },
+            {
+              "name": "flipX",
+              "type": "bool",
+              "value": true
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 16.0,
+          "x": 958.0,
+          "y": 550.0
+        },
+        {
+          "gid": 67,
+          "height": 14.0,
+          "id": 12,
+          "name": "regional-dressing-3",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "rock"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 939.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 548.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 548.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 18.0,
+          "x": 930.0,
+          "y": 551.0
+        },
+        {
+          "gid": 2147483713,
+          "height": 32.0,
+          "id": 13,
+          "name": "regional-dressing-9",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "lantern"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 525.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 550.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 550.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            },
+            {
+              "name": "flipX",
+              "type": "bool",
+              "value": true
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 16.0,
+          "x": 517.0,
+          "y": 553.0
+        },
+        {
+          "gid": 2147483715,
+          "height": 14.0,
+          "id": 14,
+          "name": "regional-dressing-13",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "rock"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 48.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 564.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 564.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            },
+            {
+              "name": "flipX",
+              "type": "bool",
+              "value": true
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 18.0,
+          "x": 39.0,
+          "y": 567.0
+        },
+        {
+          "gid": 67,
+          "height": 14.0,
+          "id": 15,
+          "name": "regional-dressing-14",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "rock"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 272.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 586.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 586.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 18.0,
+          "x": 263.0,
+          "y": 589.0
+        },
+        {
+          "gid": 67,
+          "height": 14.0,
+          "id": 16,
+          "name": "regional-dressing-6",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "rock"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 535.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 588.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 588.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 18.0,
+          "x": 526.0,
+          "y": 591.0
+        },
+        {
+          "gid": 67,
+          "height": 14.0,
+          "id": 17,
+          "name": "regional-dressing-5",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "rock"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 83.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 626.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 626.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 18.0,
+          "x": 74.0,
+          "y": 629.0
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true,
+      "x": 0,
+      "y": 0,
+      "properties": [
+        {
+          "name": "sortBy",
+          "type": "string",
+          "value": "sortY, then x, then id (ground line)"
+        }
+      ]
+    },
+    {
+      "draworder": "index",
+      "id": 3,
+      "name": "collision",
+      "objects": [
+        {
+          "id": 18,
+          "name": "collision.rects[0]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 344,
+          "y": 84,
+          "width": 12,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[0]"
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "name": "collision.rects[1]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 528,
+          "y": 160,
+          "width": 8,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[1]"
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "name": "collision.rects[2]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 452,
+          "y": 180,
+          "width": 12,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[2]"
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "name": "collision.rects[3]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 596,
+          "y": 208,
+          "width": 24,
+          "height": 188,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[3]"
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "name": "collision.rects[4]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 624,
+          "y": 208,
+          "width": 28,
+          "height": 216,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[4]"
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "name": "collision.rects[5]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 656,
+          "y": 208,
+          "width": 28,
+          "height": 220,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[5]"
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "name": "collision.rects[6]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 688,
+          "y": 208,
+          "width": 24,
+          "height": 220,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[6]"
+            }
+          ]
+        },
+        {
+          "id": 25,
+          "name": "collision.rects[7]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 592,
+          "y": 212,
+          "width": 4,
+          "height": 188,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[7]"
+            }
+          ]
+        },
+        {
+          "id": 26,
+          "name": "collision.rects[8]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 620,
+          "y": 212,
+          "width": 4,
+          "height": 188,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[8]"
+            }
+          ]
+        },
+        {
+          "id": 27,
+          "name": "collision.rects[9]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 652,
+          "y": 212,
+          "width": 4,
+          "height": 220,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[9]"
+            }
+          ]
+        },
+        {
+          "id": 28,
+          "name": "collision.rects[10]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 684,
+          "y": 212,
+          "width": 4,
+          "height": 220,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[10]"
+            }
+          ]
+        },
+        {
+          "id": 29,
+          "name": "collision.rects[11]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 712,
+          "y": 212,
+          "width": 4,
+          "height": 220,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[11]"
+            }
+          ]
+        },
+        {
+          "id": 30,
+          "name": "collision.rects[12]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 716,
+          "y": 216,
+          "width": 4,
+          "height": 216,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[12]"
+            }
+          ]
+        },
+        {
+          "id": 31,
+          "name": "collision.rects[13]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 588,
+          "y": 220,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[13]"
+            }
+          ]
+        },
+        {
+          "id": 32,
+          "name": "collision.rects[14]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 720,
+          "y": 220,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[14]"
+            }
+          ]
+        },
+        {
+          "id": 33,
+          "name": "collision.rects[15]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 588,
+          "y": 236,
+          "width": 4,
+          "height": 164,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[15]"
+            }
+          ]
+        },
+        {
+          "id": 34,
+          "name": "collision.rects[16]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 720,
+          "y": 236,
+          "width": 4,
+          "height": 196,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[16]"
+            }
+          ]
+        },
+        {
+          "id": 35,
+          "name": "collision.rects[17]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 564,
+          "y": 240,
+          "width": 24,
+          "height": 156,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[17]"
+            }
+          ]
+        },
+        {
+          "id": 36,
+          "name": "collision.rects[18]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 724,
+          "y": 240,
+          "width": 20,
+          "height": 188,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[18]"
+            }
+          ]
+        },
+        {
+          "id": 37,
+          "name": "collision.rects[19]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 872,
+          "y": 240,
+          "width": 12,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[19]"
+            }
+          ]
+        },
+        {
+          "id": 38,
+          "name": "collision.rects[20]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 560,
+          "y": 244,
+          "width": 4,
+          "height": 148,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[20]"
+            }
+          ]
+        },
+        {
+          "id": 39,
+          "name": "collision.rects[21]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 744,
+          "y": 244,
+          "width": 4,
+          "height": 184,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[21]"
+            }
+          ]
+        },
+        {
+          "id": 40,
+          "name": "collision.rects[22]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 748,
+          "y": 248,
+          "width": 4,
+          "height": 176,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[22]"
+            }
+          ]
+        },
+        {
+          "id": 41,
+          "name": "collision.rects[23]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 556,
+          "y": 252,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[23]"
+            }
+          ]
+        },
+        {
+          "id": 42,
+          "name": "collision.rects[24]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 752,
+          "y": 252,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[24]"
+            }
+          ]
+        },
+        {
+          "id": 43,
+          "name": "collision.rects[25]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 556,
+          "y": 268,
+          "width": 4,
+          "height": 100,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[25]"
+            }
+          ]
+        },
+        {
+          "id": 44,
+          "name": "collision.rects[26]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 752,
+          "y": 268,
+          "width": 4,
+          "height": 136,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[26]"
+            }
+          ]
+        },
+        {
+          "id": 45,
+          "name": "collision.rects[27]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 428,
+          "y": 272,
+          "width": 8,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[27]"
+            }
+          ]
+        },
+        {
+          "id": 46,
+          "name": "collision.rects[28]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 532,
+          "y": 272,
+          "width": 24,
+          "height": 92,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[28]"
+            }
+          ]
+        },
+        {
+          "id": 47,
+          "name": "collision.rects[29]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 756,
+          "y": 272,
+          "width": 24,
+          "height": 124,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[29]"
+            }
+          ]
+        },
+        {
+          "id": 48,
+          "name": "collision.rects[30]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 784,
+          "y": 272,
+          "width": 24,
+          "height": 124,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[30]"
+            }
+          ]
+        },
+        {
+          "id": 49,
+          "name": "collision.rects[31]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 528,
+          "y": 276,
+          "width": 4,
+          "height": 84,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[31]"
+            }
+          ]
+        },
+        {
+          "id": 50,
+          "name": "collision.rects[32]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 780,
+          "y": 276,
+          "width": 4,
+          "height": 124,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[32]"
+            }
+          ]
+        },
+        {
+          "id": 51,
+          "name": "collision.rects[33]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 808,
+          "y": 276,
+          "width": 4,
+          "height": 120,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[33]"
+            }
+          ]
+        },
+        {
+          "id": 52,
+          "name": "collision.rects[34]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 812,
+          "y": 280,
+          "width": 4,
+          "height": 24,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[34]"
+            }
+          ]
+        },
+        {
+          "id": 53,
+          "name": "collision.rects[35]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 524,
+          "y": 284,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[35]"
+            }
+          ]
+        },
+        {
+          "id": 54,
+          "name": "collision.rects[36]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 816,
+          "y": 284,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[36]"
+            }
+          ]
+        },
+        {
+          "id": 55,
+          "name": "collision.rects[37]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 812,
+          "y": 312,
+          "width": 4,
+          "height": 24,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[37]"
+            }
+          ]
+        },
+        {
+          "id": 56,
+          "name": "collision.rects[38]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 524,
+          "y": 316,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[38]"
+            }
+          ]
+        },
+        {
+          "id": 57,
+          "name": "collision.rects[39]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 816,
+          "y": 316,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[39]"
+            }
+          ]
+        },
+        {
+          "id": 58,
+          "name": "collision.rects[40]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 812,
+          "y": 344,
+          "width": 4,
+          "height": 24,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[40]"
+            }
+          ]
+        },
+        {
+          "id": 59,
+          "name": "collision.rects[41]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 524,
+          "y": 348,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[41]"
+            }
+          ]
+        },
+        {
+          "id": 60,
+          "name": "collision.rects[42]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 816,
+          "y": 348,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[42]"
+            }
+          ]
+        },
+        {
+          "id": 61,
+          "name": "collision.rects[43]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 532,
+          "y": 364,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[43]"
+            }
+          ]
+        },
+        {
+          "id": 62,
+          "name": "collision.rects[44]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 540,
+          "y": 364,
+          "width": 16,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[44]"
+            }
+          ]
+        },
+        {
+          "id": 63,
+          "name": "collision.rects[45]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 548,
+          "y": 368,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[45]"
+            }
+          ]
+        },
+        {
+          "id": 64,
+          "name": "collision.rects[46]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 812,
+          "y": 376,
+          "width": 4,
+          "height": 16,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[46]"
+            }
+          ]
+        },
+        {
+          "id": 65,
+          "name": "collision.rects[47]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 556,
+          "y": 380,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[47]"
+            }
+          ]
+        },
+        {
+          "id": 66,
+          "name": "collision.rects[48]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 816,
+          "y": 380,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[48]"
+            }
+          ]
+        },
+        {
+          "id": 67,
+          "name": "collision.rects[49]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 564,
+          "y": 396,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[49]"
+            }
+          ]
+        },
+        {
+          "id": 68,
+          "name": "collision.rects[50]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 572,
+          "y": 396,
+          "width": 16,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[50]"
+            }
+          ]
+        },
+        {
+          "id": 69,
+          "name": "collision.rects[51]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 596,
+          "y": 396,
+          "width": 4,
+          "height": 8,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[51]"
+            }
+          ]
+        },
+        {
+          "id": 70,
+          "name": "collision.rects[52]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 604,
+          "y": 396,
+          "width": 16,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[52]"
+            }
+          ]
+        },
+        {
+          "id": 71,
+          "name": "collision.rects[53]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 756,
+          "y": 396,
+          "width": 4,
+          "height": 8,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[53]"
+            }
+          ]
+        },
+        {
+          "id": 72,
+          "name": "collision.rects[54]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 764,
+          "y": 396,
+          "width": 16,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[54]"
+            }
+          ]
+        },
+        {
+          "id": 73,
+          "name": "collision.rects[55]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 784,
+          "y": 396,
+          "width": 8,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[55]"
+            }
+          ]
+        },
+        {
+          "id": 74,
+          "name": "collision.rects[56]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 796,
+          "y": 396,
+          "width": 12,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[56]"
+            }
+          ]
+        },
+        {
+          "id": 75,
+          "name": "collision.rects[57]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 580,
+          "y": 400,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[57]"
+            }
+          ]
+        },
+        {
+          "id": 76,
+          "name": "collision.rects[58]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 612,
+          "y": 400,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[58]"
+            }
+          ]
+        },
+        {
+          "id": 77,
+          "name": "collision.rects[59]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 772,
+          "y": 400,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[59]"
+            }
+          ]
+        },
+        {
+          "id": 78,
+          "name": "collision.rects[60]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 788,
+          "y": 400,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[60]"
+            }
+          ]
+        },
+        {
+          "id": 79,
+          "name": "collision.rects[61]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 620,
+          "y": 412,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[61]"
+            }
+          ]
+        },
+        {
+          "id": 80,
+          "name": "collision.rects[62]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 752,
+          "y": 412,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[62]"
+            }
+          ]
+        },
+        {
+          "id": 81,
+          "name": "collision.rects[63]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 628,
+          "y": 424,
+          "width": 24,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[63]"
+            }
+          ]
+        },
+        {
+          "id": 82,
+          "name": "collision.rects[64]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 628,
+          "y": 428,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[64]"
+            }
+          ]
+        },
+        {
+          "id": 83,
+          "name": "collision.rects[65]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 636,
+          "y": 428,
+          "width": 16,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[65]"
+            }
+          ]
+        },
+        {
+          "id": 84,
+          "name": "collision.rects[66]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 656,
+          "y": 428,
+          "width": 8,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[66]"
+            }
+          ]
+        },
+        {
+          "id": 85,
+          "name": "collision.rects[67]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 668,
+          "y": 428,
+          "width": 16,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[67]"
+            }
+          ]
+        },
+        {
+          "id": 86,
+          "name": "collision.rects[68]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 688,
+          "y": 428,
+          "width": 8,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[68]"
+            }
+          ]
+        },
+        {
+          "id": 87,
+          "name": "collision.rects[69]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 700,
+          "y": 428,
+          "width": 12,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[69]"
+            }
+          ]
+        },
+        {
+          "id": 88,
+          "name": "collision.rects[70]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 724,
+          "y": 428,
+          "width": 4,
+          "height": 8,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[70]"
+            }
+          ]
+        },
+        {
+          "id": 89,
+          "name": "collision.rects[71]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 732,
+          "y": 428,
+          "width": 12,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[71]"
+            }
+          ]
+        },
+        {
+          "id": 90,
+          "name": "collision.rects[72]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 644,
+          "y": 432,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[72]"
+            }
+          ]
+        },
+        {
+          "id": 91,
+          "name": "collision.rects[73]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 660,
+          "y": 432,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[73]"
+            }
+          ]
+        },
+        {
+          "id": 92,
+          "name": "collision.rects[74]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 676,
+          "y": 432,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[74]"
+            }
+          ]
+        },
+        {
+          "id": 93,
+          "name": "collision.rects[75]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 692,
+          "y": 432,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[75]"
+            }
+          ]
+        },
+        {
+          "id": 94,
+          "name": "collision.rects[76]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 708,
+          "y": 432,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[76]"
+            }
+          ]
+        },
+        {
+          "id": 95,
+          "name": "collision.rects[77]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 840,
+          "y": 448,
+          "width": 12,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[77]"
+            }
+          ]
+        },
+        {
+          "id": 96,
+          "name": "collision.rects[78]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 92,
+          "y": 504,
+          "width": 12,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[78]"
+            }
+          ]
+        },
+        {
+          "id": 97,
+          "name": "collision.rects[79]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 876,
+          "y": 528,
+          "width": 12,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[79]"
+            }
+          ]
+        },
+        {
+          "id": 98,
+          "name": "collision.rects[80]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 932,
+          "y": 544,
+          "width": 12,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[80]"
+            }
+          ]
+        },
+        {
+          "id": 99,
+          "name": "collision.rects[81]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 964,
+          "y": 544,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[81]"
+            }
+          ]
+        },
+        {
+          "id": 100,
+          "name": "collision.rects[82]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 40,
+          "y": 560,
+          "width": 16,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[82]"
+            }
+          ]
+        },
+        {
+          "id": 101,
+          "name": "collision.rects[83]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 268,
+          "y": 580,
+          "width": 8,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[83]"
+            }
+          ]
+        },
+        {
+          "id": 102,
+          "name": "collision.rects[84]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 528,
+          "y": 584,
+          "width": 12,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[84]"
+            }
+          ]
+        },
+        {
+          "id": 103,
+          "name": "collision.rects[85]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 76,
+          "y": 620,
+          "width": 12,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[85]"
+            }
+          ]
+        },
+        {
+          "id": 104,
+          "name": "void-shrine-landmark",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 663.0,
+          "y": 244.0,
+          "width": 18.0,
+          "height": 12.0,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:void-shrine-landmark"
+            }
+          ]
+        },
+        {
+          "id": 105,
+          "name": "regional-dressing-1",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 874.5,
+          "y": 528.0,
+          "width": 13.0,
+          "height": 5.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-1"
+            }
+          ]
+        },
+        {
+          "id": 106,
+          "name": "regional-dressing-2",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 872.5,
+          "y": 240.0,
+          "width": 13.0,
+          "height": 5.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-2"
+            }
+          ]
+        },
+        {
+          "id": 107,
+          "name": "regional-dressing-3",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 932.5,
+          "y": 543.0,
+          "width": 13.0,
+          "height": 5.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-3"
+            }
+          ]
+        },
+        {
+          "id": 108,
+          "name": "regional-dressing-4",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 425.5,
+          "y": 273.0,
+          "width": 13.0,
+          "height": 5.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-4"
+            }
+          ]
+        },
+        {
+          "id": 109,
+          "name": "regional-dressing-5",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 76.5,
+          "y": 621.0,
+          "width": 13.0,
+          "height": 5.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-5"
+            }
+          ]
+        },
+        {
+          "id": 110,
+          "name": "regional-dressing-6",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 528.5,
+          "y": 583.0,
+          "width": 13.0,
+          "height": 5.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-6"
+            }
+          ]
+        },
+        {
+          "id": 111,
+          "name": "regional-dressing-7",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 450.5,
+          "y": 180.0,
+          "width": 13.0,
+          "height": 5.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-7"
+            }
+          ]
+        },
+        {
+          "id": 112,
+          "name": "regional-dressing-8",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 428.5,
+          "y": 194.0,
+          "width": 5.0,
+          "height": 4.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-8"
+            }
+          ]
+        },
+        {
+          "id": 113,
+          "name": "regional-dressing-9",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 522.5,
+          "y": 546.0,
+          "width": 5.0,
+          "height": 4.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-9"
+            }
+          ]
+        },
+        {
+          "id": 114,
+          "name": "regional-dressing-10",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 529.5,
+          "y": 161.0,
+          "width": 5.0,
+          "height": 4.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-10"
+            }
+          ]
+        },
+        {
+          "id": 115,
+          "name": "regional-dressing-11",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 90.5,
+          "y": 503.0,
+          "width": 13.0,
+          "height": 5.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-11"
+            }
+          ]
+        },
+        {
+          "id": 116,
+          "name": "regional-dressing-12",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 963.5,
+          "y": 543.0,
+          "width": 5.0,
+          "height": 4.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-12"
+            }
+          ]
+        },
+        {
+          "id": 117,
+          "name": "regional-dressing-13",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 41.5,
+          "y": 559.0,
+          "width": 13.0,
+          "height": 5.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-13"
+            }
+          ]
+        },
+        {
+          "id": 118,
+          "name": "regional-dressing-14",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 265.5,
+          "y": 581.0,
+          "width": 13.0,
+          "height": 5.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-14"
+            }
+          ]
+        },
+        {
+          "id": 119,
+          "name": "regional-dressing-15",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 344.5,
+          "y": 84.0,
+          "width": 13.0,
+          "height": 5.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-15"
+            }
+          ]
+        },
+        {
+          "id": 120,
+          "name": "regional-dressing-16",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 838.5,
+          "y": 449.0,
+          "width": 13.0,
+          "height": 5.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:regional-dressing-16"
+            }
+          ]
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": false,
+      "x": 0,
+      "y": 0,
+      "properties": [
+        {
+          "name": "actorRadius",
+          "type": "float",
+          "value": 7.0
+        },
+        {
+          "name": "ySquash",
+          "type": "float",
+          "value": 0.9
+        },
+        {
+          "name": "navCell",
+          "type": "int",
+          "value": 4
+        },
+        {
+          "name": "semantics",
+          "type": "string",
+          "value": "plan Appendix C; tile collision lives in the tilesets"
+        }
+      ]
+    },
+    {
+      "draworder": "index",
+      "id": 4,
+      "name": "interactions",
+      "objects": [
+        {
+          "height": 0,
+          "id": 121,
+          "name": "arrival",
+          "point": true,
+          "properties": [
+            {
+              "name": "facing",
+              "type": "string",
+              "value": "east"
+            }
+          ],
+          "rotation": 0,
+          "type": "spawn",
+          "visible": true,
+          "width": 0,
+          "x": 192,
+          "y": 352
+        },
+        {
+          "height": 0,
+          "id": 122,
+          "name": "from-pagoda-court",
+          "point": true,
+          "properties": [
+            {
+              "name": "facing",
+              "type": "string",
+              "value": "south"
+            }
+          ],
+          "rotation": 0,
+          "type": "spawn",
+          "visible": true,
+          "width": 0,
+          "x": 494,
+          "y": 30
+        },
+        {
+          "height": 0,
+          "id": 123,
+          "name": "from-coastal-temple",
+          "point": true,
+          "properties": [
+            {
+              "name": "facing",
+              "type": "string",
+              "value": "west"
+            }
+          ],
+          "rotation": 0,
+          "type": "spawn",
+          "visible": true,
+          "width": 0,
+          "x": 994,
+          "y": 350
+        },
+        {
+          "height": 0,
+          "id": 124,
+          "name": "from-fire-mountain",
+          "point": true,
+          "properties": [
+            {
+              "name": "facing",
+              "type": "string",
+              "value": "east"
+            }
+          ],
+          "rotation": 0,
+          "type": "spawn",
+          "visible": true,
+          "width": 0,
+          "x": 30,
+          "y": 350
+        },
+        {
+          "id": 125,
+          "name": "exit-north",
+          "type": "portal",
+          "rotation": 0,
+          "visible": true,
+          "x": 416.0,
+          "y": 0.0,
+          "width": 160.0,
+          "height": 16.0,
+          "properties": [
+            {
+              "name": "to",
+              "type": "string",
+              "value": "pagoda-court:from-void-shrine"
+            },
+            {
+              "name": "activation",
+              "type": "string",
+              "value": "intent"
+            },
+            {
+              "name": "radius",
+              "type": "float",
+              "value": 7.0
+            },
+            {
+              "name": "travelDirectionX",
+              "type": "float",
+              "value": 0.0
+            },
+            {
+              "name": "travelDirectionY",
+              "type": "float",
+              "value": -1.0
+            },
+            {
+              "name": "latch",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "requiresMovement",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "entranceByFrom",
+              "type": "string",
+              "value": "{\"pagoda-court\":\"from-pagoda-court\"}"
+            }
+          ]
+        },
+        {
+          "id": 126,
+          "name": "exit-east",
+          "type": "portal",
+          "rotation": 0,
+          "visible": true,
+          "x": 1008.0,
+          "y": 256.0,
+          "width": 16.0,
+          "height": 192.0,
+          "properties": [
+            {
+              "name": "to",
+              "type": "string",
+              "value": "coastal-temple:from-void-shrine"
+            },
+            {
+              "name": "activation",
+              "type": "string",
+              "value": "intent"
+            },
+            {
+              "name": "radius",
+              "type": "float",
+              "value": 7.0
+            },
+            {
+              "name": "travelDirectionX",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "travelDirectionY",
+              "type": "float",
+              "value": 0.0
+            },
+            {
+              "name": "latch",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "requiresMovement",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "entranceByFrom",
+              "type": "string",
+              "value": "{\"coastal-temple\":\"from-coastal-temple\"}"
+            }
+          ]
+        },
+        {
+          "id": 127,
+          "name": "exit-west",
+          "type": "portal",
+          "rotation": 0,
+          "visible": true,
+          "x": 0.0,
+          "y": 256.0,
+          "width": 16.0,
+          "height": 192.0,
+          "properties": [
+            {
+              "name": "to",
+              "type": "string",
+              "value": "fire-mountain:from-void-shrine"
+            },
+            {
+              "name": "activation",
+              "type": "string",
+              "value": "intent"
+            },
+            {
+              "name": "radius",
+              "type": "float",
+              "value": 7.0
+            },
+            {
+              "name": "travelDirectionX",
+              "type": "float",
+              "value": -1.0
+            },
+            {
+              "name": "travelDirectionY",
+              "type": "float",
+              "value": 0.0
+            },
+            {
+              "name": "latch",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "requiresMovement",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "entranceByFrom",
+              "type": "string",
+              "value": "{\"fire-mountain\":\"from-fire-mountain\"}"
+            }
+          ]
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true,
+      "x": 0,
+      "y": 0
+    }
+  ],
+  "nextlayerid": 5,
+  "nextobjectid": 128,
+  "orientation": "orthogonal",
+  "properties": [
+    {
+      "name": "mapId",
+      "type": "string",
+      "value": "void-shrine"
+    },
+    {
+      "name": "bundleSchema",
+      "type": "string",
+      "value": "generate2dmap.map_bundle.v2"
+    },
+    {
+      "name": "worldWidth",
+      "type": "float",
+      "value": 1024.0
+    },
+    {
+      "name": "worldHeight",
+      "type": "float",
+      "value": 704.0
+    },
+    {
+      "name": "generator",
+      "type": "string",
+      "value": "generate2dmap export_tiled.py 0.4.0"
+    },
+    {
+      "name": "actorRadius",
+      "type": "float",
+      "value": 7.0
+    },
+    {
+      "name": "ySquash",
+      "type": "float",
+      "value": 0.9
+    }
+  ],
+  "renderorder": "right-down",
+  "tiledversion": "1.11.0",
+  "tileheight": 32,
+  "tilesets": [
+    {
+      "firstgid": 1,
+      "source": "corruption-stone-wang16.tsx"
+    },
+    {
+      "firstgid": 65,
+      "source": "props.tsx"
+    }
+  ],
+  "tilewidth": 32,
+  "type": "map",
+  "version": "1.10",
+  "width": 32
+}

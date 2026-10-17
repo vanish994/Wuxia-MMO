@@ -1,0 +1,66 @@
+{
+  "schema": "generate2dmap.tileset.v1",
+  "id": "sand-ground-flat",
+  "image": "sand-ground-flat.png",
+  "sha256": "cd8c10d9217469634bafd19a11f0ca90af4f16cc28c769c91cc94b97deddcd12",
+  "tile_size": 32,
+  "columns": 4,
+  "tilecount": 4,
+  "kind": "flat",
+  "materials": [
+    "sand"
+  ],
+  "variants": 4,
+  "seamless_verified": true,
+  "seam_proof": {
+    "method": "Tiles assembled from the atlas by key, compared pixel for pixel (RGBA) with an independent global render: noise evaluated at map coordinates, every pixel classified from its own cell, band and face look-ups read at their true positions across tile edges. Cases: every 2x2 block of variants (256 configurations, 1 variant passes); a seeded random 30x20 map.",
+    "pixels_compared": 1662976,
+    "mismatches": 0
+  },
+  "repetition_index": 0.2553,
+  "art_source": "code",
+  "generator": {
+    "name": "codeart2d/autotile_build",
+    "version": "0.4.0"
+  },
+  "spec_sha256": "24f34b3938bac883790d0d391e047ff9cdf9ff3a9325c81ad03d3cff4ccc27c9",
+  "qa": {
+    "path": "autotile-qa.json",
+    "sha256": "37279e4339a0ef7246f41aad36ca9662ba645574a0b35a260b910131b8c2f1ac",
+    "bytes": 117079
+  },
+  "tiles": [
+    {
+      "index": 0,
+      "variant": 0,
+      "collision": [],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 1,
+      "variant": 1,
+      "collision": [],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 2,
+      "variant": 2,
+      "collision": [],
+      "properties": {
+        "walkable": true
+      }
+    },
+    {
+      "index": 3,
+      "variant": 3,
+      "collision": [],
+      "properties": {
+        "walkable": true
+      }
+    }
+  ]
+}

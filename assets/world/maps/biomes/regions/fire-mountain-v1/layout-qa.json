@@ -1,0 +1,197 @@
+{
+  "status": "pass",
+  "method": "layout_build: vertex-grid painting and hygiene, corner-Wang tile lookup, seeded scatter; collision.rects re-rasterised on the 4 px raster of the blocking set; reachability with the vendored forge_nav (D4) on the bundle's full blocking set (D2: collision.solids and rects, object footprints, the placed tiles' collision), read back as every consumer reads it: footprint validity (r=7, ySquash=0.9) at 4 px grid nodes, 4-neighbour moves with segmentClear and the thin-gap rule, BFS from the first spawn, N14 targets",
+  "notProven": [
+    "How the map looks: open preview.png and debug.png (magenta = walkable but unreachable, dark = too tight for the actor).",
+    "collision.rects are the 4 px cells whose centre the exact blockers cover; an engine that collides with the rects alone gets that cell approximation of prop footprints (the proof covers the rects together with the exact shapes).",
+    "Reachability is proven for one actor size; larger actors, jumping, doors that open and moving objects are not simulated.",
+    "Tile seams: layout_build trusts the tileset manifest's seam proof."
+  ],
+  "checks": [
+    {
+      "id": "tiles_drawable",
+      "status": "pass",
+      "value": 0,
+      "threshold": 0
+    },
+    {
+      "id": "tile_collision",
+      "status": "pass",
+      "value": {
+        "lava-stone-wang16": {
+          "source": "manifest",
+          "conflicts": []
+        }
+      },
+      "threshold": []
+    },
+    {
+      "id": "rect_union_equals_blocked",
+      "status": "pass",
+      "value": 0,
+      "threshold": 0
+    },
+    {
+      "id": "rects_disjoint",
+      "status": "pass",
+      "value": 0,
+      "threshold": 0
+    },
+    {
+      "id": "spawns_reachable",
+      "status": "pass",
+      "value": [],
+      "threshold": []
+    },
+    {
+      "id": "exits_reachable",
+      "status": "pass",
+      "value": [],
+      "threshold": []
+    },
+    {
+      "id": "arrivals_outside_triggers",
+      "status": "pass",
+      "value": [],
+      "threshold": []
+    },
+    {
+      "id": "interactions_reachable",
+      "status": "pass",
+      "value": [],
+      "threshold": []
+    },
+    {
+      "id": "enclosed_pockets",
+      "status": "pass",
+      "value": 0,
+      "threshold": 0
+    },
+    {
+      "id": "prop_variety",
+      "status": "pass",
+      "value": 0.0,
+      "threshold": 0.35
+    },
+    {
+      "id": "scatter_filled",
+      "status": "pass",
+      "value": [],
+      "threshold": []
+    },
+    {
+      "id": "hygiene_converged",
+      "status": "pass",
+      "value": 1,
+      "threshold": 10
+    }
+  ],
+  "inputs": [
+    {
+      "path": "../specs/fire-mountain.layout.json",
+      "sha256": "7bea8e1e25f1c832e2a05c6e4852ded614127cbd25948de991c99561611bd617",
+      "bytes": 28279
+    },
+    {
+      "path": "../../../../../tilesets/generated-core-v1/lava-stone-wang16.tileset.json",
+      "sha256": "8f597d51e071b0cf10029a15963d230298ac80cf41334ae82fb4a89cdc6e6c3e",
+      "bytes": 44152
+    },
+    {
+      "path": "../../../../../tilesets/generated-core-v1/lava-stone-wang16.png",
+      "sha256": "70c27600cf4a08f96d3ab4e28b71bff757108522d84397a301732c08cea20f62",
+      "bytes": 5280
+    },
+    {
+      "path": "../../../../../tilesets/generated-core-v1/autotile-qa.json",
+      "sha256": "37279e4339a0ef7246f41aad36ca9662ba645574a0b35a260b910131b8c2f1ac",
+      "bytes": 117079
+    }
+  ],
+  "outputs": [
+    {
+      "path": "map-bundle.json",
+      "sha256": "3c502adacd12ab4a4046c17e17b1ef9298f04ebc2a8bdd6b7650b5473823411a",
+      "bytes": 35387
+    },
+    {
+      "path": "terrain-vertices.json",
+      "sha256": "1667d2b6834d60d218778b976f51ba7c0f3ed48759daa4ba9ed32b20069f27c5",
+      "bytes": 7302
+    },
+    {
+      "path": "tilesets/lava-stone-wang16/lava-stone-wang16.png",
+      "sha256": "70c27600cf4a08f96d3ab4e28b71bff757108522d84397a301732c08cea20f62",
+      "bytes": 5280
+    },
+    {
+      "path": "tilesets/lava-stone-wang16/lava-stone-wang16.tileset.json",
+      "sha256": "712e71cb34d4e56326fd27193423e4c77bcc87eb7b08065f29d92f856b7cc0cd",
+      "bytes": 44003
+    },
+    {
+      "path": "props/pine.png",
+      "sha256": "f6d9de3c7e18415fa4233e58b4cc65847573ea601c3a2cd3738f46d9b4bf5fc3",
+      "bytes": 341
+    },
+    {
+      "path": "props/blossom_tree.png",
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "bytes": 407
+    },
+    {
+      "path": "props/bamboo.png",
+      "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
+      "bytes": 509
+    },
+    {
+      "path": "props/shrub.png",
+      "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
+      "bytes": 198
+    },
+    {
+      "path": "props/rock.png",
+      "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
+      "bytes": 188
+    },
+    {
+      "path": "props/lantern.png",
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "bytes": 230
+    },
+    {
+      "path": "props/signboard.png",
+      "sha256": "db4e50fb76441a57ff24f22c3cc852749cb0faf64c0ed744a068ece0b1bbea41",
+      "bytes": 223
+    },
+    {
+      "path": "props/sect_gate.png",
+      "sha256": "1aeedb2ef856eec6fe1e5f8310ce4e1e368e05f60b6182f91cba3f86974c6a85",
+      "bytes": 479
+    },
+    {
+      "path": "props/pagoda.png",
+      "sha256": "c4805330da4a46ae8195e0e50329bf47980748df8f7552fd576a7d5e04a1cb1d",
+      "bytes": 514
+    },
+    {
+      "path": "props/bridge.png",
+      "sha256": "27e76b7d6bd364498b855920f61381c3f2f699394612fe509cb397c0c0ba864d",
+      "bytes": 300
+    },
+    {
+      "path": "preview.png",
+      "sha256": "b28a822926f99079f1df68fe1319efafedbc66dabeeea984f593fd39ae08fb6e",
+      "bytes": 18892
+    },
+    {
+      "path": "debug.png",
+      "sha256": "a9c21379a7153bf849bb2012a3878da26ae26786449947a40816fd9bbb08ef12",
+      "bytes": 52121
+    }
+  ],
+  "tool": {
+    "name": "layout_build",
+    "version": "0.4.0"
+  }
+}

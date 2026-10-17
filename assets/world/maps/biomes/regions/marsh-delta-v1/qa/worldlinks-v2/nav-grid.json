@@ -1,0 +1,1542 @@
+{
+  "schema": "generate2dmap.nav_grid.v1",
+  "map": "marsh-delta",
+  "bundle": {
+    "path": "../../map-bundle.json",
+    "sha256": "5d7aa85908316db7ebfef04920a42cdd79604866f667d9bac1b5c64517901007",
+    "bytes": 34370
+  },
+  "world": {
+    "width": 1024.0,
+    "height": 704.0
+  },
+  "actor": {
+    "radius": 7.0,
+    "ySquash": 0.9,
+    "samples": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        7.0,
+        0.0
+      ],
+      [
+        4.949747468305833,
+        4.4547727214752495
+      ],
+      [
+        0.0,
+        6.3
+      ],
+      [
+        -4.949747468305833,
+        4.4547727214752495
+      ],
+      [
+        -7.0,
+        0.0
+      ],
+      [
+        -4.949747468305833,
+        -4.4547727214752495
+      ],
+      [
+        0.0,
+        -6.3
+      ],
+      [
+        4.949747468305833,
+        -4.4547727214752495
+      ]
+    ]
+  },
+  "cell": 4,
+  "cols": 256,
+  "rows": 176,
+  "nodeCentre": "x = (col + 0.5) * cell, y = (row + 0.5) * cell",
+  "moveBits": {
+    "E": 1,
+    "S": 2,
+    "W": 4,
+    "N": 8
+  },
+  "moves": [
+    "################################################################################################################################################################################################################################################################",
+    "################################################################################################################################################################################################################################################################",
+    "##377777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777776##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffddddfffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc####9ffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc######9fffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe########bffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff6######3fffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff6####3ffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7777fffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffddddffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc####9fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc######9ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe########bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffddd6######3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc###96####3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc#####97777ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe#######bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff6#####3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff6###3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff777ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdddfffffffffffffffffffffffffffffffffffffddffffffddffffffdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc###9ffffffffffffffffffffffffffffffdddddc##9ddddc##9ddddc#9fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffdddffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc#####9ffffffffffffffffffffffffffffc########################9ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffc###9ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe#######bffffffffffffffffffffffffffc##########################9fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffc#####9ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff6#####3ffffffffffffffffffffffffffe############################bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffe#######bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe#####bffffffffffffffffffffffffffe###########################1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffff6#####3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff76#37fffffffffffffffffffffffffffe############################bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffff6###3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7fffffffffffffffffffffffffffffe############################bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffff777ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffddfffffe############################bfffddffffffdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdddddc##9ddddc############################9ddc##9ddddc#9fffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc########################################################9ffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc##########################################################9fffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe############################################################bffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe###########################################################1fffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe############################################################bffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe############################################################bffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe############################################################bfffdffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdddddc############################################################9ddc#9fffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc########################################################################9ffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc##########################################################################9fffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe############################################################################bffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe###########################################################################1fffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe############################################################################bffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe############################################################################bffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe############################################################################bffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdddddc############################################################################bffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc##################################################################################bffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc###################################################################################bffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe####################################################################################bffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe####################################################################################bffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe####################################################################################bffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe####################################################################################bffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe####################################################################################bffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe####################################################################################bffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff6###################################################################################bffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe###################################################################################bffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff6##################################################################################bffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff6#################################################################################bffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff77776############################################################################bffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe############################################################################bffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe############################################################################bffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe############################################################################bffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff6###########################################################################bffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe###########################################################################bffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff6##########################################################################bfffffddfffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff6#########################################################################bffffc##9ffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff77776####################################################################bfffc####9fffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe####################################################################bffe######bffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe####################################################################bfff6####3fffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe####################################################################bffff6##3ffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff6###################################################################bfffff77fffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe###################################################################bffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff6#################################################################3fffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff6###############################################################3ffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff777776##377776##377776##377776##377776##377776##377776##3777777fffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff77ffffff77ffffff77ffffff77ffffff77ffffff77ffffff77ffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffdddfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdddfffffffffffffffffffffffffffffffffffddffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffc###9fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdfffffffffffc###9fffffffffffffffffffffffffffffffffc##9fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffc#####9fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc#9fffffffffc#####9fffffffffffffffffffffffffffffffc####9ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffe#######bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc###9fffffffe#######bfffffffffffffffffffffffffffffe######bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffff6#####3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe#####bfffffff6#####3fffffffffffffffffffffffffffffff6####3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffff6###3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe#####bfffffffe#####bffffffffffffffffffffffffffffffff6##3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffff777ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff6###3fffffffff76#37ffffffffffffffffffffffffffffffffff77ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff6#3ffffffffffff7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffdddffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffc###9fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdddfffffffffffffe##",
+    "##bfffffffffc#####9fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc###9ffffffffffffe##",
+    "##bffffffffe#######bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc#####9fffffffffffe##",
+    "##bfffffffff6#####3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe#######bffffffffffe##",
+    "##bffffffffff6###3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff6######bffffffffffe##",
+    "##bfffffffffff777fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff6###37fffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffddfffffffffff777fffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdc##9dfffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe######bffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe######bffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff4####1fffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff6####3fffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7777ffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdddffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffddffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc###9dffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffdc##9dfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc######bfffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffe######bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe#######bfffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffe######bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff6######bfffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffff4####1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff6###37ffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffff6####3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff777ffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffff7777fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdddffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc###9fffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc#####9ffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe#######bfffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff6#####3ffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe#####bffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff76#37fffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7fffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe##",
+    "##9ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddc##",
+    "################################################################################################################################################################################################################################################################",
+    "################################################################################################################################################################################################################################################################"
+  ],
+  "reachable": [
+    "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100001111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000011111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100001111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000110000111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111111111111111111111110011111100111111011111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000001111111111111111111111111111110000000000000000000000001111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111100011111111111111111111111111111111111111111111111111111111111111110000000111111111111111111111111111100000000000000000000000000111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111000001111111111111111111111111111111111111111111111111111111111111111000001111111111111111111111111111000000000000000000000000000011111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111110000000111111111111111111111111111111111111111111111111111111111111111000001111111111111111111111111111000000000000000000000000000111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111000001111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111000000000000000000000000000011111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000011111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000011111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100111111000000000000000000000000000011110011111101111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000001111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000001111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000001111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000001111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000001111011111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000000000000000001111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000000000000000000000000000000000000000000111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000000000000000000000000000000000000000011111100111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000000000000011111000011111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000000000000011110000001111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000000000000011111000011111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000000000000011111100111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000000001111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110011111100111111001111110011111100111111001111110011111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111111111111111111111001111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111000001111111111111111111111111111111111111111111111111111111111111111111111111011111111111000001111111111111111111111111111111110000111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111110000000111111111111111111111111111111111111111111111111111111111111111111111110001111111110000000111111111111111111111111111111100000011111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111000001111111111111111111111111111111111111111111111111111111111111111111111100000111111111000001111111111111111111111111111111110000111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111100000111111111000001111111111111111111111111111111111001111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110001111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111000001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110001111111111111100",
+    "0011111111110000000111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000111111111111100",
+    "0011111111111000001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000011111111111100",
+    "0011111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000011111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110001111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000011111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000011111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110001111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000011111111111111111111111111111111111111111111111111100",
+    "0011111111111111100000011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000011111111111111111111111111111111111111111111111111100",
+    "0011111111111111100000011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000011111111111111111111111111111111111111111111111111100",
+    "0011111111111111110000111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110001111111111111111111111111111111111111111111111111111100",
+    "0011111111111111110000111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000001111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000001111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000001111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100",
+    "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+  ],
+  "blockedRects": [
+    [
+      0,
+      0,
+      1024,
+      8
+    ],
+    [
+      0,
+      8,
+      8,
+      696
+    ],
+    [
+      1016,
+      8,
+      8,
+      696
+    ],
+    [
+      896,
+      36,
+      16,
+      20
+    ],
+    [
+      892,
+      40,
+      4,
+      12
+    ],
+    [
+      912,
+      40,
+      4,
+      12
+    ],
+    [
+      888,
+      44,
+      4,
+      4
+    ],
+    [
+      916,
+      44,
+      4,
+      4
+    ],
+    [
+      636,
+      64,
+      16,
+      20
+    ],
+    [
+      632,
+      68,
+      4,
+      12
+    ],
+    [
+      652,
+      68,
+      4,
+      12
+    ],
+    [
+      628,
+      72,
+      4,
+      4
+    ],
+    [
+      656,
+      72,
+      4,
+      4
+    ],
+    [
+      616,
+      80,
+      12,
+      20
+    ],
+    [
+      612,
+      84,
+      4,
+      12
+    ],
+    [
+      628,
+      84,
+      4,
+      12
+    ],
+    [
+      608,
+      88,
+      4,
+      4
+    ],
+    [
+      632,
+      88,
+      4,
+      4
+    ],
+    [
+      488,
+      196,
+      12,
+      20
+    ],
+    [
+      648,
+      196,
+      8,
+      212
+    ],
+    [
+      680,
+      196,
+      8,
+      212
+    ],
+    [
+      712,
+      196,
+      4,
+      212
+    ],
+    [
+      484,
+      200,
+      4,
+      16
+    ],
+    [
+      500,
+      200,
+      4,
+      16
+    ],
+    [
+      624,
+      200,
+      24,
+      208
+    ],
+    [
+      656,
+      200,
+      24,
+      208
+    ],
+    [
+      688,
+      200,
+      24,
+      208
+    ],
+    [
+      716,
+      200,
+      4,
+      212
+    ],
+    [
+      212,
+      204,
+      12,
+      20
+    ],
+    [
+      480,
+      204,
+      4,
+      4
+    ],
+    [
+      504,
+      204,
+      4,
+      4
+    ],
+    [
+      620,
+      204,
+      4,
+      208
+    ],
+    [
+      720,
+      204,
+      4,
+      208
+    ],
+    [
+      208,
+      208,
+      4,
+      12
+    ],
+    [
+      224,
+      208,
+      4,
+      12
+    ],
+    [
+      616,
+      208,
+      4,
+      200
+    ],
+    [
+      724,
+      208,
+      4,
+      4
+    ],
+    [
+      204,
+      212,
+      4,
+      4
+    ],
+    [
+      228,
+      212,
+      4,
+      4
+    ],
+    [
+      492,
+      216,
+      4,
+      4
+    ],
+    [
+      724,
+      216,
+      4,
+      192
+    ],
+    [
+      584,
+      228,
+      8,
+      180
+    ],
+    [
+      744,
+      228,
+      8,
+      180
+    ],
+    [
+      776,
+      228,
+      4,
+      180
+    ],
+    [
+      560,
+      232,
+      24,
+      172
+    ],
+    [
+      592,
+      232,
+      24,
+      176
+    ],
+    [
+      728,
+      232,
+      16,
+      176
+    ],
+    [
+      752,
+      232,
+      24,
+      176
+    ],
+    [
+      780,
+      232,
+      4,
+      180
+    ],
+    [
+      556,
+      236,
+      4,
+      164
+    ],
+    [
+      784,
+      236,
+      4,
+      176
+    ],
+    [
+      552,
+      240,
+      4,
+      152
+    ],
+    [
+      788,
+      240,
+      4,
+      4
+    ],
+    [
+      788,
+      248,
+      4,
+      160
+    ],
+    [
+      808,
+      260,
+      4,
+      148
+    ],
+    [
+      528,
+      264,
+      24,
+      108
+    ],
+    [
+      792,
+      264,
+      16,
+      144
+    ],
+    [
+      812,
+      264,
+      4,
+      144
+    ],
+    [
+      524,
+      268,
+      4,
+      100
+    ],
+    [
+      816,
+      268,
+      4,
+      136
+    ],
+    [
+      520,
+      272,
+      4,
+      88
+    ],
+    [
+      820,
+      272,
+      4,
+      4
+    ],
+    [
+      820,
+      280,
+      4,
+      120
+    ],
+    [
+      496,
+      296,
+      24,
+      44
+    ],
+    [
+      492,
+      300,
+      4,
+      36
+    ],
+    [
+      488,
+      304,
+      4,
+      24
+    ],
+    [
+      500,
+      340,
+      20,
+      4
+    ],
+    [
+      532,
+      372,
+      20,
+      4
+    ],
+    [
+      848,
+      372,
+      8,
+      20
+    ],
+    [
+      844,
+      376,
+      4,
+      12
+    ],
+    [
+      856,
+      376,
+      4,
+      12
+    ],
+    [
+      840,
+      380,
+      4,
+      4
+    ],
+    [
+      860,
+      380,
+      4,
+      4
+    ],
+    [
+      564,
+      404,
+      20,
+      4
+    ],
+    [
+      588,
+      408,
+      8,
+      4
+    ],
+    [
+      624,
+      408,
+      4,
+      4
+    ],
+    [
+      652,
+      408,
+      8,
+      4
+    ],
+    [
+      684,
+      408,
+      8,
+      4
+    ],
+    [
+      748,
+      408,
+      8,
+      4
+    ],
+    [
+      212,
+      428,
+      12,
+      20
+    ],
+    [
+      572,
+      428,
+      12,
+      20
+    ],
+    [
+      724,
+      428,
+      8,
+      20
+    ],
+    [
+      208,
+      432,
+      4,
+      12
+    ],
+    [
+      224,
+      432,
+      4,
+      12
+    ],
+    [
+      520,
+      432,
+      4,
+      24
+    ],
+    [
+      568,
+      432,
+      4,
+      16
+    ],
+    [
+      584,
+      432,
+      4,
+      16
+    ],
+    [
+      720,
+      432,
+      4,
+      12
+    ],
+    [
+      732,
+      432,
+      4,
+      12
+    ],
+    [
+      204,
+      436,
+      4,
+      4
+    ],
+    [
+      228,
+      436,
+      4,
+      4
+    ],
+    [
+      516,
+      436,
+      4,
+      16
+    ],
+    [
+      524,
+      436,
+      4,
+      16
+    ],
+    [
+      564,
+      436,
+      4,
+      4
+    ],
+    [
+      588,
+      436,
+      4,
+      4
+    ],
+    [
+      716,
+      436,
+      4,
+      4
+    ],
+    [
+      736,
+      436,
+      4,
+      4
+    ],
+    [
+      512,
+      440,
+      4,
+      8
+    ],
+    [
+      528,
+      440,
+      4,
+      8
+    ],
+    [
+      576,
+      448,
+      4,
+      4
+    ],
+    [
+      56,
+      472,
+      12,
+      20
+    ],
+    [
+      52,
+      476,
+      4,
+      12
+    ],
+    [
+      68,
+      476,
+      4,
+      12
+    ],
+    [
+      948,
+      476,
+      12,
+      20
+    ],
+    [
+      48,
+      480,
+      4,
+      4
+    ],
+    [
+      72,
+      480,
+      4,
+      4
+    ],
+    [
+      944,
+      480,
+      4,
+      12
+    ],
+    [
+      960,
+      480,
+      4,
+      12
+    ],
+    [
+      940,
+      484,
+      4,
+      4
+    ],
+    [
+      964,
+      484,
+      4,
+      8
+    ],
+    [
+      896,
+      500,
+      8,
+      20
+    ],
+    [
+      888,
+      504,
+      8,
+      8
+    ],
+    [
+      904,
+      504,
+      8,
+      8
+    ],
+    [
+      892,
+      512,
+      4,
+      8
+    ],
+    [
+      904,
+      512,
+      4,
+      8
+    ],
+    [
+      792,
+      552,
+      12,
+      20
+    ],
+    [
+      76,
+      556,
+      8,
+      20
+    ],
+    [
+      788,
+      556,
+      4,
+      12
+    ],
+    [
+      804,
+      556,
+      8,
+      12
+    ],
+    [
+      68,
+      560,
+      8,
+      8
+    ],
+    [
+      84,
+      560,
+      8,
+      8
+    ],
+    [
+      784,
+      560,
+      4,
+      4
+    ],
+    [
+      72,
+      568,
+      4,
+      8
+    ],
+    [
+      84,
+      568,
+      4,
+      8
+    ],
+    [
+      800,
+      584,
+      12,
+      20
+    ],
+    [
+      796,
+      588,
+      4,
+      16
+    ],
+    [
+      812,
+      588,
+      4,
+      16
+    ],
+    [
+      792,
+      592,
+      4,
+      4
+    ],
+    [
+      816,
+      592,
+      4,
+      4
+    ],
+    [
+      804,
+      604,
+      4,
+      4
+    ],
+    [
+      8,
+      696,
+      1008,
+      8
+    ]
+  ],
+  "runtimeInputs": {
+    "tileSolids": [
+      {
+        "shape": "rect",
+        "x": 648,
+        "y": 204,
+        "w": 8,
+        "h": 196,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 680,
+        "y": 204,
+        "w": 8,
+        "h": 196,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 712,
+        "y": 204,
+        "w": 4,
+        "h": 196,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 624,
+        "y": 208,
+        "w": 24,
+        "h": 192,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 656,
+        "y": 208,
+        "w": 24,
+        "h": 192,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 688,
+        "y": 208,
+        "w": 24,
+        "h": 192,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 716,
+        "y": 208,
+        "w": 4,
+        "h": 4,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 716,
+        "y": 216,
+        "w": 4,
+        "h": 188,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 620,
+        "y": 232,
+        "w": 4,
+        "h": 172,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 584,
+        "y": 236,
+        "w": 8,
+        "h": 164,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 616,
+        "y": 236,
+        "w": 4,
+        "h": 164,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 720,
+        "y": 236,
+        "w": 8,
+        "h": 164,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 744,
+        "y": 236,
+        "w": 8,
+        "h": 164,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 776,
+        "y": 236,
+        "w": 4,
+        "h": 164,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 560,
+        "y": 240,
+        "w": 24,
+        "h": 152,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 592,
+        "y": 240,
+        "w": 24,
+        "h": 160,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 728,
+        "y": 240,
+        "w": 16,
+        "h": 160,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 752,
+        "y": 240,
+        "w": 24,
+        "h": 160,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 780,
+        "y": 240,
+        "w": 4,
+        "h": 4,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 780,
+        "y": 248,
+        "w": 4,
+        "h": 156,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 556,
+        "y": 264,
+        "w": 4,
+        "h": 108,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 552,
+        "y": 268,
+        "w": 4,
+        "h": 104,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 784,
+        "y": 268,
+        "w": 8,
+        "h": 132,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 808,
+        "y": 268,
+        "w": 4,
+        "h": 132,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 528,
+        "y": 272,
+        "w": 24,
+        "h": 88,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 792,
+        "y": 272,
+        "w": 16,
+        "h": 128,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 812,
+        "y": 272,
+        "w": 4,
+        "h": 4,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 812,
+        "y": 280,
+        "w": 4,
+        "h": 120,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 524,
+        "y": 296,
+        "w": 4,
+        "h": 44,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 520,
+        "y": 300,
+        "w": 4,
+        "h": 40,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 496,
+        "y": 304,
+        "w": 24,
+        "h": 24,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 500,
+        "y": 328,
+        "w": 20,
+        "h": 8,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 532,
+        "y": 360,
+        "w": 20,
+        "h": 8,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 564,
+        "y": 392,
+        "w": 20,
+        "h": 8,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 588,
+        "y": 400,
+        "w": 8,
+        "h": 4,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 624,
+        "y": 400,
+        "w": 4,
+        "h": 4,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 652,
+        "y": 400,
+        "w": 8,
+        "h": 4,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 684,
+        "y": 400,
+        "w": 8,
+        "h": 4,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 720,
+        "y": 400,
+        "w": 4,
+        "h": 4,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 748,
+        "y": 400,
+        "w": 8,
+        "h": 4,
+        "source": "tiles:ground"
+      },
+      {
+        "shape": "rect",
+        "x": 784,
+        "y": 400,
+        "w": 4,
+        "h": 4,
+        "source": "tiles:ground"
+      }
+    ],
+    "materialGrid": null
+  }
+}

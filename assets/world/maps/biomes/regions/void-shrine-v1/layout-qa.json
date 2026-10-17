@@ -1,0 +1,197 @@
+{
+  "status": "pass",
+  "method": "layout_build: vertex-grid painting and hygiene, corner-Wang tile lookup, seeded scatter; collision.rects re-rasterised on the 4 px raster of the blocking set; reachability with the vendored forge_nav (D4) on the bundle's full blocking set (D2: collision.solids and rects, object footprints, the placed tiles' collision), read back as every consumer reads it: footprint validity (r=7, ySquash=0.9) at 4 px grid nodes, 4-neighbour moves with segmentClear and the thin-gap rule, BFS from the first spawn, N14 targets",
+  "notProven": [
+    "How the map looks: open preview.png and debug.png (magenta = walkable but unreachable, dark = too tight for the actor).",
+    "collision.rects are the 4 px cells whose centre the exact blockers cover; an engine that collides with the rects alone gets that cell approximation of prop footprints (the proof covers the rects together with the exact shapes).",
+    "Reachability is proven for one actor size; larger actors, jumping, doors that open and moving objects are not simulated.",
+    "Tile seams: layout_build trusts the tileset manifest's seam proof."
+  ],
+  "checks": [
+    {
+      "id": "tiles_drawable",
+      "status": "pass",
+      "value": 0,
+      "threshold": 0
+    },
+    {
+      "id": "tile_collision",
+      "status": "pass",
+      "value": {
+        "corruption-stone-wang16": {
+          "source": "manifest",
+          "conflicts": []
+        }
+      },
+      "threshold": []
+    },
+    {
+      "id": "rect_union_equals_blocked",
+      "status": "pass",
+      "value": 0,
+      "threshold": 0
+    },
+    {
+      "id": "rects_disjoint",
+      "status": "pass",
+      "value": 0,
+      "threshold": 0
+    },
+    {
+      "id": "spawns_reachable",
+      "status": "pass",
+      "value": [],
+      "threshold": []
+    },
+    {
+      "id": "exits_reachable",
+      "status": "pass",
+      "value": [],
+      "threshold": []
+    },
+    {
+      "id": "arrivals_outside_triggers",
+      "status": "pass",
+      "value": [],
+      "threshold": []
+    },
+    {
+      "id": "interactions_reachable",
+      "status": "pass",
+      "value": [],
+      "threshold": []
+    },
+    {
+      "id": "enclosed_pockets",
+      "status": "pass",
+      "value": 0,
+      "threshold": 0
+    },
+    {
+      "id": "prop_variety",
+      "status": "pass",
+      "value": 0.0,
+      "threshold": 0.35
+    },
+    {
+      "id": "scatter_filled",
+      "status": "pass",
+      "value": [],
+      "threshold": []
+    },
+    {
+      "id": "hygiene_converged",
+      "status": "pass",
+      "value": 1,
+      "threshold": 10
+    }
+  ],
+  "inputs": [
+    {
+      "path": "../specs/void-shrine.layout.json",
+      "sha256": "c61bb179f5611ee5c06d57626455a7e00c8e9c746b30972dd1ac99eb817c8fd4",
+      "bytes": 28391
+    },
+    {
+      "path": "../../../../../tilesets/generated-core-v1/corruption-stone-wang16.tileset.json",
+      "sha256": "679d208813059831c87b9bc8eff47e935ff3ce22ebfb8aed4a56808a60546701",
+      "bytes": 48968
+    },
+    {
+      "path": "../../../../../tilesets/generated-core-v1/corruption-stone-wang16.png",
+      "sha256": "edf04c8946c9e44adff811f35ac0562488cce53a4611e6b924bc2a3802f0bc7b",
+      "bytes": 4044
+    },
+    {
+      "path": "../../../../../tilesets/generated-core-v1/autotile-qa.json",
+      "sha256": "37279e4339a0ef7246f41aad36ca9662ba645574a0b35a260b910131b8c2f1ac",
+      "bytes": 117079
+    }
+  ],
+  "outputs": [
+    {
+      "path": "map-bundle.json",
+      "sha256": "749333802f295c07bf70cbb6581cb7b5917b385ba7d1071e519698ce947b4d3e",
+      "bytes": 36079
+    },
+    {
+      "path": "terrain-vertices.json",
+      "sha256": "09244788d6438927153f4b16f9a8224d3f11282a42859c277d2e2166b8c542c7",
+      "bytes": 7308
+    },
+    {
+      "path": "tilesets/corruption-stone-wang16/corruption-stone-wang16.png",
+      "sha256": "edf04c8946c9e44adff811f35ac0562488cce53a4611e6b924bc2a3802f0bc7b",
+      "bytes": 4044
+    },
+    {
+      "path": "tilesets/corruption-stone-wang16/corruption-stone-wang16.tileset.json",
+      "sha256": "a93a9eced8c917a13ff1ece14b58a04fa52c41aa05fbf265f883937020ec79de",
+      "bytes": 48819
+    },
+    {
+      "path": "props/pine.png",
+      "sha256": "f6d9de3c7e18415fa4233e58b4cc65847573ea601c3a2cd3738f46d9b4bf5fc3",
+      "bytes": 341
+    },
+    {
+      "path": "props/blossom_tree.png",
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "bytes": 407
+    },
+    {
+      "path": "props/bamboo.png",
+      "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
+      "bytes": 509
+    },
+    {
+      "path": "props/shrub.png",
+      "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
+      "bytes": 198
+    },
+    {
+      "path": "props/rock.png",
+      "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
+      "bytes": 188
+    },
+    {
+      "path": "props/lantern.png",
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "bytes": 230
+    },
+    {
+      "path": "props/signboard.png",
+      "sha256": "db4e50fb76441a57ff24f22c3cc852749cb0faf64c0ed744a068ece0b1bbea41",
+      "bytes": 223
+    },
+    {
+      "path": "props/sect_gate.png",
+      "sha256": "1aeedb2ef856eec6fe1e5f8310ce4e1e368e05f60b6182f91cba3f86974c6a85",
+      "bytes": 479
+    },
+    {
+      "path": "props/pagoda.png",
+      "sha256": "c4805330da4a46ae8195e0e50329bf47980748df8f7552fd576a7d5e04a1cb1d",
+      "bytes": 514
+    },
+    {
+      "path": "props/bridge.png",
+      "sha256": "27e76b7d6bd364498b855920f61381c3f2f699394612fe509cb397c0c0ba864d",
+      "bytes": 300
+    },
+    {
+      "path": "preview.png",
+      "sha256": "c7ab3c0236aaad0142816d7fe4bdab66088dfbddcc063a9e74a6b66d285fa353",
+      "bytes": 19243
+    },
+    {
+      "path": "debug.png",
+      "sha256": "ffc4acb32f3552d6b5ed3042a1fca748a4e74903d8b43f331c7e149c86f32b28",
+      "bytes": 52319
+    }
+  ],
+  "tool": {
+    "name": "layout_build",
+    "version": "0.4.0"
+  }
+}

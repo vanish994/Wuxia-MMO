@@ -1,0 +1,2271 @@
+{
+  "schema": "generate2dmap.map_bundle.v2",
+  "id": "void-shrine",
+  "tile_size": 32,
+  "world": {
+    "width": 1024,
+    "height": 704,
+    "unit": "px"
+  },
+  "terrain": {
+    "vertex_grid": "terrain-vertices.json",
+    "materials": [
+      "natural_stone",
+      "corruption"
+    ],
+    "sha256": "09244788d6438927153f4b16f9a8224d3f11282a42859c277d2e2166b8c542c7"
+  },
+  "tilesets": [
+    {
+      "id": "corruption-stone-wang16",
+      "manifest": "tilesets/corruption-stone-wang16/corruption-stone-wang16.tileset.json",
+      "sha256": "a93a9eced8c917a13ff1ece14b58a04fa52c41aa05fbf265f883937020ec79de"
+    }
+  ],
+  "layers": [
+    {
+      "name": "ground",
+      "kind": "tiles",
+      "tileset": "corruption-stone-wang16",
+      "data": [
+        [
+          0,
+          32,
+          48,
+          0,
+          32,
+          16,
+          48,
+          0,
+          32,
+          16,
+          32,
+          48,
+          0,
+          16,
+          0,
+          48,
+          0,
+          32,
+          48,
+          0,
+          16,
+          32,
+          16,
+          32,
+          48,
+          0,
+          32,
+          48,
+          0,
+          16,
+          48,
+          32
+        ],
+        [
+          16,
+          0,
+          16,
+          48,
+          0,
+          32,
+          0,
+          16,
+          48,
+          32,
+          48,
+          0,
+          48,
+          0,
+          32,
+          16,
+          32,
+          48,
+          0,
+          48,
+          0,
+          16,
+          0,
+          48,
+          0,
+          16,
+          48,
+          32,
+          48,
+          0,
+          16,
+          48
+        ],
+        [
+          0,
+          32,
+          48,
+          0,
+          16,
+          48,
+          16,
+          32,
+          0,
+          16,
+          32,
+          48,
+          32,
+          16,
+          48,
+          32,
+          0,
+          16,
+          32,
+          0,
+          48,
+          0,
+          48,
+          16,
+          32,
+          48,
+          32,
+          48,
+          0,
+          16,
+          32,
+          0
+        ],
+        [
+          48,
+          16,
+          32,
+          16,
+          32,
+          0,
+          32,
+          48,
+          16,
+          32,
+          16,
+          32,
+          48,
+          0,
+          16,
+          48,
+          16,
+          48,
+          0,
+          16,
+          32,
+          16,
+          32,
+          48,
+          16,
+          0,
+          48,
+          16,
+          32,
+          48,
+          0,
+          16
+        ],
+        [
+          32,
+          48,
+          0,
+          32,
+          48,
+          16,
+          48,
+          16,
+          32,
+          0,
+          32,
+          0,
+          32,
+          48,
+          32,
+          0,
+          32,
+          16,
+          32,
+          48,
+          0,
+          32,
+          48,
+          0,
+          32,
+          48,
+          32,
+          48,
+          0,
+          16,
+          32,
+          0
+        ],
+        [
+          48,
+          0,
+          16,
+          0,
+          16,
+          0,
+          16,
+          48,
+          0,
+          48,
+          16,
+          32,
+          48,
+          0,
+          16,
+          32,
+          16,
+          48,
+          0,
+          16,
+          32,
+          48,
+          16,
+          32,
+          48,
+          32,
+          0,
+          16,
+          32,
+          48,
+          0,
+          16
+        ],
+        [
+          32,
+          16,
+          0,
+          16,
+          32,
+          48,
+          0,
+          16,
+          32,
+          16,
+          32,
+          0,
+          16,
+          32,
+          0,
+          48,
+          0,
+          32,
+          17,
+          35,
+          19,
+          35,
+          34,
+          16,
+          32,
+          48,
+          16,
+          32,
+          16,
+          32,
+          16,
+          32
+        ],
+        [
+          16,
+          0,
+          32,
+          48,
+          0,
+          16,
+          48,
+          0,
+          16,
+          32,
+          48,
+          16,
+          32,
+          48,
+          32,
+          0,
+          16,
+          33,
+          7,
+          47,
+          15,
+          47,
+          11,
+          34,
+          48,
+          0,
+          48,
+          0,
+          32,
+          0,
+          32,
+          0
+        ],
+        [
+          32,
+          48,
+          16,
+          32,
+          16,
+          32,
+          0,
+          48,
+          0,
+          48,
+          32,
+          48,
+          0,
+          16,
+          48,
+          16,
+          49,
+          55,
+          47,
+          63,
+          47,
+          31,
+          15,
+          27,
+          19,
+          2,
+          0,
+          16,
+          0,
+          32,
+          48,
+          16
+        ],
+        [
+          48,
+          0,
+          48,
+          0,
+          32,
+          0,
+          48,
+          0,
+          32,
+          16,
+          48,
+          32,
+          48,
+          0,
+          16,
+          0,
+          53,
+          15,
+          63,
+          47,
+          63,
+          47,
+          31,
+          47,
+          63,
+          58,
+          16,
+          0,
+          16,
+          0,
+          16,
+          48
+        ],
+        [
+          16,
+          32,
+          0,
+          48,
+          0,
+          16,
+          0,
+          16,
+          0,
+          32,
+          0,
+          16,
+          0,
+          48,
+          0,
+          16,
+          21,
+          31,
+          15,
+          31,
+          15,
+          31,
+          63,
+          15,
+          31,
+          42,
+          32,
+          16,
+          32,
+          48,
+          0,
+          16
+        ],
+        [
+          32,
+          48,
+          16,
+          0,
+          48,
+          0,
+          48,
+          0,
+          32,
+          16,
+          48,
+          0,
+          16,
+          32,
+          16,
+          0,
+          36,
+          61,
+          31,
+          15,
+          63,
+          47,
+          31,
+          63,
+          15,
+          26,
+          48,
+          0,
+          48,
+          0,
+          16,
+          48
+        ],
+        [
+          48,
+          16,
+          32,
+          16,
+          0,
+          48,
+          32,
+          48,
+          0,
+          32,
+          0,
+          16,
+          0,
+          16,
+          32,
+          16,
+          32,
+          20,
+          28,
+          13,
+          15,
+          63,
+          15,
+          30,
+          60,
+          56,
+          0,
+          32,
+          0,
+          16,
+          0,
+          16
+        ],
+        [
+          0,
+          32,
+          0,
+          48,
+          16,
+          0,
+          16,
+          0,
+          16,
+          48,
+          16,
+          48,
+          16,
+          0,
+          48,
+          0,
+          16,
+          48,
+          32,
+          4,
+          12,
+          28,
+          60,
+          40,
+          16,
+          32,
+          48,
+          0,
+          16,
+          48,
+          16,
+          48
+        ],
+        [
+          48,
+          0,
+          16,
+          0,
+          48,
+          16,
+          48,
+          16,
+          32,
+          0,
+          32,
+          0,
+          32,
+          48,
+          0,
+          16,
+          32,
+          0,
+          16,
+          32,
+          16,
+          32,
+          48,
+          16,
+          32,
+          48,
+          16,
+          48,
+          0,
+          32,
+          48,
+          32
+        ],
+        [
+          16,
+          48,
+          0,
+          16,
+          32,
+          48,
+          16,
+          32,
+          0,
+          48,
+          0,
+          16,
+          48,
+          0,
+          48,
+          32,
+          48,
+          16,
+          0,
+          16,
+          48,
+          0,
+          32,
+          48,
+          16,
+          32,
+          0,
+          16,
+          32,
+          48,
+          16,
+          48
+        ],
+        [
+          48,
+          0,
+          32,
+          0,
+          48,
+          0,
+          32,
+          48,
+          32,
+          16,
+          32,
+          48,
+          0,
+          16,
+          32,
+          0,
+          16,
+          0,
+          32,
+          48,
+          0,
+          32,
+          16,
+          32,
+          48,
+          0,
+          48,
+          32,
+          48,
+          16,
+          32,
+          0
+        ],
+        [
+          32,
+          16,
+          0,
+          48,
+          32,
+          48,
+          0,
+          16,
+          48,
+          0,
+          16,
+          0,
+          48,
+          0,
+          16,
+          32,
+          0,
+          16,
+          0,
+          16,
+          32,
+          48,
+          32,
+          0,
+          16,
+          48,
+          0,
+          16,
+          32,
+          48,
+          0,
+          16
+        ],
+        [
+          16,
+          32,
+          16,
+          0,
+          16,
+          0,
+          32,
+          48,
+          16,
+          32,
+          48,
+          32,
+          0,
+          16,
+          32,
+          16,
+          32,
+          48,
+          16,
+          32,
+          16,
+          32,
+          0,
+          32,
+          48,
+          16,
+          48,
+          32,
+          48,
+          16,
+          32,
+          48
+        ],
+        [
+          48,
+          0,
+          32,
+          48,
+          32,
+          48,
+          0,
+          32,
+          0,
+          16,
+          0,
+          16,
+          32,
+          48,
+          16,
+          48,
+          0,
+          16,
+          0,
+          48,
+          32,
+          48,
+          16,
+          48,
+          16,
+          0,
+          16,
+          48,
+          16,
+          32,
+          48,
+          0
+        ],
+        [
+          16,
+          32,
+          48,
+          16,
+          48,
+          0,
+          32,
+          48,
+          16,
+          32,
+          16,
+          32,
+          0,
+          16,
+          32,
+          16,
+          48,
+          0,
+          16,
+          32,
+          16,
+          32,
+          48,
+          32,
+          0,
+          32,
+          48,
+          16,
+          32,
+          48,
+          0,
+          48
+        ],
+        [
+          48,
+          0,
+          16,
+          48,
+          0,
+          16,
+          48,
+          16,
+          32,
+          48,
+          32,
+          16,
+          32,
+          48,
+          0,
+          32,
+          0,
+          16,
+          48,
+          0,
+          32,
+          16,
+          32,
+          48,
+          32,
+          0,
+          32,
+          48,
+          0,
+          16,
+          32,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "props",
+      "kind": "objects"
+    }
+  ],
+  "props": {
+    "pine": {
+      "label": "pine",
+      "display_name": "pine",
+      "image": "props/pine.png",
+      "sha256": "f6d9de3c7e18415fa4233e58b4cc65847573ea601c3a2cd3738f46d9b4bf5fc3",
+      "anchor_px": [
+        12,
+        33
+      ],
+      "footprint": {
+        "shape": "ellipse",
+        "width": 7,
+        "depth": 4,
+        "offset": [
+          0,
+          -2
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "solid": true,
+      "occlusion_class": "tall",
+      "status": "accepted",
+      "size": [
+        24,
+        34
+      ],
+      "origin": "pixelspec"
+    },
+    "blossom_tree": {
+      "label": "blossom_tree",
+      "display_name": "blossom_tree",
+      "image": "props/blossom_tree.png",
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "anchor_px": [
+        12,
+        33
+      ],
+      "footprint": {
+        "shape": "ellipse",
+        "width": 7,
+        "depth": 4,
+        "offset": [
+          0,
+          -2
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "solid": true,
+      "occlusion_class": "tall",
+      "status": "accepted",
+      "size": [
+        24,
+        34
+      ],
+      "origin": "pixelspec"
+    },
+    "bamboo": {
+      "label": "bamboo",
+      "display_name": "bamboo",
+      "image": "props/bamboo.png",
+      "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
+      "anchor_px": [
+        10,
+        47
+      ],
+      "footprint": {
+        "shape": "ellipse",
+        "width": 8,
+        "depth": 4,
+        "offset": [
+          0,
+          -2
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "solid": true,
+      "occlusion_class": "tall",
+      "status": "accepted",
+      "size": [
+        20,
+        50
+      ],
+      "origin": "pixelspec"
+    },
+    "shrub": {
+      "label": "shrub",
+      "display_name": "shrub",
+      "image": "props/shrub.png",
+      "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
+      "anchor_px": [
+        10,
+        12
+      ],
+      "footprint": {
+        "shape": "ellipse",
+        "width": 14,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "solid": true,
+      "occlusion_class": "low",
+      "status": "accepted",
+      "size": [
+        20,
+        15
+      ],
+      "origin": "pixelspec"
+    },
+    "rock": {
+      "label": "rock",
+      "display_name": "rock",
+      "image": "props/rock.png",
+      "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
+      "anchor_px": [
+        9,
+        11
+      ],
+      "footprint": {
+        "shape": "ellipse",
+        "width": 13,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "solid": true,
+      "occlusion_class": "low",
+      "status": "accepted",
+      "size": [
+        18,
+        14
+      ],
+      "origin": "pixelspec"
+    },
+    "lantern": {
+      "label": "lantern",
+      "display_name": "lantern",
+      "image": "props/lantern.png",
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "anchor_px": [
+        8,
+        29
+      ],
+      "footprint": {
+        "shape": "ellipse",
+        "width": 5,
+        "depth": 4,
+        "offset": [
+          0,
+          -2
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "solid": true,
+      "occlusion_class": "low",
+      "status": "accepted",
+      "size": [
+        16,
+        32
+      ],
+      "origin": "pixelspec"
+    },
+    "signboard": {
+      "label": "signboard",
+      "display_name": "signboard",
+      "image": "props/signboard.png",
+      "sha256": "db4e50fb76441a57ff24f22c3cc852749cb0faf64c0ed744a068ece0b1bbea41",
+      "anchor_px": [
+        12,
+        25
+      ],
+      "footprint": {
+        "shape": "rect",
+        "width": 6,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "solid": true,
+      "occlusion_class": "low",
+      "status": "accepted",
+      "size": [
+        24,
+        28
+      ],
+      "origin": "pixelspec"
+    },
+    "sect_gate": {
+      "label": "sect_gate",
+      "display_name": "sect_gate",
+      "image": "props/sect_gate.png",
+      "sha256": "1aeedb2ef856eec6fe1e5f8310ce4e1e368e05f60b6182f91cba3f86974c6a85",
+      "anchor_px": [
+        28,
+        45
+      ],
+      "footprint": {
+        "shape": "rect",
+        "width": 14,
+        "depth": 8,
+        "offset": [
+          0,
+          -4
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "solid": true,
+      "occlusion_class": "tall",
+      "status": "accepted",
+      "size": [
+        56,
+        46
+      ],
+      "origin": "pixelspec"
+    },
+    "pagoda": {
+      "label": "pagoda",
+      "display_name": "pagoda",
+      "image": "props/pagoda.png",
+      "sha256": "c4805330da4a46ae8195e0e50329bf47980748df8f7552fd576a7d5e04a1cb1d",
+      "anchor_px": [
+        24,
+        61
+      ],
+      "footprint": {
+        "shape": "rect",
+        "width": 18,
+        "depth": 12,
+        "offset": [
+          0,
+          -6
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "solid": true,
+      "occlusion_class": "tall",
+      "status": "accepted",
+      "size": [
+        48,
+        62
+      ],
+      "origin": "pixelspec"
+    },
+    "bridge": {
+      "label": "bridge",
+      "display_name": "bridge",
+      "image": "props/bridge.png",
+      "sha256": "27e76b7d6bd364498b855920f61381c3f2f699394612fe509cb397c0c0ba864d",
+      "anchor_px": [
+        32,
+        25
+      ],
+      "footprint": {
+        "shape": "none"
+      },
+      "solid": false,
+      "occlusion_class": "low",
+      "status": "accepted",
+      "size": [
+        64,
+        26
+      ],
+      "origin": "pixelspec"
+    }
+  },
+  "objects": [
+    {
+      "id": "void-shrine-landmark",
+      "prop": "pagoda",
+      "kind": "pagoda",
+      "x": 672,
+      "y": 256,
+      "anchor_px": [
+        24,
+        61
+      ],
+      "solid": true,
+      "sortY": 256,
+      "occlusion": "tall",
+      "scale": 1,
+      "flip_x": false,
+      "footprint": {
+        "shape": "rect",
+        "width": 18,
+        "depth": 12,
+        "offset": [
+          0,
+          -6
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      }
+    },
+    {
+      "id": "regional-dressing-1",
+      "prop": "rock",
+      "kind": "rock",
+      "x": 881,
+      "y": 533,
+      "anchor_px": [
+        9,
+        11
+      ],
+      "solid": true,
+      "sortY": 533,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": true,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 13,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-2",
+      "prop": "rock",
+      "kind": "rock",
+      "x": 879,
+      "y": 245,
+      "anchor_px": [
+        9,
+        11
+      ],
+      "solid": true,
+      "sortY": 245,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": false,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 13,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-3",
+      "prop": "rock",
+      "kind": "rock",
+      "x": 939,
+      "y": 548,
+      "anchor_px": [
+        9,
+        11
+      ],
+      "solid": true,
+      "sortY": 548,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": false,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 13,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-4",
+      "prop": "rock",
+      "kind": "rock",
+      "x": 432,
+      "y": 278,
+      "anchor_px": [
+        9,
+        11
+      ],
+      "solid": true,
+      "sortY": 278,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": true,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 13,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-5",
+      "prop": "rock",
+      "kind": "rock",
+      "x": 83,
+      "y": 626,
+      "anchor_px": [
+        9,
+        11
+      ],
+      "solid": true,
+      "sortY": 626,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": false,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 13,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-6",
+      "prop": "rock",
+      "kind": "rock",
+      "x": 535,
+      "y": 588,
+      "anchor_px": [
+        9,
+        11
+      ],
+      "solid": true,
+      "sortY": 588,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": false,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 13,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-7",
+      "prop": "rock",
+      "kind": "rock",
+      "x": 457,
+      "y": 185,
+      "anchor_px": [
+        9,
+        11
+      ],
+      "solid": true,
+      "sortY": 185,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": true,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 13,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-8",
+      "prop": "lantern",
+      "kind": "lantern",
+      "x": 431,
+      "y": 198,
+      "anchor_px": [
+        8,
+        29
+      ],
+      "solid": true,
+      "sortY": 198,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": true,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 5,
+        "depth": 4,
+        "offset": [
+          0,
+          -2
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-9",
+      "prop": "lantern",
+      "kind": "lantern",
+      "x": 525,
+      "y": 550,
+      "anchor_px": [
+        8,
+        29
+      ],
+      "solid": true,
+      "sortY": 550,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": true,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 5,
+        "depth": 4,
+        "offset": [
+          0,
+          -2
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-10",
+      "prop": "lantern",
+      "kind": "lantern",
+      "x": 532,
+      "y": 165,
+      "anchor_px": [
+        8,
+        29
+      ],
+      "solid": true,
+      "sortY": 165,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": true,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 5,
+        "depth": 4,
+        "offset": [
+          0,
+          -2
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-11",
+      "prop": "rock",
+      "kind": "rock",
+      "x": 97,
+      "y": 508,
+      "anchor_px": [
+        9,
+        11
+      ],
+      "solid": true,
+      "sortY": 508,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": true,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 13,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-12",
+      "prop": "lantern",
+      "kind": "lantern",
+      "x": 966,
+      "y": 547,
+      "anchor_px": [
+        8,
+        29
+      ],
+      "solid": true,
+      "sortY": 547,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": true,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 5,
+        "depth": 4,
+        "offset": [
+          0,
+          -2
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-13",
+      "prop": "rock",
+      "kind": "rock",
+      "x": 48,
+      "y": 564,
+      "anchor_px": [
+        9,
+        11
+      ],
+      "solid": true,
+      "sortY": 564,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": true,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 13,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-14",
+      "prop": "rock",
+      "kind": "rock",
+      "x": 272,
+      "y": 586,
+      "anchor_px": [
+        9,
+        11
+      ],
+      "solid": true,
+      "sortY": 586,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": false,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 13,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-15",
+      "prop": "rock",
+      "kind": "rock",
+      "x": 351,
+      "y": 89,
+      "anchor_px": [
+        9,
+        11
+      ],
+      "solid": true,
+      "sortY": 89,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": true,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 13,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    },
+    {
+      "id": "regional-dressing-16",
+      "prop": "rock",
+      "kind": "rock",
+      "x": 845,
+      "y": 454,
+      "anchor_px": [
+        9,
+        11
+      ],
+      "solid": true,
+      "sortY": 454,
+      "occlusion": "low",
+      "scale": 1,
+      "flip_x": true,
+      "footprint": {
+        "shape": "ellipse",
+        "width": 13,
+        "depth": 5,
+        "offset": [
+          0,
+          -2.5
+        ],
+        "rotate": 0,
+        "basis": "prop_px"
+      },
+      "group": "regional-dressing"
+    }
+  ],
+  "collision": {
+    "actorRadius": 7,
+    "ySquash": 0.9,
+    "solids": [],
+    "rects": [
+      [
+        344,
+        84,
+        12,
+        4
+      ],
+      [
+        528,
+        160,
+        8,
+        4
+      ],
+      [
+        452,
+        180,
+        12,
+        4
+      ],
+      [
+        596,
+        208,
+        24,
+        188
+      ],
+      [
+        624,
+        208,
+        28,
+        216
+      ],
+      [
+        656,
+        208,
+        28,
+        220
+      ],
+      [
+        688,
+        208,
+        24,
+        220
+      ],
+      [
+        592,
+        212,
+        4,
+        188
+      ],
+      [
+        620,
+        212,
+        4,
+        188
+      ],
+      [
+        652,
+        212,
+        4,
+        220
+      ],
+      [
+        684,
+        212,
+        4,
+        220
+      ],
+      [
+        712,
+        212,
+        4,
+        220
+      ],
+      [
+        716,
+        216,
+        4,
+        216
+      ],
+      [
+        588,
+        220,
+        4,
+        4
+      ],
+      [
+        720,
+        220,
+        4,
+        4
+      ],
+      [
+        588,
+        236,
+        4,
+        164
+      ],
+      [
+        720,
+        236,
+        4,
+        196
+      ],
+      [
+        564,
+        240,
+        24,
+        156
+      ],
+      [
+        724,
+        240,
+        20,
+        188
+      ],
+      [
+        872,
+        240,
+        12,
+        4
+      ],
+      [
+        560,
+        244,
+        4,
+        148
+      ],
+      [
+        744,
+        244,
+        4,
+        184
+      ],
+      [
+        748,
+        248,
+        4,
+        176
+      ],
+      [
+        556,
+        252,
+        4,
+        4
+      ],
+      [
+        752,
+        252,
+        4,
+        4
+      ],
+      [
+        556,
+        268,
+        4,
+        100
+      ],
+      [
+        752,
+        268,
+        4,
+        136
+      ],
+      [
+        428,
+        272,
+        8,
+        4
+      ],
+      [
+        532,
+        272,
+        24,
+        92
+      ],
+      [
+        756,
+        272,
+        24,
+        124
+      ],
+      [
+        784,
+        272,
+        24,
+        124
+      ],
+      [
+        528,
+        276,
+        4,
+        84
+      ],
+      [
+        780,
+        276,
+        4,
+        124
+      ],
+      [
+        808,
+        276,
+        4,
+        120
+      ],
+      [
+        812,
+        280,
+        4,
+        24
+      ],
+      [
+        524,
+        284,
+        4,
+        4
+      ],
+      [
+        816,
+        284,
+        4,
+        4
+      ],
+      [
+        812,
+        312,
+        4,
+        24
+      ],
+      [
+        524,
+        316,
+        4,
+        4
+      ],
+      [
+        816,
+        316,
+        4,
+        4
+      ],
+      [
+        812,
+        344,
+        4,
+        24
+      ],
+      [
+        524,
+        348,
+        4,
+        4
+      ],
+      [
+        816,
+        348,
+        4,
+        4
+      ],
+      [
+        532,
+        364,
+        4,
+        4
+      ],
+      [
+        540,
+        364,
+        16,
+        4
+      ],
+      [
+        548,
+        368,
+        4,
+        4
+      ],
+      [
+        812,
+        376,
+        4,
+        16
+      ],
+      [
+        556,
+        380,
+        4,
+        4
+      ],
+      [
+        816,
+        380,
+        4,
+        4
+      ],
+      [
+        564,
+        396,
+        4,
+        4
+      ],
+      [
+        572,
+        396,
+        16,
+        4
+      ],
+      [
+        596,
+        396,
+        4,
+        8
+      ],
+      [
+        604,
+        396,
+        16,
+        4
+      ],
+      [
+        756,
+        396,
+        4,
+        8
+      ],
+      [
+        764,
+        396,
+        16,
+        4
+      ],
+      [
+        784,
+        396,
+        8,
+        4
+      ],
+      [
+        796,
+        396,
+        12,
+        4
+      ],
+      [
+        580,
+        400,
+        4,
+        4
+      ],
+      [
+        612,
+        400,
+        4,
+        4
+      ],
+      [
+        772,
+        400,
+        4,
+        4
+      ],
+      [
+        788,
+        400,
+        4,
+        4
+      ],
+      [
+        620,
+        412,
+        4,
+        4
+      ],
+      [
+        752,
+        412,
+        4,
+        4
+      ],
+      [
+        628,
+        424,
+        24,
+        4
+      ],
+      [
+        628,
+        428,
+        4,
+        4
+      ],
+      [
+        636,
+        428,
+        16,
+        4
+      ],
+      [
+        656,
+        428,
+        8,
+        4
+      ],
+      [
+        668,
+        428,
+        16,
+        4
+      ],
+      [
+        688,
+        428,
+        8,
+        4
+      ],
+      [
+        700,
+        428,
+        12,
+        4
+      ],
+      [
+        724,
+        428,
+        4,
+        8
+      ],
+      [
+        732,
+        428,
+        12,
+        4
+      ],
+      [
+        644,
+        432,
+        4,
+        4
+      ],
+      [
+        660,
+        432,
+        4,
+        4
+      ],
+      [
+        676,
+        432,
+        4,
+        4
+      ],
+      [
+        692,
+        432,
+        4,
+        4
+      ],
+      [
+        708,
+        432,
+        4,
+        4
+      ],
+      [
+        840,
+        448,
+        12,
+        4
+      ],
+      [
+        92,
+        504,
+        12,
+        4
+      ],
+      [
+        876,
+        528,
+        12,
+        4
+      ],
+      [
+        932,
+        544,
+        12,
+        4
+      ],
+      [
+        964,
+        544,
+        4,
+        4
+      ],
+      [
+        40,
+        560,
+        16,
+        4
+      ],
+      [
+        268,
+        580,
+        8,
+        4
+      ],
+      [
+        528,
+        584,
+        12,
+        4
+      ],
+      [
+        76,
+        620,
+        12,
+        4
+      ]
+    ],
+    "rectCell": 4
+  },
+  "portals": [
+    {
+      "id": "exit-north",
+      "rect": [
+        416,
+        0,
+        160,
+        16
+      ],
+      "to": "pagoda-court:from-void-shrine",
+      "activation": "intent",
+      "travelDirection": [
+        0,
+        -1
+      ],
+      "radius": 7,
+      "latch": true,
+      "requiresMovement": true,
+      "edge": "north",
+      "entranceByFrom": {
+        "pagoda-court": "from-pagoda-court"
+      }
+    },
+    {
+      "id": "exit-east",
+      "rect": [
+        1008,
+        256,
+        16,
+        192
+      ],
+      "to": "coastal-temple:from-void-shrine",
+      "activation": "intent",
+      "travelDirection": [
+        1,
+        0
+      ],
+      "radius": 7,
+      "latch": true,
+      "requiresMovement": true,
+      "edge": "east",
+      "entranceByFrom": {
+        "coastal-temple": "from-coastal-temple"
+      }
+    },
+    {
+      "id": "exit-west",
+      "rect": [
+        0,
+        256,
+        16,
+        192
+      ],
+      "to": "fire-mountain:from-void-shrine",
+      "activation": "intent",
+      "travelDirection": [
+        -1,
+        0
+      ],
+      "radius": 7,
+      "latch": true,
+      "requiresMovement": true,
+      "edge": "west",
+      "entranceByFrom": {
+        "fire-mountain": "from-fire-mountain"
+      }
+    }
+  ],
+  "spawns": [
+    {
+      "id": "arrival",
+      "x": 192,
+      "y": 352,
+      "facing": "east"
+    },
+    {
+      "id": "from-pagoda-court",
+      "x": 494,
+      "y": 30,
+      "facing": "south"
+    },
+    {
+      "id": "from-coastal-temple",
+      "x": 994,
+      "y": 350,
+      "facing": "west"
+    },
+    {
+      "id": "from-fire-mountain",
+      "x": 30,
+      "y": 350,
+      "facing": "east"
+    }
+  ],
+  "interactions": [],
+  "roads": [],
+  "camera": {
+    "bounds": [
+      0,
+      0,
+      1024,
+      704
+    ]
+  },
+  "art_source": "mixed",
+  "placeholder": false,
+  "qa": {
+    "status": "pass",
+    "report": "layout-qa.json",
+    "checks": {
+      "tiles_drawable": "pass",
+      "tile_collision": "pass",
+      "rect_union_equals_blocked": "pass",
+      "rects_disjoint": "pass",
+      "spawns_reachable": "pass",
+      "exits_reachable": "pass",
+      "arrivals_outside_triggers": "pass",
+      "interactions_reachable": "pass",
+      "enclosed_pockets": "pass",
+      "prop_variety": "pass",
+      "scatter_filled": "pass",
+      "hygiene_converged": "pass"
+    },
+    "reachability": {
+      "cell": 4,
+      "valid_cells": 39428,
+      "reachable_cells": 39413,
+      "reachable_fraction": 0.9996
+    }
+  },
+  "provenance": {
+    "tool": "layout_build",
+    "version": "0.4.0",
+    "params": {
+      "seed": 30434,
+      "rect_cell": 4,
+      "preview": true,
+      "strict_qc": true,
+      "hygiene": {
+        "demoted_vertices": 0,
+        "saddles_filled": 0,
+        "specks_removed": 0,
+        "passes": 1,
+        "converged": true
+      },
+      "tile_collision": {
+        "corruption-stone-wang16": {
+          "source": "manifest",
+          "stated": 64,
+          "derived": 0,
+          "conflicts": []
+        }
+      },
+      "scatter": [
+        {
+          "id": "regional-dressing",
+          "requested": 16,
+          "placed": 16,
+          "candidates": 297,
+          "looks": 4,
+          "same_look_neighbour_share": 0.0
+        }
+      ],
+      "navigation": {
+        "cell": 4,
+        "spawn_problems": [],
+        "unreachable_exits": [],
+        "no_arrival": [],
+        "unreachable_interactions": [],
+        "pockets": [],
+        "origin": "arrival",
+        "valid_cells": 39428,
+        "reachable_cells": 39413,
+        "reachable_fraction": 0.9996,
+        "thin_gaps": 0
+      }
+    },
+    "inputs": [
+      {
+        "path": "../specs/void-shrine.layout.json",
+        "sha256": "c61bb179f5611ee5c06d57626455a7e00c8e9c746b30972dd1ac99eb817c8fd4",
+        "bytes": 28391
+      },
+      {
+        "path": "../../../../../tilesets/generated-core-v1/corruption-stone-wang16.tileset.json",
+        "sha256": "679d208813059831c87b9bc8eff47e935ff3ce22ebfb8aed4a56808a60546701",
+        "bytes": 48968
+      },
+      {
+        "path": "../../../../../tilesets/generated-core-v1/corruption-stone-wang16.png",
+        "sha256": "edf04c8946c9e44adff811f35ac0562488cce53a4611e6b924bc2a3802f0bc7b",
+        "bytes": 4044
+      },
+      {
+        "path": "../../../../../tilesets/generated-core-v1/autotile-qa.json",
+        "sha256": "37279e4339a0ef7246f41aad36ca9662ba645574a0b35a260b910131b8c2f1ac",
+        "bytes": 117079
+      }
+    ]
+  }
+}

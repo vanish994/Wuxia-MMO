@@ -1,0 +1,482 @@
+{
+  "schema": "generate2dmap.nav_report.v1",
+  "status": "warn",
+  "method": "plan Appendix C validity (centre + 8 footprint samples against walk regions, solids, object footprints scaled once, tile collision and material classes) on a grid of cell max(1, round(r/2)) px; 4-neighbour moves open when segmentClear holds between node centres (samples every cell/2, plus the exact thin-gap centre path and one_way direction); BFS from every spawn and portal arrival to every interaction, exit, anchor slot and approach point",
+  "notProven": [
+    "that the collision data matches the painted art",
+    "positions closer than one grid cell to a blocker (the grid samples cell centres)",
+    "runtime movement code: map-runtime.mjs parity is tested during integration",
+    "links to maps not passed with --link"
+  ],
+  "checks": [
+    {
+      "id": "starts_valid",
+      "status": "pass",
+      "value": {
+        "starts": 5,
+        "blocked": []
+      },
+      "threshold": {
+        "blocked": 0
+      }
+    },
+    {
+      "id": "targets_reachable",
+      "status": "pass",
+      "value": {
+        "reachable": 7,
+        "total": 7,
+        "unreachable": []
+      },
+      "threshold": {
+        "unreachable": 0
+      }
+    },
+    {
+      "id": "portals_inside_world",
+      "status": "pass",
+      "value": {
+        "outside": []
+      },
+      "threshold": {
+        "outside": 0
+      }
+    },
+    {
+      "id": "arrivals_outside_triggers",
+      "status": "pass",
+      "value": {
+        "problems": 0
+      },
+      "threshold": {
+        "problems": 0
+      }
+    },
+    {
+      "id": "reciprocal_links",
+      "status": "skipped",
+      "value": {
+        "links": [],
+        "notChecked": [
+          "bamboo-coast",
+          "jade-mountain",
+          "river-market",
+          "training-grounds"
+        ]
+      },
+      "threshold": {
+        "errors": 0
+      }
+    },
+    {
+      "id": "thin_gaps",
+      "status": "pass",
+      "value": 0,
+      "threshold": "reported: moves the thin-gap rule closed although every footprint sample was valid"
+    },
+    {
+      "id": "unreachable_walkable_area",
+      "status": "warn",
+      "value": {
+        "pockets": 10,
+        "cells": 30
+      },
+      "threshold": "reported"
+    },
+    {
+      "id": "blocked_rects_union",
+      "status": "pass",
+      "value": {
+        "rects": 356,
+        "blockedCells": 6292
+      },
+      "threshold": "union == blocked cells"
+    },
+    {
+      "id": "footprints_scaled_once",
+      "status": "pass",
+      "value": {
+        "objectSolids": 52
+      },
+      "threshold": "object footprint x scale, never inflated by the actor radius"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "../../map-bundle.json",
+      "sha256": "c649565564dd340fadbf402828c7f1093619ca1eed0b5ed90e9ef0a7368b17e6",
+      "bytes": 81597
+    },
+    {
+      "path": "../../tilesets/grass-path-water-wang81/grass-path-water-wang81.tileset.json",
+      "sha256": "1525e3662e83f1ee8abb180634d7d6ec4d1246693db9660f2ec8ba9a6ffe1678",
+      "bytes": 188839
+    },
+    {
+      "path": "../../tilesets/grass-path-water-wang81/grass-path-water-wang81.png",
+      "sha256": "ef505070499c897e246219527bbba3d094534fe18d21db062dcdeea46ed6065f",
+      "bytes": 32480
+    },
+    {
+      "path": "../../terrain-vertices.json",
+      "sha256": "f696be67f8a2a1d3890612cd8084bcd9bf606425130a1d3ab6e8daeda951e1ec",
+      "bytes": 10103
+    },
+    {
+      "path": "../../props/grass.png",
+      "sha256": "2a7065ffd49a92c05eba761496e5089fc6e4db78b9b62b96ceb1045c2b36add4",
+      "bytes": 153
+    },
+    {
+      "path": "../../props/dirt_path.png",
+      "sha256": "b5ce47c08c5a1e45964fc32e6ef3ad6c5d381be9e6fd99e0b58841f4e64483c2",
+      "bytes": 153
+    },
+    {
+      "path": "../../props/water.png",
+      "sha256": "cba3c113c40bbb9c2759d88834c8391b2c106790b9edf776b80968755e70a013",
+      "bytes": 153
+    },
+    {
+      "path": "../../props/sect_gate.png",
+      "sha256": "1aeedb2ef856eec6fe1e5f8310ce4e1e368e05f60b6182f91cba3f86974c6a85",
+      "bytes": 479
+    },
+    {
+      "path": "../../props/bridge.png",
+      "sha256": "27e76b7d6bd364498b855920f61381c3f2f699394612fe509cb397c0c0ba864d",
+      "bytes": 300
+    },
+    {
+      "path": "../../props/pagoda.png",
+      "sha256": "c4805330da4a46ae8195e0e50329bf47980748df8f7552fd576a7d5e04a1cb1d",
+      "bytes": 514
+    },
+    {
+      "path": "../../props/hall.png",
+      "sha256": "4aef0fea09ae9043289bc7301d524494566c9c84f2e9cc2161c6873a341fe16d",
+      "bytes": 500
+    },
+    {
+      "path": "../../props/teahouse.png",
+      "sha256": "ed1534bb5510edc2c9fa21f64af5d2926c8c6ffb2d2020c4c5d7fae4b441b03d",
+      "bytes": 432
+    },
+    {
+      "path": "../../props/pine.png",
+      "sha256": "f6d9de3c7e18415fa4233e58b4cc65847573ea601c3a2cd3738f46d9b4bf5fc3",
+      "bytes": 341
+    },
+    {
+      "path": "../../props/blossom_tree.png",
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "bytes": 407
+    },
+    {
+      "path": "../../props/bamboo.png",
+      "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
+      "bytes": 509
+    },
+    {
+      "path": "../../props/lantern.png",
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "bytes": 230
+    },
+    {
+      "path": "../../props/rock.png",
+      "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
+      "bytes": 188
+    },
+    {
+      "path": "../../props/shrub.png",
+      "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
+      "bytes": 198
+    },
+    {
+      "path": "../../props/signboard.png",
+      "sha256": "db4e50fb76441a57ff24f22c3cc852749cb0faf64c0ed744a068ece0b1bbea41",
+      "bytes": 223
+    }
+  ],
+  "outputs": [
+    {
+      "path": "nav-grid.json",
+      "sha256": "9ae22ae3a31e2a79a07544b0018a3bc905a4fa6e63bd8e7e9902ac0757822545",
+      "bytes": 163035
+    },
+    {
+      "path": "nav-debug.png",
+      "sha256": "1831d84721ca9f962308ec5f2e0ee1331adfed29b09de314e991b1b94d5a0fe8",
+      "bytes": 76902
+    }
+  ],
+  "tool": {
+    "name": "map_nav.py",
+    "version": "0.4.0"
+  },
+  "map": "qinghe-valley",
+  "cell": 4,
+  "starts": [
+    {
+      "kind": "spawn",
+      "id": "arrival",
+      "point": [
+        576.0,
+        480.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        574.0,
+        478.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "spawn",
+      "id": "from-west-road-exit",
+      "point": [
+        30.0,
+        446.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        30.0,
+        446.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "spawn",
+      "id": "from-east-road-exit",
+      "point": [
+        1250.0,
+        286.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        1250.0,
+        286.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "spawn",
+      "id": "from-north-gate-exit",
+      "point": [
+        286.0,
+        30.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        286.0,
+        30.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "spawn",
+      "id": "from-south-road-exit",
+      "point": [
+        638.0,
+        770.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        638.0,
+        770.0
+      ],
+      "reason": null
+    }
+  ],
+  "targets": [
+    {
+      "kind": "interaction",
+      "id": "village-notice",
+      "point": [
+        384.0,
+        352.0
+      ],
+      "reachable": true,
+      "steps": 66,
+      "node": [
+        410.0,
+        370.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "interaction",
+      "id": "main-hall.enter",
+      "point": [
+        576.0,
+        254.0
+      ],
+      "reachable": true,
+      "steps": 49,
+      "node": [
+        570.0,
+        278.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "interaction",
+      "id": "tea-house.enter",
+      "point": [
+        896.0,
+        511.0
+      ],
+      "reachable": true,
+      "steps": 77,
+      "node": [
+        874.0,
+        510.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "exit",
+      "id": "west-road-exit",
+      "point": [
+        8.0,
+        448.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        22.0,
+        438.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "exit",
+      "id": "east-road-exit",
+      "point": [
+        1272.0,
+        288.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        1258.0,
+        278.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "exit",
+      "id": "north-gate-exit",
+      "point": [
+        288.0,
+        8.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        278.0,
+        22.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "exit",
+      "id": "south-road-exit",
+      "point": [
+        640.0,
+        792.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        630.0,
+        778.0
+      ],
+      "reason": null
+    }
+  ],
+  "links": [],
+  "thinGaps": [],
+  "unreachablePockets": [
+    {
+      "cells": 6,
+      "at": [
+        74.0,
+        34.0
+      ]
+    },
+    {
+      "cells": 6,
+      "at": [
+        70.0,
+        114.0
+      ]
+    },
+    {
+      "cells": 6,
+      "at": [
+        134.0,
+        122.0
+      ]
+    },
+    {
+      "cells": 6,
+      "at": [
+        38.0,
+        202.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        202.0,
+        134.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        214.0,
+        282.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        830.0,
+        290.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        270.0,
+        294.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        834.0,
+        294.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        266.0,
+        298.0
+      ]
+    }
+  ],
+  "bundleNav": {
+    "cell": 4,
+    "grid": "nav-grid.json"
+  },
+  "problems": []
+}
