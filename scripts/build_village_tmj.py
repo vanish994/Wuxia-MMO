@@ -12,6 +12,7 @@ Run:  python3 scripts/build_village_tmj.py   (writes map.embedded.tmj and a prev
 from __future__ import annotations
 
 import copy
+import math
 import json
 import random
 from pathlib import Path
@@ -31,6 +32,29 @@ WATER, GRASS, DIRT = 0, 1, 2
 CHAR_TO_MAT = {"w": WATER, "g": GRASS, "d": DIRT}
 
 # ---------------------------------------------------------------- layout ----
+
+
+# Hunting spawns in tile units (px / 32), matching HUNT_SPAWNS in combat-config.mjs.
+HUNT_SPAWN_TILES = [
+    ("west-field", 5, 12), ("west-south", 10, 26), ("south-field", 21, 30),
+    ("south-east", 34, 31), ("east-field", 46, 25), ("north-east", 44, 13),
+]
+
+
+def carve_hunt_trails(g) -> None:
+    """Open a clearing and a two-tile dirt trail from each hunting spawn to the nearest road."""
+    roads = [(x, y) for y in range(H) for x in range(W) if g[y][x] == "d"]
+    for _name, sx, sy in HUNT_SPAWN_TILES:
+        tx, ty = min(roads, key=lambda r: abs(r[0] - sx) + abs(r[1] - sy))
+        # L-shaped trail: horizontal first, then vertical, two tiles wide.
+        for x in range(min(sx, tx), max(sx, tx) + 1):
+            for dy in (0, 1):
+                if 0 <= sy + dy < H and 0 <= x < W:
+                    g[sy + dy][x] = "d"
+        for y in range(min(sy, ty), max(sy, ty) + 1):
+            for dx in (0, 1):
+                if 0 <= tx + dx < W and 0 <= y < H:
+                    g[y][tx + dx] = "d"
 
 
 def build_layout() -> list[list[str]]:
@@ -64,6 +88,7 @@ def build_layout() -> list[list[str]]:
     # Stone path from the plaza to the tea garden.
     for i, x in enumerate(range(35, 42)):
         fill(x, 11 - i // 2, x, 12 - i // 2, "d")
+    carve_hunt_trails(g)
     return g
 
 
@@ -121,6 +146,7 @@ PROP_KINDS = [
     ("ambient_blossom", "ambient_blossom.png", 12, 33, False, 0, 0),
     ("ambient_lantern", "ambient_lantern.png", 8, 29, False, 0, 0),
     ("ambient_shrub", "ambient_shrub.png", 10, 12, False, 0, 0),
+    ("pine", "pine.png", 12, 33, False, 0, 0),
     ("bridge", "bridge.png", 32, 25, False, 0, 0),
     ("hall", "hall.png", 32, 47, True, 26, 14),
     ("pagoda", "pagoda.png", 24, 61, True, 18, 12),
@@ -143,6 +169,8 @@ def external_source(file: str) -> Path:
         return EXTERNAL / "cabanas" / file
     if file.startswith("barraca"):
         return EXTERNAL / "barracas" / file
+    if file == "pine.png":
+        return REGION.parent / "props" / file
     return REGION / "images" / file
 
 
@@ -191,37 +219,65 @@ def near_dirt(g, x: int, y: int, r: int = 1) -> bool:
     return False
 
 
-def tree_positions(g, rng: random.Random) -> list[dict]:
-    """Decorative trees on grass only, kept off roads, plaza and the lake, spaced apart."""
-    placed: list[tuple[float, float]] = []
-    trees: list[dict] = []
-    kinds = ["ambient_blossom", "ambient_bamboo", "ambient_shrub"]
+def forest_ratio(x: int, y: int) -> float:
+    """Elliptical distance from the village core (about 1.0 at the forest edge), with a soft wobble."""
+    wobble = 0.05 * math.sin(x * 0.71) * math.cos(y * 0.93) + 0.03 * math.sin(x * 1.9 + y * 0.37)
+    rx, ry = 21.0, 13.0
+    r = math.hypot((x + 0.5 - 28) / rx, (y + 0.5 - 18) / ry)
+    return r - wobble
+
+
+def forest_positions(g, rng: random.Random) -> tuple[list[dict], list[dict]]:
+    """Dense forest ring around the village, with varied tall trees.
+
+    Returns (tree objects, trunk footprints). Trees keep off roads, trails, hunting clearings
+    and the village core, so the paths and the hunting grounds stay walkable.
+    """
+    spawn_clear = set()
+    for _name, sx, sy in HUNT_SPAWN_TILES:
+        for yy in range(sy - 2, sy + 3):
+            for xx in range(sx - 2, sx + 3):
+                spawn_clear.add((xx, yy))
     candidates = []
     for y in range(H):
         for x in range(W):
-            if g[y][x] != "g":
+            if g[y][x] != "g" or (x, y) in spawn_clear or near_dirt(g, x, y, 1):
                 continue
-            if near_dirt(g, x, y, 1):
+            r = forest_ratio(x, y)
+            if r < 1.0:
                 continue
-            near_edge = x <= 3 or x >= W - 4 or y <= 2 or y >= H - 3
-            near_core = 14 <= x <= 42 and 10 <= y <= 27
-            if near_edge or (near_core and rng.random() < 0.12) or (not near_core and rng.random() < 0.09):
+            # Denser toward the outside of the ring; a few stragglers at the inner edge.
+            if rng.random() < min(1.0, 0.55 + (r - 1.0) * 1.5):
                 candidates.append((x, y))
     rng.shuffle(candidates)
+    kinds = [("pine", 0.42), ("blossom", 0.28), ("bamboo", 0.30)]
+    names = [k for k, _ in kinds]
+    weights = [w for _, w in kinds]
+    placed: list[tuple[float, float]] = []
+    trees: list[dict] = []
+    solids: list[dict] = []
     for x, y in candidates:
-        px, py = x * T + rng.randint(4, 28), y * T + rng.randint(8, 28)
-        edge = x <= 3 or x >= W - 4 or y <= 2 or y >= H - 3
-        spacing = 30 if edge else 40
-        if any((px - qx) ** 2 + (py - qy) ** 2 < spacing ** 2 for qx, qy in placed):
-            continue
-        if 22 <= x <= 34 and 15 <= y <= 25:  # plaza centre stays open
+        px = x * T + rng.uniform(2, 30)
+        py = y * T + rng.uniform(6, 30)
+        min_gap = 22 if forest_ratio(x, y) > 1.15 else 28
+        if any((px - qx) ** 2 + (py - qy) ** 2 < min_gap ** 2 for qx, qy in placed):
             continue
         placed.append((px, py))
-        name = rng.choice(kinds)
-        trees.append(place(name, px, py, flip=rng.random() < 0.5))
-        if len(trees) >= 180:
-            break
-    return trees
+        kind = rng.choices(names, weights)[0]
+        if kind == "pine":
+            name = "pine"
+        elif kind == "blossom":
+            name = "ambient_blossom"
+        else:
+            name = "ambient_bamboo"
+        trees.append(place_tree(name, px, py, rng))
+        fw, fh = (12, 6) if name != "ambient_bamboo" else (10, 6)
+        solids.append({"x": px - fw / 2, "y": py - fh, "width": fw, "height": fh})
+    return trees, solids
+
+
+def place_tree(name: str, x: float, y: float, rng: random.Random) -> dict:
+    return place(name, x, y, flip=rng.random() < 0.5)
 
 
 def build_props(g, rng: random.Random) -> tuple[list[dict], list[dict]]:
@@ -272,7 +328,9 @@ def build_props(g, rng: random.Random) -> tuple[list[dict], list[dict]]:
                  (1120, 600), (1424, 620), (1150, 820), (1450, 700), (1160, 960), (1300, 1000),
                  (448, 680), (480, 800), (560, 900), (700, 470), (760, 900)]:
         objs.append(place("ambient_shrub", x, y, flip=rng.random() < 0.5))
-    objs.extend(tree_positions(g, rng))
+    trees, tree_solids = forest_positions(g, rng)
+    objs.extend(trees)
+    solids.extend(tree_solids)
     return objs, solids
 
 
@@ -416,7 +474,7 @@ def props_tileset() -> dict:
 
 def copy_external_assets() -> None:
     """Make the cabins and stalls available next to the other prop images (Phaser keys use the basename)."""
-    for file in ("cabana-1.png", "cabana-2.png", "cabana-3.png", "cabana-4.png",
+    for file in ("pine.png", "cabana-1.png", "cabana-2.png", "cabana-3.png", "cabana-4.png",
                  "barraca-1.png", "barraca-2.png", "barraca-3.png"):
         dst = REGION / "images" / file
         if not dst.exists():
