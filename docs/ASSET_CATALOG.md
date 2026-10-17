@@ -46,3 +46,13 @@ O personagem é a referência: frame nativo de 64×64 px, ocupando aproximadamen
 ## Restrições de procedência
 
 Não declarar todos os arquivos do ZIP de vila como utilizáveis automaticamente: o próprio pacote contém um aviso para evitar tiles de pastas de origem incerta. Os novos assets devem manter seus arquivos de licença e uma referência ao ZIP de origem. Não redistribuir os ZIPs como produto independente.
+
+## Adições do ciclo 1 (combate na vila)
+
+| Asset | Origem | Uso | Licença / procedência |
+|---|---|---|---|
+| Samurai `idle/` (4 quadros × 8 direções) | `assets/characters/samurai/samurai-all-animations-pack.zip` | Animação de repouso em `assets/characters/samurai/runtime/idle/` | Mesma do pacote do samurai (sem licença explícita no pacote; tratar como procedência do projeto) |
+| Samurai `sword-attack/` (4 quadros × 8 direções) | Mesmo pacote | Ataque com espada em `assets/characters/samurai/runtime/sword-attack/` | Idem |
+| Lobo Feroz estilo wuxia (spritesheet 512×64, 8 rotações) | `docs/Lobo_Feroz_estilo_wuxia-Idle.zip` | Mob de nível 1 em `assets/characters/wolf/runtime/` | O ZIP não contém arquivo de licença. **Confirmar direitos antes de redistribuir publicamente** |
+
+Os ZIPs originais permanecem em `docs/` e no pacote do samurai como fonte de procedência. O lobo não possui frames de caminhada ou ataque próprios; o movimento usa a orientação do idle e o golpe é um avanço curto.

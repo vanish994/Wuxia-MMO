@@ -11,18 +11,40 @@
 - [x] Portais podem ser solicitados e carregados localmente para testar a integração; o código deixa explícito que isso será substituído pelo servidor autoritativo.
 - [x] O cliente inicia com composição 16:9, solicita tela cheia após gesto do usuário e tenta bloquear a orientação em landscape.
 - [x] Em portrait, a entrada bloqueia a continuação e orienta o jogador a girar o aparelho.
-- [ ] Verificar a cena em navegador Android e registrar problemas de escala, toque e colisão.
+- [ ] Verificar a cena em navegador Android real (o ambiente de testes usa Chromium headless com viewport móvel; não substitui aparelho).
 
-## Movimento e combate básico — próximo incremento
+## Ciclo 1 — Vale da Lua Serena, lobos e combate corpo a corpo (concluído localmente)
 
-- [ ] Extrair e registrar os efeitos das habilidades ativas **Moon Slash/Corte da Meia-Lua** (`sword-attack`) e **Onda de Qi** (`energy-orb-attack`) do pack do samurai.
+- [x] Idle (4 quadros × 8 direções) e ataque com espada (`sword-attack`) extraídos do pacote do samurai para `assets/characters/samurai/runtime/`; o personagem usa idle quando parado (antes congelava o frame de caminhada).
+- [x] Lobo Feroz de nível 1 com o spritesheet real de `docs/Lobo_Feroz_estilo_wuxia-Idle` (8 direções) em `assets/characters/wolf/runtime/`.
+- [x] Atributos do lobo, do jogador, spawns da caça, alcances, cooldowns, respawn e XP centralizados em `src/client/game/combat/combat-config.mjs`.
+- [x] Lógica de combate, IA do lobo (ocioso, perseguição, retorno à área, ataque com cooldown) e progressão em `combat-rules.mjs`, sem dependência de Phaser.
+- [x] Seis lobos nos pontos de caça ao redor da praça; colidem com colisões do mapa e do kit da vila.
+- [x] Ataque por botão ATACAR (toque), tecla J ou Espaço; acerta apenas alvos no arco frontal de 120° e alcance de 64 px.
+- [x] Barra de HP por lobo, flash de dano, números de dano flutuantes e HP/XP do jogador no HUD.
+- [x] Morte do lobo: +12 XP e +1 Pele de Lobo; respawn do lobo após 8 s no mesmo ponto.
+- [x] Morte do jogador: retorno à praça após 3 s com HP cheio.
+- [x] Testes Node: regras de combate/IA/XP (`test/client/combat-rules.test.mjs`) e alcance/colisão/reachability dos spawns sobre o TMJ real (`test/world/hunt-spawns.test.mjs`).
+- [ ] Validar o ataque em aparelho Android real.
+- [ ] Qi (`energy-orb-attack`) ainda não é usado: o slot "2 ONDA QI" continua apenas visual.
+- [ ] Animação de dano/morte do personagem: o pacote tem `death-front`, ainda não integrado.
+- [ ] Os lobos não têm animação de caminhada/ataque própria (o sheet só tem idle em 8 direções); o golpe é indicado por um avanço curto.
+- [ ] Botão de ataque ainda não está ligado ao slot 1 da barra de habilidades.
+
+## Movimento e combate básico — pendências de HUD e controles
+
 - [ ] Fatiar os componentes CC0 do HUD Tiny RPG para barras, retrato e botões responsivos.
-- [ ] O joystick move o personagem nas oito direções com diagonais normalizadas e soltar o controle interrompe o movimento.
-- [ ] Colisões impedem atravessar obstáculos sólidos do mapa.
-- [ ] Existe seleção de alvo com indicador visual e botão de ataque.
-- [ ] O ataque de espada respeita alcance corpo a corpo.
-- [ ] O ataque básico de Qi respeita alcance máximo.
-- [ ] Um inimigo de teste possui HP, dano recebido, morte e reaparecimento controlado.
+- [x] O joystick move o personagem nas oito direções com diagonais normalizadas e soltar o controle interrompe o movimento.
+- [x] Colisões impedem atravessar obstáculos sólidos do mapa.
+- [ ] Seleção de alvo com indicador visual (hoje o ataque é em arco, sem seleção).
+- [ ] O ataque básico de Qi respeita alcance máximo (depende de Onda de Qi, ainda não implementada).
+
+## Vale da Lua Serena — mapa planejado (pendente)
+
+- [ ] Recompor o layout em camadas, com praça, casas, dojo, botica, mercado, portão para a caça e área externa dedicada. Hoje a área jogável é o hub Qinghe já existente, exibido com o nome Vale da Lua Serena.
+- [ ] Mais de um tipo de edifício com telhados chineses: os assets do repositório são majoritariamente japoneses (ver decisão DD-1 no GDD).
+- [ ] Tratar o bolsão de área caminhável isolada no canto inferior direito do mapa (aviso `unreachable_walkable_area`).
+- [ ] NPCs e santuário de respawn com interação própria.
 
 ## Escopo explicitamente posterior
 
