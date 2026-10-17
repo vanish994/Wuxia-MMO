@@ -206,14 +206,16 @@ def tree_positions(g, rng: random.Random) -> list[dict]:
     rng.shuffle(candidates)
     for x, y in candidates:
         px, py = x * T + rng.randint(4, 28), y * T + rng.randint(8, 28)
-        if any((px - qx) ** 2 + (py - qy) ** 2 < 40 ** 2 for qx, qy in placed):
+        edge = x <= 3 or x >= W - 4 or y <= 2 or y >= H - 3
+        spacing = 30 if edge else 40
+        if any((px - qx) ** 2 + (py - qy) ** 2 < spacing ** 2 for qx, qy in placed):
             continue
         if 22 <= x <= 34 and 15 <= y <= 25:  # plaza centre stays open
             continue
         placed.append((px, py))
         name = rng.choice(kinds)
         trees.append(place(name, px, py, flip=rng.random() < 0.5))
-        if len(trees) >= 130:
+        if len(trees) >= 180:
             break
     return trees
 
@@ -238,6 +240,8 @@ def build_props(g, rng: random.Random) -> tuple[list[dict], list[dict]]:
     # Plaza: bridge-less fountain area keeps the centre clear; lanterns at the corners.
     for x, y in [(736, 512), (1056, 512), (736, 768), (1056, 768)]:
         add("ambient_lantern", x, y)
+    for x, y in [(704, 448), (1088, 448), (704, 800), (1088, 800)]:
+        objs.append(place("ambient_blossom", x, y, flip=rng.random() < 0.5))
     # Botica (alchemy), forge and guest house.
     add("cabana-1", 608, 400)
     add("cabana-3", 416, 736)
