@@ -79,7 +79,7 @@ Avaliação no ciclo 2 (commit `4f2bb4c`). "Sim" = verificado; "Parcial" = verif
 | 13 | Campo inicial com espaço para lobos de nível 1 e combate | Sim | Seis pontos de caça validados por teste; lobos aparecem nas capturas. |
 | 14 | Mapa testado dentro do jogo, não só como imagem | Sim | Testado no navegador, sem erros de página. |
 
-Resumo: 4 Sim, 6 Parcial, 3 Não verificado, 1 Sim adicional (itens 2, 4, 12, 13, 14 = 5 Sim). Os próximos passos de validação são os itens 3, 7 e 9.
+Resumo: 5 Sim (itens 2, 4, 12, 13, 14), 6 Parcial (1, 5, 6, 8, 10, 11), 3 Não verificado (3, 7, 9). Próximos passos de validação: itens 3, 7 e 9.
 
 ## 6. Regra mais importante
 
