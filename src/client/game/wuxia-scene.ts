@@ -66,6 +66,13 @@ export class WuxiaScene extends Phaser.Scene {
       "qinghe-market-stall-1": assetPath("/assets/external/pixellab-wuxia-objects/barracas/barraca-1.png"),
       "qinghe-market-stall-2": assetPath("/assets/external/pixellab-wuxia-objects/barracas/barraca-2.png"),
       "qinghe-market-stall-3": assetPath("/assets/external/pixellab-wuxia-objects/barracas/barraca-3.png"),
+      "qinghe-blossom-tree": assetPath("/assets/external/feudal-japan-nature/PNG/01_cherry_blossom_tree_32x32.png"),
+      "qinghe-koi-pond": assetPath("/assets/external/feudal-japan-nature/PNG/02_koi_pond_tile_32x32.png"),
+      "qinghe-rocks": assetPath("/assets/external/feudal-japan-nature/PNG/03_rock_cluster_32x32.png"),
+      "qinghe-bamboo": assetPath("/assets/external/feudal-japan-nature/PNG/04_bamboo_grove_32x32.png"),
+      "qinghe-maple": assetPath("/assets/external/feudal-japan-nature/PNG/05_autumn_maple_tree_32x32.png"),
+      "qinghe-stone-path": assetPath("/assets/external/feudal-japan-nature/PNG/07_mossy_stone_path_32x32.png"),
+      "qinghe-fallen-log": assetPath("/assets/external/feudal-japan-nature/PNG/08_fallen_log_32x32.png"),
     };
     for (const [key, path] of Object.entries(villageAssets)) this.load.image(key, path);
   }
@@ -170,6 +177,13 @@ export class WuxiaScene extends Phaser.Scene {
       "/assets/external/pixellab-wuxia-objects/barracas/barraca-1.png": "qinghe-market-stall-1",
       "/assets/external/pixellab-wuxia-objects/barracas/barraca-2.png": "qinghe-market-stall-2",
       "/assets/external/pixellab-wuxia-objects/barracas/barraca-3.png": "qinghe-market-stall-3",
+      "/assets/external/feudal-japan-nature/PNG/01_cherry_blossom_tree_32x32.png": "qinghe-blossom-tree",
+      "/assets/external/feudal-japan-nature/PNG/02_koi_pond_tile_32x32.png": "qinghe-koi-pond",
+      "/assets/external/feudal-japan-nature/PNG/03_rock_cluster_32x32.png": "qinghe-rocks",
+      "/assets/external/feudal-japan-nature/PNG/04_bamboo_grove_32x32.png": "qinghe-bamboo",
+      "/assets/external/feudal-japan-nature/PNG/05_autumn_maple_tree_32x32.png": "qinghe-maple",
+      "/assets/external/feudal-japan-nature/PNG/07_mossy_stone_path_32x32.png": "qinghe-stone-path",
+      "/assets/external/feudal-japan-nature/PNG/08_fallen_log_32x32.png": "qinghe-fallen-log",
     };
     for (const object of kit.objects) {
       const texture = textureKeyByAsset[object.asset];
