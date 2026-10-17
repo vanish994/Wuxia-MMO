@@ -1,0 +1,2073 @@
+{
+  "schema": "wuxia-mmo.mega-asset-pack.v1",
+  "version": "1.0.0",
+  "deduplicated": true,
+  "sources": {
+    "terrain_free": "Free asset pack, thank u so much!.zip",
+    "feudal_sample": "FeudalJapanComplete2DMegaPropsPack_Sample_v1.0.zip",
+    "feudal_full": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+    "seasons": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip"
+  },
+  "records": [
+    {
+      "source": "Free asset pack, thank u so much!.zip",
+      "original_path": "Free asset pack, thank u so much!/1. Grass and dirt.png",
+      "organized_path": "01-terrain/free-environment/1. Grass and dirt.png",
+      "sha256": "91ee64e536219e5074b47ca4770be7c82b6a5ee3911e167ca31c76f469828a10"
+    },
+    {
+      "source": "Free asset pack, thank u so much!.zip",
+      "original_path": "Free asset pack, thank u so much!/10. Extras and decor.png",
+      "organized_path": "01-terrain/free-environment/10. Extras and decor.png",
+      "sha256": "7e7a6a6f1cb40230bf62ab6808e843fa622d5baa80bb87fe109f8a5915f3efe6"
+    },
+    {
+      "source": "Free asset pack, thank u so much!.zip",
+      "original_path": "Free asset pack, thank u so much!/2. Water.png",
+      "organized_path": "01-terrain/free-environment/2. Water.png",
+      "sha256": "6b4cb31e3345df54e6cde1118981f41cc6aab87959cd1a80e543bb179cecb9c2"
+    },
+    {
+      "source": "Free asset pack, thank u so much!.zip",
+      "original_path": "Free asset pack, thank u so much!/3. Rocks and cliffs.png",
+      "organized_path": "01-terrain/free-environment/3. Rocks and cliffs.png",
+      "sha256": "82c5ee303c7ccb30d698a619bd6f97f45b5f642cb4ea55b937642a74927baa6c"
+    },
+    {
+      "source": "Free asset pack, thank u so much!.zip",
+      "original_path": "Free asset pack, thank u so much!/4. Trees.png",
+      "organized_path": "01-terrain/free-environment/4. Trees.png",
+      "sha256": "1a02cfea5aa256b12100470610a6d602f51915259855962d38465e80e78ae1fa"
+    },
+    {
+      "source": "Free asset pack, thank u so much!.zip",
+      "original_path": "Free asset pack, thank u so much!/5. Flowers and plants.png",
+      "organized_path": "01-terrain/free-environment/5. Flowers and plants.png",
+      "sha256": "8909ad952be7e792a0f5cf69fe2a13907200f593a5de91f6e5a0446e8447c2d7"
+    },
+    {
+      "source": "Free asset pack, thank u so much!.zip",
+      "original_path": "Free asset pack, thank u so much!/6. Dirt paths.png",
+      "organized_path": "01-terrain/free-environment/6. Dirt paths.png",
+      "sha256": "e3ffdff720c4f93eca83c64984901a5e0e2c6a188ec83b673b5f7d156e3fa67e"
+    },
+    {
+      "source": "Free asset pack, thank u so much!.zip",
+      "original_path": "Free asset pack, thank u so much!/7. Snow.png",
+      "organized_path": "01-terrain/free-environment/7. Snow.png",
+      "sha256": "50c13a514df96cedb2a7050e062ca1c5d51d467d9304df51d450460df05c0358"
+    },
+    {
+      "source": "Free asset pack, thank u so much!.zip",
+      "original_path": "Free asset pack, thank u so much!/8. Desert.png",
+      "organized_path": "01-terrain/free-environment/8. Desert.png",
+      "sha256": "c62da940ad58dcc0b69c3285a99ad0ca28564e62680e62f37f8b733fb813bb1c"
+    },
+    {
+      "source": "Free asset pack, thank u so much!.zip",
+      "original_path": "Free asset pack, thank u so much!/9. Beach.png",
+      "organized_path": "01-terrain/free-environment/9. Beach.png",
+      "sha256": "77ecb056fb1a20dd1fe4433d096b5e037741321e1c97715af544cf1adafb319b"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Documentation/ASSET_LIST.json",
+      "organized_path": "02-feudal-japan/Documentation/ASSET_LIST.json",
+      "sha256": "766a4c602867818b8fea7c0bba26ece8661555d8a9fe60095110e38c9ab925b4"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Documentation/README.md",
+      "organized_path": "02-feudal-japan/Documentation/README.md",
+      "sha256": "ac0f9c5145cfe71c91b067218359a98a2b497e86657fad7e762b8741f690eae8"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Documentation/LICENSE.txt",
+      "organized_path": "02-feudal-japan/Documentation/LICENSE.txt",
+      "sha256": "bbabca5f3ee83f06b11eebe7b6772cc1a03122c4789ef785e04a50d1c0050ee4"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/MarketFood/jpn_market_food_mochi_tray_stack_01.png",
+      "organized_path": "02-feudal-japan/Tiles/MarketFood/jpn_market_food_mochi_tray_stack_01.png",
+      "sha256": "21c042df8678c51687d078f8a29b515c2601a528a4043367b6e0c46afb1cc8bf"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/MarketFood/jpn_market_food_pickle_barrels_open_01.png",
+      "organized_path": "02-feudal-japan/Tiles/MarketFood/jpn_market_food_pickle_barrels_open_01.png",
+      "sha256": "dec394988221ac903547f40b26f17b3a48cd567cd01611cf03043b545eb0d0ee"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/MarketFood/jpn_market_food_sake_bottles_tokkuri_01.png",
+      "organized_path": "02-feudal-japan/Tiles/MarketFood/jpn_market_food_sake_bottles_tokkuri_01.png",
+      "sha256": "b5839f58e1625cecbfaefbb1b8f830f4a51879f0d17404c5a1edfb294c2aa3f4"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/MarketFood/jpn_market_food_noodle_bowl_stack_01.png",
+      "organized_path": "02-feudal-japan/Tiles/MarketFood/jpn_market_food_noodle_bowl_stack_01.png",
+      "sha256": "71dafda68ed9ed8559e2402a3e3a96e5e91d1d01d61c02aeab2a1627fdb777d1"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/MarketFood/jpn_market_food_hanging_dried_fish_01.png",
+      "organized_path": "02-feudal-japan/Tiles/MarketFood/jpn_market_food_hanging_dried_fish_01.png",
+      "sha256": "75165836233605f51361a18fdeeb3a6ddcd42513a267e9250891af3733a6108b"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/MarketFood/jpn_market_food_grill_shichirin_food_01.png",
+      "organized_path": "02-feudal-japan/Tiles/MarketFood/jpn_market_food_grill_shichirin_food_01.png",
+      "sha256": "e56792681abbe11be60e56162125067b13e14dbcd7f9c25aa2a1dcd2de01f1c4"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/MarketFood/jpn_market_food_sushi_counter_display_01.png",
+      "organized_path": "02-feudal-japan/Tiles/MarketFood/jpn_market_food_sushi_counter_display_01.png",
+      "sha256": "24823233ab1d0f363e3517f7e02602016daa72f6d8aa22ec39319e96d7cd6141"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/MarketFood/jpn_market_food_rice_bales_tawara_01.png",
+      "organized_path": "02-feudal-japan/Tiles/MarketFood/jpn_market_food_rice_bales_tawara_01.png",
+      "sha256": "e4efee4be7cd27911d78f1cd52c05207750287e5a48a2b2a26fb28279780d6aa"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/MarketFood/jpn_market_food_food_cart_wheeled_01.png",
+      "organized_path": "02-feudal-japan/Tiles/MarketFood/jpn_market_food_food_cart_wheeled_01.png",
+      "sha256": "c3e4baee4ae0cb81f9e2d79be4fe499e387c9dc4fd381999e69622802704ed66"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/MarketFood/jpn_market_food_dango_skewer_tray_01.png",
+      "organized_path": "02-feudal-japan/Tiles/MarketFood/jpn_market_food_dango_skewer_tray_01.png",
+      "sha256": "caec96b6d16b389b1909463c04c7066407ca01799655cac728c47776718710ea"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/MarketFood/jpn_market_food_vegetable_crates_stack_01.png",
+      "organized_path": "02-feudal-japan/Tiles/MarketFood/jpn_market_food_vegetable_crates_stack_01.png",
+      "sha256": "05c8e4d058e2e84b91814e24ae7075b9dba83eb130a2f1d315c67004eb0129a3"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/MarketFood/jpn_market_food_tea_stall_kettle_01.png",
+      "organized_path": "02-feudal-japan/Tiles/MarketFood/jpn_market_food_tea_stall_kettle_01.png",
+      "sha256": "85516d63b52e950cb42fafba14aa09dec5d0f691f36c8a0ba6000c0b998c6ca1"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/MarketFood/jpn_market_food_ramen_yatai_stall_01.png",
+      "organized_path": "02-feudal-japan/Tiles/MarketFood/jpn_market_food_ramen_yatai_stall_01.png",
+      "sha256": "0043158816ef642b93db42f1b34873369c9dde8f5d047090f3cd24a8d9e0ded0"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/MarketFood/jpn_market_food_fish_on_ice_table_01.png",
+      "organized_path": "02-feudal-japan/Tiles/MarketFood/jpn_market_food_fish_on_ice_table_01.png",
+      "sha256": "be5daf28ecc3abdc47d09d8d030971c8a104931a9512ccb1f849584821526261"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/MarketFood/jpn_market_food_produce_basket_filled_01.png",
+      "organized_path": "02-feudal-japan/Tiles/MarketFood/jpn_market_food_produce_basket_filled_01.png",
+      "sha256": "30d6d94550fe98d8caef6c0251f28a0e37f3302ded5249a3243912cdffb16e20"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/MarketFood/jpn_market_food_produce_scale_counter_01.png",
+      "organized_path": "02-feudal-japan/Tiles/MarketFood/jpn_market_food_produce_scale_counter_01.png",
+      "sha256": "2415c98a4729259029b2f0f2c7fff9cdf47a88f2497c5d9cb19525423e517f5a"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/WarCamp/jpn_war_camp_nobori_banner_field_01.png",
+      "organized_path": "02-feudal-japan/Tiles/WarCamp/jpn_war_camp_nobori_banner_field_01.png",
+      "sha256": "71f8b7ee8cb24588346b29b35003de6f338f2b08663d22b2667f9e3d75b0cef8"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/WarCamp/jpn_war_camp_jinmaku_curtain_camp_01.png",
+      "organized_path": "02-feudal-japan/Tiles/WarCamp/jpn_war_camp_jinmaku_curtain_camp_01.png",
+      "sha256": "943e6a6973fd910a7067c535f319968b3f392c27a9cf69c161597144913b953b"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/WarCamp/jpn_war_camp_war_drum_cart_01.png",
+      "organized_path": "02-feudal-japan/Tiles/WarCamp/jpn_war_camp_war_drum_cart_01.png",
+      "sha256": "ad96a145ba67772ee2322bf31237972c16868e741dc80035e1e302b5a4380c66"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/WarCamp/jpn_war_camp_command_table_map_01.png",
+      "organized_path": "02-feudal-japan/Tiles/WarCamp/jpn_war_camp_command_table_map_01.png",
+      "sha256": "dd7464d560192a1f148ac65aadd93ca226f8ff6a01cd0087328d18449d2986db"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/WarCamp/jpn_war_camp_yari_ground_row_01.png",
+      "organized_path": "02-feudal-japan/Tiles/WarCamp/jpn_war_camp_yari_ground_row_01.png",
+      "sha256": "5d0749dc435b363f72fdc4ef1b38830051cd55aca816c9a795e67061d5a51fd3"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/WarCamp/jpn_war_camp_soldier_field_tent_01.png",
+      "organized_path": "02-feudal-japan/Tiles/WarCamp/jpn_war_camp_soldier_field_tent_01.png",
+      "sha256": "acdc286429e8154ad68a9bf77311c127ac5fe73fe690a3476a254e702c1a6502"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/WarCamp/jpn_war_camp_shogi_camp_stool_01.png",
+      "organized_path": "02-feudal-japan/Tiles/WarCamp/jpn_war_camp_shogi_camp_stool_01.png",
+      "sha256": "bc8a8146021a62c7ff09a2ace09ceaf881f86dd0bd41a477f2505fbde78f81f0"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/WarCamp/jpn_war_camp_provisions_crate_camp_01.png",
+      "organized_path": "02-feudal-japan/Tiles/WarCamp/jpn_war_camp_provisions_crate_camp_01.png",
+      "sha256": "af2f21ace7eb9855bf1314091b73bb8907b11088d141a80af8a1b63ac9f999f8"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/WarCamp/jpn_war_camp_gunbai_fan_stand_01.png",
+      "organized_path": "02-feudal-japan/Tiles/WarCamp/jpn_war_camp_gunbai_fan_stand_01.png",
+      "sha256": "ddce2da58b37c630c95d1b83b971511763eacc0d62e5b53e8b8cb6c11d3c22d3"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/WarCamp/jpn_war_camp_horse_hitch_rail_01.png",
+      "organized_path": "02-feudal-japan/Tiles/WarCamp/jpn_war_camp_horse_hitch_rail_01.png",
+      "sha256": "776fdaa73ed4e4060979840b982065af5515c095cf889cf7156e5753b8910a4c"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/WarCamp/jpn_war_camp_camp_water_barrel_01.png",
+      "organized_path": "02-feudal-japan/Tiles/WarCamp/jpn_war_camp_camp_water_barrel_01.png",
+      "sha256": "94437ce5925e80dc0a4e37afa7250cfe7895d3d86aa8e23048dda0ccd84e89cd"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/WarCamp/jpn_war_camp_camp_bonfire_large_01.png",
+      "organized_path": "02-feudal-japan/Tiles/WarCamp/jpn_war_camp_camp_bonfire_large_01.png",
+      "sha256": "57a5db15457cff56bf0121458c9ba23276bf64eb1f1b53fb5a3cf83490c50bec"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/WarCamp/jpn_war_camp_sashimono_flag_rack_01.png",
+      "organized_path": "02-feudal-japan/Tiles/WarCamp/jpn_war_camp_sashimono_flag_rack_01.png",
+      "sha256": "a126f5cce9585c62be7a60fc6a6590bc1e2e048b053d1bc292e42c94a368a0f7"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/WarCamp/jpn_war_camp_armor_repair_field_01.png",
+      "organized_path": "02-feudal-japan/Tiles/WarCamp/jpn_war_camp_armor_repair_field_01.png",
+      "sha256": "b173c90357a8214b453b15f1d4ad9af5f5963f7fb93ae5e99aa1bc8a2908227b"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/WarCamp/jpn_war_camp_standard_bearer_mount_01.png",
+      "organized_path": "02-feudal-japan/Tiles/WarCamp/jpn_war_camp_standard_bearer_mount_01.png",
+      "sha256": "a987eb5c88deb46a72c5f69b8e77b6e0832e37a4afc36e1f5ab2eab36ede9ec7"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/WarCamp/jpn_war_camp_noroshi_signal_stand_01.png",
+      "organized_path": "02-feudal-japan/Tiles/WarCamp/jpn_war_camp_noroshi_signal_stand_01.png",
+      "sha256": "78cfd23c5bf991ef7ce3191678327af1508eb83126afa2d26b3b508a09e5da9e"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/GardenNature/jpn_garden_nature_tsukubai_water_basin_01.png",
+      "organized_path": "02-feudal-japan/Tiles/GardenNature/jpn_garden_nature_tsukubai_water_basin_01.png",
+      "sha256": "65b8cf32c16100846653ccb13bff23411e234dd9550efebbfa10de31f9e095be"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/GardenNature/jpn_garden_nature_karesansui_rock_garden_01.png",
+      "organized_path": "02-feudal-japan/Tiles/GardenNature/jpn_garden_nature_karesansui_rock_garden_01.png",
+      "sha256": "1a88ee23338fbe020deb0670279f8b193a12333b9862ee813b29f9ad51b97559"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/GardenNature/jpn_garden_nature_pine_tree_shaped_01.png",
+      "organized_path": "02-feudal-japan/Tiles/GardenNature/jpn_garden_nature_pine_tree_shaped_01.png",
+      "sha256": "22d948b84294735e0de78280deda8bb86d40de008e3b4655ec696c948be85ee3"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/GardenNature/jpn_garden_nature_maple_tree_red_01.png",
+      "organized_path": "02-feudal-japan/Tiles/GardenNature/jpn_garden_nature_maple_tree_red_01.png",
+      "sha256": "69625464a600f103a904e4e41635d62c241e1f9e4aa32d5f3ea34451649ac834"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/GardenNature/jpn_garden_nature_bamboo_gate_garden_01.png",
+      "organized_path": "02-feudal-japan/Tiles/GardenNature/jpn_garden_nature_bamboo_gate_garden_01.png",
+      "sha256": "2dbb0b1284361c0923540b902cbde5dc3035b7b2039b20440a2ed1c3279d0ca9"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/GardenNature/jpn_garden_nature_hedge_shaped_round_01.png",
+      "organized_path": "02-feudal-japan/Tiles/GardenNature/jpn_garden_nature_hedge_shaped_round_01.png",
+      "sha256": "c5b6c5cd616b48ab773131ef6369bb338c5958c3eca7df781a7bd1c3ebb2e2e4"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/GardenNature/jpn_garden_nature_cherry_blossom_tree_01.png",
+      "organized_path": "02-feudal-japan/Tiles/GardenNature/jpn_garden_nature_cherry_blossom_tree_01.png",
+      "sha256": "84635b8892217d7767f454cbe3a5bc3934f030f04237b916129ea1e2fe0b87ab"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/GardenNature/jpn_garden_nature_moss_mound_rock_01.png",
+      "organized_path": "02-feudal-japan/Tiles/GardenNature/jpn_garden_nature_moss_mound_rock_01.png",
+      "sha256": "534013ae0e96d9d384f8253547ec8a4dd524c7ea95ccd0c3d2955de74144e436"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/GardenNature/jpn_garden_nature_wisteria_trellis_01.png",
+      "organized_path": "02-feudal-japan/Tiles/GardenNature/jpn_garden_nature_wisteria_trellis_01.png",
+      "sha256": "382e2d1b9687c3bca816de5ca6e07b34dda313f2be6fee2131afe2e7643c9514"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/GardenNature/jpn_garden_nature_bamboo_grove_cluster_01.png",
+      "organized_path": "02-feudal-japan/Tiles/GardenNature/jpn_garden_nature_bamboo_grove_cluster_01.png",
+      "sha256": "15ba6516b6bc5db20b9fca2aac6a425db518c9b51981d57d45a27c264f1eae59"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/GardenNature/jpn_garden_nature_azumaya_gazebo_01.png",
+      "organized_path": "02-feudal-japan/Tiles/GardenNature/jpn_garden_nature_azumaya_gazebo_01.png",
+      "sha256": "c1e24a2d1edf9a3ba0b3c96988b73e678f2836f80ea5f41f12de82cf73fcdaa0"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/GardenNature/jpn_garden_nature_stepping_stones_path_01.png",
+      "organized_path": "02-feudal-japan/Tiles/GardenNature/jpn_garden_nature_stepping_stones_path_01.png",
+      "sha256": "bd5f391b8b3aed14c2b81ce1b2896c84a0d99af9b114129a7620e7a7accf8c2f"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/GardenNature/jpn_garden_nature_flower_bed_seasonal_01.png",
+      "organized_path": "02-feudal-japan/Tiles/GardenNature/jpn_garden_nature_flower_bed_seasonal_01.png",
+      "sha256": "cf6c16b5cd93cbeb4704c548b1ae1a6fcb6b7f2303659cdeab520949eeacb771"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/GardenNature/jpn_garden_nature_arched_bridge_red_01.png",
+      "organized_path": "02-feudal-japan/Tiles/GardenNature/jpn_garden_nature_arched_bridge_red_01.png",
+      "sha256": "fa51b86942ef6006c8b68b7ef8ccc76f70c6d647c2ac47a36d860724f45dbc8d"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/GardenNature/jpn_garden_nature_bonsai_tree_pot_01.png",
+      "organized_path": "02-feudal-japan/Tiles/GardenNature/jpn_garden_nature_bonsai_tree_pot_01.png",
+      "sha256": "cc431fc64203d7123ab288707b08ebd5483df31ffc2891cd3f991544c92fcc44"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/GardenNature/jpn_garden_nature_koi_pond_round_01.png",
+      "organized_path": "02-feudal-japan/Tiles/GardenNature/jpn_garden_nature_koi_pond_round_01.png",
+      "sha256": "5784797867ccc682d3880c0b01055438d014b501fe290bd895118705d846a84e"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/GardenNature/jpn_garden_nature_shishi_odoshi_bamboo_01.png",
+      "organized_path": "02-feudal-japan/Tiles/GardenNature/jpn_garden_nature_shishi_odoshi_bamboo_01.png",
+      "sha256": "f131727ec0531a5755215a437bb7d4e9068acd5b5eb8d50c18ac85a12d9771e0"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/GardenNature/jpn_garden_nature_rock_arrangement_zen_01.png",
+      "organized_path": "02-feudal-japan/Tiles/GardenNature/jpn_garden_nature_rock_arrangement_zen_01.png",
+      "sha256": "f26e1971aaea9273951d8ef54c53d78cfba858220fe52e0f87a4e4d3a355876c"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/GardenNature/jpn_garden_nature_lotus_pond_flowers_01.png",
+      "organized_path": "02-feudal-japan/Tiles/GardenNature/jpn_garden_nature_lotus_pond_flowers_01.png",
+      "sha256": "111908a6775cfa9a21c12f2776cd540d525bfcd759c2322b7ae996c18c676dcb"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/GardenNature/jpn_garden_nature_yukimi_lantern_stone_01.png",
+      "organized_path": "02-feudal-japan/Tiles/GardenNature/jpn_garden_nature_yukimi_lantern_stone_01.png",
+      "sha256": "7cfe25a23b6769e2dd90cef7975f75974cacd8a1d2d060d75285c3382f1b9cff"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Props/jpn_props_sake_barrels_komodaru_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Props/jpn_props_sake_barrels_komodaru_01.png",
+      "sha256": "187304464b95e438206ce5d92da711ff26bc0e1804df489a75caee0efde48a25"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Props/jpn_props_footwear_rack_geta_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Props/jpn_props_footwear_rack_geta_01.png",
+      "sha256": "1692ceef0266ea28aebea12681f6af512036cbe1c7c0827352ddfa0224a0e810"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Props/jpn_props_chochin_lantern_single_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Props/jpn_props_chochin_lantern_single_01.png",
+      "sha256": "41e219459f684736207572e6eb82b276ac15702c4a803026a2f16fdf2749ac64"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Props/jpn_props_daihachi_cart_wood_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Props/jpn_props_daihachi_cart_wood_01.png",
+      "sha256": "92a0e4445a83e678623c492bc67f7bcef49d6e9c1d2e66f50e5e629e3490dd7b"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Props/jpn_props_pottery_jar_group_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Props/jpn_props_pottery_jar_group_01.png",
+      "sha256": "af5b4f7cbfc8972e20e80bb12888372d8d805fe31624587787c8b9154f604afa"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Props/jpn_props_broom_straw_japanese_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Props/jpn_props_broom_straw_japanese_01.png",
+      "sha256": "3f4021198cd286488977bfad3d2de5705087ede3eb5fb02e76d00be910441eba"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Props/jpn_props_bamboo_basket_group_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Props/jpn_props_bamboo_basket_group_01.png",
+      "sha256": "2b2bb89613e8618d95fb3f3055c178b092acb00ca3af511a5cb1296f606f8690"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Props/jpn_props_straw_mats_rolled_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Props/jpn_props_straw_mats_rolled_01.png",
+      "sha256": "ec0b0b7d7be545e84249267db22eb2b8b2ced3583bc7574914ae0da45e35035a"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Props/jpn_props_wagasa_umbrella_open_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Props/jpn_props_wagasa_umbrella_open_01.png",
+      "sha256": "235080c8d90f7f269c82158c1aef0dd197b1c8ecade05505321e0ed5a843c859"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Props/jpn_props_straw_raincoat_mino_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Props/jpn_props_straw_raincoat_mino_01.png",
+      "sha256": "e3f33fde1065c107d32585b9007e41488548f56a3d10ad82a2080da199797ed6"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Props/jpn_props_water_bucket_wood_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Props/jpn_props_water_bucket_wood_01.png",
+      "sha256": "fd069b0777319eb17133ab75a1756c685991e64785e6c4da41b59c0c0a44040a"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Props/jpn_props_fishing_net_floats_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Props/jpn_props_fishing_net_floats_01.png",
+      "sha256": "9fb265a01a89adf5ce4bb4daf64aa7a711300e93ec72da70ce66aef2c435372f"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Props/jpn_props_rope_coil_straw_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Props/jpn_props_rope_coil_straw_01.png",
+      "sha256": "e9fc20ded35101a4fc6a5ad455e5a476fec37dd1a2eb8cd0709769f1515eab41"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Props/jpn_props_folding_stool_camp_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Props/jpn_props_folding_stool_camp_01.png",
+      "sha256": "5d36010ef58a3f311b047bca0c017910858e4e923514a268f783daec5d94a6a9"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Props/jpn_props_fish_drying_rack_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Props/jpn_props_fish_drying_rack_01.png",
+      "sha256": "40efdcefe236aa3b5b3147f7c9f9a21264b28823c0adac2e03b95a4c8387e8ef"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Props/jpn_props_ceramic_water_jar_large_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Props/jpn_props_ceramic_water_jar_large_01.png",
+      "sha256": "2519e0416aba8ed80ee4436b1307563291444da8bbf692ce86003c723e699b9d"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleInterior/jpn_castle_interior_painted_sliding_doors_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleInterior/jpn_castle_interior_painted_sliding_doors_01.png",
+      "sha256": "692688464fcd368b4eccb961de09e882c612f7781b8560235b2ff8958dcf8af0"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleInterior/jpn_castle_interior_incense_stand_room_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleInterior/jpn_castle_interior_incense_stand_room_01.png",
+      "sha256": "483008ee7e5cb92f1465f719eb197d46bf5af72108044a44a67c4851fc3f8d00"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleInterior/jpn_castle_interior_lord_seat_tatami_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleInterior/jpn_castle_interior_lord_seat_tatami_01.png",
+      "sha256": "731d19c19e2cc56461c31b77f2d1f988fb5c90ef6ac083450eb56fc677ba4ba6"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleInterior/jpn_castle_interior_floor_cushion_lord_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleInterior/jpn_castle_interior_floor_cushion_lord_01.png",
+      "sha256": "8ca40050552298d05cf12c909a908b63ef7e669d1c3f9d32c393c11b2d57857c"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleInterior/jpn_castle_interior_treasure_chest_gold_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleInterior/jpn_castle_interior_treasure_chest_gold_01.png",
+      "sha256": "2b5d67b67ebcb7fee447e06070c67f307ade1f99bc620ab0e0887227cde93900"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleInterior/jpn_castle_interior_lacquer_cabinet_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleInterior/jpn_castle_interior_lacquer_cabinet_01.png",
+      "sha256": "a92940e1756b9c842a9f2e9d445df3c83e7e8b0c2073f431725ec7826adcd8bb"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleInterior/jpn_castle_interior_great_hall_dais_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleInterior/jpn_castle_interior_great_hall_dais_01.png",
+      "sha256": "6f7f5fae7f6ecb08e2b5693ac548e3ad1bc860d67acbaa09983126b923ffd7f8"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleInterior/jpn_castle_interior_war_council_table_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleInterior/jpn_castle_interior_war_council_table_01.png",
+      "sha256": "1da3d156acfc6ca90c3ee3c89f59b02f7088d0d1067090f35a197a5d7877a083"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleInterior/jpn_castle_interior_musha_ningyo_armor_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleInterior/jpn_castle_interior_musha_ningyo_armor_01.png",
+      "sha256": "1e548fa79da1f3f16699eeeec43b0e66cc3488a83d9a55d63f4b1b89fd7bcb29"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleInterior/jpn_castle_interior_weapon_display_wall_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleInterior/jpn_castle_interior_weapon_display_wall_01.png",
+      "sha256": "25d1f2e6e7f9cb797032cb0e38709bf12da4c8b64ee874ea1914200b2b44b1c2"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleInterior/jpn_castle_interior_hanging_war_banner_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleInterior/jpn_castle_interior_hanging_war_banner_01.png",
+      "sha256": "811a7a60c77db26e2fbf87b987512f00c594fddde908a5b4af2508a628d8c588"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleInterior/jpn_castle_interior_gold_folding_screen_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleInterior/jpn_castle_interior_gold_folding_screen_01.png",
+      "sha256": "8a3251e7eacbafdff268ce1bce602251cd352d05d40ad6deaf19991e6694cc5d"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleInterior/jpn_castle_interior_scroll_map_stand_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleInterior/jpn_castle_interior_scroll_map_stand_01.png",
+      "sha256": "c3f1099428dcc026c18b4ea4ac26846826c3519f7eb950f1ba15448658d56afc"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Architecture/jpn_architecture_tatami_war_room_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Architecture/jpn_architecture_tatami_war_room_01.png",
+      "sha256": "4e37ba58df2f1dc16808ba1a7f6f21fb148baf260bcf3e02c3e69d3319d51d03"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Architecture/jpn_architecture_gravel_courtyard_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Architecture/jpn_architecture_gravel_courtyard_01.png",
+      "sha256": "7fcd56d4f10623c51745511511f39feb78e5d566861b14db53ad8a26191462d9"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Architecture/jpn_architecture_stone_steps_tile_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Architecture/jpn_architecture_stone_steps_tile_01.png",
+      "sha256": "a44663d7b851b8bf9ce62cca26f4934d2d94818fe15fb13ca8f8a08a3410b02c"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Architecture/jpn_architecture_castle_gate_tile_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Architecture/jpn_architecture_castle_gate_tile_01.png",
+      "sha256": "0f187bfea7306b25d8cf6f60cfd8f75b8cdb40fda9a893dd1dfd07b43dc723b1"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Architecture/jpn_architecture_wall_mud_roofed_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Architecture/jpn_architecture_wall_mud_roofed_01.png",
+      "sha256": "137363f1f2b2859a6155bf0f356f0fc48245e59e6923b8b544a736b79d5f6850"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Architecture/jpn_architecture_fence_bamboo_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Architecture/jpn_architecture_fence_bamboo_01.png",
+      "sha256": "0a56127432530a04821ab60f46d54bd70959f32c900cb3e90bdf511877886422"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Architecture/jpn_architecture_ishigaki_stone_wall_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Architecture/jpn_architecture_ishigaki_stone_wall_01.png",
+      "sha256": "3e9f9a459821e60da934c971a6c8a7f57d3eb29f72645bb24a5ef90bb41fc290"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Architecture/jpn_architecture_moat_edge_tile_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Architecture/jpn_architecture_moat_edge_tile_01.png",
+      "sha256": "1ecf9a1b56e1bd513a8af96319f1d2caef26becf25e962586b1263393d805ff2"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Architecture/jpn_architecture_wall_wood_lattice_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Architecture/jpn_architecture_wall_wood_lattice_01.png",
+      "sha256": "9b253e5dbbdf34459fb7e5406fb05c2904f4701e1c0470c3930213a66142f4e1"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Architecture/jpn_architecture_wood_veranda_castle_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Architecture/jpn_architecture_wood_veranda_castle_01.png",
+      "sha256": "994651fa3937ce7a4116c8f4cd0b69934ec6b487de93c37176051758d6428923"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Architecture/jpn_architecture_wood_bridge_tile_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Architecture/jpn_architecture_wood_bridge_tile_01.png",
+      "sha256": "63543577f8d2e9fb730be9a32453398cb24e7238cdb73416deee9df781630053"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Architecture/jpn_architecture_white_plaster_wall_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Architecture/jpn_architecture_white_plaster_wall_01.png",
+      "sha256": "6fbb12fccd577244f285a2f386ec4c3cc31bbcdc20cf0d8f4ef6c83f33e2f7a3"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Architecture/jpn_architecture_castle_wood_floor_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Architecture/jpn_architecture_castle_wood_floor_01.png",
+      "sha256": "63f97d24e22ff9bcaa88889fa9f00c5770077a37439ac03421627861de799623"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Architecture/jpn_architecture_roof_ridge_tile_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Architecture/jpn_architecture_roof_ridge_tile_01.png",
+      "sha256": "2cbbc9861ae5422c6b752c079315d971ee486e711c5f1098f05f053292f67bb3"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Architecture/jpn_architecture_palisade_fence_tile_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Architecture/jpn_architecture_palisade_fence_tile_01.png",
+      "sha256": "a792cfed56988203b3a447209859031d024f01643e5ef89d1cb5cde27c1e76d6"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Architecture/jpn_architecture_castle_tile_roof_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Architecture/jpn_architecture_castle_tile_roof_01.png",
+      "sha256": "94653fca13ed141293f49ab328e6a857663c3642ceceb2c183d8a191f7add4b8"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Architecture/jpn_architecture_shoji_castle_wall_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Architecture/jpn_architecture_shoji_castle_wall_01.png",
+      "sha256": "5ffa216fadbcf2266c3437e8b0d789d78f57ce01a5d5b93305c37442406f30e6"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Architecture/jpn_architecture_stone_path_castle_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Architecture/jpn_architecture_stone_path_castle_01.png",
+      "sha256": "70a3eda67a55171a799e4a9bb9bd971e9a9ccbae83df7cac68a7b9bec1c805fd"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/Architecture/jpn_architecture_dirt_ground_castle_01.png",
+      "organized_path": "02-feudal-japan/Tiles/Architecture/jpn_architecture_dirt_ground_castle_01.png",
+      "sha256": "478b8e6cb630af27a4413d07a629b0e57454d19fd4d89e2226290dfcb984a75e"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/TownShops/jpn_town_shops_shop_shelf_pottery_01.png",
+      "organized_path": "02-feudal-japan/Tiles/TownShops/jpn_town_shops_shop_shelf_pottery_01.png",
+      "sha256": "8955612373e5814348d37221d16b0144bc8678a73328fdf1d2774dcf9e481558"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/TownShops/jpn_town_shops_produce_stall_covered_01.png",
+      "organized_path": "02-feudal-japan/Tiles/TownShops/jpn_town_shops_produce_stall_covered_01.png",
+      "sha256": "6233fb2e87db1252ef3847ca051a7be5eb35639841a883fc4b34ea20c2aff4e2"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/TownShops/jpn_town_shops_storefront_awning_crates_01.png",
+      "organized_path": "02-feudal-japan/Tiles/TownShops/jpn_town_shops_storefront_awning_crates_01.png",
+      "sha256": "5dadbf3c0fd235405280147c7f82c89ae96b83b8de2e20b7aa3d747f0f133df9"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/TownShops/jpn_town_shops_town_notice_board_01.png",
+      "organized_path": "02-feudal-japan/Tiles/TownShops/jpn_town_shops_town_notice_board_01.png",
+      "sha256": "ebb54e4d4ed96a3a4e15efcb6692c3391216c2131e8189862c33db35f71d8832"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/TownShops/jpn_town_shops_ryokan_inn_facade_01.png",
+      "organized_path": "02-feudal-japan/Tiles/TownShops/jpn_town_shops_ryokan_inn_facade_01.png",
+      "sha256": "09d355c22517fc6e23a2f2988361a70748748ad719372ad82d4c7387abc13c84"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/TownShops/jpn_town_shops_teahouse_facade_01.png",
+      "organized_path": "02-feudal-japan/Tiles/TownShops/jpn_town_shops_teahouse_facade_01.png",
+      "sha256": "1f9d75063ce45ae338e647bdab729a9be55cd5391b31c01f77eb1cacdd2e13c1"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/TownShops/jpn_town_shops_tea_shop_chests_01.png",
+      "organized_path": "02-feudal-japan/Tiles/TownShops/jpn_town_shops_tea_shop_chests_01.png",
+      "sha256": "1a89d120048f2d9e5fd9cb0266c2410234ad18c6e8d28bdb1ae855f5ef6398a4"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/TownShops/jpn_town_shops_sake_shop_barrels_01.png",
+      "organized_path": "02-feudal-japan/Tiles/TownShops/jpn_town_shops_sake_shop_barrels_01.png",
+      "sha256": "31075643b0eb17012efe258ff30b0938917c883f2119b432a3ccf5a5ece49867"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/TownShops/jpn_town_shops_outdoor_bench_cushion_01.png",
+      "organized_path": "02-feudal-japan/Tiles/TownShops/jpn_town_shops_outdoor_bench_cushion_01.png",
+      "sha256": "478fc9f380cc800a4708d70f7841012d8b8d0893d42b29ca4a91802263e22977"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/TownShops/jpn_town_shops_fabric_shop_rolls_01.png",
+      "organized_path": "02-feudal-japan/Tiles/TownShops/jpn_town_shops_fabric_shop_rolls_01.png",
+      "sha256": "53004f8b589ee3a495e71b8c91d3132b1abf6191d6242eb829484aaf4e4fda77"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/TownShops/jpn_town_shops_hanging_lantern_string_01.png",
+      "organized_path": "02-feudal-japan/Tiles/TownShops/jpn_town_shops_hanging_lantern_string_01.png",
+      "sha256": "dae23037d6304b8b0cde5de9fc60c4188c64f55e3a1bae0798c9575f20f86a1f"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/TownShops/jpn_town_shops_bathhouse_facade_01.png",
+      "organized_path": "02-feudal-japan/Tiles/TownShops/jpn_town_shops_bathhouse_facade_01.png",
+      "sha256": "c07d8e6d034a35babf2a59a261c88d19c71a409414b05e7310ba970a3b7eaa94"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/TownShops/jpn_town_shops_machiya_shop_facade_01.png",
+      "organized_path": "02-feudal-japan/Tiles/TownShops/jpn_town_shops_machiya_shop_facade_01.png",
+      "sha256": "2a0f20af15d231108c64a9cc9b32b541c86f608d3226a9fd59cd0326bf463b66"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/TownShops/jpn_town_shops_lantern_post_paper_01.png",
+      "organized_path": "02-feudal-japan/Tiles/TownShops/jpn_town_shops_lantern_post_paper_01.png",
+      "sha256": "b2f72ad5e22e563426977fcb7b7257fdcf36cd96d07e354e27100b8b99ead856"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/TownShops/jpn_town_shops_banner_nobori_shop_01.png",
+      "organized_path": "02-feudal-japan/Tiles/TownShops/jpn_town_shops_banner_nobori_shop_01.png",
+      "sha256": "8efd1539ee58009352d00c73abb84c21ab3a1d4874b5e8ef50821c5cd577f129"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/TownShops/jpn_town_shops_noren_entrance_frame_01.png",
+      "organized_path": "02-feudal-japan/Tiles/TownShops/jpn_town_shops_noren_entrance_frame_01.png",
+      "sha256": "d9f121f36f51a142e14086ce38a81be85fd07208ff327bbf70f04070d7c116a4"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/TownShops/jpn_town_shops_shop_signboard_standing_01.png",
+      "organized_path": "02-feudal-japan/Tiles/TownShops/jpn_town_shops_shop_signboard_standing_01.png",
+      "sha256": "224cdb2f8efbcf9a5a0fa83140be933564984251646cadae238864392103917d"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/TownShops/jpn_town_shops_street_stone_well_01.png",
+      "organized_path": "02-feudal-japan/Tiles/TownShops/jpn_town_shops_street_stone_well_01.png",
+      "sha256": "5f6a40b99871e69b8e78f1faf1954299de0f5d43cbe8d6da5cc8971e4d5aca82"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/TownShops/jpn_town_shops_fishmonger_stall_01.png",
+      "organized_path": "02-feudal-japan/Tiles/TownShops/jpn_town_shops_fishmonger_stall_01.png",
+      "sha256": "7185f52c90d96d349b2ef744c45214d2bf41108840aeb6e2641804ccdad6a2c2"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/TownShops/jpn_town_shops_vendor_cart_wood_01.png",
+      "organized_path": "02-feudal-japan/Tiles/TownShops/jpn_town_shops_vendor_cart_wood_01.png",
+      "sha256": "e91276962ba79223f237d5a27a0788d5c71c936451bdfd8b032e53bd6a04f013"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ShrineTemple/jpn_shrine_temple_stone_lantern_toro_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ShrineTemple/jpn_shrine_temple_stone_lantern_toro_01.png",
+      "sha256": "4eff3e5c2556ee38ebfca497b6de1f123647d0682b3719f776f46ba6660e926a"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ShrineTemple/jpn_shrine_temple_torii_gate_vermilion_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ShrineTemple/jpn_shrine_temple_torii_gate_vermilion_01.png",
+      "sha256": "21d7f7a78286a7a611a701dc9bcec687ffd08c50ac55a14f78e6c4e3e6f840ea"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ShrineTemple/jpn_shrine_temple_shrine_offering_altar_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ShrineTemple/jpn_shrine_temple_shrine_offering_altar_01.png",
+      "sha256": "77ecd70052a6d497f17255f09ad42d9b037a3e502f0868d31c8ec6e81e54390f"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ShrineTemple/jpn_shrine_temple_temple_bell_bonsho_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ShrineTemple/jpn_shrine_temple_temple_bell_bonsho_01.png",
+      "sha256": "0b2e1b0296ea64170ff839f1b102c65af6a466a223376f996ffc5b7ddfd481c4"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ShrineTemple/jpn_shrine_temple_shrine_shimenawa_rope_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ShrineTemple/jpn_shrine_temple_shrine_shimenawa_rope_01.png",
+      "sha256": "1870ec265ae7f538afbec18cdfe3c2797271a24231c91432e2c23e684653db3a"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ShrineTemple/jpn_shrine_temple_ema_plaque_rack_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ShrineTemple/jpn_shrine_temple_ema_plaque_rack_01.png",
+      "sha256": "d7be69b11956a4ff459a9dd1cd6d852f914ef923483fff92f6565a39410d7e22"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ShrineTemple/jpn_shrine_temple_stone_steps_shrine_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ShrineTemple/jpn_shrine_temple_stone_steps_shrine_01.png",
+      "sha256": "4f2832f7f579345615283a8b29dc7b130fff15993ff41e8f17dbc84f688e6ea7"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ShrineTemple/jpn_shrine_temple_fox_statue_inari_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ShrineTemple/jpn_shrine_temple_fox_statue_inari_01.png",
+      "sha256": "26ce1b085576a9e7d8364a651368f9f60c00e12fe6524fde6a7022c2ec3a3e8e"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ShrineTemple/jpn_shrine_temple_shrine_fence_tamagaki_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ShrineTemple/jpn_shrine_temple_shrine_fence_tamagaki_01.png",
+      "sha256": "b42394a4917e99937d545c2d4e5d7393426d170156be896b786e3bd9e217db6b"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ShrineTemple/jpn_shrine_temple_offering_box_saisen_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ShrineTemple/jpn_shrine_temple_offering_box_saisen_01.png",
+      "sha256": "1517246d64852dfc9ae3ef3266d7fbc7dd594d5d068bbdeda2a4f86a6e11675b"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ShrineTemple/jpn_shrine_temple_shrine_gate_roofed_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ShrineTemple/jpn_shrine_temple_shrine_gate_roofed_01.png",
+      "sha256": "f8c366ac9212f4cce5a7939bdee9d5de10d14f1d110490235863e9325e35cdca"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ShrineTemple/jpn_shrine_temple_pagoda_small_stone_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ShrineTemple/jpn_shrine_temple_pagoda_small_stone_01.png",
+      "sha256": "6a9a41f9466baf90f54b3f89e71dc07d18311c400e5884197b599cb0ea0005f0"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ShrineTemple/jpn_shrine_temple_komainu_guardian_statue_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ShrineTemple/jpn_shrine_temple_komainu_guardian_statue_01.png",
+      "sha256": "db24d54a797d9e707067e48294d4a4e7e141eb773f0c34bcf283e9ed011083d6"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ShrineTemple/jpn_shrine_temple_shrine_omikuji_stand_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ShrineTemple/jpn_shrine_temple_shrine_omikuji_stand_01.png",
+      "sha256": "e9c54d3e2ca397bef6b30731dc2726537b49eda38a5a60e6ca60da31ef1cc49b"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ShrineTemple/jpn_shrine_temple_incense_burner_large_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ShrineTemple/jpn_shrine_temple_incense_burner_large_01.png",
+      "sha256": "ceb8abcc64f7e93e3fce6dc822d9f8d55cf72a8bec2951e81601be0edaa9c45e"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ShrineTemple/jpn_shrine_temple_chozuya_water_pavilion_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ShrineTemple/jpn_shrine_temple_chozuya_water_pavilion_01.png",
+      "sha256": "7405d7e4e9d8dc13d4f533f93287c2bd2cb8da3f9de056d9d8ef8399d69b65cd"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/DefenseTerrain/jpn_defense_terrain_earth_barricade_low_01.png",
+      "organized_path": "02-feudal-japan/Tiles/DefenseTerrain/jpn_defense_terrain_earth_barricade_low_01.png",
+      "sha256": "70ea1841aebf8dec167083adf108834bcdf15689e1b88f883bc2965449d0be5d"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/DefenseTerrain/jpn_defense_terrain_guard_torch_stand_01.png",
+      "organized_path": "02-feudal-japan/Tiles/DefenseTerrain/jpn_defense_terrain_guard_torch_stand_01.png",
+      "sha256": "c9415440c9b576a602d5f6c37eb13a8814880555c0af33a5186d140dca9f60b1"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/DefenseTerrain/jpn_defense_terrain_rope_barrier_posts_01.png",
+      "organized_path": "02-feudal-japan/Tiles/DefenseTerrain/jpn_defense_terrain_rope_barrier_posts_01.png",
+      "sha256": "3bc9dd84e2bab1cd8d63d76e79c5e6c6671f4ffe40aed2f42482ace34f74488d"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/DefenseTerrain/jpn_defense_terrain_watchfire_brazier_01.png",
+      "organized_path": "02-feudal-japan/Tiles/DefenseTerrain/jpn_defense_terrain_watchfire_brazier_01.png",
+      "sha256": "677780c7c517dcec16778721b4e49b57f102defaede0473ea0378f76c9587517"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/DefenseTerrain/jpn_defense_terrain_arrow_slit_screen_01.png",
+      "organized_path": "02-feudal-japan/Tiles/DefenseTerrain/jpn_defense_terrain_arrow_slit_screen_01.png",
+      "sha256": "99b5e8241302157fd53ca93ae2c4088b9bc6afe0ebb7ab408dfed65dbd241c8a"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/DefenseTerrain/jpn_defense_terrain_signal_flag_pole_01.png",
+      "organized_path": "02-feudal-japan/Tiles/DefenseTerrain/jpn_defense_terrain_signal_flag_pole_01.png",
+      "sha256": "94d64c4f34bbccd1e4e67cbafcfb20676ce8fac977aa76fa0e9085e725fb631c"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/DefenseTerrain/jpn_defense_terrain_palisade_gate_wood_01.png",
+      "organized_path": "02-feudal-japan/Tiles/DefenseTerrain/jpn_defense_terrain_palisade_gate_wood_01.png",
+      "sha256": "b9221a4bee0b4f50dce7a13f47253b57207ea9de072f00f9fd699312f9128b30"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/DefenseTerrain/jpn_defense_terrain_moat_water_corner_01.png",
+      "organized_path": "02-feudal-japan/Tiles/DefenseTerrain/jpn_defense_terrain_moat_water_corner_01.png",
+      "sha256": "149882b7315df14b907c8a1188f50659e6818753a60f3e32bcc8ef5d44dc0bcd"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/DefenseTerrain/jpn_defense_terrain_warning_bell_post_01.png",
+      "organized_path": "02-feudal-japan/Tiles/DefenseTerrain/jpn_defense_terrain_warning_bell_post_01.png",
+      "sha256": "a275d7621ebd9ed0475456d2429c63024db95fe977638c3ea87bc0653a304cd0"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/DefenseTerrain/jpn_defense_terrain_wooden_stakes_field_01.png",
+      "organized_path": "02-feudal-japan/Tiles/DefenseTerrain/jpn_defense_terrain_wooden_stakes_field_01.png",
+      "sha256": "a4d9dfaa0b36e3d0cacf3ae0645557a1b15e8b5fdf9660ed56059202441852cd"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/DefenseTerrain/jpn_defense_terrain_caltrops_scatter_01.png",
+      "organized_path": "02-feudal-japan/Tiles/DefenseTerrain/jpn_defense_terrain_caltrops_scatter_01.png",
+      "sha256": "f325c2efd2917ff9b446ba36893a2bb3637797e798da4faac760d77ee8d8028d"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/DefenseTerrain/jpn_defense_terrain_boundary_marker_stone_01.png",
+      "organized_path": "02-feudal-japan/Tiles/DefenseTerrain/jpn_defense_terrain_boundary_marker_stone_01.png",
+      "sha256": "e213792a27b7edfd19a267f458d5a0780bc783e6e7abb2b81b47d55bfbd996d9"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/DefenseTerrain/jpn_defense_terrain_defensive_ditch_01.png",
+      "organized_path": "02-feudal-japan/Tiles/DefenseTerrain/jpn_defense_terrain_defensive_ditch_01.png",
+      "sha256": "24d3a9a63c63b16ac009eaf5eb6eebcff5166f9e90699b8202eb26f5ae6c1fef"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/DefenseTerrain/jpn_defense_terrain_flag_hill_marker_01.png",
+      "organized_path": "02-feudal-japan/Tiles/DefenseTerrain/jpn_defense_terrain_flag_hill_marker_01.png",
+      "sha256": "4f1f8ffe288646581c8dbcc15a2f93cf7197576111d28a17aad513d1db2e5f2d"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/DefenseTerrain/jpn_defense_terrain_sandbag_earthwork_01.png",
+      "organized_path": "02-feudal-japan/Tiles/DefenseTerrain/jpn_defense_terrain_sandbag_earthwork_01.png",
+      "sha256": "d25151b78dba91a4e45a23668754b792f92084a32d1b1e4496b6c973efca82ca"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/DefenseTerrain/jpn_defense_terrain_sekisho_checkpoint_barrier_01.png",
+      "organized_path": "02-feudal-japan/Tiles/DefenseTerrain/jpn_defense_terrain_sekisho_checkpoint_barrier_01.png",
+      "sha256": "eaad35b154d617ba374a88683009a25e41b1bb7a5abc3d1cbb5895306e2ee652"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ProvisionsCamp/jpn_provisions_camp_medical_field_tent_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ProvisionsCamp/jpn_provisions_camp_medical_field_tent_01.png",
+      "sha256": "7542a5e5688228f8afda40ca8d5fc398cbbeb2d3facbb81a231b74f08a54738b"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ProvisionsCamp/jpn_provisions_camp_water_supply_barrels_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ProvisionsCamp/jpn_provisions_camp_water_supply_barrels_01.png",
+      "sha256": "04547f42cea70be08cdee148dfbd2ec65267615b2e2fcd3dff8528f17f9fb82c"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ProvisionsCamp/jpn_provisions_camp_cooking_fire_tripod_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ProvisionsCamp/jpn_provisions_camp_cooking_fire_tripod_01.png",
+      "sha256": "fd72e4400c06703019637d2d381797d1841a5d302a64415e9e62c3caf8b7faab"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ProvisionsCamp/jpn_provisions_camp_camp_lantern_military_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ProvisionsCamp/jpn_provisions_camp_camp_lantern_military_01.png",
+      "sha256": "919e6eb1a1c0de720ca66e892c4e5fe6a692ea5325603625c3cf43e25d8aff38"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ProvisionsCamp/jpn_provisions_camp_sake_ration_barrels_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ProvisionsCamp/jpn_provisions_camp_sake_ration_barrels_01.png",
+      "sha256": "94071dc04b8ba8d130c59895b34663a753999801d7f8021425f8a6875c400fcb"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ProvisionsCamp/jpn_provisions_camp_tool_repair_bench_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ProvisionsCamp/jpn_provisions_camp_tool_repair_bench_01.png",
+      "sha256": "328f57de360d1833bd64717850f5dce6ed923dee0a5b77bb76c457be0353db56"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ProvisionsCamp/jpn_provisions_camp_field_cooking_pot_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ProvisionsCamp/jpn_provisions_camp_field_cooking_pot_01.png",
+      "sha256": "a78376e066ed6d0cd54cb04322975ccac1836bb875efd0ead12b07cd80a863bc"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ProvisionsCamp/jpn_provisions_camp_rice_bale_stack_war_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ProvisionsCamp/jpn_provisions_camp_rice_bale_stack_war_01.png",
+      "sha256": "5d3d97286f48c3acaf8454fc52e6ad17b06199f48db2ae4113251d059d35b50f"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ProvisionsCamp/jpn_provisions_camp_firewood_stack_camp_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ProvisionsCamp/jpn_provisions_camp_firewood_stack_camp_01.png",
+      "sha256": "b0b5e86dc48cd068536deaf86dfbdc4694f63940c24eab129477b04c9524e325"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ProvisionsCamp/jpn_provisions_camp_horse_feed_trough_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ProvisionsCamp/jpn_provisions_camp_horse_feed_trough_01.png",
+      "sha256": "e9f86e9bb920907431fac34d6a460f713be76c381c54e6bb3d41b7f558e8f781"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ProvisionsCamp/jpn_provisions_camp_bandage_supply_box_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ProvisionsCamp/jpn_provisions_camp_bandage_supply_box_01.png",
+      "sha256": "7a7a4659799eab09756dabd20d813b54dea9a9cd2468e89b8255a5b2c4309215"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ProvisionsCamp/jpn_provisions_camp_hay_bale_camp_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ProvisionsCamp/jpn_provisions_camp_hay_bale_camp_01.png",
+      "sha256": "2b53ec82e23de176ab0bff52ef49df3ef014dbee002116d110be98f957d25990"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ProvisionsCamp/jpn_provisions_camp_message_box_hikyaku_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ProvisionsCamp/jpn_provisions_camp_message_box_hikyaku_01.png",
+      "sha256": "eb54864301a077a4afdde9b4341c9358ee1abcfba22d7913bdd175b05ddba20b"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ProvisionsCamp/jpn_provisions_camp_rice_cauldron_large_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ProvisionsCamp/jpn_provisions_camp_rice_cauldron_large_01.png",
+      "sha256": "6ca85bf16f33be08b71d7d4f22f5a38fec83dd7610fb8b211d70535ab2064bf3"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ProvisionsCamp/jpn_provisions_camp_straw_mat_bedding_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ProvisionsCamp/jpn_provisions_camp_straw_mat_bedding_01.png",
+      "sha256": "ded7ba8f147380e68d107c63426cbb2e5a4470728c18e2c2eb2304d3a44ca292"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/HomeInterior/jpn_home_interior_andon_paper_lamp_01.png",
+      "organized_path": "02-feudal-japan/Tiles/HomeInterior/jpn_home_interior_andon_paper_lamp_01.png",
+      "sha256": "1cc0c64acfe2e0aeda391c46ca9fe2c05ea5003b36134731614337c56963f2fb"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/HomeInterior/jpn_home_interior_koto_instrument_floor_01.png",
+      "organized_path": "02-feudal-japan/Tiles/HomeInterior/jpn_home_interior_koto_instrument_floor_01.png",
+      "sha256": "a60a4305a69766e2ab31dab61690a82b8c313be08f50cb06bc9f1857e2148ab8"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/HomeInterior/jpn_home_interior_folding_fan_stand_01.png",
+      "organized_path": "02-feudal-japan/Tiles/HomeInterior/jpn_home_interior_folding_fan_stand_01.png",
+      "sha256": "fb15c891c327144a4267e61032e6728d75d037b14e316e90530d06a16efef23b"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/HomeInterior/jpn_home_interior_tea_ceremony_set_01.png",
+      "organized_path": "02-feudal-japan/Tiles/HomeInterior/jpn_home_interior_tea_ceremony_set_01.png",
+      "sha256": "2682dff5bd1c4593801449dfd8f51652a89f1a60b2a3133d94f49f4c3cd05bf7"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/HomeInterior/jpn_home_interior_tea_cabinet_mizuya_01.png",
+      "organized_path": "02-feudal-japan/Tiles/HomeInterior/jpn_home_interior_tea_cabinet_mizuya_01.png",
+      "sha256": "39c300d49edde2b65a1bf834dd900f1327c39c269b68d499ef4b50af09abc92c"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/HomeInterior/jpn_home_interior_writing_desk_low_01.png",
+      "organized_path": "02-feudal-japan/Tiles/HomeInterior/jpn_home_interior_writing_desk_low_01.png",
+      "sha256": "eba4bc0506ec680dd6e4c32282982dc36be28bcfe8e557b646b2c189ca58a201"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/HomeInterior/jpn_home_interior_tokonoma_alcove_scroll_01.png",
+      "organized_path": "02-feudal-japan/Tiles/HomeInterior/jpn_home_interior_tokonoma_alcove_scroll_01.png",
+      "sha256": "4692944f885814c262c0604dd093509e2149f4ca67c97b5bf6a1fef15ac547ed"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/HomeInterior/jpn_home_interior_ikebana_arrangement_01.png",
+      "organized_path": "02-feudal-japan/Tiles/HomeInterior/jpn_home_interior_ikebana_arrangement_01.png",
+      "sha256": "6f9b8baec255eb0568cb3b8312463a2c5958a49731a1a6d9eb4a832e68bb2784"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/HomeInterior/jpn_home_interior_kotatsu_table_quilt_01.png",
+      "organized_path": "02-feudal-japan/Tiles/HomeInterior/jpn_home_interior_kotatsu_table_quilt_01.png",
+      "sha256": "9f821c17f00518b644e018c82467bbe9b42f2c2fbd4f8017dcd5df49b4df93e5"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/HomeInterior/jpn_home_interior_tansu_chest_wood_01.png",
+      "organized_path": "02-feudal-japan/Tiles/HomeInterior/jpn_home_interior_tansu_chest_wood_01.png",
+      "sha256": "833e52cd9699b04d6be2f5973d72a5416a23b84c00609a747725fab87ffc6473"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/HomeInterior/jpn_home_interior_hibachi_brazier_round_01.png",
+      "organized_path": "02-feudal-japan/Tiles/HomeInterior/jpn_home_interior_hibachi_brazier_round_01.png",
+      "sha256": "875fbb42721b6bbb2af79752b0151e53dde3b45347b3517b8209a551b1fc9ea7"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/HomeInterior/jpn_home_interior_tetsubin_kettle_brazier_01.png",
+      "organized_path": "02-feudal-japan/Tiles/HomeInterior/jpn_home_interior_tetsubin_kettle_brazier_01.png",
+      "sha256": "20acfbe76c1bbec14194e42518a8408f1aa25df478feb551c49f10967d5dda33"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/HomeInterior/jpn_home_interior_standing_mirror_wood_01.png",
+      "organized_path": "02-feudal-japan/Tiles/HomeInterior/jpn_home_interior_standing_mirror_wood_01.png",
+      "sha256": "614f64dbbb991877b8f68af13157bf49833adac2628e227b302134bc0599238d"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/HomeInterior/jpn_home_interior_irori_hearth_sunken_01.png",
+      "organized_path": "02-feudal-japan/Tiles/HomeInterior/jpn_home_interior_irori_hearth_sunken_01.png",
+      "sha256": "f6068703ede0a079f668d00b214d6015f77a1897df12e3aefa8e39575e9db214"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/HomeInterior/jpn_home_interior_futon_closet_oshiire_01.png",
+      "organized_path": "02-feudal-japan/Tiles/HomeInterior/jpn_home_interior_futon_closet_oshiire_01.png",
+      "sha256": "6c3bc62a417f5427ff7698cfd6dc8398f1098eaeeb1aebf4398e1b09924a2e3c"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/HomeInterior/jpn_home_interior_chabudai_low_table_01.png",
+      "organized_path": "02-feudal-japan/Tiles/HomeInterior/jpn_home_interior_chabudai_low_table_01.png",
+      "sha256": "e7bc1d33542e0581d67ff4f3e7a83345fab5830a74ea4c9e72b4069f64674b34"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/HomeInterior/jpn_home_interior_futon_bedding_rolled_01.png",
+      "organized_path": "02-feudal-japan/Tiles/HomeInterior/jpn_home_interior_futon_bedding_rolled_01.png",
+      "sha256": "48555381228588dca2d306d4472ea7955e992f68a3ad2f9e232d53429480b391"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleStructures/jpn_castle_structures_castle_wood_bridge_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleStructures/jpn_castle_structures_castle_wood_bridge_01.png",
+      "sha256": "bd4e46fedd583e79c476af92b41d38138a8aca1fbe8ee23653b65eb5634a2339"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleStructures/jpn_castle_structures_otemon_main_gate_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleStructures/jpn_castle_structures_otemon_main_gate_01.png",
+      "sha256": "6f9e4bcb890d41a43a8d19e810f2b1bee8a7a1c213b76e2ebad8b6a3556a9928"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleStructures/jpn_castle_structures_masugata_gate_box_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleStructures/jpn_castle_structures_masugata_gate_box_01.png",
+      "sha256": "0cd4e4aac9f6fbbd903f637d8d82e796b3abe84e9c13f7f631515417661f6f49"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleStructures/jpn_castle_structures_tamon_yagura_long_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleStructures/jpn_castle_structures_tamon_yagura_long_01.png",
+      "sha256": "4bc6e0d148771b6f7994fb200aceabc2043b52f45c79fe2d323e91407ec40dbc"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleStructures/jpn_castle_structures_sumi_corner_turret_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleStructures/jpn_castle_structures_sumi_corner_turret_01.png",
+      "sha256": "515f3cbda1c6f6197ffdb7f8d28aeeb0e9f9db87f24f37432bedbd73dba6366a"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleStructures/jpn_castle_structures_castle_horse_stable_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleStructures/jpn_castle_structures_castle_horse_stable_01.png",
+      "sha256": "b38923fd07c4b0f43f5ebcb7da2059b9e0c32c62f8f86dae9a5d131c88921fdd"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleStructures/jpn_castle_structures_drawbridge_hanging_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleStructures/jpn_castle_structures_drawbridge_hanging_01.png",
+      "sha256": "161f041d015c0de900177453119cb1d234605606d786d11858c2dfe0dc2fcca2"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleStructures/jpn_castle_structures_dozo_storehouse_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleStructures/jpn_castle_structures_dozo_storehouse_01.png",
+      "sha256": "49c79879f13155a2a457d1afd17550fa976e600fb64ecbdc62d92325aaec145c"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleStructures/jpn_castle_structures_tenshu_keep_tower_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleStructures/jpn_castle_structures_tenshu_keep_tower_01.png",
+      "sha256": "ef51cf1076b1136d8376da4be0b99fcb35c4792e747eaab30addac62efb5893f"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleStructures/jpn_castle_structures_grand_stone_steps_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleStructures/jpn_castle_structures_grand_stone_steps_01.png",
+      "sha256": "3cc6ead47068bb3661dbe14a1f69dffd932f0bfd3a44fc4d08ada40594dd60d4"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleStructures/jpn_castle_structures_lookout_platform_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleStructures/jpn_castle_structures_lookout_platform_01.png",
+      "sha256": "97f130e02ee7d566eb8e010ce46301d205210b7d0db35465df67a1bbad7c8acd"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleStructures/jpn_castle_structures_earthwork_rampart_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleStructures/jpn_castle_structures_earthwork_rampart_01.png",
+      "sha256": "ff6409ba1a4fc3892e17e210d7adad9373e7d832b958c4c414b848b71dfa5ed4"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleStructures/jpn_castle_structures_castle_stone_well_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleStructures/jpn_castle_structures_castle_stone_well_01.png",
+      "sha256": "2f8cf0b65ebcbbc2b66e45992ed2fc5553599f9106a30bd49176e41f47abf411"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleStructures/jpn_castle_structures_karamon_inner_gate_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleStructures/jpn_castle_structures_karamon_inner_gate_01.png",
+      "sha256": "351657014b6b834134481ba92a6ba517fe415d45a8086df33fb96822925ef1b5"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleStructures/jpn_castle_structures_palisade_wall_wood_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleStructures/jpn_castle_structures_palisade_wall_wood_01.png",
+      "sha256": "1657c46b2f35ee70c83c334ffdb778dbe649a22420386366489a143b6d66b022"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleStructures/jpn_castle_structures_yagura_watchtower_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleStructures/jpn_castle_structures_yagura_watchtower_01.png",
+      "sha256": "ef1e09e1220a277c11adccb586224b48428df0f7334e069a21e3967d6cbe57b4"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleStructures/jpn_castle_structures_bansho_guardhouse_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleStructures/jpn_castle_structures_bansho_guardhouse_01.png",
+      "sha256": "1b3a5943133d679e90902b343c69f70ab9f2eb63ed3060b0a60a6864405850e5"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleStructures/jpn_castle_structures_shachihoko_ornament_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleStructures/jpn_castle_structures_shachihoko_ornament_01.png",
+      "sha256": "815c9823b02d0a9931b7a3621c376142cc84f75d2f4474d018d439b809af488c"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleStructures/jpn_castle_structures_moat_bank_segment_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleStructures/jpn_castle_structures_moat_bank_segment_01.png",
+      "sha256": "b3603edea3b5b643846124981564ab8300b47bff377229c5321253b29d68c248"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/CastleStructures/jpn_castle_structures_bell_tower_castle_01.png",
+      "organized_path": "02-feudal-japan/Tiles/CastleStructures/jpn_castle_structures_bell_tower_castle_01.png",
+      "sha256": "c10fc7de27a067a23b8c7a8b4c6a727b2054fabee314955a146a8911f6e1765a"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/SiegeArtillery/jpn_siege_artillery_anti_cavalry_stakes_01.png",
+      "organized_path": "02-feudal-japan/Tiles/SiegeArtillery/jpn_siege_artillery_anti_cavalry_stakes_01.png",
+      "sha256": "5af41041953a439e2484614636b3fa94cd3224429cb23cbbf60c38b58fb1cdcd"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/SiegeArtillery/jpn_siege_artillery_siege_ladder_long_01.png",
+      "organized_path": "02-feudal-japan/Tiles/SiegeArtillery/jpn_siege_artillery_siege_ladder_long_01.png",
+      "sha256": "467811fd771af34102a96233e245e22b81e2fe5596e91b3a1236aad787ec935e"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/SiegeArtillery/jpn_siege_artillery_fire_arrow_rack_01.png",
+      "organized_path": "02-feudal-japan/Tiles/SiegeArtillery/jpn_siege_artillery_fire_arrow_rack_01.png",
+      "sha256": "62755d0d4faf340775335ef0a005ffc6c54a3071e43856c779042f165b79dc1e"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/SiegeArtillery/jpn_siege_artillery_takeba_bamboo_shield_01.png",
+      "organized_path": "02-feudal-japan/Tiles/SiegeArtillery/jpn_siege_artillery_takeba_bamboo_shield_01.png",
+      "sha256": "656332df55c4dbc1d5caf6f22ed58fba55caab8f0ee78c3ef7be6ec893e608e8"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/SiegeArtillery/jpn_siege_artillery_gabion_earth_basket_01.png",
+      "organized_path": "02-feudal-japan/Tiles/SiegeArtillery/jpn_siege_artillery_gabion_earth_basket_01.png",
+      "sha256": "47a47f6cb14d13cf4e90362f0af6bab62574c1456cc445e8b5e52940a331d768"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/SiegeArtillery/jpn_siege_artillery_battering_ram_wheeled_01.png",
+      "organized_path": "02-feudal-japan/Tiles/SiegeArtillery/jpn_siege_artillery_battering_ram_wheeled_01.png",
+      "sha256": "7a5cc4a912668a51c316ff07aed5d99dc1da39646c189998f65c5882cb9059d9"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/SiegeArtillery/jpn_siege_artillery_powder_keg_stack_01.png",
+      "organized_path": "02-feudal-japan/Tiles/SiegeArtillery/jpn_siege_artillery_powder_keg_stack_01.png",
+      "sha256": "92a642c6bae7e92d1a2fa0265b01f59ea758057c745768deb07c4c255e57fd1b"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/SiegeArtillery/jpn_siege_artillery_abatis_stake_row_01.png",
+      "organized_path": "02-feudal-japan/Tiles/SiegeArtillery/jpn_siege_artillery_abatis_stake_row_01.png",
+      "sha256": "36dae84352b4d61dfc379d923304a9acb6d2470eee2a604605994c3a6c8111f3"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/SiegeArtillery/jpn_siege_artillery_spiked_log_trap_01.png",
+      "organized_path": "02-feudal-japan/Tiles/SiegeArtillery/jpn_siege_artillery_spiked_log_trap_01.png",
+      "sha256": "ad16234892ab3af676d038aa896bcb4dece7a09090bcec5d98a32bb4b9c71fad"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/SiegeArtillery/jpn_siege_artillery_powder_shot_crate_01.png",
+      "organized_path": "02-feudal-japan/Tiles/SiegeArtillery/jpn_siege_artillery_powder_shot_crate_01.png",
+      "sha256": "243d35159470de7843e41ce2f2fac37401072ef1770a57b5d8595c2aca292109"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/SiegeArtillery/jpn_siege_artillery_pavise_shield_mounted_01.png",
+      "organized_path": "02-feudal-japan/Tiles/SiegeArtillery/jpn_siege_artillery_pavise_shield_mounted_01.png",
+      "sha256": "d3e47148a03142aaa6a49099f5d10db0ba81621e70b6baefcff1ebdcad9bd527"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/SiegeArtillery/jpn_siege_artillery_tate_shield_wall_01.png",
+      "organized_path": "02-feudal-japan/Tiles/SiegeArtillery/jpn_siege_artillery_tate_shield_wall_01.png",
+      "sha256": "0ab2eb405ef3e09d40a50fb9e9ebe80cb9a9382c19d428dd5c4b18b54f59bf0d"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/SiegeArtillery/jpn_siege_artillery_ozutsu_cannon_large_01.png",
+      "organized_path": "02-feudal-japan/Tiles/SiegeArtillery/jpn_siege_artillery_ozutsu_cannon_large_01.png",
+      "sha256": "03ef42e52b65306f4ad18cf287670789d1fbe573604377667692f274550dd364"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/SiegeArtillery/jpn_siege_artillery_ishibiya_catapult_01.png",
+      "organized_path": "02-feudal-japan/Tiles/SiegeArtillery/jpn_siege_artillery_ishibiya_catapult_01.png",
+      "sha256": "ab717228b349ace8a35a260ae5b89453093f85d81ec03afede2d8491d330e483"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/SiegeArtillery/jpn_siege_artillery_arrow_bundle_stack_01.png",
+      "organized_path": "02-feudal-japan/Tiles/SiegeArtillery/jpn_siege_artillery_arrow_bundle_stack_01.png",
+      "sha256": "2bc53a8adc8a3a0446d332309a5e8d361c3c98614b6d97d747239c052a687034"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/SiegeArtillery/jpn_siege_artillery_teppo_matchlock_rack_01.png",
+      "organized_path": "02-feudal-japan/Tiles/SiegeArtillery/jpn_siege_artillery_teppo_matchlock_rack_01.png",
+      "sha256": "4486239eea941a31675ae38f5b2c6a09c3f1e1fbb6ee3d39d8b65524ffc0383f"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ArmoryDojo/jpn_armory_dojo_war_saddle_stand_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ArmoryDojo/jpn_armory_dojo_war_saddle_stand_01.png",
+      "sha256": "822a8c2f964b0c9820023969ecc9b2434a075826b4780995444bbdabc777b778"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ArmoryDojo/jpn_armory_dojo_training_dummy_wood_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ArmoryDojo/jpn_armory_dojo_training_dummy_wood_01.png",
+      "sha256": "dcd1503edce6d7501d6cc7f3a72dd60b0379e772bb43301d967db87c8bf08a27"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ArmoryDojo/jpn_armory_dojo_dojo_kamidana_shelf_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ArmoryDojo/jpn_armory_dojo_dojo_kamidana_shelf_01.png",
+      "sha256": "c744a4ff8ecdcdd327dadea8252952168d64c8d5726897fb53b18c6e94c6b46e"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ArmoryDojo/jpn_armory_dojo_naginata_wall_rack_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ArmoryDojo/jpn_armory_dojo_naginata_wall_rack_01.png",
+      "sha256": "20c9216748ffde0812f989d45c8803d64ce1a2ff2f73a8c29b1a79a5273a6ccc"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ArmoryDojo/jpn_armory_dojo_shield_stack_armory_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ArmoryDojo/jpn_armory_dojo_shield_stack_armory_01.png",
+      "sha256": "cae6aa08c0c893c84f2df2e6cebba900bef9ff1bcec92f713f0faed71dd529b3"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ArmoryDojo/jpn_armory_dojo_ashigaru_armor_rack_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ArmoryDojo/jpn_armory_dojo_ashigaru_armor_rack_01.png",
+      "sha256": "cdf82a42c410bac287554f58828474ef43604258898a8c455c9e8b9e2ec17ed6"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ArmoryDojo/jpn_armory_dojo_yumi_bow_stand_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ArmoryDojo/jpn_armory_dojo_yumi_bow_stand_01.png",
+      "sha256": "803fde69b0fe6ecaea3b2e503e05821721fbef07c6dcb11dc7253d480f19b77e"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ArmoryDojo/jpn_armory_dojo_wakizashi_sword_case_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ArmoryDojo/jpn_armory_dojo_wakizashi_sword_case_01.png",
+      "sha256": "53fd3408a421e9cd7efbb6845eb37af21739a6cea82511fc5912b5ed2f846caa"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ArmoryDojo/jpn_armory_dojo_sword_polish_station_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ArmoryDojo/jpn_armory_dojo_sword_polish_station_01.png",
+      "sha256": "3aec76bf9a4cc7f8da8d393ad9b2f6823c2f96818ac04596085a1a2c104421de"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ArmoryDojo/jpn_armory_dojo_katana_wall_rack_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ArmoryDojo/jpn_armory_dojo_katana_wall_rack_01.png",
+      "sha256": "44a662c772344dba8c042c4d82181bdd27af3b3db64f636abaa6b57d4410151f"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ArmoryDojo/jpn_armory_dojo_teppo_gun_stand_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ArmoryDojo/jpn_armory_dojo_teppo_gun_stand_01.png",
+      "sha256": "114360954c7d7c51f1ce753948f17aa461189e9cda6aac198afb3da8c5e9da44"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ArmoryDojo/jpn_armory_dojo_tatami_training_mats_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ArmoryDojo/jpn_armory_dojo_tatami_training_mats_01.png",
+      "sha256": "cabb22a40e7dda353975afcda5e67fcafdc00dc3ed8062f631939eebae2c9b75"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ArmoryDojo/jpn_armory_dojo_general_armor_ornate_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ArmoryDojo/jpn_armory_dojo_general_armor_ornate_01.png",
+      "sha256": "3d05ef2047dbdd13316a82895e9143feed6af4323e74806d711de4cf258d300a"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ArmoryDojo/jpn_armory_dojo_makiwara_striking_post_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ArmoryDojo/jpn_armory_dojo_makiwara_striking_post_01.png",
+      "sha256": "5e2743e18c3e21f133a8c069f2ced51ed67496afc6d2729a15259422e859b387"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ArmoryDojo/jpn_armory_dojo_horse_armor_frame_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ArmoryDojo/jpn_armory_dojo_horse_armor_frame_01.png",
+      "sha256": "5c92ca6cc165ee3f2433642ecd0082c46e530cca326ce97825c9dc3536f7fc81"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ArmoryDojo/jpn_armory_dojo_quiver_arrow_wall_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ArmoryDojo/jpn_armory_dojo_quiver_arrow_wall_01.png",
+      "sha256": "22d368f837dc6b9bfb5069d0a222b89897f6f590aa575562d3a07f4258486931"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ArmoryDojo/jpn_armory_dojo_greaves_gauntlet_shelf_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ArmoryDojo/jpn_armory_dojo_greaves_gauntlet_shelf_01.png",
+      "sha256": "1f997ac0873424fc8dd8cc3a7abf3b94f8eacf8e0df07a78bdffa302ff57e753"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ArmoryDojo/jpn_armory_dojo_straw_target_archery_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ArmoryDojo/jpn_armory_dojo_straw_target_archery_01.png",
+      "sha256": "532f50f1b7a17574f41775228d876e13d11487885df10a31fd286763200c4732"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ArmoryDojo/jpn_armory_dojo_yari_spear_rack_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ArmoryDojo/jpn_armory_dojo_yari_spear_rack_01.png",
+      "sha256": "6f2dca73a2fdb524a633bc8710f3df84198c0a5a318f7695fd92c6482b4ccec4"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Tiles/ArmoryDojo/jpn_armory_dojo_kabuto_helmet_row_01.png",
+      "organized_path": "02-feudal-japan/Tiles/ArmoryDojo/jpn_armory_dojo_kabuto_helmet_row_01.png",
+      "sha256": "42ba3a8f798241343d8d3a1a8fa1da4942e9092a31ce377957a5784fc08605f5"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/Preview/Preview.png",
+      "organized_path": "02-feudal-japan/Preview/Preview.png",
+      "sha256": "e5a29c70b04e3ff399d68eb777b85c0bf070171d7fa079b6e9b14a631dc4ca4e"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/TileMap/topdown_japan_complete_mega_clean_tilesheet_packed.json",
+      "organized_path": "02-feudal-japan/TileMap/topdown_japan_complete_mega_clean_tilesheet_packed.json",
+      "sha256": "26dedcadb6b742128f11bffc71773ad61233f253f96f119ea54a35f8f16f54bf"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/TileMap/topdown_japan_complete_mega_clean_tilesheet.png",
+      "organized_path": "02-feudal-japan/TileMap/topdown_japan_complete_mega_clean_tilesheet.png",
+      "sha256": "ed8d09942fe647c9b5ee86efaf388f4303fad70a633a34ff073797d058afe6b4"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/TileMap/topdown_japan_complete_mega_clean_tilesheet_packed.png",
+      "organized_path": "02-feudal-japan/TileMap/topdown_japan_complete_mega_clean_tilesheet_packed.png",
+      "sha256": "f5d63487af77c55f720606adac9119cd77ba1b399890cae8a9ea47c03a9da40b"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_v1.0/TileMap/topdown_japan_complete_mega_clean_tilesheet.json",
+      "organized_path": "02-feudal-japan/TileMap/topdown_japan_complete_mega_clean_tilesheet.json",
+      "sha256": "3c2f5fefda97c88c48793e78aa279451a50ac2b56a643ed2d81c7228401204ae"
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_Sample_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_Sample_v1.0/Documentation/ASSET_LIST.json",
+      "organized_path": "provenance/feudal-japan-sample/Documentation/ASSET_LIST.json",
+      "sha256": "59027816b602fe856f7bbc39c1ca42b8f20176c7e45e266ab4a2c37011409a7e",
+      "note": "Sample tile images are deduplicated against the full pack."
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_Sample_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_Sample_v1.0/Documentation/README.md",
+      "organized_path": "provenance/feudal-japan-sample/Documentation/README.md",
+      "sha256": "ce9f8b77480727076f622f4ffa68e4360729af0ca32dc4e9d82ea89a03eca36a",
+      "note": "Sample tile images are deduplicated against the full pack."
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_Sample_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_Sample_v1.0/Documentation/LICENSE.txt",
+      "organized_path": "provenance/feudal-japan-sample/Documentation/LICENSE.txt",
+      "sha256": "0d187a01fffdd1fb2b83cf31b5abc2369cba5276349a740ccd35a3d7f6cfb37c",
+      "note": "Sample tile images are deduplicated against the full pack."
+    },
+    {
+      "source": "FeudalJapanComplete2DMegaPropsPack_Sample_v1.0.zip",
+      "original_path": "FeudalJapanComplete2DMegaPropsPack_Sample_v1.0/Preview/Preview.png",
+      "organized_path": "provenance/feudal-japan-sample/Preview/Preview.png",
+      "sha256": "92408e6b10c3c298e318af6a3ad3244bcdfde993ccc4a28bb2c305022cd10f46",
+      "note": "Sample tile images are deduplicated against the full pack."
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Autumn/A_Bushes/Anim_A_Bush_1.png",
+      "organized_path": "03-harmonious-seasons/Autumn/A_Bushes/Anim_A_Bush_1.png",
+      "sha256": "a531e20875c6f343a715500bd62507f23e06afcfb6f51df31f40a1e3d958fe10"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Autumn/A_Bushes/Anim_A_Bush_2.png",
+      "organized_path": "03-harmonious-seasons/Autumn/A_Bushes/Anim_A_Bush_2.png",
+      "sha256": "fa0a147459185e67be2a0949298e27286d48a503b0373e5003c028a8a16d2c87"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Autumn/A_Bushes/Anim_A_Bush_3.png",
+      "organized_path": "03-harmonious-seasons/Autumn/A_Bushes/Anim_A_Bush_3.png",
+      "sha256": "14e1d4e3b1efd6beebe8749b878a4cef959b64dc744c92b7779a0026a2a7c680"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Autumn/A_Bushes/Anim_A_Bush_4.png",
+      "organized_path": "03-harmonious-seasons/Autumn/A_Bushes/Anim_A_Bush_4.png",
+      "sha256": "06e0fbf5520daa147f400e057f9a0934fce2dfbd439f55956007dec5d99b7cbc"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Autumn/A_Bushes/Anim_A_Bush_5.png",
+      "organized_path": "03-harmonious-seasons/Autumn/A_Bushes/Anim_A_Bush_5.png",
+      "sha256": "9d4e6cf9976172a07d4126f75b63a144b968a6f45a6f17a38d72684cf2d61c2e"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Autumn/A_Bushes/Anim_A_Bush_6.png",
+      "organized_path": "03-harmonious-seasons/Autumn/A_Bushes/Anim_A_Bush_6.png",
+      "sha256": "615d2af875fce03dcf795c876ac2e0e711bd9fe53bde365aaca5917c4b22d1cd"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Background Music/Harmonious Seasons Background Music.wav",
+      "organized_path": "03-harmonious-seasons/Background Music/Harmonious Seasons Background Music.wav",
+      "sha256": "71353baf5fc7e3b6142a01e7231a44edf8394703f4d7f01826ede4a5bf7b6b55"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Bushes/Anim_Bush_1.png",
+      "organized_path": "03-harmonious-seasons/Bushes/Anim_Bush_1.png",
+      "sha256": "5e5a5260533fb35563b52ad3b674ed46cba935e815bc7844c1e37e4ec5d22c06"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Bushes/Anim_Bush_2.png",
+      "organized_path": "03-harmonious-seasons/Bushes/Anim_Bush_2.png",
+      "sha256": "11421305bcf343b70b5f17d0f0f9e108f69ec5850b704754bdb91302842f65af"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Bushes/Anim_Bush_3.png",
+      "organized_path": "03-harmonious-seasons/Bushes/Anim_Bush_3.png",
+      "sha256": "ad70307815dd833aebfe40c7b94de41561c1b1385562b3d1877cded5b7746e77"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Bushes/Anim_Bush_4.png",
+      "organized_path": "03-harmonious-seasons/Bushes/Anim_Bush_4.png",
+      "sha256": "09f68cbe9996d24652e9b5b80af4c5d2d99b9c3cf6069a916b9497aa48c9c856"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Bushes/Anim_Bush_5.png",
+      "organized_path": "03-harmonious-seasons/Bushes/Anim_Bush_5.png",
+      "sha256": "e067eb3a108dbfaa2f55c53a1b4011497329e131c312b4bbd5e13811fd631059"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Bushes/Anim_Bush_6.png",
+      "organized_path": "03-harmonious-seasons/Bushes/Anim_Bush_6.png",
+      "sha256": "c675bdd7fd9ad01c9ad8a9db5082665093dfe371d7169eb6ad7cb27b0e4eb71a"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Characters/Female/F_Farmer_Idle.png",
+      "organized_path": "03-harmonious-seasons/Characters/Female/F_Farmer_Idle.png",
+      "sha256": "a105c71c95a0db5cfa23e222f53bdcc63473cb16483853c0f074b0e35915ff08"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Characters/Female/F_Farmer_Movement.png",
+      "organized_path": "03-harmonious-seasons/Characters/Female/F_Farmer_Movement.png",
+      "sha256": "c4a85eedb4233cca6f740883dbfeb905564cbd55b8fa52d7fc66c014fa8e9352"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Characters/Male/M_Farmer_Idle.png",
+      "organized_path": "03-harmonious-seasons/Characters/Male/M_Farmer_Idle.png",
+      "sha256": "5345124328a9b494a514640e2b793323bfe8c83ab9749749907e6551e95c86f1"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Characters/Male/M_Farmer_Movement.png",
+      "organized_path": "03-harmonious-seasons/Characters/Male/M_Farmer_Movement.png",
+      "sha256": "3a48cd66d800c2d07956b334e68f2fcb7a0505cbd340c9235c4e16da9fed07ea"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Cliffs/Cliffs_Grass.png",
+      "organized_path": "03-harmonious-seasons/Cliffs/Cliffs_Grass.png",
+      "sha256": "81e7cac92162ef12370e7d4e2a96649485fce8624a8e0df9954c0a6981947d02"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Cliffs/Cliffs_Grass_Autumn.png",
+      "organized_path": "03-harmonious-seasons/Cliffs/Cliffs_Grass_Autumn.png",
+      "sha256": "091d51e7060be19dc1578914d9ddcaf8d76dbea4de1ddb7b4e1073fbe02a886f"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Cliffs/Cliffs_Snow_Grass.png",
+      "organized_path": "03-harmonious-seasons/Cliffs/Cliffs_Snow_Grass.png",
+      "sha256": "2172b59dd85fda432a257f1516d67ad56a308aa97c06a8c3eead364fef95cfd9"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Flowers/Anim_Flower_A.png",
+      "organized_path": "03-harmonious-seasons/Flowers/Anim_Flower_A.png",
+      "sha256": "48c8c8123855dd3654f4a6bb70d7e478d705934afb94622ed79ed3a99bb7cce1"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Flowers/Anim_Flower_B.png",
+      "organized_path": "03-harmonious-seasons/Flowers/Anim_Flower_B.png",
+      "sha256": "5a4cd051eba6da2c4c3ee3625462e4ac2b7c0f3db1aa7dc2dbfc00d72510a1a7"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Flowers/Anim_S_Flower_A.png",
+      "organized_path": "03-harmonious-seasons/Flowers/Anim_S_Flower_A.png",
+      "sha256": "5cbfbdb9ed8512869d768226921493efcd41aaf5a3fe2807d34cbc63feca85e4"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Flowers/Anim_S_Flower_B.png",
+      "organized_path": "03-harmonious-seasons/Flowers/Anim_S_Flower_B.png",
+      "sha256": "2f572f59750ec5b6272fa5224327f3082e16e58f1d237868d72e8197c4e45483"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Flowers/Anim_S_Flower_C.png",
+      "organized_path": "03-harmonious-seasons/Flowers/Anim_S_Flower_C.png",
+      "sha256": "d867504cfc5e597daba3cb3a5ec5b261779a82c1db5217d754904675fb988d14"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Grasses/Anim_Grass_1.png",
+      "organized_path": "03-harmonious-seasons/Grasses/Anim_Grass_1.png",
+      "sha256": "836876ca17bf75dbf89776f327ebcf1a61f9787aa27d89907ff87cebd91a1911"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Grasses/Anim_Grass_2.png",
+      "organized_path": "03-harmonious-seasons/Grasses/Anim_Grass_2.png",
+      "sha256": "1a87204d24a2fed098ee7953865b5ac104b4834e856c67928e32925d563697f1"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Grasses/Anim_Grass_3.png",
+      "organized_path": "03-harmonious-seasons/Grasses/Anim_Grass_3.png",
+      "sha256": "898849a0aae00f85f06f26c17d392f8535cf9e136a444b571c967b632d98fa0c"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Miscellaneous/fallen_leaves.png",
+      "organized_path": "03-harmonious-seasons/Miscellaneous/fallen_leaves.png",
+      "sha256": "535ccf2b610add10ec8b6da5fd1d98caabc8c9585c3daa8e9829907d9681465d"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Miscellaneous/rocks.png",
+      "organized_path": "03-harmonious-seasons/Miscellaneous/rocks.png",
+      "sha256": "ae591cf137b92d195ce0bfef5fad6c20648c9d3e3f063634148e2f3c83bfe12e"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Miscellaneous/sticks_and_pebbles.png",
+      "organized_path": "03-harmonious-seasons/Miscellaneous/sticks_and_pebbles.png",
+      "sha256": "44133782befa6f724d6fcbd3421e44ddcce06a0f47c57c4018d8bd9a2dfe659e"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Miscellaneous/tiles.png",
+      "organized_path": "03-harmonious-seasons/Miscellaneous/tiles.png",
+      "sha256": "911a5d52ce82c5e2ac168f25aa94244521ef8cb982cc59ac278ed466f1dae4de"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Miscellaneous/Tree_Stumps_&_Bark.png",
+      "organized_path": "03-harmonious-seasons/Miscellaneous/Tree_Stumps_&_Bark.png",
+      "sha256": "75f203d0e3b6f513244dd0d86e7af82a3b8193d2bbda090463fd607fa90d8b04"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Paths/Dirt/Dirt_Path_Dirt.png",
+      "organized_path": "03-harmonious-seasons/Paths/Dirt/Dirt_Path_Dirt.png",
+      "sha256": "1873587b5693eb1c1f571162abd06f08a02dfa072c3a4d9fbd2520cc6e1e36ae"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Paths/Dirt/Dirt_Path_Grass.png",
+      "organized_path": "03-harmonious-seasons/Paths/Dirt/Dirt_Path_Grass.png",
+      "sha256": "16990d94969928b53cc8284ce7e181a037c387780e6d1797dfc99e2c2e883c86"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Paths/Dirt/Dirt_Path_Grass_Autumn.png",
+      "organized_path": "03-harmonious-seasons/Paths/Dirt/Dirt_Path_Grass_Autumn.png",
+      "sha256": "7a914e9d6a190c9a46bbcb769e37346c81154f71fe6768f78b582621e05b1689"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Paths/Dirt/Dirt_Path_Snow.png",
+      "organized_path": "03-harmonious-seasons/Paths/Dirt/Dirt_Path_Snow.png",
+      "sha256": "46cb442eabb6a2ae7bdd397b47e1514df050058d731c96236f7d62c48bee7de2"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Paths/Dirt/Dirt_Path_Snow_Grass.png",
+      "organized_path": "03-harmonious-seasons/Paths/Dirt/Dirt_Path_Snow_Grass.png",
+      "sha256": "8f02226988d090ee19014d2c0de65d8dedc4af1019b0e39fbcb387ad2d145693"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Paths/Grass/Grass_Paths.png",
+      "organized_path": "03-harmonious-seasons/Paths/Grass/Grass_Paths.png",
+      "sha256": "5b2382befd25a4299ce1b4e84a63415c2bc870bae5460ebb31603940ccbd6845"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Paths/Path_Variations.png",
+      "organized_path": "03-harmonious-seasons/Paths/Path_Variations.png",
+      "sha256": "be5160cb565d545f8e8a6c9c1239e00c34855a6cc9885d3818bb2aacf1dad12b"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Paths/Sand/Sand_Path_Dirt.png",
+      "organized_path": "03-harmonious-seasons/Paths/Sand/Sand_Path_Dirt.png",
+      "sha256": "caa596b5bbd248c0a98078362549f569530f67a95358cba7bbd5bbf132f88a49"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Paths/Sand/Sand_Path_Grass.png",
+      "organized_path": "03-harmonious-seasons/Paths/Sand/Sand_Path_Grass.png",
+      "sha256": "d42d81499aa483c6f568355cdb9cd65bdd57cb30c2caca74393cdaecf81ada05"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Paths/Sand/Sand_Path_Grass_Autumn.png",
+      "organized_path": "03-harmonious-seasons/Paths/Sand/Sand_Path_Grass_Autumn.png",
+      "sha256": "f2dcf2f4f9595f29c205aa4b8fa63aba54d67d23e63d4e6edea0984c7c853313"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Paths/Sand/Sand_Path_Snow.png",
+      "organized_path": "03-harmonious-seasons/Paths/Sand/Sand_Path_Snow.png",
+      "sha256": "cdb05c615ebf34fc2a6d84ab53a4291a5bd64e40853408fe59809e95e892cfb3"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Paths/Sand/Sand_Path_Snow_Grass.png",
+      "organized_path": "03-harmonious-seasons/Paths/Sand/Sand_Path_Snow_Grass.png",
+      "sha256": "49f6de17f5631f4d32de5c04e176d989b378a12916b245fe7619c065f66c95b6"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Paths/Snow/Snow_Path.png",
+      "organized_path": "03-harmonious-seasons/Paths/Snow/Snow_Path.png",
+      "sha256": "34b493ab5d0802b06cfc0d83e4b0457b65009ffb7fb8201f519d6c5a9188aac7"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Trees/Big_Trees/Big_AutumnTrees.png",
+      "organized_path": "03-harmonious-seasons/Trees/Big_Trees/Big_AutumnTrees.png",
+      "sha256": "2c4fec90242be5390b448efe6bba5ee27256a872caf7755d36e6a97a89328974"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Trees/Big_Trees/Big_NormalTrees.png",
+      "organized_path": "03-harmonious-seasons/Trees/Big_Trees/Big_NormalTrees.png",
+      "sha256": "62054ae06d89e1e3c66481099feb53e27cf70b90983dff6e7328d1201727ea67"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Trees/Big_Trees/Big_TreeswVines.png",
+      "organized_path": "03-harmonious-seasons/Trees/Big_Trees/Big_TreeswVines.png",
+      "sha256": "16b0ca80e2899be5e8781180275a073b98fc7982b1832e5d6466e18b23fdfc88"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Trees/Big_Trees/Big_WinterTrees.png",
+      "organized_path": "03-harmonious-seasons/Trees/Big_Trees/Big_WinterTrees.png",
+      "sha256": "7c899c883d9ce0c9401f62689644255945fd5e712892d7af739b1275a414543e"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Trees/Big_Trees/Big_WinterTreeswSnow.png",
+      "organized_path": "03-harmonious-seasons/Trees/Big_Trees/Big_WinterTreeswSnow.png",
+      "sha256": "9fea378ac540e559548a031b842e242a0fbc5524053426f5f84d8d59f4dd66a7"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Trees/Bigger_Trees/Bigger_AutumnTrees.png",
+      "organized_path": "03-harmonious-seasons/Trees/Bigger_Trees/Bigger_AutumnTrees.png",
+      "sha256": "a6ef1b4ff829e6c8820fe00a6fdb92cdbba2aad7c97ba9eed68abeb19ecbf69b"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Trees/Bigger_Trees/Bigger_NormalTrees.png",
+      "organized_path": "03-harmonious-seasons/Trees/Bigger_Trees/Bigger_NormalTrees.png",
+      "sha256": "4c2930351561b2633986dfc9f9eaa1211e8c0d75b24f286e05a298aec65276f1"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Trees/Bigger_Trees/Bigger_TreeswVines.png",
+      "organized_path": "03-harmonious-seasons/Trees/Bigger_Trees/Bigger_TreeswVines.png",
+      "sha256": "364dbfaae56ca8b3a1575d61607fd2e74057a21ac9c0b4eab3f499b3e5194933"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Trees/Bigger_Trees/Bigger_WinterTrees.png",
+      "organized_path": "03-harmonious-seasons/Trees/Bigger_Trees/Bigger_WinterTrees.png",
+      "sha256": "05475fd52fdaca77d5837a274562bf5e19f5e6686058461020f60f2f18e2ae17"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Trees/Bigger_Trees/Bigger_WinterTreeswSnow.png",
+      "organized_path": "03-harmonious-seasons/Trees/Bigger_Trees/Bigger_WinterTreeswSnow.png",
+      "sha256": "b9a05b44a2659f08ba4011acf91889cd235a755d8173aacd436d8c7f6b43db20"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Trees/Small_Trees/AutumnTrees.png",
+      "organized_path": "03-harmonious-seasons/Trees/Small_Trees/AutumnTrees.png",
+      "sha256": "752557214e0524129a155a282c12948617849d6eb4cf52ceac36457fa763f722"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Trees/Small_Trees/NormalTrees.png",
+      "organized_path": "03-harmonious-seasons/Trees/Small_Trees/NormalTrees.png",
+      "sha256": "02536ab7d7775945878aa9432fe45891f32ec9d69decf3b017d39f842307a306"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Trees/Small_Trees/TreeswVines.png",
+      "organized_path": "03-harmonious-seasons/Trees/Small_Trees/TreeswVines.png",
+      "sha256": "96d84351da70da838822d01724107c1e35ed3cd869333c83462e1c0267340e0c"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Trees/Small_Trees/WinterTrees.png",
+      "organized_path": "03-harmonious-seasons/Trees/Small_Trees/WinterTrees.png",
+      "sha256": "b2f2b270afc7a12d850606f553cf0dd5013d680749369abcfdcc497abd19beaa"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Trees/Small_Trees/WinterTreeswSnow.png",
+      "organized_path": "03-harmonious-seasons/Trees/Small_Trees/WinterTreeswSnow.png",
+      "sha256": "2707769866bc9df3bbf5da68825ef22b8f56f6b637a04df40aa4bb3b43c0aeea"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Water/WaterEdges/Deep_Water_Autumn_Grass.png",
+      "organized_path": "03-harmonious-seasons/Water/WaterEdges/Deep_Water_Autumn_Grass.png",
+      "sha256": "d64b6ddf76cb58edc1b8313c6d038b2d191b2e8d4946c62675845deecc284898"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Water/WaterEdges/Deep_Water_Dirt.png",
+      "organized_path": "03-harmonious-seasons/Water/WaterEdges/Deep_Water_Dirt.png",
+      "sha256": "40f7559a15d041500863006efe8088943dc989035480c2dc9301d4205c2fbcdc"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Water/WaterEdges/Deep_Water_Dirt_Sand.png",
+      "organized_path": "03-harmonious-seasons/Water/WaterEdges/Deep_Water_Dirt_Sand.png",
+      "sha256": "fe1c0a61e69a26a5820f25aa5625591de4c5a6c85a1b58cc01eca9f8782899f8"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Water/WaterEdges/Deep_Water_Grass.png",
+      "organized_path": "03-harmonious-seasons/Water/WaterEdges/Deep_Water_Grass.png",
+      "sha256": "2ce147e89c3992a0ffcdf44e666f57b04368eb937ba4761a6af194c117494f56"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Water/WaterEdges/Deep_Water_Snow.png",
+      "organized_path": "03-harmonious-seasons/Water/WaterEdges/Deep_Water_Snow.png",
+      "sha256": "e7fe371678ef249150ea3d028e047b1c913b2aee31e0210cf5d1f0492d2dbc6d"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Water/WaterEdges/Deep_Water_Snow_Grass.png",
+      "organized_path": "03-harmonious-seasons/Water/WaterEdges/Deep_Water_Snow_Grass.png",
+      "sha256": "20b8d6ac1da4dcd5139da33ffac014d6e836de2507aee81d1bbe43bbeef42ab9"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Water/WaterEdges/Deep_Water_Winter_Grass.png",
+      "organized_path": "03-harmonious-seasons/Water/WaterEdges/Deep_Water_Winter_Grass.png",
+      "sha256": "d160448d933350e9baaf29c2e078aba0b176390c3fda15b2c049d4242d8dfd1f"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Water/WaterTilesAnimated/Lake_Water_Anim.png",
+      "organized_path": "03-harmonious-seasons/Water/WaterTilesAnimated/Lake_Water_Anim.png",
+      "sha256": "40c2f168efa2fa13875f15d3da52787d4e66bf74f60f38b9e88bb96761459306"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Water/WaterTilesAnimated/Ocean_Water_40%_Anim.png",
+      "organized_path": "03-harmonious-seasons/Water/WaterTilesAnimated/Ocean_Water_40%_Anim.png",
+      "sha256": "2f6c61c67e06dcab4035fcfd02484a135c91a74d04eeb1a4e3cc4dce63c33dc3"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Water/WaterTilesAnimated/Ocean_Water_60%_Anim.png",
+      "organized_path": "03-harmonious-seasons/Water/WaterTilesAnimated/Ocean_Water_60%_Anim.png",
+      "sha256": "bf589fa8b6f936e797b5863fd84e51ee7890cce8d19229075cabd87ce3425ff8"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Water/WaterTilesAnimated/Ocean_Water_Anim.png",
+      "organized_path": "03-harmonious-seasons/Water/WaterTilesAnimated/Ocean_Water_Anim.png",
+      "sha256": "4b6d62907abec831988ab6beb9680adc22a7faa3e32aec1207f6308eeafd4c30"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Water/WaterTilesAnimated/River_Water_Anim.png",
+      "organized_path": "03-harmonious-seasons/Water/WaterTilesAnimated/River_Water_Anim.png",
+      "sha256": "8e14e058d0150f30aa5e8786657add4d61c3de97e4babb66d64e919bcce881a1"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Water/WaterTilesAnimated/Water_Anim.png",
+      "organized_path": "03-harmonious-seasons/Water/WaterTilesAnimated/Water_Anim.png",
+      "sha256": "4136b17450030b4676e1ccd75f58c5b4e152149e06dd381c78e19bb8f5dfecef"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Winter/W_Bushes/Anim_W_Bush_1.png",
+      "organized_path": "03-harmonious-seasons/Winter/W_Bushes/Anim_W_Bush_1.png",
+      "sha256": "6be577bac5f6e43b127aa986a31c1a058cbc26cad830653653c45eb269dcad55"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Winter/W_Bushes/Anim_W_Bush_2.png",
+      "organized_path": "03-harmonious-seasons/Winter/W_Bushes/Anim_W_Bush_2.png",
+      "sha256": "a5b31caa473123d9062b736e87ff543cd38f8e4bf31043f5e7fcb7c9d21d3e76"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Winter/W_Bushes/Anim_W_Bush_3.png",
+      "organized_path": "03-harmonious-seasons/Winter/W_Bushes/Anim_W_Bush_3.png",
+      "sha256": "62f9c66155fbce1c04aebaffb8689ecec63064a203004844f7f27d6565373453"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Winter/W_Bushes/Anim_W_Bush_4.png",
+      "organized_path": "03-harmonious-seasons/Winter/W_Bushes/Anim_W_Bush_4.png",
+      "sha256": "0b9935a914fdfc37df83e54ac0ed9fa56bdef5c00338d9e385ebb4b4f75ec354"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Winter/W_Bushes/Anim_W_Bush_5.png",
+      "organized_path": "03-harmonious-seasons/Winter/W_Bushes/Anim_W_Bush_5.png",
+      "sha256": "e131bcd1507204866f19a57ac2b800076f9a86be1f502fa79471d2b6d8a99408"
+    },
+    {
+      "source": "HarmoniousSeasons-ASeasonsBased2DPixelArtPack.zip",
+      "original_path": "Harmonious Seasons - A Seasons Based 2D Pixel Art Pack/Winter/W_Bushes/Anim_W_Bush_6.png",
+      "organized_path": "03-harmonious-seasons/Winter/W_Bushes/Anim_W_Bush_6.png",
+      "sha256": "804d0940f7968233c2e0ec3fec9b597be5fa5cffac9536fe8257bcdbf8c7a34b"
+    }
+  ],
+  "counts": {
+    "files": 342,
+    "bytes": 97173732
+  }
+}
