@@ -6,13 +6,11 @@ Os pacotes já presentes em `docs/` complementam diretamente a primeira fatia do
 
 | Pacote | Conteúdo útil | Licença declarada | Decisão |
 |---|---|---|---|
-| `feudal_japan_nature_vol3_pixelkensei.zip` | 8 assets de natureza 32×32, incluindo cerejeira, bambu, lago de carpas, pedras, caminho e lótus; spritesheet 4×2 | CC0 1.0, com proibição de revenda dos assets crus | Aprovado para props e decoração de regiões; manter paleta separada até validar mistura com o tileset procedural |
-| `opp4_village_tiles.zip` | Tiles de vila, casas, fontes, ruas, objetos, interiores e mockups | README declara domínio público/CC0; instruções alertam contra pastas de origem incerta | Usar somente `environment/tiles` após revisão visual; não usar arquivos de pastas não autorizadas pelo aviso do próprio pacote |
 | `tinyRPG_manaSoulGUI_v_1_0.zip` | Molduras 9-slice, barras, tabs, botões, cursores, inventário, retrato e bússola | CC0 1.0; autor: Gabriel “tiopalada” Lima | Aprovado como camada visual do HUD, sem substituir a lógica de interface |
 | `assets/characters/samurai/samurai-all-animations-pack.zip` | Caminhada/idle em 8 direções, ataque de espada, ataque de orbe de energia azul e morte | Metadados e proveniência no próprio pacote; origem interna da entrega atual | Usar imediatamente no combate prototipal |
 | `docs/pixellab-7-objects-2026-10-17.zip` | Quatro cabanas wuxia 128×128 e três barracas 48×48, low top-down, export PixelLab | Proveniência registrada em `metadata.json`; licença não declarada no export, tratar como asset privado do projeto | Usar na vila Qinghe para corrigir a escala arquitetônica; não aplicar escala de runtime |
 
-Os recortes autorizados para a reconstrução em escala foram preparados em `assets/external/opp4-village/` e `assets/external/feudal-japan-nature/`. Os ZIPs originais continuam em `docs/` como fonte de procedência.
+Os assets legados de natureza e vila foram removidos. A composição atual usa o kit wuxia e o Mega Pack Feudal Japan/Harmonious Seasons como fontes futuras de integração.
 
 O kit Pixellab foi preparado em `assets/external/pixellab-wuxia-objects/`. As cabanas permanecem em resolução nativa de 128×128 px e as barracas em 48×48 px, com colisão separada na base. Como o export não contém licença explícita, ele não deve ser redistribuído fora deste projeto sem confirmação de direitos.
 
@@ -37,11 +35,11 @@ Extrair para `assets/characters/samurai/runtime/` os frames de `sword-attack` e 
 
 ### Mundo
 
-Usar os assets de natureza como props de regiões de bambu, Qinghe e áreas de água. O pack OPP4 será usado para reconstruir casas e mercado em módulos de vários tiles, não como uma única imagem esticada. Antes de substituir tiles existentes, fazer uma região de demonstração isolada e revisar colisão, escala e contraste com o personagem 64×64.
+Usar os elementos de natureza do Mega Pack/Harmonious Seasons como props de regiões de bambu, Qinghe e áreas de água. Antes de substituir tiles existentes, fazer uma região de demonstração isolada e revisar colisão, escala e contraste com o personagem 64×64.
 
 ### Regra de escala da vila
 
-O personagem é a referência: frame nativo de 64×64 px, ocupando aproximadamente 2×2 células de 32 px. Uma construção principal deve ter, no mínimo, 3 células de largura e altura visual suficiente para que portas/janelas leiam como arquitetura — nunca aumentar um sprite pequeno por escala de runtime. Peças do OPP4 serão recortadas e montadas em resolução nativa; isso reorganiza pixels existentes e não cria arte nova.
+O personagem é a referência: frame nativo de 64×64 px, ocupando aproximadamente 2×2 células de 32 px. Uma construção principal deve ter, no mínimo, 3 células de largura e altura visual suficiente para que portas/janelas leiam como arquitetura — nunca aumentar um sprite pequeno por escala de runtime. Peças do Mega Pack Feudal Japan serão montadas em resolução nativa; isso reorganiza pixels existentes e não cria arte nova.
 
 ## Restrições de procedência
 

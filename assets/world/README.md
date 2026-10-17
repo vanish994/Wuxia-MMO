@@ -11,7 +11,7 @@ Este diretório contém uma **entrega utilizável de núcleo/vertical slice**, n
 - **11 imagens de props** no mapa de demonstração Qinghe, de tamanhos nativos variáveis; incluem vegetação, rochas, lanternas, placa, ponte e algumas estruturas. O catálogo não equivale a 11 edifícios.
 - Mapa reproduzível de **Qinghe Valley**, com vila, caminhos, bambuzal, água, ponte, construções, decoração, colisão, entradas e saídas.
 - A vila inicial de Qinghe é um hub aberto de 1792×1152 px com praça central menor, rotas longas para os quatro pontos cardeais, três áreas de água e quatro distritos funcionais declarados no mapa: `respawn-shrine`, `market-square`, `alchemy-yard`, `forge-yard` e `guest-yard`. Eles são pontos de integração para futuros NPCs, economia, hospedagem e produção; não implementam esses sistemas ainda.
-- O kit visual executável está em `assets/world/maps/biomes/qinghe-valley-village-kit.json`: cabanas 128×128, barracas 48×48 e props japoneses de cerejeira, bambu, lótus, pedra e carpas, todos ancorados na grade nativa sem escala artificial. A fonte OPP4 de 224×224 foi retirada do mapa jogável por ficar desproporcional ao personagem de 64×64; a decoração procedural restante é `solid: false` para manter o mundo vivo sem criar paredes invisíveis.
+- O kit visual executável está em `assets/world/maps/biomes/qinghe-valley-village-kit.json`: cabanas 128×128 e barracas 48×48, ancoradas na grade nativa sem escala artificial. A decoração estrutural restante é `solid: false` para manter o mundo vivo sem criar paredes invisíveis.
 - Loader de TMJ/atlas/props/colisão/interações, seletor Dual Grid e utilidades Phaser de estação, horário e clima em `src/client/world/phaser/`.
 - Contrato de integração servidor/cliente, inventário com hashes e relatórios de QA.
 

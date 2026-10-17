@@ -21,7 +21,7 @@ Execução final do pipeline `generate2dmap` após a migração de Qinghe para u
 
 Qinghe deixou de ser uma tela compacta com a vila ocupando quase todo o enquadramento. O novo mundo tem bordas abertas, rotas longas para os quatro pontos cardeais, três áreas de água e um núcleo de serviços menor. Os distritos foram espalhados para que o jogador atravesse o mapa em vez de encontrar todos os prédios agrupados no centro.
 
-A fonte OPP4 de 224×224 px foi removida da área jogável porque dominava visualmente o personagem de 64×64 px. O kit agora usa cabanas de 128×128 px, barracas de 48×48 px e props de detalhe em 32×32 px, todos em pixels nativos. A decoração procedural foi convertida para props `solid: false`: o mapa continua vivo sem transformar vegetação em paredes invisíveis.
+O kit usa cabanas de 128×128 px e barracas de 48×48 px, todos em pixels nativos. A decoração estrutural foi convertida para props `solid: false`: o mapa continua vivo sem transformar elementos visuais em paredes invisíveis.
 
 ## Limitações registradas
 
