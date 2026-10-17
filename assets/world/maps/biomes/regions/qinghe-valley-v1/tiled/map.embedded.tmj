@@ -2086,295 +2086,6 @@
      "y": 32.0
     },
     {
-     "gid": 325,
-     "height": 0.0,
-     "id": 0,
-     "name": "ambient_bamboo",
-     "properties": [
-      {
-       "name": "prop",
-       "type": "string",
-       "value": "ambient_bamboo"
-      },
-      {
-       "name": "anchorWorldX",
-       "type": "float",
-       "value": 806.0
-      },
-      {
-       "name": "anchorWorldY",
-       "type": "float",
-       "value": 150.0
-      },
-      {
-       "name": "sortY",
-       "type": "float",
-       "value": 150.0
-      },
-      {
-       "name": "scale",
-       "type": "float",
-       "value": 1.0
-      },
-      {
-       "name": "solid",
-       "type": "bool",
-       "value": false
-      },
-      {
-       "name": "occlusion",
-       "type": "string",
-       "value": "tall"
-      }
-     ],
-     "rotation": 0,
-     "visible": true,
-     "width": 0.0,
-     "x": 796.0,
-     "y": 103.0
-    },
-    {
-     "gid": 325,
-     "height": 0.0,
-     "id": 0,
-     "name": "ambient_bamboo",
-     "properties": [
-      {
-       "name": "prop",
-       "type": "string",
-       "value": "ambient_bamboo"
-      },
-      {
-       "name": "anchorWorldX",
-       "type": "float",
-       "value": 790.0
-      },
-      {
-       "name": "anchorWorldY",
-       "type": "float",
-       "value": 196.0
-      },
-      {
-       "name": "sortY",
-       "type": "float",
-       "value": 196.0
-      },
-      {
-       "name": "scale",
-       "type": "float",
-       "value": 1.0
-      },
-      {
-       "name": "solid",
-       "type": "bool",
-       "value": false
-      },
-      {
-       "name": "occlusion",
-       "type": "string",
-       "value": "tall"
-      }
-     ],
-     "rotation": 0,
-     "visible": true,
-     "width": 0.0,
-     "x": 780.0,
-     "y": 149.0
-    },
-    {
-     "gid": 325,
-     "height": 0.0,
-     "id": 0,
-     "name": "ambient_bamboo",
-     "properties": [
-      {
-       "name": "prop",
-       "type": "string",
-       "value": "ambient_bamboo"
-      },
-      {
-       "name": "anchorWorldX",
-       "type": "float",
-       "value": 986.0
-      },
-      {
-       "name": "anchorWorldY",
-       "type": "float",
-       "value": 150.0
-      },
-      {
-       "name": "sortY",
-       "type": "float",
-       "value": 150.0
-      },
-      {
-       "name": "scale",
-       "type": "float",
-       "value": 1.0
-      },
-      {
-       "name": "solid",
-       "type": "bool",
-       "value": false
-      },
-      {
-       "name": "occlusion",
-       "type": "string",
-       "value": "tall"
-      }
-     ],
-     "rotation": 0,
-     "visible": true,
-     "width": 0.0,
-     "x": 976.0,
-     "y": 103.0
-    },
-    {
-     "gid": 325,
-     "height": 0.0,
-     "id": 0,
-     "name": "ambient_bamboo",
-     "properties": [
-      {
-       "name": "prop",
-       "type": "string",
-       "value": "ambient_bamboo"
-      },
-      {
-       "name": "anchorWorldX",
-       "type": "float",
-       "value": 1002.0
-      },
-      {
-       "name": "anchorWorldY",
-       "type": "float",
-       "value": 196.0
-      },
-      {
-       "name": "sortY",
-       "type": "float",
-       "value": 196.0
-      },
-      {
-       "name": "scale",
-       "type": "float",
-       "value": 1.0
-      },
-      {
-       "name": "solid",
-       "type": "bool",
-       "value": false
-      },
-      {
-       "name": "occlusion",
-       "type": "string",
-       "value": "tall"
-      }
-     ],
-     "rotation": 0,
-     "visible": true,
-     "width": 0.0,
-     "x": 992.0,
-     "y": 149.0
-    },
-    {
-     "gid": 326,
-     "height": 0.0,
-     "id": 0,
-     "name": "ambient_blossom",
-     "properties": [
-      {
-       "name": "prop",
-       "type": "string",
-       "value": "ambient_blossom"
-      },
-      {
-       "name": "anchorWorldX",
-       "type": "float",
-       "value": 826.0
-      },
-      {
-       "name": "anchorWorldY",
-       "type": "float",
-       "value": 210.0
-      },
-      {
-       "name": "sortY",
-       "type": "float",
-       "value": 210.0
-      },
-      {
-       "name": "scale",
-       "type": "float",
-       "value": 1.0
-      },
-      {
-       "name": "solid",
-       "type": "bool",
-       "value": false
-      },
-      {
-       "name": "occlusion",
-       "type": "string",
-       "value": "tall"
-      }
-     ],
-     "rotation": 0,
-     "visible": true,
-     "width": 0.0,
-     "x": 814.0,
-     "y": 177.0
-    },
-    {
-     "gid": 326,
-     "height": 0.0,
-     "id": 0,
-     "name": "ambient_blossom",
-     "properties": [
-      {
-       "name": "prop",
-       "type": "string",
-       "value": "ambient_blossom"
-      },
-      {
-       "name": "anchorWorldX",
-       "type": "float",
-       "value": 966.0
-      },
-      {
-       "name": "anchorWorldY",
-       "type": "float",
-       "value": 210.0
-      },
-      {
-       "name": "sortY",
-       "type": "float",
-       "value": 210.0
-      },
-      {
-       "name": "scale",
-       "type": "float",
-       "value": 1.0
-      },
-      {
-       "name": "solid",
-       "type": "bool",
-       "value": false
-      },
-      {
-       "name": "occlusion",
-       "type": "string",
-       "value": "tall"
-      }
-     ],
-     "rotation": 0,
-     "visible": true,
-     "width": 0.0,
-     "x": 954.0,
-     "y": 177.0,
-     "flipX": true
-    },
-    {
      "gid": 333,
      "height": 0.0,
      "id": 0,
@@ -2901,199 +2612,6 @@
      "width": 0.0,
      "x": 1048.0,
      "y": 739.0
-    },
-    {
-     "gid": 326,
-     "height": 0.0,
-     "id": 0,
-     "name": "ambient_blossom",
-     "properties": [
-      {
-       "name": "prop",
-       "type": "string",
-       "value": "ambient_blossom"
-      },
-      {
-       "name": "anchorWorldX",
-       "type": "float",
-       "value": 704.0
-      },
-      {
-       "name": "anchorWorldY",
-       "type": "float",
-       "value": 448.0
-      },
-      {
-       "name": "sortY",
-       "type": "float",
-       "value": 448.0
-      },
-      {
-       "name": "scale",
-       "type": "float",
-       "value": 1.0
-      },
-      {
-       "name": "solid",
-       "type": "bool",
-       "value": false
-      },
-      {
-       "name": "occlusion",
-       "type": "string",
-       "value": "tall"
-      }
-     ],
-     "rotation": 0,
-     "visible": true,
-     "width": 0.0,
-     "x": 692.0,
-     "y": 415.0
-    },
-    {
-     "gid": 326,
-     "height": 0.0,
-     "id": 0,
-     "name": "ambient_blossom",
-     "properties": [
-      {
-       "name": "prop",
-       "type": "string",
-       "value": "ambient_blossom"
-      },
-      {
-       "name": "anchorWorldX",
-       "type": "float",
-       "value": 1088.0
-      },
-      {
-       "name": "anchorWorldY",
-       "type": "float",
-       "value": 448.0
-      },
-      {
-       "name": "sortY",
-       "type": "float",
-       "value": 448.0
-      },
-      {
-       "name": "scale",
-       "type": "float",
-       "value": 1.0
-      },
-      {
-       "name": "solid",
-       "type": "bool",
-       "value": false
-      },
-      {
-       "name": "occlusion",
-       "type": "string",
-       "value": "tall"
-      }
-     ],
-     "rotation": 0,
-     "visible": true,
-     "width": 0.0,
-     "x": 1076.0,
-     "y": 415.0,
-     "flipX": true
-    },
-    {
-     "gid": 326,
-     "height": 0.0,
-     "id": 0,
-     "name": "ambient_blossom",
-     "properties": [
-      {
-       "name": "prop",
-       "type": "string",
-       "value": "ambient_blossom"
-      },
-      {
-       "name": "anchorWorldX",
-       "type": "float",
-       "value": 704.0
-      },
-      {
-       "name": "anchorWorldY",
-       "type": "float",
-       "value": 800.0
-      },
-      {
-       "name": "sortY",
-       "type": "float",
-       "value": 800.0
-      },
-      {
-       "name": "scale",
-       "type": "float",
-       "value": 1.0
-      },
-      {
-       "name": "solid",
-       "type": "bool",
-       "value": false
-      },
-      {
-       "name": "occlusion",
-       "type": "string",
-       "value": "tall"
-      }
-     ],
-     "rotation": 0,
-     "visible": true,
-     "width": 0.0,
-     "x": 692.0,
-     "y": 767.0
-    },
-    {
-     "gid": 326,
-     "height": 0.0,
-     "id": 0,
-     "name": "ambient_blossom",
-     "properties": [
-      {
-       "name": "prop",
-       "type": "string",
-       "value": "ambient_blossom"
-      },
-      {
-       "name": "anchorWorldX",
-       "type": "float",
-       "value": 1088.0
-      },
-      {
-       "name": "anchorWorldY",
-       "type": "float",
-       "value": 800.0
-      },
-      {
-       "name": "sortY",
-       "type": "float",
-       "value": 800.0
-      },
-      {
-       "name": "scale",
-       "type": "float",
-       "value": 1.0
-      },
-      {
-       "name": "solid",
-       "type": "bool",
-       "value": false
-      },
-      {
-       "name": "occlusion",
-       "type": "string",
-       "value": "tall"
-      }
-     ],
-     "rotation": 0,
-     "visible": true,
-     "width": 0.0,
-     "x": 1076.0,
-     "y": 767.0
     },
     {
      "gid": 335,
@@ -4055,833 +3573,6 @@
      "width": 0.0,
      "x": 400.0,
      "y": 931.0
-    },
-    {
-     "gid": 328,
-     "height": 0.0,
-     "id": 0,
-     "name": "ambient_shrub",
-     "properties": [
-      {
-       "name": "prop",
-       "type": "string",
-       "value": "ambient_shrub"
-      },
-      {
-       "name": "anchorWorldX",
-       "type": "float",
-       "value": 576.0
-      },
-      {
-       "name": "anchorWorldY",
-       "type": "float",
-       "value": 364.0
-      },
-      {
-       "name": "sortY",
-       "type": "float",
-       "value": 364.0
-      },
-      {
-       "name": "scale",
-       "type": "float",
-       "value": 1.0
-      },
-      {
-       "name": "solid",
-       "type": "bool",
-       "value": false
-      },
-      {
-       "name": "occlusion",
-       "type": "string",
-       "value": "low"
-      }
-     ],
-     "rotation": 0,
-     "visible": true,
-     "width": 0.0,
-     "x": 566.0,
-     "y": 352.0,
-     "flipX": true
-    },
-    {
-     "gid": 328,
-     "height": 0.0,
-     "id": 0,
-     "name": "ambient_shrub",
-     "properties": [
-      {
-       "name": "prop",
-       "type": "string",
-       "value": "ambient_shrub"
-      },
-      {
-       "name": "anchorWorldX",
-       "type": "float",
-       "value": 640.0
-      },
-      {
-       "name": "anchorWorldY",
-       "type": "float",
-       "value": 440.0
-      },
-      {
-       "name": "sortY",
-       "type": "float",
-       "value": 440.0
-      },
-      {
-       "name": "scale",
-       "type": "float",
-       "value": 1.0
-      },
-      {
-       "name": "solid",
-       "type": "bool",
-       "value": false
-      },
-      {
-       "name": "occlusion",
-       "type": "string",
-       "value": "low"
-      }
-     ],
-     "rotation": 0,
-     "visible": true,
-     "width": 0.0,
-     "x": 630.0,
-     "y": 428.0,
-     "flipX": true
-    },
-    {
-     "gid": 328,
-     "height": 0.0,
-     "id": 0,
-     "name": "ambient_shrub",
-     "properties": [
-      {
-       "name": "prop",
-       "type": "string",
-       "value": "ambient_shrub"
-      },
-      {
-       "name": "anchorWorldX",
-       "type": "float",
-       "value": 576.0
-      },
-      {
-       "name": "anchorWorldY",
-       "type": "float",
-       "value": 448.0
-      },
-      {
-       "name": "sortY",
-       "type": "float",
-       "value": 448.0
-      },
-      {
-       "name": "scale",
-       "type": "float",
-       "value": 1.0
-      },
-      {
-       "name": "solid",
-       "type": "bool",
-       "value": false
-      },
-      {
-       "name": "occlusion",
-       "type": "string",
-       "value": "low"
-      }
-     ],
-     "rotation": 0,
-     "visible": true,
-     "width": 0.0,
-     "x": 566.0,
-     "y": 436.0
-    },
-    {
-     "gid": 328,
-     "height": 0.0,
-     "id": 0,
-     "name": "ambient_shrub",
-     "properties": [
-      {
-       "name": "prop",
-       "type": "string",
-       "value": "ambient_shrub"
-      },
-      {
-       "name": "anchorWorldX",
-       "type": "float",
-       "value": 1216.0
-      },
-      {
-       "name": "anchorWorldY",
-       "type": "float",
-       "value": 448.0
-      },
-      {
-       "name": "sortY",
-       "type": "float",
-       "value": 448.0
-      },
-      {
-       "name": "scale",
-       "type": "float",
-       "value": 1.0
-      },
-      {
-       "name": "solid",
-       "type": "bool",
-       "value": false
-      },
-      {
-       "name": "occlusion",
-       "type": "string",
-       "value": "low"
-      }
-     ],
-     "rotation": 0,
-     "visible": true,
-     "width": 0.0,
-     "x": 1206.0,
-     "y": 436.0
-    },
-    {
-     "gid": 328,
-     "height": 0.0,
-     "id": 0,
-     "name": "ambient_shrub",
-     "properties": [
-      {
-       "name": "prop",
-       "type": "string",
-       "value": "ambient_shrub"
-      },
-      {
-       "name": "anchorWorldX",
-       "type": "float",
-       "value": 1152.0
-      },
-      {
-       "name": "anchorWorldY",
-       "type": "float",
-       "value": 360.0
-      },
-      {
-       "name": "sortY",
-       "type": "float",
-       "value": 360.0
-      },
-      {
-       "name": "scale",
-       "type": "float",
-       "value": 1.0
-      },
-      {
-       "name": "solid",
-       "type": "bool",
-       "value": false
-      },
-      {
-       "name": "occlusion",
-       "type": "string",
-       "value": "low"
-      }
-     ],
-     "rotation": 0,
-     "visible": true,
-     "width": 0.0,
-     "x": 1142.0,
-     "y": 348.0,
-     "flipX": true
-    },
-    {
-     "gid": 328,
-     "height": 0.0,
-     "id": 0,
-     "name": "ambient_shrub",
-     "properties": [
-      {
-       "name": "prop",
-       "type": "string",
-       "value": "ambient_shrub"
-      },
-      {
-       "name": "anchorWorldX",
-       "type": "float",
-       "value": 1344.0
-      },
-      {
-       "name": "anchorWorldY",
-       "type": "float",
-       "value": 448.0
-      },
-      {
-       "name": "sortY",
-       "type": "float",
-       "value": 448.0
-      },
-      {
-       "name": "scale",
-       "type": "float",
-       "value": 1.0
-      },
-      {
-       "name": "solid",
-       "type": "bool",
-       "value": false
-      },
-      {
-       "name": "occlusion",
-       "type": "string",
-       "value": "low"
-      }
-     ],
-     "rotation": 0,
-     "visible": true,
-     "width": 0.0,
-     "x": 1334.0,
-     "y": 436.0
-    },
-    {
-     "gid": 328,
-     "height": 0.0,
-     "id": 0,
-     "name": "ambient_shrub",
-     "properties": [
-      {
-       "name": "prop",
-       "type": "string",
-       "value": "ambient_shrub"
-      },
-      {
-       "name": "anchorWorldX",
-       "type": "float",
-       "value": 1120.0
-      },
-      {
-       "name": "anchorWorldY",
-       "type": "float",
-       "value": 600.0
-      },
-      {
-       "name": "sortY",
-       "type": "float",
-       "value": 600.0
-      },
-      {
-       "name": "scale",
-       "type": "float",
-       "value": 1.0
-      },
-      {
-       "name": "solid",
-       "type": "bool",
-       "value": false
-      },
-      {
-       "name": "occlusion",
-       "type": "string",
-       "value": "low"
-      }
-     ],
-     "rotation": 0,
-     "visible": true,
-     "width": 0.0,
-     "x": 1110.0,
-     "y": 588.0,
-     "flipX": true
-    },
-    {
-     "gid": 328,
-     "height": 0.0,
-     "id": 0,
-     "name": "ambient_shrub",
-     "properties": [
-      {
-       "name": "prop",
-       "type": "string",
-       "value": "ambient_shrub"
-      },
-      {
-       "name": "anchorWorldX",
-       "type": "float",
-       "value": 1424.0
-      },
-      {
-       "name": "anchorWorldY",
-       "type": "float",
-       "value": 620.0
-      },
-      {
-       "name": "sortY",
-       "type": "float",
-       "value": 620.0
-      },
-      {
-       "name": "scale",
-       "type": "float",
-       "value": 1.0
-      },
-      {
-       "name": "solid",
-       "type": "bool",
-       "value": false
-      },
-      {
-       "name": "occlusion",
-       "type": "string",
-       "value": "low"
-      }
-     ],
-     "rotation": 0,
-     "visible": true,
-     "width": 0.0,
-     "x": 1414.0,
-     "y": 608.0,
-     "flipX": true
-    },
-    {
-     "gid": 328,
-     "height": 0.0,
-     "id": 0,
-     "name": "ambient_shrub",
-     "properties": [
-      {
-       "name": "prop",
-       "type": "string",
-       "value": "ambient_shrub"
-      },
-      {
-       "name": "anchorWorldX",
-       "type": "float",
-       "value": 1150.0
-      },
-      {
-       "name": "anchorWorldY",
-       "type": "float",
-       "value": 820.0
-      },
-      {
-       "name": "sortY",
-       "type": "float",
-       "value": 820.0
-      },
-      {
-       "name": "scale",
-       "type": "float",
-       "value": 1.0
-      },
-      {
-       "name": "solid",
-       "type": "bool",
-       "value": false
-      },
-      {
-       "name": "occlusion",
-       "type": "string",
-       "value": "low"
-      }
-     ],
-     "rotation": 0,
-     "visible": true,
-     "width": 0.0,
-     "x": 1140.0,
-     "y": 808.0,
-     "flipX": true
-    },
-    {
-     "gid": 328,
-     "height": 0.0,
-     "id": 0,
-     "name": "ambient_shrub",
-     "properties": [
-      {
-       "name": "prop",
-       "type": "string",
-       "value": "ambient_shrub"
-      },
-      {
-       "name": "anchorWorldX",
-       "type": "float",
-       "value": 1450.0
-      },
-      {
-       "name": "anchorWorldY",
-       "type": "float",
-       "value": 700.0
-      },
-      {
-       "name": "sortY",
-       "type": "float",
-       "value": 700.0
-      },
-      {
-       "name": "scale",
-       "type": "float",
-       "value": 1.0
-      },
-      {
-       "name": "solid",
-       "type": "bool",
-       "value": false
-      },
-      {
-       "name": "occlusion",
-       "type": "string",
-       "value": "low"
-      }
-     ],
-     "rotation": 0,
-     "visible": true,
-     "width": 0.0,
-     "x": 1440.0,
-     "y": 688.0,
-     "flipX": true
-    },
-    {
-     "gid": 328,
-     "height": 0.0,
-     "id": 0,
-     "name": "ambient_shrub",
-     "properties": [
-      {
-       "name": "prop",
-       "type": "string",
-       "value": "ambient_shrub"
-      },
-      {
-       "name": "anchorWorldX",
-       "type": "float",
-       "value": 1160.0
-      },
-      {
-       "name": "anchorWorldY",
-       "type": "float",
-       "value": 960.0
-      },
-      {
-       "name": "sortY",
-       "type": "float",
-       "value": 960.0
-      },
-      {
-       "name": "scale",
-       "type": "float",
-       "value": 1.0
-      },
-      {
-       "name": "solid",
-       "type": "bool",
-       "value": false
-      },
-      {
-       "name": "occlusion",
-       "type": "string",
-       "value": "low"
-      }
-     ],
-     "rotation": 0,
-     "visible": true,
-     "width": 0.0,
-     "x": 1150.0,
-     "y": 948.0,
-     "flipX": true
-    },
-    {
-     "gid": 328,
-     "height": 0.0,
-     "id": 0,
-     "name": "ambient_shrub",
-     "properties": [
-      {
-       "name": "prop",
-       "type": "string",
-       "value": "ambient_shrub"
-      },
-      {
-       "name": "anchorWorldX",
-       "type": "float",
-       "value": 1300.0
-      },
-      {
-       "name": "anchorWorldY",
-       "type": "float",
-       "value": 1000.0
-      },
-      {
-       "name": "sortY",
-       "type": "float",
-       "value": 1000.0
-      },
-      {
-       "name": "scale",
-       "type": "float",
-       "value": 1.0
-      },
-      {
-       "name": "solid",
-       "type": "bool",
-       "value": false
-      },
-      {
-       "name": "occlusion",
-       "type": "string",
-       "value": "low"
-      }
-     ],
-     "rotation": 0,
-     "visible": true,
-     "width": 0.0,
-     "x": 1290.0,
-     "y": 988.0,
-     "flipX": true
-    },
-    {
-     "gid": 328,
-     "height": 0.0,
-     "id": 0,
-     "name": "ambient_shrub",
-     "properties": [
-      {
-       "name": "prop",
-       "type": "string",
-       "value": "ambient_shrub"
-      },
-      {
-       "name": "anchorWorldX",
-       "type": "float",
-       "value": 448.0
-      },
-      {
-       "name": "anchorWorldY",
-       "type": "float",
-       "value": 680.0
-      },
-      {
-       "name": "sortY",
-       "type": "float",
-       "value": 680.0
-      },
-      {
-       "name": "scale",
-       "type": "float",
-       "value": 1.0
-      },
-      {
-       "name": "solid",
-       "type": "bool",
-       "value": false
-      },
-      {
-       "name": "occlusion",
-       "type": "string",
-       "value": "low"
-      }
-     ],
-     "rotation": 0,
-     "visible": true,
-     "width": 0.0,
-     "x": 438.0,
-     "y": 668.0,
-     "flipX": true
-    },
-    {
-     "gid": 328,
-     "height": 0.0,
-     "id": 0,
-     "name": "ambient_shrub",
-     "properties": [
-      {
-       "name": "prop",
-       "type": "string",
-       "value": "ambient_shrub"
-      },
-      {
-       "name": "anchorWorldX",
-       "type": "float",
-       "value": 480.0
-      },
-      {
-       "name": "anchorWorldY",
-       "type": "float",
-       "value": 800.0
-      },
-      {
-       "name": "sortY",
-       "type": "float",
-       "value": 800.0
-      },
-      {
-       "name": "scale",
-       "type": "float",
-       "value": 1.0
-      },
-      {
-       "name": "solid",
-       "type": "bool",
-       "value": false
-      },
-      {
-       "name": "occlusion",
-       "type": "string",
-       "value": "low"
-      }
-     ],
-     "rotation": 0,
-     "visible": true,
-     "width": 0.0,
-     "x": 470.0,
-     "y": 788.0
-    },
-    {
-     "gid": 328,
-     "height": 0.0,
-     "id": 0,
-     "name": "ambient_shrub",
-     "properties": [
-      {
-       "name": "prop",
-       "type": "string",
-       "value": "ambient_shrub"
-      },
-      {
-       "name": "anchorWorldX",
-       "type": "float",
-       "value": 560.0
-      },
-      {
-       "name": "anchorWorldY",
-       "type": "float",
-       "value": 900.0
-      },
-      {
-       "name": "sortY",
-       "type": "float",
-       "value": 900.0
-      },
-      {
-       "name": "scale",
-       "type": "float",
-       "value": 1.0
-      },
-      {
-       "name": "solid",
-       "type": "bool",
-       "value": false
-      },
-      {
-       "name": "occlusion",
-       "type": "string",
-       "value": "low"
-      }
-     ],
-     "rotation": 0,
-     "visible": true,
-     "width": 0.0,
-     "x": 550.0,
-     "y": 888.0,
-     "flipX": true
-    },
-    {
-     "gid": 328,
-     "height": 0.0,
-     "id": 0,
-     "name": "ambient_shrub",
-     "properties": [
-      {
-       "name": "prop",
-       "type": "string",
-       "value": "ambient_shrub"
-      },
-      {
-       "name": "anchorWorldX",
-       "type": "float",
-       "value": 700.0
-      },
-      {
-       "name": "anchorWorldY",
-       "type": "float",
-       "value": 470.0
-      },
-      {
-       "name": "sortY",
-       "type": "float",
-       "value": 470.0
-      },
-      {
-       "name": "scale",
-       "type": "float",
-       "value": 1.0
-      },
-      {
-       "name": "solid",
-       "type": "bool",
-       "value": false
-      },
-      {
-       "name": "occlusion",
-       "type": "string",
-       "value": "low"
-      }
-     ],
-     "rotation": 0,
-     "visible": true,
-     "width": 0.0,
-     "x": 690.0,
-     "y": 458.0
-    },
-    {
-     "gid": 328,
-     "height": 0.0,
-     "id": 0,
-     "name": "ambient_shrub",
-     "properties": [
-      {
-       "name": "prop",
-       "type": "string",
-       "value": "ambient_shrub"
-      },
-      {
-       "name": "anchorWorldX",
-       "type": "float",
-       "value": 760.0
-      },
-      {
-       "name": "anchorWorldY",
-       "type": "float",
-       "value": 900.0
-      },
-      {
-       "name": "sortY",
-       "type": "float",
-       "value": 900.0
-      },
-      {
-       "name": "scale",
-       "type": "float",
-       "value": 1.0
-      },
-      {
-       "name": "solid",
-       "type": "bool",
-       "value": false
-      },
-      {
-       "name": "occlusion",
-       "type": "string",
-       "value": "low"
-      }
-     ],
-     "rotation": 0,
-     "visible": true,
-     "width": 0.0,
-     "x": 750.0,
-     "y": 888.0
     },
     {
      "gid": 355,
@@ -29451,6 +28142,249 @@
      "x": 355.86039131414805,
      "y": 129.81540601483204,
      "flipX": true
+    },
+    {
+     "gid": 355,
+     "height": 0.0,
+     "id": 0,
+     "name": "hs-small-4",
+     "properties": [
+      {
+       "name": "prop",
+       "type": "string",
+       "value": "hs-small-4"
+      },
+      {
+       "name": "anchorWorldX",
+       "type": "float",
+       "value": 565.0606960121711
+      },
+      {
+       "name": "anchorWorldY",
+       "type": "float",
+       "value": 335.8166757179585
+      },
+      {
+       "name": "sortY",
+       "type": "float",
+       "value": 335.8166757179585
+      },
+      {
+       "name": "scale",
+       "type": "float",
+       "value": 1.0
+      },
+      {
+       "name": "solid",
+       "type": "bool",
+       "value": false
+      },
+      {
+       "name": "occlusion",
+       "type": "string",
+       "value": "tall"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0.0,
+     "x": 550.0606960121711,
+     "y": 288.8166757179585,
+     "flipX": true
+    },
+    {
+     "gid": 351,
+     "height": 0.0,
+     "id": 0,
+     "name": "hs-big-5",
+     "properties": [
+      {
+       "name": "prop",
+       "type": "string",
+       "value": "hs-big-5"
+      },
+      {
+       "name": "anchorWorldX",
+       "type": "float",
+       "value": 295.5962499956446
+      },
+      {
+       "name": "anchorWorldY",
+       "type": "float",
+       "value": 472.1126670357315
+      },
+      {
+       "name": "sortY",
+       "type": "float",
+       "value": 472.1126670357315
+      },
+      {
+       "name": "scale",
+       "type": "float",
+       "value": 1.0
+      },
+      {
+       "name": "solid",
+       "type": "bool",
+       "value": false
+      },
+      {
+       "name": "occlusion",
+       "type": "string",
+       "value": "tall"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0.0,
+     "x": 265.5962499956446,
+     "y": 384.1126670357315,
+     "flipX": true
+    },
+    {
+     "gid": 350,
+     "height": 0.0,
+     "id": 0,
+     "name": "hs-big-4",
+     "properties": [
+      {
+       "name": "prop",
+       "type": "string",
+       "value": "hs-big-4"
+      },
+      {
+       "name": "anchorWorldX",
+       "type": "float",
+       "value": 1514.9616597861034
+      },
+      {
+       "name": "anchorWorldY",
+       "type": "float",
+       "value": 465.3224892517104
+      },
+      {
+       "name": "sortY",
+       "type": "float",
+       "value": 465.3224892517104
+      },
+      {
+       "name": "scale",
+       "type": "float",
+       "value": 1.0
+      },
+      {
+       "name": "solid",
+       "type": "bool",
+       "value": false
+      },
+      {
+       "name": "occlusion",
+       "type": "string",
+       "value": "tall"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0.0,
+     "x": 1485.9616597861034,
+     "y": 374.3224892517104,
+     "flipX": true
+    },
+    {
+     "gid": 347,
+     "height": 0.0,
+     "id": 0,
+     "name": "hs-big-1",
+     "properties": [
+      {
+       "name": "prop",
+       "type": "string",
+       "value": "hs-big-1"
+      },
+      {
+       "name": "anchorWorldX",
+       "type": "float",
+       "value": 516.0051352592523
+      },
+      {
+       "name": "anchorWorldY",
+       "type": "float",
+       "value": 691.2902398761023
+      },
+      {
+       "name": "sortY",
+       "type": "float",
+       "value": 691.2902398761023
+      },
+      {
+       "name": "scale",
+       "type": "float",
+       "value": 1.0
+      },
+      {
+       "name": "solid",
+       "type": "bool",
+       "value": false
+      },
+      {
+       "name": "occlusion",
+       "type": "string",
+       "value": "tall"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0.0,
+     "x": 486.00513525925226,
+     "y": 608.2902398761023
+    },
+    {
+     "gid": 352,
+     "height": 0.0,
+     "id": 0,
+     "name": "hs-small-1",
+     "properties": [
+      {
+       "name": "prop",
+       "type": "string",
+       "value": "hs-small-1"
+      },
+      {
+       "name": "anchorWorldX",
+       "type": "float",
+       "value": 915.5335310557107
+      },
+      {
+       "name": "anchorWorldY",
+       "type": "float",
+       "value": 876.7738225513979
+      },
+      {
+       "name": "sortY",
+       "type": "float",
+       "value": 876.7738225513979
+      },
+      {
+       "name": "scale",
+       "type": "float",
+       "value": 1.0
+      },
+      {
+       "name": "solid",
+       "type": "bool",
+       "value": false
+      },
+      {
+       "name": "occlusion",
+       "type": "string",
+       "value": "tall"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0.0,
+     "x": 899.5335310557107,
+     "y": 835.7738225513979
     }
    ],
    "opacity": 1,
@@ -39188,6 +38122,96 @@
        "name": "source",
        "type": "string",
        "value": "collision.rects[539]"
+      }
+     ]
+    },
+    {
+     "id": 541,
+     "name": "collision.rects[540]",
+     "type": "solid",
+     "rotation": 0,
+     "visible": true,
+     "x": 560.0,
+     "y": 330.0,
+     "width": 10.0,
+     "height": 6.0,
+     "properties": [
+      {
+       "name": "source",
+       "type": "string",
+       "value": "collision.rects[540]"
+      }
+     ]
+    },
+    {
+     "id": 542,
+     "name": "collision.rects[541]",
+     "type": "solid",
+     "rotation": 0,
+     "visible": true,
+     "x": 291.0,
+     "y": 466.0,
+     "width": 10.0,
+     "height": 6.0,
+     "properties": [
+      {
+       "name": "source",
+       "type": "string",
+       "value": "collision.rects[541]"
+      }
+     ]
+    },
+    {
+     "id": 543,
+     "name": "collision.rects[542]",
+     "type": "solid",
+     "rotation": 0,
+     "visible": true,
+     "x": 1510.0,
+     "y": 459.0,
+     "width": 10.0,
+     "height": 6.0,
+     "properties": [
+      {
+       "name": "source",
+       "type": "string",
+       "value": "collision.rects[542]"
+      }
+     ]
+    },
+    {
+     "id": 544,
+     "name": "collision.rects[543]",
+     "type": "solid",
+     "rotation": 0,
+     "visible": true,
+     "x": 511.0,
+     "y": 685.0,
+     "width": 10.0,
+     "height": 6.0,
+     "properties": [
+      {
+       "name": "source",
+       "type": "string",
+       "value": "collision.rects[543]"
+      }
+     ]
+    },
+    {
+     "id": 545,
+     "name": "collision.rects[544]",
+     "type": "solid",
+     "rotation": 0,
+     "visible": true,
+     "x": 911.0,
+     "y": 871.0,
+     "width": 10.0,
+     "height": 6.0,
+     "properties": [
+      {
+       "name": "source",
+       "type": "string",
+       "value": "collision.rects[544]"
       }
      ]
     }

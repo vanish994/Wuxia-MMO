@@ -283,10 +283,43 @@ def place_tree(name: str, x: float, y: float, rng: random.Random) -> dict:
     return place(name, x, y, flip=rng.random() < 0.5)
 
 
+def village_tree_spots(g, buildings: list[tuple[float, float]], rng: random.Random) -> list[tuple[float, float, str]]:
+    """Harmonious Seasons trees inside the village: grass only, away from roads and buildings.
+
+    Uses the same tree sprites as the forest ring, spaced so they read as groves at the edges
+    of the village rather than as scattered decoration.
+    """
+    spots: list[tuple[float, float, str]] = []
+    for ty in range(2, H - 2):
+        for tx in range(2, W - 2):
+            if g[ty][tx] != "g" or near_dirt(g, tx, ty, 2):
+                continue
+            if forest_ratio(tx, ty) < -0.2 or forest_ratio(tx, ty) > 1.0:
+                continue  # keep the ring's own trees for the outskirts; this is the village core
+            if rng.random() > 0.035:
+                continue
+            px = tx * T + rng.uniform(4, 28)
+            py = ty * T + rng.uniform(10, 26)
+            if any((px - qx) ** 2 + (py - qy) ** 2 < 96 ** 2 for qx, qy, _ in spots):
+                continue
+            if any(abs(px - bx) < 60 and abs(py - by) < 60 for bx, by in buildings):
+                continue
+            variant = rng.choices(["small", "big"], [0.7, 0.3])[0]
+            spots.append((px, py, f"hs-{variant}-{rng.randint(1, 5)}"))
+    return spots
+
+
 def build_props(g, rng: random.Random) -> tuple[list[dict], list[dict]]:
-    """Return (prop objects, solid footprints)."""
+    """Return (prop objects, solid footprints).
+
+    Composition: the shrine terrace to the north, the central plaza with paired lanterns,
+    the botica, forge and guest yards, the dojo and tea garden by the lake, and the market
+    lane to the east. Ornamental clutter from the first pass has been removed; trees come
+    from the Harmonious Seasons set used by the forest.
+    """
     objs: list[dict] = []
     solids: list[dict] = []
+    building_spots: list[tuple[float, float]] = []
 
     def add(name, x, y, **kw):
         obj = place(name, x, y, **kw)
@@ -294,21 +327,16 @@ def build_props(g, rng: random.Random) -> tuple[list[dict], list[dict]]:
         fp = footprint(x, y, name)
         if fp:
             solids.append(fp)
+        building_spots.append((x, y))
 
-    # Shrine (north) with stone lanterns along the stairs and the torii over the road.
+    # Shrine terrace (north): gate, shrine building and lantern pairs along the stairs.
     add("cabana-4", 896, 150)
-    for x, y in [(806, 150), (790, 196), (986, 150), (1002, 196)]:
-        objs.append(place("ambient_bamboo", x, y, flip=rng.random() < 0.5))
-    for x, y in [(826, 210), (966, 210)]:
-        objs.append(place("ambient_blossom", x, y, flip=rng.random() < 0.5))
     add("sect_gate", 896, 300)
     for x, y in [(860, 240), (932, 240), (860, 336), (932, 336), (860, 388), (932, 388)]:
         add("ambient_lantern", x, y)
-    # Plaza: bridge-less fountain area keeps the centre clear; lanterns at the corners.
+    # Central plaza: lanterns at the corners.
     for x, y in [(736, 512), (1056, 512), (736, 768), (1056, 768)]:
         add("ambient_lantern", x, y)
-    for x, y in [(704, 448), (1088, 448), (704, 800), (1088, 800)]:
-        objs.append(place("ambient_blossom", x, y, flip=rng.random() < 0.5))
     # Botica (alchemy), forge and guest house.
     add("cabana-1", 608, 400)
     add("cabana-3", 416, 736)
@@ -316,7 +344,7 @@ def build_props(g, rng: random.Random) -> tuple[list[dict], list[dict]]:
     # Dojo tower and teahouse by the lake.
     add("pagoda", 1120, 320)
     add("teahouse", 1264, 352)
-    # Market: a cabin at the back and stalls along both lanes.
+    # Market lane: cabin at the back, stalls along both sides, lanterns between them.
     add("cabana-2", 1248, 400)
     for x, y in [(1184, 448), (1312, 448), (1184, 620), (1312, 620)]:
         add("ambient_lantern", x, y)
@@ -324,16 +352,23 @@ def build_props(g, rng: random.Random) -> tuple[list[dict], list[dict]]:
         add(f"barraca-{1 + (x // 64) % 3}", x, 560)
     for x in (1184, 1248, 1312):
         add(f"barraca-{1 + (x // 64 + 1) % 3}", x, 772)
-    # Training yard fence posts are decoration only (non-solid lanterns).
+    # Training yard gate posts.
     for x, y in [(264, 800), (408, 800), (264, 960), (408, 960)]:
         add("ambient_lantern", x, y)
-    for x, y in [(576, 364), (640, 440), (576, 448), (1216, 448), (1152, 360), (1344, 448),
-                 (1120, 600), (1424, 620), (1150, 820), (1450, 700), (1160, 960), (1300, 1000),
-                 (448, 680), (480, 800), (560, 900), (700, 470), (760, 900)]:
-        objs.append(place("ambient_shrub", x, y, flip=rng.random() < 0.5))
+
+    # The forest ring keeps the exact placement it had before the village rebuild: the
+    # same random stream is consumed first (27 draws, one per removed ornament), then the
+    # forest uses it. Village trees use their own generator so they cannot shift the forest.
+    for _ in range(27):
+        rng.random()
     trees, tree_solids = forest_positions(g, rng)
     objs.extend(trees)
     solids.extend(tree_solids)
+
+    village_rng = random.Random(2026)
+    for px, py, name in village_tree_spots(g, building_spots, village_rng):
+        objs.append(place(name, px, py, flip=village_rng.random() < 0.5))
+        solids.append({"x": px - 5, "y": py - 6, "width": 10, "height": 6})
     return objs, solids
 
 
