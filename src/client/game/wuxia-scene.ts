@@ -12,6 +12,9 @@ import {
   DIRECTION_VECTORS, damageFor, grantXp, isCooldownReady, isInMeleeArc, resolveMobAttack,
 } from "./combat/combat-rules.mjs";
 import { Wolf, WOLF_SHEET_KEY, type WolfTarget } from "./entities/wolf";
+import { MOON_SLASH, ONDA_DE_QI, QI_REGEN_PER_SECOND } from "./combat/skills-config.mjs";
+import { canCastSkill, moonSlashHits, ondaHits, ondaTargetPoint, regenQi, spendQi } from "./combat/skills-rules.mjs";
+import { createPixellabVfxAnimations, playCharacterVfx, playGroundVfx, preloadPixellabVfx } from "./vfx/pixellab-vfx";
 
 const assetPath = (path: string): string => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 const REGION_TITLES: Record<string, string> = { "qinghe-valley": "Vale da Lua Serena" };
@@ -97,6 +100,10 @@ export class WuxiaScene extends Phaser.Scene {
   private respawnAt = 0;
   private attacking = false;
   private lastSwordAt = -Infinity;
+  private qi: number = PLAYER_COMBAT.maxQi;
+  private lastMoonSlashAt = -Infinity;
+  private lastOndaAt = -Infinity;
+  private shownQi = -1;
   private level: number = PLAYER_COMBAT.startLevel;
   private xp = 0;
   private pelts = 0;
@@ -114,6 +121,7 @@ export class WuxiaScene extends Phaser.Scene {
       }
     }
     this.load.spritesheet(WOLF_SHEET_KEY, assetPath("/assets/characters/wolf/runtime/Lobo_Feroz_estilo_wuxia-Idle.png"), { frameWidth: 64, frameHeight: 64 });
+    preloadPixellabVfx(this, assetPath);
     this.load.json("qinghe-village-kit", assetPath("/assets/world/maps/biomes/qinghe-valley-village-kit.json"));
     for (const [path, key] of Object.entries(VILLAGE_ASSET_KEYS)) this.load.image(key, assetPath(path));
     this.load.image("gui-panel", assetPath("/assets/external/tiny-rpg-mana-soul-gui/20250420manaSoul9SlicesA-Sheet.png"));
@@ -140,8 +148,11 @@ export class WuxiaScene extends Phaser.Scene {
     this.input.keyboard!.on("keydown-E", () => { this.interactQueuedAt = this.time.now; });
     this.input.keyboard!.on("keydown-J", () => { this.attackQueuedAt = this.time.now; });
     this.input.keyboard!.on("keydown-SPACE", () => { this.attackQueuedAt = this.time.now; });
+    this.input.keyboard!.on("keydown-ONE", () => this.castMoonSlash(this.time.now));
+    this.input.keyboard!.on("keydown-TWO", () => this.castOndaDeQi(this.time.now));
 
     this.createAnimations();
+    createPixellabVfxAnimations(this);
     this.player = this.physics.add.sprite(RESPAWN_POINT.x, RESPAWN_POINT.y, "player-idle-down-1")
       .setDepth(488)
       .setScale(1)
@@ -206,7 +217,7 @@ export class WuxiaScene extends Phaser.Scene {
     }
   }
 
-  update(time: number): void {
+  update(time: number, delta: number): void {
     this.syncCameraLayers();
     if (!this.player || this.loading) return;
     this.updateWolves(time);
@@ -239,6 +250,10 @@ export class WuxiaScene extends Phaser.Scene {
       this.attackQueuedAt = -Infinity;
       this.tryAttack(time);
     }
+    if (!this.playerDead && this.qi < PLAYER_COMBAT.maxQi) {
+      this.qi = regenQi(this.qi, PLAYER_COMBAT.maxQi, delta, QI_REGEN_PER_SECOND);
+    }
+    if (Math.floor(this.qi) !== this.shownQi) this.updateBars();
     this.updateActionButtonState();
   }
 
@@ -377,6 +392,65 @@ export class WuxiaScene extends Phaser.Scene {
     this.updateBars();
   }
 
+  /** Feet of the character in world space, used as the VFX anchor. */
+  private feetPoint(): { x: number; y: number } {
+    return { x: this.player.x, y: this.player.y + 11 };
+  }
+
+  private castMoonSlash(time: number): void {
+    if (this.playerDead || this.loading) return;
+    if (!canCastSkill(time, this.lastMoonSlashAt, MOON_SLASH.cooldownMs, this.qi, MOON_SLASH.qiCost)) return;
+    this.lastMoonSlashAt = time;
+    this.qi = spendQi(this.qi, MOON_SLASH.qiCost);
+    playCharacterVfx(this, "slash-arc-8-directions", this.facing, this.feetPoint(), this.player.depth, MOON_SLASH.visualScale);
+    this.time.delayedCall(MOON_SLASH.hitDelayMs, () => this.resolveMoonSlashHits());
+    this.updateBars();
+  }
+
+  private resolveMoonSlashHits(): void {
+    if (this.playerDead) return;
+    const origin = { x: this.player.x, y: this.player.y };
+    const targets = this.wolves.map((wolf) => ({ x: wolf.sprite.x, y: wolf.sprite.y, alive: wolf.alive }));
+    const hits = moonSlashHits(origin, DIRECTION_VECTORS[this.facing], targets, MOON_SLASH);
+    const amount = damageFor(Math.round(PLAYER_COMBAT.attack * MOON_SLASH.damageMultiplier), WOLF_LEVEL_1.defense);
+    for (const index of hits) {
+      const wolf = this.wolves[index];
+      this.showFloatingText(wolf.sprite.x, wolf.sprite.y - 52, `-${amount}`, "#9fe8ff");
+      if (wolf.takeDamage(amount, this.time.now)) this.onWolfDefeated();
+    }
+    if (hits.length === 0) this.setStatus("Moon Slash no vazio — a lâmina não encontrou lobos na meia-lua.");
+    this.updateBars();
+  }
+
+  private castOndaDeQi(time: number): void {
+    if (this.playerDead || this.loading) return;
+    if (!canCastSkill(time, this.lastOndaAt, ONDA_DE_QI.cooldownMs, this.qi, ONDA_DE_QI.qiCost)) {
+      if (time - this.lastOndaAt >= ONDA_DE_QI.cooldownMs && this.qi < ONDA_DE_QI.qiCost) this.setStatus("Qi insuficiente para a Onda de Qi.");
+      return;
+    }
+    this.lastOndaAt = time;
+    this.qi = spendQi(this.qi, ONDA_DE_QI.qiCost);
+    const center = ondaTargetPoint({ x: this.player.x, y: this.player.y }, DIRECTION_VECTORS[this.facing], ONDA_DE_QI.castRangePx);
+    const orb = playGroundVfx(this, "energy-orb-8-directions", this.facing, "whole", center, center.y + 1, ONDA_DE_QI.visualScale);
+    if (orb) this.time.delayedCall(ONDA_DE_QI.effectMs, () => orb.destroy());
+    this.time.delayedCall(ONDA_DE_QI.hitDelayMs, () => this.resolveOndaHits(center));
+    this.updateBars();
+  }
+
+  private resolveOndaHits(center: { x: number; y: number }): void {
+    if (this.playerDead) return;
+    const targets = this.wolves.map((wolf) => ({ x: wolf.sprite.x, y: wolf.sprite.y, alive: wolf.alive }));
+    const hits = ondaHits(center, targets, ONDA_DE_QI.radiusPx);
+    const amount = damageFor(Math.round(PLAYER_COMBAT.attack * ONDA_DE_QI.damageMultiplier), WOLF_LEVEL_1.defense);
+    for (const index of hits) {
+      const wolf = this.wolves[index];
+      this.showFloatingText(wolf.sprite.x, wolf.sprite.y - 52, `-${amount}`, "#9fe8ff");
+      if (wolf.takeDamage(amount, this.time.now)) this.onWolfDefeated();
+    }
+    if (hits.length === 0) this.setStatus("Onda de Qi sem alvo — nenhum lobo na área.");
+    this.updateBars();
+  }
+
   private onWolfDefeated(): void {
     const progress = grantXp({ level: this.level, xp: this.xp }, WOLF_LEVEL_1.xpReward, PROGRESSION.xpBase);
     this.level = progress.level;
@@ -400,6 +474,7 @@ export class WuxiaScene extends Phaser.Scene {
   private respawnPlayer(): void {
     this.playerDead = false;
     this.playerHp = PLAYER_COMBAT.maxHp;
+    this.qi = PLAYER_COMBAT.maxQi;
     this.player.setPosition(RESPAWN_POINT.x, RESPAWN_POINT.y);
     this.player.body?.reset(RESPAWN_POINT.x, RESPAWN_POINT.y);
     this.player.clearTint();
@@ -447,12 +522,14 @@ export class WuxiaScene extends Phaser.Scene {
     this.hudCompass.add(this.add.text(38, 28, "QINGHE", { color: "#f8e5bd", fontFamily: HUD_FONT, fontSize: "8px", fontStyle: "bold" }).setOrigin(0.5));
 
     this.hudSkills = this.add.container(0, 0).setScrollFactor(0).setDepth(2101);
-    const skills = ["1  CORTE", "2  ONDA QI", "3  POÇÃO", "4  MAPA"];
+    const skills = ["1  MOON SLASH", "2  ONDA DE QI", "3  POÇÃO", "4  MAPA"];
     skills.forEach((label, index) => {
-      const slot = this.add.image(index * 56, 0, "gui-slot", index % 4).setOrigin(0, 0);
-      const key = this.add.text(index * 56 + 16, 5, String(index + 1), { color: "#fff4d9", fontFamily: HUD_FONT, fontSize: "11px", fontStyle: "bold" }).setOrigin(0.5);
-      const caption = this.add.text(index * 56 + 16, 36, label.split("  ")[1], { color: "#f8e5bd", fontFamily: HUD_FONT, fontSize: "8px", fontStyle: "bold" }).setOrigin(0.5, 0);
+      const slot = this.add.image(index * 72, 0, "gui-slot", index % 4).setOrigin(0, 0);
+      const key = this.add.text(index * 72 + 16, 5, String(index + 1), { color: "#fff4d9", fontFamily: HUD_FONT, fontSize: "11px", fontStyle: "bold" }).setOrigin(0.5);
+      const caption = this.add.text(index * 72 + 16, 36, label.split("  ")[1], { color: "#f8e5bd", fontFamily: HUD_FONT, fontSize: "8px", fontStyle: "bold" }).setOrigin(0.5, 0);
       this.hudSkills.add([slot, key, caption]);
+      if (index === 0) slot.setInteractive({ useHandCursor: true }).on("pointerdown", () => this.castMoonSlash(this.time.now));
+      if (index === 1) slot.setInteractive({ useHandCursor: true }).on("pointerdown", () => this.castOndaDeQi(this.time.now));
     });
 
     const actionBackground = this.add.image(0, 0, "gui-action", 1).setOrigin(0.5).setScale(1.5).setInteractive({ useHandCursor: true });
@@ -473,7 +550,10 @@ export class WuxiaScene extends Phaser.Scene {
     const hpRatio = Math.max(0, this.playerHp / PLAYER_COMBAT.maxHp);
     this.hpBar.fill.setSize(BAR_FILL_WIDTH * hpRatio, 7);
     this.hpBar.value.setText(`${this.playerHp} / ${PLAYER_COMBAT.maxHp}`);
-    this.qiBar.value.setText(`${PLAYER_COMBAT.maxQi} / ${PLAYER_COMBAT.maxQi}`);
+    const qi = Math.floor(this.qi);
+    this.shownQi = qi;
+    this.qiBar.fill.setSize(BAR_FILL_WIDTH * (this.qi / PLAYER_COMBAT.maxQi), 7);
+    this.qiBar.value.setText(`${qi} / ${PLAYER_COMBAT.maxQi}`);
   }
 
   private updateHudLevel(): void {
@@ -496,7 +576,7 @@ export class WuxiaScene extends Phaser.Scene {
     const width = this.scale.gameSize.width;
     const height = this.scale.gameSize.height;
     this.hudCompass?.setPosition(width - 94, 18);
-    this.hudSkills?.setPosition(Math.max(18, (width - 224) / 2), height - 76);
+    this.hudSkills?.setPosition(Math.max(18, (width - 288) / 2), height - 76);
     this.hudHint?.setPosition(18, height - 30);
     this.actionButton?.setPosition(width - 84, height - 56);
     this.attackButton?.setPosition(width - 84, height - 110);
