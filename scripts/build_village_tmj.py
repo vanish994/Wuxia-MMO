@@ -160,11 +160,20 @@ PROP_KINDS = [
     ("barraca-2", "barraca-2.png", 24, 44, True, 40, 16),
     ("barraca-3", "barraca-3.png", 24, 44, True, 40, 16),
 ]
+HARM = ROOT / "assets/external/harmonious-seasons/trees"
+HARM_VARIANTS = {"bigger": 0.55, "big": 0.30, "small": 0.15}
+for _variant in HARM_VARIANTS:
+    for _i in range(1, 6):
+        _file = f"hs_{_variant}_{_i}.png"
+        _w, _h = Image.open(HARM / f"{_variant}_{_i}.png").size
+        PROP_KINDS.append((f"hs-{_variant}-{_i}", _file, _w // 2, _h - 4, False, 0, 0))
 PROP_TILE_ID = {name: i for i, (name, *_rest) in enumerate(PROP_KINDS)}
 PROP_FIRSTGID = 325  # unchanged: the TMJ already references the props tileset at this gid.
 
 
 def external_source(file: str) -> Path:
+    if file.startswith("hs_"):
+        return HARM / file[3:]
     if file.startswith("cabana"):
         return EXTERNAL / "cabanas" / file
     if file.startswith("barraca"):
@@ -250,29 +259,23 @@ def forest_positions(g, rng: random.Random) -> tuple[list[dict], list[dict]]:
             if rng.random() < min(1.0, 0.55 + (r - 1.0) * 1.5):
                 candidates.append((x, y))
     rng.shuffle(candidates)
-    kinds = [("pine", 0.42), ("blossom", 0.28), ("bamboo", 0.30)]
-    names = [k for k, _ in kinds]
-    weights = [w for _, w in kinds]
-    placed: list[tuple[float, float]] = []
+    names = list(HARM_VARIANTS)
+    weights = list(HARM_VARIANTS.values())
+    gap = {"bigger": 24, "big": 20, "small": 16}
+    placed: list[tuple[float, float, int]] = []
     trees: list[dict] = []
     solids: list[dict] = []
     for x, y in candidates:
         px = x * T + rng.uniform(2, 30)
         py = y * T + rng.uniform(6, 30)
-        min_gap = 22 if forest_ratio(x, y) > 1.15 else 28
-        if any((px - qx) ** 2 + (py - qy) ** 2 < min_gap ** 2 for qx, qy in placed):
+        variant = rng.choices(names, weights)[0]
+        index = rng.randint(1, 5)
+        base = gap[variant] + (4 if forest_ratio(x, y) > 1.15 else 0)
+        if any((px - qx) ** 2 + (py - qy) ** 2 < max(base, g2) ** 2 for qx, qy, g2 in placed):
             continue
-        placed.append((px, py))
-        kind = rng.choices(names, weights)[0]
-        if kind == "pine":
-            name = "pine"
-        elif kind == "blossom":
-            name = "ambient_blossom"
-        else:
-            name = "ambient_bamboo"
-        trees.append(place_tree(name, px, py, rng))
-        fw, fh = (12, 6) if name != "ambient_bamboo" else (10, 6)
-        solids.append({"x": px - fw / 2, "y": py - fh, "width": fw, "height": fh})
+        placed.append((px, py, base))
+        trees.append(place(f"hs-{variant}-{index}", px, py, flip=rng.random() < 0.5))
+        solids.append({"x": px - 5, "y": py - 6, "width": 10, "height": 6})
     return trees, solids
 
 
@@ -474,6 +477,11 @@ def props_tileset() -> dict:
 
 def copy_external_assets() -> None:
     """Make the cabins and stalls available next to the other prop images (Phaser keys use the basename)."""
+    for variant in HARM_VARIANTS:
+        for i in range(1, 6):
+            dst = REGION / "images" / f"hs_{variant}_{i}.png"
+            if not dst.exists():
+                dst.write_bytes(external_source(f"hs_{variant}_{i}.png").read_bytes())
     for file in ("pine.png", "cabana-1.png", "cabana-2.png", "cabana-3.png", "cabana-4.png",
                  "barraca-1.png", "barraca-2.png", "barraca-3.png"):
         dst = REGION / "images" / file
