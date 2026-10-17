@@ -29,19 +29,19 @@ canvas {
   image-rendering: pixelated;
 }
 
-.immersive-gate {
+/* Only prompt: the game stays usable in landscape; in portrait the player is asked to rotate the device. */
+.rotate-hint {
   position: fixed;
   inset: 0;
   z-index: 9000;
-  display: grid;
+  display: none;
   place-items: center;
-  padding: max(24px, env(safe-area-inset-top)) max(24px, env(safe-area-inset-right))
-    max(24px, env(safe-area-inset-bottom)) max(24px, env(safe-area-inset-left));
+  padding: 24px;
   background: rgba(8, 15, 25, 0.94);
 }
 
-.immersive-card {
-  width: min(420px, 100%);
+.rotate-card {
+  width: min(340px, 100%);
   padding: 28px;
   color: #fff4d9;
   text-align: center;
@@ -50,71 +50,26 @@ canvas {
   box-shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
 }
 
-.immersive-mark {
-  color: #93d7c5;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.2em;
+.rotate-icon {
+  color: #75cdb8;
+  font-size: 44px;
+  line-height: 1;
+  animation: rotate-hint-spin 2.4s ease-in-out infinite;
 }
 
-.immersive-card h1 {
-  margin: 12px 0 8px;
-  font-size: clamp(24px, 5vw, 36px);
-}
-
-.immersive-card p {
-  margin: 0 auto 24px;
+.rotate-card p {
+  margin: 12px 0 0;
   color: #bdd4d6;
   line-height: 1.5;
 }
 
-.immersive-card button {
-  min-height: 48px;
-  padding: 0 24px;
-  color: #07131e;
-  font: inherit;
-  font-weight: 700;
-  background: #75cdb8;
-  border: 0;
-  cursor: pointer;
-}
-
-.immersive-card button:active {
-  background: #b4f0de;
-  transform: translateY(1px);
-}
-
-.immersive-skip {
-  display: block;
-  margin: 12px auto 0;
-  color: #bdd4d6 !important;
-  background: transparent !important;
-  border: 1px solid #3f5a63 !important;
-  font-size: 13px;
-}
-
-@media (orientation: landscape) {
-  .immersive-gate.is-ready,
-  .immersive-gate.is-dismissed {
-    display: none;
-  }
+@keyframes rotate-hint-spin {
+  0%, 15% { transform: rotate(0deg); }
+  50%, 100% { transform: rotate(90deg); }
 }
 
 @media (orientation: portrait) {
-  .immersive-card {
-    max-width: 340px;
-  }
-
-  .immersive-card button {
-    display: none;
-  }
-
-  .immersive-card .immersive-skip {
-    display: none;
-  }
-
-  .immersive-card h1::after {
-    content: " ↻";
-    color: #75cdb8;
+  .rotate-hint {
+    display: grid;
   }
 }

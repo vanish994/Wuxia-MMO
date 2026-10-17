@@ -9,8 +9,8 @@
 - [x] A câmera acompanha o personagem e os limites físicos do mapa são aplicados após o carregamento.
 - [x] HUD inicial exibe região, HP, Qi e instruções de movimento/interação.
 - [x] Portais podem ser solicitados e carregados localmente para testar a integração; o código deixa explícito que isso será substituído pelo servidor autoritativo.
-- [x] O cliente inicia com composição 16:9, solicita tela cheia após gesto do usuário e tenta bloquear a orientação em landscape.
-- [x] Em portrait, a entrada bloqueia a continuação e orienta o jogador a girar o aparelho.
+- [x] O cliente inicia com composição 16:9 e não solicita tela cheia nem trava orientação (decisão DD-4 no GDD).
+- [x] Em portrait, um aviso pede para girar o aparelho; em landscape não há bloqueio.
 - [ ] Verificar a cena em navegador Android real (o ambiente de testes usa Chromium headless com viewport móvel; não substitui aparelho).
 
 ## Ciclo 1 — Vale da Lua Serena, lobos e combate corpo a corpo (concluído localmente)

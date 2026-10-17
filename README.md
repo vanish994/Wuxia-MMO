@@ -33,7 +33,7 @@ npm run dev
 
 Abra a URL exibida pelo Vite. No desktop, use `WASD` ou as setas; em toque, use o joystick à esquerda. `J` ou `Espaço` e o botão `ATACAR` golpeiam com a espada no arco frontal; a tecla `E` e o botão `INTERAGIR` testam saídas quando o personagem está sobre um portal. Para validar a suíte completa e o build:
 
-Na entrada, o cliente solicita tela cheia após o toque/clique do jogador e tenta travar a orientação em `landscape`. Em aparelhos mantidos na vertical, a camada de entrada pede que o usuário vire o dispositivo. A solicitação de tela cheia precisa ocorrer por gesto explícito porque essa é uma restrição dos navegadores móveis.
+Não há portão de entrada nem solicitação de tela cheia. Em aparelhos mantidos na vertical, um aviso pede que o usuário gire o dispositivo para a horizontal; em landscape o jogo fica liberado imediatamente.
 
 ```bash
 npm test

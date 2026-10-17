@@ -508,3 +508,9 @@ Estas notas não alteram as decisões consolidadas da seção 15. Registram o qu
 - O combate roda no cliente. A lógica está separada em `combat-rules.mjs`, pronta para ser executada por um servidor autoritativo, mas nenhuma validação server-side existe.
 - Morte e respawn são locais; nada é persistido entre sessões, conforme a seção 16.2.
 - O lobo usa apenas o spritesheet de idle; o golpe é um avanço curto e o dano é mostrado por número flutuante.
+
+### DD-4 — Sem portão de tela cheia
+
+- O portão de entrada com botão de tela cheia e bloqueio de orientação foi removido a pedido do responsável pelo produto.
+- Único aviso mantido: em retrato, pede para girar o aparelho para a horizontal. Em landscape o jogo fica liberado sem overlay.
+- Consequência: o cliente não solicita tela cheia; o requisito de solicitação por gesto explícito da seção 17 (Fase 5/PWA) fica para ser reavaliado.
