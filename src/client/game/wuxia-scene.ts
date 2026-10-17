@@ -112,11 +112,12 @@ export class WuxiaScene extends Phaser.Scene {
   private masteryPoints: Record<PathId, number> = { [PATH_SWORD]: 0, [PATH_QI]: 0 };
   private lastQiBasicAt = -Infinity;
   private roleText?: Phaser.GameObjects.Text;
-  private skillSlots: Phaser.GameObjects.Image[] = [];
-  private pathButton?: Phaser.GameObjects.Container;
   private selectedWolf: Wolf | null = null;
-  private skillButtons: Phaser.GameObjects.Container[] = [];
-  private cooldownGraphics: Phaser.GameObjects.Graphics[] = [];
+  private skillButton?: Phaser.GameObjects.Container;
+  private skillText?: Phaser.GameObjects.Text;
+  private skillCooldown?: Phaser.GameObjects.Graphics;
+  private ondaAiming = false;
+  private aimGraphics?: Phaser.GameObjects.Graphics;
   private autoAttack = false;
   private targetRing?: Phaser.GameObjects.Graphics;
   private level: number = PLAYER_COMBAT.startLevel;
@@ -163,11 +164,11 @@ export class WuxiaScene extends Phaser.Scene {
     this.input.keyboard!.on("keydown-E", () => { this.interactQueuedAt = this.time.now; });
     this.input.keyboard!.on("keydown-J", () => { this.attackQueuedAt = this.time.now; });
     this.input.keyboard!.on("keydown-SPACE", () => { this.attackQueuedAt = this.time.now; });
-    this.input.keyboard!.on("keydown-ONE", () => this.castMoonSlash(this.time.now));
-    this.input.keyboard!.on("keydown-TWO", () => this.castOndaDeQi(this.time.now));
+    this.input.keyboard!.on("keydown-ONE", () => this.activeSkillPressed());
     this.input.keyboard!.on("keydown-Q", () => this.togglePath());
     this.input.on("pointerdown", (pointer: Phaser.Input.Pointer, over: Phaser.GameObjects.GameObject[]) => this.handleWorldTap(pointer, over));
     this.targetRing = this.add.graphics().setDepth(5);
+    this.aimGraphics = this.add.graphics().setDepth(6);
 
     this.createAnimations();
     createPixellabVfxAnimations(this);
@@ -241,6 +242,7 @@ export class WuxiaScene extends Phaser.Scene {
     this.updateWolves(time);
     this.updateTargetRing();
     this.updateCooldowns(time);
+    this.updateAimReticle();
 
     if (this.playerDead) {
       const remaining = Math.ceil(Math.max(0, this.respawnAt - time) / 1000);
@@ -457,20 +459,21 @@ export class WuxiaScene extends Phaser.Scene {
     this.updateBars();
   }
 
-  private castOndaDeQi(time: number): void {
+  private castOndaDeQi(time: number, tapPoint: { x: number; y: number }): void {
+    this.ondaAiming = false;
     if (this.playerDead || this.loading) return;
     if (this.activePath !== PATH_QI) {
-      this.setStatus("Onda de Qi é do Caminho do Cultivo — troque com CAMINHO (Q).");
+      this.setStatus("Onda de Qi é do Caminho do Cultivo — troque com o caminho (Q).");
       return;
     }
-    if (!canCastSkill(time, this.lastOndaAt, ONDA_DE_QI.cooldownMs, this.qi, ONDA_DE_QI.qiCost)) {
-      if (time - this.lastOndaAt >= ONDA_DE_QI.cooldownMs && this.qi < ONDA_DE_QI.qiCost) this.setStatus("Qi insuficiente para a Onda de Qi.");
-      return;
-    }
+    if (!canCastSkill(time, this.lastOndaAt, ONDA_DE_QI.cooldownMs, this.qi, ONDA_DE_QI.qiCost)) return;
     this.lastOndaAt = time;
     this.qi = spendQi(this.qi, ONDA_DE_QI.qiCost);
-    this.faceSelectedTarget();
-    const center = ondaAimPoint({ x: this.player.x, y: this.player.y }, this.selectedPoint(), ONDA_DE_QI.castRangePx, DIRECTION_VECTORS[this.facing]);
+    const origin = { x: this.player.x, y: this.player.y };
+    // The landing point is the tapped spot, clamped to the skill's range along the same line.
+    const center = ondaAimPoint(origin, tapPoint, ONDA_DE_QI.castRangePx, DIRECTION_VECTORS[this.facing]);
+    const dir = aimVector(origin, center, DIRECTION_VECTORS[this.facing]);
+    this.facing = directionFor(dir.x, dir.y);
     const orb = playGroundVfx(this, "energy-orb-8-directions", this.facing, "whole", center, center.y + 1, ONDA_DE_QI.visualScale);
     if (orb) this.time.delayedCall(ONDA_DE_QI.effectMs, () => orb.destroy());
     this.time.delayedCall(ONDA_DE_QI.hitDelayMs, () => this.resolveOndaHits(center));
@@ -550,6 +553,7 @@ export class WuxiaScene extends Phaser.Scene {
   }
 
   private togglePath(): void {
+    this.ondaAiming = false;
     this.activePath = this.activePath === PATH_SWORD ? PATH_QI : PATH_SWORD;
     this.refreshPathUi();
     const kind = PATHS[this.activePath].basicAttack.kind === "melee" ? "corpo a corpo" : "à distância";
@@ -558,46 +562,84 @@ export class WuxiaScene extends Phaser.Scene {
 
   private refreshPathUi(): void {
     const level = masteryLevel(this.masteryPoints[this.activePath], MASTERY.thresholds);
-    this.roleText?.setText(`${PATHS[this.activePath].name}  ·  Maestria ${level}`);
-    this.skillSlots.forEach((slot, index) => {
-      const owner = index === 0 ? PATH_SWORD : PATH_QI;
-      slot.setAlpha(owner === this.activePath ? 1 : 0.45);
-    });
+    this.roleText?.setText(`${PATHS[this.activePath].name}  ·  Maestria ${level}  (trocar)`);
+    this.skillText?.setText(this.activePath === PATH_SWORD ? "MOON\nSLASH" : "ONDA\nDE QI");
   }
 
-  private createSkillButton(index: number, label: string): Phaser.GameObjects.Container {
-    const slot = this.add.image(0, 0, "gui-slot", index % 4).setScale(1.5).setInteractive({ useHandCursor: true });
-    const key = this.add.text(0, -34, String(index + 1), { color: "#fff4d9", fontFamily: HUD_FONT, fontSize: "11px", fontStyle: "bold" }).setOrigin(0.5);
-    const caption = this.add.text(0, 30, label.split("  ")[1], { color: "#f8e5bd", fontFamily: HUD_FONT, fontSize: "8px", fontStyle: "bold" }).setOrigin(0.5, 0);
+
+  private createRoundButton(radius: number, label: string, accent: number): {
+    container: Phaser.GameObjects.Container;
+    base: Phaser.GameObjects.Arc;
+    cooldown: Phaser.GameObjects.Graphics;
+    text: Phaser.GameObjects.Text;
+  } {
+    const base = this.add.circle(0, 0, radius, 0x0c1624, 0.78).setStrokeStyle(3, accent, 0.7).setInteractive({ useHandCursor: true });
     const cooldown = this.add.graphics();
-    this.cooldownGraphics[index] = cooldown;
-    slot.on("pointerdown", () => {
-      if (index === 0) this.castMoonSlash(this.time.now);
-      else this.castOndaDeQi(this.time.now);
-    });
-    return this.add.container(0, 0, [slot, cooldown, key, caption]).setScrollFactor(0).setDepth(2101);
+    const text = this.add.text(0, 0, label, { color: "#fff4d9", fontFamily: HUD_FONT, fontSize: "11px", fontStyle: "bold", align: "center" }).setOrigin(0.5);
+    const container = this.add.container(0, 0, [base, cooldown, text]).setScrollFactor(0).setDepth(2101);
+    return { container, base, cooldown, text };
   }
 
-  /** Dark sweep over a skill button showing how much of its cooldown is left. */
+  /** The single active-skill button: Moon Slash on the sword path, Onda de Qi on the cultivation path. */
+  private activeSkillPressed(): void {
+    if (this.playerDead || this.loading) return;
+    if (this.activePath === PATH_SWORD) {
+      this.castMoonSlash(this.time.now);
+      return;
+    }
+    if (this.ondaAiming) {
+      this.ondaAiming = false;
+      this.setStatus("Mira da Onda de Qi cancelada.");
+      return;
+    }
+    this.startOndaAim();
+  }
+
+  /** Onda de Qi is aimed on the ground: the next tap on the map is where it lands. */
+  private startOndaAim(): void {
+    if (!isCooldownReady(this.time.now, this.lastOndaAt, ONDA_DE_QI.cooldownMs)) {
+      this.setStatus("Onda de Qi em recarga.");
+      return;
+    }
+    if (this.qi < ONDA_DE_QI.qiCost) {
+      this.setStatus("Qi insuficiente para a Onda de Qi.");
+      return;
+    }
+    this.ondaAiming = true;
+    this.setStatus("Toque no chão onde a Onda de Qi deve cair. Toque no botão de novo para cancelar.");
+  }
+
+  /** Target circle and range ring shown while aiming. */
+  private updateAimReticle(): void {
+    const g = this.aimGraphics;
+    if (!g) return;
+    g.clear();
+    if (!this.ondaAiming || this.playerDead) return;
+    const origin = { x: this.player.x, y: this.player.y };
+    const pointer = this.input.activePointer;
+    const point = ondaAimPoint(origin, { x: pointer.worldX, y: pointer.worldY }, ONDA_DE_QI.castRangePx, DIRECTION_VECTORS[this.facing]);
+    g.lineStyle(1, 0x93d7c5, 0.5).strokeCircle(origin.x, origin.y, ONDA_DE_QI.castRangePx);
+    g.fillStyle(0x4e9be8, 0.25).fillCircle(point.x, point.y, ONDA_DE_QI.radiusPx);
+    g.lineStyle(2, 0x9fe8ff, 0.9).strokeCircle(point.x, point.y, ONDA_DE_QI.radiusPx);
+  }
+
+  /** Dark sweep over the skill button showing how much of its cooldown is left. */
   private updateCooldowns(time: number): void {
-    const specs = [
-      { last: this.lastMoonSlashAt, cooldownMs: MOON_SLASH.cooldownMs },
-      { last: this.lastOndaAt, cooldownMs: ONDA_DE_QI.cooldownMs },
-    ];
-    specs.forEach((spec, index) => {
-      const g = this.cooldownGraphics[index];
-      if (!g) return;
-      g.clear();
-      const remaining = Math.max(0, spec.last + spec.cooldownMs - time);
-      if (remaining <= 0) return;
-      const fraction = remaining / spec.cooldownMs;
-      g.fillStyle(0x000000, 0.55);
-      g.beginPath();
-      g.moveTo(0, 0);
-      g.arc(0, 0, 28, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * fraction, false);
-      g.closePath();
-      g.fillPath();
-    });
+    const g = this.skillCooldown;
+    if (!g) return;
+    g.clear();
+    const isSword = this.activePath === PATH_SWORD;
+    const last = isSword ? this.lastMoonSlashAt : this.lastOndaAt;
+    const cooldownMs = isSword ? MOON_SLASH.cooldownMs : ONDA_DE_QI.cooldownMs;
+    const remaining = Math.max(0, last + cooldownMs - time);
+    if (remaining <= 0) return;
+    const fraction = remaining / cooldownMs;
+    g.fillStyle(0x000000, 0.55);
+    g.beginPath();
+    g.moveTo(0, 0);
+    g.arc(0, 0, 40, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * fraction, false);
+    g.closePath();
+    g.fillPath();
   }
 
   /** Pressing the attack button arms auto-attack; the update loop then chases and strikes the target. */
@@ -632,6 +674,10 @@ export class WuxiaScene extends Phaser.Scene {
 
   /** Tap on the world selects the nearest living wolf within reach; tapping empty ground clears the target. */
   private handleWorldTap(pointer: Phaser.Input.Pointer, over: Phaser.GameObjects.GameObject[]): void {
+    if (this.ondaAiming) {
+      if (over.length === 0) this.castOndaDeQi(this.time.now, { x: pointer.worldX, y: pointer.worldY });
+      return;
+    }
     if (over.length > 0 || this.playerDead || this.loading) return;
     let best: Wolf | null = null;
     let bestDistance = 44;
@@ -684,6 +730,7 @@ export class WuxiaScene extends Phaser.Scene {
   private killPlayer(): void {
     this.playerDead = true;
     this.autoAttack = false;
+    this.ondaAiming = false;
     this.attacking = false;
     this.respawnAt = this.time.now + PLAYER_COMBAT.respawnDelayMs;
     this.player.setVelocity(0, 0);
@@ -729,6 +776,7 @@ export class WuxiaScene extends Phaser.Scene {
     this.hudLevel = this.add.text(98, 70, "", { color: "#d6b66f", fontFamily: HUD_FONT, fontSize: "9px", fontStyle: "bold", letterSpacing: 1 });
     const role = this.add.text(98, 87, "", { color: "#a9bdc5", fontFamily: HUD_FONT, fontSize: "10px" });
     this.roleText = role;
+    role.setInteractive({ useHandCursor: true }).on("pointerdown", () => this.togglePath());
     this.hpBar = this.createBar(98, 105, "HP", 0x89d852, "", this.hudTopLeft);
     this.qiBar = this.createBar(98, 130, "QI", 0x4e9be8, "", this.hudTopLeft);
     this.hudTopLeft.add([panel, header, portraitFrame, portrait, brand, this.hudRegion, this.hudLevel, role, this.hpBar.fill, this.hpBar.value]);
@@ -737,7 +785,7 @@ export class WuxiaScene extends Phaser.Scene {
     this.updateHudLevel();
 
     this.hudStatus = this.add.text(18, 184, "Carregando mundo…", { color: "#fff4d9", backgroundColor: "#241d39dd", padding: { left: 10, right: 10, top: 7, bottom: 7 }, fontFamily: HUD_FONT, fontSize: "12px" }).setScrollFactor(0).setDepth(2101);
-    this.hudHint = this.add.text(18, 0, "WASD / setas  ·  joystick  ·  E interagir", { color: "#f8e5bd", backgroundColor: "#241d39dd", padding: { left: 10, right: 10, top: 7, bottom: 7 }, fontFamily: HUD_FONT, fontSize: "11px" }).setScrollFactor(0).setDepth(2101);
+    this.hudHint = this.add.text(18, 0, "WASD / setas  ·  joystick  ·  1 habilidade  ·  Q caminho  ·  E interagir", { color: "#f8e5bd", backgroundColor: "#241d39dd", padding: { left: 10, right: 10, top: 7, bottom: 7 }, fontFamily: HUD_FONT, fontSize: "11px" }).setScrollFactor(0).setDepth(2101);
 
     this.hudCompass = this.add.container(0, 18).setScrollFactor(0).setDepth(2100);
     this.hudCompass.add(this.add.image(0, 0, "gui-compass").setOrigin(0, 0));
@@ -746,13 +794,7 @@ export class WuxiaScene extends Phaser.Scene {
     this.hudSkills = this.add.container(0, 0).setScrollFactor(0).setDepth(2101);
     const skills = ["1  MOON SLASH", "2  ONDA DE QI", "3  POÇÃO", "4  MAPA"];
     skills.forEach((label, index) => {
-      if (index < 2) {
-        // Combat skills live on the right-hand arc with their own cooldown overlay.
-        const button = this.createSkillButton(index, label);
-        this.skillButtons[index] = button;
-        this.skillSlots.push(button.list[0] as Phaser.GameObjects.Image);
-        return;
-      }
+      if (index < 2) return; // combat skills live in the right-hand cluster
       // POÇÃO and MAPA have no behaviour yet; they stay in the bottom row until they do.
       const slot = this.add.image(index * 72 - 144, 0, "gui-slot", index % 4).setOrigin(0, 0);
       const key = this.add.text(index * 72 - 144 + 16, 5, String(index + 1), { color: "#fff4d9", fontFamily: HUD_FONT, fontSize: "11px", fontStyle: "bold" }).setOrigin(0.5);
@@ -760,20 +802,21 @@ export class WuxiaScene extends Phaser.Scene {
       this.hudSkills.add([slot, key, caption]);
     });
 
-    const actionBackground = this.add.image(0, 0, "gui-action", 1).setOrigin(0.5).setScale(1.5).setInteractive({ useHandCursor: true });
+    const attack = this.createRoundButton(66, "ATACAR", 0xf2d28a);
+    this.attackButton = attack.container;
+    attack.base.on("pointerdown", () => this.engageAutoAttack());
+
+    const skill = this.createRoundButton(44, "", 0xf2d28a);
+    this.skillButton = skill.container;
+    this.skillText = skill.text;
+    this.skillCooldown = skill.cooldown;
+    skill.base.on("pointerdown", () => this.activeSkillPressed());
+
+    // INTERAGIR only appears while a portal is close enough to use.
+    const actionBackground = this.add.image(0, 0, "gui-action", 1).setOrigin(0.5).setScale(1.2).setInteractive({ useHandCursor: true });
     const actionLabel = this.add.text(0, 0, "INTERAGIR", { color: "#fff4d9", fontFamily: HUD_FONT, fontSize: "11px", fontStyle: "bold", letterSpacing: 1 }).setOrigin(0.5);
-    this.actionButton = this.add.container(0, 0, [actionBackground, actionLabel]).setScrollFactor(0).setDepth(2101);
+    this.actionButton = this.add.container(0, 0, [actionBackground, actionLabel]).setScrollFactor(0).setDepth(2101).setVisible(false);
     actionBackground.on("pointerup", () => { void this.requestNearbyPortal(); });
-
-    const attackBackground = this.add.image(0, 0, "gui-action", 0).setOrigin(0.5).setScale(1.5).setInteractive({ useHandCursor: true });
-    const attackLabel = this.add.text(0, 0, "ATACAR", { color: "#fff4d9", fontFamily: HUD_FONT, fontSize: "11px", fontStyle: "bold", letterSpacing: 1 }).setOrigin(0.5);
-    this.attackButton = this.add.container(0, 0, [attackBackground, attackLabel]).setScrollFactor(0).setDepth(2101);
-    attackBackground.on("pointerdown", () => this.engageAutoAttack());
-
-    const pathBackground = this.add.image(0, 0, "gui-action", 0).setOrigin(0.5).setScale(1.5).setInteractive({ useHandCursor: true }).setTint(0xf2d28a);
-    const pathLabel = this.add.text(0, 0, "CAMINHO", { color: "#fff4d9", fontFamily: HUD_FONT, fontSize: "11px", fontStyle: "bold", letterSpacing: 1 }).setOrigin(0.5);
-    this.pathButton = this.add.container(0, 0, [pathBackground, pathLabel]).setScrollFactor(0).setDepth(2101);
-    pathBackground.on("pointerdown", () => this.togglePath());
     this.refreshPathUi();
 
     this.scale.on("resize", this.layoutHud, this);
@@ -812,14 +855,12 @@ export class WuxiaScene extends Phaser.Scene {
     this.hudCompass?.setPosition(width - 94, 18);
     this.hudSkills?.setPosition(Math.max(18, (width - 288) / 2), height - 76);
     this.hudHint?.setPosition(18, height - 30);
-    // Right-hand MOBA cluster: big attack at the corner, skills on an arc, path and interact stacked above.
-    const cx = width - 110;
+    // Right-hand cluster: round attack the same size as the joystick, one active skill beside it.
+    const cx = width - 100;
     const cy = height - 100;
     this.attackButton?.setPosition(cx, cy);
-    this.skillButtons[0]?.setPosition(cx - 118, cy);
-    this.skillButtons[1]?.setPosition(cx - 90, cy - 76);
-    this.pathButton?.setPosition(cx, cy - 72).setScale(0.8);
-    this.actionButton?.setPosition(cx, cy - 116).setScale(0.8);
+    this.skillButton?.setPosition(cx - 100, cy - 70);
+    this.actionButton?.setPosition(cx, cy - 116);
   }
 
   private getMovementVector(): { x: number; y: number } {
@@ -836,6 +877,7 @@ export class WuxiaScene extends Phaser.Scene {
 
   private updateActionButtonState(): void {
     const nearbyPortal = this.findNearbyPortal();
+    this.actionButton?.setVisible(Boolean(nearbyPortal));
     const background = this.actionButton?.list[0] as Phaser.GameObjects.Image | undefined;
     if (!background) return;
     if (nearbyPortal) background.setTint(0xd9f28a);
