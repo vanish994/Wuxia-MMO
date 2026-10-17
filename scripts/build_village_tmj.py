@@ -57,6 +57,10 @@ def build_layout() -> list[list[str]]:
         for x in range(40, 56):
             if ((x - 48) / 5.2) ** 2 + ((y - 5) / 3.4) ** 2 <= 1.0:
                 g[y][x] = "w"
+    # Footpaths linking the plaza to the botica and to the training yard.
+    fill(19, 13, 24, 13, "d")
+    fill(19, 13, 19, 16, "d")
+    fill(17, 26, 24, 26, "d")
     # Stone path from the plaza to the tea garden.
     for i, x in enumerate(range(35, 42)):
         fill(x, 11 - i // 2, x, 12 - i // 2, "d")
@@ -234,6 +238,10 @@ def build_props(g, rng: random.Random) -> tuple[list[dict], list[dict]]:
 
     # Shrine (north) with stone lanterns along the stairs and the torii over the road.
     add("cabana-4", 896, 150)
+    for x, y in [(806, 150), (790, 196), (986, 150), (1002, 196)]:
+        objs.append(place("ambient_bamboo", x, y, flip=rng.random() < 0.5))
+    for x, y in [(826, 210), (966, 210)]:
+        objs.append(place("ambient_blossom", x, y, flip=rng.random() < 0.5))
     add("sect_gate", 896, 300)
     for x, y in [(860, 240), (932, 240), (860, 336), (932, 336), (860, 388), (932, 388)]:
         add("ambient_lantern", x, y)
@@ -251,6 +259,8 @@ def build_props(g, rng: random.Random) -> tuple[list[dict], list[dict]]:
     add("teahouse", 1264, 352)
     # Market: a cabin at the back and stalls along both lanes.
     add("cabana-2", 1248, 400)
+    for x, y in [(1184, 448), (1312, 448), (1184, 620), (1312, 620)]:
+        add("ambient_lantern", x, y)
     for x in (1184, 1248, 1312):
         add(f"barraca-{1 + (x // 64) % 3}", x, 560)
     for x in (1184, 1248, 1312):
