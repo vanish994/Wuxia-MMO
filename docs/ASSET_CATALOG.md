@@ -8,11 +8,9 @@ Os pacotes já presentes em `docs/` complementam diretamente a primeira fatia do
 |---|---|---|---|
 | `tinyRPG_manaSoulGUI_v_1_0.zip` | Molduras 9-slice, barras, tabs, botões, cursores, inventário, retrato e bússola | CC0 1.0; autor: Gabriel “tiopalada” Lima | Aprovado como camada visual do HUD, sem substituir a lógica de interface |
 | `assets/characters/samurai/samurai-all-animations-pack.zip` | Caminhada/idle em 8 direções, ataque de espada, ataque de orbe de energia azul e morte | Metadados e proveniência no próprio pacote; origem interna da entrega atual | Usar imediatamente no combate prototipal |
-| `docs/pixellab-7-objects-2026-10-17.zip` | Quatro cabanas wuxia 128×128 e três barracas 48×48, low top-down, export PixelLab | Proveniência registrada em `metadata.json`; licença não declarada no export, tratar como asset privado do projeto | Usar na vila Qinghe para corrigir a escala arquitetônica; não aplicar escala de runtime |
 
 Os assets legados de natureza e vila foram removidos. A composição atual usa o kit wuxia e o Mega Pack Feudal Japan/Harmonious Seasons como fontes futuras de integração.
 
-O kit Pixellab foi preparado em `assets/external/pixellab-wuxia-objects/`. As cabanas permanecem em resolução nativa de 128×128 px e as barracas em 48×48 px, com colisão separada na base. Como o export não contém licença explícita, ele não deve ser redistribuído fora deste projeto sem confirmação de direitos.
 
 ## Mapeamento para o GDD
 

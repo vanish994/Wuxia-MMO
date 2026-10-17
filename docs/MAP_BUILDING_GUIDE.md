@@ -64,7 +64,7 @@ Avaliação no ciclo 2 (commit `4f2bb4c`). "Sim" = verificado; "Parcial" = verif
 
 | # | Item | Estado | Observação |
 |---|------|--------|------------|
-| 1 | Usa assets do pack definido, sem misturar estilos incompatíveis | Parcial | Kit mistura pixellab (cabanas, barracas) e pack do Qinghe. Compatibilidade de paleta e contorno ainda não auditada. |
+| 1 | Usa assets do pack definido, sem misturar estilos incompatíveis | Em revisão | A arquitetura deve usar o Mega Pack Feudal Japan e a natureza o Harmonious Seasons; compatibilidade de paleta e contorno será validada por região. |
 | 2 | Perspectiva top-down e não isométrica | Sim | Conferido nas capturas. |
 | 3 | Tiles de 32 × 32 alinhados, sem deformação | Não verificado | Assets em tamanhos variados (cabana 128 px, barraca 48 px). Alinhamento à grade não auditado. |
 | 4 | Layout definido antes dos detalhes | Sim | Plano de composição registrado no kit (`layout_notes`). |

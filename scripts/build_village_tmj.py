@@ -3,7 +3,7 @@
 
 The layout is authored as a tile grid (32 px cells) below. The script:
   * paints the ground with the existing grass/dirt/water wang tileset (corner rules);
-  * places props from the existing pixel-art assets (cabins, stalls, lanterns, trees);
+  * places props from the existing pixel-art assets (structures, stalls, lanterns, trees);
   * derives collisions from water cells, map borders and prop footprints;
   * keeps the spawn/portal/interaction contracts used by the neighbouring regions.
 
@@ -24,7 +24,6 @@ ROOT = Path(__file__).resolve().parents[1]
 REGION = ROOT / "assets/world/maps/biomes/regions/qinghe-valley-v1/tiled"
 TMJ_PATH = REGION / "map.embedded.tmj"
 PREVIEW_PATH = REGION / "village-preview.png"
-EXTERNAL = ROOT / "assets/external/pixellab-wuxia-objects"
 
 W, H, T = 56, 36, 32
 

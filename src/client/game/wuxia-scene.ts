@@ -29,15 +29,8 @@ const BAR_FILL_WIDTH = 84;
 const INPUT_QUEUE_WINDOW_MS = 300;
 const SAMURAI_RUNTIME = "/assets/characters/samurai/runtime";
 const VILLAGE_ASSET_KEYS: Record<string, string> = {
-  "/assets/external/pixellab-wuxia-objects/cabanas/cabana-1.png": "qinghe-cabin-1",
-  "/assets/external/pixellab-wuxia-objects/cabanas/cabana-2.png": "qinghe-cabin-2",
-  "/assets/external/pixellab-wuxia-objects/cabanas/cabana-3.png": "qinghe-cabin-3",
-  "/assets/external/pixellab-wuxia-objects/cabanas/cabana-4.png": "qinghe-cabin-4",
   "/assets/world/maps/biomes/regions/qinghe-valley-v1/tiled/images/sect_gate.png": "qinghe-torii",
   "/assets/world/maps/biomes/regions/qinghe-valley-v1/tiled/images/ambient_lantern.png": "qinghe-stone-lantern",
-  "/assets/external/pixellab-wuxia-objects/barracas/barraca-1.png": "qinghe-market-stall-1",
-  "/assets/external/pixellab-wuxia-objects/barracas/barraca-2.png": "qinghe-market-stall-2",
-  "/assets/external/pixellab-wuxia-objects/barracas/barraca-3.png": "qinghe-market-stall-3",
 };
 
 type HudBar = {
