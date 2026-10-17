@@ -481,3 +481,36 @@ O protótipo local estará pronto para iniciar a preparação online quando:
 7. os módulos de regras, interface e persistência estiverem separados o suficiente para substituir a execução local por uma autoridade de servidor.
 
 A conclusão desta fase não significa que o multiplayer esteja pronto: ela apenas autoriza iniciar a fase de arquitetura e prova de conexão online.
+
+---
+
+## 20. Registro de decisões de implementação — ciclo 1 (Vale da Lua Serena)
+
+Estas notas não alteram as decisões consolidadas da seção 15. Registram o que foi implementado e as escolhas provisórias.
+
+### DD-1 — Ambientação visual da primeira área (divergência em aberto)
+
+- **Pedido de produto:** a primeira área deve ser a vila **Vale da Lua Serena**, com identidade wuxia inspirada na China antiga.
+- **Esta seção 15:** ambientação de *Japão feudal fantástico com identidade wuxia própria*.
+- **Estado do repositório:** os tilesets, casas e árvores existentes são majoritariamente de estética japonesa (pagodes, portões, cerejeiras), com alguns edifícios de estética asiática genérica.
+- **Decisão provisória:** a área jogável é o mapa existente de Qinghe, exibido com o nome Vale da Lua Serena. Não há novos assets de estilo chinês. **Confirmar com o responsável de design** qual estética prevalece antes de produzir os novos edifícios.
+
+### DD-2 — Combate corpo a corpo e lobos
+
+- Escopo do ciclo: espada corpo a corpo, sem Qi ativo ainda. O ataque acerta alvos no arco frontal de 120° e alcance de 64 px.
+- Lobo Feroz nível 1: 40 HP, dano 6, defesa 1, detecção de 150 px, leash de 260 px, ataque a 34 px com cooldown de 1,2 s, respawn de 8 s, 12 XP e 1 Pele de Lobo.
+- Jogador: 100 HP, dano base 18, defesa 2, respawn na praça após 3 s.
+- Todos os números são **provisórios** e estão em `src/client/game/combat/combat-config.mjs`. Balanceamento deve ser feito após playtest.
+- Progressão: XP por nível = 100 × nível atual. Maestria de Espada e Cultivo, previstas na seção 7, continuam fora deste ciclo.
+
+### DD-3 — Limitações técnicas assumidas
+
+- O combate roda no cliente. A lógica está separada em `combat-rules.mjs`, pronta para ser executada por um servidor autoritativo, mas nenhuma validação server-side existe.
+- Morte e respawn são locais; nada é persistido entre sessões, conforme a seção 16.2.
+- O lobo usa apenas o spritesheet de idle; o golpe é um avanço curto e o dano é mostrado por número flutuante.
+
+### DD-4 — Sem portão de tela cheia
+
+- O portão de entrada com botão de tela cheia e bloqueio de orientação foi removido a pedido do responsável pelo produto.
+- Único aviso mantido: em retrato, pede para girar o aparelho para a horizontal. Em landscape o jogo fica liberado sem overlay.
+- Consequência: o cliente não solicita tela cheia; o requisito de solicitação por gesto explícito da seção 17 (Fase 5/PWA) fica para ser reavaliado.

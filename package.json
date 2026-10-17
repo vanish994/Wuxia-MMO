@@ -8,7 +8,7 @@
     "build": "npm run typecheck && rm -rf dist && vite build && cp -R assets/. dist/assets/",
     "preview": "vite preview --host 0.0.0.0",
     "typecheck": "tsc --noEmit",
-    "test": "node --test test/world/wuxia-region-loader.test.mjs test/client/*.test.mjs"
+    "test": "node --test test/world/*.test.mjs test/client/*.test.mjs"
   },
   "dependencies": {
     "phaser": "3.90.0"

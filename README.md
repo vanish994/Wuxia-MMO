@@ -31,9 +31,9 @@ npm install
 npm run dev
 ```
 
-Abra a URL exibida pelo Vite. No desktop, use `WASD` ou as setas; em toque, use o joystick à esquerda. A tecla `E` e o botão `INTERAGIR` testam saídas quando o personagem está sobre um portal. Para validar a suíte completa e o build:
+Abra a URL exibida pelo Vite. No desktop, use `WASD` ou as setas; em toque, use o joystick à esquerda. `J` ou `Espaço` e o botão `ATACAR` golpeiam com a espada no arco frontal; a tecla `E` e o botão `INTERAGIR` testam saídas quando o personagem está sobre um portal. Para validar a suíte completa e o build:
 
-Na entrada, o cliente solicita tela cheia após o toque/clique do jogador e tenta travar a orientação em `landscape`. Em aparelhos mantidos na vertical, a camada de entrada pede que o usuário vire o dispositivo. A solicitação de tela cheia precisa ocorrer por gesto explícito porque essa é uma restrição dos navegadores móveis.
+Não há portão de entrada nem solicitação de tela cheia. Em aparelhos mantidos na vertical, um aviso pede que o usuário gire o dispositivo para a horizontal; em landscape o jogo fica liberado imediatamente.
 
 ```bash
 npm test
@@ -41,7 +41,9 @@ npm run typecheck
 npm run build
 ```
 
-O plano da etapa está em [`plan.md`](plan.md) e as entregas/pendências em [`TODO.md`](TODO.md). O próximo incremento é combate básico de espada e Qi com inimigo de teste; autenticação, persistência e MMO real continuam fora do protótipo local.
+O plano da etapa está em [`plan.md`](plan.md) e as entregas/pendências em [`TODO.md`](TODO.md).
+
+A área de caça ao redor da vila tem seis Lobos Ferozes de nível 1. Cada lobo tem HP, detecta o jogador a 150 px, persegue, ataca com cooldown e reaparece em 8 s. Derrotá-lo concede XP e Pele de Lobo. Valores de balanceamento ficam em `src/client/game/combat/combat-config.mjs`; a lógica de combate fica em `combat-rules.mjs`, sem Phaser. Autenticação, persistência e MMO real continuam fora do protótipo local.
 
 ### Vila inicial de Qinghe
 

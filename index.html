@@ -7,17 +7,15 @@
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="description" content="Wuxia MMO — protótipo local de exploração em Qinghe Valley." />
+    <meta name="description" content="Wuxia MMO — protótipo local de exploração na Vale da Lua Serena." />
     <title>Wuxia MMO — Qinghe Valley</title>
   </head>
   <body>
     <main id="game-container" aria-label="Protótipo jogável Wuxia MMO"></main>
-    <section id="immersive-gate" class="immersive-gate" aria-live="polite">
-      <div class="immersive-card">
-        <div class="immersive-mark">WUXIA MMO</div>
-        <h1 id="immersive-title">Jogue em tela cheia</h1>
-        <p id="immersive-message">Para uma melhor experiência, use o jogo na horizontal.</p>
-        <button id="immersive-start" type="button">Entrar no jogo</button>
+    <section id="rotate-hint" class="rotate-hint" aria-live="polite">
+      <div class="rotate-card">
+        <div class="rotate-icon" aria-hidden="true">↻</div>
+        <p>Gire o aparelho para a horizontal para jogar.</p>
       </div>
     </section>
     <script type="module" src="/src/client/main.ts"></script>

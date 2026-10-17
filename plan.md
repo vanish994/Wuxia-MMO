@@ -41,3 +41,23 @@ Escolhido: **Bruma de Jade**.
 2. Separar regras de personagem em domínio independente da cena.
 3. Implementar alvo, ataque básico de espada, ataque básico de Qi e inimigo de teste.
 4. Só depois consolidar habilidades, progressão e salvamento local.
+
+## Ciclo 1 — combate na Vale da Lua Serena (estado atual)
+
+Auditoria registrada em 2026-10-17: o cliente inicia com `npm run dev`, carrega `WuxiaScene` e o mapa `qinghe-valley` sem erros de execução (verificado em Chromium headless); typecheck, testes e build passam; o build de produção com `VITE_BASE=/Wuxia-MMO/` carrega sem 404. Lacunas encontradas: personagem parado usava frame de caminhada, não havia combate, inimigos nem recursos de idle/ataque integrados, e o mapa ainda é o hub Qinghe.
+
+Decisões desta etapa (reversíveis, documentadas no GDD, seção 20):
+
+- Regras puras em `src/client/game/combat/combat-rules.mjs`; a cena apenas apresenta e encaminha. Um servidor futuro deve reexecutar essas regras.
+- Números de balanceamento em `combat-config.mjs`, marcados como provisórios.
+- Lobos têm IA por modo (`idle`, `chase`, `attack`, `return`, `dead`) decidida pela função `decideWolfAction`.
+- Spawns validados por teste contra colisões reais e alcançabilidade a partir da chegada.
+
+Arquitetura resultante:
+
+- `src/client/game/character/directions.ts`: vocabulário de 8 direções e mapa de frames do lobo.
+- `src/client/game/combat/`: configuração e regras.
+- `src/client/game/entities/wolf.ts`: corpo físico, barra de vida e aplicação das decisões.
+- `src/client/game/wuxia-scene.ts`: cena, HUD, controles e estado do jogador.
+
+Próximo recorte: mapa dedicado da Vale da Lua Serena (camadas, dojo, botica, mercado, portão de caça), Onda de Qi com seleção de ponto e integração da animação de morte.
