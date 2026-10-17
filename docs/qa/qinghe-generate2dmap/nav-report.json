@@ -1,0 +1,527 @@
+{
+  "schema": "generate2dmap.nav_report.v1",
+  "status": "warn",
+  "method": "plan Appendix C validity (centre + 8 footprint samples against walk regions, solids, object footprints scaled once, tile collision and material classes) on a grid of cell max(1, round(r/2)) px; 4-neighbour moves open when segmentClear holds between node centres (samples every cell/2, plus the exact thin-gap centre path and one_way direction); BFS from every spawn and portal arrival to every interaction, exit, anchor slot and approach point",
+  "notProven": [
+    "that the collision data matches the painted art",
+    "positions closer than one grid cell to a blocker (the grid samples cell centres)",
+    "runtime movement code: map-runtime.mjs parity is tested during integration",
+    "links to maps not passed with --link"
+  ],
+  "checks": [
+    {
+      "id": "starts_valid",
+      "status": "pass",
+      "value": {
+        "starts": 5,
+        "blocked": []
+      },
+      "threshold": {
+        "blocked": 0
+      }
+    },
+    {
+      "id": "targets_reachable",
+      "status": "pass",
+      "value": {
+        "reachable": 10,
+        "total": 10,
+        "unreachable": []
+      },
+      "threshold": {
+        "unreachable": 0
+      }
+    },
+    {
+      "id": "portals_inside_world",
+      "status": "pass",
+      "value": {
+        "outside": []
+      },
+      "threshold": {
+        "outside": 0
+      }
+    },
+    {
+      "id": "arrivals_outside_triggers",
+      "status": "pass",
+      "value": {
+        "problems": 0
+      },
+      "threshold": {
+        "problems": 0
+      }
+    },
+    {
+      "id": "reciprocal_links",
+      "status": "skipped",
+      "value": {
+        "links": [],
+        "notChecked": [
+          "bamboo-coast",
+          "jade-mountain",
+          "river-market",
+          "training-grounds"
+        ]
+      },
+      "threshold": {
+        "errors": 0
+      }
+    },
+    {
+      "id": "thin_gaps",
+      "status": "pass",
+      "value": 0,
+      "threshold": "reported: moves the thin-gap rule closed although every footprint sample was valid"
+    },
+    {
+      "id": "unreachable_walkable_area",
+      "status": "warn",
+      "value": {
+        "pockets": 10,
+        "cells": 30
+      },
+      "threshold": "reported"
+    },
+    {
+      "id": "blocked_rects_union",
+      "status": "pass",
+      "value": {
+        "rects": 473,
+        "blockedCells": 8398
+      },
+      "threshold": "union == blocked cells"
+    },
+    {
+      "id": "footprints_scaled_once",
+      "status": "pass",
+      "value": {
+        "objectSolids": 68
+      },
+      "threshold": "object footprint x scale, never inflated by the actor radius"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "../../home/ubuntu/Wuxia-MMO/assets/world/maps/biomes/regions/qinghe-valley-v1/map-bundle.json",
+      "sha256": "37c2c3624feb5b9c9714a4df98a05de5b8d5164ef205373340894dd742986263",
+      "bytes": 97675
+    },
+    {
+      "path": "../../home/ubuntu/Wuxia-MMO/assets/world/maps/biomes/regions/qinghe-valley-v1/tilesets/grass-path-water-wang81/grass-path-water-wang81.tileset.json",
+      "sha256": "1525e3662e83f1ee8abb180634d7d6ec4d1246693db9660f2ec8ba9a6ffe1678",
+      "bytes": 188839
+    },
+    {
+      "path": "../../home/ubuntu/Wuxia-MMO/assets/world/maps/biomes/regions/qinghe-valley-v1/tilesets/grass-path-water-wang81/grass-path-water-wang81.png",
+      "sha256": "ef505070499c897e246219527bbba3d094534fe18d21db062dcdeea46ed6065f",
+      "bytes": 32480
+    },
+    {
+      "path": "../../home/ubuntu/Wuxia-MMO/assets/world/maps/biomes/regions/qinghe-valley-v1/terrain-vertices.json",
+      "sha256": "4da1661ce88e21533161e54e627067dfcfd9822e98629c783029931a87eeb413",
+      "bytes": 10103
+    },
+    {
+      "path": "../../home/ubuntu/Wuxia-MMO/assets/world/maps/biomes/regions/qinghe-valley-v1/props/grass.png",
+      "sha256": "2a7065ffd49a92c05eba761496e5089fc6e4db78b9b62b96ceb1045c2b36add4",
+      "bytes": 153
+    },
+    {
+      "path": "../../home/ubuntu/Wuxia-MMO/assets/world/maps/biomes/regions/qinghe-valley-v1/props/dirt_path.png",
+      "sha256": "b5ce47c08c5a1e45964fc32e6ef3ad6c5d381be9e6fd99e0b58841f4e64483c2",
+      "bytes": 153
+    },
+    {
+      "path": "../../home/ubuntu/Wuxia-MMO/assets/world/maps/biomes/regions/qinghe-valley-v1/props/water.png",
+      "sha256": "cba3c113c40bbb9c2759d88834c8391b2c106790b9edf776b80968755e70a013",
+      "bytes": 153
+    },
+    {
+      "path": "../../home/ubuntu/Wuxia-MMO/assets/world/maps/biomes/regions/qinghe-valley-v1/props/sect_gate.png",
+      "sha256": "1aeedb2ef856eec6fe1e5f8310ce4e1e368e05f60b6182f91cba3f86974c6a85",
+      "bytes": 479
+    },
+    {
+      "path": "../../home/ubuntu/Wuxia-MMO/assets/world/maps/biomes/regions/qinghe-valley-v1/props/bridge.png",
+      "sha256": "27e76b7d6bd364498b855920f61381c3f2f699394612fe509cb397c0c0ba864d",
+      "bytes": 300
+    },
+    {
+      "path": "../../home/ubuntu/Wuxia-MMO/assets/world/maps/biomes/regions/qinghe-valley-v1/props/pagoda.png",
+      "sha256": "c4805330da4a46ae8195e0e50329bf47980748df8f7552fd576a7d5e04a1cb1d",
+      "bytes": 514
+    },
+    {
+      "path": "../../home/ubuntu/Wuxia-MMO/assets/world/maps/biomes/regions/qinghe-valley-v1/props/hall.png",
+      "sha256": "4aef0fea09ae9043289bc7301d524494566c9c84f2e9cc2161c6873a341fe16d",
+      "bytes": 500
+    },
+    {
+      "path": "../../home/ubuntu/Wuxia-MMO/assets/world/maps/biomes/regions/qinghe-valley-v1/props/teahouse.png",
+      "sha256": "ed1534bb5510edc2c9fa21f64af5d2926c8c6ffb2d2020c4c5d7fae4b441b03d",
+      "bytes": 432
+    },
+    {
+      "path": "../../home/ubuntu/Wuxia-MMO/assets/world/maps/biomes/regions/qinghe-valley-v1/props/pine.png",
+      "sha256": "f6d9de3c7e18415fa4233e58b4cc65847573ea601c3a2cd3738f46d9b4bf5fc3",
+      "bytes": 341
+    },
+    {
+      "path": "../../home/ubuntu/Wuxia-MMO/assets/world/maps/biomes/regions/qinghe-valley-v1/props/blossom_tree.png",
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "bytes": 407
+    },
+    {
+      "path": "../../home/ubuntu/Wuxia-MMO/assets/world/maps/biomes/regions/qinghe-valley-v1/props/bamboo.png",
+      "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
+      "bytes": 509
+    },
+    {
+      "path": "../../home/ubuntu/Wuxia-MMO/assets/world/maps/biomes/regions/qinghe-valley-v1/props/lantern.png",
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "bytes": 230
+    },
+    {
+      "path": "../../home/ubuntu/Wuxia-MMO/assets/world/maps/biomes/regions/qinghe-valley-v1/props/rock.png",
+      "sha256": "2337c524ea4fac4bea52811f5fd45a43e14fdb2def48e1670e5c92a49217ff35",
+      "bytes": 188
+    },
+    {
+      "path": "../../home/ubuntu/Wuxia-MMO/assets/world/maps/biomes/regions/qinghe-valley-v1/props/shrub.png",
+      "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
+      "bytes": 198
+    },
+    {
+      "path": "../../home/ubuntu/Wuxia-MMO/assets/world/maps/biomes/regions/qinghe-valley-v1/props/signboard.png",
+      "sha256": "db4e50fb76441a57ff24f22c3cc852749cb0faf64c0ed744a068ece0b1bbea41",
+      "bytes": 223
+    }
+  ],
+  "outputs": [
+    {
+      "path": "nav-grid.json",
+      "sha256": "ff86473a93e18fa3639cc0d92c0f8c5fed9eb51e80072d2386068327bf4cf01b",
+      "bytes": 173562
+    },
+    {
+      "path": "nav-debug.png",
+      "sha256": "e6339d1dd25d554596ec98095209514b4c9a7f2ec5f43a70f29aaddb3d6c6949",
+      "bytes": 86792
+    }
+  ],
+  "tool": {
+    "name": "map_nav.py",
+    "version": "0.4.0"
+  },
+  "map": "qinghe-valley",
+  "cell": 4,
+  "starts": [
+    {
+      "kind": "spawn",
+      "id": "arrival",
+      "point": [
+        640.0,
+        512.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        638.0,
+        510.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "spawn",
+      "id": "from-bamboo-coast",
+      "point": [
+        30.0,
+        446.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        30.0,
+        446.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "spawn",
+      "id": "from-river-market",
+      "point": [
+        1250.0,
+        318.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        1250.0,
+        318.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "spawn",
+      "id": "from-jade-mountain",
+      "point": [
+        638.0,
+        30.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        638.0,
+        30.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "spawn",
+      "id": "from-training-grounds",
+      "point": [
+        638.0,
+        770.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        638.0,
+        770.0
+      ],
+      "reason": null
+    }
+  ],
+  "targets": [
+    {
+      "kind": "interaction",
+      "id": "village-notice",
+      "point": [
+        544.0,
+        416.0
+      ],
+      "reachable": true,
+      "steps": 34,
+      "node": [
+        570.0,
+        434.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "interaction",
+      "id": "respawn-shrine",
+      "point": [
+        640.0,
+        320.0
+      ],
+      "reachable": true,
+      "steps": 36,
+      "node": [
+        634.0,
+        362.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "interaction",
+      "id": "market-square",
+      "point": [
+        864.0,
+        448.0
+      ],
+      "reachable": true,
+      "steps": 46,
+      "node": [
+        810.0,
+        482.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "interaction",
+      "id": "alchemy-yard",
+      "point": [
+        352.0,
+        320.0
+      ],
+      "reachable": true,
+      "steps": 92,
+      "node": [
+        310.0,
+        342.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "interaction",
+      "id": "forge-yard",
+      "point": [
+        352.0,
+        672.0
+      ],
+      "reachable": true,
+      "steps": 76,
+      "node": [
+        394.0,
+        694.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "interaction",
+      "id": "guest-yard",
+      "point": [
+        928.0,
+        672.0
+      ],
+      "reachable": true,
+      "steps": 77,
+      "node": [
+        886.0,
+        694.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "exit",
+      "id": "west-road-exit",
+      "point": [
+        8.0,
+        448.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        22.0,
+        438.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "exit",
+      "id": "east-road-exit",
+      "point": [
+        1272.0,
+        320.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        1258.0,
+        310.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "exit",
+      "id": "north-gate-exit",
+      "point": [
+        640.0,
+        8.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        630.0,
+        22.0
+      ],
+      "reason": null
+    },
+    {
+      "kind": "exit",
+      "id": "south-road-exit",
+      "point": [
+        640.0,
+        792.0
+      ],
+      "reachable": true,
+      "steps": 0,
+      "node": [
+        630.0,
+        778.0
+      ],
+      "reason": null
+    }
+  ],
+  "links": [],
+  "thinGaps": [],
+  "unreachablePockets": [
+    {
+      "cells": 6,
+      "at": [
+        306.0,
+        138.0
+      ]
+    },
+    {
+      "cells": 6,
+      "at": [
+        178.0,
+        210.0
+      ]
+    },
+    {
+      "cells": 6,
+      "at": [
+        954.0,
+        578.0
+      ]
+    },
+    {
+      "cells": 6,
+      "at": [
+        1170.0,
+        618.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        274.0,
+        90.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        246.0,
+        94.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        142.0,
+        202.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        582.0,
+        234.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        698.0,
+        234.0
+      ]
+    },
+    {
+      "cells": 1,
+      "at": [
+        702.0,
+        238.0
+      ]
+    }
+  ],
+  "bundleNav": {
+    "cell": 4,
+    "grid": "nav-grid.json"
+  },
+  "problems": []
+}
