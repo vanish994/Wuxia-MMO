@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.10" tiledversion="1.11.0" name="props" tilewidth="64" tileheight="62" tilecount="11" columns="0" objectalignment="bottomleft">
+<tileset version="1.10" tiledversion="1.11.0" name="props" tilewidth="64" tileheight="62" tilecount="9" columns="0" objectalignment="bottomleft">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="0" type="prop">
   <properties>
@@ -43,19 +43,6 @@
  </tile>
  <tile id="3" type="prop">
   <properties>
-   <property name="prop" value="hall"/>
-   <property name="anchorX" type="float" value="32"/>
-   <property name="anchorY" type="float" value="47"/>
-   <property name="solid" type="bool" value="true"/>
-   <property name="occlusionClass" value="tall"/>
-  </properties>
-  <image source="images/hall.png" width="64" height="48"/>
-  <objectgroup draworder="index" id="2">
-   <object id="1" name="footprint" type="footprint" x="19" y="33" width="26" height="14"/>
-  </objectgroup>
- </tile>
- <tile id="4" type="prop">
-  <properties>
    <property name="prop" value="lantern"/>
    <property name="anchorX" type="float" value="8"/>
    <property name="anchorY" type="float" value="29"/>
@@ -69,7 +56,7 @@
    </object>
   </objectgroup>
  </tile>
- <tile id="5" type="prop">
+ <tile id="4" type="prop">
   <properties>
    <property name="prop" value="pagoda"/>
    <property name="anchorX" type="float" value="24"/>
@@ -82,7 +69,7 @@
    <object id="1" name="footprint" type="footprint" x="15" y="49" width="18" height="12"/>
   </objectgroup>
  </tile>
- <tile id="6" type="prop">
+ <tile id="5" type="prop">
   <properties>
    <property name="prop" value="rock"/>
    <property name="anchorX" type="float" value="9"/>
@@ -97,7 +84,7 @@
    </object>
   </objectgroup>
  </tile>
- <tile id="7" type="prop">
+ <tile id="6" type="prop">
   <properties>
    <property name="prop" value="sect_gate"/>
    <property name="anchorX" type="float" value="28"/>
@@ -110,7 +97,7 @@
    <object id="1" name="footprint" type="footprint" x="21" y="37" width="14" height="8"/>
   </objectgroup>
  </tile>
- <tile id="8" type="prop">
+ <tile id="7" type="prop">
   <properties>
    <property name="prop" value="shrub"/>
    <property name="anchorX" type="float" value="10"/>
@@ -125,7 +112,7 @@
    </object>
   </objectgroup>
  </tile>
- <tile id="9" type="prop">
+ <tile id="8" type="prop">
   <properties>
    <property name="prop" value="signboard"/>
    <property name="anchorX" type="float" value="12"/>
@@ -136,19 +123,6 @@
   <image source="images/signboard.png" width="24" height="28"/>
   <objectgroup draworder="index" id="2">
    <object id="1" name="footprint" type="footprint" x="9" y="20" width="6" height="5"/>
-  </objectgroup>
- </tile>
- <tile id="10" type="prop">
-  <properties>
-   <property name="prop" value="teahouse"/>
-   <property name="anchorX" type="float" value="24"/>
-   <property name="anchorY" type="float" value="39"/>
-   <property name="solid" type="bool" value="true"/>
-   <property name="occlusionClass" value="tall"/>
-  </properties>
-  <image source="images/teahouse.png" width="48" height="40"/>
-  <objectgroup draworder="index" id="2">
-   <object id="1" name="footprint" type="footprint" x="13" y="27" width="22" height="12"/>
   </objectgroup>
  </tile>
 </tileset>

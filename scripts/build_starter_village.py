@@ -298,20 +298,21 @@ def main() -> None:
         "base": "grass",
         "terrain": [
             {"id": "east-lake", "shape": "ellipse", "material": "water", "center": [31, 7], "radius": [4.2, 3.3], "wobble": 0.7},
-            {"id": "village-green", "shape": "ellipse", "material": "dirt_path", "center": [18, 13], "radius": [7.2, 2.0], "wobble": 0.15},
-            {"id": "west-road", "shape": "road", "material": "dirt_path", "width": 1.35, "points": [[-1, 14], [4, 14], [9, 13], [14, 13]]},
-            {"id": "east-road", "shape": "road", "material": "dirt_path", "width": 1.35, "points": [[22, 13], [26, 11], [31, 9], [36, 9], [41, 9]]},
-            {"id": "north-lane", "shape": "road", "material": "dirt_path", "width": 1.2, "points": [[10, 13], [10, 9], [9, 6], [9, -1]]},
+            # Praça principal larga: o spawn chega pelo sul e distribui o jogador para os quatro setores.
+            {"id": "village-green", "shape": "ellipse", "material": "dirt_path", "center": [18, 14], "radius": [7.4, 2.8], "wobble": 0.12},
+            {"id": "west-road", "shape": "road", "material": "dirt_path", "width": 1.35, "points": [[-1, 14], [4, 14], [9, 14], [14, 14]]},
+            # Mercado e lake ficam ligados por uma via legível, sem cortar a praça de respawn.
+            {"id": "east-road", "shape": "road", "material": "dirt_path", "width": 1.35, "points": [[22, 14], [27, 13], [31, 11], [36, 11], [41, 11]]},
+            {"id": "north-lane", "shape": "road", "material": "dirt_path", "width": 1.2, "points": [[10, 14], [10, 9], [9, 6], [9, -1]]},
             {"id": "south-lane", "shape": "road", "material": "dirt_path", "width": 1.2, "points": [[18, 14], [19, 17], [20, 21], [20, 26]]}
         ],
         "actor": {"radius": 7, "ySquash": 0.9},
         "props": props,
         "objects": [
-            {"id": "west-sect-gate", "prop": "sect_gate", "x": 10 * 32, "y": 8 * 32},
-            {"id": "main-hall", "prop": "hall", "x": 18 * 32, "y": 8 * 32},
-            {"id": "moonwood-crossing", "prop": "bridge", "x": 31 * 32, "y": 9 * 32},
-            {"id": "tea-house", "prop": "teahouse", "x": 28 * 32, "y": 16 * 32},
-            {"id": "north-pagoda", "prop": "pagoda", "x": 34 * 32, "y": 17 * 32}
+            {"id": "village-gate", "prop": "sect_gate", "x": 10 * 32, "y": 8 * 32},
+            {"id": "respawn-shrine", "prop": "pagoda", "x": 18 * 32, "y": 10 * 32},
+            {"id": "moonwood-crossing", "prop": "bridge", "x": 31 * 32, "y": 11 * 32},
+            {"id": "village-pagoda", "prop": "pagoda", "x": 34 * 32, "y": 17 * 32}
         ],
         "scatter": [
             {"id": "bamboo-grove", "kinds": {"bamboo": 1}, "count": 18, "spacing": 24,
@@ -331,7 +332,13 @@ def main() -> None:
             {"id": "south-road-exit", "edge": "south", "road": "south-lane", "to": "training-grounds:from-qinghe-valley", "arrival": "from-training-grounds"}
         ],
         "spawns": [{"id": "arrival", "x": 18 * 32, "y": 15 * 32, "facing": "north"}],
-        "interactions": [{"id": "village-notice", "x": 12 * 32, "y": 11 * 32, "reach": 32}]
+        "interactions": [
+            {"id": "village-notice", "x": 12 * 32, "y": 11 * 32, "reach": 32},
+            {"id": "respawn-shrine", "x": 18 * 32, "y": 14 * 32, "reach": 44},
+            {"id": "market-square", "x": 25 * 32, "y": 14 * 32, "reach": 64},
+            {"id": "alchemy-yard", "x": 13 * 32, "y": 10 * 32, "reach": 48},
+            {"id": "forge-yard", "x": 13 * 32, "y": 19 * 32, "reach": 48}
+        ]
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(layout, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

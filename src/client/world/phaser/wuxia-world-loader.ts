@@ -23,7 +23,7 @@ export interface WuxiaPlayerLike {
     height?: number;
     velocity?: { x: number; y: number };
     reset?: (x: number, y: number) => void;
-  };
+  } | null;
   setPosition?: (x: number, y: number) => unknown;
 }
 
@@ -149,7 +149,8 @@ export class WuxiaWorldLoader {
     }
     this.scene = scene;
     this.assetRoot = options.assetRoot ?? "/";
-    this.fetcher = options.fetcher ?? fetch;
+    const fetcher = options.fetcher ?? globalThis.fetch;
+    this.fetcher = fetcher.bind(globalThis);
     this.callbacks = options.callbacks;
     this.portalMovementThreshold = options.portalMovementThreshold ?? 0.5;
   }

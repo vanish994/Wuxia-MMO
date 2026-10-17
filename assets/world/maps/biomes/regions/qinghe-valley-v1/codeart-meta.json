@@ -4,7 +4,7 @@
   "placeholder": true,
   "disclosure": "code-drawn, no image model",
   "generator": "layout_build",
-  "spec_sha256": "01a56f4625d2a2507bf0c419c954d4fcb0e9061d34f1514fc79c7de21bee62e7",
+  "spec_sha256": "622bcebeb0165ab2fcb6afcbf8ed8b8e0418694ce9b6f81cc34cb2b565103242",
   "renderer": {
     "name": "layout_build",
     "version": "0.4.0"
@@ -20,12 +20,12 @@
   "outputs": [
     {
       "path": "map-bundle.json",
-      "sha256": "4b8ca47d96eb40085bfaaf72b4a0171aaf7796a285c94b46cac218b0f82e53f5",
-      "bytes": 81627
+      "sha256": "8b8b4a81772d5af7fac6dc9c4047ea0f1da64a3ffb105468550df7989f303520",
+      "bytes": 80054
     },
     {
       "path": "terrain-vertices.json",
-      "sha256": "f696be67f8a2a1d3890612cd8084bcd9bf606425130a1d3ab6e8daeda951e1ec",
+      "sha256": "b31fd25d5c1862105f71037f4cd77d172a38083f55d8789552ff18980ea2cb91",
       "bytes": 10103
     },
     {
@@ -115,13 +115,13 @@
     },
     {
       "path": "preview.png",
-      "sha256": "25d5be3cd09d69e5dfbd0ddb90dd29e02753d47941aacf1c6ea6e0114b9e0bde",
-      "bytes": 52378
+      "sha256": "3fe7c3f544754899dbee138ae5146a94cac6fd9194a7867489d30526dc81fe00",
+      "bytes": 52184
     },
     {
       "path": "debug.png",
-      "sha256": "e065ae7cc8d0d8164d341fb5c3ffa49ce375d2063337e80c46a3d97ae6014bba",
-      "bytes": 85571
+      "sha256": "3e1d2b7c863bc24d08547c19903e2e7ba441c06c308a78dd9ca096e282cc5d2f",
+      "bytes": 88139
     }
   ],
   "qa": {
@@ -214,22 +214,22 @@
     ],
     "inputs": [
       {
-        "path": "../../qinghe-valley.layout.json",
-        "sha256": "01a56f4625d2a2507bf0c419c954d4fcb0e9061d34f1514fc79c7de21bee62e7",
-        "bytes": 40019
+        "path": "../../home/ubuntu/Wuxia-MMO/assets/world/maps/biomes/qinghe-valley.layout.json",
+        "sha256": "622bcebeb0165ab2fcb6afcbf8ed8b8e0418694ce9b6f81cc34cb2b565103242",
+        "bytes": 40299
       },
       {
-        "path": "../../../../../tilesets/generated-core-v1/grass-path-water-wang81.tileset.json",
+        "path": "../../home/ubuntu/Wuxia-MMO/assets/tilesets/generated-core-v1/grass-path-water-wang81.tileset.json",
         "sha256": "df6240fe7cd31794d3df53b67c2c07b33c12686861ea0db6306d9420e44c84df",
         "bytes": 188988
       },
       {
-        "path": "../../../../../tilesets/generated-core-v1/grass-path-water-wang81.png",
+        "path": "../../home/ubuntu/Wuxia-MMO/assets/tilesets/generated-core-v1/grass-path-water-wang81.png",
         "sha256": "ef505070499c897e246219527bbba3d094534fe18d21db062dcdeea46ed6065f",
         "bytes": 32480
       },
       {
-        "path": "../../../../../tilesets/generated-core-v1/autotile-qa.json",
+        "path": "../../home/ubuntu/Wuxia-MMO/assets/tilesets/generated-core-v1/autotile-qa.json",
         "sha256": "37279e4339a0ef7246f41aad36ca9662ba645574a0b35a260b910131b8c2f1ac",
         "bytes": 117079
       }
@@ -237,12 +237,12 @@
     "outputs": [
       {
         "path": "map-bundle.json",
-        "sha256": "4b8ca47d96eb40085bfaaf72b4a0171aaf7796a285c94b46cac218b0f82e53f5",
-        "bytes": 81627
+        "sha256": "8b8b4a81772d5af7fac6dc9c4047ea0f1da64a3ffb105468550df7989f303520",
+        "bytes": 80054
       },
       {
         "path": "terrain-vertices.json",
-        "sha256": "f696be67f8a2a1d3890612cd8084bcd9bf606425130a1d3ab6e8daeda951e1ec",
+        "sha256": "b31fd25d5c1862105f71037f4cd77d172a38083f55d8789552ff18980ea2cb91",
         "bytes": 10103
       },
       {
@@ -332,13 +332,13 @@
       },
       {
         "path": "preview.png",
-        "sha256": "25d5be3cd09d69e5dfbd0ddb90dd29e02753d47941aacf1c6ea6e0114b9e0bde",
-        "bytes": 52378
+        "sha256": "3fe7c3f544754899dbee138ae5146a94cac6fd9194a7867489d30526dc81fe00",
+        "bytes": 52184
       },
       {
         "path": "debug.png",
-        "sha256": "e065ae7cc8d0d8164d341fb5c3ffa49ce375d2063337e80c46a3d97ae6014bba",
-        "bytes": 85571
+        "sha256": "3e1d2b7c863bc24d08547c19903e2e7ba441c06c308a78dd9ca096e282cc5d2f",
+        "bytes": 88139
       }
     ],
     "tool": {

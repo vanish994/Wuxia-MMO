@@ -1,0 +1,56 @@
+{
+  "schema": "wuxia.village-kit.v1",
+  "region": "qinghe-valley",
+  "art_source": "existing",
+  "grid": { "tile_px": 32, "character_frame_px": 64 },
+  "objects": [
+    {
+      "id": "alchemy-cabin",
+      "asset": "/assets/external/pixellab-wuxia-objects/cabanas/cabana-1.png",
+      "x": 416,
+      "y": 336,
+      "depth": 336,
+      "collision": { "x": 416, "y": 316, "width": 88, "height": 32 }
+    },
+    {
+      "id": "forge-cabin",
+      "asset": "/assets/external/pixellab-wuxia-objects/cabanas/cabana-3.png",
+      "x": 416,
+      "y": 640,
+      "depth": 640,
+      "collision": { "x": 416, "y": 620, "width": 88, "height": 32 }
+    },
+    {
+      "id": "market-cabin",
+      "asset": "/assets/external/pixellab-wuxia-objects/cabanas/cabana-2.png",
+      "x": 800,
+      "y": 352,
+      "depth": 352,
+      "collision": { "x": 800, "y": 332, "width": 88, "height": 32 }
+    },
+    {
+      "id": "market-stall-1",
+      "asset": "/assets/external/pixellab-wuxia-objects/barracas/barraca-1.png",
+      "x": 704,
+      "y": 464,
+      "depth": 464,
+      "collision": { "x": 704, "y": 452, "width": 34, "height": 20 }
+    },
+    {
+      "id": "market-stall-2",
+      "asset": "/assets/external/pixellab-wuxia-objects/barracas/barraca-2.png",
+      "x": 800,
+      "y": 464,
+      "depth": 464,
+      "collision": { "x": 800, "y": 452, "width": 34, "height": 20 }
+    },
+    {
+      "id": "market-stall-3",
+      "asset": "/assets/external/pixellab-wuxia-objects/barracas/barraca-3.png",
+      "x": 896,
+      "y": 464,
+      "depth": 464,
+      "collision": { "x": 896, "y": 452, "width": 34, "height": 20 }
+    }
+  ]
+}

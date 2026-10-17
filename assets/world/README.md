@@ -10,6 +10,7 @@ Este diretório contém uma **entrega utilizável de núcleo/vertical slice**, n
 - **62 conexões direcionadas** entre regiões (31 pares recíprocos), com spawns nomeados nas duas pontas.
 - **11 imagens de props** no mapa de demonstração Qinghe, de tamanhos nativos variáveis; incluem vegetação, rochas, lanternas, placa, ponte e algumas estruturas. O catálogo não equivale a 11 edifícios.
 - Mapa reproduzível de **Qinghe Valley**, com vila, caminhos, bambuzal, água, ponte, construções, decoração, colisão, entradas e saídas.
+- A vila inicial de Qinghe tem quatro zonas funcionais declaradas no mapa: `respawn-shrine`, `market-square`, `alchemy-yard` e `forge-yard`. Elas são pontos de integração para futuros NPCs, economia e produção; não implementam esses sistemas ainda.
 - Loader de TMJ/atlas/props/colisão/interações, seletor Dual Grid e utilidades Phaser de estação, horário e clima em `src/client/world/phaser/`.
 - Contrato de integração servidor/cliente, inventário com hashes e relatórios de QA.
 
@@ -34,6 +35,8 @@ Este diretório contém uma **entrega utilizável de núcleo/vertical slice**, n
 ## O que ainda não está concluído
 
 Esta versão **não** entrega todas as categorias do briefing original. Permanecem pendentes, entre outros: arquitetura modular extensa/interiores e 10 edifícios distintos; biblioteca ampla de props; tilesets únicos e desenhados à mão para cada um dos 20 biomas (os mapas atuais reutilizam o núcleo procedural); cavernas, minas, dungeon, castelo/fortaleza, arena PvP e acampamento de bandidos como kits dedicados; spritesheets de água/cachoeira/fogo/folhas/Qi; personagens NPC adicionais e animações; colisões refinadas por playtest; cena Phaser compilada/rodando; e servidor de jogo autoritativo. O módulo de clima/estação/horário é uma utilidade de cliente, ainda sem cena real validada.
+
+Para esta reorganização da vila não foi criada arte nova: foram reaproveitados o tileset Wang, os props de telhado, pagoda, ponte, lanternas, bambu, árvores e placa já presentes no repositório. Qualquer novo edifício, tileset ou ilustração deverá ser aprovado antes de ser produzido.
 
 ## Rebuild básico
 

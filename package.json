@@ -1,0 +1,20 @@
+{
+  "name": "wuxia-mmo-client",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "npm run typecheck && rm -rf dist && vite build && cp -R assets/. dist/assets/",
+    "preview": "vite preview --host 0.0.0.0",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test test/world/wuxia-region-loader.test.mjs test/client/*.test.mjs"
+  },
+  "dependencies": {
+    "phaser": "3.90.0"
+  },
+  "devDependencies": {
+    "typescript": "5.7.2",
+    "vite": "6.0.7"
+  }
+}

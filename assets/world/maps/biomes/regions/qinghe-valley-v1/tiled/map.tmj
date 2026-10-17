@@ -254,8 +254,8 @@
         203,
         41,
         51,
-        152,
-        284,
+        153,
+        287,
         203,
         41,
         284,
@@ -293,9 +293,9 @@
         203,
         41,
         284,
-        213,
-        153,
-        125,
+        212,
+        159,
+        152,
         284,
         122,
         203,
@@ -333,9 +333,9 @@
         41,
         122,
         203,
-        50,
-        240,
-        152,
+        41,
+        213,
+        233,
         203,
         284,
         41,
@@ -353,18 +353,18 @@
         41,
         122,
         112,
-        246,
-        90,
-        171,
-        90,
-        171,
-        90,
-        252,
-        99,
-        207,
-        288,
-        45,
-        207,
+        244,
+        82,
+        163,
+        244,
+        163,
+        244,
+        1,
+        92,
+        203,
+        41,
+        284,
+        203,
         122,
         203,
         284,
@@ -391,20 +391,20 @@
         203,
         41,
         122,
-        42,
-        198,
-        189,
-        322,
-        235,
-        73,
-        154,
-        155,
-        320,
-        239,
-        158,
-        239,
-        158,
-        320,
+        41,
+        194,
+        167,
+        247,
+        244,
+        1,
+        82,
+        83,
+        248,
+        176,
+        122,
+        203,
+        122,
+        284,
         284,
         41,
         122,
@@ -422,29 +422,29 @@
         41,
         203,
         284,
-        204,
-        287,
+        203,
+        41,
         284,
         203,
         284,
         122,
         41,
-        204,
-        207,
-        135,
-        323,
-        158,
-        59,
-        86,
-        248,
-        86,
-        95,
-        284,
-        41,
-        284,
         203,
         284,
-        41,
+        122,
+        284,
+        122,
+        33,
+        90,
+        252,
+        90,
+        99,
+        288,
+        45,
+        288,
+        207,
+        288,
+        45,
         203,
         122,
         41,
@@ -456,87 +456,87 @@
         41,
         132,
         152,
-        204,
+        203,
+        42,
         45,
         126,
-        207,
         45,
         207,
-        297,
-        315,
+        288,
+        45,
         207,
+        45,
+        126,
+        287,
+        203,
+        41,
+        122,
+        203,
+        285,
+        45,
+        297,
+        161,
+        77,
+        158,
+        239,
+        320,
+        158,
+        320,
+        158,
+        239,
+        158,
+        284,
+        41,
+        122,
+        41,
+        122,
+        203,
+        41,
+        122,
+        203,
+        294,
+        314,
+        123,
+        135,
+        243,
+        162,
+        243,
+        81,
+        324,
+        81,
+        162,
+        243,
+        162,
+        315,
         45,
         126,
         288,
         207,
         54,
-        80,
-        239,
-        311,
+        161,
+        158,
+        230,
+        284,
         41,
+        284,
+        203,
+        122,
         284,
         122,
         41,
         122,
-        203,
-        41,
-        122,
-        41,
-        122,
-        203,
-        122,
-        284,
-        41,
-        122,
-        41,
-        122,
-        42,
-        45,
-        126,
-        45,
-        297,
-        315,
-        135,
-        162,
-        243,
-        162,
-        243,
-        81,
-        324,
-        81,
-        162,
-        243,
-        162,
-        324,
-        81,
-        162,
-        314,
-        203,
-        41,
-        122,
-        203,
-        284,
-        122,
-        284,
-        41,
-        203,
-        284,
-        122,
-        203,
-        41,
-        203,
         288,
         207,
         288,
         45,
         126,
+        207,
+        45,
+        207,
+        45,
         216,
-        81,
-        242,
-        77,
-        239,
-        158,
-        321,
+        153,
+        297,
         324,
         81,
         243,
@@ -549,59 +549,59 @@
         243,
         81,
         243,
-        323,
-        149,
-        284,
-        122,
-        41,
-        284,
-        122,
-        203,
-        122,
-        203,
-        284,
-        41,
-        203,
-        41,
-        203,
-        122,
-        320,
-        158,
-        77,
-        158,
-        77,
-        158,
-        77,
-        68,
-        41,
-        203,
-        284,
-        131,
-        320,
-        239,
-        77,
-        320,
-        158,
-        78,
-        81,
+        324,
         161,
         239,
+        320,
+        68,
+        284,
+        122,
+        203,
+        122,
+        203,
+        284,
+        41,
+        203,
+        41,
+        203,
+        284,
+        320,
+        158,
         77,
         158,
+        77,
+        158,
+        77,
+        158,
+        77,
         239,
-        149,
+        320,
+        159,
+        81,
+        243,
+        81,
+        162,
+        243,
+        162,
+        81,
+        162,
+        243,
+        81,
+        162,
+        324,
+        162,
+        71,
+        41,
+        122,
+        203,
+        41,
+        203,
+        284,
+        203,
         41,
         122,
         203,
         284,
-        41,
-        203,
-        284,
-        203,
-        41,
-        122,
-        203,
-        284,
         203,
         122,
         203,
@@ -616,144 +616,144 @@
         284,
         122,
         203,
-        284,
-        41,
-        284,
-        41,
-        122,
-        284,
-        293,
+        212,
         78,
-        314,
+        324,
+        162,
+        81,
+        324,
+        81,
+        162,
+        324,
+        81,
+        162,
+        243,
+        242,
+        77,
+        149,
+        284,
+        41,
+        284,
+        122,
+        284,
+        122,
+        284,
+        203,
+        284,
+        41,
+        203,
+        41,
+        203,
+        41,
+        284,
+        203,
+        284,
+        122,
+        41,
+        203,
+        284,
+        203,
+        41,
         203,
         41,
         122,
-        203,
-        41,
-        122,
+        293,
+        239,
+        158,
+        239,
+        320,
+        77,
+        78,
+        161,
+        77,
+        320,
+        77,
+        149,
         284,
         41,
         122,
         203,
         122,
         203,
-        284,
-        203,
-        284,
-        41,
-        203,
-        41,
-        203,
         41,
         284,
         203,
         284,
         122,
-        41,
         203,
         284,
-        203,
+        122,
         41,
+        122,
+        41,
+        284,
+        41,
+        284,
+        122,
+        41,
+        203,
+        122,
+        203,
+        284,
+        122,
         203,
         41,
         122,
-        284,
-        203,
+        41,
         122,
         203,
-        41,
         284,
         51,
-        152,
-        41,
-        284,
-        41,
-        122,
-        284,
-        41,
-        122,
+        314,
         203,
         284,
         41,
-        284,
-        41,
         203,
-        284,
-        122,
-        203,
-        284,
-        122,
         41,
         122,
+        284,
         41,
         284,
         41,
         284,
-        122,
-        41,
         203,
         122,
+        41,
         203,
         284,
         122,
-        203,
-        41,
+        284,
+        122,
+        284,
         122,
         41,
         122,
+        41,
         203,
+        284,
+        41,
+        203,
+        284,
+        203,
+        284,
+        41,
+        122,
+        284,
+        122,
+        203,
+        284,
         41,
         132,
-        314,
-        203,
-        41,
-        284,
-        203,
-        41,
-        122,
-        284,
-        41,
-        122,
-        203,
-        41,
-        203,
-        122,
-        41,
-        203,
-        284,
-        122,
-        284,
-        122,
-        284,
-        122,
-        41,
-        122,
-        41,
-        203,
-        284,
-        41,
-        203,
-        284,
-        203,
-        284,
-        41,
-        122,
-        284,
-        122,
-        203,
-        284,
-        122,
-        51,
         315,
         44,
         122,
-        41,
+        203,
         284,
         122,
         41,
         122,
         203,
-        284,
+        41,
         122,
         203,
         41,
@@ -787,8 +787,8 @@
         159,
         314,
         203,
-        122,
         41,
+        122,
         203,
         122,
         203,
@@ -827,13 +827,13 @@
         51,
         152,
         41,
+        122,
         203,
         122,
         284,
         41,
         284,
         41,
-        122,
         203,
         122,
         203,
@@ -868,11 +868,11 @@
         233,
         122,
         41,
+        284,
+        41,
+        122,
         203,
         41,
-        284,
-        122,
-        284,
         203,
         41,
         284,
@@ -910,14 +910,14 @@
         284,
         41,
         203,
-        122,
+        284,
+        41,
         284,
         41,
         284,
         122,
         203,
-        122,
-        203,
+        284,
         41,
         284,
         41,
@@ -950,14 +950,14 @@
         122,
         203,
         122,
+        41,
         284,
-        41,
-        203,
-        41,
-        203,
-        41,
         203,
         284,
+        122,
+        41,
+        122,
+        41,
         122,
         41,
         284,
@@ -990,12 +990,12 @@
         203,
         284,
         203,
-        41,
         284,
         41,
         284,
-        122,
+        41,
         203,
+        284,
         41,
         122,
         284,
@@ -1806,7 +1806,7 @@
           "y": 220.0
         },
         {
-          "gid": 2147483979,
+          "gid": 2147483978,
           "height": 14.0,
           "id": 17,
           "name": "stone-and-lanterns-5",
@@ -1860,10 +1860,10 @@
           "y": 232.0
         },
         {
-          "gid": 332,
+          "gid": 331,
           "height": 46.0,
           "id": 18,
-          "name": "west-sect-gate",
+          "name": "village-gate",
           "properties": [
             {
               "name": "prop",
@@ -1909,58 +1909,9 @@
           "y": 257.0
         },
         {
-          "gid": 328,
-          "height": 48.0,
-          "id": 19,
-          "name": "main-hall",
-          "properties": [
-            {
-              "name": "prop",
-              "type": "string",
-              "value": "hall"
-            },
-            {
-              "name": "anchorWorldX",
-              "type": "float",
-              "value": 576.0
-            },
-            {
-              "name": "anchorWorldY",
-              "type": "float",
-              "value": 256.0
-            },
-            {
-              "name": "sortY",
-              "type": "float",
-              "value": 256.0
-            },
-            {
-              "name": "scale",
-              "type": "float",
-              "value": 1.0
-            },
-            {
-              "name": "solid",
-              "type": "bool",
-              "value": true
-            },
-            {
-              "name": "occlusion",
-              "type": "string",
-              "value": "tall"
-            }
-          ],
-          "rotation": 0,
-          "type": "prop",
-          "visible": true,
-          "width": 64.0,
-          "x": 544.0,
-          "y": 257.0
-        },
-        {
           "gid": 325,
           "height": 50.0,
-          "id": 20,
+          "id": 19,
           "name": "bamboo-grove-15",
           "properties": [
             {
@@ -2007,10 +1958,10 @@
           "y": 262.0
         },
         {
-          "gid": 331,
+          "gid": 2147483978,
           "height": 14.0,
-          "id": 21,
-          "name": "stone-and-lanterns-3",
+          "id": 20,
+          "name": "stone-and-lanterns-1",
           "properties": [
             {
               "name": "prop",
@@ -2046,6 +1997,11 @@
               "name": "occlusion",
               "type": "string",
               "value": "low"
+            },
+            {
+              "name": "flipX",
+              "type": "bool",
+              "value": true
             }
           ],
           "rotation": 0,
@@ -2058,7 +2014,7 @@
         {
           "gid": 325,
           "height": 50.0,
-          "id": 22,
+          "id": 21,
           "name": "bamboo-grove-6",
           "properties": [
             {
@@ -2105,69 +2061,20 @@
           "y": 290.0
         },
         {
-          "gid": 327,
-          "height": 26.0,
-          "id": 23,
-          "name": "moonwood-crossing",
+          "gid": 2147483978,
+          "height": 14.0,
+          "id": 22,
+          "name": "stone-and-lanterns-2",
           "properties": [
             {
               "name": "prop",
               "type": "string",
-              "value": "bridge"
+              "value": "rock"
             },
             {
               "name": "anchorWorldX",
               "type": "float",
-              "value": 992.0
-            },
-            {
-              "name": "anchorWorldY",
-              "type": "float",
-              "value": 288.0
-            },
-            {
-              "name": "sortY",
-              "type": "float",
-              "value": 288.0
-            },
-            {
-              "name": "scale",
-              "type": "float",
-              "value": 1.0
-            },
-            {
-              "name": "solid",
-              "type": "bool",
-              "value": false
-            },
-            {
-              "name": "occlusion",
-              "type": "string",
-              "value": "low"
-            }
-          ],
-          "rotation": 0,
-          "type": "prop",
-          "visible": true,
-          "width": 64.0,
-          "x": 960.0,
-          "y": 289.0
-        },
-        {
-          "gid": 2147483977,
-          "height": 32.0,
-          "id": 24,
-          "name": "stone-and-lanterns-9",
-          "properties": [
-            {
-              "name": "prop",
-              "type": "string",
-              "value": "lantern"
-            },
-            {
-              "name": "anchorWorldX",
-              "type": "float",
-              "value": 831.0
+              "value": 1180.0
             },
             {
               "name": "anchorWorldY",
@@ -2203,15 +2110,15 @@
           "rotation": 0,
           "type": "prop",
           "visible": true,
-          "width": 16.0,
-          "x": 823.0,
+          "width": 18.0,
+          "x": 1171.0,
           "y": 298.0
         },
         {
-          "gid": 2147483977,
+          "gid": 328,
           "height": 32.0,
-          "id": 25,
-          "name": "stone-and-lanterns-8",
+          "id": 23,
+          "name": "stone-and-lanterns-10",
           "properties": [
             {
               "name": "prop",
@@ -2247,11 +2154,6 @@
               "name": "occlusion",
               "type": "string",
               "value": "low"
-            },
-            {
-              "name": "flipX",
-              "type": "bool",
-              "value": true
             }
           ],
           "rotation": 0,
@@ -2262,9 +2164,58 @@
           "y": 303.0
         },
         {
-          "gid": 331,
+          "gid": 329,
+          "height": 62.0,
+          "id": 24,
+          "name": "respawn-shrine",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "pagoda"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 576.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 320.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 320.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "tall"
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 48.0,
+          "x": 552.0,
+          "y": 321.0
+        },
+        {
+          "gid": 330,
           "height": 14.0,
-          "id": 26,
+          "id": 25,
           "name": "stone-and-lanterns-6",
           "properties": [
             {
@@ -2311,7 +2262,56 @@
           "y": 334.0
         },
         {
-          "gid": 334,
+          "gid": 330,
+          "height": 14.0,
+          "id": 26,
+          "name": "stone-and-lanterns-3",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "rock"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 580.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 336.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 336.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 18.0,
+          "x": 571.0,
+          "y": 339.0
+        },
+        {
+          "gid": 333,
           "height": 28.0,
           "id": 27,
           "name": "stone-and-lanterns-14",
@@ -2360,30 +2360,30 @@
           "y": 350.0
         },
         {
-          "gid": 2147483979,
-          "height": 14.0,
+          "gid": 327,
+          "height": 26.0,
           "id": 28,
-          "name": "stone-and-lanterns-2",
+          "name": "moonwood-crossing",
           "properties": [
             {
               "name": "prop",
               "type": "string",
-              "value": "rock"
+              "value": "bridge"
             },
             {
               "name": "anchorWorldX",
               "type": "float",
-              "value": 212.0
+              "value": 992.0
             },
             {
               "name": "anchorWorldY",
               "type": "float",
-              "value": 360.0
+              "value": 352.0
             },
             {
               "name": "sortY",
               "type": "float",
-              "value": 360.0
+              "value": 352.0
             },
             {
               "name": "scale",
@@ -2393,31 +2393,26 @@
             {
               "name": "solid",
               "type": "bool",
-              "value": true
+              "value": false
             },
             {
               "name": "occlusion",
               "type": "string",
               "value": "low"
-            },
-            {
-              "name": "flipX",
-              "type": "bool",
-              "value": true
             }
           ],
           "rotation": 0,
           "type": "prop",
           "visible": true,
-          "width": 18.0,
-          "x": 203.0,
-          "y": 363.0
+          "width": 64.0,
+          "x": 960.0,
+          "y": 353.0
         },
         {
-          "gid": 331,
+          "gid": 330,
           "height": 14.0,
           "id": 29,
-          "name": "stone-and-lanterns-16",
+          "name": "stone-and-lanterns-11",
           "properties": [
             {
               "name": "prop",
@@ -2427,17 +2422,17 @@
             {
               "name": "anchorWorldX",
               "type": "float",
-              "value": 177.0
+              "value": 1020.0
             },
             {
               "name": "anchorWorldY",
               "type": "float",
-              "value": 373.0
+              "value": 389.0
             },
             {
               "name": "sortY",
               "type": "float",
-              "value": 373.0
+              "value": 389.0
             },
             {
               "name": "scale",
@@ -2459,116 +2454,13 @@
           "type": "prop",
           "visible": true,
           "width": 18.0,
-          "x": 168.0,
-          "y": 376.0
-        },
-        {
-          "gid": 2147483974,
-          "height": 34.0,
-          "id": 30,
-          "name": "plum-garden-6",
-          "properties": [
-            {
-              "name": "prop",
-              "type": "string",
-              "value": "blossom_tree"
-            },
-            {
-              "name": "anchorWorldX",
-              "type": "float",
-              "value": 938.0
-            },
-            {
-              "name": "anchorWorldY",
-              "type": "float",
-              "value": 393.0
-            },
-            {
-              "name": "sortY",
-              "type": "float",
-              "value": 393.0
-            },
-            {
-              "name": "scale",
-              "type": "float",
-              "value": 1.0
-            },
-            {
-              "name": "solid",
-              "type": "bool",
-              "value": true
-            },
-            {
-              "name": "occlusion",
-              "type": "string",
-              "value": "tall"
-            },
-            {
-              "name": "flipX",
-              "type": "bool",
-              "value": true
-            }
-          ],
-          "rotation": 0,
-          "type": "prop",
-          "visible": true,
-          "width": 24.0,
-          "x": 926.0,
-          "y": 394.0
-        },
-        {
-          "gid": 329,
-          "height": 32.0,
-          "id": 31,
-          "name": "stone-and-lanterns-12",
-          "properties": [
-            {
-              "name": "prop",
-              "type": "string",
-              "value": "lantern"
-            },
-            {
-              "name": "anchorWorldX",
-              "type": "float",
-              "value": 838.0
-            },
-            {
-              "name": "anchorWorldY",
-              "type": "float",
-              "value": 407.0
-            },
-            {
-              "name": "sortY",
-              "type": "float",
-              "value": 407.0
-            },
-            {
-              "name": "scale",
-              "type": "float",
-              "value": 1.0
-            },
-            {
-              "name": "solid",
-              "type": "bool",
-              "value": true
-            },
-            {
-              "name": "occlusion",
-              "type": "string",
-              "value": "low"
-            }
-          ],
-          "rotation": 0,
-          "type": "prop",
-          "visible": true,
-          "width": 16.0,
-          "x": 830.0,
-          "y": 410.0
+          "x": 1011.0,
+          "y": 392.0
         },
         {
           "gid": 326,
           "height": 34.0,
-          "id": 32,
+          "id": 30,
           "name": "plum-garden-1",
           "properties": [
             {
@@ -2615,30 +2507,30 @@
           "y": 410.0
         },
         {
-          "gid": 2147483979,
-          "height": 14.0,
-          "id": 33,
-          "name": "stone-and-lanterns-1",
+          "gid": 326,
+          "height": 34.0,
+          "id": 31,
+          "name": "plum-garden-9",
           "properties": [
             {
               "name": "prop",
               "type": "string",
-              "value": "rock"
+              "value": "blossom_tree"
             },
             {
               "name": "anchorWorldX",
               "type": "float",
-              "value": 839.0
+              "value": 924.0
             },
             {
               "name": "anchorWorldY",
               "type": "float",
-              "value": 431.0
+              "value": 454.0
             },
             {
               "name": "sortY",
               "type": "float",
-              "value": 431.0
+              "value": 454.0
             },
             {
               "name": "scale",
@@ -2653,25 +2545,20 @@
             {
               "name": "occlusion",
               "type": "string",
-              "value": "low"
-            },
-            {
-              "name": "flipX",
-              "type": "bool",
-              "value": true
+              "value": "tall"
             }
           ],
           "rotation": 0,
           "type": "prop",
           "visible": true,
-          "width": 18.0,
-          "x": 830.0,
-          "y": 434.0
+          "width": 24.0,
+          "x": 912.0,
+          "y": 455.0
         },
         {
-          "gid": 331,
+          "gid": 330,
           "height": 14.0,
-          "id": 34,
+          "id": 32,
           "name": "stone-and-lanterns-15",
           "properties": [
             {
@@ -2682,17 +2569,17 @@
             {
               "name": "anchorWorldX",
               "type": "float",
-              "value": 431.0
+              "value": 895.0
             },
             {
               "name": "anchorWorldY",
               "type": "float",
-              "value": 484.0
+              "value": 469.0
             },
             {
               "name": "sortY",
               "type": "float",
-              "value": 484.0
+              "value": 469.0
             },
             {
               "name": "scale",
@@ -2714,170 +2601,13 @@
           "type": "prop",
           "visible": true,
           "width": 18.0,
-          "x": 422.0,
-          "y": 487.0
+          "x": 886.0,
+          "y": 472.0
         },
         {
-          "gid": 331,
+          "gid": 2147483978,
           "height": 14.0,
-          "id": 35,
-          "name": "stone-and-lanterns-11",
-          "properties": [
-            {
-              "name": "prop",
-              "type": "string",
-              "value": "rock"
-            },
-            {
-              "name": "anchorWorldX",
-              "type": "float",
-              "value": 538.0
-            },
-            {
-              "name": "anchorWorldY",
-              "type": "float",
-              "value": 484.0
-            },
-            {
-              "name": "sortY",
-              "type": "float",
-              "value": 484.0
-            },
-            {
-              "name": "scale",
-              "type": "float",
-              "value": 1.0
-            },
-            {
-              "name": "solid",
-              "type": "bool",
-              "value": true
-            },
-            {
-              "name": "occlusion",
-              "type": "string",
-              "value": "low"
-            }
-          ],
-          "rotation": 0,
-          "type": "prop",
-          "visible": true,
-          "width": 18.0,
-          "x": 529.0,
-          "y": 487.0
-        },
-        {
-          "gid": 2147483974,
-          "height": 34.0,
-          "id": 36,
-          "name": "plum-garden-13",
-          "properties": [
-            {
-              "name": "prop",
-              "type": "string",
-              "value": "blossom_tree"
-            },
-            {
-              "name": "anchorWorldX",
-              "type": "float",
-              "value": 717.0
-            },
-            {
-              "name": "anchorWorldY",
-              "type": "float",
-              "value": 488.0
-            },
-            {
-              "name": "sortY",
-              "type": "float",
-              "value": 488.0
-            },
-            {
-              "name": "scale",
-              "type": "float",
-              "value": 1.0
-            },
-            {
-              "name": "solid",
-              "type": "bool",
-              "value": true
-            },
-            {
-              "name": "occlusion",
-              "type": "string",
-              "value": "tall"
-            },
-            {
-              "name": "flipX",
-              "type": "bool",
-              "value": true
-            }
-          ],
-          "rotation": 0,
-          "type": "prop",
-          "visible": true,
-          "width": 24.0,
-          "x": 705.0,
-          "y": 489.0
-        },
-        {
-          "gid": 2147483981,
-          "height": 15.0,
-          "id": 37,
-          "name": "plum-garden-8",
-          "properties": [
-            {
-              "name": "prop",
-              "type": "string",
-              "value": "shrub"
-            },
-            {
-              "name": "anchorWorldX",
-              "type": "float",
-              "value": 792.0
-            },
-            {
-              "name": "anchorWorldY",
-              "type": "float",
-              "value": 500.0
-            },
-            {
-              "name": "sortY",
-              "type": "float",
-              "value": 500.0
-            },
-            {
-              "name": "scale",
-              "type": "float",
-              "value": 1.0
-            },
-            {
-              "name": "solid",
-              "type": "bool",
-              "value": true
-            },
-            {
-              "name": "occlusion",
-              "type": "string",
-              "value": "low"
-            },
-            {
-              "name": "flipX",
-              "type": "bool",
-              "value": true
-            }
-          ],
-          "rotation": 0,
-          "type": "prop",
-          "visible": true,
-          "width": 20.0,
-          "x": 782.0,
-          "y": 503.0
-        },
-        {
-          "gid": 2147483979,
-          "height": 14.0,
-          "id": 38,
+          "id": 33,
           "name": "stone-and-lanterns-13",
           "properties": [
             {
@@ -2888,17 +2618,17 @@
             {
               "name": "anchorWorldX",
               "type": "float",
-              "value": 386.0
+              "value": 315.0
             },
             {
               "name": "anchorWorldY",
               "type": "float",
-              "value": 505.0
+              "value": 502.0
             },
             {
               "name": "sortY",
               "type": "float",
-              "value": 505.0
+              "value": 502.0
             },
             {
               "name": "scale",
@@ -2925,63 +2655,14 @@
           "type": "prop",
           "visible": true,
           "width": 18.0,
-          "x": 377.0,
-          "y": 508.0
+          "x": 306.0,
+          "y": 505.0
         },
         {
-          "gid": 335,
-          "height": 40.0,
-          "id": 39,
-          "name": "tea-house",
-          "properties": [
-            {
-              "name": "prop",
-              "type": "string",
-              "value": "teahouse"
-            },
-            {
-              "name": "anchorWorldX",
-              "type": "float",
-              "value": 896.0
-            },
-            {
-              "name": "anchorWorldY",
-              "type": "float",
-              "value": 512.0
-            },
-            {
-              "name": "sortY",
-              "type": "float",
-              "value": 512.0
-            },
-            {
-              "name": "scale",
-              "type": "float",
-              "value": 1.0
-            },
-            {
-              "name": "solid",
-              "type": "bool",
-              "value": true
-            },
-            {
-              "name": "occlusion",
-              "type": "string",
-              "value": "tall"
-            }
-          ],
-          "rotation": 0,
-          "type": "prop",
-          "visible": true,
-          "width": 48.0,
-          "x": 872.0,
-          "y": 513.0
-        },
-        {
-          "gid": 330,
+          "gid": 329,
           "height": 62.0,
-          "id": 40,
-          "name": "north-pagoda",
+          "id": 34,
+          "name": "village-pagoda",
           "properties": [
             {
               "name": "prop",
@@ -3027,10 +2708,10 @@
           "y": 545.0
         },
         {
-          "gid": 329,
+          "gid": 328,
           "height": 32.0,
-          "id": 41,
-          "name": "stone-and-lanterns-10",
+          "id": 35,
+          "name": "stone-and-lanterns-12",
           "properties": [
             {
               "name": "prop",
@@ -3076,9 +2757,117 @@
           "y": 554.0
         },
         {
-          "gid": 333,
+          "gid": 2147483976,
+          "height": 32.0,
+          "id": 36,
+          "name": "stone-and-lanterns-9",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "lantern"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 431.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 565.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 565.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            },
+            {
+              "name": "flipX",
+              "type": "bool",
+              "value": true
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 16.0,
+          "x": 423.0,
+          "y": 568.0
+        },
+        {
+          "gid": 2147483976,
+          "height": 32.0,
+          "id": 37,
+          "name": "stone-and-lanterns-8",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "lantern"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 726.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 565.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 565.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            },
+            {
+              "name": "flipX",
+              "type": "bool",
+              "value": true
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 16.0,
+          "x": 718.0,
+          "y": 568.0
+        },
+        {
+          "gid": 332,
           "height": 15.0,
-          "id": 42,
+          "id": 38,
           "name": "plum-garden-2",
           "properties": [
             {
@@ -3127,8 +2916,62 @@
         {
           "gid": 2147483974,
           "height": 34.0,
-          "id": 43,
-          "name": "plum-garden-12",
+          "id": 39,
+          "name": "plum-garden-13",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "blossom_tree"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 1016.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 606.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 606.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "tall"
+            },
+            {
+              "name": "flipX",
+              "type": "bool",
+              "value": true
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 24.0,
+          "x": 1004.0,
+          "y": 607.0
+        },
+        {
+          "gid": 326,
+          "height": 34.0,
+          "id": 40,
+          "name": "plum-garden-11",
           "properties": [
             {
               "name": "prop",
@@ -3164,11 +3007,6 @@
               "name": "occlusion",
               "type": "string",
               "value": "tall"
-            },
-            {
-              "name": "flipX",
-              "type": "bool",
-              "value": true
             }
           ],
           "rotation": 0,
@@ -3179,9 +3017,9 @@
           "y": 633.0
         },
         {
-          "gid": 2147483977,
+          "gid": 2147483976,
           "height": 32.0,
-          "id": 44,
+          "id": 41,
           "name": "stone-and-lanterns-7",
           "properties": [
             {
@@ -3235,7 +3073,7 @@
         {
           "gid": 326,
           "height": 34.0,
-          "id": 45,
+          "id": 42,
           "name": "plum-garden-5",
           "properties": [
             {
@@ -3284,8 +3122,8 @@
         {
           "gid": 326,
           "height": 34.0,
-          "id": 46,
-          "name": "plum-garden-9",
+          "id": 43,
+          "name": "plum-garden-7",
           "properties": [
             {
               "name": "prop",
@@ -3331,15 +3169,15 @@
           "y": 669.0
         },
         {
-          "gid": 333,
-          "height": 15.0,
-          "id": 47,
-          "name": "plum-garden-10",
+          "gid": 2147483974,
+          "height": 34.0,
+          "id": 44,
+          "name": "plum-garden-8",
           "properties": [
             {
               "name": "prop",
               "type": "string",
-              "value": "shrub"
+              "value": "blossom_tree"
             },
             {
               "name": "anchorWorldX",
@@ -3369,26 +3207,31 @@
             {
               "name": "occlusion",
               "type": "string",
-              "value": "low"
+              "value": "tall"
+            },
+            {
+              "name": "flipX",
+              "type": "bool",
+              "value": true
             }
           ],
           "rotation": 0,
           "type": "prop",
           "visible": true,
-          "width": 20.0,
-          "x": 875.0,
-          "y": 687.0
+          "width": 24.0,
+          "x": 873.0,
+          "y": 685.0
         },
         {
-          "gid": 2147483974,
-          "height": 34.0,
-          "id": 48,
-          "name": "plum-garden-11",
+          "gid": 332,
+          "height": 15.0,
+          "id": 45,
+          "name": "plum-garden-10",
           "properties": [
             {
               "name": "prop",
               "type": "string",
-              "value": "blossom_tree"
+              "value": "shrub"
             },
             {
               "name": "anchorWorldX",
@@ -3418,25 +3261,20 @@
             {
               "name": "occlusion",
               "type": "string",
-              "value": "tall"
-            },
-            {
-              "name": "flipX",
-              "type": "bool",
-              "value": true
+              "value": "low"
             }
           ],
           "rotation": 0,
           "type": "prop",
           "visible": true,
-          "width": 24.0,
-          "x": 687.0,
-          "y": 698.0
+          "width": 20.0,
+          "x": 689.0,
+          "y": 700.0
         },
         {
           "gid": 326,
           "height": 34.0,
-          "id": 49,
+          "id": 46,
           "name": "plum-garden-3",
           "properties": [
             {
@@ -3483,9 +3321,9 @@
           "y": 708.0
         },
         {
-          "gid": 2147483981,
+          "gid": 2147483980,
           "height": 15.0,
-          "id": 50,
+          "id": 47,
           "name": "plum-garden-4",
           "properties": [
             {
@@ -3539,8 +3377,8 @@
         {
           "gid": 326,
           "height": 34.0,
-          "id": 51,
-          "name": "plum-garden-14",
+          "id": 48,
+          "name": "plum-garden-12",
           "properties": [
             {
               "name": "prop",
@@ -3586,10 +3424,64 @@
           "y": 741.0
         },
         {
+          "gid": 2147483980,
+          "height": 15.0,
+          "id": 49,
+          "name": "plum-garden-14",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "shrub"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 721.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 746.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 746.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            },
+            {
+              "name": "flipX",
+              "type": "bool",
+              "value": true
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 20.0,
+          "x": 711.0,
+          "y": 749.0
+        },
+        {
           "gid": 2147483974,
           "height": 34.0,
-          "id": 52,
-          "name": "plum-garden-7",
+          "id": 50,
+          "name": "plum-garden-6",
           "properties": [
             {
               "name": "prop",
@@ -3640,9 +3532,58 @@
           "y": 747.0
         },
         {
-          "gid": 2147483977,
+          "gid": 330,
+          "height": 14.0,
+          "id": 51,
+          "name": "stone-and-lanterns-16",
+          "properties": [
+            {
+              "name": "prop",
+              "type": "string",
+              "value": "rock"
+            },
+            {
+              "name": "anchorWorldX",
+              "type": "float",
+              "value": 692.0
+            },
+            {
+              "name": "anchorWorldY",
+              "type": "float",
+              "value": 760.0
+            },
+            {
+              "name": "sortY",
+              "type": "float",
+              "value": 760.0
+            },
+            {
+              "name": "scale",
+              "type": "float",
+              "value": 1.0
+            },
+            {
+              "name": "solid",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "occlusion",
+              "type": "string",
+              "value": "low"
+            }
+          ],
+          "rotation": 0,
+          "type": "prop",
+          "visible": true,
+          "width": 18.0,
+          "x": 683.0,
+          "y": 763.0
+        },
+        {
+          "gid": 2147483976,
           "height": 32.0,
-          "id": 53,
+          "id": 52,
           "name": "stone-and-lanterns-4",
           "properties": [
             {
@@ -3713,7 +3654,7 @@
       "name": "collision",
       "objects": [
         {
-          "id": 54,
+          "id": 53,
           "name": "collision.rects[0]",
           "type": "solid",
           "rotation": 0,
@@ -3731,7 +3672,7 @@
           ]
         },
         {
-          "id": 55,
+          "id": 54,
           "name": "collision.rects[1]",
           "type": "solid",
           "rotation": 0,
@@ -3749,7 +3690,7 @@
           ]
         },
         {
-          "id": 56,
+          "id": 55,
           "name": "collision.rects[2]",
           "type": "solid",
           "rotation": 0,
@@ -3767,7 +3708,7 @@
           ]
         },
         {
-          "id": 57,
+          "id": 56,
           "name": "collision.rects[3]",
           "type": "solid",
           "rotation": 0,
@@ -3785,7 +3726,7 @@
           ]
         },
         {
-          "id": 58,
+          "id": 57,
           "name": "collision.rects[4]",
           "type": "solid",
           "rotation": 0,
@@ -3803,7 +3744,7 @@
           ]
         },
         {
-          "id": 59,
+          "id": 58,
           "name": "collision.rects[5]",
           "type": "solid",
           "rotation": 0,
@@ -3811,7 +3752,7 @@
           "x": 932,
           "y": 108,
           "width": 4,
-          "height": 164,
+          "height": 200,
           "properties": [
             {
               "name": "source",
@@ -3821,7 +3762,7 @@
           ]
         },
         {
-          "id": 60,
+          "id": 59,
           "name": "collision.rects[6]",
           "type": "solid",
           "rotation": 0,
@@ -3829,7 +3770,7 @@
           "x": 964,
           "y": 108,
           "width": 4,
-          "height": 164,
+          "height": 228,
           "properties": [
             {
               "name": "source",
@@ -3839,7 +3780,7 @@
           ]
         },
         {
-          "id": 61,
+          "id": 60,
           "name": "collision.rects[7]",
           "type": "solid",
           "rotation": 0,
@@ -3847,7 +3788,7 @@
           "x": 996,
           "y": 108,
           "width": 4,
-          "height": 164,
+          "height": 228,
           "properties": [
             {
               "name": "source",
@@ -3857,7 +3798,7 @@
           ]
         },
         {
-          "id": 62,
+          "id": 61,
           "name": "collision.rects[8]",
           "type": "solid",
           "rotation": 0,
@@ -3865,7 +3806,7 @@
           "x": 1028,
           "y": 108,
           "width": 4,
-          "height": 164,
+          "height": 228,
           "properties": [
             {
               "name": "source",
@@ -3875,7 +3816,7 @@
           ]
         },
         {
-          "id": 63,
+          "id": 62,
           "name": "collision.rects[9]",
           "type": "solid",
           "rotation": 0,
@@ -3883,7 +3824,7 @@
           "x": 920,
           "y": 112,
           "width": 12,
-          "height": 160,
+          "height": 188,
           "properties": [
             {
               "name": "source",
@@ -3893,7 +3834,7 @@
           ]
         },
         {
-          "id": 64,
+          "id": 63,
           "name": "collision.rects[10]",
           "type": "solid",
           "rotation": 0,
@@ -3901,7 +3842,7 @@
           "x": 936,
           "y": 112,
           "width": 28,
-          "height": 156,
+          "height": 196,
           "properties": [
             {
               "name": "source",
@@ -3911,7 +3852,7 @@
           ]
         },
         {
-          "id": 65,
+          "id": 64,
           "name": "collision.rects[11]",
           "type": "solid",
           "rotation": 0,
@@ -3919,7 +3860,7 @@
           "x": 968,
           "y": 112,
           "width": 28,
-          "height": 156,
+          "height": 220,
           "properties": [
             {
               "name": "source",
@@ -3929,7 +3870,7 @@
           ]
         },
         {
-          "id": 66,
+          "id": 65,
           "name": "collision.rects[12]",
           "type": "solid",
           "rotation": 0,
@@ -3937,7 +3878,7 @@
           "x": 1000,
           "y": 112,
           "width": 28,
-          "height": 156,
+          "height": 220,
           "properties": [
             {
               "name": "source",
@@ -3947,7 +3888,7 @@
           ]
         },
         {
-          "id": 67,
+          "id": 66,
           "name": "collision.rects[13]",
           "type": "solid",
           "rotation": 0,
@@ -3965,7 +3906,7 @@
           ]
         },
         {
-          "id": 68,
+          "id": 67,
           "name": "collision.rects[14]",
           "type": "solid",
           "rotation": 0,
@@ -3973,7 +3914,7 @@
           "x": 912,
           "y": 116,
           "width": 8,
-          "height": 156,
+          "height": 188,
           "properties": [
             {
               "name": "source",
@@ -3983,7 +3924,7 @@
           ]
         },
         {
-          "id": 69,
+          "id": 68,
           "name": "collision.rects[15]",
           "type": "solid",
           "rotation": 0,
@@ -3991,7 +3932,7 @@
           "x": 1032,
           "y": 124,
           "width": 4,
-          "height": 152,
+          "height": 216,
           "properties": [
             {
               "name": "source",
@@ -4001,7 +3942,7 @@
           ]
         },
         {
-          "id": 70,
+          "id": 69,
           "name": "collision.rects[16]",
           "type": "solid",
           "rotation": 0,
@@ -4019,7 +3960,7 @@
           ]
         },
         {
-          "id": 71,
+          "id": 70,
           "name": "collision.rects[17]",
           "type": "solid",
           "rotation": 0,
@@ -4027,7 +3968,7 @@
           "x": 1036,
           "y": 128,
           "width": 4,
-          "height": 148,
+          "height": 212,
           "properties": [
             {
               "name": "source",
@@ -4037,7 +3978,7 @@
           ]
         },
         {
-          "id": 72,
+          "id": 71,
           "name": "collision.rects[18]",
           "type": "solid",
           "rotation": 0,
@@ -4045,7 +3986,7 @@
           "x": 1040,
           "y": 136,
           "width": 4,
-          "height": 136,
+          "height": 200,
           "properties": [
             {
               "name": "source",
@@ -4055,7 +3996,7 @@
           ]
         },
         {
-          "id": 73,
+          "id": 72,
           "name": "collision.rects[19]",
           "type": "solid",
           "rotation": 0,
@@ -4063,7 +4004,7 @@
           "x": 900,
           "y": 140,
           "width": 12,
-          "height": 164,
+          "height": 168,
           "properties": [
             {
               "name": "source",
@@ -4073,7 +4014,7 @@
           ]
         },
         {
-          "id": 74,
+          "id": 73,
           "name": "collision.rects[20]",
           "type": "solid",
           "rotation": 0,
@@ -4081,7 +4022,7 @@
           "x": 1044,
           "y": 140,
           "width": 4,
-          "height": 132,
+          "height": 196,
           "properties": [
             {
               "name": "source",
@@ -4091,7 +4032,7 @@
           ]
         },
         {
-          "id": 75,
+          "id": 74,
           "name": "collision.rects[21]",
           "type": "solid",
           "rotation": 0,
@@ -4099,7 +4040,7 @@
           "x": 1060,
           "y": 140,
           "width": 4,
-          "height": 132,
+          "height": 196,
           "properties": [
             {
               "name": "source",
@@ -4109,7 +4050,7 @@
           ]
         },
         {
-          "id": 76,
+          "id": 75,
           "name": "collision.rects[22]",
           "type": "solid",
           "rotation": 0,
@@ -4127,7 +4068,7 @@
           ]
         },
         {
-          "id": 77,
+          "id": 76,
           "name": "collision.rects[23]",
           "type": "solid",
           "rotation": 0,
@@ -4135,7 +4076,7 @@
           "x": 1048,
           "y": 144,
           "width": 12,
-          "height": 124,
+          "height": 188,
           "properties": [
             {
               "name": "source",
@@ -4145,7 +4086,7 @@
           ]
         },
         {
-          "id": 78,
+          "id": 77,
           "name": "collision.rects[24]",
           "type": "solid",
           "rotation": 0,
@@ -4163,7 +4104,7 @@
           ]
         },
         {
-          "id": 79,
+          "id": 78,
           "name": "collision.rects[25]",
           "type": "solid",
           "rotation": 0,
@@ -4181,7 +4122,7 @@
           ]
         },
         {
-          "id": 80,
+          "id": 79,
           "name": "collision.rects[26]",
           "type": "solid",
           "rotation": 0,
@@ -4199,7 +4140,7 @@
           ]
         },
         {
-          "id": 81,
+          "id": 80,
           "name": "collision.rects[27]",
           "type": "solid",
           "rotation": 0,
@@ -4217,7 +4158,7 @@
           ]
         },
         {
-          "id": 82,
+          "id": 81,
           "name": "collision.rects[28]",
           "type": "solid",
           "rotation": 0,
@@ -4225,7 +4166,7 @@
           "x": 1064,
           "y": 156,
           "width": 4,
-          "height": 120,
+          "height": 180,
           "properties": [
             {
               "name": "source",
@@ -4235,7 +4176,7 @@
           ]
         },
         {
-          "id": 83,
+          "id": 82,
           "name": "collision.rects[29]",
           "type": "solid",
           "rotation": 0,
@@ -4243,7 +4184,7 @@
           "x": 1068,
           "y": 160,
           "width": 4,
-          "height": 116,
+          "height": 156,
           "properties": [
             {
               "name": "source",
@@ -4253,7 +4194,7 @@
           ]
         },
         {
-          "id": 84,
+          "id": 83,
           "name": "collision.rects[30]",
           "type": "solid",
           "rotation": 0,
@@ -4261,7 +4202,7 @@
           "x": 1072,
           "y": 168,
           "width": 4,
-          "height": 104,
+          "height": 140,
           "properties": [
             {
               "name": "source",
@@ -4271,7 +4212,7 @@
           ]
         },
         {
-          "id": 85,
+          "id": 84,
           "name": "collision.rects[31]",
           "type": "solid",
           "rotation": 0,
@@ -4289,7 +4230,7 @@
           ]
         },
         {
-          "id": 86,
+          "id": 85,
           "name": "collision.rects[32]",
           "type": "solid",
           "rotation": 0,
@@ -4297,7 +4238,7 @@
           "x": 1076,
           "y": 172,
           "width": 4,
-          "height": 100,
+          "height": 132,
           "properties": [
             {
               "name": "source",
@@ -4307,7 +4248,7 @@
           ]
         },
         {
-          "id": 87,
+          "id": 86,
           "name": "collision.rects[33]",
           "type": "solid",
           "rotation": 0,
@@ -4315,7 +4256,7 @@
           "x": 1092,
           "y": 172,
           "width": 4,
-          "height": 100,
+          "height": 136,
           "properties": [
             {
               "name": "source",
@@ -4325,7 +4266,7 @@
           ]
         },
         {
-          "id": 88,
+          "id": 87,
           "name": "collision.rects[34]",
           "type": "solid",
           "rotation": 0,
@@ -4343,7 +4284,7 @@
           ]
         },
         {
-          "id": 89,
+          "id": 88,
           "name": "collision.rects[35]",
           "type": "solid",
           "rotation": 0,
@@ -4351,7 +4292,7 @@
           "x": 1080,
           "y": 176,
           "width": 12,
-          "height": 92,
+          "height": 124,
           "properties": [
             {
               "name": "source",
@@ -4361,7 +4302,7 @@
           ]
         },
         {
-          "id": 90,
+          "id": 89,
           "name": "collision.rects[36]",
           "type": "solid",
           "rotation": 0,
@@ -4379,7 +4320,7 @@
           ]
         },
         {
-          "id": 91,
+          "id": 90,
           "name": "collision.rects[37]",
           "type": "solid",
           "rotation": 0,
@@ -4397,7 +4338,7 @@
           ]
         },
         {
-          "id": 92,
+          "id": 91,
           "name": "collision.rects[38]",
           "type": "solid",
           "rotation": 0,
@@ -4405,7 +4346,7 @@
           "x": 1096,
           "y": 188,
           "width": 4,
-          "height": 88,
+          "height": 120,
           "properties": [
             {
               "name": "source",
@@ -4415,7 +4356,7 @@
           ]
         },
         {
-          "id": 93,
+          "id": 92,
           "name": "collision.rects[39]",
           "type": "solid",
           "rotation": 0,
@@ -4433,7 +4374,7 @@
           ]
         },
         {
-          "id": 94,
+          "id": 93,
           "name": "collision.rects[40]",
           "type": "solid",
           "rotation": 0,
@@ -4441,7 +4382,7 @@
           "x": 1100,
           "y": 192,
           "width": 4,
-          "height": 84,
+          "height": 116,
           "properties": [
             {
               "name": "source",
@@ -4451,7 +4392,7 @@
           ]
         },
         {
-          "id": 95,
+          "id": 94,
           "name": "collision.rects[41]",
           "type": "solid",
           "rotation": 0,
@@ -4459,7 +4400,7 @@
           "x": 1104,
           "y": 200,
           "width": 4,
-          "height": 72,
+          "height": 104,
           "properties": [
             {
               "name": "source",
@@ -4469,7 +4410,7 @@
           ]
         },
         {
-          "id": 96,
+          "id": 95,
           "name": "collision.rects[42]",
           "type": "solid",
           "rotation": 0,
@@ -4477,7 +4418,7 @@
           "x": 1108,
           "y": 204,
           "width": 4,
-          "height": 68,
+          "height": 100,
           "properties": [
             {
               "name": "source",
@@ -4487,7 +4428,7 @@
           ]
         },
         {
-          "id": 97,
+          "id": 96,
           "name": "collision.rects[43]",
           "type": "solid",
           "rotation": 0,
@@ -4495,7 +4436,7 @@
           "x": 1124,
           "y": 204,
           "width": 4,
-          "height": 68,
+          "height": 104,
           "properties": [
             {
               "name": "source",
@@ -4505,7 +4446,7 @@
           ]
         },
         {
-          "id": 98,
+          "id": 97,
           "name": "collision.rects[44]",
           "type": "solid",
           "rotation": 0,
@@ -4523,7 +4464,7 @@
           ]
         },
         {
-          "id": 99,
+          "id": 98,
           "name": "collision.rects[45]",
           "type": "solid",
           "rotation": 0,
@@ -4531,7 +4472,7 @@
           "x": 1112,
           "y": 208,
           "width": 12,
-          "height": 60,
+          "height": 92,
           "properties": [
             {
               "name": "source",
@@ -4541,7 +4482,7 @@
           ]
         },
         {
-          "id": 100,
+          "id": 99,
           "name": "collision.rects[46]",
           "type": "solid",
           "rotation": 0,
@@ -4559,7 +4500,7 @@
           ]
         },
         {
-          "id": 101,
+          "id": 100,
           "name": "collision.rects[47]",
           "type": "solid",
           "rotation": 0,
@@ -4577,7 +4518,7 @@
           ]
         },
         {
-          "id": 102,
+          "id": 101,
           "name": "collision.rects[48]",
           "type": "solid",
           "rotation": 0,
@@ -4585,7 +4526,7 @@
           "x": 1128,
           "y": 220,
           "width": 4,
-          "height": 52,
+          "height": 84,
           "properties": [
             {
               "name": "source",
@@ -4595,7 +4536,7 @@
           ]
         },
         {
-          "id": 103,
+          "id": 102,
           "name": "collision.rects[49]",
           "type": "solid",
           "rotation": 0,
@@ -4613,7 +4554,7 @@
           ]
         },
         {
-          "id": 104,
+          "id": 103,
           "name": "collision.rects[50]",
           "type": "solid",
           "rotation": 0,
@@ -4631,7 +4572,7 @@
           ]
         },
         {
-          "id": 105,
+          "id": 104,
           "name": "collision.rects[51]",
           "type": "solid",
           "rotation": 0,
@@ -4649,7 +4590,7 @@
           ]
         },
         {
-          "id": 106,
+          "id": 105,
           "name": "collision.rects[52]",
           "type": "solid",
           "rotation": 0,
@@ -4667,26 +4608,8 @@
           ]
         },
         {
-          "id": 107,
+          "id": 106,
           "name": "collision.rects[53]",
-          "type": "solid",
-          "rotation": 0,
-          "visible": true,
-          "x": 564,
-          "y": 240,
-          "width": 24,
-          "height": 16,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "collision.rects[53]"
-            }
-          ]
-        },
-        {
-          "id": 108,
-          "name": "collision.rects[54]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
@@ -4698,13 +4621,13 @@
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[54]"
+              "value": "collision.rects[53]"
             }
           ]
         },
         {
-          "id": 109,
-          "name": "collision.rects[55]",
+          "id": 107,
+          "name": "collision.rects[54]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
@@ -4716,13 +4639,13 @@
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[55]"
+              "value": "collision.rects[54]"
             }
           ]
         },
         {
-          "id": 110,
-          "name": "collision.rects[56]",
+          "id": 108,
+          "name": "collision.rects[55]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
@@ -4734,193 +4657,31 @@
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[56]"
+              "value": "collision.rects[55]"
             }
           ]
         },
         {
-          "id": 111,
-          "name": "collision.rects[57]",
+          "id": 109,
+          "name": "collision.rects[56]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
           "x": 1132,
           "y": 256,
           "width": 4,
-          "height": 16,
+          "height": 28,
           "properties": [
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[57]"
+              "value": "collision.rects[56]"
             }
           ]
         },
         {
-          "id": 112,
-          "name": "collision.rects[58]",
-          "type": "solid",
-          "rotation": 0,
-          "visible": true,
-          "x": 936,
-          "y": 268,
-          "width": 16,
-          "height": 4,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "collision.rects[58]"
-            }
-          ]
-        },
-        {
-          "id": 113,
-          "name": "collision.rects[59]",
-          "type": "solid",
-          "rotation": 0,
-          "visible": true,
-          "x": 956,
-          "y": 268,
-          "width": 8,
-          "height": 4,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "collision.rects[59]"
-            }
-          ]
-        },
-        {
-          "id": 114,
-          "name": "collision.rects[60]",
-          "type": "solid",
-          "rotation": 0,
-          "visible": true,
-          "x": 968,
-          "y": 268,
-          "width": 16,
-          "height": 4,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "collision.rects[60]"
-            }
-          ]
-        },
-        {
-          "id": 115,
-          "name": "collision.rects[61]",
-          "type": "solid",
-          "rotation": 0,
-          "visible": true,
-          "x": 988,
-          "y": 268,
-          "width": 8,
-          "height": 4,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "collision.rects[61]"
-            }
-          ]
-        },
-        {
-          "id": 116,
-          "name": "collision.rects[62]",
-          "type": "solid",
-          "rotation": 0,
-          "visible": true,
-          "x": 1000,
-          "y": 268,
-          "width": 16,
-          "height": 4,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "collision.rects[62]"
-            }
-          ]
-        },
-        {
-          "id": 117,
-          "name": "collision.rects[63]",
-          "type": "solid",
-          "rotation": 0,
-          "visible": true,
-          "x": 1020,
-          "y": 268,
-          "width": 8,
-          "height": 4,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "collision.rects[63]"
-            }
-          ]
-        },
-        {
-          "id": 118,
-          "name": "collision.rects[64]",
-          "type": "solid",
-          "rotation": 0,
-          "visible": true,
-          "x": 1052,
-          "y": 268,
-          "width": 8,
-          "height": 4,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "collision.rects[64]"
-            }
-          ]
-        },
-        {
-          "id": 119,
-          "name": "collision.rects[65]",
-          "type": "solid",
-          "rotation": 0,
-          "visible": true,
-          "x": 1084,
-          "y": 268,
-          "width": 8,
-          "height": 4,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "collision.rects[65]"
-            }
-          ]
-        },
-        {
-          "id": 120,
-          "name": "collision.rects[66]",
-          "type": "solid",
-          "rotation": 0,
-          "visible": true,
-          "x": 1116,
-          "y": 268,
-          "width": 8,
-          "height": 4,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "collision.rects[66]"
-            }
-          ]
-        },
-        {
-          "id": 121,
-          "name": "collision.rects[67]",
+          "id": 110,
+          "name": "collision.rects[57]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
@@ -4932,85 +4693,13 @@
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[67]"
+              "value": "collision.rects[57]"
             }
           ]
         },
         {
-          "id": 122,
-          "name": "collision.rects[68]",
-          "type": "solid",
-          "rotation": 0,
-          "visible": true,
-          "x": 912,
-          "y": 272,
-          "width": 4,
-          "height": 4,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "collision.rects[68]"
-            }
-          ]
-        },
-        {
-          "id": 123,
-          "name": "collision.rects[69]",
-          "type": "solid",
-          "rotation": 0,
-          "visible": true,
-          "x": 936,
-          "y": 272,
-          "width": 8,
-          "height": 4,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "collision.rects[69]"
-            }
-          ]
-        },
-        {
-          "id": 124,
-          "name": "collision.rects[70]",
-          "type": "solid",
-          "rotation": 0,
-          "visible": true,
-          "x": 968,
-          "y": 272,
-          "width": 8,
-          "height": 4,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "collision.rects[70]"
-            }
-          ]
-        },
-        {
-          "id": 125,
-          "name": "collision.rects[71]",
-          "type": "solid",
-          "rotation": 0,
-          "visible": true,
-          "x": 1000,
-          "y": 272,
-          "width": 8,
-          "height": 4,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "collision.rects[71]"
-            }
-          ]
-        },
-        {
-          "id": 126,
-          "name": "collision.rects[72]",
+          "id": 111,
+          "name": "collision.rects[58]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
@@ -5022,13 +4711,13 @@
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[72]"
+              "value": "collision.rects[58]"
             }
           ]
         },
         {
-          "id": 127,
-          "name": "collision.rects[73]",
+          "id": 112,
+          "name": "collision.rects[59]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
@@ -5040,31 +4729,49 @@
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[73]"
+              "value": "collision.rects[59]"
             }
           ]
         },
         {
-          "id": 128,
-          "name": "collision.rects[74]",
+          "id": 113,
+          "name": "collision.rects[60]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
-          "x": 828,
-          "y": 292,
+          "x": 1132,
+          "y": 288,
           "width": 4,
+          "height": 8,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[60]"
+            }
+          ]
+        },
+        {
+          "id": 114,
+          "name": "collision.rects[61]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 1176,
+          "y": 292,
+          "width": 8,
           "height": 4,
           "properties": [
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[74]"
+              "value": "collision.rects[61]"
             }
           ]
         },
         {
-          "id": 129,
-          "name": "collision.rects[75]",
+          "id": 115,
+          "name": "collision.rects[62]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
@@ -5076,35 +4783,17 @@
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[75]"
+              "value": "collision.rects[62]"
             }
           ]
         },
         {
-          "id": 130,
-          "name": "collision.rects[76]",
+          "id": 116,
+          "name": "collision.rects[63]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
-          "x": 880,
-          "y": 300,
-          "width": 4,
-          "height": 4,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "collision.rects[76]"
-            }
-          ]
-        },
-        {
-          "id": 131,
-          "name": "collision.rects[77]",
-          "type": "solid",
-          "rotation": 0,
-          "visible": true,
-          "x": 892,
+          "x": 884,
           "y": 300,
           "width": 8,
           "height": 4,
@@ -5112,193 +4801,211 @@
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[77]"
+              "value": "collision.rects[63]"
             }
           ]
         },
         {
-          "id": 132,
-          "name": "collision.rects[78]",
+          "id": 117,
+          "name": "collision.rects[64]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
-          "x": 972,
+          "x": 896,
           "y": 300,
           "width": 4,
-          "height": 40,
+          "height": 4,
           "properties": [
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[78]"
+              "value": "collision.rects[64]"
             }
           ]
         },
         {
-          "id": 133,
-          "name": "collision.rects[79]",
+          "id": 118,
+          "name": "collision.rects[65]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
-          "x": 1004,
+          "x": 920,
           "y": 300,
           "width": 4,
-          "height": 40,
+          "height": 4,
           "properties": [
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[79]"
+              "value": "collision.rects[65]"
             }
           ]
         },
         {
-          "id": 134,
-          "name": "collision.rects[80]",
+          "id": 119,
+          "name": "collision.rects[66]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
-          "x": 1036,
+          "x": 928,
           "y": 300,
           "width": 4,
-          "height": 40,
+          "height": 4,
           "properties": [
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[80]"
+              "value": "collision.rects[66]"
             }
           ]
         },
         {
-          "id": 135,
-          "name": "collision.rects[81]",
+          "id": 120,
+          "name": "collision.rects[67]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
-          "x": 952,
-          "y": 304,
-          "width": 20,
-          "height": 28,
+          "x": 1080,
+          "y": 300,
+          "width": 4,
+          "height": 4,
           "properties": [
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[81]"
+              "value": "collision.rects[67]"
             }
           ]
         },
         {
-          "id": 136,
-          "name": "collision.rects[82]",
+          "id": 121,
+          "name": "collision.rects[68]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
-          "x": 976,
-          "y": 304,
-          "width": 28,
-          "height": 28,
+          "x": 1088,
+          "y": 300,
+          "width": 4,
+          "height": 4,
           "properties": [
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[82]"
+              "value": "collision.rects[68]"
             }
           ]
         },
         {
-          "id": 137,
-          "name": "collision.rects[83]",
+          "id": 122,
+          "name": "collision.rects[69]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
-          "x": 1008,
-          "y": 304,
-          "width": 28,
-          "height": 28,
+          "x": 1112,
+          "y": 300,
+          "width": 4,
+          "height": 4,
           "properties": [
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[83]"
+              "value": "collision.rects[69]"
             }
           ]
         },
         {
-          "id": 138,
-          "name": "collision.rects[84]",
+          "id": 123,
+          "name": "collision.rects[70]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
-          "x": 1040,
-          "y": 304,
-          "width": 32,
+          "x": 1120,
+          "y": 300,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[70]"
+            }
+          ]
+        },
+        {
+          "id": 124,
+          "name": "collision.rects[71]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 568,
+          "y": 308,
+          "width": 16,
           "height": 12,
           "properties": [
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[84]"
+              "value": "collision.rects[71]"
             }
           ]
         },
         {
-          "id": 139,
-          "name": "collision.rects[85]",
+          "id": 125,
+          "name": "collision.rects[72]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 940,
+          "y": 308,
+          "width": 24,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[72]"
+            }
+          ]
+        },
+        {
+          "id": 126,
+          "name": "collision.rects[73]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
           "x": 944,
-          "y": 308,
-          "width": 8,
-          "height": 28,
+          "y": 312,
+          "width": 20,
+          "height": 20,
           "properties": [
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[85]"
+              "value": "collision.rects[73]"
             }
           ]
         },
         {
-          "id": 140,
-          "name": "collision.rects[86]",
-          "type": "solid",
-          "rotation": 0,
-          "visible": true,
-          "x": 1040,
-          "y": 316,
-          "width": 28,
-          "height": 16,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "collision.rects[86]"
-            }
-          ]
-        },
-        {
-          "id": 141,
-          "name": "collision.rects[87]",
+          "id": 127,
+          "name": "collision.rects[74]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
           "x": 1068,
           "y": 320,
           "width": 4,
-          "height": 8,
+          "height": 16,
           "properties": [
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[87]"
+              "value": "collision.rects[74]"
             }
           ]
         },
         {
-          "id": 142,
-          "name": "collision.rects[88]",
+          "id": 128,
+          "name": "collision.rects[75]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
@@ -5310,161 +5017,161 @@
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[88]"
+              "value": "collision.rects[75]"
             }
           ]
         },
         {
-          "id": 143,
-          "name": "collision.rects[89]",
+          "id": 129,
+          "name": "collision.rects[76]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
-          "x": 952,
+          "x": 572,
           "y": 332,
-          "width": 4,
+          "width": 16,
           "height": 4,
           "properties": [
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[89]"
+              "value": "collision.rects[76]"
             }
           ]
         },
         {
-          "id": 144,
-          "name": "collision.rects[90]",
+          "id": 130,
+          "name": "collision.rects[77]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
-          "x": 960,
+          "x": 944,
           "y": 332,
-          "width": 12,
+          "width": 8,
           "height": 4,
           "properties": [
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[90]"
+              "value": "collision.rects[77]"
             }
           ]
         },
         {
-          "id": 145,
-          "name": "collision.rects[91]",
+          "id": 131,
+          "name": "collision.rects[78]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
-          "x": 976,
+          "x": 956,
           "y": 332,
-          "width": 12,
+          "width": 8,
           "height": 4,
           "properties": [
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[91]"
+              "value": "collision.rects[78]"
             }
           ]
         },
         {
-          "id": 146,
-          "name": "collision.rects[92]",
+          "id": 132,
+          "name": "collision.rects[79]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
-          "x": 992,
+          "x": 968,
           "y": 332,
-          "width": 12,
+          "width": 16,
           "height": 4,
           "properties": [
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[92]"
+              "value": "collision.rects[79]"
             }
           ]
         },
         {
-          "id": 147,
-          "name": "collision.rects[93]",
+          "id": 133,
+          "name": "collision.rects[80]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
-          "x": 1008,
+          "x": 988,
           "y": 332,
-          "width": 12,
+          "width": 8,
           "height": 4,
           "properties": [
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[93]"
+              "value": "collision.rects[80]"
             }
           ]
         },
         {
-          "id": 148,
-          "name": "collision.rects[94]",
+          "id": 134,
+          "name": "collision.rects[81]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
-          "x": 1024,
+          "x": 1000,
           "y": 332,
-          "width": 12,
+          "width": 16,
           "height": 4,
           "properties": [
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[94]"
+              "value": "collision.rects[81]"
             }
           ]
         },
         {
-          "id": 149,
-          "name": "collision.rects[95]",
+          "id": 135,
+          "name": "collision.rects[82]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
-          "x": 1040,
+          "x": 1020,
           "y": 332,
-          "width": 12,
+          "width": 8,
           "height": 4,
           "properties": [
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[95]"
+              "value": "collision.rects[82]"
             }
           ]
         },
         {
-          "id": 150,
-          "name": "collision.rects[96]",
+          "id": 136,
+          "name": "collision.rects[83]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
-          "x": 1056,
+          "x": 1052,
           "y": 332,
-          "width": 12,
+          "width": 8,
           "height": 4,
           "properties": [
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[96]"
+              "value": "collision.rects[83]"
             }
           ]
         },
         {
-          "id": 151,
-          "name": "collision.rects[97]",
+          "id": 137,
+          "name": "collision.rects[84]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
-          "x": 964,
+          "x": 968,
           "y": 336,
           "width": 8,
           "height": 4,
@@ -5472,17 +5179,17 @@
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[97]"
+              "value": "collision.rects[84]"
             }
           ]
         },
         {
-          "id": 152,
-          "name": "collision.rects[98]",
+          "id": 138,
+          "name": "collision.rects[85]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
-          "x": 996,
+          "x": 1000,
           "y": 336,
           "width": 8,
           "height": 4,
@@ -5490,49 +5197,13 @@
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[98]"
+              "value": "collision.rects[85]"
             }
           ]
         },
         {
-          "id": 153,
-          "name": "collision.rects[99]",
-          "type": "solid",
-          "rotation": 0,
-          "visible": true,
-          "x": 1028,
-          "y": 336,
-          "width": 8,
-          "height": 4,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "collision.rects[99]"
-            }
-          ]
-        },
-        {
-          "id": 154,
-          "name": "collision.rects[100]",
-          "type": "solid",
-          "rotation": 0,
-          "visible": true,
-          "x": 1060,
-          "y": 336,
-          "width": 4,
-          "height": 4,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "collision.rects[100]"
-            }
-          ]
-        },
-        {
-          "id": 155,
-          "name": "collision.rects[101]",
+          "id": 139,
+          "name": "collision.rects[86]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
@@ -5544,85 +5215,31 @@
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[101]"
+              "value": "collision.rects[86]"
             }
           ]
         },
         {
-          "id": 156,
-          "name": "collision.rects[102]",
+          "id": 140,
+          "name": "collision.rects[87]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
-          "x": 204,
-          "y": 356,
+          "x": 1012,
+          "y": 384,
           "width": 16,
           "height": 4,
           "properties": [
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[102]"
+              "value": "collision.rects[87]"
             }
           ]
         },
         {
-          "id": 157,
-          "name": "collision.rects[103]",
-          "type": "solid",
-          "rotation": 0,
-          "visible": true,
-          "x": 172,
-          "y": 368,
-          "width": 12,
-          "height": 4,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "collision.rects[103]"
-            }
-          ]
-        },
-        {
-          "id": 158,
-          "name": "collision.rects[104]",
-          "type": "solid",
-          "rotation": 0,
-          "visible": true,
-          "x": 936,
-          "y": 388,
-          "width": 4,
-          "height": 4,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "collision.rects[104]"
-            }
-          ]
-        },
-        {
-          "id": 159,
-          "name": "collision.rects[105]",
-          "type": "solid",
-          "rotation": 0,
-          "visible": true,
-          "x": 836,
-          "y": 404,
-          "width": 4,
-          "height": 4,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "collision.rects[105]"
-            }
-          ]
-        },
-        {
-          "id": 160,
-          "name": "collision.rects[106]",
+          "id": 141,
+          "name": "collision.rects[88]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
@@ -5634,139 +5251,49 @@
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[106]"
+              "value": "collision.rects[88]"
             }
           ]
         },
         {
-          "id": 161,
-          "name": "collision.rects[107]",
+          "id": 142,
+          "name": "collision.rects[89]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
-          "x": 832,
-          "y": 428,
+          "x": 888,
+          "y": 464,
           "width": 12,
           "height": 4,
           "properties": [
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[107]"
+              "value": "collision.rects[89]"
             }
           ]
         },
         {
-          "id": 162,
-          "name": "collision.rects[108]",
+          "id": 143,
+          "name": "collision.rects[90]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
-          "x": 424,
-          "y": 480,
-          "width": 12,
-          "height": 4,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "collision.rects[108]"
-            }
-          ]
-        },
-        {
-          "id": 163,
-          "name": "collision.rects[109]",
-          "type": "solid",
-          "rotation": 0,
-          "visible": true,
-          "x": 532,
-          "y": 480,
-          "width": 12,
-          "height": 4,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "collision.rects[109]"
-            }
-          ]
-        },
-        {
-          "id": 164,
-          "name": "collision.rects[110]",
-          "type": "solid",
-          "rotation": 0,
-          "visible": true,
-          "x": 712,
-          "y": 484,
-          "width": 8,
-          "height": 4,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "collision.rects[110]"
-            }
-          ]
-        },
-        {
-          "id": 165,
-          "name": "collision.rects[111]",
-          "type": "solid",
-          "rotation": 0,
-          "visible": true,
-          "x": 784,
+          "x": 308,
           "y": 496,
-          "width": 16,
-          "height": 4,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "collision.rects[111]"
-            }
-          ]
-        },
-        {
-          "id": 166,
-          "name": "collision.rects[112]",
-          "type": "solid",
-          "rotation": 0,
-          "visible": true,
-          "x": 380,
-          "y": 500,
           "width": 12,
           "height": 4,
           "properties": [
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[112]"
+              "value": "collision.rects[90]"
             }
           ]
         },
         {
-          "id": 167,
-          "name": "collision.rects[113]",
-          "type": "solid",
-          "rotation": 0,
-          "visible": true,
-          "x": 884,
-          "y": 500,
-          "width": 24,
-          "height": 12,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "collision.rects[113]"
-            }
-          ]
-        },
-        {
-          "id": 168,
-          "name": "collision.rects[114]",
+          "id": 144,
+          "name": "collision.rects[91]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
@@ -5778,13 +5305,13 @@
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[114]"
+              "value": "collision.rects[91]"
             }
           ]
         },
         {
-          "id": 169,
-          "name": "collision.rects[115]",
+          "id": 145,
+          "name": "collision.rects[92]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
@@ -5796,13 +5323,49 @@
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[115]"
+              "value": "collision.rects[92]"
             }
           ]
         },
         {
-          "id": 170,
-          "name": "collision.rects[116]",
+          "id": 146,
+          "name": "collision.rects[93]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 428,
+          "y": 560,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[93]"
+            }
+          ]
+        },
+        {
+          "id": 147,
+          "name": "collision.rects[94]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 724,
+          "y": 560,
+          "width": 4,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[94]"
+            }
+          ]
+        },
+        {
+          "id": 148,
+          "name": "collision.rects[95]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
@@ -5814,13 +5377,13 @@
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[116]"
+              "value": "collision.rects[95]"
             }
           ]
         },
         {
-          "id": 171,
-          "name": "collision.rects[117]",
+          "id": 149,
+          "name": "collision.rects[96]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
@@ -5832,13 +5395,13 @@
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[117]"
+              "value": "collision.rects[96]"
             }
           ]
         },
         {
-          "id": 172,
-          "name": "collision.rects[118]",
+          "id": 150,
+          "name": "collision.rects[97]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
@@ -5850,13 +5413,13 @@
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[118]"
+              "value": "collision.rects[97]"
             }
           ]
         },
         {
-          "id": 173,
-          "name": "collision.rects[119]",
+          "id": 151,
+          "name": "collision.rects[98]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
@@ -5868,13 +5431,13 @@
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[119]"
+              "value": "collision.rects[98]"
             }
           ]
         },
         {
-          "id": 174,
-          "name": "collision.rects[120]",
+          "id": 152,
+          "name": "collision.rects[99]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
@@ -5886,49 +5449,49 @@
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[120]"
+              "value": "collision.rects[99]"
             }
           ]
         },
         {
-          "id": 175,
-          "name": "collision.rects[121]",
+          "id": 153,
+          "name": "collision.rects[100]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
           "x": 880,
           "y": 680,
-          "width": 12,
-          "height": 4,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "collision.rects[121]"
-            }
-          ]
-        },
-        {
-          "id": 176,
-          "name": "collision.rects[122]",
-          "type": "solid",
-          "rotation": 0,
-          "visible": true,
-          "x": 696,
-          "y": 692,
           "width": 8,
           "height": 4,
           "properties": [
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[122]"
+              "value": "collision.rects[100]"
             }
           ]
         },
         {
-          "id": 177,
-          "name": "collision.rects[123]",
+          "id": 154,
+          "name": "collision.rects[101]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 692,
+          "y": 692,
+          "width": 12,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[101]"
+            }
+          ]
+        },
+        {
+          "id": 155,
+          "name": "collision.rects[102]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
@@ -5940,13 +5503,13 @@
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[123]"
+              "value": "collision.rects[102]"
             }
           ]
         },
         {
-          "id": 178,
-          "name": "collision.rects[124]",
+          "id": 156,
+          "name": "collision.rects[103]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
@@ -5958,13 +5521,13 @@
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[124]"
+              "value": "collision.rects[103]"
             }
           ]
         },
         {
-          "id": 179,
-          "name": "collision.rects[125]",
+          "id": 157,
+          "name": "collision.rects[104]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
@@ -5976,13 +5539,31 @@
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[125]"
+              "value": "collision.rects[104]"
             }
           ]
         },
         {
-          "id": 180,
-          "name": "collision.rects[126]",
+          "id": 158,
+          "name": "collision.rects[105]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 716,
+          "y": 740,
+          "width": 12,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[105]"
+            }
+          ]
+        },
+        {
+          "id": 159,
+          "name": "collision.rects[106]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
@@ -5994,13 +5575,31 @@
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[126]"
+              "value": "collision.rects[106]"
             }
           ]
         },
         {
-          "id": 181,
-          "name": "collision.rects[127]",
+          "id": 160,
+          "name": "collision.rects[107]",
+          "type": "solid",
+          "rotation": 0,
+          "visible": true,
+          "x": 684,
+          "y": 756,
+          "width": 16,
+          "height": 4,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "collision.rects[107]"
+            }
+          ]
+        },
+        {
+          "id": 161,
+          "name": "collision.rects[108]",
           "type": "solid",
           "rotation": 0,
           "visible": true,
@@ -6012,13 +5611,13 @@
             {
               "name": "source",
               "type": "string",
-              "value": "collision.rects[127]"
+              "value": "collision.rects[108]"
             }
           ]
         },
         {
-          "id": 182,
-          "name": "west-sect-gate",
+          "id": 162,
+          "name": "village-gate",
           "type": "solid",
           "rotation": 0,
           "visible": true,
@@ -6030,49 +5629,31 @@
             {
               "name": "source",
               "type": "string",
-              "value": "object:west-sect-gate"
+              "value": "object:village-gate"
             }
           ]
         },
         {
-          "id": 183,
-          "name": "main-hall",
+          "id": 163,
+          "name": "respawn-shrine",
           "type": "solid",
           "rotation": 0,
           "visible": true,
-          "x": 563.0,
-          "y": 242.0,
-          "width": 26.0,
-          "height": 14.0,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "object:main-hall"
-            }
-          ]
-        },
-        {
-          "id": 184,
-          "name": "tea-house",
-          "type": "solid",
-          "rotation": 0,
-          "visible": true,
-          "x": 885.0,
-          "y": 500.0,
-          "width": 22.0,
+          "x": 567.0,
+          "y": 308.0,
+          "width": 18.0,
           "height": 12.0,
           "properties": [
             {
               "name": "source",
               "type": "string",
-              "value": "object:tea-house"
+              "value": "object:respawn-shrine"
             }
           ]
         },
         {
-          "id": 185,
-          "name": "north-pagoda",
+          "id": 164,
+          "name": "village-pagoda",
           "type": "solid",
           "rotation": 0,
           "visible": true,
@@ -6084,12 +5665,12 @@
             {
               "name": "source",
               "type": "string",
-              "value": "object:north-pagoda"
+              "value": "object:village-pagoda"
             }
           ]
         },
         {
-          "id": 186,
+          "id": 165,
           "name": "bamboo-grove-1",
           "type": "solid",
           "rotation": 0.0,
@@ -6108,7 +5689,7 @@
           ]
         },
         {
-          "id": 187,
+          "id": 166,
           "name": "bamboo-grove-2",
           "type": "solid",
           "rotation": 0.0,
@@ -6127,7 +5708,7 @@
           ]
         },
         {
-          "id": 188,
+          "id": 167,
           "name": "bamboo-grove-3",
           "type": "solid",
           "rotation": 0.0,
@@ -6146,7 +5727,7 @@
           ]
         },
         {
-          "id": 189,
+          "id": 168,
           "name": "bamboo-grove-4",
           "type": "solid",
           "rotation": 0.0,
@@ -6165,7 +5746,7 @@
           ]
         },
         {
-          "id": 190,
+          "id": 169,
           "name": "bamboo-grove-5",
           "type": "solid",
           "rotation": 0.0,
@@ -6184,7 +5765,7 @@
           ]
         },
         {
-          "id": 191,
+          "id": 170,
           "name": "bamboo-grove-6",
           "type": "solid",
           "rotation": 0.0,
@@ -6203,7 +5784,7 @@
           ]
         },
         {
-          "id": 192,
+          "id": 171,
           "name": "bamboo-grove-7",
           "type": "solid",
           "rotation": 0.0,
@@ -6222,7 +5803,7 @@
           ]
         },
         {
-          "id": 193,
+          "id": 172,
           "name": "bamboo-grove-8",
           "type": "solid",
           "rotation": 0.0,
@@ -6241,7 +5822,7 @@
           ]
         },
         {
-          "id": 194,
+          "id": 173,
           "name": "bamboo-grove-9",
           "type": "solid",
           "rotation": 0.0,
@@ -6260,7 +5841,7 @@
           ]
         },
         {
-          "id": 195,
+          "id": 174,
           "name": "bamboo-grove-10",
           "type": "solid",
           "rotation": 0.0,
@@ -6279,7 +5860,7 @@
           ]
         },
         {
-          "id": 196,
+          "id": 175,
           "name": "bamboo-grove-11",
           "type": "solid",
           "rotation": 0.0,
@@ -6298,7 +5879,7 @@
           ]
         },
         {
-          "id": 197,
+          "id": 176,
           "name": "bamboo-grove-12",
           "type": "solid",
           "rotation": 0.0,
@@ -6317,7 +5898,7 @@
           ]
         },
         {
-          "id": 198,
+          "id": 177,
           "name": "bamboo-grove-13",
           "type": "solid",
           "rotation": 0.0,
@@ -6336,7 +5917,7 @@
           ]
         },
         {
-          "id": 199,
+          "id": 178,
           "name": "bamboo-grove-14",
           "type": "solid",
           "rotation": 0.0,
@@ -6355,7 +5936,7 @@
           ]
         },
         {
-          "id": 200,
+          "id": 179,
           "name": "bamboo-grove-15",
           "type": "solid",
           "rotation": 0.0,
@@ -6374,7 +5955,7 @@
           ]
         },
         {
-          "id": 201,
+          "id": 180,
           "name": "bamboo-grove-16",
           "type": "solid",
           "rotation": 0.0,
@@ -6393,7 +5974,7 @@
           ]
         },
         {
-          "id": 202,
+          "id": 181,
           "name": "bamboo-grove-17",
           "type": "solid",
           "rotation": 0.0,
@@ -6412,7 +5993,7 @@
           ]
         },
         {
-          "id": 203,
+          "id": 182,
           "name": "bamboo-grove-18",
           "type": "solid",
           "rotation": 0.0,
@@ -6431,7 +6012,7 @@
           ]
         },
         {
-          "id": 204,
+          "id": 183,
           "name": "plum-garden-1",
           "type": "solid",
           "rotation": 0.0,
@@ -6450,7 +6031,7 @@
           ]
         },
         {
-          "id": 205,
+          "id": 184,
           "name": "plum-garden-2",
           "type": "solid",
           "rotation": 0.0,
@@ -6469,7 +6050,7 @@
           ]
         },
         {
-          "id": 206,
+          "id": 185,
           "name": "plum-garden-3",
           "type": "solid",
           "rotation": 0.0,
@@ -6488,7 +6069,7 @@
           ]
         },
         {
-          "id": 207,
+          "id": 186,
           "name": "plum-garden-4",
           "type": "solid",
           "rotation": 0.0,
@@ -6507,7 +6088,7 @@
           ]
         },
         {
-          "id": 208,
+          "id": 187,
           "name": "plum-garden-5",
           "type": "solid",
           "rotation": 0.0,
@@ -6526,27 +6107,8 @@
           ]
         },
         {
-          "id": 209,
+          "id": 188,
           "name": "plum-garden-6",
-          "type": "solid",
-          "rotation": 0.0,
-          "visible": true,
-          "x": 934.5,
-          "y": 389.0,
-          "width": 7.0,
-          "height": 4.0,
-          "ellipse": true,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "object:plum-garden-6"
-            }
-          ]
-        },
-        {
-          "id": 210,
-          "name": "plum-garden-7",
           "type": "solid",
           "rotation": 0.0,
           "visible": true,
@@ -6559,32 +6121,13 @@
             {
               "name": "source",
               "type": "string",
-              "value": "object:plum-garden-7"
+              "value": "object:plum-garden-6"
             }
           ]
         },
         {
-          "id": 211,
-          "name": "plum-garden-8",
-          "type": "solid",
-          "rotation": 0.0,
-          "visible": true,
-          "x": 785.0,
-          "y": 495.0,
-          "width": 14.0,
-          "height": 5.0,
-          "ellipse": true,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "object:plum-garden-8"
-            }
-          ]
-        },
-        {
-          "id": 212,
-          "name": "plum-garden-9",
+          "id": 189,
+          "name": "plum-garden-7",
           "type": "solid",
           "rotation": 0.0,
           "visible": true,
@@ -6597,18 +6140,56 @@
             {
               "name": "source",
               "type": "string",
+              "value": "object:plum-garden-7"
+            }
+          ]
+        },
+        {
+          "id": 190,
+          "name": "plum-garden-8",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 881.5,
+          "y": 680.0,
+          "width": 7.0,
+          "height": 4.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:plum-garden-8"
+            }
+          ]
+        },
+        {
+          "id": 191,
+          "name": "plum-garden-9",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 920.5,
+          "y": 450.0,
+          "width": 7.0,
+          "height": 4.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
               "value": "object:plum-garden-9"
             }
           ]
         },
         {
-          "id": 213,
+          "id": 192,
           "name": "plum-garden-10",
           "type": "solid",
           "rotation": 0.0,
           "visible": true,
-          "x": 878.0,
-          "y": 679.0,
+          "x": 692.0,
+          "y": 692.0,
           "width": 14.0,
           "height": 5.0,
           "ellipse": true,
@@ -6621,27 +6202,8 @@
           ]
         },
         {
-          "id": 214,
+          "id": 193,
           "name": "plum-garden-11",
-          "type": "solid",
-          "rotation": 0.0,
-          "visible": true,
-          "x": 695.5,
-          "y": 693.0,
-          "width": 7.0,
-          "height": 4.0,
-          "ellipse": true,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "object:plum-garden-11"
-            }
-          ]
-        },
-        {
-          "id": 215,
-          "name": "plum-garden-12",
           "type": "solid",
           "rotation": 0.0,
           "visible": true,
@@ -6654,32 +6216,13 @@
             {
               "name": "source",
               "type": "string",
-              "value": "object:plum-garden-12"
+              "value": "object:plum-garden-11"
             }
           ]
         },
         {
-          "id": 216,
-          "name": "plum-garden-13",
-          "type": "solid",
-          "rotation": 0.0,
-          "visible": true,
-          "x": 713.5,
-          "y": 484.0,
-          "width": 7.0,
-          "height": 4.0,
-          "ellipse": true,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "object:plum-garden-13"
-            }
-          ]
-        },
-        {
-          "id": 217,
-          "name": "plum-garden-14",
+          "id": 194,
+          "name": "plum-garden-12",
           "type": "solid",
           "rotation": 0.0,
           "visible": true,
@@ -6692,51 +6235,51 @@
             {
               "name": "source",
               "type": "string",
+              "value": "object:plum-garden-12"
+            }
+          ]
+        },
+        {
+          "id": 195,
+          "name": "plum-garden-13",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 1012.5,
+          "y": 602.0,
+          "width": 7.0,
+          "height": 4.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:plum-garden-13"
+            }
+          ]
+        },
+        {
+          "id": 196,
+          "name": "plum-garden-14",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 714.0,
+          "y": 741.0,
+          "width": 14.0,
+          "height": 5.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
               "value": "object:plum-garden-14"
             }
           ]
         },
         {
-          "id": 218,
+          "id": 197,
           "name": "stone-and-lanterns-1",
-          "type": "solid",
-          "rotation": 0.0,
-          "visible": true,
-          "x": 832.5,
-          "y": 426.0,
-          "width": 13.0,
-          "height": 5.0,
-          "ellipse": true,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "object:stone-and-lanterns-1"
-            }
-          ]
-        },
-        {
-          "id": 219,
-          "name": "stone-and-lanterns-2",
-          "type": "solid",
-          "rotation": 0.0,
-          "visible": true,
-          "x": 205.5,
-          "y": 355.0,
-          "width": 13.0,
-          "height": 5.0,
-          "ellipse": true,
-          "properties": [
-            {
-              "name": "source",
-              "type": "string",
-              "value": "object:stone-and-lanterns-2"
-            }
-          ]
-        },
-        {
-          "id": 220,
-          "name": "stone-and-lanterns-3",
           "type": "solid",
           "rotation": 0.0,
           "visible": true,
@@ -6749,12 +6292,50 @@
             {
               "name": "source",
               "type": "string",
+              "value": "object:stone-and-lanterns-1"
+            }
+          ]
+        },
+        {
+          "id": 198,
+          "name": "stone-and-lanterns-2",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 1173.5,
+          "y": 290.0,
+          "width": 13.0,
+          "height": 5.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
+              "value": "object:stone-and-lanterns-2"
+            }
+          ]
+        },
+        {
+          "id": 199,
+          "name": "stone-and-lanterns-3",
+          "type": "solid",
+          "rotation": 0.0,
+          "visible": true,
+          "x": 573.5,
+          "y": 331.0,
+          "width": 13.0,
+          "height": 5.0,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "source",
+              "type": "string",
               "value": "object:stone-and-lanterns-3"
             }
           ]
         },
         {
-          "id": 221,
+          "id": 200,
           "name": "stone-and-lanterns-4",
           "type": "solid",
           "rotation": 0.0,
@@ -6773,7 +6354,7 @@
           ]
         },
         {
-          "id": 222,
+          "id": 201,
           "name": "stone-and-lanterns-5",
           "type": "solid",
           "rotation": 0.0,
@@ -6792,7 +6373,7 @@
           ]
         },
         {
-          "id": 223,
+          "id": 202,
           "name": "stone-and-lanterns-6",
           "type": "solid",
           "rotation": 0.0,
@@ -6811,7 +6392,7 @@
           ]
         },
         {
-          "id": 224,
+          "id": 203,
           "name": "stone-and-lanterns-7",
           "type": "solid",
           "rotation": 0.0,
@@ -6830,13 +6411,13 @@
           ]
         },
         {
-          "id": 225,
+          "id": 204,
           "name": "stone-and-lanterns-8",
           "type": "solid",
           "rotation": 0.0,
           "visible": true,
-          "x": 267.5,
-          "y": 296.0,
+          "x": 723.5,
+          "y": 561.0,
           "width": 5.0,
           "height": 4.0,
           "ellipse": true,
@@ -6849,13 +6430,13 @@
           ]
         },
         {
-          "id": 226,
+          "id": 205,
           "name": "stone-and-lanterns-9",
           "type": "solid",
           "rotation": 0.0,
           "visible": true,
-          "x": 828.5,
-          "y": 291.0,
+          "x": 428.5,
+          "y": 561.0,
           "width": 5.0,
           "height": 4.0,
           "ellipse": true,
@@ -6868,13 +6449,13 @@
           ]
         },
         {
-          "id": 227,
+          "id": 206,
           "name": "stone-and-lanterns-10",
           "type": "solid",
           "rotation": 0.0,
           "visible": true,
-          "x": 571.5,
-          "y": 547.0,
+          "x": 267.5,
+          "y": 296.0,
           "width": 5.0,
           "height": 4.0,
           "ellipse": true,
@@ -6887,13 +6468,13 @@
           ]
         },
         {
-          "id": 228,
+          "id": 207,
           "name": "stone-and-lanterns-11",
           "type": "solid",
           "rotation": 0.0,
           "visible": true,
-          "x": 531.5,
-          "y": 479.0,
+          "x": 1013.5,
+          "y": 384.0,
           "width": 13.0,
           "height": 5.0,
           "ellipse": true,
@@ -6906,13 +6487,13 @@
           ]
         },
         {
-          "id": 229,
+          "id": 208,
           "name": "stone-and-lanterns-12",
           "type": "solid",
           "rotation": 0.0,
           "visible": true,
-          "x": 835.5,
-          "y": 403.0,
+          "x": 571.5,
+          "y": 547.0,
           "width": 5.0,
           "height": 4.0,
           "ellipse": true,
@@ -6925,13 +6506,13 @@
           ]
         },
         {
-          "id": 230,
+          "id": 209,
           "name": "stone-and-lanterns-13",
           "type": "solid",
           "rotation": 0.0,
           "visible": true,
-          "x": 379.5,
-          "y": 500.0,
+          "x": 308.5,
+          "y": 497.0,
           "width": 13.0,
           "height": 5.0,
           "ellipse": true,
@@ -6944,7 +6525,7 @@
           ]
         },
         {
-          "id": 231,
+          "id": 210,
           "name": "stone-and-lanterns-14",
           "type": "solid",
           "rotation": 0,
@@ -6962,13 +6543,13 @@
           ]
         },
         {
-          "id": 232,
+          "id": 211,
           "name": "stone-and-lanterns-15",
           "type": "solid",
           "rotation": 0.0,
           "visible": true,
-          "x": 424.5,
-          "y": 479.0,
+          "x": 888.5,
+          "y": 464.0,
           "width": 13.0,
           "height": 5.0,
           "ellipse": true,
@@ -6981,13 +6562,13 @@
           ]
         },
         {
-          "id": 233,
+          "id": 212,
           "name": "stone-and-lanterns-16",
           "type": "solid",
           "rotation": 0.0,
           "visible": true,
-          "x": 170.5,
-          "y": 368.0,
+          "x": 685.5,
+          "y": 755.0,
           "width": 13.0,
           "height": 5.0,
           "ellipse": true,
@@ -7035,7 +6616,7 @@
       "objects": [
         {
           "height": 0,
-          "id": 234,
+          "id": 213,
           "name": "arrival",
           "point": true,
           "properties": [
@@ -7054,7 +6635,7 @@
         },
         {
           "height": 0,
-          "id": 235,
+          "id": 214,
           "name": "from-bamboo-coast",
           "point": true,
           "properties": [
@@ -7073,7 +6654,7 @@
         },
         {
           "height": 0,
-          "id": 236,
+          "id": 215,
           "name": "from-river-market",
           "point": true,
           "properties": [
@@ -7088,11 +6669,11 @@
           "visible": true,
           "width": 0,
           "x": 1250,
-          "y": 286
+          "y": 350
         },
         {
           "height": 0,
-          "id": 237,
+          "id": 216,
           "name": "from-jade-mountain",
           "point": true,
           "properties": [
@@ -7111,7 +6692,7 @@
         },
         {
           "height": 0,
-          "id": 238,
+          "id": 217,
           "name": "from-training-grounds",
           "point": true,
           "properties": [
@@ -7129,7 +6710,7 @@
           "y": 770
         },
         {
-          "id": 239,
+          "id": 218,
           "name": "west-road-exit",
           "type": "portal",
           "rotation": 0,
@@ -7182,13 +6763,13 @@
           ]
         },
         {
-          "id": 240,
+          "id": 219,
           "name": "east-road-exit",
           "type": "portal",
           "rotation": 0,
           "visible": true,
           "x": 1264.0,
-          "y": 272.0,
+          "y": 336.0,
           "width": 16.0,
           "height": 32.0,
           "properties": [
@@ -7235,7 +6816,7 @@
           ]
         },
         {
-          "id": 241,
+          "id": 220,
           "name": "north-gate-exit",
           "type": "portal",
           "rotation": 0,
@@ -7288,7 +6869,7 @@
           ]
         },
         {
-          "id": 242,
+          "id": 221,
           "name": "south-road-exit",
           "type": "portal",
           "rotation": 0,
@@ -7342,7 +6923,7 @@
         },
         {
           "height": 0,
-          "id": 243,
+          "id": 222,
           "name": "village-notice",
           "point": true,
           "properties": [
@@ -7361,14 +6942,14 @@
         },
         {
           "height": 0,
-          "id": 244,
-          "name": "main-hall.enter",
+          "id": 223,
+          "name": "respawn-shrine",
           "point": true,
           "properties": [
             {
               "name": "reach",
               "type": "float",
-              "value": 26.0
+              "value": 44.0
             }
           ],
           "rotation": 0,
@@ -7376,26 +6957,64 @@
           "visible": true,
           "width": 0,
           "x": 576.0,
-          "y": 254.0
+          "y": 448.0
         },
         {
           "height": 0,
-          "id": 245,
-          "name": "tea-house.enter",
+          "id": 224,
+          "name": "market-square",
           "point": true,
           "properties": [
             {
               "name": "reach",
               "type": "float",
-              "value": 24.0
+              "value": 64.0
             }
           ],
           "rotation": 0,
           "type": "interaction",
           "visible": true,
           "width": 0,
-          "x": 896.0,
-          "y": 511.0
+          "x": 800.0,
+          "y": 448.0
+        },
+        {
+          "height": 0,
+          "id": 225,
+          "name": "alchemy-yard",
+          "point": true,
+          "properties": [
+            {
+              "name": "reach",
+              "type": "float",
+              "value": 48.0
+            }
+          ],
+          "rotation": 0,
+          "type": "interaction",
+          "visible": true,
+          "width": 0,
+          "x": 416.0,
+          "y": 320.0
+        },
+        {
+          "height": 0,
+          "id": 226,
+          "name": "forge-yard",
+          "point": true,
+          "properties": [
+            {
+              "name": "reach",
+              "type": "float",
+              "value": 48.0
+            }
+          ],
+          "rotation": 0,
+          "type": "interaction",
+          "visible": true,
+          "width": 0,
+          "x": 416.0,
+          "y": 608.0
         }
       ],
       "opacity": 1,
@@ -7406,7 +7025,7 @@
     }
   ],
   "nextlayerid": 5,
-  "nextobjectid": 246,
+  "nextobjectid": 227,
   "orientation": "orthogonal",
   "properties": [
     {
