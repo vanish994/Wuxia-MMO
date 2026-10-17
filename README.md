@@ -10,6 +10,11 @@
 
 O pacote reúne caminhada, idle, ataques com espada e orbe de energia, e morte frontal. Inclui atlas, quadros PNG, prévias GIF e os JSONs de manifesto, animação, pipeline e QA. Os ataques em oito direções usam a ordem de linhas documentada no manifesto; a morte é frontal.
 
+## Padrões para agentes de IA
+
+- [Instruções gerais para agentes — AGENTS.md](AGENTS.md)
+- [Guia de produção de mapas top-down em pixel art](docs/GUIA_PRODUCAO_MAPAS_PIXEL_ART.md)
+
 ## Mundo e tilesets
 
 - [Pack de mundo Wuxia — conteúdo, QA e pendências](assets/world/README.md)
