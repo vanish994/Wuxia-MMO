@@ -1,9 +1,9 @@
 {
   "schema": "wuxia.world_pack_index.v1",
-  "generated_at_utc": "2026-10-17T01:14:28.672606+00:00",
+  "generated_at_utc": "2026-10-17T01:26:51.488125+00:00",
   "repository_license": "BSD-3-Clause (root LICENSE; see assets/world/LICENSING.md)",
   "art_source": "code-drawn; no third-party art assets included",
-  "file_count": 812,
+  "file_count": 820,
   "validation_report": "assets/world/qa/world-validation-v2.json",
   "files": [
     {
@@ -766,8 +766,8 @@
     },
     {
       "path": "assets/world/README.md",
-      "bytes": 6349,
-      "sha256": "23d1f137effc641ff28fcf62764721f3d0a9063e73414f11e6aa868f993508eb",
+      "bytes": 6720,
+      "sha256": "392982b7c3d3ac7281b9019d149a46f73f5a05e3c7b90054fe04e915ad429791",
       "media_type": "md"
     },
     {
@@ -1176,14 +1176,14 @@
     },
     {
       "path": "assets/world/maps/biomes/qinghe-valley-village-kit.json",
-      "bytes": 4828,
-      "sha256": "7b0f95f8e73e1435566462898ba268bd047f4df8dfd3b39f862b84118a14f2e9",
+      "bytes": 4735,
+      "sha256": "e5d0fa1fb28bbe8a80d863652c36801bbae73cdce63236a4f6c5f64e1e09773c",
       "media_type": "json"
     },
     {
       "path": "assets/world/maps/biomes/qinghe-valley.layout.json",
-      "bytes": 41406,
-      "sha256": "b86021c12fd952e49b6a4299f098305bb4fbfdfb31752cc4fa96bdb9bb0a66d6",
+      "bytes": 49838,
+      "sha256": "31541c91eddd317b9510bd6d258db027b386cdcb4d1dd0cc23ffe46f8c7e7d2d",
       "media_type": "json"
     },
     {
@@ -4594,40 +4594,80 @@
     },
     {
       "path": "assets/world/maps/biomes/regions/qinghe-valley-v1/codeart-meta.json",
-      "bytes": 11076,
-      "sha256": "259cad931c42540622be969a93c5252ef38fd76605a709be5046cc233a4d3e00",
+      "bytes": 12387,
+      "sha256": "fe3730bf51cfc5e89927ce1a6c3f19872d8a482cd42b08e6d6e71dc502d62b6f",
       "media_type": "json"
     },
     {
       "path": "assets/world/maps/biomes/regions/qinghe-valley-v1/debug.png",
-      "bytes": 102105,
-      "sha256": "7e7a52db5f6e44ca07264dd323b5e2fb8eabec503c291294e82a93a84e80ad5d",
+      "bytes": 120131,
+      "sha256": "9aa1276c3e8719986d82cf551cc5103f032437431ee27551b3dff8171743ff39",
       "media_type": "png",
       "dimensions": {
-        "width": 1280,
-        "height": 800
+        "width": 1792,
+        "height": 1152
       }
     },
     {
       "path": "assets/world/maps/biomes/regions/qinghe-valley-v1/layout-qa.json",
-      "bytes": 6849,
-      "sha256": "8f4984c7886051288739d441a905637d33ef352c774c54949d6dd0bceb6f386f",
+      "bytes": 7486,
+      "sha256": "9e4d04c19b18631a62ac6f0287d83134cc46ac8012bc162ccd786ae1217eb0e6",
       "media_type": "json"
     },
     {
       "path": "assets/world/maps/biomes/regions/qinghe-valley-v1/map-bundle.json",
-      "bytes": 97675,
-      "sha256": "37c2c3624feb5b9c9714a4df98a05de5b8d5164ef205373340894dd742986263",
+      "bytes": 103751,
+      "sha256": "ffdaf457b9d3f82265378356a0ede8d3a575b2cb4ce1e1ccf032f8148c679bc1",
       "media_type": "json"
     },
     {
       "path": "assets/world/maps/biomes/regions/qinghe-valley-v1/preview.png",
-      "bytes": 57924,
-      "sha256": "13421a352c567f8b8c9c6eecc644a7a229612a9b52fcbafdb00f9081ccfe4b14",
+      "bytes": 81540,
+      "sha256": "3f29b3eaca5ba0cfe96f641ad2606e005df7170093779a951fc6092f07b7f55a",
       "media_type": "png",
       "dimensions": {
-        "width": 1280,
-        "height": 800
+        "width": 1792,
+        "height": 1152
+      }
+    },
+    {
+      "path": "assets/world/maps/biomes/regions/qinghe-valley-v1/props/ambient_bamboo.png",
+      "bytes": 509,
+      "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
+      "media_type": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 50
+      }
+    },
+    {
+      "path": "assets/world/maps/biomes/regions/qinghe-valley-v1/props/ambient_blossom.png",
+      "bytes": 407,
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "media_type": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 34
+      }
+    },
+    {
+      "path": "assets/world/maps/biomes/regions/qinghe-valley-v1/props/ambient_lantern.png",
+      "bytes": 230,
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "media_type": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 32
+      }
+    },
+    {
+      "path": "assets/world/maps/biomes/regions/qinghe-valley-v1/props/ambient_shrub.png",
+      "bytes": 198,
+      "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
+      "media_type": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 15
       }
     },
     {
@@ -4826,14 +4866,14 @@
     },
     {
       "path": "assets/world/maps/biomes/regions/qinghe-valley-v1/terrain-vertices.json",
-      "bytes": 10103,
-      "sha256": "4da1661ce88e21533161e54e627067dfcfd9822e98629c783029931a87eeb413",
+      "bytes": 19622,
+      "sha256": "cc9cf36e062a9deef08bb013f03cc9d668f6824b100e6b1d50d235019a23f5bb",
       "media_type": "json"
     },
     {
       "path": "assets/world/maps/biomes/regions/qinghe-valley-v1/tiled/export-report.json",
-      "bytes": 7337,
-      "sha256": "41c45e25a460f212f9a3d3d026a3a1a3a59789068ddbfcce82a3b22190c4345b",
+      "bytes": 7646,
+      "sha256": "8faa2a27093abdf13e8eee2c81728874604cdc7958c393a9cf93fbaccd555789",
       "media_type": "json"
     },
     {
@@ -4841,6 +4881,46 @@
       "bytes": 147592,
       "sha256": "36b6816e339d032cb1e5381fe7e8f2b836e71b34a7dab9c584a445d2ec55e67a",
       "media_type": "tsx"
+    },
+    {
+      "path": "assets/world/maps/biomes/regions/qinghe-valley-v1/tiled/images/ambient_bamboo.png",
+      "bytes": 509,
+      "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
+      "media_type": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 50
+      }
+    },
+    {
+      "path": "assets/world/maps/biomes/regions/qinghe-valley-v1/tiled/images/ambient_blossom.png",
+      "bytes": 407,
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "media_type": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 34
+      }
+    },
+    {
+      "path": "assets/world/maps/biomes/regions/qinghe-valley-v1/tiled/images/ambient_lantern.png",
+      "bytes": 230,
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "media_type": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 32
+      }
+    },
+    {
+      "path": "assets/world/maps/biomes/regions/qinghe-valley-v1/tiled/images/ambient_shrub.png",
+      "bytes": 198,
+      "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
+      "media_type": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 15
+      }
     },
     {
       "path": "assets/world/maps/biomes/regions/qinghe-valley-v1/tiled/images/bamboo.png",
@@ -4964,30 +5044,30 @@
     },
     {
       "path": "assets/world/maps/biomes/regions/qinghe-valley-v1/tiled/map.embedded.tmj",
-      "bytes": 730159,
-      "sha256": "14df99e6e3ae4cb8723128084ac0e462031397230ae2fb67cb195c281aa3bec6",
+      "bytes": 668984,
+      "sha256": "baa19d86470f65e48289bcd09e66e9f69e946d2635be830a8d040a00cad5321c",
       "media_type": "tmj"
     },
     {
       "path": "assets/world/maps/biomes/regions/qinghe-valley-v1/tiled/map.tmj",
-      "bytes": 216314,
-      "sha256": "daa7d82ec426fe97163bf956c81dad648a3508a97b70d5503927c1d26bc913e4",
+      "bytes": 160459,
+      "sha256": "7a463c495136f959c131afbb3f2c351b3351395134671a13279b49204daadb60",
       "media_type": "tmj"
     },
     {
       "path": "assets/world/maps/biomes/regions/qinghe-valley-v1/tiled/preview.png",
-      "bytes": 64457,
-      "sha256": "b9be2c7c41561e00f5250c33ab6209c17ce97b77aac9f1a73161748a979bb078",
+      "bytes": 96064,
+      "sha256": "862e5fd17b19f4f4ed794876172376e902dd39047b0c336547f9d486e3c42e27",
       "media_type": "png",
       "dimensions": {
-        "width": 1280,
-        "height": 800
+        "width": 1792,
+        "height": 1152
       }
     },
     {
       "path": "assets/world/maps/biomes/regions/qinghe-valley-v1/tiled/props.tsx",
-      "bytes": 5008,
-      "sha256": "16cc242d3abc00987d3513a6e864f9259cf1cf1d391e9449ab70c11d3add0bbf",
+      "bytes": 3288,
+      "sha256": "47070dafb940a36cd779f647b7d037cadb04dd45341bc21cb375de42dc6fef55",
       "media_type": "tsx"
     },
     {
@@ -6746,8 +6826,8 @@
     },
     {
       "path": "scripts/build_starter_village.py",
-      "bytes": 17201,
-      "sha256": "0deb6ac6263c329579292f37f24c66e08ddcff6eed6cf989ab20085b8d2ca767",
+      "bytes": 18225,
+      "sha256": "c8d8f89aba1649b5af049d3f4e4eb8b16cb80319082a86c6def29f0e212706df",
       "media_type": "py"
     },
     {

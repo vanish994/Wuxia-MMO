@@ -70,7 +70,7 @@
     {
       "id": "prop_variety",
       "status": "pass",
-      "value": 0.0,
+      "value": 0.1667,
       "threshold": 0.35
     },
     {
@@ -89,8 +89,8 @@
   "inputs": [
     {
       "path": "../../home/ubuntu/Wuxia-MMO/assets/world/maps/biomes/qinghe-valley.layout.json",
-      "sha256": "b86021c12fd952e49b6a4299f098305bb4fbfdfb31752cc4fa96bdb9bb0a66d6",
-      "bytes": 41406
+      "sha256": "31541c91eddd317b9510bd6d258db027b386cdcb4d1dd0cc23ffe46f8c7e7d2d",
+      "bytes": 49838
     },
     {
       "path": "../../home/ubuntu/Wuxia-MMO/assets/tilesets/generated-core-v1/grass-path-water-wang81.tileset.json",
@@ -111,13 +111,13 @@
   "outputs": [
     {
       "path": "map-bundle.json",
-      "sha256": "37c2c3624feb5b9c9714a4df98a05de5b8d5164ef205373340894dd742986263",
-      "bytes": 97675
+      "sha256": "ffdaf457b9d3f82265378356a0ede8d3a575b2cb4ce1e1ccf032f8148c679bc1",
+      "bytes": 103751
     },
     {
       "path": "terrain-vertices.json",
-      "sha256": "4da1661ce88e21533161e54e627067dfcfd9822e98629c783029931a87eeb413",
-      "bytes": 10103
+      "sha256": "cc9cf36e062a9deef08bb013f03cc9d668f6824b100e6b1d50d235019a23f5bb",
+      "bytes": 19622
     },
     {
       "path": "tilesets/grass-path-water-wang81/grass-path-water-wang81.png",
@@ -205,14 +205,34 @@
       "bytes": 223
     },
     {
+      "path": "props/ambient_bamboo.png",
+      "sha256": "59c0d0fff8be45e60433e07310f294511407f920b5f42fff37f61bd284cb5d2d",
+      "bytes": 509
+    },
+    {
+      "path": "props/ambient_blossom.png",
+      "sha256": "529b3d3ee941cfd0ae2bf8858bd199281b55b5b0a241cf54cc0452713dcef261",
+      "bytes": 407
+    },
+    {
+      "path": "props/ambient_shrub.png",
+      "sha256": "7113d7011369e84e84681e05bf9cf81807dee03fc176518f133c267c925a5bba",
+      "bytes": 198
+    },
+    {
+      "path": "props/ambient_lantern.png",
+      "sha256": "d09e340c569e6889de50307d143706c7e49773ea7554526e3fd7d427c68699cd",
+      "bytes": 230
+    },
+    {
       "path": "preview.png",
-      "sha256": "13421a352c567f8b8c9c6eecc644a7a229612a9b52fcbafdb00f9081ccfe4b14",
-      "bytes": 57924
+      "sha256": "3f29b3eaca5ba0cfe96f641ad2606e005df7170093779a951fc6092f07b7f55a",
+      "bytes": 81540
     },
     {
       "path": "debug.png",
-      "sha256": "7e7a52db5f6e44ca07264dd323b5e2fb8eabec503c291294e82a93a84e80ad5d",
-      "bytes": 102105
+      "sha256": "9aa1276c3e8719986d82cf551cc5103f032437431ee27551b3dff8171743ff39",
+      "bytes": 120131
     }
   ],
   "tool": {

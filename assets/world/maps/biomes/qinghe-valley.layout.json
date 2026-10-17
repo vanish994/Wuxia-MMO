@@ -2,8 +2,8 @@
   "schema": "codeart2d.layout_spec.v1",
   "map_id": "qinghe-valley",
   "size": [
-    40,
-    25
+    56,
+    36
   ],
   "tile_size": 32,
   "seed": 30417,
@@ -31,40 +31,54 @@
       "shape": "ellipse",
       "material": "water",
       "center": [
-        32,
-        6
+        44,
+        8
       ],
       "radius": [
-        4.8,
-        3.2
+        5.2,
+        4.0
       ],
       "wobble": 0.55
     },
     {
-      "id": "south-pond",
+      "id": "west-pond",
       "shape": "ellipse",
       "material": "water",
       "center": [
-        6,
-        20
+        8,
+        28
       ],
       "radius": [
-        3.0,
-        2.0
+        3.5,
+        2.4
       ],
       "wobble": 0.35
+    },
+    {
+      "id": "north-pond",
+      "shape": "ellipse",
+      "material": "water",
+      "center": [
+        28,
+        5
+      ],
+      "radius": [
+        2.5,
+        1.5
+      ],
+      "wobble": 0.3
     },
     {
       "id": "central-plaza",
       "shape": "ellipse",
       "material": "dirt_path",
       "center": [
-        20,
-        14
+        28,
+        18
       ],
       "radius": [
-        6.7,
-        3.3
+        5.4,
+        2.8
       ],
       "wobble": 0.1
     },
@@ -72,27 +86,23 @@
       "id": "west-road",
       "shape": "road",
       "material": "dirt_path",
-      "width": 1.35,
+      "width": 1.6,
       "points": [
         [
           -1,
-          14
+          18
         ],
         [
-          4,
-          14
-        ],
-        [
-          9,
-          14
-        ],
-        [
-          14,
-          14
+          8,
+          18
         ],
         [
           16,
-          14
+          18
+        ],
+        [
+          23,
+          18
         ]
       ]
     },
@@ -100,27 +110,23 @@
       "id": "east-road",
       "shape": "road",
       "material": "dirt_path",
-      "width": 1.35,
+      "width": 1.6,
       "points": [
         [
-          24,
-          14
+          33,
+          18
         ],
         [
-          28,
-          14
+          39,
+          18
         ],
         [
-          32,
-          12
+          45,
+          16
         ],
         [
-          36,
-          10
-        ],
-        [
-          41,
-          10
+          57,
+          16
         ]
       ]
     },
@@ -128,22 +134,22 @@
       "id": "north-road",
       "shape": "road",
       "material": "dirt_path",
-      "width": 1.25,
+      "width": 1.45,
       "points": [
         [
-          20,
-          12
+          28,
+          15
         ],
         [
-          20,
-          8
+          28,
+          11
         ],
         [
-          20,
-          4
+          28,
+          6
         ],
         [
-          20,
+          28,
           -1
         ]
       ]
@@ -152,23 +158,23 @@
       "id": "south-road",
       "shape": "road",
       "material": "dirt_path",
-      "width": 1.25,
+      "width": 1.45,
       "points": [
         [
-          20,
-          16
+          28,
+          21
         ],
         [
-          20,
-          19
-        ],
-        [
-          20,
-          22
-        ],
-        [
-          20,
+          28,
           26
+        ],
+        [
+          28,
+          31
+        ],
+        [
+          28,
+          37
         ]
       ]
     },
@@ -176,19 +182,19 @@
       "id": "alchemy-lane",
       "shape": "road",
       "material": "dirt_path",
-      "width": 1.05,
+      "width": 1.15,
       "points": [
+        [
+          24,
+          17
+        ],
+        [
+          20,
+          14
+        ],
         [
           16,
           13
-        ],
-        [
-          13,
-          11
-        ],
-        [
-          11,
-          9
         ]
       ]
     },
@@ -196,19 +202,19 @@
       "id": "forge-lane",
       "shape": "road",
       "material": "dirt_path",
-      "width": 1.05,
+      "width": 1.15,
       "points": [
         [
+          24,
+          20
+        ],
+        [
+          20,
+          23
+        ],
+        [
           16,
-          16
-        ],
-        [
-          13,
-          19
-        ],
-        [
-          11,
-          21
+          25
         ]
       ]
     },
@@ -216,19 +222,43 @@
       "id": "guest-lane",
       "shape": "road",
       "material": "dirt_path",
-      "width": 1.05,
+      "width": 1.15,
       "points": [
         [
-          24,
-          16
+          33,
+          20
         ],
         [
-          27,
-          19
+          36,
+          23
         ],
         [
-          29,
-          21
+          39,
+          25
+        ]
+      ]
+    },
+    {
+      "id": "outer-east-loop",
+      "shape": "road",
+      "material": "dirt_path",
+      "width": 1.0,
+      "points": [
+        [
+          39,
+          18
+        ],
+        [
+          42,
+          22
+        ],
+        [
+          49,
+          24
+        ],
+        [
+          54,
+          20
         ]
       ]
     }
@@ -1218,47 +1248,331 @@
           -2.5
         ]
       }
+    },
+    "ambient_bamboo": {
+      "pixelspec": {
+        "schema": "codeart2d.pixelspec.v1",
+        "name": "bamboo-clump",
+        "canvas": [
+          20,
+          50
+        ],
+        "anchor_px": [
+          10,
+          47
+        ],
+        "palette": {
+          "o": "#202630",
+          "D": "#235341",
+          "G": "#43805a",
+          "L": "#76ac68",
+          "H": "#cad88c",
+          "T": "#a2b878"
+        },
+        "layers": [
+          {
+            "name": "stems",
+            "rows": [
+              "....................",
+              "....................",
+              "....................",
+              "....................",
+              ".........GH....GG...",
+              "....GG...HGL...GG...",
+              "....GG..LGG.LL.GG...",
+              "....GGLL.GG...LGG...",
+              "....GL...GG...LLG...",
+              "....LL...GGLLL.GG...",
+              "....GGLLLLL....GG...",
+              "....GG...LL...HGG...",
+              "...TTTT.TTTT.LTTTT..",
+              "....GG...GGLL..GG...",
+              "....GG...GL....GG...",
+              "....GG...LL....GG...",
+              "....GG...GGLLL.GG...",
+              "....GG...GG...LLG...",
+              "....GG...GG....GG...",
+              "....GG...GG....GG...",
+              "...TTTT.THTT..TTTT..",
+              "....GG..LGG....GG...",
+              "....GGLL.GG....GG...",
+              "....GL...GG....GG...",
+              "....LL...GG....GG...",
+              "....GGLLLGH....GG...",
+              "....GG...LLL...GG...",
+              "....GG...GG.LL.GG...",
+              "...TTTT.TTTT..LTTT..",
+              "....GG...GG...LLG...",
+              "....GG...GGLLL.GG...",
+              "....GG...LL...HGG...",
+              "....GG...GG..L.GG...",
+              "....GG...GGLL..GG...",
+              "....GG...GL....GG...",
+              "....GG...LL....GG...",
+              "...TTTT.TTTLLLTTTT..",
+              "....GG...GG...LLG...",
+              "....GG...GG....GG...",
+              "....GG...GG....GG...",
+              "....GG...GG....GG...",
+              "....GG...GG....GG...",
+              "....GG...GG....GG...",
+              "....GG...GG....GG...",
+              "...TTTT.TTTT..TTTT..",
+              "....GG...GG....GG...",
+              "....................",
+              "....................",
+              "....................",
+              "...................."
+            ]
+          }
+        ],
+        "outline": {
+          "mode": "solid",
+          "color": "o"
+        }
+      },
+      "occlusion": "tall",
+      "solid": false,
+      "footprint": {
+        "shape": "none"
+      }
+    },
+    "ambient_blossom": {
+      "pixelspec": {
+        "schema": "codeart2d.pixelspec.v1",
+        "name": "ambient-plum",
+        "canvas": [
+          24,
+          34
+        ],
+        "anchor_px": [
+          12,
+          33
+        ],
+        "palette": {
+          "o": "#202630",
+          "D": "#2b6047",
+          "G": "#3f8454",
+          "L": "#63a76a",
+          "H": "#b4ce83",
+          "t": "#5a392e",
+          "T": "#87563b",
+          "p": "#ef9ab0"
+        },
+        "layers": [
+          {
+            "name": "canopy",
+            "rows": [
+              "........................",
+              "........................",
+              "........................",
+              "........................",
+              "........................",
+              ".......GGGGGGGGGG.......",
+              ".......GGGpGGGGGG.......",
+              ".......GHHGGGGGGG.......",
+              ".......GHHGGGGGGGp......",
+              ".......GGGGGGGGGGGGGG...",
+              "...LLLLLLLLLGGGGGGGGG...",
+              "...LLpLLLLLLGGGGGHHGG...",
+              ".DDDDDDDDLLLGGGGGHHGG...",
+              ".DDDDDDDDLLLGGGGLLLLLLL.",
+              ".DDDDDDDDLLLGGGGLLLLLLL.",
+              ".DDDDDDDDGGGGGGGLLLLpLL.",
+              ".DDDDDDDDGGGGGGpLLLLLLL.",
+              ".DDDDDDDDGGGGGGGLLLLLLL.",
+              "...LpLGGGGGGGGGGLLLLLLL.",
+              "...LLLGGGGGGGGGGGG......",
+              "......GGGGGGGGGGGG......",
+              "......GGGGGGGGGGGG......",
+              "......GGGGGGGGGGGG......",
+              "......GGGGGGGGGGGG......",
+              "..........TTTT..........",
+              "..........TTTT..........",
+              "..........TTTT..........",
+              ".......tttTTTTttt.......",
+              ".......tttTTTTttt.......",
+              ".......tttttttttt.......",
+              ".......tttttttttt.......",
+              ".......tttttttttt.......",
+              "........................",
+              "........................"
+            ]
+          }
+        ],
+        "outline": {
+          "mode": "solid",
+          "color": "o"
+        }
+      },
+      "occlusion": "tall",
+      "solid": false,
+      "footprint": {
+        "shape": "none"
+      }
+    },
+    "ambient_shrub": {
+      "pixelspec": {
+        "schema": "codeart2d.pixelspec.v1",
+        "name": "tea-shrub",
+        "canvas": [
+          20,
+          15
+        ],
+        "anchor_px": [
+          10,
+          12
+        ],
+        "palette": {
+          "o": "#202630",
+          "D": "#2b6047",
+          "G": "#3f8454",
+          "L": "#63a76a",
+          "H": "#b4ce83"
+        },
+        "layers": [
+          {
+            "name": "foliage",
+            "rows": [
+              "....................",
+              "....................",
+              "....................",
+              "........HHHH........",
+              "........HHHH........",
+              ".....GGGHHHHGGG.....",
+              ".....GGGGGGGGGGGGG..",
+              "..LLLLLLLGGGGGGGGG..",
+              "..LLLLLLLGGGGGGGGG..",
+              "..LLLLLLLGGGGGGGGG..",
+              "..LLDDDDDDDDDDDDGG..",
+              "....DDDDDDDDDDDD....",
+              "....................",
+              "....................",
+              "...................."
+            ]
+          }
+        ],
+        "outline": {
+          "mode": "solid",
+          "color": "o"
+        }
+      },
+      "occlusion": "low",
+      "solid": false,
+      "footprint": {
+        "shape": "none"
+      }
+    },
+    "ambient_lantern": {
+      "pixelspec": {
+        "schema": "codeart2d.pixelspec.v1",
+        "name": "jade-street-lantern",
+        "canvas": [
+          16,
+          32
+        ],
+        "anchor_px": [
+          8,
+          29
+        ],
+        "palette": {
+          "o": "#202630",
+          "T": "#d4ad62",
+          "Y": "#e9c96d",
+          "G": "#f4e2a1",
+          "R": "#813944",
+          "S": "#687477"
+        },
+        "layers": [
+          {
+            "name": "lamp",
+            "rows": [
+              "................",
+              ".......TT.......",
+              ".......TT.......",
+              ".......TT.......",
+              ".......TT.......",
+              ".......TT.......",
+              "...TTTTTTTTTT...",
+              "...TTTTTTTTTT...",
+              "...TTTTTTTTTT...",
+              "....YYYYYYYY....",
+              "....YGGGGGGY....",
+              "....YGGGGGGY....",
+              "....YGGGGGGY....",
+              "....YGGGGGGY....",
+              "....YGGGGGGY....",
+              "....YGGGGGGY....",
+              "....YGGGGGGY....",
+              "....YGGGGGGY....",
+              "....YYYYYYYY....",
+              "...TTTTTTTTTT...",
+              "...TTTTTTTTTT...",
+              "...TTTTTTTTTT...",
+              ".......RR.......",
+              ".......RR.......",
+              ".......RR.......",
+              ".......RR.......",
+              ".......RR.......",
+              ".....SSSSSS.....",
+              ".....SSSSSS.....",
+              "................",
+              "................",
+              "................"
+            ]
+          }
+        ],
+        "outline": {
+          "mode": "solid",
+          "color": "o"
+        }
+      },
+      "occlusion": "low",
+      "solid": false,
+      "footprint": {
+        "shape": "none"
+      }
     }
   },
   "objects": [
     {
       "id": "village-gate",
       "prop": "sect_gate",
-      "x": 256,
-      "y": 256
+      "x": 448,
+      "y": 320
     },
     {
       "id": "respawn-shrine",
       "prop": "pagoda",
-      "x": 640,
-      "y": 256
+      "x": 896,
+      "y": 320
     },
     {
       "id": "moonwood-crossing",
       "prop": "bridge",
-      "x": 1024,
-      "y": 320
+      "x": 1408,
+      "y": 512
     }
   ],
   "scatter": [
     {
       "id": "bamboo-grove",
       "kinds": {
-        "bamboo": 1
+        "ambient_bamboo": 1
       },
-      "count": 22,
-      "spacing": 24,
+      "count": 12,
+      "spacing": 64,
       "region": [
-        24,
-        24,
-        320,
-        280
+        48,
+        48,
+        420,
+        360
       ],
       "density": {
-        "scale": 94,
+        "scale": 120,
         "octaves": 2,
-        "threshold": 0.4,
-        "edge_bonus": 0.18,
+        "threshold": 0.46,
+        "edge_bonus": 0.12,
         "edge_distance": 55
       },
       "clearance": {
@@ -1272,22 +1586,22 @@
     {
       "id": "plum-garden",
       "kinds": {
-        "blossom_tree": 2,
-        "shrub": 1
+        "ambient_blossom": 2,
+        "ambient_shrub": 1
       },
-      "count": 20,
-      "spacing": 28,
+      "count": 14,
+      "spacing": 64,
       "region": [
-        704,
-        496,
-        1180,
-        760
+        1120,
+        720,
+        1720,
+        1080
       ],
       "density": {
-        "scale": 120,
+        "scale": 140,
         "octaves": 2,
-        "threshold": 0.44,
-        "edge_bonus": 0.12,
+        "threshold": 0.48,
+        "edge_bonus": 0.1,
         "edge_distance": 50
       },
       "clearance": {
@@ -1299,18 +1613,16 @@
       }
     },
     {
-      "id": "stone-and-lanterns",
+      "id": "road-lanterns",
       "kinds": {
-        "rock": 2,
-        "lantern": 1,
-        "signboard": 1
+        "ambient_lantern": 1
       },
-      "count": 24,
-      "spacing": 20,
+      "count": 14,
+      "spacing": 64,
       "near": {
         "road": [
-          18,
-          46
+          24,
+          52
         ]
       },
       "clearance": {
@@ -1355,46 +1667,46 @@
   "spawns": [
     {
       "id": "arrival",
-      "x": 640,
-      "y": 512,
+      "x": 896,
+      "y": 640,
       "facing": "north"
     }
   ],
   "interactions": [
     {
       "id": "village-notice",
-      "x": 544,
-      "y": 416,
+      "x": 800,
+      "y": 544,
       "reach": 32
     },
     {
       "id": "respawn-shrine",
-      "x": 640,
-      "y": 320,
+      "x": 896,
+      "y": 384,
       "reach": 44
     },
     {
       "id": "market-square",
-      "x": 864,
-      "y": 448,
+      "x": 1152,
+      "y": 576,
       "reach": 64
     },
     {
       "id": "alchemy-yard",
-      "x": 352,
-      "y": 320,
+      "x": 512,
+      "y": 416,
       "reach": 48
     },
     {
       "id": "forge-yard",
-      "x": 352,
-      "y": 672,
+      "x": 512,
+      "y": 800,
       "reach": 48
     },
     {
       "id": "guest-yard",
-      "x": 928,
-      "y": 672,
+      "x": 1248,
+      "y": 800,
       "reach": 48
     }
   ]

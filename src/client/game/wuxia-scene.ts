@@ -109,6 +109,8 @@ export class WuxiaScene extends Phaser.Scene {
         onInteractionRequest: (request) => this.handleLocalInteraction(request),
         onRegionLoaded: (region) => {
           this.clearVillageKit();
+          const map = region.tilemap as { widthInPixels?: number; heightInPixels?: number };
+          this.physics.world.setBounds(0, 0, map.widthInPixels ?? 1280, map.heightInPixels ?? 800);
           if (region.id === "qinghe-valley") this.mountVillageKit();
           const title = region.region.title ?? region.id;
           this.hudRegion.setText(title.toUpperCase());

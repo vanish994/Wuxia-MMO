@@ -1,30 +1,39 @@
 # QA — Qinghe Valley / generate2dmap
 
-Execução do pipeline `generate2dmap` sobre o bundle publicado de Qinghe.
+Execução final do pipeline `generate2dmap` após a migração de Qinghe para um mapa aberto estilo MMORPG.
 
-## Resultado
+## Resultado final
 
-- `map_nav.py check`: **WARN**, com todas as rotas funcionais alcançáveis.
-- Spawns válidos: **5/5**.
-- Interações alcançáveis: **10/10**.
-- Saídas alcançáveis: **4/4**.
-- Portais fora do mundo: **0**.
-- Thin gaps: **0**.
-- `build_scene_preview.py`: **PASS** na montagem e resolução dos assets.
-- Assets externos ao preview: **0**.
-- Arte ausente: **0**.
+| Verificação | Resultado |
+|---|---:|
+| Dimensão do mundo | 1792×1152 px |
+| Escala lógica | tiles 32×32 px; personagem 64×64 px |
+| Rota dos objetivos | 10/10 alcançáveis |
+| Spawns válidos | 5/5 |
+| Saídas válidas | 4/4 |
+| Bolsões inacessíveis | 0 |
+| Thin gaps | 0 |
+| Portais fora do mundo | 0 |
+| Preview de cena | PASS |
+| Assets ausentes | 0 |
 
-## Warnings registrados
+## Correções aplicadas
 
-1. `unreachable_walkable_area`: **10 bolsões / 30 células**. São pequenos bolsões decorativos isolados próximos de bordas, árvores e massas d’água; não contêm spawn, interação, portal ou rota funcional.
-2. `browser-verify`: **SKIPPED** porque o pacote Playwright não está instalado no ambiente. A revisão de runtime Phaser foi feita separadamente no navegador público do jogo.
-3. O diagnóstico de mídia reporta `scipy` e `resvg-py` ausentes. Não houve geração de arte nova nesta execução; a vila usa exclusivamente assets existentes.
+Qinghe deixou de ser uma tela compacta com a vila ocupando quase todo o enquadramento. O novo mundo tem bordas abertas, rotas longas para os quatro pontos cardeais, três áreas de água e um núcleo de serviços menor. Os distritos foram espalhados para que o jogador atravesse o mapa em vez de encontrar todos os prédios agrupados no centro.
+
+A fonte OPP4 de 224×224 px foi removida da área jogável porque dominava visualmente o personagem de 64×64 px. O kit agora usa cabanas de 128×128 px, barracas de 48×48 px e props de detalhe em 32×32 px, todos em pixels nativos. A decoração procedural foi convertida para props `solid: false`: o mapa continua vivo sem transformar vegetação em paredes invisíveis.
+
+## Limitações registradas
+
+O preview autocontido foi montado com sucesso, mas a verificação headless com Playwright continua não instalada no ambiente. A cena Phaser do cliente deve ser a referência visual final para cabanas, barracas e props externos do kit.
+
+O diagnóstico de mídia reporta `scipy` e `resvg-py` ausentes. Não houve geração de arte nova nesta execução; todo o trabalho visual reutiliza os assets existentes no repositório.
 
 ## Artefatos
 
-- `nav-report.json`: relatório completo de navegação.
+- `nav-report.json`: relatório final de navegação.
 - `nav-grid.json`: grade usada pelo verificador.
 - `nav-debug.png`: visualização de colisão e rotas.
 - `scene-preview.html`: preview autocontido do bundle.
 - `scene-preview-qa.json`: envelope do preview.
-- `doctor.json`: diagnóstico de capacidade da rota de mídia.
+- `doctor.json`: diagnóstico da rota de mídia.

@@ -283,11 +283,21 @@ def main() -> None:
         "signboard": {"pixelspec": make_sign(), "occlusion": "low",
                       "footprint": {"shape": "rect", "width": 6, "depth": 5, "offset": [0, -2.5]}}
     })
+    props.update({
+        "ambient_bamboo": {"pixelspec": make_bamboo(), "occlusion": "tall", "solid": False,
+                            "footprint": {"shape": "none"}},
+        "ambient_blossom": {"pixelspec": make_tree("ambient-plum", blossom=True), "occlusion": "tall", "solid": False,
+                             "footprint": {"shape": "none"}},
+        "ambient_shrub": {"pixelspec": make_shrub(), "occlusion": "low", "solid": False,
+                           "footprint": {"shape": "none"}},
+        "ambient_lantern": {"pixelspec": make_lantern(), "occlusion": "low", "solid": False,
+                             "footprint": {"shape": "none"}}
+    })
 
     layout = {
         "schema": "codeart2d.layout_spec.v1",
         "map_id": "qinghe-valley",
-        "size": [40, 25],
+        "size": [56, 36],
         "tile_size": 32,
         "seed": 30417,
         "materials": {
@@ -297,33 +307,36 @@ def main() -> None:
         },
         "base": "grass",
         "terrain": [
-            {"id": "east-lake", "shape": "ellipse", "material": "water", "center": [32, 6], "radius": [4.8, 3.2], "wobble": 0.55},
-            {"id": "south-pond", "shape": "ellipse", "material": "water", "center": [6, 20], "radius": [3.0, 2.0], "wobble": 0.35},
-            {"id": "central-plaza", "shape": "ellipse", "material": "dirt_path", "center": [20, 14], "radius": [6.7, 3.3], "wobble": 0.10},
-            {"id": "west-road", "shape": "road", "material": "dirt_path", "width": 1.35, "points": [[-1, 14], [4, 14], [9, 14], [14, 14], [16, 14]]},
-            {"id": "east-road", "shape": "road", "material": "dirt_path", "width": 1.35, "points": [[24, 14], [28, 14], [32, 12], [36, 10], [41, 10]]},
-            {"id": "north-road", "shape": "road", "material": "dirt_path", "width": 1.25, "points": [[20, 12], [20, 8], [20, 4], [20, -1]]},
-            {"id": "south-road", "shape": "road", "material": "dirt_path", "width": 1.25, "points": [[20, 16], [20, 19], [20, 22], [20, 26]]},
-            {"id": "alchemy-lane", "shape": "road", "material": "dirt_path", "width": 1.05, "points": [[16, 13], [13, 11], [11, 9]]},
-            {"id": "forge-lane", "shape": "road", "material": "dirt_path", "width": 1.05, "points": [[16, 16], [13, 19], [11, 21]]},
-            {"id": "guest-lane", "shape": "road", "material": "dirt_path", "width": 1.05, "points": [[24, 16], [27, 19], [29, 21]]}
+            {"id": "east-lake", "shape": "ellipse", "material": "water", "center": [44, 8], "radius": [5.2, 4.0], "wobble": 0.55},
+            {"id": "west-pond", "shape": "ellipse", "material": "water", "center": [8, 28], "radius": [3.5, 2.4], "wobble": 0.35},
+            {"id": "north-pond", "shape": "ellipse", "material": "water", "center": [28, 5], "radius": [2.5, 1.5], "wobble": 0.30},
+            {"id": "central-plaza", "shape": "ellipse", "material": "dirt_path", "center": [28, 18], "radius": [5.4, 2.8], "wobble": 0.10},
+            {"id": "west-road", "shape": "road", "material": "dirt_path", "width": 1.6, "points": [[-1, 18], [8, 18], [16, 18], [23, 18]]},
+            {"id": "east-road", "shape": "road", "material": "dirt_path", "width": 1.6, "points": [[33, 18], [39, 18], [45, 16], [57, 16]]},
+            {"id": "north-road", "shape": "road", "material": "dirt_path", "width": 1.45, "points": [[28, 15], [28, 11], [28, 6], [28, -1]]},
+            {"id": "south-road", "shape": "road", "material": "dirt_path", "width": 1.45, "points": [[28, 21], [28, 26], [28, 31], [28, 37]]},
+            {"id": "alchemy-lane", "shape": "road", "material": "dirt_path", "width": 1.15, "points": [[24, 17], [20, 14], [16, 13]]},
+            {"id": "forge-lane", "shape": "road", "material": "dirt_path", "width": 1.15, "points": [[24, 20], [20, 23], [16, 25]]},
+            {"id": "guest-lane", "shape": "road", "material": "dirt_path", "width": 1.15, "points": [[33, 20], [36, 23], [39, 25]]},
+            {"id": "outer-east-loop", "shape": "road", "material": "dirt_path", "width": 1.0, "points": [[39, 18], [42, 22], [49, 24], [54, 20]]}
         ],
         "actor": {"radius": 7, "ySquash": 0.9},
         "props": props,
         "objects": [
-            {"id": "village-gate", "prop": "sect_gate", "x": 8 * 32, "y": 8 * 32},
-            {"id": "respawn-shrine", "prop": "pagoda", "x": 20 * 32, "y": 8 * 32},
-            {"id": "moonwood-crossing", "prop": "bridge", "x": 32 * 32, "y": 10 * 32}
+            {"id": "village-gate", "prop": "sect_gate", "x": 14 * 32, "y": 10 * 32},
+            {"id": "respawn-shrine", "prop": "pagoda", "x": 28 * 32, "y": 10 * 32},
+            {"id": "moonwood-crossing", "prop": "bridge", "x": 44 * 32, "y": 16 * 32}
         ],
+        # Decoração viva sem colisão: os props sólidos ficam restritos às construções do kit.
         "scatter": [
-            {"id": "bamboo-grove", "kinds": {"bamboo": 1}, "count": 22, "spacing": 24,
-             "region": [24, 24, 320, 280], "density": {"scale": 94, "octaves": 2, "threshold": 0.40, "edge_bonus": 0.18, "edge_distance": 55},
+            {"id": "bamboo-grove", "kinds": {"ambient_bamboo": 1}, "count": 12, "spacing": 64,
+             "region": [48, 48, 420, 360], "density": {"scale": 120, "octaves": 2, "threshold": 0.46, "edge_bonus": 0.12, "edge_distance": 55},
              "clearance": {"road": 20, "blocked": 20, "object": 30, "exit": 30, "spawn": 28}},
-            {"id": "plum-garden", "kinds": {"blossom_tree": 2, "shrub": 1}, "count": 20, "spacing": 28,
-             "region": [704, 496, 1180, 760], "density": {"scale": 120, "octaves": 2, "threshold": 0.44, "edge_bonus": 0.12, "edge_distance": 50},
+            {"id": "plum-garden", "kinds": {"ambient_blossom": 2, "ambient_shrub": 1}, "count": 14, "spacing": 64,
+             "region": [1120, 720, 1720, 1080], "density": {"scale": 140, "octaves": 2, "threshold": 0.48, "edge_bonus": 0.10, "edge_distance": 50},
              "clearance": {"road": 18, "blocked": 18, "object": 28, "exit": 28, "spawn": 26}},
-            {"id": "stone-and-lanterns", "kinds": {"rock": 2, "lantern": 1, "signboard": 1}, "count": 24, "spacing": 20,
-             "near": {"road": [18, 46]},
+            {"id": "road-lanterns", "kinds": {"ambient_lantern": 1}, "count": 14, "spacing": 64,
+             "near": {"road": [24, 52]},
              "clearance": {"road": 14, "blocked": 14, "object": 14, "exit": 25, "spawn": 20}}
         ],
         "exits": [
@@ -332,14 +345,14 @@ def main() -> None:
             {"id": "north-gate-exit", "edge": "north", "road": "north-road", "to": "jade-mountain:from-qinghe-valley", "arrival": "from-jade-mountain"},
             {"id": "south-road-exit", "edge": "south", "road": "south-road", "to": "training-grounds:from-qinghe-valley", "arrival": "from-training-grounds"}
         ],
-        "spawns": [{"id": "arrival", "x": 20 * 32, "y": 16 * 32, "facing": "north"}],
+        "spawns": [{"id": "arrival", "x": 28 * 32, "y": 20 * 32, "facing": "north"}],
         "interactions": [
-            {"id": "village-notice", "x": 17 * 32, "y": 13 * 32, "reach": 32},
-            {"id": "respawn-shrine", "x": 20 * 32, "y": 10 * 32, "reach": 44},
-            {"id": "market-square", "x": 27 * 32, "y": 14 * 32, "reach": 64},
-            {"id": "alchemy-yard", "x": 11 * 32, "y": 10 * 32, "reach": 48},
-            {"id": "forge-yard", "x": 11 * 32, "y": 21 * 32, "reach": 48},
-            {"id": "guest-yard", "x": 29 * 32, "y": 21 * 32, "reach": 48}
+            {"id": "village-notice", "x": 25 * 32, "y": 17 * 32, "reach": 32},
+            {"id": "respawn-shrine", "x": 28 * 32, "y": 12 * 32, "reach": 44},
+            {"id": "market-square", "x": 36 * 32, "y": 18 * 32, "reach": 64},
+            {"id": "alchemy-yard", "x": 16 * 32, "y": 13 * 32, "reach": 48},
+            {"id": "forge-yard", "x": 16 * 32, "y": 25 * 32, "reach": 48},
+            {"id": "guest-yard", "x": 39 * 32, "y": 25 * 32, "reach": 48}
         ]
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
