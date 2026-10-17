@@ -16,8 +16,9 @@ import { MOON_SLASH, ONDA_DE_QI, QI_REGEN_PER_SECOND } from "./combat/skills-con
 import { canCastSkill, moonSlashHits, ondaHits, ondaTargetPoint, regenQi, spendQi } from "./combat/skills-rules.mjs";
 import { createPixellabVfxAnimations, playCharacterVfx, playGroundVfx, preloadPixellabVfx } from "./vfx/pixellab-vfx";
 import { MASTERY, PATHS, PATH_QI, PATH_SWORD, type PathId } from "./combat/paths-config.mjs";
-import type { ProjectileBasicAttack } from "./combat/paths-config.mjs";
+import { AUTO_ATTACK, type ProjectileBasicAttack } from "./combat/paths-config.mjs";
 import { addMasteryPoints, masteryDamageMultiplier, masteryLevel, nearestTargetIndex, projectileTravelMs } from "./combat/paths-rules.mjs";
+import { aimVector, ondaAimPoint, chooseAutoTarget, autoAttackStep } from "./combat/targeting-rules.mjs";
 
 const assetPath = (path: string): string => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 const REGION_TITLES: Record<string, string> = { "qinghe-valley": "Vale da Lua Serena" };
@@ -113,6 +114,11 @@ export class WuxiaScene extends Phaser.Scene {
   private roleText?: Phaser.GameObjects.Text;
   private skillSlots: Phaser.GameObjects.Image[] = [];
   private pathButton?: Phaser.GameObjects.Container;
+  private selectedWolf: Wolf | null = null;
+  private skillButtons: Phaser.GameObjects.Container[] = [];
+  private cooldownGraphics: Phaser.GameObjects.Graphics[] = [];
+  private autoAttack = false;
+  private targetRing?: Phaser.GameObjects.Graphics;
   private level: number = PLAYER_COMBAT.startLevel;
   private xp = 0;
   private pelts = 0;
@@ -160,6 +166,8 @@ export class WuxiaScene extends Phaser.Scene {
     this.input.keyboard!.on("keydown-ONE", () => this.castMoonSlash(this.time.now));
     this.input.keyboard!.on("keydown-TWO", () => this.castOndaDeQi(this.time.now));
     this.input.keyboard!.on("keydown-Q", () => this.togglePath());
+    this.input.on("pointerdown", (pointer: Phaser.Input.Pointer, over: Phaser.GameObjects.GameObject[]) => this.handleWorldTap(pointer, over));
+    this.targetRing = this.add.graphics().setDepth(5);
 
     this.createAnimations();
     createPixellabVfxAnimations(this);
@@ -231,6 +239,8 @@ export class WuxiaScene extends Phaser.Scene {
     this.syncCameraLayers();
     if (!this.player || this.loading) return;
     this.updateWolves(time);
+    this.updateTargetRing();
+    this.updateCooldowns(time);
 
     if (this.playerDead) {
       const remaining = Math.ceil(Math.max(0, this.respawnAt - time) / 1000);
@@ -240,7 +250,10 @@ export class WuxiaScene extends Phaser.Scene {
       return;
     }
 
-    const movement = this.getMovementVector();
+    const input = this.getMovementVector();
+    // Walking with the joystick or keys cancels auto-attack; attacking never moves the character by itself.
+    if (input.x !== 0 || input.y !== 0) this.autoAttack = false;
+    const movement = this.autoAttack ? this.runAutoAttack(time) : input;
     const speed = PLAYER_COMBAT.moveSpeed * (this.attacking ? 0.5 : 1);
     this.player.setVelocity(movement.x * speed, movement.y * speed);
     this.player.setDepth(this.player.y + 12);
@@ -258,7 +271,7 @@ export class WuxiaScene extends Phaser.Scene {
     }
     if (time - this.attackQueuedAt <= INPUT_QUEUE_WINDOW_MS) {
       this.attackQueuedAt = -Infinity;
-      this.tryAttack(time);
+      this.engageAutoAttack();
     }
     if (!this.playerDead && this.qi < PLAYER_COMBAT.maxQi) {
       this.qi = regenQi(this.qi, PLAYER_COMBAT.maxQi, delta, QI_REGEN_PER_SECOND);
@@ -350,6 +363,7 @@ export class WuxiaScene extends Phaser.Scene {
     for (const wolf of this.wolves) wolf.destroy();
     this.wolfColliders = [];
     this.wolves = [];
+    this.selectedWolf = null;
   }
 
   private updateWolves(time: number): void {
@@ -418,6 +432,7 @@ export class WuxiaScene extends Phaser.Scene {
       this.setStatus("Moon Slash é do Caminho da Espada — troque com CAMINHO (Q).");
       return;
     }
+    this.faceSelectedTarget();
     if (!canCastSkill(time, this.lastMoonSlashAt, MOON_SLASH.cooldownMs, this.qi, MOON_SLASH.qiCost)) return;
     this.lastMoonSlashAt = time;
     this.qi = spendQi(this.qi, MOON_SLASH.qiCost);
@@ -454,7 +469,8 @@ export class WuxiaScene extends Phaser.Scene {
     }
     this.lastOndaAt = time;
     this.qi = spendQi(this.qi, ONDA_DE_QI.qiCost);
-    const center = ondaTargetPoint({ x: this.player.x, y: this.player.y }, DIRECTION_VECTORS[this.facing], ONDA_DE_QI.castRangePx);
+    this.faceSelectedTarget();
+    const center = ondaAimPoint({ x: this.player.x, y: this.player.y }, this.selectedPoint(), ONDA_DE_QI.castRangePx, DIRECTION_VECTORS[this.facing]);
     const orb = playGroundVfx(this, "energy-orb-8-directions", this.facing, "whole", center, center.y + 1, ONDA_DE_QI.visualScale);
     if (orb) this.time.delayedCall(ONDA_DE_QI.effectMs, () => orb.destroy());
     this.time.delayedCall(ONDA_DE_QI.hitDelayMs, () => this.resolveOndaHits(center));
@@ -477,13 +493,13 @@ export class WuxiaScene extends Phaser.Scene {
   }
 
   /** Basic Qi attack: a projectile that homes on the nearest wolf inside its range. */
-  private castQiBasic(time: number): void {
+  private castQiBasic(time: number, forcedIndex = -1): void {
     if (this.playerDead || this.loading) return;
     const cfg = PATHS[PATH_QI].basicAttack as ProjectileBasicAttack;
     if (!isCooldownReady(time, this.lastQiBasicAt, cfg.cooldownMs)) return;
     const origin = { x: this.player.x, y: this.player.y };
     const targets = this.wolves.map((wolf) => ({ x: wolf.sprite.x, y: wolf.sprite.y, alive: wolf.alive }));
-    const index = nearestTargetIndex(origin, targets, cfg.maxRangePx);
+    const index = forcedIndex >= 0 ? forcedIndex : nearestTargetIndex(origin, targets, cfg.maxRangePx);
     if (index < 0) {
       this.setStatus("Nenhum lobo ao alcance do Qi.");
       return;
@@ -549,6 +565,112 @@ export class WuxiaScene extends Phaser.Scene {
     });
   }
 
+  private createSkillButton(index: number, label: string): Phaser.GameObjects.Container {
+    const slot = this.add.image(0, 0, "gui-slot", index % 4).setScale(1.5).setInteractive({ useHandCursor: true });
+    const key = this.add.text(0, -34, String(index + 1), { color: "#fff4d9", fontFamily: HUD_FONT, fontSize: "11px", fontStyle: "bold" }).setOrigin(0.5);
+    const caption = this.add.text(0, 30, label.split("  ")[1], { color: "#f8e5bd", fontFamily: HUD_FONT, fontSize: "8px", fontStyle: "bold" }).setOrigin(0.5, 0);
+    const cooldown = this.add.graphics();
+    this.cooldownGraphics[index] = cooldown;
+    slot.on("pointerdown", () => {
+      if (index === 0) this.castMoonSlash(this.time.now);
+      else this.castOndaDeQi(this.time.now);
+    });
+    return this.add.container(0, 0, [slot, cooldown, key, caption]).setScrollFactor(0).setDepth(2101);
+  }
+
+  /** Dark sweep over a skill button showing how much of its cooldown is left. */
+  private updateCooldowns(time: number): void {
+    const specs = [
+      { last: this.lastMoonSlashAt, cooldownMs: MOON_SLASH.cooldownMs },
+      { last: this.lastOndaAt, cooldownMs: ONDA_DE_QI.cooldownMs },
+    ];
+    specs.forEach((spec, index) => {
+      const g = this.cooldownGraphics[index];
+      if (!g) return;
+      g.clear();
+      const remaining = Math.max(0, spec.last + spec.cooldownMs - time);
+      if (remaining <= 0) return;
+      const fraction = remaining / spec.cooldownMs;
+      g.fillStyle(0x000000, 0.55);
+      g.beginPath();
+      g.moveTo(0, 0);
+      g.arc(0, 0, 28, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * fraction, false);
+      g.closePath();
+      g.fillPath();
+    });
+  }
+
+  /** Pressing the attack button arms auto-attack; the update loop then chases and strikes the target. */
+  private engageAutoAttack(): void {
+    if (this.playerDead || this.loading) return;
+    this.autoAttack = true;
+  }
+
+  /** One frame of auto-attack. Returns the movement to apply (chase direction or standing still). */
+  private runAutoAttack(time: number): { x: number; y: number } {
+    const basic = PATHS[this.activePath].basicAttack;
+    const rangePx = basic.kind === "melee" ? PLAYER_COMBAT.swordRangePx : basic.maxRangePx;
+    const origin = { x: this.player.x, y: this.player.y };
+    const targets = this.wolves.map((wolf) => ({ x: wolf.sprite.x, y: wolf.sprite.y, alive: wolf.alive }));
+    const index = chooseAutoTarget(origin, targets, this.selectedIndex(), AUTO_ATTACK.acquireRangePx);
+    if (index < 0) {
+      this.autoAttack = false;
+      this.setStatus("Sem alvo válido para o ataque automático.");
+      return { x: 0, y: 0 };
+    }
+    const point = { x: targets[index].x, y: targets[index].y };
+    const dir = aimVector(origin, point, DIRECTION_VECTORS[this.facing]);
+    this.facing = directionFor(dir.x, dir.y);
+    if (autoAttackStep(origin, point, rangePx) === "chase") {
+      if (!this.attacking) this.player.anims.play(`player-walk-${this.facing}`, true);
+      return dir;
+    }
+    if (basic.kind === "melee") this.tryAttack(time);
+    else this.castQiBasic(time, index);
+    return { x: 0, y: 0 };
+  }
+
+  /** Tap on the world selects the nearest living wolf within reach; tapping empty ground clears the target. */
+  private handleWorldTap(pointer: Phaser.Input.Pointer, over: Phaser.GameObjects.GameObject[]): void {
+    if (over.length > 0 || this.playerDead || this.loading) return;
+    let best: Wolf | null = null;
+    let bestDistance = 44;
+    for (const wolf of this.wolves) {
+      if (!wolf.alive) continue;
+      const d = Math.hypot(wolf.sprite.x - pointer.worldX, wolf.sprite.y - pointer.worldY);
+      if (d <= bestDistance) {
+        best = wolf;
+        bestDistance = d;
+      }
+    }
+    this.selectedWolf = best;
+    if (best) this.setStatus(`${WOLF_LEVEL_1.name} selecionado.`);
+  }
+
+  private selectedIndex(): number {
+    return this.selectedWolf ? this.wolves.indexOf(this.selectedWolf) : -1;
+  }
+
+  private selectedPoint(): { x: number; y: number } | null {
+    if (!this.selectedWolf || !this.selectedWolf.alive) return null;
+    return { x: this.selectedWolf.sprite.x, y: this.selectedWolf.sprite.y };
+  }
+
+  /** Turns the character toward the selected target so directional skills aim at it. */
+  private faceSelectedTarget(): void {
+    const point = this.selectedPoint();
+    if (!point) return;
+    const dir = aimVector({ x: this.player.x, y: this.player.y }, point, DIRECTION_VECTORS[this.facing]);
+    this.facing = directionFor(dir.x, dir.y);
+  }
+
+  private updateTargetRing(): void {
+    this.targetRing?.clear();
+    if (this.selectedWolf && !this.selectedWolf.alive) this.selectedWolf = null;
+    if (!this.selectedWolf || !this.targetRing) return;
+    this.targetRing.lineStyle(2, 0xffe27a, 0.9).strokeEllipse(this.selectedWolf.sprite.x, this.selectedWolf.sprite.y + 14, 40, 18);
+  }
+
   private onWolfDefeated(): void {
     const progress = grantXp({ level: this.level, xp: this.xp }, WOLF_LEVEL_1.xpReward, PROGRESSION.xpBase);
     this.level = progress.level;
@@ -561,6 +683,7 @@ export class WuxiaScene extends Phaser.Scene {
 
   private killPlayer(): void {
     this.playerDead = true;
+    this.autoAttack = false;
     this.attacking = false;
     this.respawnAt = this.time.now + PLAYER_COMBAT.respawnDelayMs;
     this.player.setVelocity(0, 0);
@@ -623,13 +746,18 @@ export class WuxiaScene extends Phaser.Scene {
     this.hudSkills = this.add.container(0, 0).setScrollFactor(0).setDepth(2101);
     const skills = ["1  MOON SLASH", "2  ONDA DE QI", "3  POÇÃO", "4  MAPA"];
     skills.forEach((label, index) => {
-      const slot = this.add.image(index * 72, 0, "gui-slot", index % 4).setOrigin(0, 0);
-      const key = this.add.text(index * 72 + 16, 5, String(index + 1), { color: "#fff4d9", fontFamily: HUD_FONT, fontSize: "11px", fontStyle: "bold" }).setOrigin(0.5);
-      const caption = this.add.text(index * 72 + 16, 36, label.split("  ")[1], { color: "#f8e5bd", fontFamily: HUD_FONT, fontSize: "8px", fontStyle: "bold" }).setOrigin(0.5, 0);
+      if (index < 2) {
+        // Combat skills live on the right-hand arc with their own cooldown overlay.
+        const button = this.createSkillButton(index, label);
+        this.skillButtons[index] = button;
+        this.skillSlots.push(button.list[0] as Phaser.GameObjects.Image);
+        return;
+      }
+      // POÇÃO and MAPA have no behaviour yet; they stay in the bottom row until they do.
+      const slot = this.add.image(index * 72 - 144, 0, "gui-slot", index % 4).setOrigin(0, 0);
+      const key = this.add.text(index * 72 - 144 + 16, 5, String(index + 1), { color: "#fff4d9", fontFamily: HUD_FONT, fontSize: "11px", fontStyle: "bold" }).setOrigin(0.5);
+      const caption = this.add.text(index * 72 - 144 + 16, 36, label.split("  ")[1], { color: "#f8e5bd", fontFamily: HUD_FONT, fontSize: "8px", fontStyle: "bold" }).setOrigin(0.5, 0);
       this.hudSkills.add([slot, key, caption]);
-      if (index < 2) this.skillSlots.push(slot);
-      if (index === 0) slot.setInteractive({ useHandCursor: true }).on("pointerdown", () => this.castMoonSlash(this.time.now));
-      if (index === 1) slot.setInteractive({ useHandCursor: true }).on("pointerdown", () => this.castOndaDeQi(this.time.now));
     });
 
     const actionBackground = this.add.image(0, 0, "gui-action", 1).setOrigin(0.5).setScale(1.5).setInteractive({ useHandCursor: true });
@@ -640,7 +768,7 @@ export class WuxiaScene extends Phaser.Scene {
     const attackBackground = this.add.image(0, 0, "gui-action", 0).setOrigin(0.5).setScale(1.5).setInteractive({ useHandCursor: true });
     const attackLabel = this.add.text(0, 0, "ATACAR", { color: "#fff4d9", fontFamily: HUD_FONT, fontSize: "11px", fontStyle: "bold", letterSpacing: 1 }).setOrigin(0.5);
     this.attackButton = this.add.container(0, 0, [attackBackground, attackLabel]).setScrollFactor(0).setDepth(2101);
-    attackBackground.on("pointerdown", () => this.tryAttack(this.time.now));
+    attackBackground.on("pointerdown", () => this.engageAutoAttack());
 
     const pathBackground = this.add.image(0, 0, "gui-action", 0).setOrigin(0.5).setScale(1.5).setInteractive({ useHandCursor: true }).setTint(0xf2d28a);
     const pathLabel = this.add.text(0, 0, "CAMINHO", { color: "#fff4d9", fontFamily: HUD_FONT, fontSize: "11px", fontStyle: "bold", letterSpacing: 1 }).setOrigin(0.5);
@@ -684,9 +812,14 @@ export class WuxiaScene extends Phaser.Scene {
     this.hudCompass?.setPosition(width - 94, 18);
     this.hudSkills?.setPosition(Math.max(18, (width - 288) / 2), height - 76);
     this.hudHint?.setPosition(18, height - 30);
-    this.actionButton?.setPosition(width - 84, height - 56);
-    this.attackButton?.setPosition(width - 84, height - 110);
-    this.pathButton?.setPosition(width - 84, height - 164);
+    // Right-hand MOBA cluster: big attack at the corner, skills on an arc, path and interact stacked above.
+    const cx = width - 110;
+    const cy = height - 100;
+    this.attackButton?.setPosition(cx, cy);
+    this.skillButtons[0]?.setPosition(cx - 118, cy);
+    this.skillButtons[1]?.setPosition(cx - 90, cy - 76);
+    this.pathButton?.setPosition(cx, cy - 72).setScale(0.8);
+    this.actionButton?.setPosition(cx, cy - 116).setScale(0.8);
   }
 
   private getMovementVector(): { x: number; y: number } {

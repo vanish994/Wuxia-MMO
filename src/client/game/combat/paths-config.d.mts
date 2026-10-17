@@ -36,3 +36,9 @@ export interface MasteryConfig {
 }
 
 export declare const MASTERY: MasteryConfig;
+
+export interface AutoAttackConfig {
+  readonly acquireRangePx: number;
+}
+
+export declare const AUTO_ATTACK: AutoAttackConfig;

@@ -41,3 +41,8 @@ export const MASTERY = Object.freeze({
   // Each mastery level adds this fraction to damage of that path only.
   damagePerLevel: 0.05,
 });
+
+/** Auto-attack: a target is acquired automatically when it is within this distance and none is selected. */
+export const AUTO_ATTACK = Object.freeze({
+  acquireRangePx: 320,
+});
