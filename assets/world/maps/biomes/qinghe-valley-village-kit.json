@@ -1,56 +1,242 @@
 {
   "schema": "wuxia.village-kit.v1",
   "region": "qinghe-valley",
-  "art_source": "existing",
-  "grid": { "tile_px": 32, "character_frame_px": 64 },
+  "art_source": "existing repository assets",
+  "grid": {
+    "tile_px": 32,
+    "character_frame_px": 64,
+    "scale_policy": "native pixels; no non-uniform stretching"
+  },
+  "layout_notes": "Open central plaza and clear travel lanes. Building collisions are limited to their lower footprint; decorative vegetation uses native asset size.",
   "objects": [
     {
       "id": "alchemy-cabin",
       "asset": "/assets/external/pixellab-wuxia-objects/cabanas/cabana-1.png",
-      "x": 416,
-      "y": 336,
-      "depth": 336,
-      "collision": { "x": 416, "y": 316, "width": 88, "height": 32 }
+      "x": 352,
+      "y": 330,
+      "depth": 330,
+      "collision": {
+        "x": 352,
+        "y": 310,
+        "width": 88,
+        "height": 32
+      }
     },
     {
       "id": "forge-cabin",
       "asset": "/assets/external/pixellab-wuxia-objects/cabanas/cabana-3.png",
-      "x": 416,
-      "y": 640,
-      "depth": 640,
-      "collision": { "x": 416, "y": 620, "width": 88, "height": 32 }
+      "x": 352,
+      "y": 650,
+      "depth": 650,
+      "collision": {
+        "x": 352,
+        "y": 630,
+        "width": 88,
+        "height": 32
+      }
     },
     {
       "id": "market-cabin",
       "asset": "/assets/external/pixellab-wuxia-objects/cabanas/cabana-2.png",
-      "x": 800,
-      "y": 352,
-      "depth": 352,
-      "collision": { "x": 800, "y": 332, "width": 88, "height": 32 }
+      "x": 928,
+      "y": 330,
+      "depth": 330,
+      "collision": {
+        "x": 928,
+        "y": 310,
+        "width": 88,
+        "height": 32
+      }
+    },
+    {
+      "id": "inn-cabin",
+      "asset": "/assets/external/pixellab-wuxia-objects/cabanas/cabana-1.png",
+      "x": 928,
+      "y": 650,
+      "depth": 650,
+      "collision": {
+        "x": 928,
+        "y": 630,
+        "width": 88,
+        "height": 32
+      }
     },
     {
       "id": "market-stall-1",
       "asset": "/assets/external/pixellab-wuxia-objects/barracas/barraca-1.png",
-      "x": 704,
-      "y": 464,
-      "depth": 464,
-      "collision": { "x": 704, "y": 452, "width": 34, "height": 20 }
+      "x": 700,
+      "y": 405,
+      "depth": 405,
+      "collision": {
+        "x": 700,
+        "y": 393,
+        "width": 34,
+        "height": 20
+      }
     },
     {
       "id": "market-stall-2",
       "asset": "/assets/external/pixellab-wuxia-objects/barracas/barraca-2.png",
       "x": 800,
-      "y": 464,
-      "depth": 464,
-      "collision": { "x": 800, "y": 452, "width": 34, "height": 20 }
+      "y": 405,
+      "depth": 405,
+      "collision": {
+        "x": 800,
+        "y": 393,
+        "width": 34,
+        "height": 20
+      }
     },
     {
       "id": "market-stall-3",
       "asset": "/assets/external/pixellab-wuxia-objects/barracas/barraca-3.png",
-      "x": 896,
-      "y": 464,
-      "depth": 464,
-      "collision": { "x": 896, "y": 452, "width": 34, "height": 20 }
+      "x": 900,
+      "y": 405,
+      "depth": 405,
+      "collision": {
+        "x": 900,
+        "y": 393,
+        "width": 34,
+        "height": 20
+      }
+    },
+    {
+      "id": "market-stall-4",
+      "asset": "/assets/external/pixellab-wuxia-objects/barracas/barraca-1.png",
+      "x": 700,
+      "y": 500,
+      "depth": 500,
+      "collision": {
+        "x": 700,
+        "y": 488,
+        "width": 34,
+        "height": 20
+      }
+    },
+    {
+      "id": "market-stall-5",
+      "asset": "/assets/external/pixellab-wuxia-objects/barracas/barraca-2.png",
+      "x": 900,
+      "y": 500,
+      "depth": 500,
+      "collision": {
+        "x": 900,
+        "y": 488,
+        "width": 34,
+        "height": 20
+      }
+    },
+    {
+      "id": "blossom-tree-west",
+      "asset": "/assets/external/feudal-japan-nature/PNG/01_cherry_blossom_tree_32x32.png",
+      "x": 160,
+      "y": 250,
+      "depth": 250
+    },
+    {
+      "id": "blossom-tree-north",
+      "asset": "/assets/external/feudal-japan-nature/PNG/01_cherry_blossom_tree_32x32.png",
+      "x": 560,
+      "y": 190,
+      "depth": 190
+    },
+    {
+      "id": "blossom-tree-east",
+      "asset": "/assets/external/feudal-japan-nature/PNG/01_cherry_blossom_tree_32x32.png",
+      "x": 1120,
+      "y": 260,
+      "depth": 260
+    },
+    {
+      "id": "maple-southwest",
+      "asset": "/assets/external/feudal-japan-nature/PNG/05_autumn_maple_tree_32x32.png",
+      "x": 190,
+      "y": 600,
+      "depth": 600
+    },
+    {
+      "id": "maple-southeast",
+      "asset": "/assets/external/feudal-japan-nature/PNG/05_autumn_maple_tree_32x32.png",
+      "x": 1100,
+      "y": 620,
+      "depth": 620
+    },
+    {
+      "id": "bamboo-northwest",
+      "asset": "/assets/external/feudal-japan-nature/PNG/04_bamboo_grove_32x32.png",
+      "x": 100,
+      "y": 150,
+      "depth": 150
+    },
+    {
+      "id": "bamboo-west",
+      "asset": "/assets/external/feudal-japan-nature/PNG/04_bamboo_grove_32x32.png",
+      "x": 100,
+      "y": 440,
+      "depth": 440
+    },
+    {
+      "id": "bamboo-northeast",
+      "asset": "/assets/external/feudal-japan-nature/PNG/04_bamboo_grove_32x32.png",
+      "x": 1180,
+      "y": 150,
+      "depth": 150
+    },
+    {
+      "id": "bamboo-southeast",
+      "asset": "/assets/external/feudal-japan-nature/PNG/04_bamboo_grove_32x32.png",
+      "x": 1180,
+      "y": 470,
+      "depth": 470
+    },
+    {
+      "id": "koi-pond",
+      "asset": "/assets/external/feudal-japan-nature/PNG/02_koi_pond_tile_32x32.png",
+      "x": 1080,
+      "y": 490,
+      "depth": 490
+    },
+    {
+      "id": "rocks-west",
+      "asset": "/assets/external/feudal-japan-nature/PNG/03_rock_cluster_32x32.png",
+      "x": 250,
+      "y": 390,
+      "depth": 390
+    },
+    {
+      "id": "rocks-south",
+      "asset": "/assets/external/feudal-japan-nature/PNG/03_rock_cluster_32x32.png",
+      "x": 520,
+      "y": 700,
+      "depth": 700
+    },
+    {
+      "id": "rocks-east",
+      "asset": "/assets/external/feudal-japan-nature/PNG/03_rock_cluster_32x32.png",
+      "x": 1060,
+      "y": 390,
+      "depth": 390
+    },
+    {
+      "id": "fallen-log-west",
+      "asset": "/assets/external/feudal-japan-nature/PNG/08_fallen_log_32x32.png",
+      "x": 240,
+      "y": 510,
+      "depth": 510
+    },
+    {
+      "id": "stone-detail-north",
+      "asset": "/assets/external/feudal-japan-nature/PNG/07_mossy_stone_path_32x32.png",
+      "x": 540,
+      "y": 330,
+      "depth": 330
+    },
+    {
+      "id": "stone-detail-south",
+      "asset": "/assets/external/feudal-japan-nature/PNG/07_mossy_stone_path_32x32.png",
+      "x": 560,
+      "y": 620,
+      "depth": 620
     }
   ]
 }
